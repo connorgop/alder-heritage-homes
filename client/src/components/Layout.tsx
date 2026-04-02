@@ -15,6 +15,8 @@ const PHONE_HREF = "tel:5592818016";
 const services = [
   { label: "Foreclosure Help", href: "/foreclosure-help" },
   { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
+  { label: "Can't Afford My Home", href: "/cant-afford-my-home" },
+  { label: "ARM / Rate Adjustment", href: "/arm-rate-change-help" },
   { label: "Second Mortgage Help", href: "/second-mortgage-help" },
   { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back" },
   { label: "Probate / Inherited Homes", href: "/probate-inherited-homes" },
@@ -28,6 +30,8 @@ const services = [
 
 const trust = [
   { label: "Why We're Different", href: "/why-choose-us" },
+  { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
+  { label: "Don't Hire Your Friend Realtor", href: "/dont-hire-friend-realtor" },
   { label: "About Connor", href: "/about" },
   { label: "Blog & Resources", href: "/blog" },
 ];

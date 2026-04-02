@@ -11,6 +11,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import DontGetWholesaled from "./pages/DontGetWholesaled";
+import DontHireFriendRealtor from "./pages/DontHireFriendRealtor";
 
 // Service pages
 import ForeclosureHelp from "./pages/services/ForeclosureHelp";
@@ -27,6 +29,8 @@ import DivorceHome from "./pages/services/DivorceHome";
 import TiredLandlord from "./pages/services/TiredLandlord";
 import JunkRemoval from "./pages/services/JunkRemoval";
 import WhyChooseUs from "./pages/WhyChooseUs";
+import ArmRateChange from "./pages/services/ArmRateChange";
+import CantAffordHome from "./pages/services/CantAffordHome";
 
 // City landing pages
 import FresnoPage from "./pages/cities/Fresno";
@@ -72,6 +76,10 @@ function Router() {
       <Route path="/tired-landlord" component={TiredLandlord} />
       <Route path="/junk-removal-before-selling" component={JunkRemoval} />
       <Route path="/why-choose-us" component={WhyChooseUs} />
+      <Route path="/dont-get-wholesaled" component={DontGetWholesaled} />
+      <Route path="/dont-hire-friend-realtor" component={DontHireFriendRealtor} />
+      <Route path="/arm-rate-change-help" component={ArmRateChange} />
+      <Route path="/cant-afford-my-home" component={CantAffordHome} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

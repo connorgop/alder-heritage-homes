@@ -87,6 +87,24 @@ export const blogPosts = [
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp",
   },
   {
+    slug: "dont-get-wholesaled-fresno-cash-buyer-warning",
+    title: "Don't Get Wholesaled: How to Tell If the 'Cash Buyer' in Fresno Is Actually the Buyer",
+    excerpt: "Most 'we buy houses' companies in Fresno have no capital. They lock you into a contract, then try to sell it to a real investor. Here are the exact red flags — and what to look for instead.",
+    category: "Consumer Warning",
+    date: "April 2, 2026",
+    readTime: "9 min read",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp",
+  },
+  {
+    slug: "dont-hire-friend-family-realtor-fresno",
+    title: "Why You Shouldn't Hire Your Friend or Family Member as Your Realtor",
+    excerpt: "You want them to make money. You don't want Christmas to be awkward. Those are exactly the wrong reasons to make the most important financial decision of your life. Here's the honest truth.",
+    category: "Selling Tips",
+    date: "April 2, 2026",
+    readTime: "7 min read",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp",
+  },
+  {
     slug: "cash-buyer-vs-traditional-sale-fresno",
     title: "Cash Buyer vs. Traditional Sale in Fresno: Which Is Better for You?",
     excerpt: "Selling to a cash buyer isn't always the right choice — but sometimes it's the best one. Here's an honest comparison of cash sales vs. listing with an agent in the Fresno market.",
@@ -104,6 +122,7 @@ const categoryColors: Record<string, string> = {
   "Mortgage Help": "oklch(0.50 0.12 42)",
   "Fast Sale": "oklch(0.45 0.11 42)",
   "Selling Tips": "oklch(0.35 0.05 155)",
+  "Consumer Warning": "oklch(0.45 0.16 25)",
 };
 
 export default function Blog() {

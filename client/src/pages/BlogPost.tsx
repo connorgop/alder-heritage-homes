@@ -398,6 +398,63 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>Not sure which option is right for you? <strong>Call us at (559) 281-8016</strong> — we'll give you an honest assessment, even if that means recommending a traditional sale.</p>
     </div>
   ),
+
+  "dont-get-wholesaled-fresno-cash-buyer-warning": (
+    <div className="prose-heritage">
+      <p>If you've been searching for cash home buyers in Fresno, you've probably seen dozens of websites, bandit signs, and postcards all saying the same thing: "We Buy Houses Fast, Any Condition, Cash." Most of them are not buyers. They are wholesalers — and the difference matters enormously to you as a seller.</p>
+      <p>This article is written by Connor Alder, a licensed California real estate agent (DRE #02219124) who actually buys homes with his own capital. I know the Fresno market. I know the players. And I'm going to tell you exactly how to tell who is real and who isn't.</p>
+      <h2>What Is a Wholesaler?</h2>
+      <p>A real estate wholesaler is someone who gets a property under contract — meaning they sign a purchase agreement with you — and then sells that contract to a third-party investor for more money than they offered you. They never actually buy your home. They buy the <em>right</em> to buy your home, and then sell that right to someone else.</p>
+      <p>The wholesaler's profit is the difference between what they offered you and what they sold the contract for. If they offered you $200,000 and sold the contract to a real investor for $220,000, they pocketed $20,000 without ever owning your home for a single day.</p>
+      <p>This is legal in California. It is also something that most wholesalers will actively lie to you about.</p>
+      <h2>Red Flag #1: They Have an Inspection Period</h2>
+      <p>A real buyer does not need an inspection period. They already know what they're paying for. An inspection period is a wholesaler's escape hatch — it gives them time to shop your contract to other investors. If they can't find a buyer willing to pay more than they offered you, they'll cancel during the inspection period and walk away. You've wasted weeks and lost leverage.</p>
+      <p><strong>Ask directly: "Do you need an inspection period?" A real buyer says no.</strong></p>
+      <h2>Red Flag #2: Their Contract Says "LLC Name and/or Assignee"</h2>
+      <p>If the buyer line on your purchase contract reads "XYZ Investments LLC and/or Assignee" — stop. The words "and/or Assignee" are the legal mechanism that allows a wholesaler to sell your contract to a third party. They are not buying your home. They are buying the right to sell your home to someone else.</p>
+      <p>The actual buyer could be anyone. You have no idea who will end up owning your home, whether they will close, or what their intentions are.</p>
+      <p><strong>A real buyer's name — their actual name or their company's name, with no assignee language — is on the contract. Period.</strong></p>
+      <h2>Red Flag #3: The Owner Is an Instagram Guru or Real Estate Coach</h2>
+      <p>If the person making you an offer has a YouTube channel about "how to flip houses with no money down," runs a coaching program, or posts lifestyle content about real estate investing — they are almost certainly not the buyer. They are a wholesaler who learned their trade from another wholesaler.</p>
+      <p>Their business model depends on finding distressed sellers, locking up contracts at low prices, and selling those contracts to real investors. You are the product, not the client.</p>
+      <h2>Red Flag #4: They Tell You They're the Buyer — But Can't Prove It</h2>
+      <p>Every wholesaler in Fresno will look you in the eye and tell you they are the one buying your home. They are trained to say this. Ask them to show you proof of funds in their personal or company name — not a transactional funding letter, not a line of credit from a hard money lender, not a partner's account.</p>
+      <p>A real buyer has their own capital. If they hesitate, deflect, or show you a letter from a hard money lender they've never used before, you are talking to a wholesaler.</p>
+      <h2>Red Flag #5: They Can't Name the Title Company</h2>
+      <p>A real buyer has a preferred title company they work with regularly. They can give you a name and phone number immediately. A wholesaler often doesn't know yet because they haven't found the real buyer — and the real buyer will choose the title company.</p>
+      <h2>What California Law Says (And Doesn't)</h2>
+      <p>Arizona, Illinois, Oklahoma, Georgia, and several other states have passed laws specifically regulating wholesale real estate transactions — requiring disclosure, limiting assignment fees, or banning the practice outright in certain forms. California has not. There is currently no state law requiring wholesalers to disclose that they are not the end buyer. You are on your own — which is exactly why knowing these red flags matters.</p>
+      <h2>What to Do Instead</h2>
+      <p>I only know a small handful of real cash buyers in Fresno — people with their own capital who close on the deals they agree to. None of them rank on Google. They don't need to. They have deal flow from people like me.</p>
+      <p>If we can't agree on a price, I will personally introduce you to the real buyers I trust. Not a list — a personal introduction to people I have worked with and vouch for.</p>
+      <p>Want to talk to an actual buyer? <strong>Call (559) 281-8016</strong> or fill out the form at <a href="/contact">alderheritagehomes.com/contact</a>. I respond same day.</p>
+    </div>
+  ),
+
+  "dont-hire-friend-family-realtor-fresno": (
+    <div className="prose-heritage">
+      <p>This is a conversation nobody wants to have — but it's one of the most important ones you can have before you sell your home.</p>
+      <p>You have a friend. Or a cousin. Or a neighbor who just got their real estate license. They're excited. They'd love to represent you. You want to support them. And honestly, you don't want the holidays to be weird.</p>
+      <p>Here's what I'll tell you, as someone who has been in the Fresno real estate market for years and whose broker has closed over 1,850 transactions: <strong>the reasons you want to hire them are exactly the reasons you shouldn't.</strong></p>
+      <h2>Real Estate Is Not a Part-Time Profession — Even Though California Lets It Be</h2>
+      <p>In Canada, you cannot hold a real estate license and maintain another job or income source. You are either a full-time real estate professional — with all the continuing education, regulatory oversight, and accountability that entails — or you are not licensed at all. The profession is treated with the same seriousness as law or medicine.</p>
+      <p>The United States has not adopted this standard. California allows part-time real estate licensing. That doesn't mean you have to accept a part-time professional for the most significant financial transaction of your life.</p>
+      <h2>In Many States, an Attorney Must Be Involved</h2>
+      <p>In New York, Massachusetts, Georgia, South Carolina, Connecticut, and other states, a licensed real estate attorney must be present at closing or review the purchase contract. Why? Because real estate is a complex legal transaction involving your most significant financial asset.</p>
+      <p>A part-time agent who has never worked in an attorney-required state has no frame of reference for how much legal complexity can exist in a real estate transaction. An expert knows when to call an attorney — and has one ready. A part-timer thinks they can handle it. The difference between those two positions can cost you tens of thousands of dollars.</p>
+      <h2>The Relationship Makes Honest Advice Impossible</h2>
+      <p>A good agent tells you hard truths: your price is too high, the inspection revealed serious problems, the buyer's offer is the best you'll get. Your friend or cousin can't say those things to you without it becoming personal. And you can't hear them the same way from someone you love.</p>
+      <p>The professional distance that makes an agent effective is gone the moment it's someone you see at Thanksgiving. You both know it. Neither of you will say it.</p>
+      <h2>When It Goes Wrong, Christmas Gets Awkward</h2>
+      <p>You know what's more awkward than not hiring your family member? Hiring them, having the deal fall apart, losing $20,000 in a bad negotiation, or discovering a disclosure issue six months after closing — and then seeing them at every family gathering for the rest of your life.</p>
+      <p>The money and the relationship are both at risk. Protecting one means protecting both.</p>
+      <h2>What to Do Instead</h2>
+      <p>My broker has completed over 1,850 transactions over a 25-year career in the Fresno market. The agents I refer are people I have worked alongside on real transactions — not people I met at a networking event. When I refer you to a listing agent, I tell you exactly why I trust them and what their track record looks like.</p>
+      <p>If you want a cash offer, I'm the buyer. If you want a traditional listing, I'll connect you with someone who has earned that trust through results — not through being your cousin.</p>
+      <p>And if your friend really is a great agent? They'll understand completely when you tell them you need to keep the relationship and the transaction separate. A truly great professional will respect that. If they're offended, that tells you something about their professionalism.</p>
+      <p>Ready for an honest conversation? <strong>Call (559) 281-8016</strong> or visit <a href="/contact">alderheritagehomes.com/contact</a>.</p>
+    </div>
+  ),
 };
 
 export default function BlogPost() {
