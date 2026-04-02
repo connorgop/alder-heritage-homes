@@ -3,22 +3,43 @@
    Heritage Warmth design: Terracotta + Slate Green
    - Mobile: sticky bottom bar (full-width)
    - Desktop: floating pill (bottom-right) + slide-up quick form
+   Forms submit to Formspree → connor@primeinvestpartners.com
    ============================================================ */
 import { useState } from "react";
 import { Link } from "wouter";
-import { Phone, X, ArrowRight, ChevronUp } from "lucide-react";
+import { Phone, X, ArrowRight, ChevronUp, Loader2 } from "lucide-react";
+import { useFormSubmit } from "@/hooks/useFormSubmit";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 
+const inputStyle = {
+  background: "oklch(0.97 0.015 85)",
+  border: "1px solid oklch(0.88 0.02 85)",
+  fontFamily: "'Nunito Sans', sans-serif",
+  color: "oklch(0.22 0.01 60)",
+};
+
 export default function FloatingCTA() {
   const [formOpen, setFormOpen] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", address: "", situation: "" });
+  const { state, errorMessage, submit, reset } = useFormSubmit();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    await submit({
+      name: form.name,
+      phone: form.phone,
+      address: form.address,
+      situation: form.situation,
+      _source: "Floating CTA Widget",
+    });
+  };
+
+  const handleClose = () => {
+    setFormOpen(false);
+    reset();
+    setForm({ name: "", phone: "", address: "", situation: "" });
   };
 
   return (
@@ -52,7 +73,7 @@ export default function FloatingCTA() {
                 </p>
               </div>
               <button
-                onClick={() => { setFormOpen(false); setSubmitted(false); }}
+                onClick={handleClose}
                 className="rounded-full p-1 hover:bg-white/20 transition-colors"
                 style={{ color: "white" }}
               >
@@ -60,7 +81,7 @@ export default function FloatingCTA() {
               </button>
             </div>
 
-            {submitted ? (
+            {state === "success" ? (
               <div className="p-6 text-center">
                 <div className="text-3xl mb-3">🎉</div>
                 <p className="font-bold text-lg mb-2" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
@@ -81,7 +102,7 @@ export default function FloatingCTA() {
                   value={form.name}
                   onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
                   className="w-full px-4 py-2.5 rounded-lg text-sm outline-none transition-all"
-                  style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)" }}
+                  style={inputStyle}
                   onFocus={e => (e.target.style.borderColor = "oklch(0.55 0.13 42)")}
                   onBlur={e => (e.target.style.borderColor = "oklch(0.88 0.02 85)")}
                 />
@@ -92,7 +113,7 @@ export default function FloatingCTA() {
                   value={form.phone}
                   onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
                   className="w-full px-4 py-2.5 rounded-lg text-sm outline-none transition-all"
-                  style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)" }}
+                  style={inputStyle}
                   onFocus={e => (e.target.style.borderColor = "oklch(0.55 0.13 42)")}
                   onBlur={e => (e.target.style.borderColor = "oklch(0.88 0.02 85)")}
                 />
@@ -101,7 +122,7 @@ export default function FloatingCTA() {
                   value={form.address}
                   onChange={e => setForm(f => ({ ...f, address: e.target.value }))}
                   className="w-full px-4 py-2.5 rounded-lg text-sm outline-none transition-all"
-                  style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)" }}
+                  style={inputStyle}
                   onFocus={e => (e.target.style.borderColor = "oklch(0.55 0.13 42)")}
                   onBlur={e => (e.target.style.borderColor = "oklch(0.88 0.02 85)")}
                 />
@@ -109,7 +130,7 @@ export default function FloatingCTA() {
                   value={form.situation}
                   onChange={e => setForm(f => ({ ...f, situation: e.target.value }))}
                   className="w-full px-4 py-2.5 rounded-lg text-sm outline-none"
-                  style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: form.situation ? "oklch(0.22 0.01 60)" : "oklch(0.55 0.01 60)" }}
+                  style={{ ...inputStyle, color: form.situation ? "oklch(0.22 0.01 60)" : "oklch(0.55 0.01 60)" }}
                 >
                   <option value="">My situation...</option>
                   <option value="foreclosure">Facing foreclosure</option>
@@ -120,12 +141,22 @@ export default function FloatingCTA() {
                   <option value="fast-sale">Just need to sell fast</option>
                   <option value="other">Other</option>
                 </select>
+
+                {state === "error" && (
+                  <p className="text-xs text-red-600 text-center">{errorMessage}</p>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-sm text-white transition-all hover:opacity-90"
+                  disabled={state === "submitting"}
+                  className="w-full flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-sm text-white transition-all hover:opacity-90 disabled:opacity-70"
                   style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}
                 >
-                  Get My Cash Offer <ArrowRight size={15} />
+                  {state === "submitting" ? (
+                    <><Loader2 size={15} className="animate-spin" /> Sending...</>
+                  ) : (
+                    <>Get My Cash Offer <ArrowRight size={15} /></>
+                  )}
                 </button>
                 <p className="text-xs text-center" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
                   No obligation · We match or beat any offer
@@ -137,8 +168,8 @@ export default function FloatingCTA() {
 
         {/* Floating pill button */}
         <button
-          onClick={() => { setFormOpen(o => !o); setSubmitted(false); }}
-          className="flex items-center gap-3 px-6 py-3.5 rounded-full font-bold text-white shadow-2xl transition-all hover:scale-105 hover:shadow-terracotta"
+          onClick={() => { setFormOpen(o => !o); reset(); }}
+          className="flex items-center gap-3 px-6 py-3.5 rounded-full font-bold text-white shadow-2xl transition-all hover:scale-105"
           style={{
             background: formOpen ? "oklch(0.28 0.05 155)" : "oklch(0.55 0.13 42)",
             fontFamily: "'Nunito Sans', sans-serif",

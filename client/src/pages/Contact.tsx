@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import { Phone, Mail, MapPin, Clock, CheckCircle2, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, CheckCircle2, ArrowRight, Loader2 } from "lucide-react";
+import { useFormSubmit } from "@/hooks/useFormSubmit";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -21,12 +22,20 @@ export default function Contact() {
   const [form, setForm] = useState({
     name: "", phone: "", email: "", address: "", situation: "", message: "", timeline: ""
   });
-  const [submitted, setSubmitted] = useState(false);
+  const { state, errorMessage, submit } = useFormSubmit();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would send to a backend or form service
-    setSubmitted(true);
+    await submit({
+      name: form.name,
+      phone: form.phone,
+      email: form.email,
+      address: form.address,
+      situation: form.situation,
+      timeline: form.timeline,
+      message: form.message,
+      _source: "Contact Page Form",
+    });
   };
 
   return (
@@ -52,14 +61,14 @@ export default function Contact() {
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Form */}
             <div className="lg:col-span-2">
-              {submitted ? (
+              {state === "success" ? (
                 <div className="p-10 rounded-2xl text-center" style={{ background: "white", border: "2px solid oklch(0.55 0.13 42)" }}>
                   <CheckCircle2 size={56} className="mx-auto mb-4" style={{ color: "oklch(0.55 0.13 42)" }} />
                   <h2 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
                     We Got Your Request!
                   </h2>
                   <p className="text-lg mb-6" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Thank you, {form.name}. We'll review your property information and reach out within 24 hours with your cash offer.
+                    Thank you, {form.name || "there"}. We'll review your property information and reach out within 24 hours with your cash offer.
                   </p>
                   <p className="font-bold" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.28 0.05 155)" }}>
                     Need to talk now? Call us: <a href={PHONE_HREF} style={{ color: "oklch(0.55 0.13 42)" }}>{PHONE}</a>
@@ -192,12 +201,20 @@ export default function Contact() {
                       />
                     </div>
 
+                    {state === "error" && (
+                      <p className="text-sm text-red-600 text-center py-2">{errorMessage}</p>
+                    )}
                     <button
                       type="submit"
-                      className="w-full flex items-center justify-center gap-2 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90"
+                      disabled={state === "submitting"}
+                      className="w-full flex items-center justify-center gap-2 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 disabled:opacity-70"
                       style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}
                     >
-                      Get My Free Cash Offer <ArrowRight size={20} />
+                      {state === "submitting" ? (
+                        <><Loader2 size={20} className="animate-spin" /> Sending Your Request...</>
+                      ) : (
+                        <>Get My Free Cash Offer <ArrowRight size={20} /></>
+                      )}
                     </button>
                     <p className="text-xs text-center" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                       By submitting, you agree to be contacted about your property. We never sell your information.

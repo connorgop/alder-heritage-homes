@@ -5,11 +5,12 @@
             rent-back/holdback, fast sale, inherited homes
    ============================================================ */
 import { useState, useEffect, useRef } from "react";
+import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import {
   Phone, ArrowRight, CheckCircle2, Clock, Shield, Star,
-  Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Heart
+  Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Heart, Loader2
 } from "lucide-react";
 
 const PHONE = "(559) 281-8016";
@@ -152,8 +153,8 @@ function AnimatedCounter({ target, suffix = "" }: { target: number | string; suf
 }
 
 function InlineOfferForm() {
-  const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", email: "", address: "", situation: "", timeline: "" });
+  const { state, errorMessage, submit } = useFormSubmit();
 
   const inputStyle = {
     background: "oklch(1 0 0 / 0.06)",
@@ -168,7 +169,7 @@ function InlineOfferForm() {
     transition: "border-color 0.2s",
   };
 
-  if (submitted) {
+  if (state === "success") {
     return (
       <div className="rounded-2xl p-10 text-center" style={{ background: "oklch(1 0 0 / 0.06)", border: "1.5px solid oklch(1 0 0 / 0.15)" }}>
         <div className="text-5xl mb-4">🎉</div>
@@ -191,7 +192,7 @@ function InlineOfferForm() {
         <p className="text-sm mt-1" style={{ color: "oklch(0.90 0.04 85)", fontFamily: "'DM Mono', monospace" }}>No obligation · We respond within 24 hours</p>
       </div>
       <form
-        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        onSubmit={async (e) => { e.preventDefault(); await submit({ ...form, _source: "Homepage Inline Form" }); }}
         className="p-8 space-y-4"
       >
         <div className="grid sm:grid-cols-2 gap-4">
@@ -259,12 +260,20 @@ function InlineOfferForm() {
             <option value="flexible">I'm flexible</option>
           </select>
         </div>
+        {state === "error" && (
+          <p className="text-sm text-red-400 text-center">{errorMessage}</p>
+        )}
         <button
           type="submit"
-          className="w-full flex items-center justify-center gap-3 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 hover:scale-[1.01]"
+          disabled={state === "submitting"}
+          className="w-full flex items-center justify-center gap-3 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 hover:scale-[1.01] disabled:opacity-70"
           style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}
         >
-          Get My Free Cash Offer <ArrowRight size={20} />
+          {state === "submitting" ? (
+            <><Loader2 size={20} className="animate-spin" /> Sending...</>
+          ) : (
+            <>Get My Free Cash Offer <ArrowRight size={20} /></>
+          )}
         </button>
         <p className="text-center text-xs" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
           🏆 We match or beat any cash offer · No obligation
