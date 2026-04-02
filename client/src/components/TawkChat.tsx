@@ -10,9 +10,9 @@
    ============================================================ */
 import { useEffect } from "react";
 
-// ⬇️ REPLACE THESE with your real tawk.to IDs after signup
-const TAWK_PROPERTY_ID = "YOUR_PROPERTY_ID";
-const TAWK_WIDGET_ID = "default";
+// ✅ Real tawk.to IDs — Alder Heritage Homes
+const TAWK_PROPERTY_ID = "69ced4668153c41c3b4dcdb1";
+const TAWK_WIDGET_ID = "1jl7urchr";
 
 declare global {
   interface Window {
@@ -26,8 +26,7 @@ declare global {
 
 export default function TawkChat() {
   useEffect(() => {
-    // Don't load if placeholder ID hasn't been replaced yet
-    if (TAWK_PROPERTY_ID === "YOUR_PROPERTY_ID") return;
+    // IDs are set — proceed to load
 
     window.Tawk_API = window.Tawk_API || {};
     window.Tawk_LoadStart = new Date();
