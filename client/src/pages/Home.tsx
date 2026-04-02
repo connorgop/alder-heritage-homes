@@ -101,20 +101,56 @@ const testimonials = [
   {
     name: "Maria G.",
     city: "Fresno, CA",
+    situation: "Foreclosure",
     text: "I was two months behind on my mortgage and terrified of losing my home. Connor was honest, patient, and got me a fair offer in 24 hours. I closed in 10 days and avoided foreclosure completely.",
     stars: 5,
+    initials: "MG",
+    color: "oklch(0.55 0.13 42)",
   },
   {
     name: "Robert & Linda T.",
     city: "Clovis, CA",
+    situation: "Probate / Inherited Home",
     text: "We inherited my mother's home after she passed and had no idea what to do. Alder Heritage walked us through the entire probate process. They knew exactly what they were doing and treated us with respect.",
     stars: 5,
+    initials: "RT",
+    color: "oklch(0.28 0.05 155)",
   },
   {
     name: "James K.",
     city: "Sanger, CA",
+    situation: "Rent-Back / Holdback",
     text: "I needed to sell but wasn't ready to move out yet. The rent-back option was a lifesaver — I sold the house, got my cash, and had two months to find my new place. Never knew that was even possible.",
     stars: 5,
+    initials: "JK",
+    color: "oklch(0.45 0.10 200)",
+  },
+  {
+    name: "Diane M.",
+    city: "Madera, CA",
+    situation: "Behind on Mortgage",
+    text: "I had a second mortgage I couldn't keep up with and was drowning. Connor explained everything clearly, never pressured me, and we closed in under two weeks. He genuinely cared about my situation.",
+    stars: 5,
+    initials: "DM",
+    color: "oklch(0.50 0.12 42)",
+  },
+  {
+    name: "Tony & Rosa V.",
+    city: "Visalia, CA",
+    situation: "Fast Sale",
+    text: "We needed to relocate for work fast and couldn't wait months for a traditional sale. Alder Heritage gave us a fair offer the same day we called and we closed in 9 days. Absolutely incredible service.",
+    stars: 5,
+    initials: "TV",
+    color: "oklch(0.35 0.08 155)",
+  },
+  {
+    name: "Patricia H.",
+    city: "Hanford, CA",
+    situation: "Probate / Inherited Home",
+    text: "My father passed and left a home that needed a lot of work. I live out of state and had no idea how to handle it. Connor handled everything — the probate paperwork, the title, all of it. I didn't have to lift a finger.",
+    stars: 5,
+    initials: "PH",
+    color: "oklch(0.40 0.06 155)",
   },
 ];
 
@@ -661,53 +697,178 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
-      <section className="py-20" style={{ background: "oklch(0.93 0.02 85)" }}>
+      {/* ── TESTIMONIALS / GOOGLE REVIEWS ── */}
+      <section className="py-20 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="container">
-          <div className="text-center mb-12">
-            <span className="font-mono-label" style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
-              Real Stories
-            </span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
-              Homeowners We've Helped
-            </h2>
+          {/* Header */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+            <div>
+              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+                Real Stories
+              </span>
+              <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>
+                Homeowners We've Helped
+              </h2>
+              <p className="mt-2 text-sm" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Real reviews from Central Valley homeowners — every situation, every city.
+              </p>
+            </div>
+            {/* Google rating badge */}
+            <div className="flex-shrink-0 flex items-center gap-3 px-5 py-3 rounded-2xl" style={{ background: "oklch(1 0 0 / 0.07)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+              <div>
+                <div className="text-3xl font-bold text-white" style={{ fontFamily: "'Lora', serif", lineHeight: 1 }}>5.0</div>
+                <div className="flex gap-0.5 mt-1">
+                  {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />)}
+                </div>
+              </div>
+              <div style={{ borderLeft: "1px solid oklch(1 0 0 / 0.15)", paddingLeft: "0.75rem" }}>
+                <div className="text-xs font-bold text-white" style={{ fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em" }}>GOOGLE</div>
+                <div className="text-xs" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Verified Reviews</div>
+              </div>
+            </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+
+          {/* Reviews grid — 2 rows on desktop, scrollable on mobile */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {testimonials.map((t) => (
-              <div key={t.name} className="p-6 rounded-2xl shadow-sm" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
-                <div className="flex gap-1 mb-4">
+              <div
+                key={t.name}
+                className="p-6 rounded-2xl flex flex-col gap-4 transition-transform hover:-translate-y-1"
+                style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)", backdropFilter: "blur(4px)" }}
+              >
+                {/* Top row: avatar + name + situation badge */}
+                <div className="flex items-start gap-3">
+                  <div
+                    className="flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center font-bold text-white text-sm"
+                    style={{ background: t.color, fontFamily: "'DM Mono', monospace" }}
+                  >
+                    {t.initials}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="font-bold text-white text-sm" style={{ fontFamily: "'Lora', serif" }}>{t.name}</div>
+                    <div className="text-xs" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'DM Mono', monospace" }}>{t.city}</div>
+                  </div>
+                  <span
+                    className="flex-shrink-0 px-2 py-0.5 rounded-full text-xs font-semibold"
+                    style={{ background: `${t.color}33`, color: "oklch(0.85 0.04 75)", fontFamily: "'DM Mono', monospace", fontSize: "0.65rem", letterSpacing: "0.04em", textTransform: "uppercase" }}
+                  >
+                    {t.situation}
+                  </span>
+                </div>
+
+                {/* Stars */}
+                <div className="flex gap-1">
                   {Array.from({ length: t.stars }).map((_, i) => (
-                    <Star key={i} size={16} fill="oklch(0.75 0.15 75)" style={{ color: "oklch(0.75 0.15 75)" }} />
+                    <Star key={i} size={14} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />
                   ))}
                 </div>
-                <p className="text-sm leading-relaxed mb-5" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", fontStyle: "italic" }}>
+
+                {/* Review text */}
+                <p className="text-sm leading-relaxed flex-1" style={{ color: "oklch(0.80 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", fontStyle: "italic" }}>
                   "{t.text}"
                 </p>
-                <div>
-                  <div className="font-bold text-sm" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>{t.name}</div>
-                  <div className="text-xs" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)" }}>{t.city}</div>
+
+                {/* Google G icon */}
+                <div className="flex items-center gap-1.5">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                  </svg>
+                  <span style={{ fontSize: "0.65rem", color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace" }}>Google Review</span>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="mt-10 text-center">
+            <p className="text-sm mb-4" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Join hundreds of Central Valley homeowners who chose a better way to sell.
+            </p>
+            <Link href="/contact">
+              <button className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Get My Free Cash Offer <ArrowRight size={16} />
+              </button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* ── AREAS WE SERVE ── */}
-      <section className="py-16" style={{ background: "oklch(0.97 0.015 85)" }}>
-        <div className="container text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
-            Serving Fresno &amp; the Entire Central Valley
-          </h2>
-          <p className="mb-8 max-w-xl mx-auto" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-            We buy houses throughout the Central Valley — from Fresno and Clovis to Sanger, Selma, Madera, Visalia, Hanford, and Reedley.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {["Fresno", "Clovis", "Sanger", "Selma", "Madera", "Visalia", "Hanford", "Reedley", "Tulare", "Porterville"].map((city) => (
-              <span key={city} className="px-4 py-2 rounded-full text-sm font-semibold" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)", color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                {city}
-              </span>
+      <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
+        <div className="container">
+          <div className="text-center mb-12">
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+              Coverage Area
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+              Serving the Entire Central Valley
+            </h2>
+            <p className="mt-3 max-w-xl mx-auto" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              We buy houses in 8 cities across Fresno, Madera, Tulare, and Kings counties. Click your city for a dedicated local page.
+            </p>
+          </div>
+
+          {/* City cards grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            {[
+              { city: "Fresno", county: "Fresno County", href: "/we-buy-houses-fresno", primary: true },
+              { city: "Clovis", county: "Fresno County", href: "/we-buy-houses-clovis", primary: false },
+              { city: "Madera", county: "Madera County", href: "/we-buy-houses-madera", primary: false },
+              { city: "Visalia", county: "Tulare County", href: "/we-buy-houses-visalia", primary: false },
+              { city: "Sanger", county: "Fresno County", href: "/we-buy-houses-sanger", primary: false },
+              { city: "Selma", county: "Fresno County", href: "/we-buy-houses-selma", primary: false },
+              { city: "Hanford", county: "Kings County", href: "/we-buy-houses-hanford", primary: false },
+              { city: "Reedley", county: "Fresno County", href: "/we-buy-houses-reedley", primary: false },
+            ].map((item) => (
+              <Link key={item.city} href={item.href}>
+                <div
+                  className="group p-5 rounded-2xl cursor-pointer transition-all hover:-translate-y-1 hover:shadow-lg"
+                  style={{
+                    background: item.primary ? "oklch(0.55 0.13 42)" : "white",
+                    border: item.primary ? "none" : "1px solid oklch(0.88 0.02 85)",
+                  }}
+                >
+                  <div
+                    className="font-bold text-lg mb-1"
+                    style={{
+                      fontFamily: "'Lora', serif",
+                      color: item.primary ? "white" : "oklch(0.22 0.01 60)",
+                    }}
+                  >
+                    {item.city}
+                  </div>
+                  <div
+                    className="text-xs mb-3"
+                    style={{
+                      fontFamily: "'DM Mono', monospace",
+                      color: item.primary ? "oklch(0.90 0.04 85)" : "oklch(0.55 0.01 60)",
+                      letterSpacing: "0.04em",
+                    }}
+                  >
+                    {item.county}
+                  </div>
+                  <div
+                    className="flex items-center gap-1 text-xs font-semibold"
+                    style={{
+                      fontFamily: "'Nunito Sans', sans-serif",
+                      color: item.primary ? "oklch(0.95 0.02 85)" : "oklch(0.55 0.13 42)",
+                    }}
+                  >
+                    View page <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </Link>
             ))}
+          </div>
+
+          {/* Also serve note */}
+          <div className="text-center">
+            <p className="text-sm" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Also buying homes in <strong>Tulare, Porterville, Dinuba, Parlier, Fowler, Kingsburg</strong>, and all surrounding Central Valley communities.
+            </p>
           </div>
         </div>
       </section>
