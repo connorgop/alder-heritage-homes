@@ -25,6 +25,7 @@ const services = [
   { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
   { label: "Divorce Home Sale", href: "/sell-house-divorce" },
   { label: "Tired Landlord", href: "/tired-landlord" },
+  { label: "Portfolio Sale & 1031 Exchange", href: "/sell-rental-portfolio" },
   { label: "Junk Removal — Read This First", href: "/junk-removal-before-selling" },
   { label: "⚠️ Vacant Property Warning", href: "/vacant-property-warning" },
 ];

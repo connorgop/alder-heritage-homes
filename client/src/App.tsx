@@ -30,6 +30,7 @@ import JunkRemoval from "./pages/services/JunkRemoval";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import ArmRateChange from "./pages/services/ArmRateChange";
 import CantAffordHome from "./pages/services/CantAffordHome";
+import LandlordPortfolioSale from "./pages/services/LandlordPortfolioSale";
 
 // Google Ads landing pages (no nav, conversion-optimized)
 import ArmRateAd from "./pages/ads/ArmRateAd";
@@ -79,6 +80,7 @@ function Router() {
       <Route path="/arm-rate-change-help" component={ArmRateChange} />
       <Route path="/cant-afford-my-home" component={CantAffordHome} />
       <Route path="/vacant-property-warning" component={VacantPropertyWarning} />
+      <Route path="/sell-rental-portfolio" component={LandlordPortfolioSale} />
 
       {/* City pages */}
       <Route path="/we-buy-houses-fresno" component={FresnoPage} />

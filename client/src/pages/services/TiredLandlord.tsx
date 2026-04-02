@@ -48,7 +48,19 @@ export default function TiredLandlord() {
         },
         {
           heading: "Multiple Properties? We Can Buy Them All.",
-          body: "If you're a landlord with a portfolio of properties you want to exit — two houses, five houses, or more — we can make offers on all of them and close them on a coordinated timeline. Selling a portfolio to a single buyer simplifies everything: one negotiation, one set of paperwork, one closing process.",
+          body: (
+            <div>
+              <p style={{ marginBottom: "1rem" }}>
+                If you're a landlord with a portfolio of properties you want to exit — two houses, five houses, or more — we can make offers on all of them and close them on a coordinated timeline. Selling a portfolio to a single buyer simplifies everything: one negotiation, one set of paperwork, one closing process.
+              </p>
+              <p style={{ marginBottom: "1rem" }}>
+                Our entity <strong>Skyline REI</strong> purchased 4 single-family homes in downtown Fresno for <strong>$1,100,000</strong> — with the tenants still in the homes, no inspections, and a quick close. The seller had been tied up by two separate wholesalers who promised to close and never did. We are the real buyer. We also purchased <strong>8 single-family homes</strong> from one landlord in 2024 in a single transaction.
+              </p>
+              <p>
+                A larger transaction also enables a <strong>1031 exchange</strong> into something more stable with less maintenance — a net-lease commercial property, a multifamily building, or a larger residential asset. Connor will connect you with a trusted person in his broker network who can help you identify a replacement property within the required timeline. He does not take a commission on that transaction.
+              </p>
+            </div>
+          ),
         },
       ]}
       benefits={[
@@ -86,6 +98,7 @@ export default function TiredLandlord() {
       ctaTitle="Ready to Stop Being a Landlord? Let's Talk."
       ctaBody="Get a cash offer and an independent broker opinion on your Fresno rental property. No repairs, no evictions, no hassle."
       relatedLinks={[
+        { label: "Portfolio Sales & 1031 Exchange", href: "/sell-rental-portfolio" },
         { label: "Sell Your House Fast in Fresno", href: "/sell-house-fast" },
         { label: "Probate & Inherited Homes", href: "/probate-inherited-homes" },
         { label: "Why We're Different", href: "/why-choose-us" },
