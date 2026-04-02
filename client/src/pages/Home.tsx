@@ -151,6 +151,129 @@ function AnimatedCounter({ target, suffix = "" }: { target: number | string; suf
   );
 }
 
+function InlineOfferForm() {
+  const [submitted, setSubmitted] = useState(false);
+  const [form, setForm] = useState({ name: "", phone: "", email: "", address: "", situation: "", timeline: "" });
+
+  const inputStyle = {
+    background: "oklch(1 0 0 / 0.06)",
+    border: "1px solid oklch(1 0 0 / 0.18)",
+    color: "white",
+    fontFamily: "'Nunito Sans', sans-serif",
+    fontSize: "0.95rem",
+    borderRadius: "0.5rem",
+    padding: "0.75rem 1rem",
+    width: "100%",
+    outline: "none",
+    transition: "border-color 0.2s",
+  };
+
+  if (submitted) {
+    return (
+      <div className="rounded-2xl p-10 text-center" style={{ background: "oklch(1 0 0 / 0.06)", border: "1.5px solid oklch(1 0 0 / 0.15)" }}>
+        <div className="text-5xl mb-4">🎉</div>
+        <h3 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: "'Lora', serif" }}>We'll Be in Touch Soon!</h3>
+        <p className="mb-6" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+          Expect a call or text within a few hours. Or reach us directly:
+        </p>
+        <a href={PHONE_HREF} className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+          <Phone size={18} /> {PHONE}
+        </a>
+      </div>
+    );
+  }
+
+  return (
+    <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ background: "oklch(1 0 0 / 0.06)", border: "1.5px solid oklch(1 0 0 / 0.15)" }}>
+      {/* Form header */}
+      <div className="px-8 py-5" style={{ background: "oklch(0.55 0.13 42)" }}>
+        <h3 className="text-xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Get Your Free Cash Offer</h3>
+        <p className="text-sm mt-1" style={{ color: "oklch(0.90 0.04 85)", fontFamily: "'DM Mono', monospace" }}>No obligation · We respond within 24 hours</p>
+      </div>
+      <form
+        onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+        className="p-8 space-y-4"
+      >
+        <div className="grid sm:grid-cols-2 gap-4">
+          <input
+            required
+            placeholder="Your name *"
+            value={form.name}
+            onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
+            style={inputStyle}
+            onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")}
+            onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")}
+          />
+          <input
+            required
+            type="tel"
+            placeholder="Phone number *"
+            value={form.phone}
+            onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
+            style={inputStyle}
+            onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")}
+            onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")}
+          />
+        </div>
+        <input
+          type="email"
+          placeholder="Email address (optional)"
+          value={form.email}
+          onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
+          style={inputStyle}
+          onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")}
+          onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")}
+        />
+        <input
+          placeholder="Property address"
+          value={form.address}
+          onChange={e => setForm(f => ({ ...f, address: e.target.value }))}
+          style={inputStyle}
+          onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")}
+          onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")}
+        />
+        <div className="grid sm:grid-cols-2 gap-4">
+          <select
+            value={form.situation}
+            onChange={e => setForm(f => ({ ...f, situation: e.target.value }))}
+            style={{ ...inputStyle, color: form.situation ? "white" : "oklch(0.65 0.01 60)" }}
+          >
+            <option value="">My situation...</option>
+            <option value="foreclosure">Facing foreclosure</option>
+            <option value="behind">Behind on mortgage</option>
+            <option value="second-mortgage">Second mortgage / HELOC</option>
+            <option value="inherited">Inherited / probate home</option>
+            <option value="rent-back">Sell &amp; stay (rent-back)</option>
+            <option value="fast-sale">Just need to sell fast</option>
+            <option value="other">Other</option>
+          </select>
+          <select
+            value={form.timeline}
+            onChange={e => setForm(f => ({ ...f, timeline: e.target.value }))}
+            style={{ ...inputStyle, color: form.timeline ? "white" : "oklch(0.65 0.01 60)" }}
+          >
+            <option value="">My timeline...</option>
+            <option value="asap">As soon as possible</option>
+            <option value="30days">Within 30 days</option>
+            <option value="60days">Within 60 days</option>
+            <option value="flexible">I'm flexible</option>
+          </select>
+        </div>
+        <button
+          type="submit"
+          className="w-full flex items-center justify-center gap-3 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 hover:scale-[1.01]"
+          style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}
+        >
+          Get My Free Cash Offer <ArrowRight size={20} />
+        </button>
+        <p className="text-center text-xs" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
+          🏆 We match or beat any cash offer · No obligation
+        </p>
+      </form>
+    </div>
+  );
+}
+
 export default function HomePage() {
   return (
     <Layout>
@@ -580,30 +703,44 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── FINAL CTA ── */}
+      {/* ── FINAL CTA + INLINE OFFER FORM ── */}
       <section className="py-24 relative overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, oklch(0.55 0.13 42) 0%, transparent 50%), radial-gradient(circle at 80% 50%, oklch(0.28 0.05 155) 0%, transparent 50%)" }} />
-        <div className="container relative z-10 text-center">
-          <Heart size={36} className="mx-auto mb-6" style={{ color: "oklch(0.55 0.13 42)" }} />
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif" }}>
-            Ready to Talk? There's No Obligation.
-          </h2>
-          <p className="text-lg mb-10 max-w-2xl mx-auto" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-            We'll listen to your situation, answer every question honestly, and give you a fair cash offer — no pressure, no tricks, no wholesalers. Just a straightforward conversation with a licensed local expert.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <button className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}>
-                Get My Free Cash Offer <ArrowRight size={20} />
-              </button>
-            </Link>
-            <a href={PHONE_HREF} className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
-              <Phone size={20} /> {PHONE}
-            </a>
+        <div className="container relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: headline + trust */}
+            <div>
+              <Heart size={36} className="mb-6" style={{ color: "oklch(0.55 0.13 42)" }} />
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
+                Ready for Your Free Cash Offer?
+              </h2>
+              <p className="text-lg mb-8 leading-relaxed" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Fill out the form and we'll get back to you within a few hours. No obligation, no pressure — just a fair, honest offer from a licensed local buyer.
+              </p>
+              <div className="space-y-4 mb-8">
+                {[
+                  { icon: "🏆", text: "We match or beat any cash offer — guaranteed" },
+                  { icon: "⚡", text: "Close in as little as 7 days" },
+                  { icon: "🛡️", text: "Licensed CA Agent DRE #02219124" },
+                  { icon: "🏠", text: "Buy as-is — no repairs, no cleaning" },
+                ].map((item) => (
+                  <div key={item.text} className="flex items-center gap-3">
+                    <span style={{ fontSize: "1.2rem" }}>{item.icon}</span>
+                    <span className="font-medium" style={{ color: "oklch(0.82 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{item.text}</span>
+                  </div>
+                ))}
+              </div>
+              <a href={PHONE_HREF} className="inline-flex items-center gap-2 font-bold text-lg" style={{ color: "oklch(0.75 0.10 42)", fontFamily: "'DM Mono', monospace" }}>
+                <Phone size={20} /> {PHONE}
+              </a>
+              <p className="mt-2 text-xs" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
+                Licensed CA Real Estate Agent · DRE #02219124
+              </p>
+            </div>
+
+            {/* Right: inline offer form */}
+            <InlineOfferForm />
           </div>
-          <p className="mt-6 text-sm" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
-            Licensed CA Real Estate Agent · DRE #02219124 · Fresno, CA
-          </p>
         </div>
       </section>
     </Layout>

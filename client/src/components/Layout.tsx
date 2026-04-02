@@ -6,6 +6,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
+import FloatingCTA from "./FloatingCTA";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -240,6 +241,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Page content */}
       <main className="flex-1">{children}</main>
+
+      {/* Floating / sticky CTA — appears on all pages */}
+      <FloatingCTA />
 
       {/* Footer */}
       <footer style={{ background: "oklch(0.22 0.01 60)", color: "oklch(0.80 0.01 60)" }}>
