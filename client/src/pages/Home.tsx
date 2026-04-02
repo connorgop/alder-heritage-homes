@@ -18,6 +18,8 @@ const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp";
+const CONNOR_CLIENT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-client-clovis_ca91f4c9.webp";
+const ILLINOIS_FLIP_VIDEO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/illinois-ave-flip-fresno_924b59f9.mov";
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
 const FORECLOSURE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/foreclosure-help-TU46LJDiCeKVaTFvCVuw8j.webp";
 const VIDEO_INTRO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv23_1c0c77d4.MP4";
@@ -813,6 +815,121 @@ export default function HomePage() {
                 Get My Free Cash Offer <ArrowRight size={16} />
               </button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FEATURED DEAL: CLOVIS CASE STUDY ── */}
+      <section className="py-20" style={{ background: "oklch(0.93 0.02 85)" }}>
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-14 items-center max-w-5xl mx-auto">
+            {/* Photo side */}
+            <div className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42)" }}>
+                <img
+                  src={CONNOR_CLIENT_PHOTO}
+                  alt="Connor Alder with a past client in Clovis, California"
+                  className="w-full object-cover"
+                  style={{ maxHeight: "520px", objectPosition: "center top" }}
+                />
+              </div>
+              {/* Floating badge */}
+              <div className="absolute -bottom-5 -right-4 px-5 py-3 rounded-xl shadow-xl" style={{ background: "oklch(0.55 0.13 42)", border: "2px solid white" }}>
+                <div className="text-white font-bold text-sm" style={{ fontFamily: "'Lora', serif" }}>$200,000 Cash</div>
+                <div className="text-xs mt-0.5" style={{ color: "oklch(0.92 0.04 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em" }}>Clovis, CA · As-Is</div>
+              </div>
+            </div>
+            {/* Story side */}
+            <div>
+              <span className="inline-block text-xs font-bold mb-3" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                Real Deal · Clovis, California
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)", lineHeight: 1.25 }}>
+                We Bought a Home Nobody Else Would Touch
+              </h2>
+              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.38 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                The property behind us had a <strong>double homicide</strong> happen inside it. After the tragedy, a squatter moved in and lived there for <strong>two years</strong> — no water, no sewer, the home filled with trash. The property was in a condition most buyers would walk away from without a second look.
+              </p>
+              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.38 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                We bought it for <strong>$200,000 cash, as-is, without even seeing the interior</strong>. The seller — pictured here — needed a solution, not a lecture about condition. We gave her one.
+              </p>
+              <p className="text-base leading-relaxed mb-6" style={{ color: "oklch(0.38 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                This is what "any condition" actually means. Not just cosmetic issues or deferred maintenance — we mean <em>any condition</em>. Crime scenes, squatters, no utilities, full of trash. We have the capital and the experience to close when nobody else will.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                {["Double homicide stigma", "2-year squatter", "No water / no sewer", "Full of trash", "Bought without inspection", "Closed fast"].map((tag) => (
+                  <span key={tag} className="px-3 py-1 rounded-full text-xs font-semibold" style={{ background: "oklch(0.55 0.13 42 / 0.12)", color: "oklch(0.45 0.10 42)", fontFamily: "'DM Mono', monospace", border: "1px solid oklch(0.55 0.13 42 / 0.25)" }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/contact">
+                  <button className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Get My Cash Offer <ArrowRight size={18} />
+                  </button>
+                </Link>
+                <a href={PHONE_HREF} className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)", color: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  <Phone size={18} /> {PHONE}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FEATURED DEAL: ILLINOIS AVE FLIP ── */}
+      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-14 items-center max-w-5xl mx-auto">
+            {/* Story side */}
+            <div>
+              <span className="inline-block text-xs font-bold mb-3" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.75 0.10 42)", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                Real Flip · Illinois Ave, Fresno CA
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white" style={{ fontFamily: "'Lora', serif", lineHeight: 1.25 }}>
+                5 Break-Ins. Bed Bugs. Rats. We Bought It Anyway.
+              </h2>
+              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.78 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                This property on Illinois Ave in Fresno had been broken into <strong className="text-white">five times</strong>. Extensive vandalism throughout. When we purchased it, the home had <strong className="text-white">bed bugs, cockroaches, and rats</strong>. The kind of property most buyers — and all wholesalers — would never touch.
+              </p>
+              <p className="text-base leading-relaxed mb-6" style={{ color: "oklch(0.78 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                We bought it, we flipped it. Watch the video. This is what we do with properties that everyone else walks away from. If you have a home in similar condition — or worse — call us. We have seen it all and we will not flinch.
+              </p>
+              <div className="flex flex-wrap gap-3 mb-6">
+                {["5 break-ins", "Heavy vandalism", "Bed bugs", "Cockroaches", "Rats", "Fresno, CA", "Full flip"].map((tag) => (
+                  <span key={tag} className="px-3 py-1 rounded-full text-xs font-semibold" style={{ background: "oklch(0.55 0.13 42 / 0.25)", color: "oklch(0.88 0.08 75)", fontFamily: "'DM Mono', monospace", border: "1px solid oklch(0.55 0.13 42 / 0.4)" }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link href="/contact">
+                  <button className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Get My Cash Offer <ArrowRight size={18} />
+                  </button>
+                </Link>
+                <a href={PHONE_HREF} className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  <Phone size={18} /> {PHONE}
+                </a>
+              </div>
+            </div>
+            {/* Video side */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42 / 0.5)", aspectRatio: "9/16", maxHeight: "560px" }}>
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-cover"
+                style={{ background: "oklch(0.15 0.01 60)" }}
+              >
+                <source src={ILLINOIS_FLIP_VIDEO} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="absolute top-4 left-4 px-3 py-1.5 rounded-lg" style={{ background: "oklch(0.55 0.13 42)", backdropFilter: "blur(4px)" }}>
+                <span className="text-xs font-bold text-white" style={{ fontFamily: "'DM Mono', monospace", letterSpacing: "0.06em" }}>ILLINOIS AVE · FRESNO</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

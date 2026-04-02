@@ -6,6 +6,8 @@ const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 const VIDEO_CONNOR_INTRO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv24_ddcde10d.MP4";
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
+const CONNOR_CLIENT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-client-clovis_ca91f4c9.webp";
+const ILLINOIS_FLIP_VIDEO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/illinois-ave-flip-fresno_924b59f9.mov";
 
 export default function About() {
   return (
@@ -56,20 +58,12 @@ export default function About() {
               </div>
             </div>
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img src={HANDSHAKE_IMG} alt="Connor at Alder Heritage Homes" className="w-full h-[500px] object-cover" />
+              <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42)" }}>
+                <img src={CONNOR_CLIENT_PHOTO} alt="Connor Alder with a past client in Clovis, California" className="w-full object-cover" style={{ maxHeight: "520px", objectPosition: "center top" }} />
               </div>
-              <div className="absolute -bottom-6 -right-6 p-6 rounded-2xl shadow-xl max-w-xs" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
-                <div className="flex items-center gap-3 mb-3">
-                  <Shield size={24} style={{ color: "oklch(0.55 0.13 42)" }} />
-                  <div>
-                    <div className="font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>Licensed &amp; Accountable</div>
-                    <div className="text-xs" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.50 0.02 60)" }}>CA DRE #02219124</div>
-                  </div>
-                </div>
-                <p className="text-sm" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  Unlike unlicensed wholesalers, we're regulated by the California Department of Real Estate.
-                </p>
+              <div className="absolute -bottom-5 -right-4 px-5 py-3 rounded-xl shadow-xl" style={{ background: "oklch(0.55 0.13 42)", border: "2px solid white" }}>
+                <div className="text-white font-bold text-sm" style={{ fontFamily: "'Lora', serif" }}>Connor &amp; a Past Client</div>
+                <div className="text-xs mt-0.5" style={{ color: "oklch(0.92 0.04 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em" }}>Clovis, CA · $200K Cash Deal</div>
               </div>
             </div>
           </div>
@@ -110,6 +104,53 @@ export default function About() {
                 <p className="text-sm leading-relaxed" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{v.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Real Deals Section */}
+      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="container">
+          <div className="text-center mb-12">
+            <span className="inline-block text-xs font-bold mb-3" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.75 0.10 42)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Proof of Work</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Properties Nobody Else Would Buy</h2>
+            <p className="mt-3 max-w-xl mx-auto" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>These are real transactions. Real properties. Real sellers who needed a real buyer.</p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Clovis deal */}
+            <div className="rounded-2xl overflow-hidden" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+              <div className="p-5" style={{ background: "oklch(0.55 0.13 42)" }}>
+                <div className="text-xs font-bold mb-1" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.92 0.04 85)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Clovis, CA · $200,000 Cash</div>
+                <div className="text-lg font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Double Homicide Property · 2-Year Squatter</div>
+              </div>
+              <div className="p-5">
+                <p className="text-sm leading-relaxed mb-3" style={{ color: "oklch(0.78 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>No water, no sewer, full of trash. Bought as-is without seeing the interior. The seller pictured with Connor needed a solution — we delivered one, fast.</p>
+                <div className="flex flex-wrap gap-2">
+                  {["Double homicide", "2-yr squatter", "No utilities", "Full of trash", "No inspection"].map(t => (
+                    <span key={t} className="px-2 py-0.5 rounded text-xs" style={{ background: "oklch(0.55 0.13 42 / 0.2)", color: "oklch(0.85 0.06 75)", fontFamily: "'DM Mono', monospace" }}>{t}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+            {/* Illinois Ave deal */}
+            <div className="rounded-2xl overflow-hidden" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+              <div className="p-5" style={{ background: "oklch(0.28 0.05 155)" }}>
+                <div className="text-xs font-bold mb-1" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.80 0.03 155)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Illinois Ave · Fresno, CA</div>
+                <div className="text-lg font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>5 Break-Ins · Bed Bugs · Rats · Full Flip</div>
+              </div>
+              <div className="p-5">
+                <div className="rounded-xl overflow-hidden mb-3" style={{ aspectRatio: "16/9" }}>
+                  <video controls playsInline preload="metadata" className="w-full h-full object-cover" style={{ background: "oklch(0.15 0.01 60)" }}>
+                    <source src={ILLINOIS_FLIP_VIDEO} type="video/mp4" />
+                  </video>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {["5 break-ins", "Vandalism", "Bed bugs", "Cockroaches", "Rats", "Full flip"].map(t => (
+                    <span key={t} className="px-2 py-0.5 rounded text-xs" style={{ background: "oklch(0.28 0.05 155 / 0.3)", color: "oklch(0.80 0.03 155)", fontFamily: "'DM Mono', monospace" }}>{t}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
