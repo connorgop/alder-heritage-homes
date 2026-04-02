@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 const PHONE = "(559) 281-8016";
+const VIDEO_REALTORS = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/Realtorsv12_2fbd7b05.MP4";
 const PHONE_HREF = "tel:5592818016";
 
 const warningSignsData = [
@@ -175,6 +176,45 @@ export default function WhyChooseUs() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Video: Why Not Just List With an Agent? */}
+      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <span className="inline-block text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
+                  Hear It From Connor
+                </span>
+                <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: "'Lora', serif", lineHeight: 1.3 }}>
+                  Why Selling to a Cash Buyer Might Beat Listing With an Agent
+                </h2>
+                <p className="text-base leading-relaxed mb-6" style={{ color: "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  There are situations where listing makes sense — and Connor will tell you honestly if that's the case. But for many distressed sellers, the math works out differently than you'd expect. Watch Connor explain the real comparison.
+                </p>
+                <div className="flex items-center gap-3 p-4 rounded-xl" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+                  <Shield size={20} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
+                  <p className="text-sm" style={{ color: "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    No pressure. No sales tactics. Just an honest breakdown of your options.
+                  </p>
+                </div>
+              </div>
+              <div className="relative rounded-2xl overflow-hidden" style={{ boxShadow: "0 20px 60px oklch(0 0 0 / 0.4)" }}>
+                <video
+                  controls
+                  preload="metadata"
+                  className="w-full block"
+                  style={{ borderRadius: "1rem" }}
+                  aria-label="Connor explains why selling to a cash buyer may beat listing with an agent"
+                >
+                  <source src={VIDEO_REALTORS} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
         </div>
       </section>

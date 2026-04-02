@@ -4,6 +4,7 @@ import { Phone, ArrowRight, Shield, Award, Heart, CheckCircle2 } from "lucide-re
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
+const VIDEO_CONNOR_INTRO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv24_ddcde10d.MP4";
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
 
 export default function About() {
@@ -135,6 +136,45 @@ export default function About() {
                 <span className="text-sm font-medium" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{c}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Connor's Intro Video — subtle, non-pushy */}
+      <section className="py-20" style={{ background: "white" }}>
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative rounded-2xl overflow-hidden" style={{ boxShadow: "0 12px 40px oklch(0.22 0.01 60 / 0.12)" }}>
+                <video
+                  controls
+                  preload="metadata"
+                  className="w-full block"
+                  style={{ borderRadius: "1rem" }}
+                  aria-label="Connor Morris introduces Alder Heritage Homes"
+                >
+                  <source src={VIDEO_CONNOR_INTRO} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div>
+                <span className="inline-block text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
+                  A Message From Connor
+                </span>
+                <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)", lineHeight: 1.3 }}>
+                  Do You Have a House in Fresno You Need to Sell?
+                </h2>
+                <p className="text-base leading-relaxed mb-6" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  Whether you're dealing with an inherited home, facing foreclosure, going through a divorce, or simply ready to move on — Connor understands. Watch this short message to hear how Alder Heritage Homes can help.
+                </p>
+                <div className="flex items-center gap-3 p-4 rounded-xl" style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)" }}>
+                  <Heart size={20} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
+                  <p className="text-sm" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    No pressure, no obligation. Just an honest conversation about your options.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
