@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import FloatingCTA from "./FloatingCTA";
+import TawkChat from "./TawkChat";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -248,6 +249,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Floating / sticky CTA — appears on all pages */}
       <FloatingCTA />
+      <TawkChat />
 
       {/* Footer */}
       <footer style={{ background: "oklch(0.22 0.01 60)", color: "oklch(0.80 0.01 60)" }}>
