@@ -19,6 +19,17 @@ const services = [
   { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back" },
   { label: "Probate / Inherited Homes", href: "/probate-inherited-homes" },
   { label: "Sell House Fast", href: "/sell-house-fast" },
+  { label: "Roof Damage — Sell As-Is", href: "/sell-house-roof-damage" },
+  { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
+  { label: "Divorce Home Sale", href: "/sell-house-divorce" },
+  { label: "Tired Landlord", href: "/tired-landlord" },
+  { label: "Junk Removal — Read This First", href: "/junk-removal-before-selling" },
+];
+
+const trust = [
+  { label: "Why We're Different", href: "/why-choose-us" },
+  { label: "About Connor", href: "/about" },
+  { label: "Blog & Resources", href: "/blog" },
 ];
 
 const cities = [
@@ -37,6 +48,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [citiesOpen, setCitiesOpen] = useState(false);
+  const [trustOpen, setTrustOpen] = useState(false);
   const [location] = useLocation();
 
   useEffect(() => {
@@ -49,6 +61,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     setMobileOpen(false);
     setServicesOpen(false);
     setCitiesOpen(false);
+    setTrustOpen(false);
   }, [location]);
 
   return (
@@ -173,8 +186,36 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 )}
               </div>
 
-              <NavLink href="/about">About</NavLink>
-              <NavLink href="/blog">Blog</NavLink>
+              {/* Why We're Different dropdown */}
+              <div className="relative group">
+                <button
+                  className="flex items-center gap-1 px-4 py-2 rounded-md text-sm font-semibold transition-colors"
+                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.01 60)" }}
+                  onMouseEnter={() => setTrustOpen(true)}
+                  onMouseLeave={() => setTrustOpen(false)}
+                >
+                  Why Us <ChevronDown size={14} />
+                </button>
+                {trustOpen && (
+                  <div
+                    className="absolute top-full left-0 w-52 rounded-xl shadow-xl py-2 z-50"
+                    style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}
+                    onMouseEnter={() => setTrustOpen(true)}
+                    onMouseLeave={() => setTrustOpen(false)}
+                  >
+                    {trust.map((t) => (
+                      <Link
+                        key={t.href}
+                        href={t.href}
+                        className="block px-4 py-2.5 text-sm font-medium hover:bg-orange-50 transition-colors"
+                        style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}
+                      >
+                        {t.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             </nav>
 
             {/* Phone + CTA */}

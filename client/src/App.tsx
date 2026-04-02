@@ -20,6 +20,14 @@ import ProbateHomes from "./pages/services/ProbateHomes";
 import FastSale from "./pages/services/FastSale";
 import BehindOnMortgage from "./pages/services/BehindOnMortgage";
 
+// New service pages
+import RoofDamage from "./pages/services/RoofDamage";
+import HoarderHouse from "./pages/services/HoarderHouse";
+import DivorceHome from "./pages/services/DivorceHome";
+import TiredLandlord from "./pages/services/TiredLandlord";
+import JunkRemoval from "./pages/services/JunkRemoval";
+import WhyChooseUs from "./pages/WhyChooseUs";
+
 // City landing pages
 import FresnoPage from "./pages/cities/Fresno";
 import ClovisPage from "./pages/cities/Clovis";
@@ -56,6 +64,14 @@ function Router() {
       <Route path="/we-buy-houses-visalia" component={VisaliaPage} />
       <Route path="/we-buy-houses-hanford" component={HanfordPage} />
       <Route path="/we-buy-houses-reedley" component={ReedleyPage} />
+
+      {/* New service pages */}
+      <Route path="/sell-house-roof-damage" component={RoofDamage} />
+      <Route path="/sell-hoarder-house" component={HoarderHouse} />
+      <Route path="/sell-house-divorce" component={DivorceHome} />
+      <Route path="/tired-landlord" component={TiredLandlord} />
+      <Route path="/junk-removal-before-selling" component={JunkRemoval} />
+      <Route path="/why-choose-us" component={WhyChooseUs} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

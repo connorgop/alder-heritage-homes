@@ -683,7 +683,7 @@ export default function HomePage() {
               {[
                 "Licensed CA Agent — DRE #02219124",
                 "We buy directly — no middlemen",
-                "Fair, transparent offers",
+                "Independent broker opinion included",
                 "Committed — we close when we say",
                 "100+ probate sales completed",
                 "You set the timeline, not us",
@@ -692,6 +692,20 @@ export default function HomePage() {
                   <CheckCircle2 size={16} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} /> {item}
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* Broker Opinion Callout */}
+          <div className="mt-10 max-w-4xl mx-auto p-6 rounded-2xl" style={{ background: "oklch(0.28 0.05 155 / 0.08)", border: "2px solid oklch(0.28 0.05 155 / 0.25)" }}>
+            <div className="flex flex-col md:flex-row gap-4 items-start">
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold text-lg" style={{ background: "oklch(0.28 0.05 155)", fontFamily: "'Lora', serif" }}>📋</div>
+              <div>
+                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>You Get an Independent Broker Opinion of Value — Before You Decide Anything</h3>
+                <p style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.01 60)", lineHeight: 1.7, fontSize: "0.95rem" }}>
+                  Connor could list your home on the MLS — but he won't, because buying and listing the same property is a conflict of interest he refuses to participate in. Instead, every property plan he sends includes a <strong>Broker Opinion of Value from an independent Fresno broker</strong> with 1,800+ completed transactions over a 25-year career — so you know exactly what your home is worth before you decide. If a traditional listing is clearly the better path, he'll tell you honestly and refer you to his trusted broker partner. His goal is to be your real estate resource and protect you from bad actors — not just to buy your house.
+                </p>
+                <a href="/why-choose-us" className="inline-flex items-center gap-2 mt-3 text-sm font-bold" style={{ color: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>Learn more about how we protect you →</a>
+              </div>
             </div>
           </div>
         </div>
