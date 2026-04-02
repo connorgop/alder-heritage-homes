@@ -214,6 +214,143 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>We've completed 100+ probate sales in Fresno and the Central Valley. <strong>Call us at (559) 281-8016</strong> to discuss your specific situation.</p>
     </div>
   ),
+  "probate-process-fresno-sell-house-guide": (
+    <div className="prose-heritage">
+      <p>When a loved one passes away, the last thing most families want to think about is paperwork and court processes. But if the deceased owned real property in California without a trust, probate is almost certainly required before that property can be sold. Understanding what probate involves — and knowing that you can start planning <em>before</em> the court appoints anyone — can save your family months of stress, uncertainty, and money.</p>
+      <p>This guide walks through every step of the California probate process as it applies to real estate in Fresno and the Central Valley. More importantly, it explains a smarter approach: one where you're not waiting around for the court to tell you what to do next.</p>
+
+      <h2>What Is Probate?</h2>
+      <p>Probate is the legal process by which a deceased person's estate is administered under court supervision. The court validates the will (if one exists), appoints a personal representative (called an executor if named in the will, or an administrator if there is no will), and oversees the payment of debts and distribution of assets to heirs.</p>
+      <p>In California, probate is required for estates with assets exceeding $184,500 (as of 2024) that are not held in a trust, jointly owned, or designated to pass directly to a beneficiary. Real property owned solely by the deceased almost always requires probate.</p>
+
+      <h2>The California Probate Timeline: Step by Step</h2>
+
+      <h3>Step 1: File a Petition for Probate (Week 1–2)</h3>
+      <p>The process begins when an interested party — typically the named executor or a family member — files a Petition for Probate with the Superior Court in the county where the deceased lived. For most Central Valley residents, this means Fresno County Superior Court. The petition identifies the deceased, the estimated value of the estate, and who is requesting appointment as personal representative.</p>
+      <p>This is where most families hit their first obstacle: they don't know a probate attorney. <strong>We maintain active referral relationships with five or more experienced probate attorneys in Fresno and the Central Valley.</strong> If you're at this stage and don't have legal representation, we can connect you with a trusted attorney immediately — at no cost to you for the referral.</p>
+
+      <h3>Step 2: Court Hearing and Appointment (Week 4–8)</h3>
+      <p>After filing, the court schedules a hearing — typically 4 to 8 weeks out. At this hearing, the judge reviews the petition and, if everything is in order, issues an Order for Probate appointing the personal representative and admitting the will to probate (if applicable). The personal representative then receives Letters Testamentary or Letters of Administration — the official document that gives them legal authority to act on behalf of the estate.</p>
+      <p>Here is where most families make a critical mistake: they wait until they have Letters before they start thinking about what to do with the house. That's weeks of lost time. <strong>We start working with you before this hearing.</strong></p>
+
+      <h3>Step 3: Notice to Creditors and Inventory (Months 2–4)</h3>
+      <p>Once appointed, the personal representative must publish a Notice to Creditors in a local newspaper for four consecutive weeks, giving creditors 60 days to file claims against the estate. Simultaneously, the representative must inventory all estate assets and have real property appraised by a court-appointed probate referee.</p>
+      <p>While this process is underway, the house is sitting vacant. It needs to be secured, maintained, and protected. Vandalism, squatters, deferred maintenance, and weather damage are real risks for vacant properties in Fresno. <strong>We help families secure the property during this period</strong> — changing locks, doing welfare checks, and ensuring the home is protected while the legal process runs its course.</p>
+
+      <h3>Step 4: Pay Debts and Estate Expenses (Months 3–5)</h3>
+      <p>After the creditor period closes, the representative pays valid creditor claims, estate administration expenses (attorney fees, court costs, appraisal fees), and any property taxes or mortgage payments owed. If the estate doesn't have liquid cash to cover these costs, the real property often needs to be sold to generate funds. This is another reason why having a buyer lined up early matters: you can close quickly when the time comes, rather than scrambling.</p>
+
+      <h3>Step 5: Petition to Sell Real Property (Months 4–6)</h3>
+      <p>With Independent Administration of Estates Act (IAEA) authority — which most executors request and receive — the personal representative can sell the property without court confirmation. This is similar to a normal real estate transaction. Without IAEA authority, the sale requires a court confirmation hearing, which adds 4 to 8 more weeks and introduces the possibility of overbidding by other buyers at the courthouse steps.</p>
+      <p>We always advise families to request Independent Administration authority when filing the initial petition. It's a simple checkbox that saves months.</p>
+
+      <h3>Step 6: Close the Sale</h3>
+      <p>Once the representative has authority to sell, we can close in as little as 7 to 14 days. We work directly with the probate attorney and the title company to ensure all court requirements are met. The proceeds go into the estate account to be distributed to heirs after final expenses are paid.</p>
+
+      <h3>Step 7: Final Accounting and Distribution (Months 6–18)</h3>
+      <p>The personal representative files a final accounting with the court showing all income, expenses, and proposed distribution to heirs. The court approves the accounting, and the estate is formally closed. Total timeline for a straightforward California probate: 9 to 18 months from filing to closure.</p>
+
+      <h2>The Alder Heritage Homes Approach: Planning Before You're Appointed</h2>
+      <p>Most cash buyers and real estate agents wait until the executor has Letters in hand before they'll even have a conversation. We think that's backwards. Here's our approach:</p>
+      <ol>
+        <li><strong>We meet with you before the petition is filed.</strong> We walk through the property, assess its condition and value, and give you a realistic picture of what a cash sale would look like. You're not committing to anything — you're just getting informed.</li>
+        <li><strong>We connect you with a probate attorney.</strong> We have referral relationships with five or more experienced probate attorneys in Fresno and the Central Valley. We make the introduction, and you choose who you want to work with. There's no obligation and no referral fee to you.</li>
+        <li><strong>We help you secure the property.</strong> While the court process runs, we help ensure the home is locked, protected, and maintained. This protects the estate's value and prevents problems that could complicate the sale later.</li>
+        <li><strong>You've already made the decision.</strong> By the time you have Letters and legal authority to sell, you've already discussed it with family, you know what the property is worth, and you know what you want to do. There's no scrambling, no second-guessing, no delays. The moment you have authority, we can close.</li>
+      </ol>
+      <p>This approach consistently results in a faster, smoother probate process — and a better outcome for the family.</p>
+
+      <h2>What About Disagreements Among Heirs?</h2>
+      <p>One of the most common complications in probate real estate is disagreement among heirs about whether to sell, when to sell, and for how much. Having a licensed real estate professional involved early — one who can provide an objective assessment of the property's value and the realistic costs of alternatives — often helps families reach consensus faster. We've helped facilitate difficult family conversations about estate properties many times. We're not mediators, but we can provide the factual grounding that makes those conversations more productive.</p>
+
+      <h2>Probate vs. Trust: What's the Difference for Selling?</h2>
+      <table>
+        <thead>
+          <tr><th>Factor</th><th>Probate (No Trust)</th><th>Living Trust</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Court involvement</td><td>Required</td><td>None</td></tr>
+          <tr><td>Timeline to sell</td><td>4–18 months</td><td>As fast as 2–3 weeks</td></tr>
+          <tr><td>Public record</td><td>Yes — all filings are public</td><td>Private</td></tr>
+          <tr><td>Attorney required</td><td>Strongly recommended</td><td>Usually not needed</td></tr>
+          <tr><td>Cost</td><td>Attorney fees, court costs (typically 2–4% of estate value)</td><td>Minimal</td></tr>
+        </tbody>
+      </table>
+      <p>If the property was held in a living trust, the successor trustee can sell it without any court involvement — we can often close in 2 to 3 weeks. Call us to discuss your specific situation.</p>
+
+      <h2>Common Probate Mistakes That Delay the Sale</h2>
+      <p>In our experience with 100+ probate transactions in Fresno and the Central Valley, these are the most common mistakes that add months to the process:</p>
+      <ul>
+        <li><strong>Not requesting Independent Administration authority</strong> at the initial petition — this single oversight can add 4 to 8 weeks and expose the sale to overbidding.</li>
+        <li><strong>Letting the property sit vacant without securing it</strong> — vacant homes in Fresno are targets for vandalism, squatters, and copper theft. Damage discovered during escrow can kill a deal.</li>
+        <li><strong>Waiting until Letters are issued to start planning</strong> — by the time you have authority, you should already have a buyer, a price, and a plan.</li>
+        <li><strong>Not communicating with all heirs early</strong> — a surprise objection from a distant family member after you've accepted an offer can derail the entire transaction.</li>
+        <li><strong>Choosing the wrong attorney</strong> — not all attorneys handle probate regularly. An attorney who does probate once a year will take twice as long as one who handles it weekly.</li>
+      </ul>
+
+      <h2>Ready to Start? Here's What to Do Today</h2>
+      <p>If you've recently lost a family member and believe probate will be required, the best thing you can do right now is call us before you do anything else. We'll help you understand your situation, connect you with the right attorney, and make sure the property is protected while the legal process runs its course.</p>
+      <p>You don't need to have everything figured out. You don't need Letters yet. You just need to make one phone call: <strong>(559) 281-8016</strong>. We'll handle the rest alongside you.</p>
+    </div>
+  ),
+  "sell-hoarder-house-fresno-no-cleanout": (
+    <div className="prose-heritage">
+      <p>If you've inherited a home filled with decades of belongings, or you're dealing with a property that's become overwhelmed with clutter, you're probably dreading the idea of selling. The thought of cleaning it all out — hauling furniture, sorting through piles, hiring junk removal crews — can feel so overwhelming that some homeowners put off selling for months or even years.</p>
+      <p>Here's the truth: <strong>you don't have to clean it out before you sell.</strong> Not a single item. Not one trash bag. We buy hoarder houses and severely cluttered properties in Fresno exactly as they are — and we handle everything after closing.</p>
+
+      <h2>What Is a "Hoarder House" in Real Estate?</h2>
+      <p>In real estate, a hoarder house refers to any property where accumulated belongings, clutter, or debris make the home difficult or impossible to show, inspect, or sell through traditional channels. This ranges from homes with rooms full of boxes and furniture to properties with serious structural concerns caused by years of accumulation.</p>
+      <p>These homes present real challenges for traditional buyers and agents — but they're exactly the kind of property we specialize in. We've purchased homes in every condition imaginable, and we know how to price and close them fairly.</p>
+
+      <h2>Why Traditional Buyers Won't Touch a Hoarder House</h2>
+      <p>When you list a cluttered or hoarded home on the MLS, you face a steep uphill battle. Most retail buyers are looking for move-in-ready homes. Lenders financing those buyers require the home to pass an appraisal — and an appraiser can't properly assess a home they can't access or see. FHA and VA loans have even stricter property condition requirements.</p>
+      <p>The result: your home sits on the market, accumulates stigma, and you're pressured to reduce the price while also being expected to clean it out before any serious buyer will make an offer. It's a lose-lose situation.</p>
+
+      <h2>How Selling As-Is to a Cash Buyer Works</h2>
+      <p>When you sell to Alder Heritage Homes, the process is completely different. Here's what happens:</p>
+      <ol>
+        <li><strong>You call us or submit your address online.</strong> We'll schedule a walkthrough at your convenience — no judgment, no pressure.</li>
+        <li><strong>We assess the property as-is.</strong> We look at the structure, location, and market value — not how clean or cluttered it is. We've seen everything.</li>
+        <li><strong>We make you a cash offer within 24 hours.</strong> Our offer accounts for the condition honestly. We don't make a high offer and then drop it at the last minute.</li>
+        <li><strong>You choose your closing date.</strong> We can close in as little as 7 days, or we can give you more time if you need it.</li>
+        <li><strong>You take what you want and leave the rest.</strong> Furniture, boxes, personal items — whatever you don't want to take, leave it. We handle the cleanout after closing.</li>
+      </ol>
+
+      <h2>What About Items of Value?</h2>
+      <p>This is a question we hear often, and it's a fair one. Before you sell, we strongly encourage you to walk through the property with a family member or estate sale professional to identify anything of sentimental or monetary value. Jewelry, documents, photographs, collectibles, and antiques can be worth more than you'd expect.</p>
+      <p>We are not in the business of profiting from items left behind — but we also can't be responsible for sorting through everything after closing. Take what matters to you. If you're not sure what has value, consider hiring an estate sale company to do a walkthrough before we close. We can recommend trusted local professionals in Fresno.</p>
+
+      <h2>What If the House Has Structural Damage Too?</h2>
+      <p>Hoarding situations sometimes lead to secondary damage: flooring damaged by weight or moisture, walls with mold, plumbing issues from neglect. We buy homes with all of these issues. Our offer will reflect the cost of remediation, but we will never walk away from a deal because of condition. We've bought homes that other cash buyers refused to touch.</p>
+
+      <h2>How Much Will I Get for a Hoarder House?</h2>
+      <p>This is the honest answer: less than a fully renovated, move-in-ready home — but potentially more than you'd net after a traditional sale that requires cleanout, repairs, and months on the market. Here's a simplified comparison:</p>
+      <table>
+        <thead>
+          <tr><th>Scenario</th><th>Estimated Net Proceeds</th><th>Timeline</th><th>Effort Required</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Traditional sale after full cleanout + repairs</td><td>Higher gross, but minus $5,000–$25,000 in cleanout/repair costs + 6% commission</td><td>3–6 months</td><td>Enormous</td></tr>
+          <tr><td>Cash sale as-is to Alder Heritage Homes</td><td>Below market value, but no costs, no commissions, no effort</td><td>7–21 days</td><td>None</td></tr>
+        </tbody>
+      </table>
+      <p>For many homeowners — especially those dealing with an inherited property or a situation where time and emotional energy are limited — the cash sale nets more when you factor in everything realistically.</p>
+
+      <h2>The Emotional Side of Selling a Hoarder House</h2>
+      <p>We want to acknowledge something that most cash buyers won't: selling a home filled with a lifetime of belongings is emotionally difficult. Whether it's your own home or a parent's, the clutter often represents years of life, memories, and sometimes mental health struggles. We approach these situations with genuine compassion and zero judgment.</p>
+      <p>We've worked with families who were embarrassed to let anyone see the property. We've worked with adult children who were overwhelmed by the task of dealing with a parent's estate. We've worked with homeowners who simply couldn't face the cleanout alone. In every case, our goal is to make the process as simple and dignified as possible.</p>
+
+      <h2>What About Probate or Inherited Hoarder Houses?</h2>
+      <p>Inherited hoarder properties are one of the most common situations we handle. When a family member passes and leaves behind a heavily cluttered home, the heirs are often out-of-state, emotionally exhausted, and have no idea where to start. We specialize in exactly this scenario. We can work with the estate executor or administrator, coordinate with the probate attorney, and close on a timeline that works with the court process. With 100+ probate sales completed in Fresno and the Central Valley, we know this process inside and out.</p>
+
+      <h2>Fresno-Specific Considerations</h2>
+      <p>In Fresno and the surrounding Central Valley, we regularly purchase hoarder and cluttered properties in neighborhoods including Tower District, Fig Garden, Clovis, Sanger, Selma, Madera, Visalia, and Hanford. The local market has strong demand for renovated properties, which means we can often offer competitive prices even on severely distressed homes.</p>
+
+      <h2>Ready to Sell? Here's How to Start</h2>
+      <p>You don't need to clean anything. You don't need to take photos. You don't need to be embarrassed. Just call us at <strong>(559) 281-8016</strong> or submit your address using the form on this page. We'll schedule a walkthrough at your convenience, make you a fair cash offer within 24 hours, and close on your timeline — leaving the cleanout entirely to us.</p>
+      <p>You've been carrying this long enough. Let us handle the rest.</p>
+    </div>
+  ),
   "cash-buyer-vs-traditional-sale-fresno": (
     <div className="prose-heritage">
       <p>Selling to a cash buyer isn't always the right choice — but sometimes it's the best one. Here's an honest comparison to help you decide what's right for your situation.</p>
