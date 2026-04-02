@@ -23,8 +23,12 @@ const services = [
 const cities = [
   { label: "Fresno", href: "/we-buy-houses-fresno" },
   { label: "Clovis", href: "/we-buy-houses-clovis" },
+  { label: "Madera", href: "/we-buy-houses-madera" },
+  { label: "Visalia", href: "/we-buy-houses-visalia" },
   { label: "Sanger", href: "/we-buy-houses-sanger" },
   { label: "Selma", href: "/we-buy-houses-selma" },
+  { label: "Hanford", href: "/we-buy-houses-hanford" },
+  { label: "Reedley", href: "/we-buy-houses-reedley" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {

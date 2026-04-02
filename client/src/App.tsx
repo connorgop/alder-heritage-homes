@@ -25,6 +25,10 @@ import FresnoPage from "./pages/cities/Fresno";
 import ClovisPage from "./pages/cities/Clovis";
 import SangerPage from "./pages/cities/Sanger";
 import SelmaPage from "./pages/cities/Selma";
+import MaderaPage from "./pages/cities/Madera";
+import VisaliaPage from "./pages/cities/Visalia";
+import HanfordPage from "./pages/cities/Hanford";
+import ReedleyPage from "./pages/cities/Reedley";
 
 function Router() {
   return (
@@ -48,6 +52,10 @@ function Router() {
       <Route path="/we-buy-houses-clovis" component={ClovisPage} />
       <Route path="/we-buy-houses-sanger" component={SangerPage} />
       <Route path="/we-buy-houses-selma" component={SelmaPage} />
+      <Route path="/we-buy-houses-madera" component={MaderaPage} />
+      <Route path="/we-buy-houses-visalia" component={VisaliaPage} />
+      <Route path="/we-buy-houses-hanford" component={HanfordPage} />
+      <Route path="/we-buy-houses-reedley" component={ReedleyPage} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

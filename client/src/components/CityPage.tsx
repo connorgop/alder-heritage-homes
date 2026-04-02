@@ -12,9 +12,11 @@ interface CityPageProps {
   population: string;
   description: string;
   neighborhoods?: string[];
+  faqs?: { q: string; a: string }[];
+  stats?: { label: string; value: string }[];
 }
 
-export default function CityPage({ city, county, population, description, neighborhoods }: CityPageProps) {
+export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats }: CityPageProps) {
   const services = [
     { label: "Foreclosure Help", href: "/foreclosure-help" },
     { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
@@ -75,6 +77,17 @@ export default function CityPage({ city, county, population, description, neighb
                 Unlike out-of-state wholesalers who flip your contract to unknown buyers, we are a licensed California real estate agent (DRE #02219124) who actually buys your home. We've completed 100+ transactions in the Central Valley, including many in {city} and {county} County.
               </p>
 
+              {stats && stats.length > 0 && (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                  {stats.map((s) => (
+                    <div key={s.label} className="p-4 rounded-xl text-center" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
+                      <div className="text-2xl font-bold mb-1" style={{ fontFamily: "'Lora', serif", color: "oklch(0.55 0.13 42)" }}>{s.value}</div>
+                      <div className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.05em" }}>{s.label}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
               {neighborhoods && neighborhoods.length > 0 && (
                 <div className="mb-8">
                   <h3 className="text-xl font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
@@ -111,6 +124,21 @@ export default function CityPage({ city, county, population, description, neighb
                   </div>
                 ))}
               </div>
+              {faqs && faqs.length > 0 && (
+                <div className="mt-10">
+                  <h3 className="text-xl font-bold mb-5" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                    Frequently Asked Questions
+                  </h3>
+                  <div className="space-y-4">
+                    {faqs.map((faq) => (
+                      <div key={faq.q} className="p-5 rounded-xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
+                        <div className="font-bold mb-2" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>{faq.q}</div>
+                        <div className="text-sm leading-relaxed" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{faq.a}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Sidebar */}
