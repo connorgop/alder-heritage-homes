@@ -1,0 +1,284 @@
+import { useState } from "react";
+import Layout from "@/components/Layout";
+import { Phone, Mail, MapPin, Clock, CheckCircle2, ArrowRight } from "lucide-react";
+
+const PHONE = "(559) 281-8016";
+const PHONE_HREF = "tel:5592818016";
+
+const situations = [
+  "Facing foreclosure",
+  "Behind on mortgage payments",
+  "Second mortgage / HELOC problems",
+  "Inherited / probate home",
+  "Need to sell fast",
+  "Want to sell and stay (rent-back)",
+  "Divorce",
+  "Job relocation",
+  "Other",
+];
+
+export default function Contact() {
+  const [form, setForm] = useState({
+    name: "", phone: "", email: "", address: "", situation: "", message: "", timeline: ""
+  });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // In production, this would send to a backend or form service
+    setSubmitted(true);
+  };
+
+  return (
+    <Layout>
+      {/* Hero */}
+      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="container text-center">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
+            Free Cash Offer
+          </span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: "'Lora', serif" }}>
+            Get Your Free Cash Offer Today
+          </h1>
+          <p className="text-lg max-w-xl mx-auto" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+            No obligation. No pressure. Just an honest conversation about your home and your options. We respond within 24 hours.
+          </p>
+        </div>
+      </section>
+
+      {/* Form + Info */}
+      <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
+        <div className="container">
+          <div className="grid lg:grid-cols-3 gap-12">
+            {/* Form */}
+            <div className="lg:col-span-2">
+              {submitted ? (
+                <div className="p-10 rounded-2xl text-center" style={{ background: "white", border: "2px solid oklch(0.55 0.13 42)" }}>
+                  <CheckCircle2 size={56} className="mx-auto mb-4" style={{ color: "oklch(0.55 0.13 42)" }} />
+                  <h2 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                    We Got Your Request!
+                  </h2>
+                  <p className="text-lg mb-6" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Thank you, {form.name}. We'll review your property information and reach out within 24 hours with your cash offer.
+                  </p>
+                  <p className="font-bold" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.28 0.05 155)" }}>
+                    Need to talk now? Call us: <a href={PHONE_HREF} style={{ color: "oklch(0.55 0.13 42)" }}>{PHONE}</a>
+                  </p>
+                </div>
+              ) : (
+                <div className="p-8 rounded-2xl shadow-sm" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
+                  <h2 className="text-2xl font-bold mb-2" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                    Tell Us About Your Property
+                  </h2>
+                  <p className="text-sm mb-8" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    All information is kept strictly confidential. We never share your details.
+                  </p>
+                  <form onSubmit={handleSubmit} className="space-y-5">
+                    <div className="grid md:grid-cols-2 gap-5">
+                      <div>
+                        <label className="block text-sm font-semibold mb-1.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}>
+                          Your Name *
+                        </label>
+                        <input
+                          required
+                          type="text"
+                          value={form.name}
+                          onChange={(e) => setForm({ ...form, name: e.target.value })}
+                          placeholder="John Smith"
+                          className="w-full px-4 py-3 rounded-lg border text-sm outline-none transition-colors"
+                          style={{ border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)", background: "oklch(0.98 0.01 85)" }}
+                          onFocus={(e) => e.target.style.borderColor = "oklch(0.55 0.13 42)"}
+                          onBlur={(e) => e.target.style.borderColor = "oklch(0.88 0.02 85)"}
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold mb-1.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}>
+                          Phone Number *
+                        </label>
+                        <input
+                          required
+                          type="tel"
+                          value={form.phone}
+                          onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                          placeholder="(559) 555-1234"
+                          className="w-full px-4 py-3 rounded-lg border text-sm outline-none transition-colors"
+                          style={{ border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)", background: "oklch(0.98 0.01 85)" }}
+                          onFocus={(e) => e.target.style.borderColor = "oklch(0.55 0.13 42)"}
+                          onBlur={(e) => e.target.style.borderColor = "oklch(0.88 0.02 85)"}
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-semibold mb-1.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}>
+                        Email Address
+                      </label>
+                      <input
+                        type="email"
+                        value={form.email}
+                        onChange={(e) => setForm({ ...form, email: e.target.value })}
+                        placeholder="john@email.com"
+                        className="w-full px-4 py-3 rounded-lg border text-sm outline-none transition-colors"
+                        style={{ border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)", background: "oklch(0.98 0.01 85)" }}
+                        onFocus={(e) => e.target.style.borderColor = "oklch(0.55 0.13 42)"}
+                        onBlur={(e) => e.target.style.borderColor = "oklch(0.88 0.02 85)"}
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-semibold mb-1.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}>
+                        Property Address *
+                      </label>
+                      <input
+                        required
+                        type="text"
+                        value={form.address}
+                        onChange={(e) => setForm({ ...form, address: e.target.value })}
+                        placeholder="123 Main St, Fresno, CA 93720"
+                        className="w-full px-4 py-3 rounded-lg border text-sm outline-none transition-colors"
+                        style={{ border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)", background: "oklch(0.98 0.01 85)" }}
+                        onFocus={(e) => e.target.style.borderColor = "oklch(0.55 0.13 42)"}
+                        onBlur={(e) => e.target.style.borderColor = "oklch(0.88 0.02 85)"}
+                      />
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-5">
+                      <div>
+                        <label className="block text-sm font-semibold mb-1.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}>
+                          Your Situation
+                        </label>
+                        <select
+                          value={form.situation}
+                          onChange={(e) => setForm({ ...form, situation: e.target.value })}
+                          className="w-full px-4 py-3 rounded-lg border text-sm outline-none"
+                          style={{ border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)", background: "oklch(0.98 0.01 85)" }}
+                        >
+                          <option value="">Select your situation</option>
+                          {situations.map((s) => <option key={s} value={s}>{s}</option>)}
+                        </select>
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold mb-1.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}>
+                          Desired Timeline
+                        </label>
+                        <select
+                          value={form.timeline}
+                          onChange={(e) => setForm({ ...form, timeline: e.target.value })}
+                          className="w-full px-4 py-3 rounded-lg border text-sm outline-none"
+                          style={{ border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)", background: "oklch(0.98 0.01 85)" }}
+                        >
+                          <option value="">How soon?</option>
+                          <option value="asap">ASAP — as fast as possible</option>
+                          <option value="30days">Within 30 days</option>
+                          <option value="60days">Within 60 days</option>
+                          <option value="flexible">Flexible</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-semibold mb-1.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}>
+                        Tell Us More (Optional)
+                      </label>
+                      <textarea
+                        rows={4}
+                        value={form.message}
+                        onChange={(e) => setForm({ ...form, message: e.target.value })}
+                        placeholder="Any additional details about the property or your situation..."
+                        className="w-full px-4 py-3 rounded-lg border text-sm outline-none resize-none"
+                        style={{ border: "1px solid oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)", background: "oklch(0.98 0.01 85)" }}
+                        onFocus={(e) => e.target.style.borderColor = "oklch(0.55 0.13 42)"}
+                        onBlur={(e) => e.target.style.borderColor = "oklch(0.88 0.02 85)"}
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="w-full flex items-center justify-center gap-2 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90"
+                      style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}
+                    >
+                      Get My Free Cash Offer <ArrowRight size={20} />
+                    </button>
+                    <p className="text-xs text-center" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                      By submitting, you agree to be contacted about your property. We never sell your information.
+                    </p>
+                  </form>
+                </div>
+              )}
+            </div>
+
+            {/* Contact info sidebar */}
+            <div className="space-y-6">
+              <div className="p-6 rounded-2xl" style={{ background: "oklch(0.28 0.05 155)", color: "white" }}>
+                <h3 className="font-bold text-lg mb-5" style={{ fontFamily: "'Lora', serif" }}>Contact Us Directly</h3>
+                <div className="space-y-4">
+                  <a href={PHONE_HREF} className="flex items-center gap-3 group">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: "oklch(0.55 0.13 42)" }}>
+                      <Phone size={18} className="text-white" />
+                    </div>
+                    <div>
+                      <div className="text-xs mb-0.5" style={{ color: "oklch(0.70 0.02 155)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.06em" }}>Call or Text</div>
+                      <div className="font-bold" style={{ fontFamily: "'DM Mono', monospace" }}>{PHONE}</div>
+                    </div>
+                  </a>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: "oklch(0.35 0.05 155)" }}>
+                      <Mail size={18} className="text-white" />
+                    </div>
+                    <div>
+                      <div className="text-xs mb-0.5" style={{ color: "oklch(0.70 0.02 155)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.06em" }}>Email</div>
+                      <div className="font-medium text-sm">info@alderheritagehomes.com</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: "oklch(0.35 0.05 155)" }}>
+                      <MapPin size={18} className="text-white" />
+                    </div>
+                    <div>
+                      <div className="text-xs mb-0.5" style={{ color: "oklch(0.70 0.02 155)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.06em" }}>Service Area</div>
+                      <div className="font-medium text-sm">Fresno &amp; Central Valley, CA</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: "oklch(0.35 0.05 155)" }}>
+                      <Clock size={18} className="text-white" />
+                    </div>
+                    <div>
+                      <div className="text-xs mb-0.5" style={{ color: "oklch(0.70 0.02 155)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.06em" }}>Response Time</div>
+                      <div className="font-medium text-sm">Within 24 hours</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
+                <h3 className="font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>What to Expect</h3>
+                <ul className="space-y-3">
+                  {[
+                    "We call you within 24 hours",
+                    "We research your property",
+                    "Written cash offer presented",
+                    "No pressure to accept",
+                    "Close on your timeline",
+                  ].map((s) => (
+                    <li key={s} className="flex items-center gap-3 text-sm" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                      <CheckCircle2 size={15} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="p-5 rounded-xl" style={{ background: "oklch(0.55 0.13 42 / 0.08)", border: "1px solid oklch(0.55 0.13 42 / 0.2)" }}>
+                <p className="text-sm font-medium" style={{ color: "oklch(0.42 0.13 42)", fontFamily: "'Lora', serif", fontStyle: "italic" }}>
+                  "We never pressure anyone. If a cash sale isn't your best option, we'll tell you that — and point you toward what is."
+                </p>
+                <p className="text-xs mt-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)" }}>— Alder Heritage Homes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}
