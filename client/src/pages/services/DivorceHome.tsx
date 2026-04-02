@@ -57,7 +57,7 @@ export default function DivorceHome() {
         "Third-party broker opinion included",
         "Works with court-ordered sale timelines",
         "Cash offer within 48 hours",
-        "Close in as few as 7 days",
+        "close in as few as 5–7 days",
         "Complete privacy — off-market sale",
         "Licensed agent protecting both parties",
       ]}

@@ -183,7 +183,7 @@ const articleContent: Record<string, React.ReactNode> = {
         <li>Title search takes 5–7 days</li>
         <li>Closing documents prepared in 1–2 days</li>
       </ul>
-      <p>Our minimum closing time is 7 days. Most of our sales close in 10–21 days.</p>
+      <p>Our minimum closing time is 5–7 days. Most of our sales close in 10–21 days.</p>
       <h2>What Affects How Fast You Can Sell?</h2>
       <ul>
         <li><strong>Title issues:</strong> Liens, judgments, or title defects can slow things down</li>
@@ -312,7 +312,7 @@ const articleContent: Record<string, React.ReactNode> = {
         <li><strong>You call us or submit your address online.</strong> We'll schedule a walkthrough at your convenience — no judgment, no pressure.</li>
         <li><strong>We assess the property as-is.</strong> We look at the structure, location, and market value — not how clean or cluttered it is. We've seen everything.</li>
         <li><strong>We make you a cash offer within 24 hours.</strong> Our offer accounts for the condition honestly. We don't make a high offer and then drop it at the last minute.</li>
-        <li><strong>You choose your closing date.</strong> We can close in as little as 7 days, or we can give you more time if you need it.</li>
+        <li><strong>You choose your closing date.</strong> We can close in as little as 5–7 days, or we can give you more time if you need it.</li>
         <li><strong>You take what you want and leave the rest.</strong> Furniture, boxes, personal items — whatever you don't want to take, leave it. We handle the cleanout after closing.</li>
       </ol>
 
@@ -522,7 +522,7 @@ export default function BlogPost() {
                   {[
                     "Licensed CA Agent DRE #02219124",
                     "100+ probate sales",
-                    "Close in 7 days",
+                    "Close in 5–7 days or on your timeline",
                     "No repairs needed",
                     "Rent-back option available",
                   ].map((b) => (

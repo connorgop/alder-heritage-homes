@@ -43,7 +43,7 @@ export default function CityPage({ city, county, population, description, neighb
               Sell Your {city} Home for Cash — Fast, Fair, and Hassle-Free
             </h1>
             <p className="text-lg mb-8 leading-relaxed" style={{ color: "oklch(0.80 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Alder Heritage Homes buys houses in {city}, CA and throughout {county} County. No repairs, no commissions, close in as little as 7 days.
+              Alder Heritage Homes buys houses in {city}, CA and throughout {county} County. No repairs, no commissions, close in as little as 5–7 days.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
@@ -110,7 +110,7 @@ export default function CityPage({ city, county, population, description, neighb
                 {[
                   { num: "1", title: "Contact Us", desc: `Call us or fill out our form. Tell us about your ${city} property.` },
                   { num: "2", title: "Get Your Cash Offer", desc: "We'll research your property and present a fair written offer within 24 hours." },
-                  { num: "3", title: "Choose Your Closing Date", desc: "Close in 7 days or on your schedule. You decide." },
+                  { num: "3", title: "Choose Your Closing Date", desc: "Close in 5–7 days or on your timeline or on your schedule. You decide." },
                   { num: "4", title: "Collect Your Cash", desc: "We handle all paperwork. You walk away with cash — no repairs, no commissions." },
                 ].map((step) => (
                   <div key={step.num} className="flex gap-4 p-4 rounded-xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
@@ -151,7 +151,7 @@ export default function CityPage({ city, county, population, description, neighb
                   {[
                     "Licensed CA Agent DRE #02219124",
                     "100+ sales in the Central Valley",
-                    "Close in as little as 7 days",
+                    "close in as little as 5–7 days",
                     "No repairs or cleaning",
                     "No agent commissions",
                     "Fair, transparent offers",

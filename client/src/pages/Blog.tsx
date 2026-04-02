@@ -53,7 +53,7 @@ export const blogPosts = [
   {
     slug: "how-fast-can-i-sell-my-house-fresno",
     title: "How Fast Can I Sell My House in Fresno? (Honest Answer)",
-    excerpt: "Traditional sales take 45–90 days. Cash sales can close in 7 days. Here's an honest breakdown of the timeline for each option and what affects how fast you can sell.",
+    excerpt: "Traditional sales take 45–90 days. Cash sales can Close in 5–7 days or on your timeline. Here's an honest breakdown of the timeline for each option and what affects how fast you can sell.",
     category: "Fast Sale",
     date: "January 28, 2025",
     readTime: "5 min read",

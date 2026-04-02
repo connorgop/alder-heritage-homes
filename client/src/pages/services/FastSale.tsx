@@ -6,15 +6,15 @@ export default function FastSale() {
   return (
     <ServicePage
       badge="Sell House Fast · Fresno CA"
-      title="Sell Your House in 7 Days — No Repairs, No Commissions, No Stress"
-      subtitle="Whether it's a divorce, job relocation, medical bills, or you simply want to move on, we can close in as little as 7 days and put cash in your hands fast."
+      title="Sell Your House in 5–7 Days — No Repairs, No Commissions, No Stress"
+      subtitle="Whether it's a divorce, job relocation, medical bills, or you simply want to move on, we can close in as little as 5–7 days and put cash in your hands fast."
       heroImage={IMG}
       heroImageAlt="Fast home sale in Fresno CA"
       intro="Sometimes you just need to sell — fast. Maybe you're relocating for work and can't wait 90 days for a traditional sale. Maybe you're going through a divorce and need to divide assets quickly. Maybe you've inherited a home you don't want to manage from across the country. Whatever the reason, we can move at your speed."
       sections={[
         {
           heading: "How Fast Can We Actually Close?",
-          body: "Our minimum closing time is typically 7 days — the time needed to complete a title search and prepare closing documents. Most of our sales close in 10–21 days. If you need more time, we can also close on a future date of your choosing. You set the timeline.",
+          body: "Our minimum closing time is typically 5–7 days — the time needed to complete a title search and prepare closing documents. Most of our sales close in 10–21 days. If you need more time, we can also close on a future date of your choosing. You set the timeline.",
         },
         {
           heading: "What Makes a Cash Sale So Fast?",
@@ -30,7 +30,7 @@ export default function FastSale() {
         },
       ]}
       benefits={[
-        "Close in as little as 7 days",
+        "close in as little as 5–7 days",
         "No repairs or cleaning required",
         "No agent commissions (save 5–6%)",
         "No open houses or showings",
@@ -53,7 +53,7 @@ export default function FastSale() {
         },
         {
           q: "What if I need more than 7 days?",
-          a: "No problem. You choose the closing date. We've closed in 7 days and we've closed in 90 days. Whatever timeline works for your situation.",
+          a: "No problem. You choose the closing date. We've closed in 5–7 days and we've closed in 90 days. Whatever timeline works for your situation.",
         },
       ]}
       ctaTitle="Ready to Close Fast?"

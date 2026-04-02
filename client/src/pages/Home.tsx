@@ -61,7 +61,7 @@ const situations = [
   {
     icon: <Clock size={28} />,
     title: "Need to Sell Fast",
-    desc: "Divorce, job relocation, medical bills, or just ready to move on? We can close in as little as 7 days.",
+    desc: "Divorce, job relocation, medical bills, or just ready to move on? We can close in as little as 5–7 days.",
     href: "/sell-house-fast",
     color: "oklch(0.40 0.05 155)",
   },
@@ -88,7 +88,7 @@ const steps = [
   {
     num: "03",
     title: "Pick Your Closing Date",
-    desc: "You choose when to close — as fast as 7 days or on a timeline that works for your life.",
+    desc: "You choose when to close — as fast as 5–7 days, or on your desired timeline.",
   },
   {
     num: "04",
@@ -338,7 +338,7 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <div className="fade-up" style={{ animationDelay: "0s" }}>
               <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-6" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                Fresno's Ethical Cash Home Buyer
+                Fresno's Honest Cash Home Buyer
               </span>
             </div>
             <h1 className="fade-up fade-up-delay-1 text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
@@ -346,7 +346,7 @@ export default function HomePage() {
               <span style={{ color: "oklch(0.75 0.10 42)" }}>On Your Terms.</span>
             </h1>
             <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Facing foreclosure, behind on payments, inherited a home, or just need to sell fast? We offer fair cash prices, close in as little as 7 days, and handle everything — no repairs, no commissions, no stress.
+              Facing foreclosure, behind on payments, inherited a home, or just need to sell fast? We offer fair cash prices, close in as little as 5–7 days, and handle everything — no repairs, no commissions, no stress.
             </p>
             <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
@@ -359,7 +359,7 @@ export default function HomePage() {
               </a>
             </div>
             <div className="fade-up fade-up-delay-4 flex flex-wrap gap-x-6 gap-y-2 mt-8">
-              {["No repairs needed", "No agent commissions", "Close in 7 days", "Any condition"].map((t) => (
+              {["No repairs needed", "No agent commissions", "Close in 5–7 days or on your timeline", "Any condition"].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.85 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                   <CheckCircle2 size={16} style={{ color: "oklch(0.65 0.10 145)" }} />
                   {t}
@@ -533,7 +533,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-3">
                   <Shield size={24} style={{ color: "oklch(0.55 0.13 42)" }} />
                   <div>
-                    <div className="font-bold text-sm" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>Licensed &amp; Ethical</div>
+                    <div className="font-bold text-sm" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>Licensed &amp; Honest</div>
                     <div className="text-xs" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.50 0.02 60)" }}>CA DRE #02219124</div>
                   </div>
                 </div>
@@ -904,7 +904,7 @@ export default function HomePage() {
               <div className="space-y-4 mb-8">
                 {[
                   { icon: "🏆", text: "We match or beat any cash offer — guaranteed" },
-                  { icon: "⚡", text: "Close in as little as 7 days" },
+                  { icon: "⚡", text: "close in as little as 5–7 days" },
                   { icon: "🛡️", text: "Licensed CA Agent DRE #02219124" },
                   { icon: "🏠", text: "Buy as-is — no repairs, no cleaning" },
                 ].map((item) => (

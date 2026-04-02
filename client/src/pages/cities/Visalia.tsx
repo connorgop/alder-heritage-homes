@@ -10,7 +10,7 @@ export default function Visalia() {
       city="Visalia"
       county="Tulare"
       population="145,000+"
-      description="Visalia is the largest city in Tulare County and one of the fastest-growing cities in California's Central Valley. As the commercial and cultural hub of the Visalia-Porterville metro area, it attracts families and retirees alike — but rapid growth also means many homeowners find themselves underwater on mortgages, dealing with inherited properties, or facing foreclosure in a market that can be difficult to navigate alone. Alder Heritage Homes buys houses throughout Visalia and Tulare County, offering fair cash offers with no repairs, no commissions, and closings in as little as 7 days."
+      description="Visalia is the largest city in Tulare County and one of the fastest-growing cities in California's Central Valley. As the commercial and cultural hub of the Visalia-Porterville metro area, it attracts families and retirees alike — but rapid growth also means many homeowners find themselves underwater on mortgages, dealing with inherited properties, or facing foreclosure in a market that can be difficult to navigate alone. Alder Heritage Homes buys houses throughout Visalia and Tulare County, offering fair cash offers with no repairs, no commissions, and closings in as little as 5–7 days, or on your desired timeline."
       neighborhoods={[
         "Downtown Visalia",
         "Mooney Grove",
@@ -28,7 +28,7 @@ export default function Visalia() {
       faqs={[
         {
           q: "How quickly can you close on my Visalia home?",
-          a: "We can close in as little as 7 days on a Visalia property. We handle all escrow, title, and paperwork — you just show up to sign and collect your check.",
+          a: "We can close in as little as 5–7 days on a Visalia property. We handle all escrow, title, and paperwork — you just show up to sign and collect your check.",
         },
         {
           q: "Do you buy homes in all Visalia neighborhoods?",

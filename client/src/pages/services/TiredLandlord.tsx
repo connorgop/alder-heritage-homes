@@ -57,7 +57,7 @@ export default function TiredLandlord() {
         "No repairs or code compliance required",
         "Third-party broker opinion included",
         "Cash offer within 48 hours",
-        "Close in as few as 7 days",
+        "close in as few as 5–7 days",
         "Portfolio purchases available",
         "Licensed agent — not a wholesaler",
       ]}

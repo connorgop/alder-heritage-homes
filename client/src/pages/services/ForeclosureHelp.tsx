@@ -7,7 +7,7 @@ export default function ForeclosureHelp() {
     <ServicePage
       badge="Foreclosure Help · Fresno CA"
       title="Stop Foreclosure — Sell Your Home for Cash Before the Auction"
-      subtitle="If your lender has started the foreclosure process, you still have options. We can close in as little as 7 days and help you walk away with cash instead of a foreclosure on your record."
+      subtitle="If your lender has started the foreclosure process, you still have options. We can close in as little as 5–7 days and help you walk away with cash instead of a foreclosure on your record."
       heroImage={IMG}
       heroImageAlt="Homeowner facing foreclosure in Fresno CA"
       intro="Foreclosure is one of the most stressful situations a homeowner can face. The notices pile up, the phone won't stop ringing, and the clock is ticking. But here's what most homeowners don't realize: you have more options than you think — even if the auction date is weeks away."
@@ -32,7 +32,7 @@ export default function ForeclosureHelp() {
       benefits={[
         "Stop foreclosure before the auction date",
         "Protect your credit from a completed foreclosure",
-        "Close in as little as 7 days",
+        "close in as little as 5–7 days",
         "No repairs, no cleaning, no showings",
         "No agent commissions or closing costs to you",
         "Walk away with cash if you have equity",

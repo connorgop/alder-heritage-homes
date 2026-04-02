@@ -21,7 +21,7 @@ export default function About() {
             About Us
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif" }}>
-            The Ethical Cash Home Buyer<br />in Fresno's Central Valley
+            Fresno's Honest Cash Home Buyer
           </h1>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: "oklch(0.80 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
             We're not a wholesaler. We're not a hedge fund. We're a licensed California real estate agent who actually buys your home — fairly, transparently, and on your timeline.

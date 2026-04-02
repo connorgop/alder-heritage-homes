@@ -130,7 +130,7 @@ export default function JunkRemoval() {
                   {[
                     "Leave everything — no cleanout required",
                     "Save $3,000–$15,000 in cleanout costs",
-                    "Close in as few as 7 days",
+                    "close in as few as 5–7 days",
                     "We pay all closing costs",
                     "No agent commissions",
                     "Cash in hand, move on",
