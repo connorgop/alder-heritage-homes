@@ -18,6 +18,8 @@ const PHONE_HREF = "tel:5592818016";
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp";
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
 const FORECLOSURE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/foreclosure-help-TU46LJDiCeKVaTFvCVuw8j.webp";
+const VIDEO_INTRO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv23_1c0c77d4.MP4";
+const VIDEO_WHY_US = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/video-realtors_8f735f00.mp4";
 
 const situations = [
   {
@@ -196,11 +198,65 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
+            {/* Price Match Guarantee badge */}
+            <div className="fade-up fade-up-delay-4 mt-6 inline-flex items-center gap-3 px-5 py-3 rounded-xl" style={{ background: "oklch(0.55 0.13 42 / 0.18)", border: "1.5px solid oklch(0.75 0.10 42 / 0.5)", backdropFilter: "blur(6px)" }}>
+              <span style={{ fontSize: "1.25rem" }}>🏆</span>
+              <div>
+                <p className="font-bold text-sm" style={{ color: "oklch(0.95 0.05 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  We Match or Beat Any Cash Offer — Guaranteed
+                </p>
+                <p className="text-xs mt-0.5" style={{ color: "oklch(0.78 0.03 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.04em" }}>
+                  We pay more than our competitors · No games, no lowballs
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Diagonal bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-20" style={{ background: "oklch(0.97 0.015 85)", clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }} />
+      </section>
+
+      {/* ── INTRO VIDEO ── */}
+      <section className="py-20" style={{ background: "oklch(0.93 0.02 85)" }}>
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+                Meet Connor
+              </span>
+              <h2 className="mt-3 text-3xl md:text-4xl font-bold mb-5" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                A Local Fresno Buyer You Can Actually Trust
+              </h2>
+              <p className="text-lg leading-relaxed mb-6" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Do you have a house in Fresno that you need to sell? Whether you're dealing with an inherited home, facing foreclosure, or simply ready to move on — we're here to help. Watch Connor explain how we work.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/contact">
+                  <button className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Get My Cash Offer <ArrowRight size={18} />
+                  </button>
+                </Link>
+                <a href={PHONE_HREF} className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)", color: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  <Phone size={18} /> {PHONE}
+                </a>
+              </div>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: "16/9" }}>
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-cover"
+                poster={HERO_IMG}
+                style={{ background: "oklch(0.22 0.01 60)" }}
+              >
+                <source src={VIDEO_INTRO} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* ── SITUATION FINDER ── */}
@@ -363,6 +419,56 @@ export default function HomePage() {
                   <p className="text-xs mt-2" style={{ color: "oklch(0.75 0.02 155)", fontFamily: "'DM Mono', monospace" }}>— James K., Sanger CA</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── WHY NOT USE A REALTOR VIDEO ── */}
+      <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1" style={{ aspectRatio: "16/9" }}>
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-cover"
+                poster={HANDSHAKE_IMG}
+                style={{ background: "oklch(0.22 0.01 60)" }}
+              >
+                <source src={VIDEO_WHY_US} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div className="order-1 lg:order-2">
+              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+                The Truth About Listing
+              </span>
+              <h2 className="mt-3 text-3xl md:text-4xl font-bold mb-5" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                Why Selling to Us Beats Listing With an Agent
+              </h2>
+              <p className="text-lg leading-relaxed mb-5" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Listing with a realtor means open houses, photographer fees, repair demands, and buyers who can back out of escrow at the last minute. Watch this short video to understand the difference.
+              </p>
+              <ul className="space-y-3 mb-6">
+                {[
+                  "No open houses or weekend showings",
+                  "No repair demands or inspection contingencies",
+                  "No risk of buyer financing falling through",
+                  "Cash in hand in 5–7 days",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-sm font-medium" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    <CheckCircle2 size={16} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/contact">
+                <button className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  Skip the Hassle — Get My Offer <ArrowRight size={18} />
+                </button>
+              </Link>
             </div>
           </div>
         </div>

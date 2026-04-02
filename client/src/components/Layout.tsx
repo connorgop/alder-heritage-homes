@@ -47,9 +47,26 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.97 0.015 85)" }}>
-      {/* Top bar */}
-      <div style={{ background: "oklch(0.28 0.05 155)", color: "white" }} className="py-2 text-center text-sm">
-        <span className="font-mono-label" style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.06em" }}>
+      {/* Top bar — Price Match Guarantee */}
+      <div style={{ background: "oklch(0.55 0.13 42)", color: "white" }} className="py-2.5 text-center">
+        <div className="flex items-center justify-center gap-2 flex-wrap px-4">
+          <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.08em", textTransform: "uppercase", opacity: 0.85 }}>
+            🏆
+          </span>
+          <span style={{ fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.875rem", fontWeight: 700 }}>
+            We Will Match or Beat Any Cash Offer You Receive — Guaranteed
+          </span>
+          <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.08em", textTransform: "uppercase", opacity: 0.75 }}>
+            · We Pay More Than Our Competitors ·
+          </span>
+          <a href={PHONE_HREF} style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", textDecoration: "underline", color: "white", opacity: 0.9 }}>
+            Call Now: {PHONE}
+          </a>
+        </div>
+      </div>
+      {/* Sub bar — license/service area */}
+      <div style={{ background: "oklch(0.28 0.05 155)", color: "white" }} className="py-1.5 text-center">
+        <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.06em", opacity: 0.85 }}>
           Licensed CA Real Estate Agent · DRE #02219124 · Serving Fresno &amp; the Central Valley
         </span>
       </div>
