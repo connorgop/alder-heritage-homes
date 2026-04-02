@@ -151,6 +151,32 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Consumer Education Pages -->
+  <url>
+    <loc>https://www.alderheritagehomes.com/dont-get-wholesaled</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/dont-hire-friend-realtor</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/arm-rate-change-help</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/cant-afford-my-home</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Blog Posts -->
   <url>
     <loc>https://www.alderheritagehomes.com/blog/sell-inherited-house-fresno</loc>
@@ -199,6 +225,18 @@
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/dont-get-wholesaled-fresno-cash-buyer-warning</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/dont-hire-friend-family-realtor-fresno</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

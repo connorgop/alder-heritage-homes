@@ -32,6 +32,16 @@ import WhyChooseUs from "./pages/WhyChooseUs";
 import ArmRateChange from "./pages/services/ArmRateChange";
 import CantAffordHome from "./pages/services/CantAffordHome";
 
+// Google Ads landing pages (no nav, conversion-optimized)
+import ArmRateAd from "./pages/ads/ArmRateAd";
+import CantAffordAd from "./pages/ads/CantAffordAd";
+import ForeclosureAd from "./pages/ads/ForeclosureAd";
+import ProbateAd from "./pages/ads/ProbateAd";
+import DivorceAd from "./pages/ads/DivorceAd";
+import SellFastAd from "./pages/ads/SellFastAd";
+import BehindMortgageAd from "./pages/ads/BehindMortgageAd";
+import WholesalerWarningAd from "./pages/ads/WholesalerWarningAd";
+
 // City landing pages
 import FresnoPage from "./pages/cities/Fresno";
 import ClovisPage from "./pages/cities/Clovis";
@@ -80,6 +90,16 @@ function Router() {
       <Route path="/dont-hire-friend-realtor" component={DontHireFriendRealtor} />
       <Route path="/arm-rate-change-help" component={ArmRateChange} />
       <Route path="/cant-afford-my-home" component={CantAffordHome} />
+
+      {/* Google Ads landing pages — no nav, conversion-optimized */}
+      <Route path="/lp/arm-rate-change" component={ArmRateAd} />
+      <Route path="/lp/cant-afford-home" component={CantAffordAd} />
+      <Route path="/lp/stop-foreclosure" component={ForeclosureAd} />
+      <Route path="/lp/probate-inherited-home" component={ProbateAd} />
+      <Route path="/lp/divorce-home-sale" component={DivorceAd} />
+      <Route path="/lp/sell-house-fast" component={SellFastAd} />
+      <Route path="/lp/behind-on-mortgage" component={BehindMortgageAd} />
+      <Route path="/lp/real-cash-buyer-not-wholesaler" component={WholesalerWarningAd} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

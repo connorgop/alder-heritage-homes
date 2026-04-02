@@ -8,6 +8,7 @@ import { useState, useEffect, useRef } from "react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
+import { useSEO, localBusinessSchema } from "@/hooks/useSEO";
 import {
   Phone, ArrowRight, CheckCircle2, Clock, Shield, Star,
   Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Heart, Loader2
@@ -320,6 +321,12 @@ function InlineOfferForm() {
 }
 
 export default function HomePage() {
+  useSEO({
+    title: "Fresno Cash Home Buyer — Sell Your House Fast, Any Condition",
+    description: "Alder Heritage Homes buys houses directly for cash in Fresno and the Central Valley. Licensed CA Agent (DRE #02219124). No wholesaling, no bait-and-switch. Free Broker Opinion of Value. Close in 5–7 days or on your timeline.",
+    canonical: "/",
+    schema: localBusinessSchema,
+  });
   return (
     <Layout>
       {/* ── HERO ── */}
