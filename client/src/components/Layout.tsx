@@ -26,12 +26,14 @@ const services = [
   { label: "Divorce Home Sale", href: "/sell-house-divorce" },
   { label: "Tired Landlord", href: "/tired-landlord" },
   { label: "Junk Removal — Read This First", href: "/junk-removal-before-selling" },
+  { label: "⚠️ Vacant Property Warning", href: "/vacant-property-warning" },
 ];
 
 const trust = [
   { label: "Why We're Different", href: "/why-choose-us" },
   { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
   { label: "Don't Hire Your Friend Realtor", href: "/dont-hire-friend-realtor" },
+  { label: "⚠️ Vacant Home Security", href: "/vacant-property-warning" },
   { label: "About Connor", href: "/about" },
   { label: "Blog & Resources", href: "/blog" },
 ];
@@ -45,6 +47,7 @@ const cities = [
   { label: "Selma", href: "/we-buy-houses-selma" },
   { label: "Hanford", href: "/we-buy-houses-hanford" },
   { label: "Reedley", href: "/we-buy-houses-reedley" },
+  { label: "Bakersfield", href: "/we-buy-houses-bakersfield" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {

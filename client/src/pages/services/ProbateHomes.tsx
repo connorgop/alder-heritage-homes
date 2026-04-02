@@ -66,6 +66,7 @@ export default function ProbateHomes() {
       ]}
       ctaTitle="We Handle the Complexity So You Don't Have To"
       ctaBody="100+ probate sales. Compassionate, experienced, licensed. Call us for a free consultation — no pressure, no obligation, just honest guidance."
+      showVacantWarning={true}
       relatedLinks={[
         { label: "Sell House Fast", href: "/sell-house-fast" },
         { label: "Foreclosure Help", href: "/foreclosure-help" },

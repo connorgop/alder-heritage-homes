@@ -13,6 +13,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import DontGetWholesaled from "./pages/DontGetWholesaled";
 import DontHireFriendRealtor from "./pages/DontHireFriendRealtor";
+import VacantPropertyWarning from "./pages/VacantPropertyWarning";
 
 // Service pages
 import ForeclosureHelp from "./pages/services/ForeclosureHelp";
@@ -21,8 +22,6 @@ import RentBack from "./pages/services/RentBack";
 import ProbateHomes from "./pages/services/ProbateHomes";
 import FastSale from "./pages/services/FastSale";
 import BehindOnMortgage from "./pages/services/BehindOnMortgage";
-
-// New service pages
 import RoofDamage from "./pages/services/RoofDamage";
 import HoarderHouse from "./pages/services/HoarderHouse";
 import DivorceHome from "./pages/services/DivorceHome";
@@ -51,6 +50,7 @@ import MaderaPage from "./pages/cities/Madera";
 import VisaliaPage from "./pages/cities/Visalia";
 import HanfordPage from "./pages/cities/Hanford";
 import ReedleyPage from "./pages/cities/Reedley";
+import BakersfieldPage from "./pages/cities/Bakersfield";
 
 function Router() {
   return (
@@ -68,18 +68,6 @@ function Router() {
       <Route path="/probate-inherited-homes" component={ProbateHomes} />
       <Route path="/sell-house-fast" component={FastSale} />
       <Route path="/behind-on-mortgage" component={BehindOnMortgage} />
-
-      {/* City pages */}
-      <Route path="/we-buy-houses-fresno" component={FresnoPage} />
-      <Route path="/we-buy-houses-clovis" component={ClovisPage} />
-      <Route path="/we-buy-houses-sanger" component={SangerPage} />
-      <Route path="/we-buy-houses-selma" component={SelmaPage} />
-      <Route path="/we-buy-houses-madera" component={MaderaPage} />
-      <Route path="/we-buy-houses-visalia" component={VisaliaPage} />
-      <Route path="/we-buy-houses-hanford" component={HanfordPage} />
-      <Route path="/we-buy-houses-reedley" component={ReedleyPage} />
-
-      {/* New service pages */}
       <Route path="/sell-house-roof-damage" component={RoofDamage} />
       <Route path="/sell-hoarder-house" component={HoarderHouse} />
       <Route path="/sell-house-divorce" component={DivorceHome} />
@@ -90,6 +78,18 @@ function Router() {
       <Route path="/dont-hire-friend-realtor" component={DontHireFriendRealtor} />
       <Route path="/arm-rate-change-help" component={ArmRateChange} />
       <Route path="/cant-afford-my-home" component={CantAffordHome} />
+      <Route path="/vacant-property-warning" component={VacantPropertyWarning} />
+
+      {/* City pages */}
+      <Route path="/we-buy-houses-fresno" component={FresnoPage} />
+      <Route path="/we-buy-houses-clovis" component={ClovisPage} />
+      <Route path="/we-buy-houses-sanger" component={SangerPage} />
+      <Route path="/we-buy-houses-selma" component={SelmaPage} />
+      <Route path="/we-buy-houses-madera" component={MaderaPage} />
+      <Route path="/we-buy-houses-visalia" component={VisaliaPage} />
+      <Route path="/we-buy-houses-hanford" component={HanfordPage} />
+      <Route path="/we-buy-houses-reedley" component={ReedleyPage} />
+      <Route path="/we-buy-houses-bakersfield" component={BakersfieldPage} />
 
       {/* Google Ads landing pages — no nav, conversion-optimized */}
       <Route path="/lp/arm-rate-change" component={ArmRateAd} />

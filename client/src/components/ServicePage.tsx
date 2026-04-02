@@ -5,6 +5,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
+import VacantPropertyBanner from "@/components/VacantPropertyBanner";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -25,6 +26,7 @@ interface ServicePageProps {
   ctaTitle: string;
   ctaBody: string;
   relatedLinks?: { label: string; href: string }[];
+  showVacantWarning?: boolean;
 }
 
 export default function ServicePage({
@@ -40,6 +42,7 @@ export default function ServicePage({
   ctaTitle,
   ctaBody,
   relatedLinks,
+  showVacantWarning,
 }: ServicePageProps) {
   return (
     <Layout>
@@ -83,6 +86,7 @@ export default function ServicePage({
               <p className="text-lg leading-relaxed mb-10" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 {intro}
               </p>
+              {showVacantWarning && <VacantPropertyBanner />}
               <div className="prose-heritage space-y-8">
                 {sections.map((s, i) => (
                   <div key={i}>
