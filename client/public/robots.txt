@@ -1,0 +1,8 @@
+# robots.txt — Alder Heritage Homes
+# https://www.alderheritagehomes.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.alderheritagehomes.com/sitemap.xml
