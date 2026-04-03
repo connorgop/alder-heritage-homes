@@ -549,6 +549,207 @@ const articleContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  "sell-hoarder-house-fresno": (
+    <div className="prose-heritage">
+      <p>There is a specific kind of dread that comes with inheriting or owning a property that has been lived in by a hoarder. The rooms are packed floor to ceiling. There are narrow pathways between stacks of boxes, bags, furniture, and things that defy categorization. The smell hits you at the front door. And somewhere in the back of your mind, you're calculating how many dumpsters it would take to empty the place — and whether you can afford them.</p>
+      <p>Here is what most homeowners in this situation don't know: <strong>you don't have to clean it out to sell it.</strong> Not a single bag. Not a single box. We have purchased properties in Fresno and the Central Valley in exactly this condition — and we handled the cleanout ourselves after closing.</p>
+
+      <h2>Why Traditional Buyers Won't Touch a Hoarder Property</h2>
+      <p>A traditional buyer — someone purchasing with a mortgage — cannot buy a property in severe hoarding condition. Their lender will require an appraisal, and the appraiser will flag the property as uninhabitable. No appraisal, no loan. No loan, no sale. Even cash buyers who are not experienced with distressed properties often walk away when they see the scope of the cleanout.</p>
+      <p>This is why hoarder properties sit on the market for months, or never make it to market at all. The family tries to clean it out, gets overwhelmed, and the property sits vacant — accumulating property taxes, insurance costs, and the risk of break-ins and vandalism.</p>
+
+      <h2>What We Actually Do Differently</h2>
+      <p>We have a crew. We have dumpster contacts. We have junk haulers we trust. When we purchase a hoarder property, we are not surprised by what we find — we have seen it before, and we have a system for dealing with it. The cleanout is our problem, not yours. We price our offer with the cleanout cost factored in, which means you get a fair number without having to lift a single item.</p>
+      <p>We also do not judge. We have worked with families who were embarrassed to let anyone see the property. We have worked with adult children who were overwhelmed by the task of dealing with a parent's estate. We have worked with homeowners who simply could not face the cleanout alone. In every case, our goal is to make the process as simple and dignified as possible.</p>
+
+      <h2>The Pricing Reality for Hoarder Properties</h2>
+      <p>Here is the honest math. A hoarder property in Fresno that would be worth $280,000 in clean, move-in condition might receive a cash offer of $220,000–$240,000. That $40,000–$60,000 discount reflects the cleanout cost (typically $5,000–$20,000 for severe cases), the cost of repairs that are often hidden under the clutter, and the buyer's margin for taking on the risk of unknown conditions. It is not a lowball — it is the arithmetic of what makes a cash purchase viable.</p>
+      <p>Compare that to the alternative: hiring a junk removal company ($3,000–$15,000), discovering structural damage or pest infestation after the cleanout, making repairs, listing the property, waiting 60–90 days for a buyer, paying 5–6% in commissions, and still not knowing if the deal will close. Many families who go through that process end up netting less than the cash offer — and spending months of stress getting there.</p>
+
+      <h2>What About Probate or Inherited Hoarder Houses?</h2>
+      <p>Inherited hoarder properties are one of the most common situations we handle. When a family member passes and leaves behind a heavily cluttered home, the heirs are often out-of-state, emotionally exhausted, and have no idea where to start. We specialize in exactly this scenario. We can work with the estate executor or administrator, coordinate with the probate attorney, and close on a timeline that works with the court process. With 100+ probate sales completed in Fresno and the Central Valley, we know this process inside and out.</p>
+
+      <h2>Fresno Neighborhoods Where We Buy Hoarder Properties</h2>
+      <p>We regularly purchase hoarder and cluttered properties throughout Fresno County and the surrounding area: Tower District, Fig Garden, Clovis, Sanger, Selma, Madera, Visalia, Hanford, and the broader Central Valley. The local market has strong demand for renovated properties, which means we can often offer competitive prices even on severely distressed homes.</p>
+
+      <h2>Ready to Sell? Here's How to Start</h2>
+      <p>You don't need to clean anything. You don't need to take photos. You don't need to be embarrassed. Just call us at <strong>(559) 281-8016</strong> or submit your address using the form on this page. We will schedule a walkthrough at your convenience, make you a fair cash offer within 24 hours, and close on your timeline — leaving the cleanout entirely to us. You have been carrying this long enough. Let us handle the rest.</p>
+    </div>
+  ),
+
+  "sell-house-mold-fresno": (
+    <div className="prose-heritage">
+      <p>Mold is one of the most feared words in real estate — and for good reason. In California, sellers are legally required to disclose known mold to buyers. Lenders routinely refuse to finance homes with active mold problems. And remediation costs can run from a few thousand dollars for a small bathroom issue to $30,000 or more for a whole-house infestation that has spread into the walls and HVAC system.</p>
+      <p>But here is what most Fresno homeowners with mold problems don't know: <strong>you have options that don't involve spending $20,000 on remediation before you can sell.</strong></p>
+
+      <h2>California's Mold Disclosure Requirements</h2>
+      <p>California law requires sellers to disclose known mold to buyers. This is non-negotiable — failure to disclose can result in civil liability after the sale. The Transfer Disclosure Statement (TDS) specifically asks about mold. If you know it's there, you must disclose it.</p>
+      <p>What this means in practice: if you sell to a traditional buyer through an agent, the mold disclosure will trigger a mold inspection contingency. The inspector will find the full extent of the problem. The buyer will demand remediation or a price reduction. If the mold is significant, the lender may refuse to fund the loan until remediation is complete. The deal often falls apart.</p>
+
+      <h2>Why Mold Is Especially Common in Fresno and the Central Valley</h2>
+      <p>Fresno's climate — hot, dry summers and cool, wet winters — creates specific conditions that promote mold growth. Older homes with inadequate ventilation, crawl spaces that collect moisture, and swamp coolers that introduce humidity are particularly vulnerable. Properties that have been vacant for any period of time are at high risk, as are homes with slow leaks under sinks, around water heaters, or in the roof.</p>
+      <p>We see mold most frequently in: crawl spaces and subfloor areas, bathrooms with poor ventilation, kitchens with slow plumbing leaks, attic spaces with inadequate ventilation, and homes that have had any water intrusion event — roof leak, flooding, burst pipe.</p>
+
+      <h2>Your Options When You Have a Mold Problem</h2>
+      <p><strong>Option 1: Remediate and sell traditionally.</strong> This is the right choice if the mold is limited in scope, you have the capital to remediate, and you want to maximize your sale price. A professional remediation company will contain the affected area, remove contaminated materials, treat the surface, and provide a clearance certificate. This can take 1–4 weeks and cost $3,000–$30,000+ depending on severity.</p>
+      <p><strong>Option 2: Sell as-is with full disclosure.</strong> You can list the property with full mold disclosure and price it accordingly. The pool of buyers will be limited — most financed buyers cannot purchase a home with active mold — but cash investors and experienced buyers will consider it. Expect a significant price reduction from market value.</p>
+      <p><strong>Option 3: Sell to a cash buyer who buys as-is.</strong> This is often the fastest and least stressful path. We buy homes with mold problems in Fresno and the Central Valley. We do not require remediation before closing. We factor the remediation cost into our offer, close on your timeline, and handle the remediation ourselves after we own the property. No waiting, no contractor bids, no uncertainty.</p>
+
+      <h2>What We Pay for Mold-Affected Properties</h2>
+      <p>Our offer on a mold-affected property reflects the after-repair value minus the cost of remediation and any other needed repairs. If your home would be worth $300,000 clean and remediated, and remediation costs $15,000, our offer will reflect that math. We are transparent about how we arrive at our number — and we include a free broker opinion of value with every offer so you can verify the starting point is fair.</p>
+
+      <h2>Ready to Sell?</h2>
+      <p>If you have a property with a mold problem in Fresno, Clovis, Madera, Visalia, or anywhere in the Central Valley, call us at <strong>(559) 281-8016</strong>. We will schedule a walkthrough, give you an honest assessment, and make you a fair cash offer within 24 hours. No remediation required. No judgment. Just a straightforward path to closing.</p>
+    </div>
+  ),
+
+  "sell-house-squatter-fresno": (
+    <div className="prose-heritage">
+      <p>Squatters are one of the most stressful situations a property owner can face. You own the home. You are paying the property taxes. But someone else is living there — and California law gives them more rights than most people realize.</p>
+      <p>We have dealt with this firsthand. On Roosevelt Avenue in Fresno, we purchased a property where unauthorized occupants had been living for months. They had drilled through the subfloor and entered through the crawl space. By the time we discovered the situation, they had been there long enough to create a genuine legal complication. We handled it — but it took time, money, and the right legal help.</p>
+      <p>This article explains exactly what your options are when you have a squatter in your Fresno property — and how to sell the property even if the squatter is still there.</p>
+
+      <h2>California Squatter Rights: The Uncomfortable Reality</h2>
+      <p>California has some of the strongest tenant protections in the country — and those protections extend to squatters in certain circumstances. If an unauthorized occupant has been living in a property for any period of time, you generally cannot remove them by simply changing the locks or cutting utilities. Doing so is considered a "self-help eviction" and can expose you to civil liability.</p>
+      <p>In California, removing a squatter typically requires a formal unlawful detainer (eviction) proceeding. The process involves serving proper notice, filing with the court, attending a hearing, and — if the squatter doesn't leave voluntarily — obtaining a writ of possession and having the sheriff physically remove them. From start to finish, this process can take 30–90 days in Fresno County, and longer if the squatter contests the eviction.</p>
+
+      <h2>Can You Sell a Property With a Squatter in It?</h2>
+      <p>Yes. This surprises most people, but it is true. You can sell a property with an unauthorized occupant — the squatter does not have to be gone before you close. What changes is the pool of buyers. A traditional buyer with a mortgage cannot purchase a property with an occupancy issue — their lender will not fund the loan. But a cash buyer can purchase the property as-is, with the squatter situation disclosed, and handle the eviction process after closing.</p>
+      <p>We have done this. We purchased the Clovis property described elsewhere on this site — a home with a two-year squatter, no water, no sewer, full of trash, and a double homicide history. We paid $200,000 cash, as-is, no inspection, and handled everything after closing. If you have a property with an unauthorized occupant, call us before you spend months on an eviction you may not need to complete yourself.</p>
+
+      <h2>How to Secure a Vacant Property Against Squatters</h2>
+      <p>If the property is currently vacant and you want to prevent squatters from moving in, take these steps immediately. Change or rekey all exterior door locks. Install door reinforcement plates — the door itself is often solid, but the strike plate and frame are the weak point. Board or secure all ground-floor windows. Install locking covers on all crawl space vents. Walk the perimeter and look for any opening larger than 6 inches at ground level — squatters have been known to enter through crawl space vents, as happened on Roosevelt Avenue.</p>
+
+      <h2>What to Do If There Is Already a Squatter</h2>
+      <p>Do not attempt to remove a squatter yourself. Call an attorney who handles unlawful detainer cases in Fresno County. We can refer you to one who handles exactly this situation. In the meantime, document everything — photograph the property, note when you discovered the occupant, and do not enter into any verbal agreements with the occupant about when they will leave.</p>
+      <p>If you want to sell the property rather than go through the eviction process, call us at <strong>(559) 281-8016</strong>. We will assess the situation, make you a fair cash offer, and take the squatter problem off your hands entirely.</p>
+    </div>
+  ),
+
+  "sell-fire-damaged-house-fresno": (
+    <div className="prose-heritage">
+      <p>A house fire is one of the most traumatic events a homeowner can experience. Even after the immediate crisis passes, you are left with a damaged property, an insurance claim in process, and a decision to make: rebuild, sell as-is, or something in between.</p>
+      <p>This guide covers the three realistic options for Fresno homeowners dealing with fire-damaged properties — and helps you understand which one makes sense depending on your specific situation.</p>
+
+      <h2>Option 1: File the Insurance Claim and Rebuild</h2>
+      <p>If you have adequate homeowner's insurance and the fire was reported promptly, your insurer will assign an adjuster to assess the damage and determine the payout. The payout is typically based on the cost to repair or replace — not the market value of the home. If you have replacement cost coverage (as opposed to actual cash value coverage), you should receive enough to rebuild to pre-fire condition.</p>
+      <p>The rebuild process in Fresno typically takes 6–18 months, depending on the extent of the damage, contractor availability, and permit timelines. During this period, your insurer may provide additional living expense (ALE) coverage to pay for temporary housing. This is the right path if you want to keep the property, have good insurance, and are prepared for a lengthy process.</p>
+      <p><strong>The complication:</strong> Many homeowners discover their coverage is inadequate — either because the policy limits are too low, because the fire was not covered (arson, vacancy clause violations, etc.), or because the insurer disputes the extent of the damage. If you are in a dispute with your insurer, a public adjuster or attorney can help — but the process can drag on for a year or more.</p>
+
+      <h2>Option 2: Sell the Insurance Claim and the Property Together</h2>
+      <p>If you have an active insurance claim, you can sell the property while the claim is still open. The buyer takes over the property and the claim — receiving the insurance payout when it is settled. This is more complex than a standard sale and requires a buyer who understands the process, but it is a legitimate option that allows you to exit quickly without waiting for the claim to resolve.</p>
+      <p>We have purchased fire-damaged properties in Fresno with open insurance claims. We know how to structure these transactions correctly. If you are in this situation, call us before you accept or reject any insurance settlement — the timing matters.</p>
+
+      <h2>Option 3: Sell As-Is to a Cash Buyer (No Insurance Claim Required)</h2>
+      <p>If you do not want to deal with the insurance process, the rebuild, or the complexity of selling with an open claim, you can sell the fire-damaged property as-is to a cash buyer. We will make you an offer based on the property's after-repair value minus the cost of fire remediation and reconstruction. You close, you walk away, and we handle everything else.</p>
+      <p>This is often the fastest path — we can close in 5–7 days. It typically results in a lower net than a full insurance payout and rebuild, but it eliminates months of uncertainty, contractor management, and insurance disputes. For homeowners who are emotionally done with the property, or who cannot afford to carry the costs during a lengthy rebuild, it is often the right choice.</p>
+
+      <h2>What We Pay for Fire-Damaged Properties in Fresno</h2>
+      <p>Our offer on a fire-damaged property reflects the after-repair value minus the full cost of remediation and reconstruction. Smoke damage alone can cost $10,000–$30,000 to remediate properly. Structural fire damage can run $50,000–$150,000 or more. We factor all of this into our offer and are transparent about the math. We also include a free broker opinion of value so you can verify our starting point is fair.</p>
+
+      <h2>Ready to Discuss Your Options?</h2>
+      <p>If you have a fire-damaged property in Fresno, Clovis, Madera, Visalia, or anywhere in the Central Valley, call us at <strong>(559) 281-8016</strong>. We will walk the property with you, explain your options honestly, and make you a fair cash offer if that is the path you want to take. No pressure. No obligation. Just a straight conversation about what makes sense for your situation.</p>
+    </div>
+  ),
+
+  "sell-house-bad-tenants-fresno": (
+    <div className="prose-heritage">
+      <p>Problem tenants are one of the most common reasons landlords in Fresno decide to sell. Not because the property is bad — but because the relationship has become untenable. Late payments. Damage. Noise complaints. Threats. The constant stress of managing someone who knows exactly how to exploit California's tenant protections to stay in your property as long as possible.</p>
+      <p>Here is what most landlords in this situation don't know: <strong>you don't have to complete the eviction before you sell.</strong> We have purchased rental properties in Fresno with problem tenants still inside — no eviction required, no inspection, quick close. Here is how it works.</p>
+
+      <h2>Why Traditional Buyers Won't Touch Tenant-Occupied Problem Properties</h2>
+      <p>A traditional buyer purchasing with a mortgage needs the property to be vacant at closing, or occupied by a cooperative tenant who will sign a new lease. A problem tenant — one who is behind on rent, damaging the property, or actively hostile — makes the property unsaleable to most buyers. The lender's appraiser cannot access the property. The buyer cannot inspect it properly. And the buyer has no way to know when they will actually be able to take possession.</p>
+      <p>This is why landlords with problem tenants often feel trapped. The eviction process in California can take 3–6 months, cost $3,000–$10,000 in legal fees, and result in significant property damage when the tenant finally leaves. Many landlords spend more on the eviction than they would have lost by selling at a discount.</p>
+
+      <h2>California Tenant Protections: What Landlords Need to Know</h2>
+      <p>California's AB 1482 (Tenant Protection Act) limits rent increases and requires "just cause" for eviction in most residential properties built before 2005. Even in properties not covered by AB 1482, the eviction process is formal and time-consuming. Fresno County's courts are backlogged, which extends timelines further. And if the tenant contests the eviction, the process can drag on for months.</p>
+      <p>The one thing that does not change: you have the right to sell your property. A tenant's occupancy does not prevent a sale — it only limits the pool of buyers to those who can handle the situation.</p>
+
+      <h2>How We Buy Tenant-Occupied Properties</h2>
+      <p>We purchase rental properties in Fresno with tenants in place — including problem tenants. Our process is straightforward. We assess the property's value based on comparable sales and the cost of the eviction process. We make you a cash offer that reflects the current situation. We close on your timeline — typically 5–7 days. After closing, we handle the tenant situation ourselves.</p>
+      <p>We have experience with the full range of tenant situations: non-payment, property damage, unauthorized occupants, squatters, and tenants who have received eviction notices but not yet vacated. We know the Fresno County court system, we have relationships with attorneys who handle unlawful detainer cases, and we have the patience and resources to see the process through.</p>
+
+      <h2>The Skyline REI Portfolio Approach</h2>
+      <p>If you have multiple rental properties with problem tenants — or if you are simply done being a landlord — we can purchase your entire portfolio in a single transaction through our Skyline REI buying entity. We have completed portfolio purchases of 4 and 8 homes in the Fresno area, including properties with complicated tenant situations. A portfolio sale eliminates the need to manage multiple evictions, multiple sales, and multiple closings. One transaction, one closing, done.</p>
+
+      <h2>Ready to Sell?</h2>
+      <p>If you have a rental property with problem tenants in Fresno, Clovis, Madera, Visalia, or anywhere in the Central Valley, call us at <strong>(559) 281-8016</strong>. We will assess the situation, make you a fair cash offer, and take the tenant problem off your hands entirely. No eviction required. No repairs. No inspection. Just a clean exit from a situation that has been costing you money and peace of mind.</p>
+    </div>
+  ),
+
+  "sell-house-foundation-problems-fresno": (
+    <div className="prose-heritage">
+      <p>Foundation problems are one of the most deal-killing issues in residential real estate. When a buyer's inspector finds foundation issues, the deal almost always falls apart — either because the buyer walks, the lender refuses to fund, or the repair bids come in so high that the numbers no longer work. And in Fresno and the Central Valley, foundation problems are more common than most people realize.</p>
+
+      <h2>Why Foundation Problems Are Common in the Central Valley</h2>
+      <p>The San Joaquin Valley has expansive clay soils that shrink and swell dramatically with moisture changes. During Fresno's dry summers, the soil contracts. During wet winters, it expands. This repeated movement puts stress on foundations — particularly older slab foundations and pier-and-beam foundations that were not designed to accommodate significant soil movement.</p>
+      <p>The problem is compounded by the Valley's agricultural water use, which has caused significant groundwater depletion and land subsidence in some areas. Properties near irrigation districts or in areas with heavy groundwater extraction history may experience ongoing settling that is not fully correctable.</p>
+      <p>Common foundation issues we see in Fresno-area properties include: slab cracking and heaving, pier-and-beam settling and rot, stem wall cracking, and drainage problems that cause ongoing moisture damage to the foundation.</p>
+
+      <h2>What Foundation Repairs Actually Cost</h2>
+      <p>Foundation repair costs in Fresno vary enormously depending on the type and severity of the problem. Minor crack repair and waterproofing can run $3,000–$8,000. Moderate settling that requires mudjacking or pier installation typically costs $8,000–$25,000. Severe foundation problems requiring full replacement or major structural work can run $30,000–$80,000 or more. And these are estimates — the actual cost often increases once contractors open up the foundation and discover the full extent of the problem.</p>
+      <p>The other issue: not all foundation problems are fully correctable. In areas with ongoing soil movement, repairs may slow the problem but not stop it. A buyer who purchases a repaired foundation is taking on the risk that the problem recurs.</p>
+
+      <h2>Why Foundation Problems Kill Traditional Sales</h2>
+      <p>When a buyer's inspector finds foundation issues, the buyer's lender typically requires a structural engineer's report. The engineer's report either clears the foundation (rare for significant issues) or recommends repairs. If repairs are recommended, the lender usually requires them to be completed before funding — which means you are either paying for the repairs out of pocket or negotiating a price reduction large enough to cover them. Most buyers walk rather than deal with the complexity.</p>
+
+      <h2>Selling a Foundation-Problem Property As-Is</h2>
+      <p>We buy homes with foundation problems in Fresno and the Central Valley. We do not require repairs before closing. We have the experience to assess foundation issues accurately, the contractor relationships to get realistic repair bids, and the capital to close without a lender's approval. Our offer reflects the after-repair value minus the realistic cost of the foundation work — and we are transparent about how we arrive at that number.</p>
+      <p>We also include a free broker opinion of value with every offer, so you can verify that our starting point — what the home would be worth with the foundation repaired — is accurate. You are not taking our word for it.</p>
+
+      <h2>Ready to Get an Offer?</h2>
+      <p>If you have a property with foundation problems in Fresno, Clovis, Madera, Visalia, Hanford, or anywhere in the Central Valley, call us at <strong>(559) 281-8016</strong>. We will walk the property with you, give you an honest assessment of the foundation issues, and make you a fair cash offer within 24 hours. No repairs required. No inspection contingency. Just a straightforward path to closing.</p>
+    </div>
+  ),
+
+  "nas-lemoore-pcs-sell-house-fast": (
+    <div className="prose-heritage">
+      <p>PCS orders are one of the most stressful housing situations a military family can face. You have a report date. You have a family to move. And you have a house in Kings County that you need to sell — fast. The traditional real estate process was not designed for military timelines, and the consequences of getting it wrong can follow you for years.</p>
+      <p>This guide is specifically for military families at NAS Lemoore and throughout Kings County who need to sell their home quickly when orders come in.</p>
+
+      <h2>The NAS Lemoore Housing Market</h2>
+      <p>Lemoore and the surrounding Kings County area has a housing market that is heavily influenced by NAS Lemoore's presence. When the base is active and families are rotating in, demand is strong. When large groups PCS out simultaneously — which happens with squadron deployments and homecomings — the market can be flooded with supply. This means the timing of your PCS can significantly affect how quickly your home sells and at what price.</p>
+      <p>The good news: Lemoore and Hanford have a strong base of local buyers who understand military housing and are comfortable purchasing homes in the area. The bad news: if you need to sell in 30–45 days, a traditional sale may not close in time — and a failed sale can leave you carrying two housing costs while you are stationed across the country.</p>
+
+      <h2>Your Options When PCS Orders Come In</h2>
+      <p><strong>Traditional listing.</strong> If you have 60–90 days and your home is in good condition, a traditional listing with a local agent is worth considering. Lemoore and Hanford have active buyer pools, and a well-priced home can sell in 30–45 days. The risk is the financing contingency — if the buyer's loan falls through, you are back to square one with less time on the clock.</p>
+      <p><strong>VA loan assumption.</strong> If you have a VA loan with a favorable interest rate, your loan may be assumable — meaning a buyer can take over your loan at your rate rather than getting a new mortgage at current rates. This can be a significant selling advantage in a high-rate environment and may allow you to sell faster and at a better price. Talk to your lender about whether your loan is assumable.</p>
+      <p><strong>Rent the property.</strong> If you have time to set it up properly, renting your Lemoore home to another military family can be a solid long-term strategy. Military families make excellent tenants — stable income, responsible, and familiar with the area. The downside: being a long-distance landlord is challenging, and you will need a property manager you trust.</p>
+      <p><strong>Sell to a cash buyer.</strong> If your timeline is tight — 30 days or less — a cash sale is often the only option that guarantees a close before your report date. We can close in 5–7 days. No financing contingency. No inspection delays. No uncertainty. You know exactly when you will have the money in hand.</p>
+
+      <h2>BAH and the Cost of Carrying Two Properties</h2>
+      <p>One calculation that military families often overlook: the cost of carrying your Lemoore home while you are already paying rent or a mortgage at your new duty station. If your BAH at the new station does not fully cover both housing costs, you are paying out of pocket every month the Lemoore home sits unsold. A cash sale that closes before your report date eliminates that cost entirely — and the certainty of a guaranteed close is often worth more than the small premium you might get from a traditional sale.</p>
+
+      <h2>Working With Us on Your PCS Sale</h2>
+      <p>We buy homes in Lemoore, Hanford, and throughout Kings County. We understand military timelines and we have worked with families who had 3 weeks to close. Call us at <strong>(559) 281-8016</strong> as soon as your orders come in — the earlier we talk, the more options you have. We will give you an honest offer, a free broker opinion of value, and close on whatever date works for your orders.</p>
+    </div>
+  ),
+
+  "illinois-ave-fresno-flip-story": (
+    <div className="prose-heritage">
+      <p>There is a property on Illinois Avenue in Fresno that nobody else would touch. We bought it anyway. This is that story.</p>
+
+      <h2>What We Found</h2>
+      <p>The seller came to us through a referral. The property had been vacant for over a year. In that time, it had been broken into five times. Each time, the vandals took a little more — copper plumbing, electrical fixtures, appliances. By the time we walked through, the property had no functioning plumbing, no electrical fixtures, and walls that had been opened up in multiple places by thieves looking for copper.</p>
+      <p>The pest situation was severe. Bed bugs in the bedroom carpets. Cockroaches in the kitchen — not a few, but a full infestation that had spread into the walls. Rats had nested in the attic and in the wall cavities. The smell was significant.</p>
+      <p>The yard had become a dumping ground. Mattresses, broken furniture, bags of trash. The neighbors had been complaining to the city for months. There was already a code enforcement notice on the door.</p>
+
+      <h2>Why We Bought It</h2>
+      <p>Because the math worked. The property, fully renovated, would be worth $280,000–$300,000 in the current Fresno market. The renovation cost — including pest remediation, full replumb, electrical restoration, drywall repair, flooring, paint, kitchen, bathrooms, landscaping, and the junk cleanout — came to approximately $85,000. We paid the seller a fair price that reflected the property's condition, covered our renovation costs and margin, and still delivered a renovated home to the Fresno market at a competitive price.</p>
+      <p>That is the math that makes distressed property purchases work. It is not charity — it is a business. But the business only works if we pay a fair price to the seller, do the work properly, and deliver a quality product to the next buyer. Cutting corners anywhere in that chain breaks the model.</p>
+
+      <h2>What the Renovation Looked Like</h2>
+      <p>Week one was demolition and pest remediation. The pest company treated the entire structure — fumigation tent for the bed bugs, bait stations and exclusion work for the rats, comprehensive treatment for the cockroaches. We pulled the carpet, opened the walls where needed, and removed everything that could not be salvaged.</p>
+      <p>Weeks two and three were rough mechanical work — new plumbing throughout, electrical panel upgrade and fixture restoration, HVAC service. Week four was drywall. Weeks five and six were finishes — flooring, paint, kitchen cabinets and countertops, bathroom tile and fixtures. Week seven was landscaping, exterior paint, and the final punch list.</p>
+      <p>The video of the finished property is on our homepage. The transformation is significant. But the most important part of the story is not the renovation — it is what happened before we bought it.</p>
+
+      <h2>What the Seller Got</h2>
+      <p>The seller had been trying to figure out what to do with this property for over a year. They had gotten quotes from contractors — the numbers were too high for them to manage. They had talked to agents — no one would list it in that condition. They had considered just letting it go to the city. When they called us, they were exhausted.</p>
+      <p>We made them a fair cash offer within 24 hours of walking the property. We closed in 8 days. They walked away with cash in hand and the property off their plate. No repairs. No cleanout. No code enforcement hearings. No more break-ins to worry about.</p>
+      <p>That is what we do. If you have a property in Fresno that nobody else will touch, call us at <strong>(559) 281-8016</strong>. We have seen worse than Illinois Avenue. We will make you a fair offer and close on your timeline.</p>
+    </div>
+  ),
+
   "probate-home-sale-merced-madera-tulare": (
     <div>
       <p>Probate in California is governed by state law, but the process plays out differently in each county — and the differences matter when you are trying to sell an inherited property. This guide covers what families dealing with probate properties in Merced, Madera, and Tulare counties need to know, including the county-specific timelines, the court confirmation process, and your options for selling.</p>

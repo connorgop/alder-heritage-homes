@@ -31,6 +31,11 @@ import WhyChooseUs from "./pages/WhyChooseUs";
 import ArmRateChange from "./pages/services/ArmRateChange";
 import CantAffordHome from "./pages/services/CantAffordHome";
 import LandlordPortfolioSale from "./pages/services/LandlordPortfolioSale";
+import MoldHouse from "./pages/services/MoldHouse";
+import FireDamage from "./pages/services/FireDamage";
+import FoundationProblems from "./pages/services/FoundationProblems";
+import MilitaryPCS from "./pages/services/MilitaryPCS";
+import FreeOffer from "./pages/FreeOffer";
 
 // Google Ads landing pages (no nav, conversion-optimized)
 import ArmRateAd from "./pages/ads/ArmRateAd";
@@ -91,6 +96,11 @@ function Router() {
       <Route path="/vacant-property-warning" component={VacantPropertyWarning} />
       <Route path="/sell-rental-portfolio" component={LandlordPortfolioSale} />
       <Route path="/skyline-rei" component={SkylineREI} />
+      <Route path="/sell-house-mold" component={MoldHouse} />
+      <Route path="/sell-house-fire-damage" component={FireDamage} />
+      <Route path="/sell-house-foundation-problems" component={FoundationProblems} />
+      <Route path="/military-pcs-sell-house" component={MilitaryPCS} />
+      <Route path="/free-offer" component={FreeOffer} />
 
       {/* City pages */}
       <Route path="/we-buy-houses-fresno" component={FresnoPage} />
