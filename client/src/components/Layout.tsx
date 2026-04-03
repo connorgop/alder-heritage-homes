@@ -49,6 +49,14 @@ const cities = [
   { label: "Hanford", href: "/we-buy-houses-hanford" },
   { label: "Reedley", href: "/we-buy-houses-reedley" },
   { label: "Bakersfield", href: "/we-buy-houses-bakersfield" },
+  { label: "Lemoore", href: "/we-buy-houses-lemoore" },
+  { label: "Tulare", href: "/we-buy-houses-tulare" },
+  { label: "Porterville", href: "/we-buy-houses-porterville" },
+  { label: "Merced", href: "/we-buy-houses-merced" },
+  { label: "Stockton", href: "/we-buy-houses-stockton" },
+  { label: "Modesto", href: "/we-buy-houses-modesto" },
+  { label: "Turlock", href: "/we-buy-houses-turlock" },
+  { label: "Kings County", href: "/we-buy-houses-kings-county" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {

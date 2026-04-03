@@ -52,6 +52,14 @@ import VisaliaPage from "./pages/cities/Visalia";
 import HanfordPage from "./pages/cities/Hanford";
 import ReedleyPage from "./pages/cities/Reedley";
 import BakersfieldPage from "./pages/cities/Bakersfield";
+import LemooreePage from "./pages/cities/Lemoore";
+import TularePage from "./pages/cities/Tulare";
+import PortervillePage from "./pages/cities/Porterville";
+import MercedPage from "./pages/cities/Merced";
+import StocktonPage from "./pages/cities/Stockton";
+import ModestoPage from "./pages/cities/Modesto";
+import TurlockPage from "./pages/cities/Turlock";
+import KingsCountyPage from "./pages/cities/KingsCounty";
 
 function Router() {
   return (
@@ -92,6 +100,14 @@ function Router() {
       <Route path="/we-buy-houses-hanford" component={HanfordPage} />
       <Route path="/we-buy-houses-reedley" component={ReedleyPage} />
       <Route path="/we-buy-houses-bakersfield" component={BakersfieldPage} />
+      <Route path="/we-buy-houses-lemoore" component={LemooreePage} />
+      <Route path="/we-buy-houses-tulare" component={TularePage} />
+      <Route path="/we-buy-houses-porterville" component={PortervillePage} />
+      <Route path="/we-buy-houses-merced" component={MercedPage} />
+      <Route path="/we-buy-houses-stockton" component={StocktonPage} />
+      <Route path="/we-buy-houses-modesto" component={ModestoPage} />
+      <Route path="/we-buy-houses-turlock" component={TurlockPage} />
+      <Route path="/we-buy-houses-kings-county" component={KingsCountyPage} />
 
       {/* Google Ads landing pages — no nav, conversion-optimized */}
       <Route path="/lp/arm-rate-change" component={ArmRateAd} />
