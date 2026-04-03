@@ -76,6 +76,11 @@ export default function MilitaryPCS() {
           a: "Yes. We buy homes throughout Kings County — Lemoore, Hanford, Avenal, Corcoran, and the surrounding area. We are based in Fresno and licensed throughout California.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "1pVYrExlphg",
+        title: "Rent or Sell When You PCS?",
+        caption: "Essential housing decisions for military families facing a PCS move — VA loan, cash flow, and your options.",
+      }}
       ctaTitle="Get a Cash Offer Before Your PCS Report Date"
       ctaBody="Call us as soon as your orders come in. The earlier we talk, the more options you have. (559) 281-8016."
       relatedLinks={[

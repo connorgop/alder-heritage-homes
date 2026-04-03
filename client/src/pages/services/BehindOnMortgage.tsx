@@ -56,6 +56,11 @@ export default function BehindOnMortgage() {
           a: "You don't need to call them first. When we open escrow, the title company will request a payoff statement from your lender as part of the normal closing process.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "k4SN8hHSfA0",
+        title: "Behind on Mortgage Payments? Here's What to Do",
+        caption: "California programs and options for homeowners who have fallen behind on mortgage payments.",
+      }}
       ctaTitle="Let's Talk About Your Options"
       ctaBody="A free, confidential conversation costs nothing. We'll tell you exactly what your home is worth and what you'd walk away with. No pressure, no obligation."
       relatedLinks={[

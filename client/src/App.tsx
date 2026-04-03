@@ -44,6 +44,7 @@ import SellMyHouse from "./pages/SellMyHouse";
 import SellHouseFastFresno from "./pages/SellHouseFastFresno";
 import SellHouseFastClovis from "./pages/SellHouseFastClovis";
 import SellHouseFastVisalia from "./pages/SellHouseFastVisalia";
+import SellHouseFastBakersfield from "./pages/SellHouseFastBakersfield";
 import CashOfferCalculator from "./pages/CashOfferCalculator";
 
 // Google Ads landing pages (no nav, conversion-optimized)
@@ -146,6 +147,7 @@ function Router() {
       <Route path="/sell-house-fast-fresno-ca" component={SellHouseFastFresno} />
       <Route path="/sell-house-fast-clovis-ca" component={SellHouseFastClovis} />
       <Route path="/sell-house-fast-visalia-ca" component={SellHouseFastVisalia} />
+      <Route path="/sell-house-fast-bakersfield-ca" component={SellHouseFastBakersfield} />
       <Route path="/cash-offer-calculator" component={CashOfferCalculator} />
 
       {/* City pages */}

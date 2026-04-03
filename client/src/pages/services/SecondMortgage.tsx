@@ -56,6 +56,11 @@ export default function SecondMortgage() {
           a: "A short sale is when your lender agrees to accept less than the full balance owed. Lenders typically require documented financial hardship. As a licensed agent, we can help you apply for short sale approval and negotiate with your lender.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "eXJU5dk6Ac8",
+        title: "Cash Offer or Realtor: What Gets You More Money?",
+        caption: "An honest comparison of cash buyers vs. listing with a realtor — including situations with second mortgages.",
+      }}
       ctaTitle="Multiple Mortgages? We've Seen It Before."
       ctaBody="Complex lien situations don't scare us. Call or fill out our form and we'll walk you through exactly what a sale would look like for your specific situation."
       relatedLinks={[

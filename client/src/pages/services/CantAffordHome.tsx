@@ -88,6 +88,11 @@ export default function CantAffordHome() {
           a: "Then we'll help you figure out how. Connor's first priority is always an honest conversation about all your options. If a loan modification, refinance, or forbearance is the right path, he'll tell you that and connect you with the right people. He only buys homes when it's genuinely the best option for the seller.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "k4SN8hHSfA0",
+        title: "Behind on Mortgage? California Options Explained",
+        caption: "California programs and options for homeowners who can no longer afford their home payments.",
+      }}
       ctaTitle="Can't Afford Your Home? Let's Talk Today."
       ctaBody="A free, confidential conversation about your situation costs you nothing. Waiting costs you options. Call or fill out the form — Connor responds same day."
       relatedLinks={[

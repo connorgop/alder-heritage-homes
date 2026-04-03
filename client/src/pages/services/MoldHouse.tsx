@@ -85,6 +85,11 @@ export default function MoldHouse() {
           a: "We purchase homes with all types of mold — including black mold (Stachybotrys), common bathroom mold, crawl space mold, and attic mold. The type affects the remediation cost, which affects our offer, but we do not refuse to purchase based on mold type.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "Lue8APSvClo",
+        title: "How to Sell a Home With Water or Mold Damage",
+        caption: "A real-world guide to selling a water-damaged or mold-affected home in California.",
+      }}
       ctaTitle="Get a Cash Offer on Your Mold-Affected Property"
       ctaBody="No remediation required. No judgment. Just a fair offer and a fast close. Call (559) 281-8016 or submit your address below."
       relatedLinks={[

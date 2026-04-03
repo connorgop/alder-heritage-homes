@@ -83,6 +83,11 @@ export default function CodeViolation() {
           a: "Typically 7–14 days once we have a signed purchase agreement. Code violation properties sometimes require additional title work, which can add a few days. We'll give you a realistic timeline upfront.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "xseEEvFw__Y",
+        title: "Navigating Code Violations When Selling",
+        caption: "What California sellers need to know about code violations and the probate/sale process.",
+      }}
       ctaTitle="Get a Cash Offer on Your Code Violation Property"
       ctaBody="Don't let code violations trap you in a property you can't sell. Call us at (559) 281-8016 or submit your address below for a free, no-obligation cash offer within 24 hours."
       relatedLinks={[

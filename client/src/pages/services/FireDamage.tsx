@@ -88,6 +88,11 @@ export default function FireDamage() {
           a: "We can close in as few as 5–7 days. If you have an open insurance claim that needs to be resolved first, we can accommodate a longer timeline. We work on your schedule.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "g_k8VRVxRAQ",
+        title: "California Foreclosure & Fire Damage: Seller Options",
+        caption: "How California homeowners navigate fire damage, insurance claims, and selling options.",
+      }}
       ctaTitle="Get a Cash Offer on Your Fire-Damaged Property"
       ctaBody="No repairs required. No insurance disputes. Just a fair offer and a fast close. Call (559) 281-8016 or submit your address below."
       relatedLinks={[

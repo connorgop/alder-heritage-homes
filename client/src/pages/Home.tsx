@@ -529,6 +529,11 @@ export default function HomePage() {
                 </a>
                 <span className="text-sm" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'DM Mono', monospace" }}>or call directly</span>
               </div>
+              <div className="fade-up fade-up-delay-4 mt-3">
+                <a href="/sell-my-house" className="inline-flex items-center gap-1.5 text-sm font-semibold transition-all hover:gap-2.5" style={{ color: "oklch(0.78 0.08 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  Not sure where to start? See all your options <ArrowRight size={14} />
+                </a>
+              </div>
             </div>
               {/* Right: Instant Cash Calculator */}
             <div className="fade-up fade-up-delay-2">

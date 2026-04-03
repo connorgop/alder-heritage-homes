@@ -86,6 +86,11 @@ export default function ArmRateChange() {
           a: "Absolutely not. Connor's first step is always an honest conversation about all your options. If refinancing or a loan modification is the right path, he'll tell you that — and connect you with the right people to make it happen. He only buys homes when it's genuinely the best option for the seller.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "0r585u8g4jk",
+        title: "Adjustable Rate Mortgage Warning: What Sellers Need to Know",
+        caption: "Clark Howard's warning about ARM mortgages — what homeowners facing a rate adjustment should consider.",
+      }}
       ctaTitle="Your Rate Is Changing. Let's Talk Before It Does."
       ctaBody="A free, no-pressure conversation about your ARM situation costs you nothing. Waiting until after the adjustment could cost you everything. Call or fill out the form — Connor will respond same day."
       relatedLinks={[

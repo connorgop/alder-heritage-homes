@@ -101,6 +101,11 @@ export default function ParentsHouse() {
           a: "Every offer includes a free third-party Broker Opinion of Value from an independent Fresno broker with 25 years and 1,800+ transactions. You'll know exactly what the home is worth on the open market before you decide anything.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "658LNFuROI8",
+        title: "Selling the Family Home: 10 Things I Wish I Knew",
+        caption: "The emotional and practical realities of selling a parent's home — what families need to know.",
+      }}
       ctaTitle="Selling Your Parents' Fresno Home? We Can Help."
       ctaBody="Get a fair cash offer and a third-party broker opinion within 48 hours. No pressure, no obligation — just clarity on your options."
       relatedLinks={[

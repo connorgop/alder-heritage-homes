@@ -100,6 +100,11 @@ export default function RoofDamage() {
           a: "Connor is a licensed California real estate agent with 100+ completed transactions in the Fresno area. We're not a national corporation or a wholesaler — we're a local buyer who makes a real offer and follows through. We also guarantee to match or beat any competing cash offer you receive.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "xzWBw7ubhFU",
+        title: "Biggest Mistake When Selling a Vacant or Damaged Home",
+        caption: "What sellers of damaged properties need to know to avoid costly mistakes and get a fair price.",
+      }}
       ctaTitle="Get a Cash Offer on Your Roof-Damaged Home Today"
       ctaBody="No repairs. No contractor bids. No surprises. Just an honest offer from a licensed local buyer who will actually close."
       relatedLinks={[

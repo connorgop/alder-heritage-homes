@@ -89,6 +89,11 @@ export default function Divorce() {
           a: "If one spouse is refusing to sell, your divorce attorney can petition the court for a partition order, which compels the sale. Once a court order is in place, the sale can proceed without the uncooperative spouse's active participation. We have experience working with attorneys in these situations.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "7JLqGsEQM-E",
+        title: "Selling a House During Divorce in California",
+        caption: "What California couples need to know about dividing and selling real estate during a divorce.",
+      }}
       ctaTitle="Ready to Close the Chapter on Your Fresno Home?"
       ctaBody="One call, one offer, one closing. Let's get both of you to the other side of this. Call (559) 281-8016 or submit your address below for a confidential cash offer."
       relatedLinks={[

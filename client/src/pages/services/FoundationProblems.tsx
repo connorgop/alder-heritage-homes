@@ -90,6 +90,11 @@ export default function FoundationProblems() {
           a: "We purchase homes with all types of foundation issues — slab cracking and heaving, pier-and-beam settling, stem wall cracking, drainage problems, and more. The type and severity affects our offer, but we do not refuse to purchase based on foundation type.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "A9cpJkOaFt8",
+        title: "How to Sell a Home With Foundation Problems",
+        caption: "Real stories and strategies for selling a home with foundation issues in California.",
+      }}
       ctaTitle="Get a Cash Offer on Your Foundation-Problem Property"
       ctaBody="No repairs required. No structural engineer reports. Just a fair offer and a fast close. Call (559) 281-8016 or submit your address below."
       relatedLinks={[

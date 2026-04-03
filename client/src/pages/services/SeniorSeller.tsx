@@ -92,6 +92,11 @@ export default function SeniorSeller() {
           a: "Every offer includes a free third-party Broker Opinion of Value from an independent Fresno broker with 25 years and 1,800+ transactions. You'll know exactly what your home is worth on the open market before you decide anything.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "SzHgCsZ6Fvs",
+        title: "Should We Downsize? What Seniors Need to Know",
+        caption: "An honest look at downsizing in retirement — the financial and emotional considerations before selling.",
+      }}
       ctaTitle="Ready to Sell Your Fresno Home and Start Your Next Chapter?"
       ctaBody="Get a fair cash offer and a third-party broker opinion within 48 hours. No pressure, no obligation — just a clear picture of your options."
       relatedLinks={[

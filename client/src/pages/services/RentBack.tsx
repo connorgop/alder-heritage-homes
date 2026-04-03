@@ -64,6 +64,11 @@ export default function RentBack() {
           a: "The rent-back is a separate negotiation from the purchase price. We aim to offer a fair cash price for the home AND fair rental terms for the leaseback period. The two are negotiated together so everyone is happy with the overall arrangement.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "m6AJXBUXGcs",
+        title: "MLS vs Off-Market: Which Is Better for Sellers?",
+        caption: "Breaking down the on-market vs off-market debate and what it means for your home sale.",
+      }}
       ctaTitle="Sell Today. Move When You're Ready."
       ctaBody="Our Rent-Back program gives you the best of both worlds — cash now, flexibility later. Call us to discuss how we can structure a deal that works for your timeline."
       relatedLinks={[
