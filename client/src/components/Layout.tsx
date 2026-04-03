@@ -23,6 +23,7 @@ const services = [
   { label: "Second Mortgage Help", href: "/second-mortgage-help" },
   { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back" },
   { label: "Probate / Inherited Homes", href: "/probate-inherited-homes" },
+  { label: "Probate Real Estate Fresno", href: "/probate-real-estate-fresno" },
   { label: "Sell House Fast", href: "/sell-house-fast" },
   { label: "Roof Damage — Sell As-Is", href: "/sell-house-roof-damage" },
   { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },

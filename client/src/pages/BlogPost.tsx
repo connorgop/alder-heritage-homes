@@ -1527,6 +1527,13 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>For simple estates — one heir, clear will, no creditor disputes, cooperative family — a probate paralegal/LDA is often the best value. You get professional document preparation at a fraction of attorney cost. For complex estates — multiple heirs with disagreements, significant debts, contested will, or a property that needs to be sold quickly — hire a probate attorney. The statutory fees are significant but the protection and expertise are worth it. Pro per is only advisable if you have legal experience or are willing to invest significant time learning the process.</p>
       <h2>How We Work with Probate Families</h2>
       <p>At Alder Heritage Homes, we've worked alongside probate attorneys, paralegals, and pro per executors throughout Fresno County. We can provide a cash offer before probate is even granted, so families know exactly what the property will sell for. We coordinate with your legal representative, handle the property security during the probate period, and close quickly once authority is granted. Call us at (559) 281-8016 for a free consultation.</p>
+      <div className="mt-8 p-5 rounded-xl border-2 border-[oklch(0.55_0.13_42)] bg-[oklch(0.97_0.015_85)]">
+        <p className="font-semibold text-[oklch(0.28_0.05_155)] mb-1" style={{fontFamily:"'Lora',serif"}}>Selling a Probate Property in Fresno?</p>
+        <p className="text-sm text-[oklch(0.40_0.01_60)] mb-3">We buy probate homes as-is, work with executors and attorneys, and close on the court's timeline. No repairs, no commissions.</p>
+        <a href="/probate-real-estate-fresno" className="inline-block px-5 py-2.5 rounded-lg text-sm font-bold text-white transition-opacity hover:opacity-90" style={{background:"oklch(0.55_0.13_42)",fontFamily:"'Nunito Sans',sans-serif"}}>
+          See Our Probate Real Estate Page →
+        </a>
+      </div>
     </div>
   ),
   "sibling-wants-to-keep-inherited-house-probate-california": (
@@ -1549,6 +1556,13 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>If you're in this situation, here are some practical suggestions. First, get a professional appraisal so everyone is working from the same number — disputes about value are often at the root of disagreements about what to do. Second, give the sibling who wants to keep the house a specific deadline to secure financing for a buyout. If they can't do it by that date, the family agrees to sell. Third, consider bringing in a neutral mediator — a professional mediator who specializes in estate disputes can often resolve these situations in a single session for a fraction of what litigation costs.</p>
       <h2>How We Help</h2>
       <p>At Alder Heritage Homes, we've worked with many Fresno families navigating exactly this situation. We can provide a cash offer that gives all heirs a concrete number to work with. If the sibling who wants to keep the house can match our offer, great — they buy out the others. If they can't, the family has a ready buyer and can close quickly. We're not here to pressure anyone — we're here to give families options. Call us at (559) 281-8016 for a free, confidential consultation.</p>
+      <div className="mt-8 p-5 rounded-xl border-2 border-[oklch(0.55_0.13_42)] bg-[oklch(0.97_0.015_85)]">
+        <p className="font-semibold text-[oklch(0.28_0.05_155)] mb-1" style={{fontFamily:"'Lora',serif"}}>Selling a Probate Property in Fresno?</p>
+        <p className="text-sm text-[oklch(0.40_0.01_60)] mb-3">We buy probate homes as-is, work with executors and attorneys, and close on the court's timeline. No repairs, no commissions.</p>
+        <a href="/probate-real-estate-fresno" className="inline-block px-5 py-2.5 rounded-lg text-sm font-bold text-white transition-opacity hover:opacity-90" style={{background:"oklch(0.55_0.13_42)",fontFamily:"'Nunito Sans',sans-serif"}}>
+          See Our Probate Real Estate Page →
+        </a>
+      </div>
     </div>
   ),
   "are-you-ready-to-be-a-landlord-fresno-reality-check": (
@@ -1783,6 +1797,13 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>After all debts are paid and the creditor period has expired, the executor files a Petition for Final Distribution with the court. The court reviews the accounting, approves the distribution, and issues an Order for Final Distribution. The executor then distributes the remaining assets to the heirs according to the will (or California intestacy law if there's no will) and files a final accounting with the court to close the estate.</p>
       <h2>How Cash Buyers Work With Probate Estates</h2>
       <p>We purchase probate properties at every stage of the process. We work with the executor and their attorney, understand the court confirmation requirements, and can close on the court's timeline. If the estate needs to sell quickly to cover carrying costs or creditor claims, we can move fast. Call (559) 281-8016 for a free consultation on your probate property situation.</p>
+      <div className="mt-8 p-5 rounded-xl border-2 border-[oklch(0.55_0.13_42)] bg-[oklch(0.97_0.015_85)]">
+        <p className="font-semibold text-[oklch(0.28_0.05_155)] mb-1" style={{fontFamily:"'Lora',serif"}}>Selling a Probate Property in Fresno?</p>
+        <p className="text-sm text-[oklch(0.40_0.01_60)] mb-3">We buy probate homes as-is, work with executors and attorneys, and close on the court's timeline. No repairs, no commissions.</p>
+        <a href="/probate-real-estate-fresno" className="inline-block px-5 py-2.5 rounded-lg text-sm font-bold text-white transition-opacity hover:opacity-90" style={{background:"oklch(0.55_0.13_42)",fontFamily:"'Nunito Sans',sans-serif"}}>
+          See Our Probate Real Estate Page →
+        </a>
+      </div>
     </div>
   ),
   "california-probate-fees-costs-breakdown-2026": (
@@ -1804,6 +1825,13 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>For a $450,000 home with no complications: statutory attorney fees $12,000 + statutory executor fees $12,000 + court fees $2,000 + probate referee $450 + publication $300 + miscellaneous $500 = approximately $27,250. If the executor waives their fee (common when a family member serves as executor), total costs drop to approximately $15,250. These costs are paid from estate assets before distribution to heirs.</p>
       <h2>How to Reduce Probate Costs</h2>
       <p>The most effective ways to reduce probate costs: (1) Have the executor waive their statutory fee — family members often do this. (2) Use a probate attorney who charges a flat fee rather than the full statutory rate. (3) Sell the property quickly to reduce carrying costs during administration. (4) Consider whether a simplified procedure (like AB 2016 for surviving spouses) applies. We can connect you with experienced Fresno probate attorneys who offer flat-fee probate services. Call (559) 281-8016.</p>
+      <div className="mt-8 p-5 rounded-xl border-2 border-[oklch(0.55_0.13_42)] bg-[oklch(0.97_0.015_85)]">
+        <p className="font-semibold text-[oklch(0.28_0.05_155)] mb-1" style={{fontFamily:"'Lora',serif"}}>Selling a Probate Property in Fresno?</p>
+        <p className="text-sm text-[oklch(0.40_0.01_60)] mb-3">We buy probate homes as-is, work with executors and attorneys, and close on the court's timeline. No repairs, no commissions.</p>
+        <a href="/probate-real-estate-fresno" className="inline-block px-5 py-2.5 rounded-lg text-sm font-bold text-white transition-opacity hover:opacity-90" style={{background:"oklch(0.55_0.13_42)",fontFamily:"'Nunito Sans',sans-serif"}}>
+          See Our Probate Real Estate Page →
+        </a>
+      </div>
     </div>
   ),
   "what-is-a-probate-home-sale-california": (
@@ -1819,6 +1847,13 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>IAEA sale: 30–60 days from accepted offer to close (similar to a standard sale). Court confirmation sale: 60–120 days from accepted offer to close. Full probate administration before the property can be sold: 4–12 months. Total timeline from death to closed sale: 6–18 months in most cases. If the estate is in a hurry — due to carrying costs, creditor pressure, or heir disagreements — selling to a cash buyer who understands probate timelines and can close quickly within the court's schedule is often the best option.</p>
       <h2>What Cash Buyers Do Differently in Probate Sales</h2>
       <p>Cash buyers have several advantages in probate sales: no financing contingency (which eliminates the most common reason deals fall through), ability to close on the court's timeline rather than a lender's timeline, experience with the court confirmation process and overbid procedures, and willingness to purchase as-is without repair requests. We've purchased multiple probate properties in Fresno and surrounding counties. We work directly with the executor and their attorney to make the process as smooth as possible. Call (559) 281-8016 for a free consultation.</p>
+      <div className="mt-8 p-5 rounded-xl border-2 border-[oklch(0.55_0.13_42)] bg-[oklch(0.97_0.015_85)]">
+        <p className="font-semibold text-[oklch(0.28_0.05_155)] mb-1" style={{fontFamily:"'Lora',serif"}}>Selling a Probate Property in Fresno?</p>
+        <p className="text-sm text-[oklch(0.40_0.01_60)] mb-3">We buy probate homes as-is, work with executors and attorneys, and close on the court's timeline. No repairs, no commissions.</p>
+        <a href="/probate-real-estate-fresno" className="inline-block px-5 py-2.5 rounded-lg text-sm font-bold text-white transition-opacity hover:opacity-90" style={{background:"oklch(0.55_0.13_42)",fontFamily:"'Nunito Sans',sans-serif"}}>
+          See Our Probate Real Estate Page →
+        </a>
+      </div>
     </div>
   ),
   "fresno-real-estate-market-2026-seller-guide": (
