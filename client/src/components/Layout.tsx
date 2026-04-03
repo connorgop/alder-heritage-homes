@@ -8,6 +8,7 @@ import { Link, useLocation } from "wouter";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import FloatingCTA from "./FloatingCTA";
 import TawkChat from "./TawkChat";
+import ExitIntentPopup from "./ExitIntentPopup";
 import SchemaMarkup, { localBusinessSchema, websiteSchema, breadcrumbSchema, buildBreadcrumbs } from "./SchemaMarkup";
 
 const PHONE = "(559) 281-8016";
@@ -98,19 +99,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         id="breadcrumb"
       />
       {/* Top bar — Price Match Guarantee */}
-      <div style={{ background: "oklch(0.55 0.13 42)", color: "white" }} className="py-2.5 text-center">
+      <div style={{ background: "oklch(0.55 0.13 42)", color: "white" }} className="py-2 text-center">
         <div className="flex items-center justify-center gap-2 flex-wrap px-4">
-          <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.08em", textTransform: "uppercase", opacity: 0.85 }}>
-            🏆
+          <span className="hidden sm:inline" style={{ fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.875rem", fontWeight: 700 }}>
+            We Will Match or Beat Any Cash Offer — Guaranteed
           </span>
-          <span style={{ fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.875rem", fontWeight: 700 }}>
-            We Will Match or Beat Any Cash Offer You Receive — Guaranteed
-          </span>
-          <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.08em", textTransform: "uppercase", opacity: 0.75 }}>
-            · We Pay More Than Our Competitors ·
+          <span className="sm:hidden" style={{ fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.8rem", fontWeight: 700 }}>
+            We Beat Any Cash Offer — Guaranteed
           </span>
           <a href={PHONE_HREF} style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", textDecoration: "underline", color: "white", opacity: 0.9 }}>
-            Call Now: {PHONE}
+            Call: {PHONE}
           </a>
         </div>
       </div>
@@ -278,36 +276,62 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        {/* Mobile menu */}
+        {/* Mobile menu — accordion style for iPhone */}
         {mobileOpen && (
-          <div className="lg:hidden border-t" style={{ background: "white", borderColor: "oklch(0.88 0.02 85)" }}>
-            <div className="container py-4 space-y-1">
+          <div className="lg:hidden border-t overflow-y-auto" style={{ background: "white", borderColor: "oklch(0.88 0.02 85)", maxHeight: "80vh" }}>
+            <div className="py-2">
               <MobileNavLink href="/">Home</MobileNavLink>
-              <div className="pt-2 pb-1">
-                <div className="font-mono-label text-xs mb-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.50 0.02 60)", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                  Solutions
-                </div>
-                {services.map((s) => (
-                  <MobileNavLink key={s.href} href={s.href} indent>{s.label}</MobileNavLink>
-                ))}
+
+              {/* Solutions accordion */}
+              <div>
+                <button
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                  className="w-full flex items-center justify-between px-4 py-3 text-sm font-bold"
+                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)" }}
+                >
+                  <span>Solutions</span>
+                  <ChevronDown size={16} style={{ transform: servicesOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }} />
+                </button>
+                {servicesOpen && (
+                  <div className="pb-2" style={{ background: "oklch(0.97 0.01 85)" }}>
+                    {services.map((s) => (
+                      <MobileNavLink key={s.href} href={s.href} indent>{s.label}</MobileNavLink>
+                    ))}
+                  </div>
+                )}
               </div>
-              <div className="pt-2 pb-1">
-                <div className="font-mono-label text-xs mb-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.50 0.02 60)", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                  Areas We Serve
-                </div>
-                {cities.map((c) => (
-                  <MobileNavLink key={c.href} href={c.href} indent>{c.label}</MobileNavLink>
-                ))}
+
+              {/* Cities accordion */}
+              <div>
+                <button
+                  onClick={() => setCitiesOpen(!citiesOpen)}
+                  className="w-full flex items-center justify-between px-4 py-3 text-sm font-bold"
+                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)" }}
+                >
+                  <span>Areas We Serve</span>
+                  <ChevronDown size={16} style={{ transform: citiesOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }} />
+                </button>
+                {citiesOpen && (
+                  <div className="pb-2" style={{ background: "oklch(0.97 0.01 85)" }}>
+                    {cities.map((c) => (
+                      <MobileNavLink key={c.href} href={c.href} indent>{c.label}</MobileNavLink>
+                    ))}
+                  </div>
+                )}
               </div>
-              <MobileNavLink href="/about">About</MobileNavLink>
-              <MobileNavLink href="/blog">Blog</MobileNavLink>
-              <div className="pt-4">
+
+              <MobileNavLink href="/faq">FAQ</MobileNavLink>
+              <MobileNavLink href="/about">About Connor</MobileNavLink>
+              <MobileNavLink href="/blog">Blog &amp; Resources</MobileNavLink>
+              <MobileNavLink href="/contact">Contact</MobileNavLink>
+
+              <div className="px-4 pt-3 pb-6">
                 <Link href="/contact">
-                  <button className="w-full py-3 rounded-lg text-white font-bold text-base" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  <button className="w-full py-3.5 rounded-xl text-white font-bold text-base mb-3" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
                     Get My Free Cash Offer
                   </button>
                 </Link>
-                <a href={PHONE_HREF} className="flex items-center justify-center gap-2 mt-3 font-bold" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.28 0.05 155)" }}>
+                <a href={PHONE_HREF} className="flex items-center justify-center gap-2 py-3 rounded-xl font-bold border-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.28 0.05 155)", borderColor: "oklch(0.28 0.05 155)" }}>
                   <Phone size={16} /> {PHONE}
                 </a>
               </div>
@@ -322,6 +346,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Floating / sticky CTA — appears on all pages */}
       <FloatingCTA />
       <TawkChat />
+      <ExitIntentPopup />
 
       {/* Footer */}
       <footer style={{ background: "oklch(0.22 0.01 60)", color: "oklch(0.80 0.01 60)" }}>

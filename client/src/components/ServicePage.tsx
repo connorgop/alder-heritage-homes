@@ -7,6 +7,7 @@ import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import VacantPropertyBanner from "@/components/VacantPropertyBanner";
 import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
+import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -28,6 +29,8 @@ interface ServicePageProps {
   ctaBody: string;
   relatedLinks?: { label: string; href: string }[];
   showVacantWarning?: boolean;
+  slug?: string;           // canonical path, e.g. "/sell-house-mold"
+  metaDescription?: string; // custom 150-char meta description
 }
 
 export default function ServicePage({
@@ -44,10 +47,19 @@ export default function ServicePage({
   ctaBody,
   relatedLinks,
   showVacantWarning,
+  slug,
+  metaDescription,
 }: ServicePageProps) {
   const faqId = title.toLowerCase().replace(/[^a-z0-9]/g, "-").slice(0, 40);
+  const canonicalPath = slug || `/${title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+  const metaDesc = metaDescription || `${subtitle} Alder Heritage Homes buys houses in Fresno and the Central Valley. Licensed CA Agent DRE #02219124. No repairs, close in 5–7 days.`;
   return (
     <Layout>
+      <PageMeta
+        title={title}
+        description={metaDesc}
+        path={canonicalPath}
+      />
       {/* FAQPage structured data — auto-generated from faq prop */}
       {faq && faq.length > 0 && (
         <SchemaMarkup schema={faqPageSchema(faq)} id={`faq-${faqId}`} />

@@ -59,6 +59,11 @@ import BullardNeighborhood from "./pages/neighborhoods/Bullard";
 import SunnysideNeighborhood from "./pages/neighborhoods/Sunnyside";
 import McLaneNeighborhood from "./pages/neighborhoods/McLane";
 import OldFigGarden from "./pages/neighborhoods/OldFigGarden";
+import CloverleafVillage from "./pages/neighborhoods/CloverleafVillage";
+import FigGardenVillage from "./pages/neighborhoods/FigGardenVillage";
+import FresnoStateArea from "./pages/neighborhoods/FresnoState";
+import NorthFresno from "./pages/neighborhoods/NorthFresno";
+import SoutheastFresno from "./pages/neighborhoods/SoutheastFresno";
 
 // City landing pages
 import FresnoPage from "./pages/cities/Fresno";
@@ -79,6 +84,7 @@ import ModestoPage from "./pages/cities/Modesto";
 import TurlockPage from "./pages/cities/Turlock";
 import KingsCountyPage from "./pages/cities/KingsCounty";
 import SkylineREI from "./pages/SkylineREI";
+import FAQPage from "./pages/FAQ";
 
 function Router() {
   return (
@@ -88,6 +94,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/faq" component={FAQPage} />
 
       {/* Service pages */}
       <Route path="/foreclosure-help" component={ForeclosureHelp} />
@@ -156,6 +163,11 @@ function Router() {
       <Route path="/fresno-sunnyside" component={SunnysideNeighborhood} />
       <Route path="/fresno-mclane" component={McLaneNeighborhood} />
       <Route path="/fresno-old-fig-garden" component={OldFigGarden} />
+      <Route path="/fresno-cloverleaf-village" component={CloverleafVillage} />
+      <Route path="/fresno-fig-garden-village" component={FigGardenVillage} />
+      <Route path="/fresno-state-area" component={FresnoStateArea} />
+      <Route path="/north-fresno" component={NorthFresno} />
+      <Route path="/southeast-fresno" component={SoutheastFresno} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

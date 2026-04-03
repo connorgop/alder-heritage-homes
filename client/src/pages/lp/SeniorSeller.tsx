@@ -11,6 +11,7 @@
    ============================================================ */
 import { useState } from "react";
 import { Phone, CheckCircle2, Star, Shield, Clock, ArrowRight, Heart, Home } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -52,6 +53,12 @@ export default function LpSeniorSeller() {
 
   return (
     <div style={s.page}>
+      <PageMeta
+        title="Sell Your Home Before Moving to a Retirement Community — Fresno CA"
+        description="Moving to Fairwinds, The Terraces, or another Fresno retirement community? We buy your home fast for cash. No repairs, no showings, close on your timeline. Licensed CA Agent."
+        path="/lp/senior-seller"
+        noIndex={true}
+      />
       {/* Header */}
       <header style={s.header}>
         <div style={s.logoWrap}>

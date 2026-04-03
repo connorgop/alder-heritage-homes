@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Link } from "wouter";
 import { Phone, ArrowRight, Shield, Award, Heart, CheckCircle2 } from "lucide-react";
 import SchemaMarkup, { personSchema } from "@/components/SchemaMarkup";
+import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -13,6 +14,11 @@ const ILLINOIS_FLIP_VIDEO = "https://d2xsxph8kpxj0f.cloudfront.net/3105196635045
 export default function About() {
   return (
     <Layout>
+      <PageMeta
+        title="About Connor Morris — Licensed CA Agent & Cash Home Buyer Fresno"
+        description="Connor Morris is a licensed California real estate agent (DRE #02219124) and founder of Alder Heritage Homes. A real buyer — not a wholesaler. Serving Fresno and the Central Valley."
+        path="/about"
+      />
       {/* Person structured data for Connor */}
       <SchemaMarkup schema={personSchema()} id="person-connor" />
       {/* Hero */}
@@ -61,8 +67,8 @@ export default function About() {
               </div>
             </div>
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42)" }}>
-                <img src={CONNOR_CLIENT_PHOTO} alt="Connor Alder with a past client in Clovis, California" className="w-full object-cover" style={{ maxHeight: "520px", objectPosition: "center top" }} />
+              <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42)", aspectRatio: "4/5" }}>
+                <img src={CONNOR_CLIENT_PHOTO} alt="Connor Morris with a past client in Clovis, California" className="w-full h-full object-cover" style={{ objectPosition: "center 15%" }} />
               </div>
               <div className="absolute -bottom-5 -right-4 px-5 py-3 rounded-xl shadow-xl" style={{ background: "oklch(0.55 0.13 42)", border: "2px solid white" }}>
                 <div className="text-white font-bold text-sm" style={{ fontFamily: "'Lora', serif" }}>Connor &amp; a Past Client</div>

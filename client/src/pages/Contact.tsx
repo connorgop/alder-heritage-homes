@@ -2,6 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Phone, Mail, MapPin, Clock, CheckCircle2, ArrowRight, Loader2 } from "lucide-react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
+import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -40,6 +41,11 @@ export default function Contact() {
 
   return (
     <Layout>
+      <PageMeta
+        title="Get My Free Cash Offer — Sell Your Fresno Home Fast"
+        description="Get a no-obligation cash offer for your Fresno home within 24 hours. Licensed CA Agent DRE #02219124. No repairs, no commissions, close in 5–7 days. Call (559) 281-8016."
+        path="/contact"
+      />
       {/* Hero */}
       <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="container text-center">

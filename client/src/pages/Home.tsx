@@ -9,6 +9,7 @@ import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { useSEO, localBusinessSchema, faqSchema } from "@/hooks/useSEO";
+import PageMeta from "@/components/PageMeta";
 import {
   Phone, ArrowRight, CheckCircle2, Clock, Shield, Star,
   Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Heart, Loader2, MapPin
@@ -480,8 +481,13 @@ export default function HomePage() {
   });
   return (
     <Layout>
+      <PageMeta
+        title="Fresno Cash Home Buyer — Sell Your House Fast, Any Condition"
+        description="Alder Heritage Homes buys houses for cash in Fresno and the Central Valley. Licensed CA Agent DRE #02219124. No repairs, no commissions, close in 5–7 days. Free Broker Opinion of Value."
+        path="/"
+      />
       {/* ── HERO ── */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden" style={{ paddingBottom: "6rem" }}>
+      <section className="relative min-h-[100svh] sm:min-h-[92vh] flex items-center overflow-hidden" style={{ paddingBottom: "6rem", paddingTop: "2rem" }}>
         {/* Background image */}
         <div className="absolute inset-0">
           <img
@@ -501,9 +507,9 @@ export default function HomePage() {
                   Fresno's Honest Cash Home Buyer
                 </span>
               </div>
-              <h1 className="fade-up fade-up-delay-1 text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
-                Find Out What Your Home Is Worth —<br />
-                <span style={{ color: "oklch(0.75 0.10 42)" }}>Get a Cash Offer in Minutes.</span>
+              <h1 className="fade-up fade-up-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
+                Find Out What Your Home Is Worth —
+                <span style={{ color: "oklch(0.75 0.10 42)" }}> Get a Cash Offer in Minutes.</span>
               </h1>
               <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-6 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 Enter your address below. We'll text you a fair cash offer — no repairs, no commissions, no obligation. <strong style={{ color: "oklch(0.92 0.04 85)" }}>We will never spam or harass you.</strong> One text, one offer, your choice.
@@ -674,11 +680,11 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ clipPath: "polygon(0 0, 100% 0, 100% 92%, 94% 100%, 0 100%)" }}>
-                <img src={HANDSHAKE_IMG} alt="Alder Heritage Homes closing a deal" className="w-full h-96 object-cover" />
+            <div className="relative pb-8 sm:pb-0">
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img src={HANDSHAKE_IMG} alt="Alder Heritage Homes closing a deal" className="w-full h-72 sm:h-96 object-cover" />
               </div>
-              <div className="absolute -bottom-6 -left-6 p-5 rounded-xl shadow-xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
+              <div className="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:-left-6 p-4 rounded-xl shadow-xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
                 <div className="flex items-center gap-3">
                   <Shield size={24} style={{ color: "oklch(0.55 0.13 42)" }} />
                   <div>
@@ -787,6 +793,34 @@ export default function HomePage() {
                 </button>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── HERITAGE DEFINITION ── */}
+      <section className="py-16" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="container max-w-4xl mx-auto text-center">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-6" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
+            What Is Heritage?
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.25 }}>
+            Heritage is a collective of private, ethical investors &amp; real estate brokers.
+          </h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: "oklch(0.78 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", lineHeight: 1.75 }}>
+            We live to serve. We work for you. We operate under many different entities — but every one of them shares the same standard: transparency, fair offers, and a commitment to doing right by the homeowner.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+            {[
+              { icon: "🤝", title: "We Work For You", body: "Our only goal is to find the best path forward for your situation — whether that's a cash sale, a traditional listing, or something in between. We tell you the truth even when it costs us the deal." },
+              { icon: "🏛️", title: "Private & Ethical", body: "Every investor in our collective is vetted, licensed where required, and held to a strict code of conduct. No bait-and-switch, no assignment clauses, no wholesaling your contract to a stranger." },
+              { icon: "🔑", title: "Multiple Entities, One Standard", body: "We buy under several entities depending on the deal structure — but the standard never changes. You always know who you're dealing with, and proof of funds is available within 24 hours." },
+            ].map((card) => (
+              <div key={card.title} className="p-6 rounded-2xl text-left" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+                <div className="text-3xl mb-3">{card.icon}</div>
+                <h3 className="font-bold text-white mb-2" style={{ fontFamily: "'Lora', serif", fontSize: "1.05rem" }}>{card.title}</h3>
+                <p style={{ color: "oklch(0.72 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", lineHeight: 1.65 }}>{card.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -965,16 +999,16 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-14 items-center max-w-5xl mx-auto">
             {/* Photo side */}
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42)" }}>
+              <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42)", aspectRatio: "4/5" }}>
                 <img
                   src={CONNOR_CLIENT_PHOTO}
-                  alt="Connor Alder with a past client in Clovis, California"
-                  className="w-full object-cover"
-                  style={{ maxHeight: "520px", objectPosition: "center top" }}
+                  alt="Connor Morris with a past client in Clovis, California"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: "center 15%" }}
                 />
               </div>
               {/* Floating badge */}
-              <div className="absolute -bottom-5 -right-4 px-5 py-3 rounded-xl shadow-xl" style={{ background: "oklch(0.55 0.13 42)", border: "2px solid white" }}>
+              <div className="absolute bottom-3 right-3 sm:-bottom-5 sm:-right-4 px-4 py-2.5 rounded-xl shadow-xl" style={{ background: "oklch(0.55 0.13 42)", border: "2px solid white" }}>
                 <div className="text-white font-bold text-sm" style={{ fontFamily: "'Lora', serif" }}>$200,000 Cash</div>
                 <div className="text-xs mt-0.5" style={{ color: "oklch(0.92 0.04 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em" }}>Clovis, CA · As-Is</div>
               </div>
@@ -1055,7 +1089,7 @@ export default function HomePage() {
               </div>
             </div>
             {/* Video side */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42 / 0.5)", aspectRatio: "9/16", maxHeight: "560px" }}>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42 / 0.5)", aspectRatio: "9/16", maxHeight: "480px" }}>
               <video
                 controls
                 playsInline

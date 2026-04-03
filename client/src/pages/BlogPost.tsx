@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import PageMeta from "@/components/PageMeta";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, Phone, ArrowRight, Clock, CheckCircle2 } from "lucide-react";
 import { blogPosts } from "./Blog";
@@ -947,6 +948,113 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>California's Proposition 19 allows homeowners 55 and older to transfer their property tax base to a new primary residence anywhere in California, up to three times. If you have owned your Fresno home for decades and have a low assessed value, this can significantly reduce property taxes on your next home — even if the new home is more expensive. Note that this applies to a new primary residence, not to a rental or investment property. Consult a CPA or tax attorney for advice specific to your situation.</p>
     </div>
   ),
+
+  "sell-house-divorce-california": (
+    <div>
+      <p>Divorce is one of the most emotionally and financially complicated situations a homeowner can face. In California, the family home is almost always the largest marital asset — and what happens to it can define the financial outcome of the entire divorce. This guide explains your options clearly, without legal jargon, so you can make the best decision for your situation.</p>
+      <h2>California Is a Community Property State</h2>
+      <p>California law treats most assets acquired during a marriage as community property — meaning both spouses own them equally, regardless of whose name is on the deed. If you bought the home during the marriage, both of you own 50 percent. This means both spouses must agree to sell, or a court must order the sale. Neither spouse can sell the home without the other's consent.</p>
+      <h2>Option 1: Sell the Home and Split the Proceeds</h2>
+      <p>The most common outcome in a California divorce is a sale. Both spouses agree to sell the home, pay off the mortgage and any liens, and split the remaining equity according to the divorce settlement. This is the cleanest option because it eliminates ongoing financial entanglement between the parties.</p>
+      <p>The challenge is timing. A traditional listing takes 45 to 90 days to close — and during that time, both spouses must cooperate on showings, repairs, and negotiations. If the relationship is contentious, this process can become a battlefield. A cash sale closes in 5 to 7 days and requires minimal cooperation — you agree to sell, we make an offer, and it's done.</p>
+      <h2>Option 2: One Spouse Buys Out the Other</h2>
+      <p>If one spouse wants to keep the home, they can buy out the other's equity share. This requires refinancing the mortgage in one name only — which means qualifying for the loan on a single income. If the staying spouse cannot qualify for a refinance, this option is not available. Many divorcing couples discover that neither spouse can afford the home alone, which is why a sale is so common.</p>
+      <h2>Option 3: Deferred Sale (Nesting)</h2>
+      <p>In some cases, especially when minor children are involved, a California court may order a deferred sale — meaning the home is not sold until a specific event occurs, such as the youngest child turning 18. This is called a "nesting" arrangement and is relatively rare. It requires both parties to continue cooperating on the property for years, which is often impractical.</p>
+      <h2>The Capital Gains Exclusion in a Divorce</h2>
+      <p>Under IRS Section 121, married couples can exclude up to $500,000 in capital gains from the sale of a primary residence if they have lived in the home for 2 of the last 5 years. After divorce, each individual can only exclude $250,000. If you have significant appreciation in your home, it may be worth selling while still legally married to maximize the exclusion. Consult a CPA before making this decision.</p>
+      <h2>What Happens When One Spouse Won't Cooperate</h2>
+      <p>If one spouse refuses to sell or sign documents, the other spouse can petition the court for a partition action — a legal proceeding that forces the sale of jointly owned property. This is expensive, time-consuming, and adversarial. It is almost always better to reach an agreement outside of court. A cash buyer who can close quickly often helps break the deadlock because the process is simple and fast — there are no showings, no open houses, and no extended escrow periods that create opportunities for conflict.</p>
+      <h2>Selling a Divorce Home in Fresno: How We Help</h2>
+      <p>We have purchased homes from divorcing couples across the Central Valley. We understand the sensitivity of the situation and work with both parties professionally and without judgment. We can close on a timeline that works for both spouses, we pay cash so there is no financing contingency, and we buy as-is so there are no repair negotiations. If you are going through a divorce and need to sell your Fresno home quickly, call (559) 281-8016 or visit alderheritagehomes.com/sell-house-divorce.</p>
+    </div>
+  ),
+
+  "1031-exchange-sell-rental-property-fresno": (
+    <div>
+      <p>If you own rental property in Fresno or the Central Valley and are thinking about selling, a 1031 exchange is one of the most powerful tax deferral tools available to real estate investors. This guide explains how it works, when it makes sense, and how a cash sale fits into the 1031 exchange timeline.</p>
+      <h2>What Is a 1031 Exchange?</h2>
+      <p>A 1031 exchange — named after Section 1031 of the Internal Revenue Code — allows you to defer capital gains taxes when you sell an investment property, as long as you reinvest the proceeds into a "like-kind" replacement property within a specific timeframe. You are not avoiding the tax permanently; you are deferring it until you eventually sell the replacement property without doing another exchange.</p>
+      <p>The tax savings can be substantial. If you have owned a Fresno rental property for 20 years and it has appreciated significantly, your capital gains tax bill could easily be $50,000 to $150,000 or more. A 1031 exchange lets you keep that money working in real estate instead of sending it to the IRS.</p>
+      <h2>The 45-Day and 180-Day Rules</h2>
+      <p>The 1031 exchange has two critical deadlines. First, you have 45 days from the closing date of your relinquished property to identify potential replacement properties in writing. You can identify up to three properties, or more under certain rules. Second, you have 180 days from the closing of your relinquished property to close on the replacement property. These deadlines are absolute — there are no extensions for personal hardship or market conditions.</p>
+      <p>This is where a cash sale becomes strategically important. If you sell your Fresno rental property through a traditional listing, you may spend 60 to 90 days in escrow before closing — which eats directly into your 45-day identification window. A cash sale closes in 5 to 7 days, giving you the maximum possible time to identify and close on your replacement property.</p>
+      <h2>What Qualifies as Like-Kind Property?</h2>
+      <p>"Like-kind" is broader than most investors realize. Any real property held for investment or business use qualifies — you can exchange a single-family rental for an apartment building, a commercial property, raw land, or even a Delaware Statutory Trust (DST). You cannot exchange into a primary residence, a vacation home you use personally, or personal property like equipment.</p>
+      <h2>The Qualified Intermediary Requirement</h2>
+      <p>You cannot touch the proceeds from the sale of your relinquished property. The money must go directly to a Qualified Intermediary (QI) — a neutral third party who holds the funds until you close on the replacement property. If you receive the proceeds directly, even briefly, the exchange is disqualified and you owe the full capital gains tax immediately. Always engage a QI before you close on the sale of your relinquished property.</p>
+      <h2>Selling a Fresno Rental Portfolio for a 1031 Exchange</h2>
+      <p>We work with landlords and investors who are selling Fresno rental properties as part of a 1031 exchange strategy. We can close on your timeline, work with your QI, and buy the property as-is — no repairs, no tenant displacement requirements on our end. If you have a portfolio of properties you want to sell simultaneously, we can structure a coordinated sale. Call (559) 281-8016 or visit alderheritagehomes.com/sell-rental-portfolio to learn more.</p>
+    </div>
+  ),
+
+  "california-capital-gains-selling-home-fresno": (
+    <div>
+      <p>Capital gains taxes are one of the most misunderstood aspects of selling a home in California. Many Fresno homeowners are surprised to learn how much they may owe — and equally surprised to learn about the exclusions that may eliminate most or all of their tax liability. This guide explains the basics clearly.</p>
+      <h2>What Is Capital Gains Tax?</h2>
+      <p>When you sell an asset for more than you paid for it, the profit is called a capital gain. The IRS and California both tax capital gains. Federal capital gains tax rates are 0%, 15%, or 20% depending on your income. California taxes capital gains as ordinary income — meaning your state rate could be as high as 13.3% if you are a high earner. Combined, a California homeowner in a high tax bracket could owe 33% or more on a large capital gain.</p>
+      <h2>The Primary Residence Exclusion (Section 121)</h2>
+      <p>The most important tax break for homeowners is the Section 121 exclusion. If you have owned and lived in your home as your primary residence for at least 2 of the last 5 years, you can exclude up to $250,000 in capital gains from federal tax ($500,000 for married couples filing jointly). This exclusion is available once every two years.</p>
+      <p>For most Fresno homeowners, this exclusion eliminates most or all of the capital gains tax. If you bought your home for $200,000 and are selling for $450,000, your gain is $250,000 — which is fully excluded for a single filer. You owe nothing in federal capital gains tax.</p>
+      <h2>When You Owe Capital Gains Tax</h2>
+      <p>You will owe capital gains tax if: your gain exceeds the exclusion amount, you have not lived in the home as your primary residence for 2 of the last 5 years, you have already used the exclusion within the last 2 years, or the home is a rental or investment property (not a primary residence). In these cases, you will owe both federal and California capital gains tax on the amount above the exclusion.</p>
+      <h2>Your Cost Basis and Improvements</h2>
+      <p>Your taxable gain is calculated as the sale price minus your cost basis. Your cost basis is not just what you paid for the home — it also includes the cost of capital improvements you made over the years. A new roof, kitchen remodel, addition, or HVAC system all increase your cost basis and reduce your taxable gain. Keep records of all major improvements. This is especially important for long-term homeowners who may have made significant improvements over decades.</p>
+      <h2>Proposition 19 — Property Tax Transfer for Seniors</h2>
+      <p>California's Proposition 19 (effective February 2021) allows homeowners 55 and older to transfer their current property tax base to a new primary residence anywhere in California, up to three times. This is separate from capital gains tax but is an important consideration for seniors who are selling a long-held home with a low assessed value. The property tax savings on the new home can be significant. Consult a CPA for your specific situation.</p>
+      <h2>Does a Cash Sale Change My Tax Liability?</h2>
+      <p>No. The method of sale — cash, conventional financing, or any other structure — does not affect your capital gains tax liability. Your tax is based on the sale price and your cost basis, not on how the buyer pays. A cash sale closes faster, but the tax calculation is identical. If you have questions about your specific tax situation, consult a CPA or tax attorney before selling.</p>
+    </div>
+  ),
+
+  "squatter-eviction-california-sell-house": (
+    <div>
+      <p>Finding a squatter in your property is one of the most stressful situations a California property owner can face. California's tenant protection laws are among the strongest in the country — and they apply to squatters in ways that surprise most property owners. This guide explains your options, including how to sell the property without completing the eviction process.</p>
+      <h2>California Squatter Rights: What You're Dealing With</h2>
+      <p>In California, a squatter who has occupied a property openly and continuously for 5 years may be able to claim adverse possession — a legal doctrine that can transfer ownership to the squatter. This is rare in practice, but it illustrates how seriously California law treats occupancy. More practically, squatters who have been in a property for any length of time may be treated as tenants under California law, which means you cannot simply remove them by force. You must go through the formal eviction process.</p>
+      <h2>The Formal Eviction Process in California</h2>
+      <p>To remove a squatter legally in California, you must serve a written notice (typically a 3-day notice to quit for unlawful detainer), wait for the notice period to expire, file an unlawful detainer lawsuit in court, serve the squatter with the lawsuit, attend a court hearing, obtain a judgment, and have the sheriff execute the lockout. This process typically takes 3 to 6 months in Fresno County and can cost $3,000 to $10,000 in legal fees. If the squatter contests the eviction, it can take longer.</p>
+      <h2>Can You Sell a House With a Squatter in It?</h2>
+      <p>Yes — and this is where most property owners are surprised. You can sell a property with a squatter in it. The squatter situation transfers to the new owner. A traditional buyer with financing will almost never purchase a property with an active squatter because their lender will not approve the loan. But a cash buyer can purchase the property as-is, with the squatter in place, and handle the eviction themselves after closing.</p>
+      <p>We have done exactly this. We purchased a property in Clovis with a squatter who had been living there for two years — no water, no sewer, the home filled with trash. We bought it for $200,000 cash, as-is, without requiring the seller to complete the eviction. The seller received their money and walked away from the problem. We handled everything after closing.</p>
+      <h2>Selling vs. Evicting: Which Is Faster?</h2>
+      <p>If your goal is to get cash in hand as quickly as possible, selling to a cash buyer is almost always faster than completing an eviction and then listing the property. The eviction alone takes 3 to 6 months. Then you need to repair the property (squatters often cause significant damage), list it, find a buyer, and go through escrow — another 45 to 90 days. Total timeline: 6 to 15 months. A cash sale to a buyer who accepts squatter properties closes in 5 to 7 days.</p>
+      <h2>How We Handle Squatter Properties in Fresno</h2>
+      <p>We buy properties with squatters, tenants who won't leave, and other occupancy complications. We do not require you to complete the eviction before selling. We make a cash offer based on the as-is value of the property, accounting for the occupancy situation and the cost of the eviction we will need to complete. Call (559) 281-8016 or visit alderheritagehomes.com/sell-house-fast to discuss your specific situation.</p>
+    </div>
+  ),
+
+  "arm-loan-rate-adjustment-sell-house-fresno": (
+    <div>
+      <p>Millions of American homeowners chose adjustable-rate mortgages (ARMs) during periods of low interest rates — and many are now facing their first or subsequent rate adjustment. If your ARM is adjusting upward and your new monthly payment is no longer affordable, you have options. This guide explains how ARM adjustments work and what Fresno homeowners can do when the payment becomes unmanageable.</p>
+      <h2>How ARM Adjustments Work</h2>
+      <p>An adjustable-rate mortgage has an initial fixed-rate period — commonly 3, 5, 7, or 10 years — followed by periodic adjustments based on a benchmark index (typically SOFR, formerly LIBOR) plus a margin set by your lender. After the fixed period ends, your rate adjusts annually (or sometimes more frequently) based on current market rates. If rates have risen significantly since you took out your loan, your payment can jump dramatically.</p>
+      <p>For example: a homeowner who took out a 5/1 ARM at 3.5% on a $350,000 loan had a monthly payment of approximately $1,572. If that ARM adjusts to 7.5%, the same loan balance now carries a monthly payment of approximately $2,447 — an increase of nearly $875 per month. Many households cannot absorb this increase.</p>
+      <h2>Your Options When Your ARM Adjusts</h2>
+      <p>You have several options when facing an ARM adjustment you cannot afford. First, you can refinance into a fixed-rate mortgage — but this requires qualifying at current rates and paying closing costs. If your credit has changed or rates are high, this may not be available or affordable. Second, you can contact your lender about a loan modification — but these are difficult to obtain and take months to process. Third, you can sell the home before or after the adjustment. If you have equity, selling may be the cleanest solution.</p>
+      <h2>Selling Before Foreclosure: The Importance of Timing</h2>
+      <p>If you cannot make the adjusted payment and cannot refinance, the clock is ticking. Missing mortgage payments triggers the foreclosure process. In California, a non-judicial foreclosure can be completed in as little as 111 days after the first missed payment. Once the foreclosure is complete, you lose the home and any equity in it. Selling before foreclosure — even at a discount — is almost always better than losing the home to foreclosure.</p>
+      <p>A cash sale closes in 5 to 7 days. If you are currently behind on payments or anticipate missing your first payment after an ARM adjustment, contact us immediately. The sooner you act, the more options you have and the more equity you preserve.</p>
+      <h2>We Buy Homes From ARM-Adjustment Sellers in Fresno</h2>
+      <p>We work with Fresno homeowners who are facing ARM adjustments, payment shock, and the early stages of financial hardship. We can close quickly, pay off your existing mortgage at closing, and put the remaining equity in your pocket — before the situation becomes a foreclosure. Call (559) 281-8016 or visit alderheritagehomes.com/arm-rate-change-help to discuss your situation confidentially.</p>
+    </div>
+  ),
+
+  "california-proposition-19-property-tax-transfer": (
+    <div>
+      <p>California's Proposition 19, which took effect on February 16, 2021, fundamentally changed the rules for property tax transfers in California. For homeowners 55 and older, it created a powerful new benefit. For families hoping to pass low-tax-base properties to their children, it significantly restricted a previous benefit. This guide explains both sides of Proposition 19 and what it means for Fresno homeowners considering a sale.</p>
+      <h2>The Benefit for Homeowners 55 and Older</h2>
+      <p>Before Proposition 19, California homeowners 55 and older could transfer their property tax base to a new home of equal or lesser value, but only within the same county or in one of a handful of participating counties. Proposition 19 expanded this dramatically. Now, homeowners 55 and older can transfer their property tax base to any home anywhere in California, regardless of the new home's value, up to three times in their lifetime.</p>
+      <p>This is a significant financial benefit for long-term Fresno homeowners. If you bought your home in 1985 for $80,000 and it is now worth $450,000, your property tax is based on the 1985 assessed value (plus annual adjustments capped at 2% under Proposition 13). If you sell and buy a new home for $600,000, you would normally pay property taxes on the $600,000 value. Under Proposition 19, you can transfer your old tax base to the new home, paying taxes on a much lower assessed value.</p>
+      <h2>How the Transfer Works</h2>
+      <p>To use the Proposition 19 benefit, you must: be 55 or older (or severely disabled, or a victim of a wildfire or natural disaster), purchase or construct a replacement home within two years of selling your original home, and file a claim with the county assessor of the county where the replacement home is located. The replacement home must be your primary residence.</p>
+      <h2>The Restriction on Inherited Properties</h2>
+      <p>Proposition 19 also significantly restricted the parent-child transfer exclusion that existed under Proposition 58. Previously, children who inherited a parent's home could keep the parent's low property tax base regardless of whether they lived in the home. Under Proposition 19, children who inherit a home can only keep the parent's tax base if they use the home as their primary residence — and even then, the benefit is capped. If the child does not move into the home, the property is reassessed at full market value. This has made inherited properties significantly more expensive to hold, which is one reason many families are choosing to sell inherited Fresno homes rather than rent them out.</p>
+      <h2>What This Means for Sellers</h2>
+      <p>If you are 55 or older and are considering selling your Fresno home to move to a retirement community, downsize, or relocate, Proposition 19 makes the financial case for selling stronger than it has ever been. You can sell, take your low property tax base with you, and significantly reduce your property tax burden on your next home. Combined with the Section 121 capital gains exclusion, many long-term Fresno homeowners can sell with minimal tax consequences.</p>
+      <p>If you have inherited a Fresno property and are not planning to use it as your primary residence, the property will be reassessed at full market value — meaning your property tax bill will increase substantially. Selling the inherited property to a cash buyer is often the most financially efficient option. Call (559) 281-8016 or visit alderheritagehomes.com/probate-inherited-homes to discuss your situation.</p>
+    </div>
+  ),
 };
 
 export default function BlogPost() {
@@ -968,8 +1076,64 @@ export default function BlogPost() {
 
   const related = blogPosts.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 2);
 
+  // Internal linking: map blog categories to relevant service pages
+  const categoryServiceLinks: Record<string, { label: string; href: string }[]> = {
+    "Foreclosure & Financial": [
+      { label: "Foreclosure Help", href: "/foreclosure-help" },
+      { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
+      { label: "Second Mortgage Help", href: "/second-mortgage-help" },
+      { label: "ARM / Rate Adjustment", href: "/arm-rate-change-help" },
+    ],
+    "Probate & Inherited": [
+      { label: "Probate & Inherited Homes", href: "/probate-inherited-homes" },
+      { label: "Selling Parents' Home", href: "/sell-parents-house-fresno" },
+      { label: "Power of Attorney Sales", href: "/sell-parents-house-fresno" },
+    ],
+    "Seller Education": [
+      { label: "Why Choose Us", href: "/why-choose-us" },
+      { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
+      { label: "Sell House Fast", href: "/sell-house-fast" },
+    ],
+    "Property Conditions": [
+      { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
+      { label: "Mold — Sell As-Is", href: "/sell-house-mold" },
+      { label: "Fire Damage — Sell As-Is", href: "/sell-house-fire-damage" },
+      { label: "Foundation Problems", href: "/sell-house-foundation-problems" },
+    ],
+    "Landlord & Rental": [
+      { label: "Tired Landlord", href: "/tired-landlord" },
+      { label: "Portfolio Sale & 1031 Exchange", href: "/sell-rental-portfolio" },
+      { label: "Sell House Fast", href: "/sell-house-fast" },
+    ],
+    "Senior Sellers": [
+      { label: "Senior / Retirement Seller", href: "/sell-home-retirement-fresno" },
+      { label: "Selling Parents' Home", href: "/sell-parents-house-fresno" },
+      { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back" },
+      { label: "Downsize Your Home", href: "/lp/downsize" },
+    ],
+    "Military": [
+      { label: "Military PCS Sale", href: "/military-pcs-sell-house" },
+      { label: "Sell House Fast", href: "/sell-house-fast" },
+    ],
+    "Divorce": [
+      { label: "Divorce Home Sale", href: "/sell-house-divorce" },
+      { label: "Sell House Fast", href: "/sell-house-fast" },
+    ],
+  };
+  const serviceLinks = categoryServiceLinks[post.category] || [
+    { label: "Sell House Fast", href: "/sell-house-fast" },
+    { label: "Why Choose Us", href: "/why-choose-us" },
+    { label: "Get My Cash Offer", href: "/contact" },
+  ];
+
   return (
     <Layout>
+      <PageMeta
+        title={post.title}
+        description={post.excerpt}
+        path={`/blog/${post.slug}`}
+        type="article"
+      />
       {/* Article structured data */}
       <SchemaMarkup
         schema={articleSchema({
@@ -1089,6 +1253,22 @@ export default function BlogPost() {
                     <li key={b} className="flex items-start gap-2 text-sm" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                       <CheckCircle2 size={14} className="flex-shrink-0 mt-0.5" style={{ color: "oklch(0.55 0.13 42)" }} />
                       {b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Related Solutions — internal links to service pages */}
+              <div className="p-6 rounded-2xl" style={{ background: "oklch(0.28 0.05 155)", border: "1px solid oklch(0.28 0.05 155)" }}>
+                <h3 className="font-bold text-sm mb-4" style={{ fontFamily: "'Lora', serif", color: "white" }}>
+                  Related Solutions
+                </h3>
+                <ul className="space-y-2">
+                  {serviceLinks.map((s) => (
+                    <li key={s.href}>
+                      <Link href={s.href} className="flex items-center gap-2 text-sm font-medium hover:underline" style={{ color: "oklch(0.80 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                        <ArrowRight size={12} /> {s.label}
+                      </Link>
                     </li>
                   ))}
                 </ul>

@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
 import { ArrowRight, Clock } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp";
 
@@ -321,6 +322,60 @@ export const blogPosts = [
     readTime: "8 min read",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp",
   },
+  {
+    slug: "sell-house-divorce-california-fresno",
+    title: "Selling Your House During a Divorce in California: What Fresno Homeowners Need to Know",
+    excerpt: "Divorce is hard enough. Selling the family home doesn't have to make it harder. Here's how California divorce home sales work — and how a cash sale can end the conflict faster.",
+    category: "Divorce",
+    date: "April 3, 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "1031-exchange-guide-fresno-investors",
+    title: "1031 Exchange Guide for Fresno Real Estate Investors: Defer Taxes, Build Wealth",
+    excerpt: "A 1031 exchange lets you sell an investment property and defer capital gains taxes — but the rules are strict and the deadlines are unforgiving. Here's everything Fresno investors need to know.",
+    category: "Investors",
+    date: "April 3, 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "california-capital-gains-tax-home-sale-2026",
+    title: "California Capital Gains Tax on Home Sales in 2026: What You'll Actually Owe",
+    excerpt: "California has the highest capital gains tax rate in the nation. Before you sell your Fresno home, here's exactly what you'll owe — and the legal strategies to reduce it.",
+    category: "Taxes",
+    date: "April 3, 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "how-to-evict-squatter-california-sell-house",
+    title: "Squatter in Your California Home? How to Evict Them — or Sell Without Waiting",
+    excerpt: "California squatter laws are among the toughest in the country. Here's how the eviction process actually works — and why selling to a cash buyer is often faster and cheaper.",
+    category: "Problem Properties",
+    date: "April 3, 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "adjustable-rate-mortgage-reset-options-fresno",
+    title: "Your ARM Is About to Reset: 5 Options for Fresno Homeowners Facing Higher Payments",
+    excerpt: "Adjustable-rate mortgages that reset in 2025–2026 are pushing thousands of California homeowners into financial stress. Here are your real options before the payment shock hits.",
+    category: "Financial Hardship",
+    date: "April 3, 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "proposition-19-california-seniors-home-sale-2026",
+    title: "Proposition 19 Explained: How California Seniors Can Save Thousands When Selling Their Home",
+    excerpt: "Prop 19 lets California homeowners 55+ transfer their low property tax base to a new home anywhere in the state. Here's exactly how it works and what it means for your sale.",
+    category: "Senior Sellers",
+    date: "April 3, 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&auto=format&fit=crop",
+  },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -339,6 +394,11 @@ const categoryColors: Record<string, string> = {
   "Military": "oklch(0.35 0.08 220)",
   "Real Deals": "oklch(0.48 0.14 42)",
   "Senior Sellers": "oklch(0.42 0.08 155)",
+  "Divorce": "oklch(0.45 0.12 320)",
+  "Investors": "oklch(0.35 0.10 200)",
+  "Taxes": "oklch(0.40 0.10 60)",
+  "Problem Properties": "oklch(0.42 0.14 25)",
+  "Financial Hardship": "oklch(0.40 0.12 42)",
 };
 
 export default function Blog() {
@@ -347,6 +407,11 @@ export default function Blog() {
 
   return (
     <Layout>
+      <PageMeta
+        title="Blog & Resources — Fresno Home Seller Guides"
+        description="Free guides for Fresno homeowners: how to stop foreclosure, sell a hoarder house, navigate probate, handle mold, fire damage, and more. Written by a licensed CA agent."
+        path="/blog"
+      />
       {/* Hero */}
       <section className="relative py-20 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="absolute inset-0">

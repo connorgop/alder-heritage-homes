@@ -6,6 +6,7 @@
    ============================================================ */
 import { useState } from "react";
 import { Phone, CheckCircle2, Star, Shield, Clock, ArrowRight } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -28,6 +29,12 @@ export default function FreeOffer() {
 
   return (
     <div style={{ minHeight: "100vh", background: "oklch(0.97 0.015 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
+      <PageMeta
+        title="Get Your Free Cash Offer — No Obligation"
+        description="Enter your address and get a fair cash offer for your Fresno home within 24 hours. No repairs, no commissions, close in 5–7 days. Licensed CA Agent DRE #02219124."
+        path="/free-offer"
+        noIndex={true}
+      />
       {/* Header — minimal, no nav */}
       <header style={{ background: "oklch(0.22 0.01 60)", padding: "1rem 1.5rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>

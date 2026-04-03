@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
+import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -15,9 +16,10 @@ interface CityPageProps {
   neighborhoods?: string[];
   faqs?: { q: string; a: string }[];
   stats?: { label: string; value: string }[];
+  slug?: string; // e.g. "we-buy-houses-fresno"
 }
 
-export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats }: CityPageProps) {
+export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug }: CityPageProps) {
   const services = [
     { label: "Foreclosure Help", href: "/foreclosure-help" },
     { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
@@ -27,8 +29,15 @@ export default function CityPage({ city, county, population, description, neighb
     { label: "Sell House Fast", href: "/sell-house-fast" },
   ];
 
+  const canonicalPath = slug ? `/${slug}` : `/we-buy-houses-${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`;
+
   return (
     <Layout>
+      <PageMeta
+        title={`We Buy Houses in ${city}, CA — Cash Offers in 24 Hours`}
+        description={`Sell your ${city} home for cash. Alder Heritage Homes is a licensed CA agent (DRE #02219124) buying houses in ${city} and ${county} County. No repairs, close in 5–7 days.`}
+        path={canonicalPath}
+      />
       {/* FAQPage structured data — auto-generated from faqs prop */}
       {faqs && faqs.length > 0 && (
         <SchemaMarkup schema={faqPageSchema(faqs)} id={`faq-${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`} />

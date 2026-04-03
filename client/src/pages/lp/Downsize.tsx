@@ -9,6 +9,7 @@
    ============================================================ */
 import { useState } from "react";
 import { Phone, CheckCircle2, Star, Shield, Clock, ArrowRight, Package } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -31,6 +32,12 @@ export default function LpDownsize() {
 
   return (
     <div style={{ minHeight: "100vh", background: "oklch(0.97 0.015 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
+      <PageMeta
+        title="Downsize Your Fresno Home Fast — Leave Everything Behind"
+        description="Ready to downsize? We buy your Fresno home as-is — leave the furniture, the clutter, everything. Cash offer in 24 hours. Close in 5–7 days. Licensed CA Agent DRE #02219124."
+        path="/lp/downsize"
+        noIndex={true}
+      />
       {/* Header */}
       <header style={{ background: "oklch(0.22 0.01 60)", padding: "1rem 1.5rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
