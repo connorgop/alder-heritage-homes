@@ -19,14 +19,21 @@ interface CityPageProps {
   slug?: string; // e.g. "we-buy-houses-fresno"
 }
 
+const FAST_SALE_PAGES: Record<string, string> = {
+  Fresno: "/sell-house-fast-fresno-ca",
+  Clovis: "/sell-house-fast-clovis-ca",
+  Visalia: "/sell-house-fast-visalia-ca",
+};
+
 export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug }: CityPageProps) {
+  const fastSaleHref = FAST_SALE_PAGES[city] ?? "/sell-house-fast";
   const services = [
     { label: "Foreclosure Help", href: "/foreclosure-help" },
     { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
     { label: "Second Mortgage Help", href: "/second-mortgage-help" },
     { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back" },
     { label: "Probate / Inherited Homes", href: "/probate-inherited-homes" },
-    { label: "Sell House Fast", href: "/sell-house-fast" },
+    { label: `Sell House Fast in ${city}`, href: fastSaleHref },
   ];
 
   const canonicalPath = slug ? `/${slug}` : `/we-buy-houses-${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`;
