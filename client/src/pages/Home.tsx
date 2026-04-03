@@ -8,7 +8,7 @@ import { useState, useEffect, useRef } from "react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
-import { useSEO, localBusinessSchema, faqSchema } from "@/hooks/useSEO";
+import { useSEO, faqSchema } from "@/hooks/useSEO";
 import PageMeta from "@/components/PageMeta";
 import {
   Phone, ArrowRight, CheckCircle2, Clock, Shield, Star,
@@ -470,14 +470,14 @@ export default function HomePage() {
     title: "Fresno Cash Home Buyer — Sell Your House Fast, Any Condition",
     description: "Alder Heritage Homes buys houses directly for cash in Fresno and the Central Valley. Licensed CA Agent (DRE #02219124). No wholesaling, no bait-and-switch. Free Broker Opinion of Value. Close in 5–7 days or on your timeline.",
     canonical: "/",
-    schema: [localBusinessSchema, faqSchema([
+    schema: faqSchema([
       { q: "How do I sell my house fast in Fresno?", a: "Contact Alder Heritage Homes at (559) 281-8016. We are a licensed CA real estate agent (DRE #02219124) who buys homes directly for cash. We can close in 5–7 days or on your timeline, with no repairs, no agent commissions, and no wholesalers." },
       { q: "What is a cash home buyer?", a: "A cash home buyer purchases your property directly without a mortgage or financing contingency. Alder Heritage Homes is a real cash buyer — we use our own capital to close, not borrowed money or investor networks. We are not a wholesaler." },
       { q: "How do I know if a cash buyer is legitimate?", a: "A legitimate cash buyer can provide proof of funds within 24 hours, does not have an inspection contingency, does not use 'and/or assignee' language in the contract, and closes on the date they promise. Wholesalers cannot do any of these things." },
       { q: "What is a wholesaler and how do I avoid one?", a: "A wholesaler is someone who puts your home under contract with no intention of buying it — they plan to sell your contract to a real investor for a profit. Red flags include: inspection contingencies, 'and/or assignee' in the contract, no proof of funds, and Instagram-guru branding. Alder Heritage Homes is a licensed agent and real buyer — not a wholesaler." },
       { q: "Do I need to make repairs before selling my house?", a: "No. Alder Heritage Homes buys homes in any condition — fire damage, foundation issues, probate complications, squatters, deferred maintenance, or any other situation. We purchased a home in Clovis with a homicide history, a 2-year squatter, no water, and no sewer for $200,000 cash, as-is." },
       { q: "How much will you pay for my house?", a: "We provide a free third-party broker opinion of value with every offer so you can verify our number is fair. Cash offers are typically 70–85% of after-repair value depending on condition and location. We will never lowball you without explaining the math." },
-    ])],
+    ]),
   });
   return (
     <Layout>

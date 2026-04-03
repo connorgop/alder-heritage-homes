@@ -5,7 +5,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2, Shield, Star, Users, Home as HomeIcon } from "lucide-react";
-import { useSEO, localBusinessSchema, faqSchema } from "@/hooks/useSEO";
+import { useSEO, faqSchema } from "@/hooks/useSEO";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -46,7 +46,7 @@ export default function Bakersfield() {
     title: "We Buy Houses in Bakersfield CA — Cash Offers, Fast Close",
     description: "Alder Heritage Homes buys houses in Bakersfield and Kern County for cash. Licensed CA Agent (DRE #02219124). No wholesaling. Free Broker Opinion of Value. Close in 5–7 days. Also connecting sellers with top listing agents.",
     canonical: "/we-buy-houses-bakersfield",
-    schema: [localBusinessSchema, faqSchema(faqs)],
+    schema: faqSchema(faqs),
   });
 
   return (

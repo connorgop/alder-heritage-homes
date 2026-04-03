@@ -8,7 +8,7 @@ interface SEOProps {
   description: string;
   canonical?: string;
   ogImage?: string;
-  schema?: Record<string, unknown> | Record<string, unknown>[];
+  schema?: Record<string, unknown> | Record<string, unknown>[]; // deprecated — use SchemaMarkup component directly
   noIndex?: boolean;
 }
 
@@ -34,16 +34,6 @@ function setLink(rel: string, href: string) {
     document.head.appendChild(el);
   }
   el.setAttribute("href", href);
-}
-
-function setSchema(schema: Record<string, unknown> | Record<string, unknown>[]) {
-  const existing = document.querySelector('script[data-schema="alder"]');
-  if (existing) existing.remove();
-  const script = document.createElement("script");
-  script.type = "application/ld+json";
-  script.setAttribute("data-schema", "alder");
-  script.textContent = JSON.stringify(Array.isArray(schema) ? schema : [schema]);
-  document.head.appendChild(script);
 }
 
 export function useSEO({ title, description, canonical, ogImage, schema, noIndex }: SEOProps) {
@@ -75,11 +65,9 @@ export function useSEO({ title, description, canonical, ogImage, schema, noIndex
     setMeta("twitter:description", description);
     setMeta("twitter:image", ogImage || DEFAULT_OG);
 
-    // JSON-LD Schema
-    if (schema) {
-      setSchema(schema);
-    }
-  }, [title, description, canonical, ogImage, schema, noIndex]);
+    // JSON-LD Schema is handled by SchemaMarkup component in Layout and individual pages
+    // Do NOT inject schema here — it causes duplicate structured data errors in Google Search Console
+  }, [title, description, canonical, ogImage, noIndex]);
 }
 
 // ============================================================
