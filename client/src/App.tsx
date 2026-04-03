@@ -36,6 +36,8 @@ import FireDamage from "./pages/services/FireDamage";
 import FoundationProblems from "./pages/services/FoundationProblems";
 import MilitaryPCS from "./pages/services/MilitaryPCS";
 import FreeOffer from "./pages/FreeOffer";
+import SeniorSeller from "./pages/services/SeniorSeller";
+import ParentsHouse from "./pages/services/ParentsHouse";
 
 // Google Ads landing pages (no nav, conversion-optimized)
 import ArmRateAd from "./pages/ads/ArmRateAd";
@@ -101,6 +103,8 @@ function Router() {
       <Route path="/sell-house-foundation-problems" component={FoundationProblems} />
       <Route path="/military-pcs-sell-house" component={MilitaryPCS} />
       <Route path="/free-offer" component={FreeOffer} />
+      <Route path="/sell-home-retirement-fresno" component={SeniorSeller} />
+      <Route path="/sell-parents-house-fresno" component={ParentsHouse} />
 
       {/* City pages */}
       <Route path="/we-buy-houses-fresno" component={FresnoPage} />

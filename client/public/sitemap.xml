@@ -428,11 +428,62 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+   <url>
     <loc>https://www.alderheritagehomes.com/free-offer</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- Senior / Boomer Seller Service Pages -->
+  <url>
+    <loc>https://www.alderheritagehomes.com/sell-home-retirement-fresno</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/sell-parents-house-fresno</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Senior / Boomer Seller Blog Posts -->
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-home-move-retirement-community-fresno</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-parents-house-assisted-living-california</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/downsize-sell-home-fast-fresno</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/capital-gains-selling-home-california-seniors</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-house-too-much-stuff-fresno</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/power-of-attorney-sell-house-california</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -750,6 +750,132 @@ const articleContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  // ── BOOMER / SENIOR SELLER CLUSTER ──────────────────────────────────────
+
+  "sell-home-move-retirement-community-fresno": (
+    <div className="prose-heritage">
+      <p>You've made the decision. The house is too big, the yard is too much, and a retirement community sounds like exactly the right next chapter. Now you just need to figure out how to sell your Fresno home — and how to time everything so you're not stuck carrying two places at once.</p>
+      <p>This guide covers everything: the retirement communities available in Fresno and the Central Valley, the timing problem that trips up most seniors, the capital gains question, and why a cash sale often makes more sense than a traditional listing when you're moving on a specific date.</p>
+      <h2>Retirement Communities in Fresno and the Central Valley</h2>
+      <p>Fresno has a strong selection of senior living options at every level of care. The Terraces at San Joaquin Gardens is a nonprofit life plan community on 26 acres with independent living, assisted living, and memory care. Fairwinds Woodward Park offers independent living starting around $3,185/month. Oakmont of Fresno provides memory care and assisted living. Life at the Vineyards and Maravillosa are newer luxury options. In Reedley, Sierra View Homes is a well-regarded nonprofit retirement community in the heart of the Central Valley.</p>
+      <p>Most of these communities have waitlists — which means the timing of your home sale matters more than most people realize. If you get off the waitlist before your home is sold, you may need to pay for both your current home and your new community simultaneously. That's expensive and stressful.</p>
+      <h2>The Timing Problem: Don't Get Caught Carrying Two Places</h2>
+      <p>The biggest mistake seniors make when moving to a retirement community is starting the home sale process too late. A traditional listing in Fresno takes 45–90 days from list to close — and that's if everything goes smoothly. If you need to be in your new community by a specific date, a traditional sale carries real timing risk.</p>
+      <p>A cash sale solves this problem. We can close in 5–7 days, or on whatever date works for your move. If you need to stay in the home for 30–60 days after closing while you finalize your move, we offer a rent-back arrangement. You get your cash at closing and pay a fair monthly rent while you finish the transition.</p>
+      <h2>What About Capital Gains?</h2>
+      <p>If you've lived in your Fresno home for more than two years, you qualify for the federal capital gains exclusion: $250,000 for single filers, $500,000 for married couples filing jointly. This means most homeowners who have lived in their home for decades pay zero federal capital gains tax on the sale — regardless of how much the home has appreciated.</p>
+      <p>California does not have a separate capital gains exclusion, but the federal exclusion applies to your California return as well. If your gain exceeds the exclusion amount — which is possible if you bought in the 1980s or 1990s and the home has appreciated significantly — consult a CPA before you sell. Timing the sale in a lower-income year can reduce your tax liability.</p>
+      <h2>What to Do With 30 Years of Belongings</h2>
+      <p>Most retirement communities have significantly less space than a family home. You will need to downsize your belongings — and that process takes longer than most people expect. Start 3–6 months before your target move date. Consider hiring a senior move manager (the National Association of Senior Move Managers has a directory at nasmm.org) who specializes in helping seniors sort, donate, sell, and move their belongings.</p>
+      <p>If you're selling to us, you don't need to clean out the house before closing. We buy homes with contents included — you take what you want, leave what you don't, and we handle the rest. This removes one of the biggest logistical burdens from the transition.</p>
+      <h2>Getting a Fair Price</h2>
+      <p>Connor is a licensed California real estate agent (DRE #02219124). Every offer he makes includes a free third-party Broker Opinion of Value from an independent Fresno broker with 1,800+ completed transactions. This tells you what your home is worth on the open market — so you can compare the cash offer against a traditional sale and make an informed decision. If a traditional listing would net you significantly more and you have the time, we will tell you that.</p>
+      <p>Call (559) 281-8016 for a free, no-pressure conversation about your timeline and options.</p>
+    </div>
+  ),
+
+  "sell-parents-house-assisted-living-california": (
+    <div className="prose-heritage">
+      <p>Your parent is moving to assisted living or memory care. The family home is sitting empty, costing money every month in mortgage, insurance, utilities, and maintenance. And you're trying to figure out the legal process, the Medi-Cal implications, and how to sell quickly — all while managing everything else that comes with this transition.</p>
+      <p>This is one of the most common situations we help families navigate. Here's what you need to know.</p>
+      <h2>Can You Sell the House While Your Parent Is Still Alive?</h2>
+      <p>Yes — but the legal mechanism depends on your parent's capacity and what legal documents are in place. There are three main scenarios:</p>
+      <p><strong>Your parent has capacity and can sign the deed themselves.</strong> This is the simplest situation. Your parent can sign all closing documents, and the sale proceeds normally. Even if they are in assisted living, they can sign documents as long as they have legal capacity.</p>
+      <p><strong>Your parent has a valid Power of Attorney that covers real estate.</strong> If your parent signed a Durable Power of Attorney while they had capacity, and that document specifically grants authority to sell real estate, you can sell the home on their behalf. The POA must be recorded with the county if it is used in a real estate transaction.</p>
+      <p><strong>Your parent no longer has capacity and there is no POA.</strong> This is the most difficult situation. You will need to petition the court for a conservatorship, which gives you legal authority to manage your parent's affairs. This process takes several months and requires an attorney. Do not wait until this situation arises — encourage your parents to sign a Durable POA while they still have capacity.</p>
+      <h2>The Medi-Cal Question</h2>
+      <p>If your parent may need Medi-Cal (California's Medicaid program) to help pay for assisted living or memory care, the home sale has significant implications. Medi-Cal has a 30-month lookback period for asset transfers — meaning gifts or transfers made in the 30 months before applying for Medi-Cal benefits can disqualify your parent from coverage.</p>
+      <p>However, the home itself is generally exempt from Medi-Cal asset calculations while your parent is alive and intends to return home. Once the home is sold, the proceeds become a countable asset that can affect Medi-Cal eligibility. Consult an elder law attorney before selling if Medi-Cal is a consideration. This is not a situation where you want to make decisions without professional guidance.</p>
+      <h2>Medi-Cal Estate Recovery</h2>
+      <p>California's Medi-Cal program has the right to recover costs from the estate of a deceased Medi-Cal recipient. This means that if your parent received Medi-Cal benefits and then passes away, the state can make a claim against the estate — including the home — to recover what was paid. An elder law attorney can advise you on strategies to minimize this exposure.</p>
+      <h2>How to Sell Quickly Without Getting Taken Advantage Of</h2>
+      <p>Families in this situation are vulnerable. The home is sitting empty, costs are mounting, and there is emotional pressure to resolve the situation quickly. Some buyers and wholesalers take advantage of this by making lowball offers and creating artificial urgency.</p>
+      <p>Connor is a licensed California real estate agent (DRE #02219124). Every offer he makes includes a free third-party Broker Opinion of Value — so you know exactly what the home is worth before you decide anything. If a traditional listing would net your parent more money and you have the time, he will tell you that. Call (559) 281-8016 for a free, confidential consultation.</p>
+    </div>
+  ),
+
+  "downsize-sell-home-fast-fresno": (
+    <div className="prose-heritage">
+      <p>You've lived in your Fresno home for 20, 30, maybe 40 years. You raised your family there. You know every creak in the floor and every neighbor on the block. And now it's time to move on — to something smaller, simpler, easier to maintain.</p>
+      <p>Downsizing is one of the most emotionally complex real estate transactions there is. The financial side is straightforward. The emotional side is not. This guide addresses both.</p>
+      <h2>The Financial Case for Downsizing</h2>
+      <p>Baby boomers who downsize in Fresno are typically sitting on significant equity — homes purchased in the 1980s and 1990s for $80,000–$150,000 that are now worth $300,000–$500,000 or more. Selling unlocks that equity and converts it to cash that can fund retirement, pay for senior living, or be passed to children.</p>
+      <p>The federal capital gains exclusion — $250,000 for single filers, $500,000 for married couples — means most long-term homeowners pay zero capital gains tax on the sale. California's Proposition 19 also allows homeowners 55 and older to transfer their property tax base to a new home anywhere in California, which can significantly reduce property taxes on the new home.</p>
+      <h2>What to Do With 30 Years of Belongings</h2>
+      <p>This is the part that stops most people from downsizing. The house is full of furniture, clothing, tools, holiday decorations, children's artwork, and decades of accumulated life. The thought of sorting through all of it is overwhelming.</p>
+      <p>Here's a practical approach: Start 3–6 months before your target move date. Work room by room, not all at once. For items of value, consider an estate sale company — they handle the sorting, pricing, and selling for a percentage of proceeds (typically 30–40%). For items that don't sell, they can arrange donation pickup. For what remains, a junk removal company can clear the house in a day.</p>
+      <p>If you're selling to us, you don't need to clean out the house before closing. Take what you want, leave what you don't. We handle the rest. This is one of the most significant advantages of a cash sale for downsizing seniors — it removes the logistical burden of emptying the house before you can sell.</p>
+      <h2>The Timing Challenge</h2>
+      <p>Downsizing requires coordinating two moves: out of the current home and into the new one. The biggest risk is being stuck carrying both places simultaneously — paying a mortgage on the old home while paying rent or a deposit on the new one.</p>
+      <p>A cash sale with a rent-back option solves this. You sell the home, receive your cash at closing, and then rent back from us for 30–90 days while you finalize your move. You have your money, you have your time, and you're not under pressure to rush the transition.</p>
+      <h2>What to Look for in a New Home</h2>
+      <p>Most downsizing seniors in Fresno are looking for single-story homes (no stairs), lower maintenance (smaller yard or HOA-maintained), proximity to medical care, and walkable or accessible neighborhoods. The northeast Fresno and Clovis areas have strong inventory of newer single-story homes. The Tower District and surrounding neighborhoods offer walkability. If you're open to a 55+ community, Fresno has 28 senior living and retirement communities with a range of price points and care levels.</p>
+      <p>Call us at (559) 281-8016. We can close on your current home in 5–7 days, on your timeline, with a rent-back if you need it.</p>
+    </div>
+  ),
+
+  "capital-gains-selling-home-california-seniors": (
+    <div className="prose-heritage">
+      <p>You bought your Fresno home in 1988 for $95,000. It's now worth $420,000. If you sell it, do you owe capital gains tax on the $325,000 gain? The answer depends on several factors — and getting it wrong can cost your family tens of thousands of dollars.</p>
+      <p>This article explains the key tax rules California seniors need to understand before selling their home. We are not tax advisors — consult a CPA for advice specific to your situation — but this will give you the framework to have an informed conversation.</p>
+      <h2>The Federal Capital Gains Exclusion (Section 121)</h2>
+      <p>The most important rule: if you have owned and lived in your home as your primary residence for at least 2 of the last 5 years, you can exclude up to $250,000 of capital gains from federal income tax (single filers) or $500,000 (married couples filing jointly). This exclusion is available once every two years.</p>
+      <p>In our example above — bought for $95,000, now worth $420,000, gain of $325,000 — a married couple would pay zero federal capital gains tax. A single filer would exclude $250,000 and owe tax on $75,000 of gain.</p>
+      <p>California does not have a separate exclusion, but the federal exclusion applies to your California return as well. California taxes capital gains as ordinary income, with rates up to 13.3% for high earners. For most seniors, the effective California rate on capital gains is 6–9%.</p>
+      <h2>What Is Your "Basis"?</h2>
+      <p>Your capital gain is the sale price minus your adjusted basis. Your basis starts with what you paid for the home, but it can be increased by the cost of capital improvements you made over the years — a new roof, an addition, a kitchen remodel, a new HVAC system. Keep records of major improvements, as they reduce your taxable gain.</p>
+      <h2>Step-Up in Basis at Death</h2>
+      <p>This is one of the most important — and least understood — rules in estate planning. When someone inherits property, their basis is "stepped up" to the fair market value of the property on the date of death. This means that if your parent bought a home for $80,000 in 1975 and it's worth $450,000 when they pass away, the heir's basis is $450,000 — not $80,000. If the heir sells the home immediately after inheriting it, they pay zero capital gains tax.</p>
+      <p>This is why it is often better, from a tax perspective, to inherit a home rather than receive it as a gift while the parent is alive. A gift does not get a step-up in basis — the recipient takes the donor's original basis.</p>
+      <h2>California Proposition 19</h2>
+      <p>Proposition 19, passed in November 2020, allows California homeowners 55 and older to transfer their property tax base to a new primary residence anywhere in California, up to three times. If you're downsizing from a home with a low assessed value (because you've owned it for decades), this can significantly reduce your property taxes on the new home. The new home must be of equal or lesser value, or you pay a partial adjustment.</p>
+      <h2>When to Sell: Timing Matters</h2>
+      <p>If your gain exceeds the exclusion amount, consider timing the sale in a year when your other income is lower — for example, after you've retired but before you start taking Social Security or required minimum distributions from retirement accounts. Lower income means a lower marginal rate on the capital gain.</p>
+      <p>Call us at (559) 281-8016 for a free cash offer. We always include a third-party broker opinion of value so you know exactly what your home is worth before you make any decisions.</p>
+    </div>
+  ),
+
+  "sell-house-too-much-stuff-fresno": (
+    <div className="prose-heritage">
+      <p>"I want to sell, but I can't deal with all the stuff."</p>
+      <p>We hear this constantly from Fresno homeowners — especially seniors who have lived in their home for decades and accumulated a lifetime of belongings. The house is full. The thought of sorting through it all is paralyzing. And so the sale never happens.</p>
+      <p>Here's the truth: you don't have to clean out the house before you sell. Here are your options.</p>
+      <h2>Option 1: Sell to a Cash Buyer and Leave Everything</h2>
+      <p>This is the simplest option. We buy homes with contents included. You take what you want — furniture, personal items, valuables, anything with sentimental value — and leave everything else. We handle the cleanout after closing. You don't need to rent a dumpster, hire movers, or spend weeks sorting through decades of belongings.</p>
+      <p>This option is particularly well-suited for seniors moving to a retirement community or assisted living, where space is limited and you can only bring a fraction of what you own anyway. Take your favorites. Leave the rest. Close in 5–7 days.</p>
+      <h2>Option 2: Estate Sale First, Then Sell</h2>
+      <p>If you have items of significant value — antiques, collectibles, jewelry, art, quality furniture — an estate sale can generate meaningful proceeds before you sell the home. Estate sale companies in Fresno typically charge 30–40% of gross sales as their fee, but they handle all the sorting, pricing, advertising, and selling. After the sale, they can arrange donation pickup for unsold items.</p>
+      <p>The downside: estate sales take time to organize (typically 4–8 weeks) and require the home to be available for the sale weekend. If you need to sell quickly, this may not be the right sequence.</p>
+      <h2>Option 3: Junk Removal, Then List Traditionally</h2>
+      <p>If you want to maximize your sale price through a traditional listing, you'll need to clear the house first. A professional junk removal company can clear a full house in one to two days. In Fresno, expect to pay $500–$2,000 depending on the volume of items. After the house is cleared, you can stage it and list it on the MLS.</p>
+      <p>This option takes the most time and effort but typically yields the highest sale price — assuming the home is in good condition and the market is cooperative.</p>
+      <h2>What We Recommend</h2>
+      <p>If you're a senior moving to a retirement community or assisted living, or if you're an adult child managing a parent's home, Option 1 is almost always the right choice. The time, energy, and emotional cost of clearing the house yourself is rarely worth the incremental price difference. Take what matters. Leave the rest. Close fast.</p>
+      <p>Call us at (559) 281-8016. We'll make you a fair cash offer within 48 hours, and you can leave as much or as little as you want.</p>
+    </div>
+  ),
+
+  "power-of-attorney-sell-house-california": (
+    <div className="prose-heritage">
+      <p>Your parent is in assisted living or memory care. They can no longer manage their own affairs. The family home is sitting empty, and you need to sell it — but your parent can't sign the deed. Can you sell the house with a Power of Attorney?</p>
+      <p>The answer is yes — but only under specific conditions. Here's what California law requires.</p>
+      <h2>What Is a Durable Power of Attorney?</h2>
+      <p>A Power of Attorney (POA) is a legal document that authorizes one person (the "agent" or "attorney-in-fact") to act on behalf of another person (the "principal"). A <strong>Durable</strong> Power of Attorney remains effective even if the principal becomes incapacitated — which is what makes it useful for elder care situations.</p>
+      <p>A regular (non-durable) Power of Attorney becomes invalid when the principal loses capacity. If your parent signed a regular POA, it may not be usable if they are now cognitively impaired.</p>
+      <h2>The POA Must Specifically Grant Real Estate Authority</h2>
+      <p>This is the critical detail that trips up many families. A general POA may not be sufficient to sell real estate. California law requires that the POA specifically grant authority to sell, convey, or transfer real property. A POA that says "manage my financial affairs" may or may not be interpreted to include real estate — and a title company or escrow company will require specific language before they will insure the transaction.</p>
+      <p>Before you assume a POA allows you to sell the home, have a real estate attorney review the document. If the language is ambiguous, you may need to go to court to confirm your authority.</p>
+      <h2>Recording the POA</h2>
+      <p>When selling real property under a POA in California, the POA must be recorded with the county recorder's office before or at the time of closing. The title company will require a certified copy of the recorded POA as part of the closing documents.</p>
+      <h2>What If There Is No POA?</h2>
+      <p>If your parent did not sign a POA while they had capacity, and they can no longer sign legal documents, you will need to petition the court for a <strong>conservatorship</strong>. A conservatorship gives you legal authority to manage your parent's affairs, including selling their home. The process takes 3–6 months, requires an attorney, and involves court oversight of the sale.</p>
+      <p>This is why estate planning attorneys universally recommend that adults sign a Durable POA while they are still healthy and have full capacity. It is far less expensive and time-consuming than a conservatorship.</p>
+      <h2>Selling Quickly Under a POA</h2>
+      <p>Once you have confirmed that your POA grants real estate authority and is properly recorded, you can sell the home just as the principal would. We work with agents under POA regularly and understand the documentation requirements. We can close in 5–7 days once the paperwork is in order.</p>
+      <p>Call us at (559) 281-8016 for a free, confidential consultation. We will tell you exactly what we need to make an offer and close quickly.</p>
+    </div>
+  ),
+
   "probate-home-sale-merced-madera-tulare": (
     <div>
       <p>Probate in California is governed by state law, but the process plays out differently in each county — and the differences matter when you are trying to sell an inherited property. This guide covers what families dealing with probate properties in Merced, Madera, and Tulare counties need to know, including the county-specific timelines, the court confirmation process, and your options for selling.</p>

@@ -30,6 +30,8 @@ const services = [
   { label: "Tired Landlord", href: "/tired-landlord" },
   { label: "Portfolio Sale & 1031 Exchange", href: "/sell-rental-portfolio" },
   { label: "Military PCS Sale", href: "/military-pcs-sell-house" },
+  { label: "Senior / Retirement Seller", href: "/sell-home-retirement-fresno" },
+  { label: "Selling Parents' Home", href: "/sell-parents-house-fresno" },
   { label: "Junk Removal — Read This First", href: "/junk-removal-before-selling" },
   { label: "⚠️ Vacant Property Warning", href: "/vacant-property-warning" },
 ];
