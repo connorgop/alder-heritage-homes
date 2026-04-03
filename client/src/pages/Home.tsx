@@ -643,7 +643,7 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: "16/9" }}>
               <iframe
-                src="https://www.youtube.com/embed/3naTL5fIqEc?rel=0&modestbranding=1&color=white"
+                src="https://www.youtube.com/embed/3naTL5fIqEc?rel=0&modestbranding=1&color=white&start=80"
                 title="Cash Home Buyers Explained: How They Work & What You'll Get"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
