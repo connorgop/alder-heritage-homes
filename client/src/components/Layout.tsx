@@ -28,6 +28,7 @@ const services = [
   { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
   { label: "Mold — Sell As-Is", href: "/sell-house-mold" },
   { label: "Fire Damage — Sell As-Is", href: "/sell-house-fire-damage" },
+  { label: "Code Violations — Sell As-Is", href: "/sell-house-code-violations-fresno" },
   { label: "Foundation Problems", href: "/sell-house-foundation-problems" },
   { label: "Divorce Home Sale", href: "/sell-house-divorce" },
   { label: "Tired Landlord", href: "/tired-landlord" },
