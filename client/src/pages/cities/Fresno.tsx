@@ -206,6 +206,33 @@ export default function FresnoPage() {
         </div>
       </section>
 
+      {/* Fresno Market Video */}
+      <section className="py-16" style={{ background: "oklch(0.97 0.015 85)" }}>
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+              Fresno CA Housing Market — What Sellers Need to Know in 2026
+            </h2>
+            <p className="mb-6" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Is the Fresno market slowing down? This local market breakdown explains current conditions, what's happening with inventory and prices, and why many Fresno homeowners are choosing a cash sale over a traditional listing in 2026.
+            </p>
+            <div className="relative rounded-2xl overflow-hidden" style={{ paddingBottom: "56.25%", height: 0, boxShadow: "0 8px 32px oklch(0.22 0.01 60 / 0.15)" }}>
+              <iframe
+                src="https://www.youtube.com/embed/_35tCzIacj8?rel=0&modestbranding=1&color=white"
+                title="Fresno CA Housing Market 2026 — What Sellers Need to Know"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute top-0 left-0 w-full h-full"
+                style={{ border: 0 }}
+              />
+            </div>
+            <p className="text-sm mt-3 italic" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Local Fresno real estate market analysis for 2026 — covering price trends, inventory levels, and what a potential slowdown means for sellers.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="container text-center">

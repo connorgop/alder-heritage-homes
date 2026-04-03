@@ -17,6 +17,11 @@ interface CityPageProps {
   faqs?: { q: string; a: string }[];
   stats?: { label: string; value: string }[];
   slug?: string; // e.g. "we-buy-houses-fresno"
+  videoEmbed?: {
+    youtubeId: string;
+    title: string;
+    caption?: string;
+  };
 }
 
 const FAST_SALE_PAGES: Record<string, string> = {
@@ -25,7 +30,7 @@ const FAST_SALE_PAGES: Record<string, string> = {
   Visalia: "/sell-house-fast-visalia-ca",
 };
 
-export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug }: CityPageProps) {
+export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug, videoEmbed }: CityPageProps) {
   const fastSaleHref = FAST_SALE_PAGES[city] ?? "/sell-house-fast";
   const services = [
     { label: "Foreclosure Help", href: "/foreclosure-help" },
@@ -158,6 +163,29 @@ export default function CityPage({ city, county, population, description, neighb
                       </div>
                     ))}
                   </div>
+                </div>
+              )}
+              {/* Local Market Video */}
+              {videoEmbed && (
+                <div className="mt-10">
+                  <h3 className="text-xl font-bold mb-3" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                    {videoEmbed.title}
+                  </h3>
+                  <div className="relative rounded-2xl overflow-hidden" style={{ paddingBottom: "56.25%", height: 0, boxShadow: "0 8px 32px oklch(0.22 0.01 60 / 0.12)" }}>
+                    <iframe
+                      src={`https://www.youtube.com/embed/${videoEmbed.youtubeId}?rel=0&modestbranding=1&color=white`}
+                      title={videoEmbed.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute top-0 left-0 w-full h-full"
+                      style={{ border: 0 }}
+                    />
+                  </div>
+                  {videoEmbed.caption && (
+                    <p className="text-sm mt-3 italic" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                      {videoEmbed.caption}
+                    </p>
+                  )}
                 </div>
               )}
             </div>
