@@ -31,6 +31,11 @@ interface ServicePageProps {
   showVacantWarning?: boolean;
   slug?: string;           // canonical path, e.g. "/sell-house-mold"
   metaDescription?: string; // custom 150-char meta description
+  videoEmbed?: {
+    youtubeId: string;     // YouTube video ID, e.g. "dQw4w9WgXcQ"
+    title: string;         // Descriptive title shown above the embed
+    caption?: string;      // Optional short caption below the embed
+  };
 }
 
 export default function ServicePage({
@@ -49,6 +54,7 @@ export default function ServicePage({
   showVacantWarning,
   slug,
   metaDescription,
+  videoEmbed,
 }: ServicePageProps) {
   const faqId = title.toLowerCase().replace(/[^a-z0-9]/g, "-").slice(0, 40);
   const canonicalPath = slug || `/${title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
@@ -117,6 +123,30 @@ export default function ServicePage({
                   </div>
                 ))}
               </div>
+
+              {/* Video Embed */}
+              {videoEmbed && (
+                <div className="mt-12 mb-4">
+                  <h2 className="text-2xl font-bold mb-3" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                    {videoEmbed.title}
+                  </h2>
+                  <div className="relative rounded-2xl overflow-hidden" style={{ paddingBottom: "56.25%", height: 0, boxShadow: "0 8px 32px oklch(0.22 0.01 60 / 0.15)" }}>
+                    <iframe
+                      src={`https://www.youtube.com/embed/${videoEmbed.youtubeId}?rel=0&modestbranding=1&color=white`}
+                      title={videoEmbed.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="absolute top-0 left-0 w-full h-full"
+                      style={{ border: 0 }}
+                    />
+                  </div>
+                  {videoEmbed.caption && (
+                    <p className="text-sm mt-3 italic" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                      {videoEmbed.caption}
+                    </p>
+                  )}
+                </div>
+              )}
 
               {/* FAQ */}
               {faq.length > 0 && (

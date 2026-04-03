@@ -68,6 +68,11 @@ export default function ForeclosureHelp() {
           a: "Not immediately — but when we open escrow, the title company will contact your lender to get a payoff statement. We handle all of this communication for you.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "Qhzcxwp0wOs",
+        title: "How to Stop Foreclosure in California — Your Options Explained",
+        caption: "A clear overview of your legal options when facing foreclosure in California, including selling before the auction date."
+      }}
       ctaTitle="Don't Wait — Every Day Counts"
       ctaBody="The foreclosure clock is ticking. Contact us today for a free, confidential conversation about your options. There's no obligation and no pressure."
       relatedLinks={[

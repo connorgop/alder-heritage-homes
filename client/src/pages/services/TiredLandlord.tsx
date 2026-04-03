@@ -95,6 +95,11 @@ export default function TiredLandlord() {
           a: "Every offer comes with an independent Broker Opinion of Value from a Fresno broker with 25 years and 1,800+ transactions. You can compare our offer against the independent valuation and make an informed decision. We also guarantee to match or beat any competing cash offer.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "xw1kP_Y4l6w",
+        title: "How to Sell a Rental Property With Tenants",
+        caption: "A practical guide for landlords who want to sell their rental property without going through the eviction process first."
+      }}
       ctaTitle="Ready to Stop Being a Landlord? Let's Talk."
       ctaBody="Get a cash offer and an independent broker opinion on your Fresno rental property. No repairs, no evictions, no hassle."
       relatedLinks={[

@@ -56,6 +56,11 @@ export default function FastSale() {
           a: "No problem. You choose the closing date. We've closed in 5–7 days and we've closed in 90 days. Whatever timeline works for your situation.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "xWXPEfDztsI",
+        title: "Selling Your Home for Cash — Here's What You Should Know",
+        caption: "A straightforward breakdown of the cash home sale process, what to expect, and how to make sure you're getting a fair deal."
+      }}
       ctaTitle="Ready to Close Fast?"
       ctaBody="Fill out our form or call us today. We'll have a cash offer for you within 24 hours and can close on your schedule."
       relatedLinks={[

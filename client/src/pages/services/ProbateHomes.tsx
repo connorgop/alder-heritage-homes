@@ -64,6 +64,11 @@ export default function ProbateHomes() {
           a: "After a homeowner passes, the property goes through probate (or is distributed via trust). Once the executor/administrator has legal authority, they can sell the property. We guide families through this entire process from start to finish.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "7hTIhjUE7IU",
+        title: "How to Sell an Inherited House in California",
+        caption: "A step-by-step walkthrough of the probate and trust process for selling an inherited property in California."
+      }}
       ctaTitle="We Handle the Complexity So You Don't Have To"
       ctaBody="100+ probate sales. Compassionate, experienced, licensed. Call us for a free consultation — no pressure, no obligation, just honest guidance."
       showVacantWarning={true}

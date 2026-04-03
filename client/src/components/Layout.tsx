@@ -258,6 +258,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </div>
                 )}
               </div>
+              {/* Sell Fast CTA link */}
+              <Link href="/sell-house-fast-fresno-ca">
+                <span
+                  className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-bold transition-all hover:opacity-90"
+                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "white", background: "oklch(0.55 0.13 42)", cursor: "pointer", letterSpacing: "0.01em" }}
+                >
+                  Sell My House Fast
+                </span>
+              </Link>
               {/* Calculator standalone link */}
               <Link href="/cash-offer-calculator">
                 <span
@@ -342,6 +351,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 )}
               </div>
 
+              <MobileNavLink href="/sell-house-fast-fresno-ca">🏠 Sell My House Fast</MobileNavLink>
               <MobileNavLink href="/cash-offer-calculator">🧮 Free Cash Offer Calculator</MobileNavLink>
               <MobileNavLink href="/faq">FAQ</MobileNavLink>
               <MobileNavLink href="/about">About Connor</MobileNavLink>

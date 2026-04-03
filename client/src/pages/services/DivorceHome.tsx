@@ -83,6 +83,11 @@ export default function DivorceHome() {
           a: "Yes. We're experienced working alongside family law attorneys and mediators in Fresno County. We can provide documentation, letters of intent, and proof of funds as needed for your legal proceedings.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "7JLqGsEQM-E",
+        title: "How to Sell a House During a Divorce in California",
+        caption: "What California homeowners need to know about selling jointly owned property during a divorce — including timelines, court orders, and your rights."
+      }}
       ctaTitle="Get a Fair, Private Cash Offer for Your Divorce Home Sale"
       ctaBody="No open houses. No public listings. A transparent offer with an independent broker opinion so both parties can move forward with confidence."
       relatedLinks={[

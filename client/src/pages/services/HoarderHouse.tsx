@@ -83,6 +83,11 @@ export default function HoarderHouse() {
           a: "If you call a junk removal company, you pay $3,000–$8,000 to clean out the house, then still need to sell it. If you call us first, we buy the house as-is and handle the cleanout ourselves — you pay nothing and close faster.",
         },
       ]}
+      videoEmbed={{
+        youtubeId: "Jzx_InIMQq0",
+        title: "Selling a House As-Is in California — What You Need to Know",
+        caption: "A California real estate expert explains what \"as-is\" really means, what you still have to disclose, and how to get the best outcome when selling without repairs."
+      }}
       ctaTitle="Sell Your Fresno Home As-Is — No Cleanup Required"
       ctaBody="Leave everything. We'll handle the rest. Get your free cash offer and a third-party broker opinion so you can make the right decision."
       relatedLinks={[
