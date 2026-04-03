@@ -51,6 +51,15 @@ import WholesalerWarningAd from "./pages/ads/WholesalerWarningAd";
 import LpSeniorSeller from "./pages/lp/SeniorSeller";
 import LpDownsize from "./pages/lp/Downsize";
 
+// Fresno neighborhood pages
+import FigGarden from "./pages/neighborhoods/FigGarden";
+import TowerDistrict from "./pages/neighborhoods/TowerDistrict";
+import WoodwardPark from "./pages/neighborhoods/WoodwardPark";
+import BullardNeighborhood from "./pages/neighborhoods/Bullard";
+import SunnysideNeighborhood from "./pages/neighborhoods/Sunnyside";
+import McLaneNeighborhood from "./pages/neighborhoods/McLane";
+import OldFigGarden from "./pages/neighborhoods/OldFigGarden";
+
 // City landing pages
 import FresnoPage from "./pages/cities/Fresno";
 import ClovisPage from "./pages/cities/Clovis";
@@ -138,6 +147,15 @@ function Router() {
       <Route path="/lp/real-cash-buyer-not-wholesaler" component={WholesalerWarningAd} />
       <Route path="/lp/senior-seller" component={LpSeniorSeller} />
       <Route path="/lp/downsize" component={LpDownsize} />
+
+      {/* Fresno neighborhood pages */}
+      <Route path="/fresno-fig-garden" component={FigGarden} />
+      <Route path="/fresno-tower-district" component={TowerDistrict} />
+      <Route path="/fresno-woodward-park" component={WoodwardPark} />
+      <Route path="/fresno-bullard" component={BullardNeighborhood} />
+      <Route path="/fresno-sunnyside" component={SunnysideNeighborhood} />
+      <Route path="/fresno-mclane" component={McLaneNeighborhood} />
+      <Route path="/fresno-old-fig-garden" component={OldFigGarden} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
