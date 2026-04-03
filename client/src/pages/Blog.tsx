@@ -5,7 +5,17 @@ import PageMeta from "@/components/PageMeta";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp";
 
-export const blogPosts = [
+export type BlogPostEntry = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  date: string;
+  readTime: string;
+  image: string;
+};
+
+const _blogPostsRaw = [
   {
     slug: "how-to-stop-foreclosure-fresno",
     title: "How to Stop Foreclosure in Fresno, CA: Your Options Explained",
@@ -808,8 +818,82 @@ export const blogPosts = [
     readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&auto=format&fit=crop",
   },
+,
+  {
+    slug: "how-to-sell-house-with-lien-california",
+    title: "How to Sell a House With a Lien in California — What You Need to Know",
+    excerpt: "Tax liens, HOA liens, mechanic's liens, and judgment liens can all complicate a home sale — but they don't have to stop it. Here's exactly how to sell a California home with a lien attached.",
+    category: "Seller Education",
+    date: "April 3, 2026",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "chapter-7-bankruptcy-what-happens-to-your-house-california",
+    title: "Chapter 7 Bankruptcy in California: What Happens to Your House?",
+    excerpt: "Filing Chapter 7 doesn't automatically mean losing your home — but it does trigger an automatic stay and trustee review. Here's what California homeowners need to know about bankruptcy and real estate.",
+    category: "Financial Hardship",
+    date: "April 3, 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "selling-house-with-squatters-california",
+    title: "Selling a House With Squatters in California — A Real Buyer's Perspective",
+    excerpt: "We've bought homes with active squatters in Fresno. Here's what the process actually looks like — from the legal steps to remove occupants to closing with a cash buyer who handles it all.",
+    category: "Property Conditions",
+    date: "April 3, 2026",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "what-is-broker-opinion-of-value-bov",
+    title: "What Is a Broker Opinion of Value (BOV) and Why It Matters When Selling",
+    excerpt: "A BOV is the professional analysis behind every legitimate cash offer. Here's how it works, what it includes, and why Alder Heritage Homes provides one with every offer — unlike most cash buyers.",
+    category: "Seller Education",
+    date: "April 3, 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "fresno-property-taxes-what-sellers-need-to-know",
+    title: "Fresno Property Taxes: What Sellers Need to Know Before Closing",
+    excerpt: "Proposition 13, supplemental taxes, proration at closing, and what happens to your tax bill when you sell — a complete guide for Fresno County homeowners selling in 2026.",
+    category: "Market Updates",
+    date: "April 3, 2026",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "central-valley-cities-cash-home-buyers-guide",
+    title: "Cash Home Buyers in the Central Valley — City-by-City Guide for 2026",
+    excerpt: "From Fresno to Bakersfield, Visalia to Stockton — a comprehensive guide to selling your home for cash in every major Central Valley city, with local market data and what to expect.",
+    category: "Market Updates",
+    date: "April 3, 2026",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "how-to-avoid-foreclosure-california-2026",
+    title: "How to Avoid Foreclosure in California — 7 Options for 2026",
+    excerpt: "Loan modification, forbearance, short sale, deed in lieu, bankruptcy, selling to a cash buyer — a complete breakdown of every option available to California homeowners facing foreclosure in 2026.",
+    category: "Financial Hardship",
+    date: "April 3, 2026",
+    readTime: "13 min read",
+    image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "selling-house-during-probate-california-timeline",
+    title: "Selling a House During Probate in California — The Complete 2026 Timeline",
+    excerpt: "From opening probate to receiving your check — a step-by-step timeline of what happens when you sell a California home through the probate process, including court confirmation and overbid procedures.",
+    category: "Probate",
+    date: "April 3, 2026",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&auto=format&fit=crop",
+  },
 
-];
+].filter(Boolean);
+export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
 const categoryColors: Record<string, string> = {
   "Foreclosure": "oklch(0.55 0.13 42)",
@@ -849,8 +933,8 @@ const categoryColors: Record<string, string> = {
 };
 
 export default function Blog() {
-  const featured = blogPosts[0];
-  const rest = blogPosts.slice(1);
+  const featured = blogPosts[0]!;
+  const rest: BlogPostEntry[] = blogPosts.slice(1);
 
   return (
     <Layout>

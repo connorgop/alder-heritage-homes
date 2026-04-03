@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import PageMeta from "@/components/PageMeta";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, Phone, ArrowRight, Clock, CheckCircle2 } from "lucide-react";
-import { blogPosts } from "./Blog";
+import { blogPosts, type BlogPostEntry } from "./Blog";
 import SchemaMarkup, { articleSchema } from "@/components/SchemaMarkup";
 
 const PHONE = "(559) 281-8016";
@@ -1872,12 +1872,142 @@ const articleContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+
+  "how-to-sell-house-with-lien-california": (
+    <div>
+      <p>Selling a house with a lien in California is more common than most people realize — and it's almost always solvable. A lien is simply a legal claim against your property, recorded in the county recorder's office, that must be satisfied before or at the time of sale. The most common types are property tax liens, HOA liens, mechanic's liens, and judgment liens. None of them automatically prevent a sale, but they do require a plan.</p>
+
+      <h2>Types of Liens That Affect California Home Sales</h2>
+      <p><strong>Property Tax Liens:</strong> If you're behind on property taxes, Fresno County (or whichever county your property is in) has a lien on your home. These are always paid at closing from your sale proceeds — they take first priority over everything else, including your mortgage. The good news: you don't need to pay them before selling. They come out of escrow automatically.</p>
+      <p><strong>HOA Liens:</strong> If you're behind on HOA dues, the HOA can record a lien. California law (Civil Code §5705) allows HOAs to foreclose on this lien if it exceeds $1,800 or is more than 12 months delinquent. Like tax liens, HOA liens are typically paid at closing from your proceeds.</p>
+      <p><strong>Mechanic's Liens:</strong> If a contractor did work on your home and wasn't paid, they can record a mechanic's lien within 90 days of completing work. These are common on fixer-uppers and properties with recent renovations. They must be paid or disputed before or at closing.</p>
+      <p><strong>Judgment Liens:</strong> If someone won a lawsuit against you and recorded the judgment in the county where your property is located, it becomes a lien on all real property you own in that county. These are paid at closing from your proceeds.</p>
+      <p><strong>Federal Tax Liens (IRS):</strong> If the IRS has filed a Notice of Federal Tax Lien, it attaches to all your property. The IRS must be contacted to negotiate a payoff or discharge before or at closing. This process takes 4–6 weeks, so plan ahead.</p>
+
+      <h2>How the Lien Payoff Process Works at Closing</h2>
+      <p>When you sell your home in California, the escrow company (title company) conducts a title search to identify all liens recorded against the property. They then prepare a "preliminary title report" that lists every lien, along with the payoff amounts. At closing, the escrow company pays off each lien in order of priority from your sale proceeds, and the remaining balance goes to you.</p>
+      <p>This means that in most cases, you don't need to pay off liens before selling — they're handled automatically at closing. The key question is whether your sale proceeds are sufficient to cover all liens plus your mortgage payoff. If the liens exceed your equity, you may be looking at a short sale situation.</p>
+
+      <h2>What If the Liens Exceed Your Equity?</h2>
+      <p>If the total of your mortgage balance plus all liens exceeds your home's market value, you have negative equity. In this case, you have several options: negotiate a short sale with your lender (they agree to accept less than the full mortgage balance), work with a cash buyer who specializes in these situations, or file for bankruptcy to discharge certain liens (not tax or HOA liens — those survive bankruptcy).</p>
+      <p>Alder Heritage Homes has experience buying homes with multiple liens. We work with title companies and lien holders to negotiate payoffs and structure transactions that work for everyone. Call us at (559) 281-8016 to discuss your specific situation.</p>
+
+      <h2>Can You Sell a House With a Lien to a Cash Buyer?</h2>
+      <p>Yes — and cash buyers like Alder Heritage Homes are often the best option when liens are involved. Traditional buyers using financing require a clean title, which means all liens must be resolved before closing. Cash buyers can often close with liens in place, with the understanding that they'll be paid off at closing from the proceeds. This is faster and eliminates the uncertainty of waiting for lien disputes to resolve.</p>
+
+      <h2>Steps to Take If Your Home Has a Lien</h2>
+      <p>First, order a preliminary title report from a local title company — this will show you every lien recorded against your property and the approximate payoff amounts. Second, calculate whether your expected sale price covers all liens plus your mortgage. Third, if you have a mechanic's lien or judgment lien you believe is incorrect, consult a real estate attorney about disputing it. Fourth, if you're dealing with an IRS lien, contact the IRS directly or hire a tax professional to negotiate a discharge. Finally, contact a cash buyer like Alder Heritage Homes — we can often close faster and with fewer complications than a traditional sale when liens are involved.</p>
+
+      <p>Ready to sell your Fresno-area home despite liens? Call Alder Heritage Homes at (559) 281-8016 for a free consultation and cash offer.</p>
+    </div>
+  ),
+
+  "chapter-7-bankruptcy-what-happens-to-your-house-california": (
+    <div>
+      <p>Filing Chapter 7 bankruptcy in California is one of the most misunderstood financial decisions a homeowner can make. Many people believe it automatically means losing their home — but that's not always true. The reality is more nuanced, and understanding it can help you make the best decision for your situation.</p>
+
+      <h2>What Is Chapter 7 Bankruptcy?</h2>
+      <p>Chapter 7 is a "liquidation" bankruptcy that discharges most unsecured debts (credit cards, medical bills, personal loans) in exchange for surrendering non-exempt assets to a bankruptcy trustee. The process typically takes 3–6 months and results in a discharge of qualifying debts. The key question for homeowners is: what happens to your house?</p>
+
+      <h2>The Automatic Stay — Immediate Protection</h2>
+      <p>The moment you file Chapter 7, an "automatic stay" goes into effect. This immediately stops all collection actions, including foreclosure proceedings. If you were facing a Trustee Sale date, the automatic stay halts it — at least temporarily. This gives you breathing room to evaluate your options.</p>
+
+      <h2>California's Homestead Exemption</h2>
+      <p>California has one of the most generous homestead exemptions in the country. As of 2021, California's homestead exemption is the greater of $300,000 or the county median sale price, up to a maximum of $600,000 (adjusted annually for inflation). In Fresno County, where median home prices are around $320,000–$360,000, this means most homeowners can protect all of their home equity in a Chapter 7 filing.</p>
+      <p>If your home equity is less than the exemption amount, the bankruptcy trustee cannot force a sale of your home. You keep it — as long as you continue making mortgage payments.</p>
+
+      <h2>What If Your Equity Exceeds the Exemption?</h2>
+      <p>If your home equity significantly exceeds the California homestead exemption, the bankruptcy trustee may sell your home to pay creditors. For example, if your home is worth $700,000 and you have $500,000 in equity, the trustee could sell the home, pay you the $300,000–$600,000 exemption amount, and use the rest to pay creditors. This is relatively rare in the Central Valley given current home values and the generous exemption.</p>
+
+      <h2>Reaffirming Your Mortgage in Chapter 7</h2>
+      <p>If you want to keep your home after Chapter 7, you typically need to "reaffirm" your mortgage — meaning you sign a new agreement with your lender to remain personally liable for the debt. Without reaffirmation, your mortgage debt is technically discharged, but the lien remains on the property. Most lenders require reaffirmation to continue accepting payments and reporting them to credit bureaus.</p>
+
+      <h2>Selling Your Home Before or During Chapter 7</h2>
+      <p>If you decide to sell your home before filing Chapter 7, the proceeds (up to the homestead exemption amount) are protected. However, if you sell during an active bankruptcy, you need court approval. The trustee must approve the sale price and terms. This is where working with an experienced cash buyer becomes valuable — we can often close quickly and with the documentation the bankruptcy court requires.</p>
+      <p>Selling to a cash buyer before filing bankruptcy can also be a strategic move: you convert your home equity (which may be partially exposed) into cash (which is fully protected up to the exemption amount in California), then file bankruptcy to discharge your other debts.</p>
+
+      <h2>Chapter 13 vs. Chapter 7 for Homeowners</h2>
+      <p>If your primary goal is to keep your home and catch up on missed mortgage payments, Chapter 13 (reorganization bankruptcy) is usually better than Chapter 7. Chapter 13 allows you to create a 3–5 year repayment plan to catch up on arrears while keeping your home. Chapter 7 does not provide this mechanism — if you're behind on your mortgage and want to keep the home, Chapter 13 is typically the better choice.</p>
+
+      <p>Facing bankruptcy and unsure what to do with your Fresno-area home? Call Alder Heritage Homes at (559) 281-8016. We work with bankruptcy attorneys regularly and can help you understand your options — including selling quickly before or during the process.</p>
+    </div>
+  ),
+
+
+
+
+  "central-valley-cities-cash-home-buyers-guide": (
+    <div>
+      <p>The Central Valley stretches 450 miles through the heart of California, encompassing some of the most economically diverse communities in the state. From Fresno's urban core to Bakersfield's oil country, from Stockton's port city to Visalia's agricultural heartland — each market has its own dynamics, its own challenges, and its own opportunities for homeowners who need to sell fast. This guide covers the key facts for every major Central Valley city where Alder Heritage Homes buys homes.</p>
+
+      <h2>Fresno — The Hub of the Central Valley</h2>
+      <p>Population 545,000+, Fresno County. Median home price: $320,000–$360,000. Days on market (traditional listing): 45–65 days. Fresno is California's 5th largest city and the economic center of the Central Valley. The market has cooled significantly from 2021–2022 peaks, with rising insurance costs and elevated interest rates reducing the buyer pool. Cash buyers are increasingly active in Fresno, particularly in older neighborhoods like West Fresno, Lowell, and Pinedale where deferred maintenance is common. We buy homes throughout all 40+ Fresno neighborhoods.</p>
+
+      <h2>Clovis — Fresno's Fastest-Growing Neighbor</h2>
+      <p>Population 125,000+, Fresno County. Median home price: $380,000–$430,000. Clovis consistently ranks as one of the safest and most desirable cities in the Central Valley. The Clovis Unified School District is a major draw for families. Cash sales are less common here due to strong buyer demand, but they're valuable for sellers dealing with probate, divorce, or properties that need significant work. We buy homes throughout Clovis North, Old Town Clovis, Loma Vista, and all surrounding areas.</p>
+
+      <h2>Visalia — Tulare County's Largest City</h2>
+      <p>Population 145,000+, Tulare County. Median home price: $330,000–$380,000. Visalia is the economic and cultural center of Tulare County, home to the NAS Lemoore naval air station (a major employer) and a strong agricultural economy. Military PCS (Permanent Change of Station) orders are a significant driver of fast home sales in Visalia — service members often have 30–60 days to sell before reporting to a new duty station. We specialize in military PCS sales and buy homes throughout all Visalia neighborhoods.</p>
+
+      <h2>Bakersfield — Kern County's Oil Capital</h2>
+      <p>Population 415,000+, Kern County. Median home price: $310,000–$360,000. Bakersfield's economy is heavily tied to oil and agriculture, making it more volatile than other Central Valley markets. When oil prices drop, the local economy contracts and home values follow. Cash buyers are particularly valuable in Bakersfield for homeowners dealing with job loss, foreclosure, or properties in oil-adjacent neighborhoods that traditional buyers avoid. We buy homes throughout all Bakersfield neighborhoods.</p>
+
+      <h2>Madera — The Growing Northern Gateway</h2>
+      <p>Population 68,000+, Madera County. Median home price: $300,000–$340,000. Madera is one of the fastest-growing cities in the Central Valley, with major residential developments like Tesoro Viejo and Riverstone attracting buyers from Fresno. However, the older parts of Madera have significant deferred maintenance and a limited buyer pool. We buy homes throughout Madera and Madera County, including Madera Ranchos and Bonadelle Ranchos.</p>
+
+      <h2>Stockton — The Northern Central Valley Hub</h2>
+      <p>Population 320,000+, San Joaquin County. Median home price: $380,000–$420,000. Stockton famously filed for municipal bankruptcy in 2012 and has since recovered significantly. The city has a large inventory of older homes, many with deferred maintenance, and a significant foreclosure rate. Cash buyers are very active in Stockton. We buy homes throughout Stockton and San Joaquin County.</p>
+
+      <h2>Modesto — The Heart of the Northern Valley</h2>
+      <p>Population 220,000+, Stanislaus County. Median home price: $370,000–$410,000. Modesto is the largest city in Stanislaus County and a major agricultural processing hub. The market is similar to Fresno — strong demand for move-in ready homes, but limited buyer pool for distressed properties. We buy homes throughout Modesto and Stanislaus County.</p>
+
+      <h2>Merced — The Gateway to Yosemite</h2>
+      <p>Population 90,000+, Merced County. Median home price: $320,000–$360,000. Merced is home to UC Merced, the newest UC campus, which has brought significant growth and investment. The university area has strong rental demand, making it attractive for investors. We buy homes throughout Merced and Merced County.</p>
+
+      <p>Ready to sell your Central Valley home for cash? Call Alder Heritage Homes at (559) 281-8016 or visit <a href="/sell-house-fast">our sell fast hub</a> to find your city's dedicated page.</p>
+    </div>
+  ),
+
+
+  "selling-house-during-probate-california-timeline": (
+    <div>
+      <p>Selling a house during California probate is a process that most families have never navigated before — and the timeline surprises almost everyone. It's longer than a standard sale, involves court oversight, and has procedures (like the overbid process) that don't exist in regular real estate transactions. Here's the complete 2026 timeline, step by step.</p>
+
+      <h2>Before Probate Opens — The First 30 Days</h2>
+      <p>When someone dies owning real property in California, their estate typically must go through probate before the property can be sold (unless it was held in a living trust or with a joint tenant). The process begins when the executor named in the will (or an administrator, if there's no will) files a petition to open probate with the Superior Court in the county where the decedent lived.</p>
+      <p>In Fresno County, the probate court is located at 1100 Van Ness Ave, Fresno. Filing fees are approximately $465. The court sets an initial hearing date approximately 6–8 weeks after filing. During this waiting period, the executor has limited authority to manage the estate — they can secure and maintain the property, but typically cannot sell it without court approval.</p>
+
+      <h2>Months 1–3 — Opening Probate and Letters Testamentary</h2>
+      <p>At the initial hearing, the court formally opens probate, appoints the executor (or administrator), and issues "Letters Testamentary" (or Letters of Administration) — the legal document that gives the executor authority to act on behalf of the estate. With Letters Testamentary in hand, the executor can open estate bank accounts, manage assets, and begin the process of selling real property.</p>
+      <p>During this period, the executor must also publish a "Notice to Creditors" in a local newspaper for 4 consecutive weeks, giving creditors 4 months to file claims against the estate. This creditor claim period runs concurrently with the rest of the probate process.</p>
+
+      <h2>Months 2–4 — Listing and Accepting an Offer</h2>
+      <p>Once the executor has Letters Testamentary, they can list the property for sale. California Probate Code §10309 requires that the sale price be at least 90% of the property's appraised value (as determined by a probate referee appointed by the court). The executor must obtain a probate referee appraisal before listing.</p>
+      <p>When an offer is accepted, the executor must file a "Report of Sale and Petition for Order Confirming Sale" with the probate court. This petition includes the accepted offer price and requests a court hearing to confirm the sale. The court sets a hearing date approximately 4–6 weeks after filing.</p>
+
+      <h2>The Court Confirmation Hearing — The Overbid Process</h2>
+      <p>This is the step that surprises most families. At the court confirmation hearing, the accepted offer is presented to the court — but any member of the public can appear and submit a higher bid (an "overbid"). The minimum overbid is the accepted price plus 5% plus $500. If an overbid is submitted, there's an auction in the courtroom, with the property going to the highest bidder.</p>
+      <p>The overbid process is designed to protect the estate by ensuring the property sells at or above market value. In practice, overbids are relatively rare (perhaps 10–20% of probate sales), but they do happen — particularly for desirable properties in good condition. If the property is sold to an overbidder, the original buyer loses the sale but typically receives their deposit back.</p>
+
+      <h2>Months 4–6 — Closing After Court Confirmation</h2>
+      <p>After the court confirms the sale (either to the original buyer or an overbidder), escrow can close. The closing process is similar to a standard sale, but the executor signs all documents on behalf of the estate. Proceeds go into the estate account, not to individual heirs.</p>
+      <p>From the court confirmation order to closing typically takes 2–4 weeks. The total timeline from opening probate to receiving sale proceeds is typically 6–12 months for a straightforward estate — longer if there are disputes, creditor claims, or tax issues.</p>
+
+      <h2>The Independent Administration of Estates Act (IAEA)</h2>
+      <p>California's IAEA allows executors with "full authority" under the act to sell real property without court confirmation — skipping the overbid process entirely. This can reduce the timeline by 2–3 months. However, the executor must provide notice to all heirs and beneficiaries, who have 15 days to object. If anyone objects, court confirmation is required. IAEA authority must be requested at the initial probate hearing.</p>
+
+      <h2>Selling to a Cash Buyer During Probate</h2>
+      <p>Cash buyers are particularly valuable in probate sales because they eliminate financing contingencies — the most common reason probate sales fall apart. If a buyer's loan is denied after the court confirmation hearing, the sale fails and the process must start over. A cash buyer closes with certainty.</p>
+      <p>Alder Heritage Homes works with probate attorneys and executors throughout Fresno County. We can provide a preliminary offer before probate is even opened, giving the family a realistic expectation of proceeds. Call (559) 281-8016 to discuss your probate property.</p>
+    </div>
+  ),
+
 };
 
 export default function BlogPost() {
   const params = useParams<{ slug: string }>();
   const slug = params.slug;
-  const post = blogPosts.find((p) => p.slug === slug);
+  const post = blogPosts.find((p) => p!.slug === slug) as typeof blogPosts[0] | undefined;
   const content = articleContent[slug || ""];
 
   if (!post || !content) {
@@ -1891,7 +2021,7 @@ export default function BlogPost() {
     );
   }
 
-  const related = blogPosts.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 2);
+  const related: BlogPostEntry[] = (blogPosts as BlogPostEntry[]).filter((p) => p.slug !== slug && p.category === post!.category).slice(0, 2);
 
   // Internal linking: map blog categories to relevant service pages
   const categoryServiceLinks: Record<string, { label: string; href: string }[]> = {
