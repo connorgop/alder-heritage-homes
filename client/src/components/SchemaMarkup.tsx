@@ -352,6 +352,33 @@ export function buildBreadcrumbs(pathname: string): { name: string; url: string 
   return crumbs;
 }
 
+/**
+ * AggregateRating schema — activate once you have 10+ Google reviews.
+ * Pass in your current review count and average rating.
+ * This displays gold star ratings directly in Google search results.
+ */
+export function aggregateRatingSchema({
+  ratingValue,
+  reviewCount,
+}: {
+  ratingValue: number;
+  reviewCount: number;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.alderheritagehomes.com/#business",
+    name: "Alder Heritage Homes",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: ratingValue.toFixed(1),
+      reviewCount: reviewCount,
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+}
+
 /** WebSite schema with SearchAction — enables Google Sitelinks Search Box */
 export function websiteSchema() {
   return {

@@ -24,7 +24,7 @@ import FastSale from "./pages/services/FastSale";
 import BehindOnMortgage from "./pages/services/BehindOnMortgage";
 import RoofDamage from "./pages/services/RoofDamage";
 import HoarderHouse from "./pages/services/HoarderHouse";
-import DivorceHome from "./pages/services/DivorceHome";
+import DivorceHome from "./pages/services/Divorce";
 import TiredLandlord from "./pages/services/TiredLandlord";
 import JunkRemoval from "./pages/services/JunkRemoval";
 import WhyChooseUs from "./pages/WhyChooseUs";
@@ -83,8 +83,15 @@ import StocktonPage from "./pages/cities/Stockton";
 import ModestoPage from "./pages/cities/Modesto";
 import TurlockPage from "./pages/cities/Turlock";
 import KingsCountyPage from "./pages/cities/KingsCounty";
+import DinubaPage from "./pages/cities/Dinuba";
+import FowlerPage from "./pages/cities/Fowler";
+import KingsburgPage from "./pages/cities/Kingsburg";
+import AvenalPage from "./pages/cities/Avenal";
+import CoalingaPage from "./pages/cities/Coalinga";
 import SkylineREI from "./pages/SkylineREI";
 import FAQPage from "./pages/FAQ";
+import GBPTemplates from "./pages/GBPTemplates";
+import Resources from "./pages/Resources";
 
 function Router() {
   return (
@@ -95,6 +102,8 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/faq" component={FAQPage} />
+      <Route path="/resources" component={Resources} />
+      <Route path="/gbp-post-templates" component={GBPTemplates} />
 
       {/* Service pages */}
       <Route path="/foreclosure-help" component={ForeclosureHelp} />
@@ -142,6 +151,11 @@ function Router() {
       <Route path="/we-buy-houses-modesto" component={ModestoPage} />
       <Route path="/we-buy-houses-turlock" component={TurlockPage} />
       <Route path="/we-buy-houses-kings-county" component={KingsCountyPage} />
+      <Route path="/we-buy-houses-dinuba" component={DinubaPage} />
+      <Route path="/we-buy-houses-fowler" component={FowlerPage} />
+      <Route path="/we-buy-houses-kingsburg" component={KingsburgPage} />
+      <Route path="/we-buy-houses-avenal" component={AvenalPage} />
+      <Route path="/we-buy-houses-coalinga" component={CoalingaPage} />
 
       {/* Google Ads landing pages — no nav, conversion-optimized */}
       <Route path="/lp/arm-rate-change" component={ArmRateAd} />

@@ -270,6 +270,44 @@ export default function DontHireFriendRealtor() {
         </div>
       </section>
 
+      {/* Realtor Overpricing Caution */}
+      <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="rounded-2xl overflow-hidden" style={{ border: "2px solid oklch(0.70 0.15 42 / 0.4)", boxShadow: "0 8px 40px oklch(0.55 0.13 42 / 0.12)" }}>
+              <div className="p-6 flex items-center gap-3" style={{ background: "oklch(0.55 0.13 42)" }}>
+                <AlertTriangle size={22} className="text-white flex-shrink-0" />
+                <span className="text-white font-bold text-lg" style={{ fontFamily: "'Lora', serif" }}>The Overpricing Trap — A Warning Every Seller Needs to Read</span>
+              </div>
+              <div className="p-8" style={{ background: "white" }}>
+                <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.22 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "1.05rem" }}>
+                  <strong>Real estate transactions in California have dropped over 40% in the past few years.</strong> Fewer deals means fewer commissions. Fewer commissions means desperate agents — and desperate agents do desperate things.
+                </p>
+                <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  The most common tactic: telling you your home is worth <em>more</em> than it actually is — just to get you to sign a listing agreement. That listing agreement is a partnership. Once you sign, they have your home tied up for 3–6 months.
+                </p>
+                <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  Here's what happens next: your home sits on the market because it's overpriced. Days on market climb. Buyers assume something is wrong with it. Your agent asks you to cut the price — once, twice, three times. Finally, someone makes an offer. Then they order a pest inspection: <strong>$5,000.</strong> Then a home inspection: <strong>$8,000.</strong> Then they ask for a sellers credit. Then you pay <strong>5–6% in realtor commissions</strong> on top of all of it.
+                </p>
+                <div className="rounded-xl p-5 mb-5" style={{ background: "oklch(0.55 0.13 42 / 0.07)", border: "1px solid oklch(0.55 0.13 42 / 0.2)" }}>
+                  <p className="font-bold text-base mb-1" style={{ color: "oklch(0.40 0.10 42)", fontFamily: "'Lora', serif" }}>The honest math on a $400,000 home listed at $430,000:</p>
+                  <ul className="text-sm space-y-1" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    <li>• Overpriced by $30K → sits 90+ days → final sale price: $390,000</li>
+                    <li>• Pest report: −$5,000 credit</li>
+                    <li>• Home inspection repairs: −$8,000 credit</li>
+                    <li>• Realtor commissions (5%): −$19,500</li>
+                    <li className="font-bold pt-1" style={{ color: "oklch(0.40 0.10 42)" }}>• Net to seller: ~$357,500 — on a home worth $400,000</li>
+                  </ul>
+                </div>
+                <p className="text-base leading-relaxed font-semibold" style={{ color: "oklch(0.22 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  If you choose to list, hire a realtor who prices at <em>fair market value</em> and has a track record of getting homes sold — not just listed. The difference between a great agent and a desperate one is $30,000–$50,000 in your pocket.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
         <div className="container">

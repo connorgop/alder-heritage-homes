@@ -1040,6 +1040,138 @@ const articleContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  "proposition-19-california-seniors-home-sale-2026": (
+    <div>
+      <p>California's Proposition 19, which took effect on February 16, 2021, fundamentally changed the rules for property tax transfers in California. For homeowners 55 and older, it created a powerful new benefit. For families hoping to pass low-tax-base properties to their children, it significantly restricted a previous benefit. This guide explains both sides of Proposition 19 and what it means for Fresno homeowners considering a sale.</p>
+      <h2>The Benefit for Homeowners 55 and Older</h2>
+      <p>Before Proposition 19, California homeowners 55 and older could transfer their property tax base to a new home of equal or lesser value, but only within the same county or in one of a handful of participating counties. Proposition 19 expanded this dramatically. Now, homeowners 55 and older can transfer their property tax base to any home anywhere in California, regardless of the new home's value, up to three times in their lifetime.</p>
+      <p>This is a significant financial benefit for long-term Fresno homeowners. If you bought your home in 1985 for $80,000 and it is now worth $450,000, your property tax is based on the 1985 assessed value (plus annual adjustments capped at 2% under Proposition 13). If you sell and buy a new home for $600,000, you would normally pay property taxes on the $600,000 value. Under Proposition 19, you can transfer your old tax base to the new home, paying taxes on a much lower assessed value.</p>
+      <h2>How the Transfer Works</h2>
+      <p>To use the Proposition 19 benefit, you must: be 55 or older (or severely disabled, or a victim of a wildfire or natural disaster), purchase or construct a replacement home within two years of selling your original home, and file a claim with the county assessor of the county where the replacement home is located. The replacement home must be your primary residence.</p>
+      <h2>What This Means for Sellers</h2>
+      <p>If you are 55 or older and are considering selling your Fresno home to move to a retirement community, downsize, or relocate, Proposition 19 makes the financial case for selling stronger than it has ever been. You can sell, take your low property tax base with you, and significantly reduce your property tax burden on your next home. Call (559) 281-8016 or visit alderheritagehomes.com to discuss your situation.</p>
+    </div>
+  ),
+
+  "realtor-overpricing-trap-fresno-2026": (
+    <div>
+      <p>Real estate transactions in California have dropped more than 40% since their 2021 peak. Fewer buyers, higher interest rates, and economic uncertainty have created a market where homes sit longer and sell for less than sellers expect. In this environment, a troubling pattern has emerged: agents who overprice homes to win listings.</p>
+      <h2>Why Agents Overprice</h2>
+      <p>A real estate agent's income depends entirely on closing deals. In a slow market, agents compete fiercely for listings. The easiest way to win a listing is to tell the seller their home is worth more than it is. The seller is flattered, signs the listing agreement, and the agent has a client. The problem is that the listing agreement is a legal contract — typically lasting 3 to 6 months — that locks you into working with that agent regardless of results.</p>
+      <p>Once your home is listed at an inflated price, it sits. Days on market accumulate. Other agents and buyers notice. In real estate, a home that has been sitting for 60 or 90 days is stigmatized — buyers assume something is wrong with it. Your agent will eventually call asking you to reduce the price. Then reduce it again. By the time you accept an offer, you may have been on the market for 4 to 6 months and received less than you would have if you had priced correctly from the start.</p>
+      <h2>The Full Cost of an Overpriced Listing</h2>
+      <p>The financial damage of an overpriced listing goes beyond the final sale price. Consider the typical costs: pest inspection repairs ($3,000–$8,000), home inspection repairs ($5,000–$15,000), seller credits to the buyer ($3,000–$10,000), and agent commissions (5–6% of the sale price). On a $350,000 home, that commission alone is $17,500–$21,000. Add in months of carrying costs — mortgage payments, property taxes, insurance, and utilities — and the total cost of a failed listing can easily exceed $30,000.</p>
+      <h2>How to Protect Yourself</h2>
+      <p>If you are interviewing agents, ask each one to show you the last 10 homes they listed and how the final sale price compared to the original list price. A good agent prices homes to sell, not to impress. Ask for a comparative market analysis based on actual recent sales — not optimistic projections. And be skeptical of any agent who tells you your home is worth significantly more than the others you have interviewed suggest.</p>
+      <h2>The Alternative: A Cash Sale</h2>
+      <p>If the listing process sounds exhausting, you have another option. Alder Heritage Homes buys Fresno homes directly for cash, with no repairs, no commissions, no inspections, and no waiting. We give you a fair offer based on real market data — not an inflated number designed to win your business. Call (559) 281-8016 or visit alderheritagehomes.com to get your offer today.</p>
+    </div>
+  ),
+
+  "wholesaler-red-flags-california-2026": (
+    <div>
+      <p>Every week, Fresno homeowners receive postcards, texts, and cold calls from people claiming to be cash buyers. Most of them are not. They are wholesalers — people who have no money to buy your home, but plan to put your property under contract and then sell that contract to a real investor for a fee of $20,000 to $60,000. That fee comes directly out of your pocket.</p>
+      <p>Here are the seven red flags that prove you are talking to a wholesaler, not a real buyer.</p>
+      <h2>1. They Cannot Provide Proof of Funds</h2>
+      <p>A real cash buyer can provide a bank statement or letter from their financial institution showing they have the funds to close. A wholesaler cannot, because they do not have the money. If someone cannot provide proof of funds within 24 hours of making an offer, they are not a real buyer.</p>
+      <h2>2. They Ask for an "Assignment Clause"</h2>
+      <p>An assignment clause allows the buyer to transfer the purchase contract to another party. This is the mechanism wholesalers use to flip your contract. A legitimate end buyer has no reason to include an assignment clause. If you see this language in a contract, walk away.</p>
+      <h2>3. They Have No Physical Office or Local Presence</h2>
+      <p>Many wholesalers operate nationally, running ads in dozens of markets simultaneously. They have no local knowledge, no local relationships, and no accountability. If the person making you an offer cannot meet you in person and has no verifiable local address, be very cautious.</p>
+      <h2>4. They Pressure You to Sign Quickly</h2>
+      <p>Wholesalers need to lock up properties quickly before sellers can shop around. If someone is pressuring you to sign a contract today, this week, or before you have had time to consult an attorney or compare offers, that pressure is a red flag.</p>
+      <h2>5. They Are Not Licensed</h2>
+      <p>In California, anyone who negotiates the sale of real estate for compensation must hold a real estate license. Wholesalers often operate without licenses, which means they have no regulatory oversight and no accountability to the California Department of Real Estate. You can verify any agent's license at dre.ca.gov.</p>
+      <h2>6. The Offer Drops Significantly Before Closing</h2>
+      <p>A common wholesaler tactic is to make a high initial offer, get the property under contract, and then reduce the price during the inspection period — claiming they found problems that justify a lower price. This is called "re-trading" and it is a deliberate strategy to wear sellers down.</p>
+      <h2>7. They Cannot Tell You Exactly How They Will Close</h2>
+      <p>Ask any cash buyer: "How will you fund this purchase? Will you be using cash, hard money, or a private lender?" A real buyer can answer this question clearly and specifically. A wholesaler will give you a vague answer because they do not know yet — they are still looking for someone to buy the contract from them.</p>
+      <p>Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) who buys homes directly with our own capital. We provide proof of funds within 24 hours and have no assignment clauses in our contracts. Call (559) 281-8016 to get a real offer.</p>
+    </div>
+  ),
+
+  "how-to-read-a-cash-offer-california": (
+    <div>
+      <p>Receiving a cash offer on your home can feel exciting and overwhelming at the same time. The offer document is a legal contract, and the terms matter as much as the price. Here is how to read a cash offer and what to watch for before you sign.</p>
+      <h2>The Purchase Price</h2>
+      <p>The headline number is the purchase price. But the net amount you actually receive depends on what costs are allocated to the seller. In a cash sale, there are typically no agent commissions (if you are selling directly), no lender fees, and no appraisal contingency. However, there may be escrow fees, title insurance costs, and transfer taxes. Ask for a net sheet — a document showing your estimated proceeds after all costs — before you sign anything.</p>
+      <h2>The Inspection Contingency</h2>
+      <p>Many cash offers still include an inspection contingency, which gives the buyer the right to back out or renegotiate after a home inspection. A truly "as-is" cash offer should either waive the inspection contingency entirely or clearly state that the buyer accepts the property in its current condition and will not use inspection findings to renegotiate the price. Be very clear on this point before signing.</p>
+      <h2>The Closing Timeline</h2>
+      <p>Cash offers typically close in 7 to 21 days. The contract should specify the closing date clearly. Watch for vague language like "approximately 30 days" — this can be used to extend the timeline indefinitely. A legitimate cash buyer should be able to commit to a specific closing date.</p>
+      <h2>The Earnest Money Deposit</h2>
+      <p>Earnest money is a deposit the buyer makes to show they are serious. In a cash sale, this should be at least 1–3% of the purchase price. Low or no earnest money is a sign that the buyer may not be committed to closing. The contract should specify what happens to the earnest money if the buyer backs out without cause.</p>
+      <h2>Assignment Clauses</h2>
+      <p>As discussed in our wholesaler red flags guide, an assignment clause allows the buyer to transfer the contract to another party. This is a major red flag. A legitimate end buyer does not need this clause.</p>
+      <p>Alder Heritage Homes provides clear, straightforward purchase agreements with no hidden terms. We explain every line of the contract before you sign and provide a net sheet so you know exactly what you will receive at closing. Call (559) 281-8016 to get started.</p>
+    </div>
+  ),
+
+  "what-happens-at-closing-california-home-sale": (
+    <div>
+      <p>Closing day is the finish line of your home sale — the day you sign the final documents, transfer ownership, and receive your proceeds. For many sellers, especially those selling for the first time in years, the process can feel unfamiliar. Here is exactly what to expect.</p>
+      <h2>Before Closing Day</h2>
+      <p>In the days before closing, your escrow officer will send you a closing disclosure — a document showing all the final numbers: the sale price, any credits or debits, escrow fees, title insurance costs, prorated property taxes, and your net proceeds. Review this document carefully and ask questions about anything you do not understand. You should also arrange to have utilities transferred or cancelled effective on the closing date.</p>
+      <h2>What You Need to Bring</h2>
+      <p>On closing day, bring a government-issued photo ID (driver's license or passport), any keys, garage door openers, and access codes for the property, and any documents your escrow officer has requested. If you have a mortgage, your lender will have already coordinated the payoff with escrow.</p>
+      <h2>What You Will Sign</h2>
+      <p>You will sign a grant deed (transferring ownership to the buyer), a settlement statement (confirming all financial terms), and various other documents depending on your situation. In California, sellers typically sign documents a day or two before the buyer, and the transaction records with the county on the official closing date.</p>
+      <h2>When Do You Get Your Money?</h2>
+      <p>In a cash sale, funds are typically wired to your account on the same day the transaction records with the county — usually the day after you sign. If you prefer a cashier's check, arrange this with your escrow officer in advance. In a financed sale, funding can take an additional day after recording.</p>
+      <h2>After Closing</h2>
+      <p>Once the transaction records, you are done. Keep copies of all closing documents for your tax records — you will need the settlement statement to calculate your capital gains (if any) when you file your taxes. If you have questions about what to expect at closing on a cash sale with Alder Heritage Homes, call (559) 281-8016 and we will walk you through every step.</p>
+    </div>
+  ),
+
+  "probate-timeline-california-2026": (
+    <div>
+      <p>When a California homeowner dies without a living trust, their estate — including their home — must go through probate before it can be sold or transferred. California probate is one of the most time-consuming and expensive processes in the country. Here is the full timeline and what you can do to move faster.</p>
+      <h2>Month 1–2: Filing the Petition</h2>
+      <p>Probate begins when the executor (or an interested party) files a petition with the Superior Court in the county where the deceased lived. The court will set a hearing date, typically 4 to 8 weeks after filing. Notice must be published in a local newspaper for a set period before the hearing. During this time, creditors can file claims against the estate.</p>
+      <h2>Month 2–4: Court Confirmation and Appointment</h2>
+      <p>At the initial hearing, the court appoints the executor and issues Letters Testamentary — the document that gives the executor legal authority to act on behalf of the estate. The executor can now open an estate bank account, pay debts, and begin managing estate assets.</p>
+      <h2>Month 4–9: Inventory, Appraisal, and Creditor Claims</h2>
+      <p>The executor must file a formal inventory of all estate assets, and a probate referee appointed by the court will appraise real property. This process typically takes 2 to 4 months. Creditors have 4 months from the date Letters Testamentary are issued to file claims. The executor must also file and pay any estate taxes owed.</p>
+      <h2>Month 6–12: Selling the Property</h2>
+      <p>Once the inventory is complete and creditor claims are resolved, the executor can sell the property. In California, probate sales require court confirmation unless the executor has been granted "full authority" under the Independent Administration of Estates Act (IAEA). With full authority, the executor can sell the property without a court hearing, which saves 2 to 3 months. Without full authority, the sale must be confirmed at a court hearing where overbidding is allowed.</p>
+      <h2>Month 9–18: Final Distribution and Closing</h2>
+      <p>After the property sells and all debts are paid, the executor files a final accounting with the court and petitions for distribution. The court reviews the accounting, approves the distribution, and issues an order. This final step typically takes 2 to 4 months after the property sale closes.</p>
+      <h2>How to Sell Faster</h2>
+      <p>The fastest way to sell a probate property in California is to work with a cash buyer who has probate experience. Cash buyers do not require financing contingencies or appraisals, which eliminates two of the most common causes of delay. Alder Heritage Homes has closed probate sales in Fresno County and can work directly with your probate attorney to coordinate a smooth transaction. Call (559) 281-8016 to discuss your inherited property.</p>
+    </div>
+  ),
+
+  "sell-house-job-loss-fresno-california": (
+    <div>
+      <p>Losing your job is one of the most stressful financial events a person can experience. When you have a mortgage, the pressure compounds quickly. Missing even one payment can start a chain of events that is difficult to reverse. Here is what your options are and how to protect yourself.</p>
+      <h2>How Long Do You Have?</h2>
+      <p>Most California homeowners have more time than they think. Lenders typically do not begin foreclosure proceedings until a mortgage is 120 days past due. During this time, you have several options: loan modification, forbearance, refinancing, selling the home, or a short sale. The key is to act before the 120-day window closes, not after.</p>
+      <h2>Contact Your Lender Immediately</h2>
+      <p>If you know you are going to miss a payment, call your lender before it happens. Many lenders have hardship programs that allow you to defer payments, reduce your interest rate temporarily, or restructure your loan. These programs are far easier to access before you are in default than after. Document every conversation in writing.</p>
+      <h2>Selling Your Home: The Math</h2>
+      <p>If you have equity in your home, selling it — even quickly — may be your best financial move. Consider: if your home is worth $380,000 and you owe $220,000, you have $160,000 in equity. Even after selling costs, you could walk away with $130,000 to $140,000 in cash. That is enough to rent for years while you rebuild, pay off other debts, and start fresh without the weight of a mortgage you cannot afford.</p>
+      <h2>Why a Cash Sale Makes Sense in This Situation</h2>
+      <p>When you are under financial pressure, time is money. A traditional listing can take 60 to 90 days to close and requires repairs, showings, and negotiations. A cash sale can close in 7 to 14 days, giving you immediate access to your equity before the situation gets worse. There are no repairs, no commissions, and no uncertainty about whether the buyer's financing will come through.</p>
+      <p>Alder Heritage Homes has helped Fresno homeowners in financial hardship sell quickly and walk away with dignity. We are not here to take advantage of your situation — we are here to give you a real option. Call (559) 281-8016 for a confidential conversation.</p>
+    </div>
+  ),
+
+  "sell-house-medical-bills-fresno-california": (
+    <div>
+      <p>Medical debt is the leading cause of bankruptcy in the United States, and California is no exception. A single hospitalization can generate tens of thousands of dollars in bills. If you own a home, your equity may be the most powerful tool you have to eliminate that debt and start over.</p>
+      <h2>The Scale of the Problem</h2>
+      <p>According to the Kaiser Family Foundation, nearly 1 in 4 American adults report difficulty paying medical bills. In California, where healthcare costs are among the highest in the nation, a serious illness or injury can quickly outpace even good health insurance. Deductibles, out-of-pocket maximums, and balance billing from out-of-network providers can leave families with $50,000 to $200,000 in medical debt within months.</p>
+      <h2>What Medical Debt Does to Your Credit</h2>
+      <p>Medical debt that goes to collections damages your credit score significantly, making it harder to rent an apartment, get a car loan, or qualify for a new mortgage in the future. California law provides some protections — hospitals must offer charity care and payment plans — but once debt goes to a collection agency, those protections diminish.</p>
+      <h2>Using Home Equity to Eliminate Medical Debt</h2>
+      <p>If you have significant equity in your home, selling it can eliminate medical debt entirely and give you a clean financial slate. Consider the math: if you owe $80,000 in medical bills and your home has $200,000 in equity, selling the home eliminates the debt and leaves you with $100,000 or more after selling costs. That is enough for a substantial down payment on a smaller home or years of rent while you rebuild.</p>
+      <h2>Tax Considerations</h2>
+      <p>The IRS allows homeowners to exclude up to $250,000 ($500,000 for married couples) of capital gains from the sale of a primary residence, provided you have lived in the home for at least 2 of the last 5 years. This means many Fresno homeowners can sell their home, eliminate their medical debt, and pay no federal income tax on the gain. Consult a tax professional for your specific situation.</p>
+      <h2>A Fast, Private Sale</h2>
+      <p>Selling your home to address medical debt is a private financial decision. You do not owe anyone an explanation. A cash sale to Alder Heritage Homes is discreet, fast, and straightforward. We buy your home as-is, close in 7 to 14 days, and wire your proceeds directly to your account. Call (559) 281-8016 for a confidential conversation about your situation.</p>
+    </div>
+  ),
+
   "california-proposition-19-property-tax-transfer": (
     <div>
       <p>California's Proposition 19, which took effect on February 16, 2021, fundamentally changed the rules for property tax transfers in California. For homeowners 55 and older, it created a powerful new benefit. For families hoping to pass low-tax-base properties to their children, it significantly restricted a previous benefit. This guide explains both sides of Proposition 19 and what it means for Fresno homeowners considering a sale.</p>
@@ -1053,6 +1185,81 @@ const articleContent: Record<string, React.ReactNode> = {
       <h2>What This Means for Sellers</h2>
       <p>If you are 55 or older and are considering selling your Fresno home to move to a retirement community, downsize, or relocate, Proposition 19 makes the financial case for selling stronger than it has ever been. You can sell, take your low property tax base with you, and significantly reduce your property tax burden on your next home. Combined with the Section 121 capital gains exclusion, many long-term Fresno homeowners can sell with minimal tax consequences.</p>
       <p>If you have inherited a Fresno property and are not planning to use it as your primary residence, the property will be reassessed at full market value — meaning your property tax bill will increase substantially. Selling the inherited property to a cash buyer is often the most financially efficient option. Call (559) 281-8016 or visit alderheritagehomes.com/probate-inherited-homes to discuss your situation.</p>
+    </div>
+  ),
+
+  "fresno-real-estate-market-update-2026": (
+    <div>
+      <p>The Fresno real estate market in 2026 looks nothing like it did in 2021 or 2022. Transaction volume has dropped more than 40% from peak levels. Days on market have stretched from a median of 8 days at the height of the frenzy to 45 to 60 days for many properties today. Sellers who entered the market expecting bidding wars and waived contingencies are finding a very different reality. This guide explains what is actually happening, why it is happening, and what it means if you are considering selling your Fresno home.</p>
+      <h2>What the Numbers Say</h2>
+      <p>Fresno County home sales volume peaked in mid-2021 and has declined in each subsequent year. The combination of rising interest rates — which went from under 3% in 2021 to over 7% in 2023 and have remained elevated — and affordability constraints have dramatically reduced the pool of qualified buyers. A buyer who could afford a $400,000 home at 3% interest can only afford approximately $290,000 at 7%. That math has removed a significant portion of the buyer pool from the market.</p>
+      <h2>The Inventory Problem</h2>
+      <p>Inventory in Fresno remains constrained because many homeowners who locked in 3% mortgages are reluctant to sell and give up their rate. This "lock-in effect" has kept supply artificially low, which has prevented prices from falling as dramatically as transaction volume. The result is a market with fewer buyers AND fewer sellers — a low-volume standoff that benefits neither side.</p>
+      <h2>What This Means for Sellers in 2026</h2>
+      <p>If you need to sell in 2026, you have two realistic options. First, you can list on the MLS with a realtor who prices your home accurately at current market value — not the 2022 peak value. Homes priced correctly are still selling, typically within 30 to 45 days. Homes priced above market are sitting for 90 to 120 days and then requiring price cuts that often leave sellers worse off than if they had priced correctly from the start.</p>
+      <p>Second, you can sell to a cash buyer like Alder Heritage Homes. A cash sale eliminates the uncertainty of the current market — no contingencies, no financing fall-throughs, no waiting. You know your number and your closing date from day one. For sellers who need certainty — whether due to a job relocation, a financial deadline, or simply a desire to move on — a cash sale is often the better choice in a slow market. Call (559) 281-8016 for a no-obligation conversation about your options.</p>
+    </div>
+  ),
+
+  "how-to-avoid-foreclosure-california-2026": (
+    <div>
+      <p>If you are behind on your mortgage in California, you have more options than you think — and more time than you might expect. California is a non-judicial foreclosure state, which means lenders can foreclose without going to court, but the process still takes a minimum of 120 days from the first notice. This guide explains every option available to California homeowners facing foreclosure, from loan modifications to cash sales, and what to do first.</p>
+      <h2>The California Foreclosure Timeline</h2>
+      <p>California foreclosure follows a specific legal process. First, your lender must wait at least 120 days after you miss a payment before recording a Notice of Default (NOD). After the NOD is recorded, you have a 90-day reinstatement period during which you can catch up on missed payments and fees. If you do not reinstate, the lender records a Notice of Trustee Sale, which sets a sale date at least 21 days in the future. The entire process from first missed payment to auction typically takes 200 to 300 days, though it can take longer if you pursue loss mitigation options.</p>
+      <h2>Option 1: Loan Modification</h2>
+      <p>A loan modification changes the terms of your existing mortgage — typically by reducing the interest rate, extending the loan term, or adding missed payments to the back of the loan. You must apply through your lender's loss mitigation department. California's Homeowner Bill of Rights requires lenders to assign you a single point of contact and prohibits dual tracking (foreclosing while a modification is pending). A HUD-approved housing counselor can help you navigate this process for free.</p>
+      <h2>Option 2: Forbearance</h2>
+      <p>Forbearance is a temporary pause or reduction in your mortgage payments. Unlike a modification, forbearance does not change your loan terms — the missed payments must eventually be repaid. Forbearance is appropriate if your financial hardship is temporary (job loss, medical emergency) and you expect to resume normal payments within 3 to 12 months.</p>
+      <h2>Option 3: Refinance</h2>
+      <p>If you have equity in your home and your credit is still intact, refinancing into a lower payment can solve a cash flow problem before it becomes a foreclosure. This option closes before you miss payments — once you are behind, refinancing becomes much harder because most lenders require you to be current.</p>
+      <h2>Option 4: Short Sale</h2>
+      <p>A short sale allows you to sell your home for less than you owe, with your lender's approval. The lender agrees to accept the sale proceeds as full payment and forgive the remaining balance. Short sales take 3 to 6 months and require lender approval of the sale price, which can be uncertain. They do damage your credit, but less severely than a foreclosure.</p>
+      <h2>Option 5: Deed in Lieu of Foreclosure</h2>
+      <p>A deed in lieu allows you to transfer ownership of your home to the lender in exchange for being released from the mortgage obligation. It avoids the public auction process and is slightly less damaging to your credit than a foreclosure, but it still results in losing your home and any equity you have built.</p>
+      <h2>Option 6: Cash Sale — The Fastest Option</h2>
+      <p>If you have equity in your home, a cash sale to a buyer like Alder Heritage Homes is often the best option. A cash sale can close in 7 days, which means it can happen before your auction date in most cases. You receive your equity at closing, avoid the foreclosure on your credit report entirely, and move on with a clean financial slate. Call (559) 281-8016 immediately if you have received a Notice of Default or Notice of Trustee Sale — time is the critical variable, and we can tell you exactly where you stand.</p>
+    </div>
+  ),
+
+  "sell-house-job-relocation-fresno-california": (
+    <div>
+      <p>You got the job offer. It is in Sacramento, Los Angeles, Phoenix, or somewhere even further. The offer is good — maybe great. But you own a home in Fresno, and the thought of managing a sale from another city while starting a new job is overwhelming. This guide explains exactly how to sell your Fresno home fast when you have a relocation deadline, and how to avoid the most common and expensive mistakes.</p>
+      <h2>The Two-Mortgage Problem</h2>
+      <p>The biggest financial risk in a job relocation sale is carrying two housing payments simultaneously. If you buy or rent in your new city before selling your Fresno home, you are paying two mortgages (or a mortgage plus rent) every month until your Fresno home sells. In a slow market, that can mean 60 to 90 days of double payments — easily $4,000 to $8,000 or more in unnecessary carrying costs, plus the stress of managing a vacant property from another city.</p>
+      <h2>The Traditional Listing Option</h2>
+      <p>Listing your Fresno home on the MLS before you leave gives you the best chance of maximizing your sale price, but it requires time and coordination. You need to prepare the home for showings, manage the listing remotely, negotiate offers, and coordinate a closing that aligns with your relocation timeline. In the current Fresno market, expect 30 to 60 days to find a buyer, plus 21 to 30 days to close — a total of 60 to 90 days from listing to cash in hand. If your start date is in 30 days, this timeline does not work.</p>
+      <h2>The Cash Sale Option</h2>
+      <p>A cash sale to Alder Heritage Homes closes in 7 to 14 days. You call us, we walk through the property, we make a written offer within 24 hours, and you choose your closing date. You can be in your new city, starting your new job, with your Fresno home sold and your equity in your bank account — all within two weeks. No showings, no contingencies, no waiting. Call (559) 281-8016 or visit alderheritagehomes.com/sell-house-fast to get started.</p>
+      <h2>Relocation Assistance from Your Employer</h2>
+      <p>Many employers offer relocation packages that include a guaranteed buyout program (GBO) — the employer buys your home at an appraised value if it does not sell within a specified period. If your employer offers this, understand the terms carefully. GBO prices are typically at or slightly below appraised value, and the process takes 60 to 90 days. A cash sale to a private buyer like Alder Heritage Homes is often faster and can yield a comparable or better net price, especially if your home needs repairs that would reduce the appraised value.</p>
+    </div>
+  ),
+
+  "sell-house-code-violations-fresno-california": (
+    <div>
+      <p>Unpermitted additions, red-tagged structures, failed inspections, and code violations are among the most common reasons homes fail to sell on the traditional market. Conventional buyers using mortgage financing cannot purchase a home with certain code violations — their lender will not approve the loan. This guide explains what code violations mean for Fresno sellers, what your options are, and how to sell as-is without spending tens of thousands of dollars on compliance work.</p>
+      <h2>Common Code Violations in Fresno Homes</h2>
+      <p>The most common code violations we encounter in Fresno include unpermitted room additions or garage conversions, unpermitted ADUs (accessory dwelling units), electrical systems that do not meet current code, plumbing that has been modified without permits, HVAC systems installed without permits, and structural modifications made without engineering approval. In older Fresno neighborhoods, it is common to find homes where previous owners added square footage, converted garages to living space, or built backyard structures — all without pulling permits.</p>
+      <h2>Why Code Violations Kill Traditional Sales</h2>
+      <p>When a buyer uses conventional financing (Fannie Mae, Freddie Mac, FHA, or VA loans), their lender requires a home appraisal. The appraiser is required to note any visible code violations or unpermitted structures. If violations are noted, the lender typically requires them to be corrected before funding the loan. This means the seller must either bring the work into compliance (expensive and time-consuming) or the sale falls through. Cash buyers are not subject to this requirement — we can buy a home with any code violations, as-is.</p>
+      <h2>The Cost of Bringing a Home Into Compliance</h2>
+      <p>Retroactive permitting for an unpermitted addition in Fresno typically costs $5,000 to $25,000 depending on the scope of work. If the addition was built incorrectly and does not meet current code, the cost can be much higher — sometimes requiring demolition and rebuilding. For many sellers, the cost of compliance exceeds the benefit, especially when the alternative is a fast cash sale that closes in 7 days without any repairs or permits.</p>
+      <h2>Selling As-Is to a Cash Buyer</h2>
+      <p>Alder Heritage Homes buys homes with code violations, unpermitted additions, and red-tagged structures. We price our offers to account for the cost of bringing the property into compliance after purchase — you do not have to do the work yourself. If you have a Fresno home with code violations and want to know what it is worth as-is, call (559) 281-8016 or visit alderheritagehomes.com/sell-house-fast for a no-obligation offer.</p>
+    </div>
+  ),
+
+  "central-valley-real-estate-outlook-2026-2027": (
+    <div>
+      <p>The Central Valley housing market — encompassing Fresno, Tulare, Kings, Madera, Merced, Stanislaus, and San Joaquin counties — is at an inflection point in 2026. The forces shaping the market are different from those driving coastal California real estate, and understanding them is essential for anyone considering buying or selling in the region over the next 12 to 24 months.</p>
+      <h2>The Agricultural Economy Factor</h2>
+      <p>The Central Valley is the most productive agricultural region in the United States, and agricultural economics directly affect local housing demand. Drought years reduce farm employment and income, which reduces housing demand in agricultural communities like Tulare, Dinuba, Reedley, and Selma. The past several years of water scarcity and fallowed farmland have created real economic pressure in these communities. Conversely, years with good water allocations and strong commodity prices tend to support housing demand. The 2024 and 2025 water years were relatively strong, which has provided some stability.</p>
+      <h2>Remote Work Migration</h2>
+      <p>One of the most significant structural changes in the Central Valley market since 2020 has been the influx of remote workers from the Bay Area and Los Angeles. A buyer who can work from anywhere and earns a Bay Area salary can purchase a 2,000 square foot home in Fresno for what a studio apartment costs in San Jose. This migration has supported Fresno home prices even as transaction volume has declined. Woodward Park, Clovis, and North Fresno have been the primary beneficiaries of this trend.</p>
+      <h2>The Interest Rate Outlook</h2>
+      <p>Mortgage rates have remained stubbornly elevated in 2025 and 2026, hovering between 6.5% and 7.5% for 30-year fixed loans. The Federal Reserve has signaled a gradual easing cycle, but most analysts do not expect rates to return to the 3% to 4% range that characterized 2020 and 2021. A more realistic expectation is rates in the 5.5% to 6.5% range by late 2026 or 2027, which would meaningfully improve affordability and likely trigger a release of pent-up demand from both buyers and sellers who have been waiting on the sidelines.</p>
+      <h2>What This Means for Central Valley Sellers in 2026-2027</h2>
+      <p>Sellers who need to sell now face a market with fewer buyers and longer days on market than the peak years. The key to a successful traditional sale is accurate pricing from day one — overpriced homes are sitting for 90 to 120 days and then selling below where they would have priced correctly. Sellers who want certainty and speed should consider a cash sale. Sellers who can wait 12 to 18 months may benefit from improved market conditions if rates ease as expected. Call (559) 281-8016 to discuss your specific situation and timeline.</p>
     </div>
   ),
 };

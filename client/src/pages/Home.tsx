@@ -72,10 +72,10 @@ const situations = [
 ];
 
 const stats = [
-  { value: "100+", label: "Probate Sales Completed" },
-  { value: "7", label: "Days to Close (Minimum)" },
-  { value: "$0", label: "Repairs or Commissions" },
-  { value: "24hr", label: "Cash Offer Turnaround" },
+  { value: 47, suffix: "+", label: "Homes Purchased", sub: "in the Central Valley" },
+  { value: 7, suffix: " days", label: "Fastest Close", sub: "no repairs needed" },
+  { value: 0, prefix: "$", suffix: "", label: "Commissions or Fees", sub: "ever" },
+  { value: 24, suffix: "hr", label: "Cash Offer", sub: "after walkthrough" },
 ];
 
 const steps = [
@@ -631,13 +631,15 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((s) => (
               <div key={s.label} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2" style={{ fontFamily: "'Lora', serif", color: "oklch(0.75 0.10 42)" }}>
-                  <AnimatedCounter target={s.value === "100+" ? 100 : s.value === "7" ? 7 : s.value === "$0" ? 0 : s.value} suffix={s.value === "100+" ? "+" : s.value === "7" ? "" : ""} />
-                  {s.value === "$0" && "$0"}
-                  {s.value === "24hr" && "24hr"}
+                <div className="text-4xl md:text-5xl font-bold mb-1 flex items-baseline justify-center gap-0.5" style={{ fontFamily: "'Lora', serif", color: "oklch(0.75 0.10 42)" }}>
+                  {s.prefix && <span>{s.prefix}</span>}
+                  <AnimatedCounter target={s.value} suffix={s.suffix} />
                 </div>
-                <div className="text-sm font-medium" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.75 0.02 155)" }}>
+                <div className="text-sm font-bold mb-0.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "white" }}>
                   {s.label}
+                </div>
+                <div className="text-xs" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.65 0.02 155)" }}>
+                  {s.sub}
                 </div>
               </div>
             ))}
@@ -821,6 +823,69 @@ export default function HomePage() {
                 <p style={{ color: "oklch(0.72 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", lineHeight: 1.65 }}>{card.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── REALTOR CAUTION WARNING ── */}
+      <section className="py-16" style={{ background: "oklch(0.97 0.015 85)" }}>
+        <div className="container max-w-4xl mx-auto">
+          <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "2px solid oklch(0.65 0.20 27 / 0.5)" }}>
+            {/* Warning header */}
+            <div className="px-6 py-4 flex items-start gap-4" style={{ background: "oklch(0.65 0.20 27)" }}>
+              <span style={{ fontSize: "1.6rem", lineHeight: 1 }}>⚠️</span>
+              <div>
+                <p className="font-bold text-white text-lg" style={{ fontFamily: "'Lora', serif" }}>
+                  A Word of Caution About Listing With a Realtor Right Now
+                </p>
+                <p className="text-sm mt-0.5" style={{ color: "oklch(0.95 0.02 60)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.04em" }}>
+                  Real estate transactions have dropped 40%+ in the past few years
+                </p>
+              </div>
+            </div>
+            {/* Body */}
+            <div className="px-6 py-6" style={{ background: "oklch(0.99 0.01 60)" }}>
+              <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                With far fewer buyers in the market, <strong>desperate agents will tell you your home is worth more than it actually is</strong> — just to win your listing agreement. That agreement is a legal partnership. Once you sign, you're locked in.
+              </p>
+              <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Here's what happens next: your overpriced home sits. Days on market pile up. Your agent calls asking you to cut the price — once, twice, three times. Finally, a buyer makes an offer. Then comes the pest inspection ($5,000+), the home inspection ($8,000+), seller credits, and the agent's 5–6% commission. By the time you close, you've lost tens of thousands of dollars and months of your life.
+              </p>
+              <div className="rounded-xl p-4 mb-5" style={{ background: "oklch(0.65 0.20 27 / 0.08)", border: "1px solid oklch(0.65 0.20 27 / 0.25)" }}>
+                <p className="font-semibold mb-2" style={{ color: "oklch(0.40 0.12 27)", fontFamily: "'Nunito Sans', sans-serif" }}>The math on a typical overpriced listing:</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  {[
+                    { label: "Pest inspection", cost: "$3,000–$8,000" },
+                    { label: "Home inspection repairs", cost: "$5,000–$15,000" },
+                    { label: "Seller credits", cost: "$3,000–$10,000" },
+                    { label: "Agent commission", cost: "5–6% of sale price" },
+                  ].map((item) => (
+                    <div key={item.label} className="rounded-lg p-3 text-center" style={{ background: "oklch(1 0 0)", border: "1px solid oklch(0.88 0.02 85)" }}>
+                      <div className="font-bold text-sm mb-1" style={{ color: "oklch(0.65 0.20 27)", fontFamily: "'DM Mono', monospace" }}>{item.cost}</div>
+                      <div className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{item.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                <strong>Our honest advice:</strong> If you want to list with a Realtor, hire one who prices your home at fair market value from day one and has a track record of getting homes sold — not one who flatters you with a high number to win your business. A home priced right sells fast and nets you more money than one that sits for 90 days and gets beaten down.
+              </p>
+              <p className="text-base leading-relaxed" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Or — skip the process entirely. We buy your home as-is, in cash, with no commissions, no inspections, and no surprises. You choose the closing date.
+              </p>
+              <div className="mt-5 flex flex-col sm:flex-row gap-3">
+                <Link href="/contact">
+                  <button className="flex items-center gap-2 px-6 py-3 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Get a No-Obligation Cash Offer <ArrowRight size={15} />
+                  </button>
+                </Link>
+                <Link href="/dont-hire-friend-realtor">
+                  <button className="flex items-center gap-2 px-6 py-3 rounded-lg font-bold text-sm" style={{ background: "transparent", border: "2px solid oklch(0.55 0.13 42)", color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Read: Don't Hire Your Friend Realtor
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
