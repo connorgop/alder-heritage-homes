@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, Phone, ArrowRight, Clock, CheckCircle2 } from "lucide-react";
 import { blogPosts } from "./Blog";
+import SchemaMarkup, { articleSchema } from "@/components/SchemaMarkup";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -969,6 +970,17 @@ export default function BlogPost() {
 
   return (
     <Layout>
+      {/* Article structured data */}
+      <SchemaMarkup
+        schema={articleSchema({
+          headline: post.title,
+          description: post.excerpt,
+          datePublished: post.date,
+          slug: post.slug,
+          category: post.category,
+        })}
+        id={`article-${post.slug}`}
+      />
       {/* Hero */}
       <section className="relative py-20 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="absolute inset-0">

@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Link } from "wouter";
 import { Phone, ArrowRight, Shield, Award, Heart, CheckCircle2 } from "lucide-react";
+import SchemaMarkup, { personSchema } from "@/components/SchemaMarkup";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -12,6 +13,8 @@ const ILLINOIS_FLIP_VIDEO = "https://d2xsxph8kpxj0f.cloudfront.net/3105196635045
 export default function About() {
   return (
     <Layout>
+      {/* Person structured data for Connor */}
+      <SchemaMarkup schema={personSchema()} id="person-connor" />
       {/* Hero */}
       <section className="relative py-24 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="absolute inset-0">

@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
+import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -28,6 +29,10 @@ export default function CityPage({ city, county, population, description, neighb
 
   return (
     <Layout>
+      {/* FAQPage structured data — auto-generated from faqs prop */}
+      {faqs && faqs.length > 0 && (
+        <SchemaMarkup schema={faqPageSchema(faqs)} id={`faq-${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`} />
+      )}
       {/* Hero */}
       <section className="relative py-24 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="absolute inset-0">

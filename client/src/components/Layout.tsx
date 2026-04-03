@@ -8,6 +8,7 @@ import { Link, useLocation } from "wouter";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import FloatingCTA from "./FloatingCTA";
 import TawkChat from "./TawkChat";
+import SchemaMarkup, { localBusinessSchema, websiteSchema } from "./SchemaMarkup";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -89,6 +90,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.97 0.015 85)" }}>
+      {/* Global structured data — injected on every page */}
+      <SchemaMarkup schema={localBusinessSchema()} id="local-business" />
+      <SchemaMarkup schema={websiteSchema()} id="website" />
       {/* Top bar — Price Match Guarantee */}
       <div style={{ background: "oklch(0.55 0.13 42)", color: "white" }} className="py-2.5 text-center">
         <div className="flex items-center justify-center gap-2 flex-wrap px-4">
