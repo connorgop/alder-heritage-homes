@@ -40,6 +40,7 @@ import FreeOffer from "./pages/FreeOffer";
 import Reviews from "./pages/Reviews";
 import SeniorSeller from "./pages/services/SeniorSeller";
 import ParentsHouse from "./pages/services/ParentsHouse";
+import SellMyHouse from "./pages/SellMyHouse";
 import SellHouseFastFresno from "./pages/SellHouseFastFresno";
 import SellHouseFastClovis from "./pages/SellHouseFastClovis";
 import SellHouseFastVisalia from "./pages/SellHouseFastVisalia";
@@ -141,6 +142,7 @@ function Router() {
       <Route path="/reviews" component={Reviews} />
       <Route path="/sell-home-retirement-fresno" component={SeniorSeller} />
       <Route path="/sell-parents-house-fresno" component={ParentsHouse} />
+      <Route path="/sell-my-house" component={SellMyHouse} />
       <Route path="/sell-house-fast-fresno-ca" component={SellHouseFastFresno} />
       <Route path="/sell-house-fast-clovis-ca" component={SellHouseFastClovis} />
       <Route path="/sell-house-fast-visalia-ca" component={SellHouseFastVisalia} />

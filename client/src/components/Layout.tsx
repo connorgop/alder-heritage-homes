@@ -41,6 +41,7 @@ const services = [
 ];
 
 const trust = [
+  { label: "Sell My House — All Options", href: "/sell-my-house" },
   { label: "Why We're Different", href: "/why-choose-us" },
   { label: "⭐ Reviews", href: "/reviews" },
   { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
@@ -260,7 +261,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 )}
               </div>
               {/* Sell Fast CTA link */}
-              <Link href="/sell-house-fast-fresno-ca">
+              <Link href="/sell-my-house">
                 <span
                   className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-bold transition-all hover:opacity-90"
                   style={{ fontFamily: "'Nunito Sans', sans-serif", color: "white", background: "oklch(0.55 0.13 42)", cursor: "pointer", letterSpacing: "0.01em" }}
@@ -352,7 +353,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 )}
               </div>
 
-              <MobileNavLink href="/sell-house-fast-fresno-ca">🏠 Sell My House Fast</MobileNavLink>
+              <MobileNavLink href="/sell-my-house">🏠 Sell My House Fast</MobileNavLink>
               <MobileNavLink href="/cash-offer-calculator">🧮 Free Cash Offer Calculator</MobileNavLink>
               <MobileNavLink href="/faq">FAQ</MobileNavLink>
               <MobileNavLink href="/about">About Connor</MobileNavLink>
