@@ -626,6 +626,49 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── YOUTUBE EXPLAINER VIDEO ── */}
+      <section className="py-16" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="container">
+          <div className="text-center mb-10">
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+              How It Works
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>
+              How Cash Home Buyers Work — Explained in 2 Minutes
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Not sure what to expect? This short video walks you through the entire process — from your first call to cash in hand. No jargon, no pressure.
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: "16/9" }}>
+              <iframe
+                src="https://www.youtube.com/embed/3naTL5fIqEc?rel=0&modestbranding=1&color=white"
+                title="Cash Home Buyers Explained: How They Work & What You'll Get"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+                style={{ border: "none" }}
+              />
+            </div>
+            <div className="mt-6 flex flex-wrap justify-center gap-6">
+              {[
+                { label: "No repairs needed", icon: "✓" },
+                { label: "No agent commissions", icon: "✓" },
+                { label: "Close in 7 days", icon: "✓" },
+                { label: "Any condition", icon: "✓" },
+                { label: "No open houses", icon: "✓" },
+              ].map((item) => (
+                <div key={item.label} className="flex items-center gap-2">
+                  <span className="font-bold" style={{ color: "oklch(0.55 0.13 42)" }}>{item.icon}</span>
+                  <span className="text-sm font-medium" style={{ color: "oklch(0.80 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{item.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── SITUATION FINDER ── */}
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
         <div className="container">

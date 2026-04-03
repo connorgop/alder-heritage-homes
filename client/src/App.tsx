@@ -66,6 +66,7 @@ import FigGardenVillage from "./pages/neighborhoods/FigGardenVillage";
 import FresnoStateArea from "./pages/neighborhoods/FresnoState";
 import NorthFresno from "./pages/neighborhoods/NorthFresno";
 import SoutheastFresno from "./pages/neighborhoods/SoutheastFresno";
+import ClovisNorth from "./pages/neighborhoods/ClovisNorth";
 
 // City landing pages
 import FresnoPage from "./pages/cities/Fresno";
@@ -186,6 +187,7 @@ function Router() {
       <Route path="/fresno-state-area" component={FresnoStateArea} />
       <Route path="/north-fresno" component={NorthFresno} />
       <Route path="/southeast-fresno" component={SoutheastFresno} />
+      <Route path="/clovis-north" component={ClovisNorth} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

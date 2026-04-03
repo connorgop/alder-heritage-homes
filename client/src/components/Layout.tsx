@@ -69,6 +69,17 @@ const cities = [
   { label: "Kings County", href: "/we-buy-houses-kings-county" },
 ];
 
+const neighborhoods = [
+  { label: "Clovis North", href: "/clovis-north" },
+  { label: "Fig Garden", href: "/fresno-fig-garden" },
+  { label: "Woodward Park", href: "/fresno-woodward-park" },
+  { label: "Tower District", href: "/fresno-tower-district" },
+  { label: "North Fresno", href: "/north-fresno" },
+  { label: "Bullard", href: "/fresno-bullard" },
+  { label: "Old Fig Garden", href: "/fresno-old-fig-garden" },
+  { label: "Southeast Fresno", href: "/southeast-fresno" },
+];
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -362,7 +373,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Footer */}
       <footer style={{ background: "oklch(0.22 0.01 60)", color: "oklch(0.80 0.01 60)" }}>
         <div className="container py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
             {/* Brand */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-4">
@@ -407,12 +418,27 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </ul>
             </div>
 
+            {/* Neighborhoods */}
+            <div>
+              <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Fresno Neighborhoods</h4>
+              <ul className="space-y-2">
+                {neighborhoods.map((n) => (
+                  <li key={n.href}>
+                    <Link href={n.href} className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>{n.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
             {/* Company */}
             <div>
               <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Company</h4>
               <ul className="space-y-2">
                 <li><Link href="/about" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>About Us</Link></li>
                 <li><Link href="/blog" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Blog &amp; Resources</Link></li>
+                <li><Link href="/faq" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>FAQ</Link></li>
+                <li><Link href="/why-choose-us" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Why Choose Us</Link></li>
+                <li><Link href="/dont-get-wholesaled" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Don't Get Wholesaled</Link></li>
+                <li><Link href="/cash-offer-calculator" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Cash Offer Calculator</Link></li>
                 <li><Link href="/contact" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Contact</Link></li>
               </ul>
               <div className="mt-6 p-4 rounded-lg" style={{ background: "oklch(0.28 0.01 60)" }}>
