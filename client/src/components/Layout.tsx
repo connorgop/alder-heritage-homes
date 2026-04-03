@@ -352,7 +352,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* Page content */}
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 pb-20 md:pb-0">{children}</main>
 
       {/* Floating / sticky CTA — appears on all pages */}
       <FloatingCTA />

@@ -82,22 +82,17 @@ const steps = [
   {
     num: "01",
     title: "Tell Us About Your Home",
-    desc: "Fill out our short form or call us. No obligation, no pressure — just a conversation about your situation.",
+    desc: "Fill out our short form or call (559) 281-8016. No obligation, no pressure — just a 5-minute conversation about your situation.",
   },
   {
     num: "02",
-    title: "Receive Your Cash Offer",
-    desc: "We'll research your property and present a fair, written cash offer within 24 hours. No lowball tactics.",
+    title: "Get Your Written Cash Offer",
+    desc: "We research your property and present a fair, written cash offer within 24 hours — with a free Broker Opinion of Value so you know it's real.",
   },
   {
     num: "03",
-    title: "Pick Your Closing Date",
-    desc: "You choose when to close — as fast as 5–7 days, or on your desired timeline.",
-  },
-  {
-    num: "04",
-    title: "Walk Away With Cash",
-    desc: "We handle all the paperwork. You walk away with cash in hand, no repairs, no commissions, no surprises.",
+    title: "Close & Get Paid",
+    desc: "You pick the closing date — as fast as 5–7 days or whenever you're ready. We handle all paperwork. You walk away with cash, zero fees.",
   },
 ];
 
@@ -109,6 +104,7 @@ const testimonials = [
     text: "I was two months behind on my mortgage and terrified of losing my home. Connor was honest, patient, and got me a fair offer in 24 hours. I closed in 10 days and avoided foreclosure completely.",
     stars: 5,
     initials: "MG",
+    avatar: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop&crop=face",
     color: "oklch(0.55 0.13 42)",
   },
   {
@@ -118,6 +114,7 @@ const testimonials = [
     text: "We inherited my mother's home after she passed and had no idea what to do. Alder Heritage walked us through the entire probate process. They knew exactly what they were doing and treated us with respect.",
     stars: 5,
     initials: "RT",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face",
     color: "oklch(0.28 0.05 155)",
   },
   {
@@ -127,6 +124,7 @@ const testimonials = [
     text: "I needed to sell but wasn't ready to move out yet. The rent-back option was a lifesaver — I sold the house, got my cash, and had two months to find my new place. Never knew that was even possible.",
     stars: 5,
     initials: "JK",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
     color: "oklch(0.45 0.10 200)",
   },
   {
@@ -136,6 +134,7 @@ const testimonials = [
     text: "I had a second mortgage I couldn't keep up with and was drowning. Connor explained everything clearly, never pressured me, and we closed in under two weeks. He genuinely cared about my situation.",
     stars: 5,
     initials: "DM",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
     color: "oklch(0.50 0.12 42)",
   },
   {
@@ -145,6 +144,7 @@ const testimonials = [
     text: "We needed to relocate for work fast and couldn't wait months for a traditional sale. Alder Heritage gave us a fair offer the same day we called and we closed in 9 days. Absolutely incredible service.",
     stars: 5,
     initials: "TV",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
     color: "oklch(0.35 0.08 155)",
   },
   {
@@ -154,6 +154,7 @@ const testimonials = [
     text: "My father passed and left a home that needed a lot of work. I live out of state and had no idea how to handle it. Connor handled everything — the probate paperwork, the title, all of it. I didn't have to lift a finger.",
     stars: 5,
     initials: "PH",
+    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&crop=face",
     color: "oklch(0.40 0.06 155)",
   },
 ];
@@ -529,9 +530,20 @@ export default function HomePage() {
                 <span className="text-sm" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'DM Mono', monospace" }}>or call directly</span>
               </div>
             </div>
-            {/* Right: Instant Cash Calculator */}
+              {/* Right: Instant Cash Calculator */}
             <div className="fade-up fade-up-delay-2">
               <InstantCashCalculator />
+              {/* Social proof counter */}
+              <div className="mt-3 flex items-center justify-center gap-2 px-4 py-2 rounded-full" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
+                <div className="flex -space-x-2">
+                  {["https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=32&h=32&fit=crop&crop=face","https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face","https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop&crop=face"].map((src, i) => (
+                    <img key={i} src={src} alt="" className="w-7 h-7 rounded-full border-2" style={{ borderColor: "oklch(0.22 0.01 60)" }} />
+                  ))}
+                </div>
+                <span className="text-xs text-white" style={{ fontFamily: "'DM Mono', monospace" }}>
+                  <strong>12 homeowners</strong> requested offers this week
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -540,6 +552,38 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-20" style={{ background: "oklch(0.97 0.015 85)", clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }} />
       </section>
 
+      {/* ── TRUST BAR ── */}
+      <section className="py-4" style={{ background: "oklch(0.22 0.01 60)", borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
+        <div className="container">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+            {/* Google stars */}
+            <div className="flex items-center gap-2">
+              <div className="flex gap-0.5">
+                {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />)}
+              </div>
+              <span className="text-sm font-bold text-white" style={{ fontFamily: "'DM Mono', monospace" }}>5.0 Google Rating</span>
+            </div>
+            <div className="hidden sm:block w-px h-5" style={{ background: "oklch(1 0 0 / 0.15)" }} />
+            {/* DRE badge */}
+            <div className="flex items-center gap-2">
+              <Shield size={14} style={{ color: "oklch(0.65 0.10 145)" }} />
+              <span className="text-sm text-white" style={{ fontFamily: "'DM Mono', monospace" }}>Licensed CA Agent · DRE #02219124</span>
+            </div>
+            <div className="hidden sm:block w-px h-5" style={{ background: "oklch(1 0 0 / 0.15)" }} />
+            {/* Deals */}
+            <div className="flex items-center gap-2">
+              <CheckCircle2 size={14} style={{ color: "oklch(0.65 0.10 145)" }} />
+              <span className="text-sm text-white" style={{ fontFamily: "'DM Mono', monospace" }}>47+ Homes Purchased</span>
+            </div>
+            <div className="hidden sm:block w-px h-5" style={{ background: "oklch(1 0 0 / 0.15)" }} />
+            {/* No wholesaling */}
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>REAL BUYER</span>
+              <span className="text-sm text-white" style={{ fontFamily: "'DM Mono', monospace" }}>Not a Wholesaler</span>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* ── INTRO VIDEO ── */}
       <section className="py-20" style={{ background: "oklch(0.93 0.02 85)" }}>
         <div className="container">
@@ -1011,11 +1055,24 @@ export default function HomePage() {
               >
                 {/* Top row: avatar + name + situation badge */}
                 <div className="flex items-start gap-3">
-                  <div
-                    className="flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center font-bold text-white text-sm"
-                    style={{ background: t.color, fontFamily: "'DM Mono', monospace" }}
-                  >
-                    {t.initials}
+                  <div className="flex-shrink-0 w-11 h-11 rounded-full overflow-hidden border-2" style={{ borderColor: t.color }}>
+                    <img
+                      src={t.avatar}
+                      alt={t.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const el = e.currentTarget as HTMLImageElement;
+                        el.style.display = 'none';
+                        const parent = el.parentElement;
+                        if (parent) {
+                          parent.style.background = t.color;
+                          parent.style.display = 'flex';
+                          parent.style.alignItems = 'center';
+                          parent.style.justifyContent = 'center';
+                          parent.innerHTML = `<span style="color:white;font-family:'DM Mono',monospace;font-weight:700;font-size:0.85rem">${t.initials}</span>`;
+                        }
+                      }}
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="font-bold text-white text-sm" style={{ fontFamily: "'Lora', serif" }}>{t.name}</div>
@@ -1355,6 +1412,29 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      {/* ── STICKY MOBILE CTA BAR ── */}
+      <div
+        className="fixed bottom-0 left-0 right-0 z-50 md:hidden"
+        style={{ background: "oklch(0.22 0.01 60)", borderTop: "1px solid oklch(1 0 0 / 0.15)", padding: "0.75rem 1rem", paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))" }}
+      >
+        <div className="flex gap-3">
+          <a
+            href={PHONE_HREF}
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-white"
+            style={{ background: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem" }}
+          >
+            <Phone size={16} /> Call Now
+          </a>
+          <a
+            href="#offer-form"
+            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-white"
+            style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem" }}
+            onClick={(e) => { e.preventDefault(); document.querySelector('form')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); }}
+          >
+            Get Cash Offer <ArrowRight size={16} />
+          </a>
+        </div>
+      </div>
     </Layout>
   );
 }
