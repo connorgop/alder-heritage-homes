@@ -28,6 +28,8 @@ const FAST_SALE_PAGES: Record<string, string> = {
   Fresno: "/sell-house-fast-fresno-ca",
   Clovis: "/sell-house-fast-clovis-ca",
   Visalia: "/sell-house-fast-visalia-ca",
+  Madera: "/sell-house-fast-madera-ca",
+  Bakersfield: "/sell-house-fast-bakersfield-ca",
 };
 
 export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug, videoEmbed }: CityPageProps) {

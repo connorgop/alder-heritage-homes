@@ -1903,6 +1903,7 @@ export default function BlogPost() {
     ],
     "Probate & Inherited": [
       { label: "Probate & Inherited Homes", href: "/probate-inherited-homes" },
+      { label: "Probate Real Estate Fresno", href: "/probate-real-estate-fresno" },
       { label: "Selling Parents' Home", href: "/sell-parents-house-fresno" },
       { label: "Power of Attorney Sales", href: "/sell-parents-house-fresno" },
     ],
