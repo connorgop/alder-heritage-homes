@@ -8,10 +8,10 @@ import { useState, useEffect, useRef } from "react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
-import { useSEO, localBusinessSchema } from "@/hooks/useSEO";
+import { useSEO, localBusinessSchema, faqSchema } from "@/hooks/useSEO";
 import {
   Phone, ArrowRight, CheckCircle2, Clock, Shield, Star,
-  Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Heart, Loader2
+  Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Heart, Loader2, MapPin
 } from "lucide-react";
 
 const PHONE = "(559) 281-8016";
@@ -469,7 +469,14 @@ export default function HomePage() {
     title: "Fresno Cash Home Buyer — Sell Your House Fast, Any Condition",
     description: "Alder Heritage Homes buys houses directly for cash in Fresno and the Central Valley. Licensed CA Agent (DRE #02219124). No wholesaling, no bait-and-switch. Free Broker Opinion of Value. Close in 5–7 days or on your timeline.",
     canonical: "/",
-    schema: localBusinessSchema,
+    schema: [localBusinessSchema, faqSchema([
+      { q: "How do I sell my house fast in Fresno?", a: "Contact Alder Heritage Homes at (559) 281-8016. We are a licensed CA real estate agent (DRE #02219124) who buys homes directly for cash. We can close in 5–7 days or on your timeline, with no repairs, no agent commissions, and no wholesalers." },
+      { q: "What is a cash home buyer?", a: "A cash home buyer purchases your property directly without a mortgage or financing contingency. Alder Heritage Homes is a real cash buyer — we use our own capital to close, not borrowed money or investor networks. We are not a wholesaler." },
+      { q: "How do I know if a cash buyer is legitimate?", a: "A legitimate cash buyer can provide proof of funds within 24 hours, does not have an inspection contingency, does not use 'and/or assignee' language in the contract, and closes on the date they promise. Wholesalers cannot do any of these things." },
+      { q: "What is a wholesaler and how do I avoid one?", a: "A wholesaler is someone who puts your home under contract with no intention of buying it — they plan to sell your contract to a real investor for a profit. Red flags include: inspection contingencies, 'and/or assignee' in the contract, no proof of funds, and Instagram-guru branding. Alder Heritage Homes is a licensed agent and real buyer — not a wholesaler." },
+      { q: "Do I need to make repairs before selling my house?", a: "No. Alder Heritage Homes buys homes in any condition — fire damage, foundation issues, probate complications, squatters, deferred maintenance, or any other situation. We purchased a home in Clovis with a homicide history, a 2-year squatter, no water, and no sewer for $200,000 cash, as-is." },
+      { q: "How much will you pay for my house?", a: "We provide a free third-party broker opinion of value with every offer so you can verify our number is fair. Cash offers are typically 70–85% of after-repair value depending on condition and location. We will never lowball you without explaining the math." },
+    ])],
   });
   return (
     <Layout>
@@ -499,7 +506,7 @@ export default function HomePage() {
                 <span style={{ color: "oklch(0.75 0.10 42)" }}>Get a Cash Offer in Minutes.</span>
               </h1>
               <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-6 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Enter your address and we'll text you a fair cash offer. No repairs, no commissions, no obligation — just a real number from a real buyer.
+                Enter your address below. We'll text you a fair cash offer — no repairs, no commissions, no obligation. <strong style={{ color: "oklch(0.92 0.04 85)" }}>We will never spam or harass you.</strong> One text, one offer, your choice.
               </p>
               <div className="fade-up fade-up-delay-3 flex flex-wrap gap-x-6 gap-y-2">
                 {["No repairs needed", "No agent commissions", "Close in 5–7 days", "Any condition"].map((t) => (
@@ -1087,12 +1094,20 @@ export default function HomePage() {
             {[
               { city: "Fresno", county: "Fresno County", href: "/we-buy-houses-fresno", primary: true },
               { city: "Clovis", county: "Fresno County", href: "/we-buy-houses-clovis", primary: false },
-              { city: "Madera", county: "Madera County", href: "/we-buy-houses-madera", primary: false },
+              { city: "Bakersfield", county: "Kern County", href: "/we-buy-houses-bakersfield", primary: false },
               { city: "Visalia", county: "Tulare County", href: "/we-buy-houses-visalia", primary: false },
+              { city: "Madera", county: "Madera County", href: "/we-buy-houses-madera", primary: false },
+              { city: "Hanford", county: "Kings County", href: "/we-buy-houses-hanford", primary: false },
+              { city: "Lemoore", county: "Kings County", href: "/we-buy-houses-lemoore", primary: false },
+              { city: "Tulare", county: "Tulare County", href: "/we-buy-houses-tulare", primary: false },
+              { city: "Porterville", county: "Tulare County", href: "/we-buy-houses-porterville", primary: false },
+              { city: "Merced", county: "Merced County", href: "/we-buy-houses-merced", primary: false },
+              { city: "Modesto", county: "Stanislaus County", href: "/we-buy-houses-modesto", primary: false },
+              { city: "Stockton", county: "San Joaquin County", href: "/we-buy-houses-stockton", primary: false },
               { city: "Sanger", county: "Fresno County", href: "/we-buy-houses-sanger", primary: false },
               { city: "Selma", county: "Fresno County", href: "/we-buy-houses-selma", primary: false },
-              { city: "Hanford", county: "Kings County", href: "/we-buy-houses-hanford", primary: false },
               { city: "Reedley", county: "Fresno County", href: "/we-buy-houses-reedley", primary: false },
+              { city: "Kings County", county: "Rural / Ag", href: "/we-buy-houses-kings-county", primary: false },
             ].map((item) => (
               <Link key={item.city} href={item.href}>
                 <div
@@ -1138,8 +1153,54 @@ export default function HomePage() {
           {/* Also serve note */}
           <div className="text-center">
             <p className="text-sm" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Also buying homes in <strong>Tulare, Porterville, Dinuba, Parlier, Fowler, Kingsburg</strong>, and all surrounding Central Valley communities.
+              Also buying homes in <strong>Turlock, Dinuba, Parlier, Fowler, Kingsburg, Avenal, Corcoran</strong>, and all surrounding Central Valley communities.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── WE LOVE THE VALLEY ── */}
+      <section className="py-24" style={{ background: "oklch(0.55 0.13 42)" }}>
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-14 items-center">
+            <div>
+              <div className="flex items-center gap-3 mb-5">
+                <Heart size={32} fill="white" style={{ color: "white" }} />
+                <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.95 0.03 85)" }}>
+                  From Connor
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.2 }}>
+                We Love Fresno, the Valley, and Everyone in It.
+              </h2>
+              <p className="text-lg leading-relaxed mb-5" style={{ color: "oklch(0.95 0.02 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                I grew up here. I invest here. I care about this community more than any out-of-state hedge fund or online wholesaler ever will. When you call me, you're talking to someone who knows your neighborhood, has driven your street, and genuinely wants to help you — not just close a deal.
+              </p>
+              <p className="text-lg leading-relaxed mb-5" style={{ color: "oklch(0.95 0.02 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Our reputation in this Valley means everything to us. We will never pressure you, never mislead you, and never waste your time. If we can't give you the best solution, we'll tell you honestly — and point you to someone who can.
+              </p>
+              <p className="text-base leading-relaxed" style={{ color: "oklch(0.90 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontStyle: "italic" }}>
+                "You give us your address. We give you a fair offer. That's it. No spam, no harassment, no follow-up calls from a call center. Just Connor."
+              </p>
+              <div className="mt-6 flex items-center gap-3">
+                <MapPin size={18} style={{ color: "white" }} />
+                <span className="font-semibold text-white" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>Fresno, California — Born and raised in the Central Valley</span>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { emoji: "🌾", title: "Valley Proud", desc: "We invest in our community, not just in properties. Every deal we close keeps money in the Valley." },
+                { emoji: "🤝", title: "No Pressure, Ever", desc: "We will never call you repeatedly or send you to a call center. One conversation, your decision." },
+                { emoji: "🔒", title: "Your Privacy Matters", desc: "We only ask for your address and phone number. No name, no email, no data sold to anyone." },
+                { emoji: "⚖️", title: "Licensed & Transparent", desc: "CA DRE #02219124. We include a free third-party broker opinion so you know our offer is fair." },
+              ].map((item) => (
+                <div key={item.title} className="rounded-2xl p-6" style={{ background: "oklch(1 0 0 / 0.12)", border: "1px solid oklch(1 0 0 / 0.20)" }}>
+                  <div className="text-3xl mb-3">{item.emoji}</div>
+                  <h4 className="font-bold text-white mb-2" style={{ fontFamily: "'Lora', serif" }}>{item.title}</h4>
+                  <p className="text-sm leading-relaxed" style={{ color: "oklch(0.92 0.02 85)", fontFamily: "'Nunito Sans', sans-serif" }}>{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

@@ -8,6 +8,7 @@
    ============================================================ */
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
+import { useSEO, faqSchema } from "@/hooks/useSEO";
 import {
   AlertTriangle, CheckCircle2, XCircle, Phone, ArrowRight,
   Shield, FileText, Search, Eye, Gavel
@@ -80,6 +81,17 @@ const alderDifference = [
 ];
 
 export default function DontGetWholesaled() {
+  useSEO({
+    title: "Don't Get Wholesaled — How to Spot a Fake Cash Buyer in Fresno",
+    description: "Most 'we buy houses' companies in Fresno are wholesalers with no capital. They will lock you into a contract and never close. Learn the 6 red flags and how to protect yourself.",
+    canonical: "/dont-get-wholesaled",
+    schema: faqSchema([
+      { q: "What is a real estate wholesaler?", a: "A wholesaler is someone who puts your home under contract with no intention of buying it. They plan to sell your contract to a real investor for a profit — often without telling you. They have no capital and cannot close." },
+      { q: "How do I know if a cash buyer is a wholesaler?", a: "Six red flags: (1) They have an inspection contingency. (2) The contract says 'and/or assignee.' (3) They cannot show proof of funds within 24 hours. (4) The owner is an Instagram guru or coach. (5) The company name is an LLC you cannot find online. (6) They ask for a long closing window — real buyers close fast." },
+      { q: "Is wholesaling legal in California?", a: "Wholesaling exists in a legal gray area in California. Multiple states have passed laws restricting it. California has not yet, but the practice is considered deceptive by many real estate attorneys because wholesalers often misrepresent themselves as buyers." },
+      { q: "What should I do if a wholesaler has my home under contract?", a: "Review the contract carefully. If it contains an inspection contingency or 'and/or assignee' language, you may have grounds to cancel. Consult a real estate attorney. Call Alder Heritage Homes at (559) 281-8016 — we can review your situation and provide a real offer." },
+    ]),
+  });
   return (
     <Layout>
       {/* Hero */}

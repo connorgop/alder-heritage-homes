@@ -35,6 +35,7 @@ const trust = [
   { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
   { label: "Don't Hire Your Friend Realtor", href: "/dont-hire-friend-realtor" },
   { label: "⚠️ Vacant Home Security", href: "/vacant-property-warning" },
+  { label: "Skyline REI — Our Buying Entity", href: "/skyline-rei" },
   { label: "About Connor", href: "/about" },
   { label: "Blog & Resources", href: "/blog" },
 ];

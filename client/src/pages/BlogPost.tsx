@@ -455,6 +455,115 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>Ready for an honest conversation? <strong>Call (559) 281-8016</strong> or visit <a href="/contact">alderheritagehomes.com/contact</a>.</p>
     </div>
   ),
+
+  "1031-exchange-sell-rental-portfolio-fresno": (
+    <div>
+      <p>There is a conversation happening quietly in Fresno right now. Tired landlords — people who have owned single-family rentals for 10, 15, or 20 years — are selling their portfolios to cash buyers and using the proceeds to 1031 exchange into commercial net-lease properties. They are trading tenant calls at 11pm for guaranteed monthly checks and zero maintenance. This guide explains how that works, what the timeline looks like, and why the current market makes it an especially compelling option.</p>
+      <h2>What Is a 1031 Exchange?</h2>
+      <p>A 1031 exchange (named after Section 1031 of the IRS tax code) allows you to sell an investment property and defer the capital gains tax — as long as you reinvest the proceeds into a "like-kind" replacement property within a specific timeline. The key rules are: you have 45 days from closing to identify the replacement property, and 180 days to close on it.</p>
+      <p>For a landlord selling a portfolio of single-family rentals, this means you can sell all of your properties in a single transaction, take the full proceeds, and reinvest them into a different asset class — without paying capital gains tax on the sale. The tax is deferred, not eliminated, but for most landlords the deferral is worth hundreds of thousands of dollars in preserved capital.</p>
+      <h2>Why Single-Family Rentals Are Hard to Hold Right Now</h2>
+      <p>Fresno's rental market has shifted. Property taxes have increased. Insurance costs have risen dramatically. Maintenance costs — plumbing, HVAC, roofing — have increased 30–40% since 2020. And the tenant pool has changed: eviction moratoriums, longer eviction timelines, and more complex tenant-landlord law have made managing single-family rentals in California significantly more difficult than it was a decade ago.</p>
+      <p>Landlords who bought properties at $80,000–$120,000 in the 2010s are now sitting on assets worth $250,000–$400,000. That appreciation is real — but so is the fatigue. The question is whether the ongoing management burden is worth the yield, especially when better-structured alternatives exist.</p>
+      <h2>What You Can Exchange Into</h2>
+      <p>The most popular replacement asset for tired residential landlords is a net-lease commercial property — a single-tenant building occupied by a national credit tenant (think: Dollar General, AutoZone, Starbucks, or a medical clinic). These properties typically offer: a guaranteed monthly check with no management responsibility, a 10–20 year lease with rent escalations built in, and a creditworthy tenant who maintains the property themselves.</p>
+      <p>The tradeoff is yield — net-lease properties typically return 5–6% cap rates, compared to the 7–9% gross yields possible with residential rentals. But for landlords who are exhausted, the difference in quality of life is enormous.</p>
+      <h2>The Skyline REI Portfolio Purchase Process</h2>
+      <p>When Skyline REI purchases a portfolio, the process is straightforward. We make a single offer for all properties. You don't need to list them individually, find separate buyers, or coordinate multiple closings. We can purchase with tenants in place — no evictions required. We close on your timeline, which can be structured to align with your 1031 identification window.</p>
+      <p>In 2024, we purchased four homes in downtown Fresno from one landlord for $1,100,000 in a single transaction. He had been approached by two wholesalers before us — both tied him up in contracts and never closed. We closed. He used the proceeds to 1031 into a net-lease property with a 15-year lease and zero maintenance obligations.</p>
+      <p>We also purchased eight single-family homes from one landlord in a single 2024 transaction. Both sellers are no longer managing tenants, fielding maintenance calls, or worrying about evictions.</p>
+      <h2>The Broker Network Referral</h2>
+      <p>Identifying and closing on a replacement property within the 45/180-day window requires a broker who specializes in net-lease commercial transactions. Our broker network includes specialists who handle exactly this type of transaction. We will connect you with them at no cost to you — and we do not receive a referral fee from the replacement property transaction. We make our money on the acquisition. The referral is a service, not a revenue stream.</p>
+      <h2>Is This Right for You?</h2>
+      <p>If you own two or more single-family rentals in Fresno or the Central Valley, have held them for more than two years, and are experiencing any of the following — rising insurance costs, difficult tenants, deferred maintenance, or simply exhaustion — a portfolio sale and 1031 exchange is worth a conversation. Call Connor directly at (559) 281-8016. There is no obligation, no pressure, and no wholesaler in the middle.</p>
+    </div>
+  ),
+
+  "vacant-home-security-fresno-central-valley": (
+    <div>
+      <p>If you have a vacant home in Fresno or anywhere in the Central Valley, this is the most important thing you will read today: it will get broken into. Not might. Will. The only question is when — and whether you have secured it before it happens.</p>
+      <p>I am not writing this as a hypothetical. I purchased a property on Roosevelt Avenue in Fresno that had been vacant. It was broken into while we owned it. I have seen the same thing happen on properties throughout the Valley — in Clovis, in Madera, in Hanford, in neighborhoods that people assume are safe. Vacancy is the signal. Once a property looks empty, it becomes a target.</p>
+      <h2>How They Get In (Every Access Point)</h2>
+      <p>Most people think about front doors and windows. Those are the obvious entry points, and yes, they need to be secured. But there are access points that most homeowners never consider — and that experienced squatters know how to exploit.</p>
+      <p><strong>Crawl spaces and subfloor access.</strong> Homes with raised foundations have crawl space vents and access panels underneath the structure. Squatters will crawl under a home, locate a weak point in the subfloor — often near a bathroom — and drill or cut through it to gain interior access. This happened to me on a property I purchased. The entry point was completely invisible from the street or from a casual walkthrough of the exterior.</p>
+      <p><strong>Windows.</strong> Every window needs to be locked and, in vacant properties, ideally secured with a secondary locking mechanism or boarded. Ground-floor windows are obvious targets. But second-floor windows accessible from a fence, tree, or adjacent structure are also vulnerable.</p>
+      <p><strong>Garage doors.</strong> Manual override mechanisms on garage doors can be triggered from outside with a wire through the top seal. If the garage connects to the interior of the home, a compromised garage door is a compromised home.</p>
+      <p><strong>Sliding doors.</strong> Standard sliding door locks are weak. A piece of cut-down wooden dowel in the track is cheap and effective. Without it, a sliding door can often be lifted off its track from outside.</p>
+      <p><strong>Roof vents and attic access.</strong> Less common but documented: entry through roof vents or attic hatches on single-story homes. If the attic connects to the interior, it is an access point.</p>
+      <h2>What to Do Right Now</h2>
+      <p>If you have a vacant property, take these steps immediately. Change or rekey all exterior door locks. Install door reinforcement plates on all entry doors — the door itself may be solid, but the strike plate and frame are often the weak point. Board or secure all ground-floor windows. Install a crawl space vent cover with a locking mechanism on every crawl space opening. Walk the perimeter and look for any opening larger than 6 inches at ground level.</p>
+      <p>If you cannot do this yourself, call me directly at (559) 281-8016. I will either help you secure the property or connect you with a trusted contractor who can board it up, rekey it, and secure every access point — including under the house. I have done this on my own properties and I know who to call.</p>
+      <h2>If There Is Already a Squatter</h2>
+      <p>Do not attempt to remove a squatter yourself. In California, squatter removal requires a formal unlawful detainer (eviction) process even if the person has no lease. Attempting a self-help eviction — changing locks while someone is inside, removing their belongings, cutting utilities — can expose you to civil liability. Call an attorney first. I can refer you to one who handles exactly this situation.</p>
+      <h2>If You Want to Sell the Property</h2>
+      <p>If you have a vacant property that has been broken into, vandalized, or occupied by a squatter — we buy those. We purchased the Clovis property described elsewhere on this site: double homicide history, two-year squatter, no water, no sewer, full of trash. $200,000 cash, as-is, no inspection. Call (559) 281-8016.</p>
+    </div>
+  ),
+
+  "sell-house-bakersfield-cash-buyer-guide": (
+    <div>
+      <p>Bakersfield is not Fresno. The two cities are 110 miles apart, but the real estate markets behave differently — and if you are trying to sell your Bakersfield home, understanding those differences matters. This guide covers what cash home buyers pay in Bakersfield, how the market has shifted, and what your options are if you need to sell quickly or in a difficult situation.</p>
+      <h2>The Bakersfield Market in 2025</h2>
+      <p>Bakersfield's real estate market is heavily influenced by the oil and gas industry. When energy prices are high, the local economy is strong and home values follow. When energy prices fall, the market softens. This cyclical pattern creates a different risk profile than agricultural-driven markets like Fresno or Visalia.</p>
+      <p>Kern County also has a higher concentration of distressed properties than most Central Valley counties — homes with deferred maintenance, properties affected by oil field proximity, and a higher rate of foreclosure activity. This means cash buyers are active in Bakersfield, and competition among buyers is real.</p>
+      <h2>What Cash Buyers Pay in Bakersfield</h2>
+      <p>A legitimate cash buyer in Bakersfield will typically offer 70–85% of after-repair value (ARV), depending on the condition of the property, the location within Kern County, and the current market. This discount reflects the cost of repairs, carrying costs, and the buyer's profit margin. It is not a lowball — it is the math of what makes a cash purchase viable for the buyer.</p>
+      <p>If someone offers you 90–95% of market value in cash with no contingencies and a 5-day close, be skeptical. That is either a wholesaler who plans to assign the contract to a real buyer at a higher price, or someone who will manufacture reasons to reduce the offer after you are under contract.</p>
+      <h2>Situations Where a Cash Sale Makes Sense in Bakersfield</h2>
+      <p>A cash sale is not always the right choice. But it is often the right choice when: the property needs significant repairs that you cannot afford or do not want to manage; you are facing foreclosure and need to close before the auction date; you have inherited the property and want to settle the estate quickly; you are relocating for work and cannot manage a traditional 45–90 day sale process; or the property has a complicated title situation — liens, back taxes, or probate complications.</p>
+      <h2>Working With Alder Heritage Homes in Bakersfield</h2>
+      <p>We buy homes in Bakersfield and throughout Kern County. We are licensed California real estate agents (DRE #02219124), not wholesalers. When we make an offer, we are the buyer — we do not assign contracts or try to sell your property to someone else. We include a free third-party broker opinion of value with every offer so you can verify that our number is fair.</p>
+      <p>If a cash sale is not the right fit for your situation, we will tell you — and we can connect you with a trusted listing agent in the Bakersfield market who can help you get top dollar through a traditional sale. Call (559) 281-8016 or visit alderheritagehomes.com/we-buy-houses-bakersfield.</p>
+    </div>
+  ),
+
+  "arm-adjustable-rate-mortgage-options-california": (
+    <div>
+      <p>If you have an adjustable-rate mortgage that is about to reset, you are facing one of the most stressful financial situations a homeowner can experience. The payment you budgeted for is about to become a payment you may not be able to afford — and the timeline is fixed. This guide explains exactly what happens when an ARM adjusts, what your options are, and what to do before the reset date arrives.</p>
+      <h2>How ARM Resets Work</h2>
+      <p>Most adjustable-rate mortgages have an initial fixed period — typically 3, 5, 7, or 10 years — during which the interest rate does not change. After that period, the rate adjusts annually based on a benchmark index (usually SOFR or the 1-year Treasury) plus a margin set by your lender. The adjustment is capped — most ARMs have annual caps of 2% and lifetime caps of 5–6% above the initial rate.</p>
+      <p>In practical terms: if you took out a 5/1 ARM at 3.5% in 2020, your rate could now reset to 5.5% in year six, 7.5% in year seven, and potentially 8.5–9.5% at the lifetime cap. On a $300,000 loan balance, the difference between 3.5% and 8.5% is approximately $900 per month. That is the payment shock that is hitting California homeowners right now.</p>
+      <h2>Your Options Before the Reset</h2>
+      <p><strong>Refinance into a fixed-rate mortgage.</strong> If you have sufficient equity and your credit is in good shape, refinancing into a 30-year fixed is the cleanest solution. Current 30-year fixed rates are in the 6.5–7.5% range — higher than your initial ARM rate, but stable. The question is whether you can qualify at the current rate and whether the closing costs make sense given how long you plan to stay in the home.</p>
+      <p><strong>Sell the home before the reset.</strong> If you have equity and are open to moving, selling before the adjustment date eliminates the problem entirely. A traditional sale takes 45–90 days. A cash sale can close in 5–7 days. If your reset date is approaching and you want certainty, a cash sale is the fastest path to resolution.</p>
+      <p><strong>Request a loan modification.</strong> Your servicer may offer a loan modification that converts your ARM to a fixed rate or extends the initial fixed period. This requires documentation of financial hardship and is not guaranteed, but it is worth requesting before exploring other options.</p>
+      <p><strong>Sell and rent.</strong> For homeowners who are not ready to buy again but need to exit the ARM, selling and renting temporarily is a legitimate strategy. Rents in Fresno and the Central Valley are lower than mortgage payments at current rates for many property types, which means selling and renting can actually improve monthly cash flow while you wait for rates to normalize.</p>
+      <h2>What to Do Right Now</h2>
+      <p>Pull out your loan documents and find your adjustment date, your index, your margin, and your caps. Calculate what your payment will be at the next adjustment using current index rates. If the number is unmanageable, start exploring your options now — not after the adjustment hits. The earlier you act, the more options you have.</p>
+      <p>If you want to explore a cash sale as part of your planning, call Connor at (559) 281-8016. There is no obligation. We will give you an honest offer and a free broker opinion of value so you can make an informed decision. We close on your timeline — including before your adjustment date.</p>
+    </div>
+  ),
+
+  "sell-house-merced-modesto-stockton-cash": (
+    <div>
+      <p>The Northern Central Valley — Merced, Modesto, Stockton, and Turlock — is a different market than Fresno, but the same fundamental dynamics apply when you need to sell quickly. This guide covers what homeowners in these cities need to know about cash home buyers, what to expect from the process, and how to avoid the wholesalers who are active throughout the region.</p>
+      <h2>The Northern Valley Market</h2>
+      <p>Merced, Modesto, and Stockton sit along the Highway 99 corridor and share several characteristics: proximity to the Bay Area, a significant commuter population, and real estate prices that have been volatile as remote work patterns shifted during and after the pandemic. Stockton in particular has a history of distressed property activity — it was one of the hardest-hit cities in the country during the 2008 foreclosure crisis, and the institutional knowledge of that period shapes how buyers and sellers approach the market today.</p>
+      <p>Modesto and Turlock have stronger agricultural ties and a more stable price base. Merced has been growing due to UC Merced's expansion and increasing Bay Area spillover demand. Each city has its own micro-market dynamics, but all three share a common characteristic: an active cash buyer market with a significant number of wholesalers operating alongside legitimate buyers.</p>
+      <h2>Identifying Legitimate Cash Buyers in the Northern Valley</h2>
+      <p>The same red flags that apply in Fresno apply in Modesto, Merced, and Stockton. If the buyer has an inspection contingency, they are not a cash buyer — they are a wholesaler. If the purchase agreement says "and/or assignee" after the buyer's name, they plan to sell your contract to someone else. If the buyer cannot show you proof of funds within 24 hours of making an offer, they do not have the money to close.</p>
+      <p>Legitimate cash buyers in the Northern Valley are rare. Most of the "we buy houses" marketing you see in Stockton and Modesto is generated by wholesaling operations — some local, many national. The national operations in particular have no real knowledge of local market conditions and are primarily interested in locking up contracts that they can sell to investors in their network.</p>
+      <h2>Working With Alder Heritage Homes in the Northern Valley</h2>
+      <p>We buy homes in Merced, Modesto, Stockton, and Turlock. We are based in Fresno and licensed in California (DRE #02219124). We are not wholesalers. When we make an offer, we are the buyer. We include a free third-party broker opinion of value with every offer. We close in 5–7 days or on your timeline.</p>
+      <p>If a cash sale is not the right fit, we can refer you to trusted listing agents in the Northern Valley market who we know personally and whose track records we can vouch for. Call (559) 281-8016 or visit alderheritagehomes.com to get started.</p>
+    </div>
+  ),
+
+  "probate-home-sale-merced-madera-tulare": (
+    <div>
+      <p>Probate in California is governed by state law, but the process plays out differently in each county — and the differences matter when you are trying to sell an inherited property. This guide covers what families dealing with probate properties in Merced, Madera, and Tulare counties need to know, including the county-specific timelines, the court confirmation process, and your options for selling.</p>
+      <h2>How Probate Works in Smaller California Counties</h2>
+      <p>California probate is initiated in the Superior Court of the county where the deceased person lived. For properties in Merced, Madera, and Tulare counties, that means filing in the respective county's Superior Court — not in Fresno County, even if the family lives in Fresno.</p>
+      <p>The basic process is the same statewide: petition for probate, appointment of personal representative, inventory and appraisal, creditor notification period, and eventual distribution. But the timeline varies significantly by county. Fresno County's probate court has a higher case volume and can be slower. Madera and Tulare counties tend to move faster due to lower case volume. Merced County falls in the middle.</p>
+      <p>For estates under $184,500 in gross value (as of 2024), simplified procedures may apply — including small estate affidavits and summary administration — that can bypass the full probate process. A probate attorney can advise you on whether your situation qualifies.</p>
+      <h2>Selling the Property During Probate</h2>
+      <p>In California, a personal representative (executor or administrator) can sell real property during probate under two different frameworks. Under the Independent Administration of Estates Act (IAEA), a personal representative with full authority can sell the property without court confirmation — which is faster and less expensive. Without IAEA authority, the sale requires court confirmation, which adds time and introduces the possibility of overbidding at the confirmation hearing.</p>
+      <p>Most probate attorneys in Merced, Madera, and Tulare counties will petition for IAEA authority as a standard practice. If you are working with an attorney who has not done this, ask about it specifically.</p>
+      <h2>Selling to a Cash Buyer During Probate</h2>
+      <p>Cash buyers are particularly well-suited for probate sales because they can accommodate the unpredictable timeline. A traditional buyer with a mortgage contingency needs to close within a specific window — if probate takes longer than expected, the deal falls apart. A cash buyer can wait. We have purchased probate properties in Madera and Tulare counties where the timeline extended significantly beyond the original estimate, and we closed when the estate was ready — not on a bank's schedule.</p>
+      <p>We also work with families before probate is complete — helping secure vacant properties, referring probate attorneys, and providing a preliminary offer so the family knows what the property is worth before the process begins. Call (559) 281-8016 or visit alderheritagehomes.com/probate-inherited-homes to learn more.</p>
+    </div>
+  ),
 };
 
 export default function BlogPost() {

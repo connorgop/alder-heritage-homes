@@ -307,4 +307,50 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Entity & Trust Pages -->
+  <url>
+    <loc>https://www.alderheritagehomes.com/skyline-rei</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- New Blog Posts -->
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/1031-exchange-sell-rental-portfolio-fresno</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/vacant-home-security-fresno-central-valley</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-house-bakersfield-cash-buyer-guide</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/arm-adjustable-rate-mortgage-options-california</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-house-merced-modesto-stockton-cash</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/probate-home-sale-merced-madera-tulare</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

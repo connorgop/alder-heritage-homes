@@ -60,6 +60,7 @@ import StocktonPage from "./pages/cities/Stockton";
 import ModestoPage from "./pages/cities/Modesto";
 import TurlockPage from "./pages/cities/Turlock";
 import KingsCountyPage from "./pages/cities/KingsCounty";
+import SkylineREI from "./pages/SkylineREI";
 
 function Router() {
   return (
@@ -89,6 +90,7 @@ function Router() {
       <Route path="/cant-afford-my-home" component={CantAffordHome} />
       <Route path="/vacant-property-warning" component={VacantPropertyWarning} />
       <Route path="/sell-rental-portfolio" component={LandlordPortfolioSale} />
+      <Route path="/skyline-rei" component={SkylineREI} />
 
       {/* City pages */}
       <Route path="/we-buy-houses-fresno" component={FresnoPage} />

@@ -1,8 +1,20 @@
 import ServicePage from "@/components/ServicePage";
+import { useSEO, faqSchema } from "@/hooks/useSEO";
 
 const IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/foreclosure-help-TU46LJDiCeKVaTFvCVuw8j.webp";
 
 export default function ForeclosureHelp() {
+  useSEO({
+    title: "Stop Foreclosure in Fresno — Sell Your House for Cash Before the Auction",
+    description: "Facing foreclosure in Fresno or the Central Valley? Sell your home for cash in 5–14 days and stop the process before it damages your credit. Licensed CA agent, real buyer, no wholesalers.",
+    canonical: "/foreclosure-help",
+    schema: faqSchema([
+      { q: "Can I sell my house to stop foreclosure in California?", a: "Yes. If you sell before the foreclosure auction date, the sale pays off your mortgage and stops the foreclosure process. This prevents a foreclosure from appearing on your credit report. Alder Heritage Homes can close in 5–14 days, which is often fast enough to stop the auction." },
+      { q: "How long does foreclosure take in California?", a: "California is a non-judicial foreclosure state. The process typically takes 4–6 months from the first Notice of Default to the auction date. You have time to act, but the window closes quickly." },
+      { q: "What happens to my credit if I let my house go to foreclosure?", a: "A completed foreclosure stays on your credit report for 7 years and can drop your score by 100–150 points. Selling before the auction prevents the foreclosure from completing and has a much smaller impact on your credit." },
+      { q: "Do I need to make repairs before selling a foreclosure home?", a: "No. Alder Heritage Homes buys homes in any condition, as-is. We have purchased homes with fire damage, squatters, code violations, and deferred maintenance. You do not need to clean, repair, or stage anything." },
+    ]),
+  });
   return (
     <ServicePage
       badge="Foreclosure Help · Fresno CA"
