@@ -1284,6 +1284,79 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── BEFORE & AFTER DEAL SNAPSHOTS ── */}
+      <section className="py-20" style={{ background: "oklch(0.97 0.01 85)" }}>
+        <div className="container">
+          <div className="text-center mb-12">
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+              Real Deals · Real Results
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+              What "Any Condition" Actually Looks Like
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-lg" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              These are real properties we've purchased — not cherry-picked showcase homes. This is the work we do.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              {
+                location: "Clovis, CA",
+                headline: "Double Homicide Stigma + 2-Year Squatter",
+                before: ["Crime scene stigma", "Squatter occupied 2 years", "No water, no sewer", "Home full of trash"],
+                result: "$200,000 cash — closed as-is, no inspection",
+                tag: "Stigmatized Property",
+              },
+              {
+                location: "Illinois Ave, Fresno",
+                headline: "5 Break-Ins, Bed Bugs, Rats, Heavy Vandalism",
+                before: ["5 separate break-ins", "Bed bugs & cockroaches", "Rat infestation", "Extensive vandalism"],
+                result: "Purchased, fully renovated, and sold — watch the flip video above",
+                tag: "Full Renovation",
+              },
+              {
+                location: "Central Valley",
+                headline: "Behind on Mortgage — Foreclosure Auction in 18 Days",
+                before: ["Notice of Trustee Sale filed", "18 days to auction", "$40K behind on payments", "Couldn't qualify to refinance"],
+                result: "Closed in 12 days — seller walked away with equity, foreclosure stopped",
+                tag: "Foreclosure Prevention",
+              },
+            ].map(({ location, headline, before, result, tag }) => (
+              <div key={location} className="bg-white rounded-2xl overflow-hidden shadow-sm border" style={{ borderColor: "oklch(0.88 0.02 85)" }}>
+                <div className="px-6 py-4 flex items-center justify-between" style={{ background: "oklch(0.22 0.01 60)" }}>
+                  <span className="text-xs font-bold" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>{location}</span>
+                  <span className="px-2 py-0.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>{tag}</span>
+                </div>
+                <div className="p-6">
+                  <h3 className="font-bold text-base mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)", lineHeight: 1.3 }}>{headline}</h3>
+                  <div className="mb-4">
+                    <div className="text-xs font-bold mb-2" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>Condition at Purchase</div>
+                    <ul className="space-y-1.5">
+                      {before.map((item) => (
+                        <li key={item} className="flex items-start gap-2 text-sm" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                          <span className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.55 0.13 42)" }}>✓</span> {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="pt-4 border-t" style={{ borderColor: "oklch(0.88 0.02 85)" }}>
+                    <div className="text-xs font-bold mb-1" style={{ color: "oklch(0.42 0.08 155)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>Outcome</div>
+                    <p className="text-sm font-semibold" style={{ color: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>{result}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <p className="text-base mb-4" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Have a property in a difficult situation? Call Connor directly — he answers every call personally.
+            </p>
+            <a href={PHONE_HREF} className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-lg text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              <Phone size={20} /> {PHONE}
+            </a>
+          </div>
+        </div>
+      </section>
       {/* ── AREAS WE SERVE ── */}
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
         <div className="container">
