@@ -191,6 +191,148 @@ function AnimatedCounter({ target, suffix = "" }: { target: number | string; suf
   );
 }
 
+function InstantCashCalculator() {
+  const [step, setStep] = useState<"address" | "phone" | "done">("address");
+  const [address, setAddress] = useState("");
+  const [phone, setPhone] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const { submit } = useFormSubmit();
+
+  const handleAddressSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (address.trim().length > 5) setStep("phone");
+  };
+
+  const handlePhoneSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+    await submit({ address, phone, _source: "Instant Cash Calculator Hero" });
+    setSubmitting(false);
+    setStep("done");
+  };
+
+  if (step === "done") {
+    return (
+      <div className="rounded-2xl p-10 text-center" style={{ background: "oklch(1 0 0 / 0.08)", border: "1.5px solid oklch(1 0 0 / 0.20)", backdropFilter: "blur(12px)" }}>
+        <div className="text-5xl mb-4">📱</div>
+        <h3 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: "'Lora', serif" }}>Check Your Phone!</h3>
+        <p className="text-lg mb-2" style={{ color: "oklch(0.90 0.04 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
+          Your instant cash offer is on its way via text.
+        </p>
+        <p className="text-sm mb-6" style={{ color: "oklch(0.70 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+          Connor personally reviews every address and will text you a fair offer shortly. Questions? Call now:
+        </p>
+        <a href={PHONE_HREF} className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+          <Phone size={18} /> {PHONE}
+        </a>
+      </div>
+    );
+  }
+
+  if (step === "phone") {
+    return (
+      <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ background: "oklch(1 0 0 / 0.08)", border: "1.5px solid oklch(1 0 0 / 0.20)", backdropFilter: "blur(12px)" }}>
+        <div className="px-8 py-5" style={{ background: "oklch(0.55 0.13 42)" }}>
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white text-sm font-bold">✓</div>
+            <div>
+              <p className="text-xs font-bold text-white/70" style={{ fontFamily: "'DM Mono', monospace", letterSpacing: "0.06em" }}>ADDRESS RECEIVED</p>
+              <p className="text-sm text-white font-semibold truncate max-w-[260px]" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>{address}</p>
+            </div>
+          </div>
+        </div>
+        <form onSubmit={handlePhoneSubmit} className="p-8">
+          <p className="text-white font-bold text-xl mb-2" style={{ fontFamily: "'Lora', serif" }}>Last step — where should we text your offer?</p>
+          <p className="text-sm mb-6" style={{ color: "oklch(0.75 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>We'll send your cash offer to this number. No spam, ever.</p>
+          <input
+            required
+            type="tel"
+            placeholder="Your cell phone number"
+            value={phone}
+            onChange={e => setPhone(e.target.value)}
+            autoFocus
+            style={{
+              background: "oklch(1 0 0 / 0.06)",
+              border: "1px solid oklch(1 0 0 / 0.25)",
+              color: "white",
+              fontFamily: "'Nunito Sans', sans-serif",
+              fontSize: "1.1rem",
+              borderRadius: "0.5rem",
+              padding: "0.9rem 1.1rem",
+              width: "100%",
+              outline: "none",
+              marginBottom: "1rem",
+            }}
+          />
+          <button
+            type="submit"
+            disabled={submitting}
+            className="w-full flex items-center justify-center gap-3 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 hover:scale-[1.01] disabled:opacity-70"
+            style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}
+          >
+            {submitting ? (
+              <><Loader2 size={20} className="animate-spin" /> Calculating...</>
+            ) : (
+              <>Send My Cash Offer <ArrowRight size={20} /></>
+            )}
+          </button>
+          <p className="text-center text-xs mt-4" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
+            🔒 Your info is private · No obligation · No spam
+          </p>
+        </form>
+      </div>
+    );
+  }
+
+  // Step 1: Address
+  return (
+    <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ background: "oklch(1 0 0 / 0.08)", border: "1.5px solid oklch(1 0 0 / 0.20)", backdropFilter: "blur(12px)" }}>
+      <div className="px-8 py-5" style={{ background: "oklch(0.55 0.13 42)" }}>
+        <div className="flex items-center gap-2 mb-1">
+          <span className="text-white text-lg">⚡</span>
+          <h3 className="text-xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Instant Cash Offer Calculator</h3>
+        </div>
+        <p className="text-sm" style={{ color: "oklch(0.92 0.04 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.04em" }}>Enter your address · Get your offer by text · 60 seconds</p>
+      </div>
+      <form onSubmit={handleAddressSubmit} className="p-8">
+        <label className="block text-sm font-semibold mb-2" style={{ color: "oklch(0.80 0.02 60)", fontFamily: "'Nunito Sans', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase", fontSize: "0.75rem" }}>Property Address</label>
+        <input
+          required
+          type="text"
+          placeholder="123 Main St, Fresno, CA"
+          value={address}
+          onChange={e => setAddress(e.target.value)}
+          autoFocus
+          style={{
+            background: "oklch(1 0 0 / 0.06)",
+            border: "1px solid oklch(1 0 0 / 0.25)",
+            color: "white",
+            fontFamily: "'Nunito Sans', sans-serif",
+            fontSize: "1.1rem",
+            borderRadius: "0.5rem",
+            padding: "0.9rem 1.1rem",
+            width: "100%",
+            outline: "none",
+            marginBottom: "1rem",
+          }}
+        />
+        <button
+          type="submit"
+          className="w-full flex items-center justify-center gap-3 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 hover:scale-[1.01]"
+          style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}
+        >
+          Get My Instant Cash Offer <ArrowRight size={20} />
+        </button>
+        <div className="flex items-center justify-center gap-4 mt-4">
+          <span className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>🔒 No obligation</span>
+          <span className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>⚡ Offer by text in minutes</span>
+          <span className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>🏠 Any condition</span>
+        </div>
+      </form>
+    </div>
+  );
+}
+
 function InlineOfferForm() {
   const [form, setForm] = useState({ name: "", phone: "", email: "", address: "", situation: "", timeline: "" });
   const { state, errorMessage, submit } = useFormSubmit();
@@ -344,48 +486,39 @@ export default function HomePage() {
         </div>
 
         <div className="container relative z-10">
-          <div className="max-w-2xl">
-            <div className="fade-up" style={{ animationDelay: "0s" }}>
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-6" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                Fresno's Honest Cash Home Buyer
-              </span>
-            </div>
-            <h1 className="fade-up fade-up-delay-1 text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
-              We Buy Your Home for Cash —<br />
-              <span style={{ color: "oklch(0.75 0.10 42)" }}>On Your Terms.</span>
-            </h1>
-            <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-8 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Facing foreclosure, behind on payments, inherited a home, or just need to sell fast? We offer fair cash prices, close in as little as 5–7 days, and handle everything — no repairs, no commissions, no stress.
-            </p>
-            <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
-                <button className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-lg text-white transition-all hover:scale-105" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}>
-                  Get My Free Cash Offer <ArrowRight size={20} />
-                </button>
-              </Link>
-              <a href={PHONE_HREF} className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105" style={{ background: "oklch(1 0 0 / 0.12)", border: "2px solid oklch(1 0 0 / 0.4)", color: "white", fontFamily: "'Nunito Sans', sans-serif", backdropFilter: "blur(4px)" }}>
-                <Phone size={20} /> {PHONE}
-              </a>
-            </div>
-            <div className="fade-up fade-up-delay-4 flex flex-wrap gap-x-6 gap-y-2 mt-8">
-              {["No repairs needed", "No agent commissions", "Close in 5–7 days or on your timeline", "Any condition"].map((t) => (
-                <div key={t} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.85 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  <CheckCircle2 size={16} style={{ color: "oklch(0.65 0.10 145)" }} />
-                  {t}
-                </div>
-              ))}
-            </div>
-            {/* Price Match Guarantee badge */}
-            <div className="fade-up fade-up-delay-4 mt-6 inline-flex items-center gap-3 px-5 py-3 rounded-xl" style={{ background: "oklch(0.55 0.13 42 / 0.18)", border: "1.5px solid oklch(0.75 0.10 42 / 0.5)", backdropFilter: "blur(6px)" }}>
-              <span style={{ fontSize: "1.25rem" }}>🏆</span>
-              <div>
-                <p className="font-bold text-sm" style={{ color: "oklch(0.95 0.05 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  We Match or Beat Any Cash Offer — Guaranteed
-                </p>
-                <p className="text-xs mt-0.5" style={{ color: "oklch(0.78 0.03 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.04em" }}>
-                  We pay more than our competitors · No games, no lowballs
-                </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Headline */}
+            <div>
+              <div className="fade-up" style={{ animationDelay: "0s" }}>
+                <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-6" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
+                  Fresno's Honest Cash Home Buyer
+                </span>
               </div>
+              <h1 className="fade-up fade-up-delay-1 text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
+                Find Out What Your Home Is Worth —<br />
+                <span style={{ color: "oklch(0.75 0.10 42)" }}>Get a Cash Offer in Minutes.</span>
+              </h1>
+              <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-6 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Enter your address and we'll text you a fair cash offer. No repairs, no commissions, no obligation — just a real number from a real buyer.
+              </p>
+              <div className="fade-up fade-up-delay-3 flex flex-wrap gap-x-6 gap-y-2">
+                {["No repairs needed", "No agent commissions", "Close in 5–7 days", "Any condition"].map((t) => (
+                  <div key={t} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.85 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    <CheckCircle2 size={16} style={{ color: "oklch(0.65 0.10 145)" }} />
+                    {t}
+                  </div>
+                ))}
+              </div>
+              <div className="fade-up fade-up-delay-4 mt-6 flex items-center gap-3">
+                <a href={PHONE_HREF} className="flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all hover:scale-105" style={{ background: "oklch(1 0 0 / 0.12)", border: "2px solid oklch(1 0 0 / 0.4)", color: "white", fontFamily: "'Nunito Sans', sans-serif", backdropFilter: "blur(4px)" }}>
+                  <Phone size={18} /> {PHONE}
+                </a>
+                <span className="text-sm" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'DM Mono', monospace" }}>or call directly</span>
+              </div>
+            </div>
+            {/* Right: Instant Cash Calculator */}
+            <div className="fade-up fade-up-delay-2">
+              <InstantCashCalculator />
             </div>
           </div>
         </div>
