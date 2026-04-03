@@ -891,6 +891,61 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>We also work with families before probate is complete — helping secure vacant properties, referring probate attorneys, and providing a preliminary offer so the family knows what the property is worth before the process begins. Call (559) 281-8016 or visit alderheritagehomes.com/probate-inherited-homes to learn more.</p>
     </div>
   ),
+
+  "sell-house-move-to-fairwinds-woodward-park-fresno": (
+    <div>
+      <p>Fairwinds Woodward Park sits at 9525 Fort Washington Road in northeast Fresno — one of the city's most desirable addresses for active seniors. Voted Best Independent Living and Best Assisted Living by U.S. News, it is a Leisure Care community offering independent living, assisted living, and memory care on a beautifully maintained campus near Woodward Park and the San Joaquin River Parkway.</p>
+      <p>If you or a parent is considering Fairwinds, you already know the appeal. What you may not know is how the home sale fits into the timing — and why that timing is the hardest part of the entire transition.</p>
+      <h2>The Waitlist Problem</h2>
+      <p>Fairwinds Woodward Park is a sought-after community. Independent living units have waitlists, and availability can be unpredictable. When your unit becomes available, the community typically gives you a short window — often 30 to 60 days — to confirm and move in. If you are not ready, you lose your spot and go back on the list.</p>
+      <p>This creates a timing problem that a traditional home sale cannot solve. A traditional listing in Fresno takes an average of 45 to 90 days from list to close — and that assumes no delays, no failed inspections, no buyer financing issues. If your Fairwinds unit opens up while your home is still on the market, you face an impossible choice: turn down the unit or carry two housing costs simultaneously.</p>
+      <h2>How a Cash Sale Solves the Timing Problem</h2>
+      <p>A cash sale closes in 5 to 7 days, or on whatever date you choose. If your Fairwinds unit opens up in 45 days, we close in 45 days. If you need to stay in your home for another 30 days after closing while you finalize your move, we offer a rent-back arrangement — you sell the home, receive your cash at closing, and rent from us while you get settled.</p>
+      <p>This flexibility is the primary reason seniors moving to retirement communities choose a cash sale over a traditional listing. It is not always about getting the absolute highest price — it is about certainty, speed, and not losing your spot at the community you have been waiting for.</p>
+      <h2>What Does Fairwinds Cost?</h2>
+      <p>Independent living at Fairwinds Woodward Park starts at approximately $3,185 per month, though rates vary by unit type and care level. Assisted living starts higher. Most residents fund their monthly costs through a combination of Social Security, pension income, investment withdrawals, and — critically — the equity from their home sale. For many Fresno homeowners who have owned their property for 20 or 30 years, the home equity is the largest single asset they have, and the home sale is what makes Fairwinds financially feasible.</p>
+      <h2>The Third-Party Broker Opinion — So You Know You Are Getting a Fair Price</h2>
+      <p>Connor is a licensed California real estate agent (DRE #02219124). Every cash offer he makes includes a free Broker Opinion of Value from an independent Fresno broker with 1,800+ completed transactions over a 25-year career. This tells you exactly what your home is worth on the open market before you decide anything. No other cash buyer in the Central Valley provides this. Call (559) 281-8016 or visit alderheritagehomes.com/sell-home-retirement-fresno to get started.</p>
+    </div>
+  ),
+
+  "sell-house-move-to-terraces-san-joaquin-gardens-fresno": (
+    <div>
+      <p>The Terraces at San Joaquin Gardens is unlike any other senior living community in Fresno. Set on 26 acres of beautifully maintained gardens at 5555 N Fresno Street, it is a nonprofit Life Plan Community (also called a Continuing Care Retirement Community, or CCRC) operated by HumanGood, one of the largest nonprofit senior living organizations in the country.</p>
+      <p>What makes The Terraces unique is its continuum of care model: residents can move in as independent living residents and, if their care needs change, transition to assisted living, memory care, or skilled nursing — all on the same campus, without having to move to a different facility. For many families, this is the most important feature: you choose The Terraces once, and it takes care of you through every stage.</p>
+      <h2>What The Terraces Costs</h2>
+      <p>The Terraces operates on an entrance fee plus monthly fee model, which is common for Life Plan Communities. Entrance fees at The Terraces vary significantly by unit type and contract structure — ranging from roughly $100,000 to $500,000 or more for larger units. Monthly fees typically range from $3,000 to $6,000+ depending on care level and unit size. The entrance fee is partially refundable in most contract types, which means a portion of it comes back to your estate when you leave.</p>
+      <p>For most Fresno homeowners, the entrance fee is funded directly from the home sale proceeds. This is the primary reason families contact us: they need to sell the family home quickly to secure a specific unit at The Terraces before it is taken by another applicant.</p>
+      <h2>The Waitlist and Timing</h2>
+      <p>The Terraces has waitlists for most unit types, particularly independent living cottages and larger apartments. When a unit becomes available, the community contacts the next person on the waitlist and gives them a limited time to commit. If you are not financially ready — meaning your home has not sold — you may lose your spot.</p>
+      <p>This is where a cash sale becomes essential. A traditional listing in Fresno takes 45 to 90 days. A cash sale closes in 5 to 7 days. If The Terraces calls and says your unit is available in 30 days, a cash sale is the only way to be ready. We also offer rent-back arrangements so you can close on your home, receive your cash, and continue living there while you finalize your move to The Terraces.</p>
+      <h2>Selling a Parent's Home to Fund The Terraces</h2>
+      <p>Many of the families we work with are adult children managing the sale of a parent's home to fund a move to The Terraces. Whether the parent is moving from their own home or from another facility, the process is the same: sell the home, use the proceeds for the entrance fee, and establish the monthly fee from ongoing income and investments. We work with Power of Attorney holders, trustees, and families managing this transition from out of town. Call (559) 281-8016 or visit alderheritagehomes.com/sell-parents-house-fresno for more information.</p>
+    </div>
+  ),
+
+  "fresno-senior-living-guide-2026": (
+    <div>
+      <p>Fresno has more senior living options than most people realize — from luxury independent living communities to nonprofit life plan campuses to more affordable assisted living facilities. This guide covers every major option, what it costs, what the waitlists look like, and how to sell your home to fund the move.</p>
+      <h2>The Continuum of Senior Living</h2>
+      <p>Before reviewing specific communities, it helps to understand the different levels of senior living. Independent living is for active seniors who do not need daily assistance — it typically includes meals, housekeeping, activities, and transportation. Assisted living provides help with daily activities like bathing, dressing, and medication management. Memory care is specialized assisted living for residents with Alzheimer's or other forms of dementia. Skilled nursing (nursing home) provides 24-hour medical care. Life Plan Communities (CCRCs) offer all of these on one campus under a single contract.</p>
+      <h2>Fairwinds Woodward Park</h2>
+      <p>Located at 9525 Fort Washington Road in northeast Fresno, Fairwinds Woodward Park is a Leisure Care community offering independent living, assisted living, and memory care. It has been voted Best Independent Living and Best Assisted Living by U.S. News. Independent living starts at approximately $3,185 per month. The community is near Woodward Park and the San Joaquin River Parkway, in one of Fresno's most desirable neighborhoods. Waitlists apply for most unit types.</p>
+      <h2>The Terraces at San Joaquin Gardens</h2>
+      <p>Located at 5555 N Fresno Street, The Terraces is a HumanGood nonprofit Life Plan Community on 26 acres. It offers independent living, assisted living, memory care, and skilled nursing on one campus. Entrance fees range from approximately $100,000 to $500,000+ depending on unit type and contract structure. Monthly fees range from $3,000 to $6,000+. The entrance fee is partially refundable. This is the most financially complex option but also the most comprehensive — residents are guaranteed care through every stage without having to move to a different facility.</p>
+      <h2>Oakmont of Fresno</h2>
+      <p>Located in northeast Fresno, Oakmont of Fresno is a luxury senior living community offering independent living, assisted living, and memory care. Oakmont is known for award-winning dining, resort-style amenities, and a high staff-to-resident ratio. It is one of the newer communities in Fresno and tends to attract residents who prioritize amenities and lifestyle. Monthly costs vary by care level and unit type — contact the community directly for current pricing.</p>
+      <h2>Maravillosa</h2>
+      <p>Maravillosa is a brand-new luxury senior apartment community in central Fresno. It is an active adult community (55+) rather than an assisted living facility — meaning it is for independent seniors who want a high-end lifestyle without the medical care component. It is one of the newest options in Fresno and is positioned at the luxury end of the independent living market.</p>
+      <h2>Sierra View Homes (Reedley)</h2>
+      <p>For families in the Kings River area, Sierra View Homes in Reedley is a well-regarded nonprofit senior living community offering independent living, assisted living, and memory care. It is affiliated with the Mennonite Brethren church but serves residents of all backgrounds. It is generally more affordable than the Fresno luxury options and has a strong reputation for compassionate care.</p>
+      <h2>How to Fund the Move: Selling Your Home</h2>
+      <p>For most Fresno seniors, the home is the largest asset they own. The home sale is what makes the move to a retirement community financially possible. The challenge is timing: retirement communities have waitlists, and when your unit opens up, you often have 30 to 60 days to commit. A traditional home sale takes 45 to 90 days. A cash sale closes in 5 to 7 days.</p>
+      <p>We offer a rent-back arrangement for seniors who need to sell their home but are not ready to move out immediately. You sell the home, receive your cash at closing, and rent from us while you finalize your move. This solves the timing problem that prevents many seniors from taking advantage of retirement community openings. Call (559) 281-8016 or visit alderheritagehomes.com/sell-home-retirement-fresno to learn more.</p>
+      <h2>Proposition 19 — The Property Tax Benefit for Seniors</h2>
+      <p>California's Proposition 19 allows homeowners 55 and older to transfer their property tax base to a new primary residence anywhere in California, up to three times. If you have owned your Fresno home for decades and have a low assessed value, this can significantly reduce property taxes on your next home — even if the new home is more expensive. Note that this applies to a new primary residence, not to a rental or investment property. Consult a CPA or tax attorney for advice specific to your situation.</p>
+    </div>
+  ),
 };
 
 export default function BlogPost() {
