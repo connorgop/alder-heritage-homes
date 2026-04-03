@@ -352,8 +352,9 @@ export default function ClovisPage() {
             </h3>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
+                { label: "Sell My House Fast Clovis CA", href: "/sell-house-fast-clovis-ca" },
                 { label: "Sell My House Fast Fresno CA", href: "/sell-house-fast-fresno-ca" },
-                { label: "Stop Foreclosure in California", href: "/stop-foreclosure" },
+                { label: "Stop Foreclosure in California", href: "/foreclosure-help" },
                 { label: "Sell an Inherited Home in Fresno", href: "/probate-inherited-homes" },
                 { label: "Sell a House in Divorce", href: "/sell-house-divorce" },
                 { label: "Sell a House With Tenants", href: "/tired-landlord" },

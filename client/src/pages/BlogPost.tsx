@@ -1249,6 +1249,87 @@ const articleContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  "how-long-does-cash-sale-take-california": (
+    <div className="prose-heritage">
+      <p>Every "we buy houses" company in California advertises that they can close in 7 days. And technically, they can — but the real question is: <strong>how long does it actually take from your first phone call to cash in your bank account?</strong> The honest answer is more nuanced than the ads suggest, and understanding the real timeline will help you plan your move, your finances, and your next chapter.</p>
+      <h2>The Fastest Possible Timeline: 5–7 Business Days</h2>
+      <p>In ideal circumstances — a free-and-clear property with no liens, no title complications, a motivated seller who has already vacated, and a buyer with funds ready — a cash sale can close in as few as 5 business days in California. Here's what that compressed timeline looks like:</p>
+      <ul>
+        <li><strong>Day 1:</strong> First call or form submission. The buyer visits the property and presents a written offer.</li>
+        <li><strong>Day 2:</strong> You review and sign the purchase agreement. The buyer opens escrow and orders a preliminary title report.</li>
+        <li><strong>Day 3–4:</strong> Title company reviews the report, clears any minor issues, and prepares closing documents.</li>
+        <li><strong>Day 5:</strong> You sign closing documents (can be done remotely via notary). Funds wire to your account same day or next business day.</li>
+      </ul>
+      <p>This is the best-case scenario. It requires everything to go smoothly — and in our experience, something almost always requires a little extra time.</p>
+      <h2>The Typical Timeline: 10–14 Business Days</h2>
+      <p>For most cash sales in California, the realistic timeline is 10 to 14 business days. Here's why the extra time is usually needed:</p>
+      <ul>
+        <li><strong>Title issues:</strong> Many properties have old liens, judgment liens, unpaid HOA dues, or title defects that need to be resolved before closing. This is the most common cause of delays.</li>
+        <li><strong>Probate properties:</strong> If the property is in probate, you cannot close until the court has issued Letters Testamentary or Letters of Administration. This is outside everyone's control.</li>
+        <li><strong>Occupied properties:</strong> If tenants or the seller are still in the home, coordinating move-out timing adds days to the process.</li>
+        <li><strong>Seller document gathering:</strong> Mortgage payoff statements, HOA documents, and other paperwork takes time to obtain from third parties.</li>
+      </ul>
+      <h2>What Can Slow Things Down</h2>
+      <p>The biggest delays in cash sales come from title issues — not from the buyer or seller. In California, title companies are thorough, and they will not issue title insurance until every lien, judgment, and encumbrance is addressed. If your property has a mechanics lien from a contractor, an old IRS tax lien, or an unresolved judgment from a creditor, resolving these takes time. We've seen simple title issues resolved in 48 hours and complex ones take 3–4 weeks.</p>
+      <p>The second most common delay is the seller's timeline. Many sellers need time to move out, sort through belongings, or coordinate with family members. A good cash buyer will work with your timeline — not pressure you to close before you're ready.</p>
+      <h2>How Alder Heritage Homes Handles the Timeline</h2>
+      <p>When you call us at (559) 281-8016, we'll give you an honest estimate of the timeline based on your specific property and situation. If you're facing a foreclosure auction in 18 days, we'll tell you whether we can close in time. If you need 60 days to move out, we'll accommodate that. We close on your schedule — not ours. Call us today for a free, no-pressure conversation.</p>
+    </div>
+  ),
+  "wholesaler-vs-cash-buyer-california-difference": (
+    <div className="prose-heritage">
+      <p>If you've searched "sell my house fast" or "cash home buyers" in California, you've seen dozens of ads from companies claiming to buy your house for cash. But here's what most of those ads don't tell you: <strong>the majority of "cash buyers" in California are not actually buying your house.</strong> They're wholesalers — and the difference could cost you $20,000 or more.</p>
+      <h2>What Is a Real Estate Wholesaler?</h2>
+      <p>A real estate wholesaler is someone who gets your home under contract at a low price, then sells that contract to a third-party investor before closing — keeping the difference as their fee. They never actually buy your home. They use your property as a vehicle to make money without ever putting their own capital at risk.</p>
+      <p>Here's how the typical wholesale transaction works: A wholesaler contacts you, presents themselves as a cash buyer, and offers you $180,000 for your home. They get you to sign a purchase agreement. They then market your property to their investor network and find a buyer willing to pay $210,000. They assign the contract to that investor for a $30,000 assignment fee — which comes directly out of your equity. You never knew the home was worth $210,000 to a real buyer.</p>
+      <h2>Is Wholesaling Legal in California?</h2>
+      <p>This is where it gets complicated. California real estate law requires anyone who negotiates real estate transactions for compensation to hold a real estate license. Wholesalers who market properties without a license may be violating California Business and Professions Code Section 10130. The California Department of Real Estate has taken enforcement action against unlicensed wholesalers. However, enforcement is inconsistent, and many wholesalers continue to operate in a legal gray area.</p>
+      <h2>How to Tell the Difference: 5 Questions to Ask</h2>
+      <p>Before you sign anything with a "cash buyer," ask these five questions directly:</p>
+      <ol>
+        <li><strong>"Are you the actual buyer, or will you be assigning this contract?"</strong> A real buyer will answer clearly: "We are the buyer." A wholesaler will often deflect or give a vague answer.</li>
+        <li><strong>"Can you provide proof of funds?"</strong> A real cash buyer can show a bank statement or proof of funds letter within 24 hours. A wholesaler has no funds to show.</li>
+        <li><strong>"Are you a licensed California real estate agent or broker?"</strong> Not all real buyers are licensed agents, but a licensed agent has legal accountability that an unlicensed wholesaler does not.</li>
+        <li><strong>"Does your contract include an assignment clause?"</strong> Read the purchase agreement carefully. If it says "and/or assigns" after the buyer's name, that's a wholesaler contract.</li>
+        <li><strong>"Who will be on the closing documents?"</strong> Ask who will actually appear as the buyer on the grant deed. If the answer is vague or "we'll let you know closer to closing," walk away.</li>
+      </ol>
+      <h2>How Alder Heritage Homes Is Different</h2>
+      <p>Connor Morris is a licensed California real estate agent (DRE #02219124) and the direct end-buyer. When you sign with Alder Heritage Homes, we are the buyer — period. We close with our own funds. We never assign contracts. We provide proof of funds within 24 hours. And we'll answer every one of those five questions clearly and in writing. Call (559) 281-8016 to talk to Connor directly.</p>
+    </div>
+  ),
+  "sell-house-during-divorce-california-guide": (
+    <div className="prose-heritage">
+      <p>Divorce is one of the most emotionally and financially complex situations a homeowner can face. When the family home is involved, the stakes are high — and the decisions you make during the divorce process can have lasting financial consequences. This guide covers everything California homeowners need to know about selling the family home during a divorce.</p>
+      <h2>California Is a Community Property State</h2>
+      <p>California is one of nine community property states, which means that property acquired during the marriage is generally owned equally (50/50) by both spouses. This applies to the family home unless it was owned by one spouse before the marriage, inherited by one spouse, or received as a gift to one spouse. Community property rules mean that both spouses must agree to sell the home — or a court must order the sale.</p>
+      <h2>Option 1: Both Spouses Agree to Sell</h2>
+      <p>The simplest and fastest path is mutual agreement. Both spouses agree to sell the home, split the proceeds according to the divorce settlement, and move on. In this scenario, a cash sale is often the fastest and cleanest option — it eliminates the uncertainty of a traditional listing, avoids the need for both spouses to cooperate on showings and repairs, and closes on a timeline that works for both parties.</p>
+      <h2>Option 2: One Spouse Buys Out the Other</h2>
+      <p>If one spouse wants to keep the home, they can buy out the other spouse's equity share. This requires refinancing the mortgage into one spouse's name (which requires qualifying for the loan independently) and paying the other spouse their equity share in cash. This option is only viable if the spouse keeping the home can qualify for a new mortgage on their own income.</p>
+      <h2>Option 3: Court-Ordered Sale</h2>
+      <p>If the spouses cannot agree, either spouse can petition the court to order a sale of the property. A court-ordered sale (called a "partition action" in California) can be a lengthy and expensive process — but it is available as a last resort. Courts generally prefer to order a sale rather than force one spouse to buy out the other.</p>
+      <h2>Why a Cash Sale Is Often the Best Option in Divorce</h2>
+      <p>A traditional listing requires both spouses to cooperate on repairs, showings, pricing decisions, and negotiations — which can be extremely difficult during a contentious divorce. A cash sale eliminates most of these friction points: there are no repairs to argue about, no showings to coordinate, no buyer financing contingencies to worry about, and a closing date that can be set in advance. The proceeds are split at closing according to the divorce settlement, and both parties can move on.</p>
+      <h2>Tax Considerations When Selling During Divorce</h2>
+      <p>California homeowners who have lived in their home for at least 2 of the last 5 years can exclude up to $500,000 in capital gains from the sale if they are still married at the time of sale (or $250,000 each if they file separately). Timing the sale before the divorce is finalized can maximize this exclusion. Consult a CPA or tax attorney before making this decision.</p>
+      <h2>How We Help Divorcing Homeowners in Fresno</h2>
+      <p>We've worked with many divorcing couples in Fresno and the Central Valley. We're experienced in working with both parties, their attorneys, and mediators to structure a sale that works for everyone. We close quickly, pay all closing costs, and can accommodate a range of timelines. Call (559) 281-8016 for a confidential conversation about your situation.</p>
+    </div>
+  ),
+  "clovis-ca-cash-home-buyer-guide-2026": (
+    <div className="prose-heritage">
+      <p>Clovis, California has consistently ranked as one of the best places to live in the Central Valley — and for good reason. Nationally recognized schools, low crime rates, and a strong sense of community have made Clovis one of the most desirable real estate markets in the region. But not every Clovis homeowner is in a position to wait for a traditional listing. This guide is for homeowners who need to sell their Clovis home quickly, fairly, and without the hassle of a traditional sale.</p>
+      <h2>The Clovis Real Estate Market in 2026</h2>
+      <p>Clovis home prices have remained relatively strong in 2026, supported by the city's reputation for excellent schools and quality of life. The Clovis Unified School District continues to attract families from throughout the Central Valley and even from the Bay Area, where remote workers can buy a 2,000 square foot home in Clovis for less than a studio apartment in San Jose. This demand has kept Clovis prices more stable than many other Central Valley markets.</p>
+      <p>However, elevated mortgage rates (hovering between 6.5% and 7.5% in early 2026) have reduced the pool of qualified buyers and extended days on market for homes that are priced incorrectly or need significant repairs. Sellers who need to move quickly or whose homes need work are finding that a traditional listing is not always the fastest or most reliable path.</p>
+      <h2>Who Should Consider a Cash Sale in Clovis</h2>
+      <p>A cash sale makes sense for Clovis homeowners in specific situations: those facing foreclosure who need to close before the auction date; those who have inherited a property and don't want to manage repairs and a lengthy listing process; landlords with difficult tenants who want to exit the rental business; homeowners going through a divorce who need a clean, fast resolution; and anyone whose home needs significant repairs that they can't afford or don't want to deal with.</p>
+      <p>If your home is in excellent condition and you have the time to wait for a traditional sale, a listing with a top Clovis agent may net you more money. We'll tell you honestly which path makes more sense for your situation — even if that means we don't get to buy your home.</p>
+      <h2>What to Expect When You Call Alder Heritage Homes</h2>
+      <p>When you call (559) 281-8016, you'll speak directly with Connor Morris — a licensed California real estate agent (DRE #02219124) who is also the actual buyer. Connor will ask you a few questions about your property and situation, schedule a visit (or do a virtual walkthrough if you prefer), and present a written cash offer within 24–48 hours. There's no obligation, no pressure, and no cost to you.</p>
+      <p>We've purchased homes throughout Clovis — from Old Town bungalows to new construction in Harlan Ranch — in every condition imaginable. We buy in every Clovis neighborhood, at every price point, in every situation. Call us today to find out what your Clovis home is worth as a cash sale.</p>
+    </div>
+  ),
   "central-valley-real-estate-outlook-2026-2027": (
     <div>
       <p>The Central Valley housing market — encompassing Fresno, Tulare, Kings, Madera, Merced, Stanislaus, and San Joaquin counties — is at an inflection point in 2026. The forces shaping the market are different from those driving coastal California real estate, and understanding them is essential for anyone considering buying or selling in the region over the next 12 to 24 months.</p>

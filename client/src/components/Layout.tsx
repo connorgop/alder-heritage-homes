@@ -41,6 +41,7 @@ const services = [
 
 const trust = [
   { label: "Why We're Different", href: "/why-choose-us" },
+  { label: "⭐ Reviews", href: "/reviews" },
   { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
   { label: "Don't Hire Your Friend Realtor", href: "/dont-hire-friend-realtor" },
   { label: "⚠️ Vacant Home Security", href: "/vacant-property-warning" },
@@ -437,6 +438,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/blog" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Blog &amp; Resources</Link></li>
                 <li><Link href="/faq" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>FAQ</Link></li>
                 <li><Link href="/why-choose-us" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Why Choose Us</Link></li>
+                <li><Link href="/reviews" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Reviews</Link></li>
                 <li><Link href="/dont-get-wholesaled" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Don't Get Wholesaled</Link></li>
                 <li><Link href="/cash-offer-calculator" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Cash Offer Calculator</Link></li>
                 <li><Link href="/contact" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Contact</Link></li>
