@@ -38,6 +38,7 @@ import MilitaryPCS from "./pages/services/MilitaryPCS";
 import FreeOffer from "./pages/FreeOffer";
 import SeniorSeller from "./pages/services/SeniorSeller";
 import ParentsHouse from "./pages/services/ParentsHouse";
+import SellHouseFastFresno from "./pages/SellHouseFastFresno";
 
 // Google Ads landing pages (no nav, conversion-optimized)
 import ArmRateAd from "./pages/ads/ArmRateAd";
@@ -132,6 +133,7 @@ function Router() {
       <Route path="/free-offer" component={FreeOffer} />
       <Route path="/sell-home-retirement-fresno" component={SeniorSeller} />
       <Route path="/sell-parents-house-fresno" component={ParentsHouse} />
+      <Route path="/sell-house-fast-fresno-ca" component={SellHouseFastFresno} />
 
       {/* City pages */}
       <Route path="/we-buy-houses-fresno" component={FresnoPage} />

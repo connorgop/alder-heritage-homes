@@ -709,4 +709,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Primary Keyword Page -->
+  <url>
+    <loc>https://www.alderheritagehomes.com/sell-house-fast-fresno-ca</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
