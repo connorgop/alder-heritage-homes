@@ -15,6 +15,7 @@ const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 
 const services = [
+  { label: "🧮 Free Cash Offer Calculator", href: "/cash-offer-calculator" },
   { label: "Foreclosure Help", href: "/foreclosure-help" },
   { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
   { label: "Can't Afford My Home", href: "/cant-afford-my-home" },
@@ -245,6 +246,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   </div>
                 )}
               </div>
+              {/* Calculator standalone link */}
+              <Link href="/cash-offer-calculator">
+                <span
+                  className="flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-bold transition-colors"
+                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.28 0.05 155)", background: "oklch(0.28 0.05 155 / 0.08)", cursor: "pointer" }}
+                >
+                  🧮 Calculator
+                </span>
+              </Link>
             </nav>
 
             {/* Phone + CTA */}
@@ -320,6 +330,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 )}
               </div>
 
+              <MobileNavLink href="/cash-offer-calculator">🧮 Free Cash Offer Calculator</MobileNavLink>
               <MobileNavLink href="/faq">FAQ</MobileNavLink>
               <MobileNavLink href="/about">About Connor</MobileNavLink>
               <MobileNavLink href="/blog">Blog &amp; Resources</MobileNavLink>

@@ -39,6 +39,7 @@ import FreeOffer from "./pages/FreeOffer";
 import SeniorSeller from "./pages/services/SeniorSeller";
 import ParentsHouse from "./pages/services/ParentsHouse";
 import SellHouseFastFresno from "./pages/SellHouseFastFresno";
+import CashOfferCalculator from "./pages/CashOfferCalculator";
 
 // Google Ads landing pages (no nav, conversion-optimized)
 import ArmRateAd from "./pages/ads/ArmRateAd";
@@ -134,6 +135,7 @@ function Router() {
       <Route path="/sell-home-retirement-fresno" component={SeniorSeller} />
       <Route path="/sell-parents-house-fresno" component={ParentsHouse} />
       <Route path="/sell-house-fast-fresno-ca" component={SellHouseFastFresno} />
+      <Route path="/cash-offer-calculator" component={CashOfferCalculator} />
 
       {/* City pages */}
       <Route path="/we-buy-houses-fresno" component={FresnoPage} />

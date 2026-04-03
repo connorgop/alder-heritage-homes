@@ -836,28 +836,30 @@ export default function HomePage() {
               <span style={{ fontSize: "1.6rem", lineHeight: 1 }}>⚠️</span>
               <div>
                 <p className="font-bold text-white text-lg" style={{ fontFamily: "'Lora', serif" }}>
-                  A Word of Caution About Listing With a Realtor Right Now
+                  A Word of Caution: Don't Hire a Friend, Family Member, or Part-Time Realtor
                 </p>
                 <p className="text-sm mt-0.5" style={{ color: "oklch(0.95 0.02 60)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.04em" }}>
-                  Real estate transactions have dropped 40%+ in the past few years
+                  Your home is likely your largest asset — it deserves a specialist, not a favor
                 </p>
               </div>
             </div>
             {/* Body */}
             <div className="px-6 py-6" style={{ background: "oklch(0.99 0.01 60)" }}>
-              <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                With far fewer buyers in the market, <strong>desperate agents will tell you your home is worth more than it actually is</strong> — just to win your listing agreement. That agreement is a legal partnership. Once you sign, you're locked in.
+              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                We hear it constantly: <em>"My cousin just got her license"</em> or <em>"My neighbor is an agent and offered to help."</em> We understand the impulse — it feels supportive. But <strong>hiring a friend or family member who dabbles in real estate is one of the most expensive mistakes a home seller can make.</strong>
               </p>
-              <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Here's what happens next: your overpriced home sits. Days on market pile up. Your agent calls asking you to cut the price — once, twice, three times. Finally, a buyer makes an offer. Then comes the pest inspection ($5,000+), the home inspection ($8,000+), seller credits, and the agent's 5–6% commission. By the time you close, you've lost tens of thousands of dollars and months of your life.
+              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                The Fresno market is competitive. Pricing strategy, negotiation, days-on-market management, and buyer qualification are skills that take hundreds of transactions to develop. An agent doing 5–8 deals a year — no matter how well-meaning — simply does not have the pattern recognition to protect your equity the way a specialist does.
               </p>
-              <div className="rounded-xl p-4 mb-5" style={{ background: "oklch(0.65 0.20 27 / 0.08)", border: "1px solid oklch(0.65 0.20 27 / 0.25)" }}>
-                <p className="font-semibold mb-2" style={{ color: "oklch(0.40 0.12 27)", fontFamily: "'Nunito Sans', sans-serif" }}>The math on a typical overpriced listing:</p>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+
+              {/* Red flag callout */}
+              <div className="rounded-xl p-4 mb-5" style={{ background: "oklch(0.65 0.20 27 / 0.07)", border: "1px solid oklch(0.65 0.20 27 / 0.30)" }}>
+                <p className="font-bold mb-3" style={{ color: "oklch(0.40 0.12 27)", fontFamily: "'Lora', serif" }}>What a low-volume agent costs you:</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-3">
                   {[
-                    { label: "Pest inspection", cost: "$3,000–$8,000" },
-                    { label: "Home inspection repairs", cost: "$5,000–$15,000" },
-                    { label: "Seller credits", cost: "$3,000–$10,000" },
+                    { label: "Overpriced listing → price reductions", cost: "$10,000–$30,000" },
+                    { label: "Pest & home inspection repairs", cost: "$5,000–$15,000" },
+                    { label: "Seller credits to close", cost: "$3,000–$10,000" },
                     { label: "Agent commission", cost: "5–6% of sale price" },
                   ].map((item) => (
                     <div key={item.label} className="rounded-lg p-3 text-center" style={{ background: "oklch(1 0 0)", border: "1px solid oklch(0.88 0.02 85)" }}>
@@ -866,12 +868,21 @@ export default function HomePage() {
                     </div>
                   ))}
                 </div>
+                <p className="text-sm italic" style={{ color: "oklch(0.45 0.05 27)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  A home that sits 90+ days and gets beaten down in price will net you <strong>less</strong> than a properly priced home that closes in 30 days — even after the commission.
+                </p>
               </div>
+
+              {/* The standard */}
+              <div className="rounded-xl p-4 mb-5" style={{ background: "oklch(0.28 0.05 155 / 0.07)", border: "1px solid oklch(0.28 0.05 155 / 0.25)" }}>
+                <p className="font-bold mb-2" style={{ color: "oklch(0.28 0.05 155)", fontFamily: "'Lora', serif" }}>The standard Connor holds: 50+ closed transactions per year in your city.</p>
+                <p className="text-sm leading-relaxed" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  If you decide a traditional listing is the right move, Connor will refer you to one of Fresno's top-producing agents — people he personally knows, trusts, and has vetted. These are agents closing 50 to 100+ deals a year in the Central Valley. They know the micro-market, they price correctly from day one, and they have the buyer network to get your home sold fast. <strong>Connor is also a licensed CA agent (DRE #02219124)</strong> and works alongside these professionals daily.
+                </p>
+              </div>
+
               <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                <strong>Our honest advice:</strong> If you want to list with a Realtor, hire one who prices your home at fair market value from day one and has a track record of getting homes sold — not one who flatters you with a high number to win your business. A home priced right sells fast and nets you more money than one that sits for 90 days and gets beaten down.
-              </p>
-              <p className="text-base leading-relaxed" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Or — skip the process entirely. We buy your home as-is, in cash, with no commissions, no inspections, and no surprises. You choose the closing date.
+                <strong>The bottom line:</strong> You have three options. Sell to Connor directly for cash (fastest, no commissions, no repairs). List with a top-producing agent Connor refers you to (best net price if your home is in good shape). Or call Connor first and let him tell you honestly which path makes more sense for your specific situation — he'll never push you toward the option that benefits him most.
               </p>
               <div className="mt-5 flex flex-col sm:flex-row gap-3">
                 <Link href="/contact">
@@ -881,7 +892,7 @@ export default function HomePage() {
                 </Link>
                 <Link href="/dont-hire-friend-realtor">
                   <button className="flex items-center gap-2 px-6 py-3 rounded-lg font-bold text-sm" style={{ background: "transparent", border: "2px solid oklch(0.55 0.13 42)", color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Read: Don't Hire Your Friend Realtor
+                    Read: Don't Hire Your Friend Realtor →
                   </button>
                 </Link>
               </div>
