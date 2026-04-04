@@ -2902,6 +2902,35 @@ export default function BlogPost() {
                 </ul>
               </div>
 
+              {/* Cities We Serve — internal links to city pages */}
+              <div className="p-6 rounded-2xl" style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)" }}>
+                <h3 className="font-bold text-sm mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                  Cities We Serve
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { city: "Fresno", href: "/we-buy-houses-fresno" },
+                    { city: "Clovis", href: "/we-buy-houses-clovis" },
+                    { city: "Visalia", href: "/we-buy-houses-visalia" },
+                    { city: "Bakersfield", href: "/we-buy-houses-bakersfield" },
+                    { city: "Stockton", href: "/we-buy-houses-stockton" },
+                    { city: "Modesto", href: "/we-buy-houses-modesto" },
+                    { city: "Merced", href: "/we-buy-houses-merced" },
+                    { city: "Turlock", href: "/we-buy-houses-turlock" },
+                    { city: "Porterville", href: "/we-buy-houses-porterville" },
+                    { city: "Madera", href: "/we-buy-houses-madera" },
+                    { city: "Hanford", href: "/we-buy-houses-hanford" },
+                    { city: "Tulare", href: "/we-buy-houses-tulare" },
+                  ].map((c) => (
+                    <Link key={c.city} href={c.href} className="text-xs font-medium px-2.5 py-1 rounded-full transition-colors" style={{ background: "oklch(0.55 0.13 42 / 0.1)", color: "oklch(0.40 0.10 42)", border: "1px solid oklch(0.55 0.13 42 / 0.2)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                      {c.city}
+                    </Link>
+                  ))}
+                </div>
+                <Link href="/we-buy-houses-central-valley" className="flex items-center gap-1 text-xs font-bold mt-3" style={{ color: "oklch(0.45 0.12 42)", fontFamily: "'DM Mono', monospace" }}>
+                  <ArrowRight size={11} /> All Central Valley Cities
+                </Link>
+              </div>
               {related.length > 0 && (
                 <div className="p-6 rounded-2xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
                   <h3 className="font-bold text-sm mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
