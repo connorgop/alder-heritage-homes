@@ -54,6 +54,7 @@ const trust = [
 ];
 
 const cities = [
+  { label: "All Central Valley Cities", href: "/we-buy-houses-central-valley" },
   { label: "Fresno", href: "/we-buy-houses-fresno" },
   { label: "Clovis", href: "/we-buy-houses-clovis" },
   { label: "Madera", href: "/we-buy-houses-madera" },
