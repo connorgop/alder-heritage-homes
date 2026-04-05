@@ -3021,6 +3021,38 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>Our process in Kings County is identical to our process throughout the Central Valley: we make a fair cash offer within 24 hours, close in 7–21 days, and buy in any condition. We handle all the paperwork and pay all closing costs. You don't need to make any repairs, clean the property, or deal with showings.</p>
       <p>Ready to sell your Kings County home? <strong>Call (559) 281-8016</strong> or visit <a href="/we-buy-houses-kings-county">our Kings County page</a> for a free, no-obligation consultation.</p>
     </div>
+  ),
+  "clovis-inherited-murder-home-cash-sale": (
+    <div className="prose-heritage">
+      <p>This is a true story. We're sharing it — with the seller's permission — because it represents the most difficult, most emotional, and most meaningful transaction we've ever completed. If you're dealing with an inherited home in a difficult situation, we hope this story helps you understand what's possible.</p>
+      <h2>The Background: A Daughter Murdered, a Home Left Behind</h2>
+      <p>A mother living in the Central Valley received a phone call no parent should ever receive. Her daughter had been murdered by her husband in their Clovis, California home. The husband was arrested and convicted. The daughter's home — the scene of the crime — passed to the mother as the sole heir through probate.</p>
+      <p>For nearly two years, the mother could not bring herself to visit the property. Not once. She knew the home existed. She knew it was hers. But she could not face it. Meanwhile, the murderer's mother had moved into the home and was living there as a squatter — occupying the property without permission, without paying rent, and without any legal right to be there.</p>
+      <p>By the time the mother reached out to Alder Heritage Homes, the situation had compounded: the squatter had been living there for over two years, utilities had been disconnected, the property had accumulated years of debris, and the home was in a condition that no traditional buyer would touch.</p>
+      <h2>Day 1: Entering in Hazmat Suits</h2>
+      <p>Before we could assess the property, we had to address the squatter. Working with local law enforcement and a licensed eviction attorney, we coordinated the lawful removal of the unauthorized occupant. This process took several weeks and required careful documentation to ensure the eviction was handled correctly under California law.</p>
+      <p>Once the property was cleared, Connor and his team suited up in full hazmat gear for the initial walkthrough. What they found was consistent with a property that had been neglected, misused, and left without utilities for an extended period:</p>
+      <ul>
+        <li><strong>No water service:</strong> The water had been shut off and the pipes had not been winterized properly</li>
+        <li><strong>No sewer service:</strong> The sewer connection had issues requiring repair before the property could be occupied</li>
+        <li><strong>Years of accumulated debris:</strong> The squatter had left behind an enormous amount of personal property and trash throughout the home</li>
+        <li><strong>Biohazard concerns:</strong> Given the history of the property, professional hazmat remediation was required before any renovation work could begin</li>
+      </ul>
+      <p>The seller was not present for this walkthrough. She had asked us to handle everything and to let her know when it was done. That was the agreement we made — and the one we kept.</p>
+      <h2>The Purchase: A Cash Offer Before Seeing the Interior</h2>
+      <p>We made the seller a cash offer of $200,000 for the property in its as-is condition — before we had fully seen the interior. In this case, we understood the situation well enough to make a fair offer based on the after-repair value of the home, the estimated scope of work, and our commitment to the seller.</p>
+      <p>The seller accepted. We opened escrow, and the purchase closed on schedule. The seller received $200,000 cash without ever having to visit the property, make any repairs, deal with the squatter directly, or navigate the probate process alone. We handled all of it.</p>
+      <h2>The Renovation: Restoring a Home to Life</h2>
+      <p>After closing, our team began the full renovation process: professional hazmat remediation, complete interior cleanout, plumbing repairs to restore water and sewer service, cosmetic updates throughout the home, landscaping restoration, and all necessary permits and inspections.</p>
+      <h2>The Day She Saw It</h2>
+      <p>We invited the seller to see the finished home on the day of closing. She had not seen the property in over two years. When she arrived and saw the renovated home — clean, repaired, with fresh landscaping — she broke down in tears. Connor met her at the curb. The photos on our <a href="/testimonials">Testimonials page</a> and <a href="/about">About page</a> were taken that day.</p>
+      <p>She said: <em>"I never had to see it the way it was. Connor handled everything. I just had to sign and show up to closing."</em></p>
+      <h2>What This Means for Inherited Property Owners</h2>
+      <p>If you have inherited a property in California — regardless of its condition, its history, or the circumstances surrounding it — you have options. You do not have to visit the property. You do not have to clean it out. You do not have to deal with squatters or deferred maintenance on your own.</p>
+      <p>A cash sale through a licensed California agent means you can close on your timeline, receive a fair price, and move forward — without ever having to face the hardest parts of the process alone.</p>
+      <p>Call Connor directly at <strong>(559) 281-8016</strong>. The conversation is free, confidential, and without any obligation.</p>
+      <p>See also: <a href="/we-buy-houses-clovis">We Buy Houses in Clovis</a> · <a href="/blog/selling-inherited-property-california">Selling an Inherited Property in California</a> · <a href="/blog/selling-house-with-squatters-california">How to Sell a House with Squatters in California</a></p>
+    </div>
   )
 
 };

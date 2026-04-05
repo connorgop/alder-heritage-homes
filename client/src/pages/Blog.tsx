@@ -1352,6 +1352,15 @@ const _blogPostsRaw = [
     readTime: "5 min read",
     image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&auto=format&fit=crop",
   },
+  {
+    slug: "clovis-inherited-murder-home-cash-sale",
+    title: "The Clovis Inherited Murder Home: How We Helped a Mother Sell a Property She Could Never Visit",
+    excerpt: "A true story about one of the most difficult transactions we've ever completed — an inherited home in Clovis with a 2-year squatter, no utilities, and a history no traditional buyer would touch. The seller received $200,000 cash and never had to see the property.",
+    category: "Case Study",
+    date: "April 5, 2026",
+    readTime: "8 min read",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-hug_80f9b3b4.webp",
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 

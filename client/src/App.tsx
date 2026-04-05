@@ -52,6 +52,9 @@ import SellHouseFastMadera from "./pages/SellHouseFastMadera";
 import CentralValleyHub from "./pages/CentralValleyHub";
 import SellHouseFastCentralValley from "./pages/SellHouseFastCentralValley";
 import FresnoHousingMarket from "./pages/FresnoHousingMarket";
+import VisaliaHousingMarket from "./pages/VisaliaHousingMarket";
+import HowItWorks from "./pages/HowItWorks";
+import BeforeAfter from "./pages/BeforeAfter";
 import Testimonials from "./pages/Testimonials";
 import CashOfferCalculator from "./pages/CashOfferCalculator";
 
@@ -163,6 +166,9 @@ function Router() {
       <Route path="/we-buy-houses-central-valley" component={CentralValleyHub} />
       <Route path="/sell-house-fast-central-valley" component={SellHouseFastCentralValley} />
       <Route path="/fresno-housing-market" component={FresnoHousingMarket} />
+      <Route path="/visalia-housing-market" component={VisaliaHousingMarket} />
+      <Route path="/how-it-works" component={HowItWorks} />
+      <Route path="/before-after" component={BeforeAfter} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/sell-house-fast" component={SellHouseFastHub} />
       <Route path="/cash-offer-calculator" component={CashOfferCalculator} />
