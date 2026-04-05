@@ -54,6 +54,8 @@ const trust = [
   { label: "📸 Before & After Gallery", href: "/before-after" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Fresno Housing Market 2026", href: "/fresno-housing-market" },
+  { label: "Stockton Housing Market 2026", href: "/stockton-housing-market" },
+  { label: "Modesto Housing Market 2026", href: "/modesto-housing-market" },
   { label: "🏡 What Is My Home Worth?", href: "/what-is-my-home-worth" },
   { label: "🧮 Fresno Cash Offer Calculator", href: "/fresno-cash-offer-calculator" },
   { label: "Fresno Neighborhoods Hub", href: "/fresno-neighborhoods" },
@@ -62,6 +64,8 @@ const trust = [
   { label: "Visalia Neighborhoods Hub", href: "/visalia-neighborhoods" },
   { label: "Visalia Housing Market 2026", href: "/visalia-housing-market" },
   { label: "Bakersfield Neighborhoods Hub", href: "/bakersfield-neighborhoods" },
+  { label: "Stockton Neighborhoods Hub", href: "/stockton-neighborhoods" },
+  { label: "Modesto Neighborhoods Hub", href: "/modesto-neighborhoods" },
 ];
 
 const cities = [
@@ -82,6 +86,9 @@ const cities = [
   { label: "Stockton", href: "/we-buy-houses-stockton" },
   { label: "Modesto", href: "/we-buy-houses-modesto" },
   { label: "Turlock", href: "/we-buy-houses-turlock" },
+  { label: "Tracy", href: "/we-buy-houses-tracy" },
+  { label: "Lodi", href: "/we-buy-houses-lodi" },
+  { label: "Manteca", href: "/we-buy-houses-manteca" },
   { label: "Kings County", href: "/we-buy-houses-kings-county" },
   { label: "San Joaquin County", href: "/we-buy-houses-san-joaquin-county" },
 ];
@@ -100,6 +107,16 @@ const neighborhoods = [
   { label: "McLane / Hoover", href: "/fresno-neighborhoods/mclane" },
   { label: "Fig Garden Village", href: "/fresno-neighborhoods/fig-garden-village" },
   { label: "Fresno State Area", href: "/fresno-neighborhoods/fresno-state" },
+  { label: "All Stockton Neighborhoods", href: "/stockton-neighborhoods" },
+  { label: "North Stockton", href: "/stockton-neighborhoods/north-stockton" },
+  { label: "South Stockton", href: "/stockton-neighborhoods/south-stockton" },
+  { label: "Lincoln Village", href: "/stockton-neighborhoods/lincoln-village" },
+  { label: "Weston Ranch", href: "/stockton-neighborhoods/weston-ranch" },
+  { label: "All Modesto Neighborhoods", href: "/modesto-neighborhoods" },
+  { label: "North Modesto", href: "/modesto-neighborhoods/north-modesto" },
+  { label: "South Modesto", href: "/modesto-neighborhoods/south-modesto" },
+  { label: "Salida", href: "/modesto-neighborhoods/salida" },
+  { label: "Ceres", href: "/modesto-neighborhoods/ceres" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -479,7 +496,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
             {/* Neighborhoods */}
             <div>
-              <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Fresno Neighborhoods</h4>
+              <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Neighborhoods</h4>
               <ul className="space-y-2">
                 {neighborhoods.map((n) => (
                   <li key={n.href}>
@@ -497,6 +514,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/before-after" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Before &amp; After Gallery</Link></li>
                 <li><Link href="/how-it-works" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>How It Works</Link></li>
                 <li><Link href="/fresno-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Housing Market 2026</Link></li>
+                <li><Link href="/stockton-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Stockton Housing Market 2026</Link></li>
+                <li><Link href="/modesto-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Modesto Housing Market 2026</Link></li>
                 <li><Link href="/blog" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Blog &amp; Resources</Link></li>
                 <li><Link href="/sell-house-fast-faq" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast FAQ</Link></li>
                 <li><Link href="/why-choose-us" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Why Choose Us</Link></li>
@@ -521,7 +540,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               © {new Date().getFullYear()} Alder Heritage Homes. All rights reserved. CA DRE #02219124.
             </p>
             <p className="text-xs" style={{ color: "oklch(0.40 0.01 60)" }}>
-              Fresno, CA · Serving the Central Valley
+              Fresno, CA · Serving the Entire Central Valley — Fresno, Bakersfield, Visalia, Stockton, Modesto & Beyond
             </p>
           </div>
         </div>

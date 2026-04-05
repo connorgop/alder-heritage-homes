@@ -3438,6 +3438,103 @@ const articleContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  "sell-house-fast-north-stockton": (
+      <div>
+        <p>North Stockton is one of the most desirable areas in San Joaquin County, with newer subdivisions, higher median prices ($420,000–$500,000), and strong demand from Bay Area commuters and remote workers. Despite this, some North Stockton sellers still prefer a cash sale — particularly those dealing with estate situations, relocation timelines, or homes that need updating to compete with newer inventory.</p>
+        <h2>When a Cash Sale Makes Sense in North Stockton</h2>
+        <p>Even in a strong market like North Stockton, a cash sale can be the right choice when: you inherited the property and want a fast, clean exit; you're relocating for work and can't wait 60–90 days for a traditional sale; the home needs $30,000+ in updates to compete with newer listings; or you simply want to avoid the stress of showings, open houses, and buyer contingencies.</p>
+        <h2>What We Pay for North Stockton Homes</h2>
+        <p>For a North Stockton home worth $460,000 in move-in condition that needs $20,000 in work, our offer would typically be in the $390,000–$415,000 range. We are fully transparent about our math and guarantee to match or beat any competing cash offer. Call (559) 281-8016 or submit your address below for a free, no-obligation offer within 24 hours.</p>
+        <p>See also: <a href="/stockton-neighborhoods/north-stockton">North Stockton Neighborhood Page</a> · <a href="/we-buy-houses-stockton">We Buy Houses Stockton</a> · <a href="/stockton-neighborhoods">All Stockton Neighborhoods</a></p>
+      </div>
+  ),
+
+  "sell-house-fast-south-stockton": (
+      <div>
+        <p>South Stockton has the highest concentration of distressed properties and cash buyer activity in San Joaquin County. Median prices range from $280,000–$360,000, and many homes have deferred maintenance, code violations, or tenant issues that make a traditional listing difficult. If you own a property in South Stockton, a cash sale is often the fastest and most practical option.</p>
+        <h2>Common Situations We Handle in South Stockton</h2>
+        <p>We regularly purchase South Stockton properties with: foundation issues, roof damage, mold, unpermitted additions, code violations, non-paying tenants, squatter situations, fire damage, and properties that have been vacant for years. No situation is too complicated. We have a 45+ person in-house renovation crew that handles all remediation after closing.</p>
+        <h2>What We Pay for South Stockton Homes</h2>
+        <p>For a South Stockton home worth $320,000 in move-in condition that needs $40,000 in work, our offer would typically be in the $240,000–$265,000 range. We are fully transparent about this math. Call (559) 281-8016 or submit your address for a free offer within 24 hours.</p>
+        <p>See also: <a href="/stockton-neighborhoods/south-stockton">South Stockton Neighborhood Page</a> · <a href="/we-buy-houses-stockton">We Buy Houses Stockton</a> · <a href="/stockton-neighborhoods">All Stockton Neighborhoods</a></p>
+      </div>
+  ),
+
+  "sell-house-fast-north-modesto": (
+      <div>
+        <p>North Modesto is Stanislaus County's most desirable residential area, with newer subdivisions, higher price points ($430,000–$550,000), and strong demand from Bay Area remote workers and agricultural industry professionals. Even in this strong market, some North Modesto sellers prefer a cash sale for speed, certainty, or to avoid the hassle of a traditional listing.</p>
+        <h2>When a Cash Sale Makes Sense in North Modesto</h2>
+        <p>North Modesto sellers often contact us when: they're relocating for work and need to close in 2–3 weeks; they inherited the property and want a fast, clean exit without dealing with repairs or showings; the home needs $25,000+ in updates to compete with newer inventory; or they bought at the 2022 peak and want to sell before prices soften further.</p>
+        <h2>What We Pay for North Modesto Homes</h2>
+        <p>For a North Modesto home worth $490,000 in move-in condition that needs $25,000 in work, our offer would typically be in the $415,000–$440,000 range. We guarantee to match or beat any competing cash offer. Call (559) 281-8016 or submit your address for a free offer within 24 hours.</p>
+        <p>See also: <a href="/modesto-neighborhoods/north-modesto">North Modesto Neighborhood Page</a> · <a href="/we-buy-houses-modesto">We Buy Houses Modesto</a> · <a href="/modesto-neighborhoods">All Modesto Neighborhoods</a></p>
+      </div>
+  ),
+
+  "sell-house-fast-ceres-ca": (
+      <div>
+        <p>Ceres is an agricultural community adjacent to Modesto in Stanislaus County, with a strong working-class housing market. Median prices range from $330,000–$400,000, and the city has a high concentration of rental properties and agricultural worker housing. Many Ceres properties have deferred maintenance, tenant issues, or title complications that make a traditional listing challenging.</p>
+        <h2>Common Situations We Handle in Ceres</h2>
+        <p>We regularly purchase Ceres properties with: agricultural zoning complications, deferred maintenance from rental use, non-paying tenants, inherited properties from long-term owners, homes with well and septic systems that need servicing, and properties adjacent to agricultural operations. We buy in all Ceres zip codes (95307, 95351) and throughout Stanislaus County.</p>
+        <h2>What We Pay for Ceres Homes</h2>
+        <p>For a Ceres home worth $370,000 in move-in condition that needs $30,000 in work, our offer would typically be in the $295,000–$320,000 range. We are fully transparent about our math and guarantee to match or beat any competing cash offer. Call (559) 281-8016 for a free, no-obligation offer within 24 hours.</p>
+        <p>See also: <a href="/modesto-neighborhoods/ceres">Ceres Neighborhood Page</a> · <a href="/we-buy-houses-modesto">We Buy Houses Modesto</a> · <a href="/modesto-neighborhoods">All Modesto Neighborhoods</a></p>
+      </div>
+  ),
+
+  "how-to-sell-house-with-code-violations-california": (
+      <div>
+        <p>California has some of the most stringent building codes in the country, and code violations are one of the most common complications that derail traditional home sales. Whether you have unpermitted additions, electrical issues, plumbing violations, or zoning non-conformities, selling a home with open code violations requires careful navigation. Here's everything you need to know in 2026.</p>
+        <h2>What Are Code Violations?</h2>
+        <p>Code violations are conditions on a property that don't comply with local building, zoning, health, or safety codes. Common examples include: unpermitted room additions or garage conversions, electrical systems that don't meet current code, plumbing that doesn't meet code, unpermitted pools or spas, structures built too close to property lines, and properties with active health or safety citations from the city or county.</p>
+        <h2>Do You Have to Disclose Code Violations in California?</h2>
+        <p>Yes. California law requires sellers to disclose all known material defects, including code violations, on the Transfer Disclosure Statement (TDS). Failure to disclose can result in legal liability after the sale. This applies to all property types — single-family, multi-family, and commercial.</p>
+        <h2>Option 1: Fix the Violations Before Selling</h2>
+        <p>The most straightforward option is to bring the property into compliance before listing. This involves pulling the appropriate permits, completing the work, and getting final inspections. The cost varies widely — a simple unpermitted room addition might cost $5,000–$15,000 to permit and legalize, while a full electrical upgrade can run $20,000–$50,000. The benefit is that a compliant property will sell for full market value and qualify for all financing types.</p>
+        <h2>Option 2: Price the Property to Reflect the Violations</h2>
+        <p>If you can't afford to fix the violations, you can list the property at a reduced price that reflects the cost of remediation. However, this approach has significant drawbacks: most conventional lenders won't finance a property with open code violations, which limits your buyer pool to cash buyers and hard money lenders. This effectively means you're selling to investors anyway — just through a longer, more expensive process.</p>
+        <h2>Option 3: Sell As-Is to a Cash Buyer</h2>
+        <p>The fastest and most practical option for most sellers with code violations is to sell as-is to a cash buyer like Alder Heritage Homes. We purchase properties with all types of code violations throughout Fresno, Bakersfield, Visalia, Stockton, Modesto, and the entire Central Valley. We handle all permits, remediation, and code compliance after closing — you don't need to do anything. We make a fair cash offer based on the property's current condition and close in as few as 7 days.</p>
+        <h2>What to Expect When Selling With Code Violations</h2>
+        <p>When you sell to a cash buyer with code violations, expect the offer to reflect the cost of remediation plus the buyer's profit margin. For a home worth $400,000 in compliant condition with $30,000 in code violation remediation costs, a fair cash offer would typically be in the $320,000–$345,000 range. This is significantly better than the alternative of paying $30,000 out of pocket to fix the violations and then paying 5–6% in agent commissions on the sale.</p>
+        <p>See also: <a href="/sell-my-house">Sell My House Fast</a> · <a href="/how-it-works">How It Works</a> · <a href="/sell-house-fast-faq">Cash Buyer FAQ</a></p>
+      </div>
+  ),
+
+  "selling-house-during-divorce-california-2026": (
+      <div>
+        <p>Divorce is one of the most emotionally and financially complex situations a homeowner can face. In California — a community property state — the family home is typically the largest shared asset, and deciding what to do with it is often the most contentious part of the divorce process. Here's a complete guide to your options in 2026.</p>
+        <h2>California Community Property Law and the Family Home</h2>
+        <p>California is a community property state, which means that property acquired during the marriage is generally owned equally by both spouses. This applies to the family home regardless of whose name is on the deed. During a divorce, the home must either be sold and the equity divided, or one spouse must buy out the other's share.</p>
+        <h2>Option 1: Sell the Home and Split the Equity</h2>
+        <p>The most common outcome is to sell the home and divide the net proceeds equally (or as specified in the divorce settlement). This requires both spouses to agree on a listing price, an agent, and the terms of the sale — which can be difficult when the relationship is adversarial. A traditional listing takes 45–90 days and involves showings, negotiations, and potential buyer financing contingencies that can extend the timeline further.</p>
+        <h2>Option 2: One Spouse Buys Out the Other</h2>
+        <p>One spouse can buy out the other's share by refinancing the mortgage in their name alone and paying the other spouse their share of the equity. This requires qualifying for a new mortgage on a single income, which may not be feasible depending on the home's value and the buying spouse's income.</p>
+        <h2>Option 3: Sell to a Cash Buyer for a Fast, Clean Exit</h2>
+        <p>A cash sale is often the best option for divorcing couples who want to close the chapter quickly and move on. We can close in 7 days, both spouses receive their share of the equity at closing, and there are no showings, negotiations, or buyer contingencies to navigate. We handle all the paperwork and coordinate with both parties' attorneys if needed. This is particularly valuable when both spouses want a fast, clean exit with minimal ongoing interaction.</p>
+        <h2>What Happens If One Spouse Refuses to Sell?</h2>
+        <p>If one spouse refuses to sell, the other can petition the court for a partition action — a legal proceeding that forces the sale of jointly owned property. California courts routinely grant partition actions in divorce cases. However, this process can take 6–12 months and cost $10,000–$30,000 in legal fees. A negotiated cash sale is almost always faster and less expensive.</p>
+        <h2>Tax Implications of Selling During Divorce</h2>
+        <p>The IRS allows married couples to exclude up to $500,000 in capital gains on the sale of a primary residence (Section 121 exclusion). If you sell before the divorce is finalized, you may be able to use the full $500,000 exclusion. After the divorce, each spouse is limited to the $250,000 individual exclusion. Consult a tax professional for guidance on your specific situation.</p>
+        <p>See also: <a href="/sell-my-house">Sell My House Fast</a> · <a href="/how-it-works">How It Works</a> · <a href="/sell-house-fast-faq">Cash Buyer FAQ</a></p>
+      </div>
+  ),
+
+  "sell-house-fast-oildale-ca": (
+      <div>
+        <p>Oildale is an unincorporated community in Kern County just north of Bakersfield, with the highest cash buyer activity rate in the region. Median home prices range from $240,000–$310,000, and the area has a high concentration of older homes, rental properties, and properties with deferred maintenance. If you own a home in Oildale, a cash sale is often the fastest and most practical exit.</p>
+        <h2>Why Oildale Properties Are Ideal for Cash Sales</h2>
+        <p>Oildale homes often have characteristics that make traditional financing difficult: older construction (1940s–1970s), deferred maintenance, oil industry proximity issues, and properties that have been used as rentals for decades. Many conventional lenders won't finance Oildale properties in below-average condition, which limits your buyer pool significantly. A cash buyer eliminates this barrier entirely.</p>
+        <h2>Common Situations We Handle in Oildale</h2>
+        <p>We regularly purchase Oildale properties with: oil industry job loss situations, inherited properties from long-term owners, homes with significant deferred maintenance, non-paying tenants, properties adjacent to oil operations, and homes with environmental concerns. We buy in all Oildale zip codes (93308, 93309) and throughout Kern County.</p>
+        <h2>What We Pay for Oildale Homes</h2>
+        <p>For an Oildale home worth $275,000 in move-in condition that needs $35,000 in work, our offer would typically be in the $205,000–$225,000 range. We are fully transparent about our math. Call (559) 281-8016 or submit your address for a free, no-obligation offer within 24 hours.</p>
+        <p>See also: <a href="/bakersfield-neighborhoods/oildale">Oildale Neighborhood Page</a> · <a href="/we-buy-houses-bakersfield">We Buy Houses Bakersfield</a> · <a href="/bakersfield-neighborhoods">All Bakersfield Neighborhoods</a></p>
+      </div>
+  ),
+
+
+
 };
 
 export default function BlogPost() {

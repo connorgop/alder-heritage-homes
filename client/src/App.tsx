@@ -106,6 +106,22 @@ import BakersfieldNeighborhoodRosedale from "./pages/neighborhoods/Rosedale";
 import BakersfieldNeighborhoodDowntownBakersfield from "./pages/neighborhoods/DowntownBakersfield";
 import BakersfieldNeighborhoodStockdale from "./pages/neighborhoods/Stockdale";
 import BakersfieldNeighborhoodOleanderSunset from "./pages/neighborhoods/OleanderSunset";
+// Stockton neighborhood pages
+import StocktonNeighborhoods from "./pages/StocktonNeighborhoods";
+import StocktonNorthStockton from "./pages/neighborhoods/stockton/north-stockton";
+import StocktonSouthStockton from "./pages/neighborhoods/stockton/south-stockton";
+import StocktonLincolnVillage from "./pages/neighborhoods/stockton/lincoln-village";
+import StocktonWestonRanch from "./pages/neighborhoods/stockton/weston-ranch";
+import StocktonBrookside from "./pages/neighborhoods/stockton/brookside";
+import StocktonDowntown from "./pages/neighborhoods/stockton/downtown-stockton";
+// Modesto neighborhood pages
+import ModestoNeighborhoods from "./pages/ModestoNeighborhoods";
+import ModestoNorthModesto from "./pages/neighborhoods/modesto/north-modesto";
+import ModestoSouthModesto from "./pages/neighborhoods/modesto/south-modesto";
+import ModestoVintageFaire from "./pages/neighborhoods/modesto/vintage-faire";
+import ModestoSalida from "./pages/neighborhoods/modesto/salida";
+import ModestoCeres from "./pages/neighborhoods/modesto/ceres";
+import ModestoDowntown from "./pages/neighborhoods/modesto/downtown-modesto";
 // City landing pagess
 import FresnoPage from "./pages/cities/Fresno";
 import ClovisPage from "./pages/cities/Clovis";
@@ -130,6 +146,11 @@ import FowlerPage from "./pages/cities/Fowler";
 import KingsburgPage from "./pages/cities/Kingsburg";
 import AvenalPage from "./pages/cities/Avenal";
 import CoalingaPage from "./pages/cities/Coalinga";
+import TracyPage from "./pages/cities/Tracy";
+import LodiPage from "./pages/cities/Lodi";
+import MantecaPage from "./pages/cities/Manteca";
+import StocktonHousingMarket from "./pages/StocktonHousingMarket";
+import ModestoHousingMarket from "./pages/ModestoHousingMarket";
 import SkylineREI from "./pages/SkylineREI";
 import FAQPage from "./pages/FAQ";
 import GBPTemplates from "./pages/GBPTemplates";
@@ -218,6 +239,11 @@ function Router() {
       <Route path="/we-buy-houses-kingsburg" component={KingsburgPage} />
       <Route path="/we-buy-houses-avenal" component={AvenalPage} />
       <Route path="/we-buy-houses-coalinga" component={CoalingaPage} />
+      <Route path="/we-buy-houses-tracy" component={TracyPage} />
+      <Route path="/we-buy-houses-lodi" component={LodiPage} />
+      <Route path="/we-buy-houses-manteca" component={MantecaPage} />
+      <Route path="/stockton-housing-market" component={StocktonHousingMarket} />
+      <Route path="/modesto-housing-market" component={ModestoHousingMarket} />
 
       {/* Google Ads landing pages — no nav, conversion-optimized */}
       <Route path="/lp/arm-rate-change" component={ArmRateAd} />
@@ -283,6 +309,22 @@ function Router() {
       <Route path="/bakersfield-neighborhoods/downtown-bakersfield" component={BakersfieldNeighborhoodDowntownBakersfield} />
       <Route path="/bakersfield-neighborhoods/stockdale" component={BakersfieldNeighborhoodStockdale} />
       <Route path="/bakersfield-neighborhoods/oleander-sunset" component={BakersfieldNeighborhoodOleanderSunset} />
+      {/* Stockton Neighborhoods */}
+      <Route path="/stockton-neighborhoods" component={StocktonNeighborhoods} />
+      <Route path="/stockton-neighborhoods/north-stockton" component={StocktonNorthStockton} />
+      <Route path="/stockton-neighborhoods/south-stockton" component={StocktonSouthStockton} />
+      <Route path="/stockton-neighborhoods/lincoln-village" component={StocktonLincolnVillage} />
+      <Route path="/stockton-neighborhoods/weston-ranch" component={StocktonWestonRanch} />
+      <Route path="/stockton-neighborhoods/brookside" component={StocktonBrookside} />
+      <Route path="/stockton-neighborhoods/downtown-stockton" component={StocktonDowntown} />
+      {/* Modesto Neighborhoods */}
+      <Route path="/modesto-neighborhoods" component={ModestoNeighborhoods} />
+      <Route path="/modesto-neighborhoods/north-modesto" component={ModestoNorthModesto} />
+      <Route path="/modesto-neighborhoods/south-modesto" component={ModestoSouthModesto} />
+      <Route path="/modesto-neighborhoods/vintage-faire" component={ModestoVintageFaire} />
+      <Route path="/modesto-neighborhoods/salida" component={ModestoSalida} />
+      <Route path="/modesto-neighborhoods/ceres" component={ModestoCeres} />
+      <Route path="/modesto-neighborhoods/downtown-modesto" component={ModestoDowntown} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
