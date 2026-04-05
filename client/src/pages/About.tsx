@@ -8,7 +8,9 @@ const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 const VIDEO_CONNOR_INTRO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv24_ddcde10d.MP4";
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
-const CONNOR_CLIENT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-client-clovis_ca91f4c9.webp";
+const CONNOR_CLIENT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-side_d912ee39.webp";
+const CONNOR_HUG_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-hug_80f9b3b4.webp";
+const HAZMAT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-hazmat-team-clovis_6f37d7da.webp";
 const ILLINOIS_FLIP_VIDEO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/illinois-ave-flip-fresno_924b59f9.mov";
 
 export default function About() {
@@ -68,11 +70,11 @@ export default function About() {
             </div>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42)", aspectRatio: "4/5" }}>
-                <img src={CONNOR_CLIENT_PHOTO} alt="Connor Morris with a past client in Clovis, California" className="w-full h-full object-cover" style={{ objectPosition: "center 15%" }} />
+                <img src={CONNOR_CLIENT_PHOTO} alt="Connor Morris with the seller after the Clovis home renovation" className="w-full h-full object-cover" style={{ objectPosition: "center top" }} />
               </div>
               <div className="absolute -bottom-5 -right-4 px-5 py-3 rounded-xl shadow-xl" style={{ background: "oklch(0.55 0.13 42)", border: "2px solid white" }}>
-                <div className="text-white font-bold text-sm" style={{ fontFamily: "'Lora', serif" }}>Connor &amp; a Past Client</div>
-                <div className="text-xs mt-0.5" style={{ color: "oklch(0.92 0.04 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em" }}>Clovis, CA · $200K Cash Deal</div>
+                <div className="text-white font-bold text-sm" style={{ fontFamily: "'Lora', serif" }}>Connor &amp; the Seller — After Renovation</div>
+                <div className="text-xs mt-0.5" style={{ color: "oklch(0.92 0.04 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em" }}>Clovis, CA · Inherited Murder Home</div>
               </div>
             </div>
           </div>
@@ -130,12 +132,23 @@ export default function About() {
             <div className="rounded-2xl overflow-hidden" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
               <div className="p-5" style={{ background: "oklch(0.55 0.13 42)" }}>
                 <div className="text-xs font-bold mb-1" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.92 0.04 85)", textTransform: "uppercase", letterSpacing: "0.08em" }}>Clovis, CA · $200,000 Cash</div>
-                <div className="text-lg font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Double Homicide Property · 2-Year Squatter</div>
+                <div className="text-lg font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Inherited Murder Home · 2-Year Squatter · Full Renovation</div>
               </div>
               <div className="p-5">
-                <p className="text-sm leading-relaxed mb-3" style={{ color: "oklch(0.78 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>No water, no sewer, full of trash. Bought as-is without seeing the interior. The seller pictured with Connor needed a solution — we delivered one, fast.</p>
+                <p className="text-sm leading-relaxed mb-4" style={{ color: "oklch(0.78 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>A mother inherited her daughter's home after her daughter was murdered by her husband. The murderer's mother had been squatting there for 2 years. The seller couldn't bring herself to visit. We handled everything — eviction, hazmat cleanup, full renovation — and she saw the finished home for the first time at closing.</p>
+                {/* Before/After photo grid */}
+                <div className="grid grid-cols-2 gap-2 mb-4 rounded-xl overflow-hidden">
+                  <div className="relative" style={{ aspectRatio: "4/3" }}>
+                    <img src={HAZMAT_PHOTO} alt="Connor and team in hazmat suits before entering the Clovis property" className="w-full h-full object-cover" style={{ objectPosition: "center top" }} />
+                    <div className="absolute bottom-0 left-0 right-0 px-2 py-1 text-xs font-bold" style={{ background: "oklch(0.22 0.01 60 / 0.85)", color: "white", fontFamily: "'DM Mono', monospace" }}>Day 1 — Hazmat Entry</div>
+                  </div>
+                  <div className="relative" style={{ aspectRatio: "4/3" }}>
+                    <img src={CONNOR_HUG_PHOTO} alt="Connor hugging the seller after seeing the renovated Clovis home" className="w-full h-full object-cover" style={{ objectPosition: "center top" }} />
+                    <div className="absolute bottom-0 left-0 right-0 px-2 py-1 text-xs font-bold" style={{ background: "oklch(0.55 0.13 42 / 0.9)", color: "white", fontFamily: "'DM Mono', monospace" }}>After — Seller Sees Renovation</div>
+                  </div>
+                </div>
                 <div className="flex flex-wrap gap-2">
-                  {["Double homicide", "2-yr squatter", "No utilities", "Full of trash", "No inspection"].map(t => (
+                  {["Murder scene", "2-yr squatter", "No utilities", "Full of trash", "Hazmat cleanup", "Full renovation"].map(t => (
                     <span key={t} className="px-2 py-0.5 rounded text-xs" style={{ background: "oklch(0.55 0.13 42 / 0.2)", color: "oklch(0.85 0.06 75)", fontFamily: "'DM Mono', monospace" }}>{t}</span>
                   ))}
                 </div>

@@ -6,6 +6,9 @@ import { useSEO } from "@/hooks/useSEO";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
+const HAZMAT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-hazmat-team-clovis_6f37d7da.webp";
+const SELLER_SIDE_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-side_d912ee39.webp";
+const SELLER_HUG_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-hug_80f9b3b4.webp";
 
 const testimonials = [
   {
@@ -164,6 +167,54 @@ export default function Testimonials() {
         </div>
       </section>
 
+      {/* Featured Case Study: Clovis Inherited Murder Home */}
+      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase" style={{ background: "oklch(0.55 0.13 42 / 0.3)", color: "oklch(0.88 0.08 60)", fontFamily: "'DM Mono', monospace" }}>Featured Case Study</span>
+            <h2 className="text-3xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>The Clovis Inherited Murder Home</h2>
+            <p className="mt-3 max-w-2xl mx-auto text-lg" style={{ color: "oklch(0.72 0.02 80)", fontFamily: "'Nunito Sans', sans-serif" }}>One of the most difficult transactions we've ever handled — and the one we're most proud of.</p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <div className="grid grid-cols-2 gap-3 mb-6">
+                <div className="relative rounded-xl overflow-hidden" style={{ aspectRatio: "4/3" }}>
+                  <img src={HAZMAT_PHOTO} alt="Connor and team in hazmat suits before entering the Clovis property" className="w-full h-full object-cover" style={{ objectPosition: "center top" }} />
+                  <div className="absolute bottom-0 left-0 right-0 px-2 py-1.5 text-xs font-bold" style={{ background: "oklch(0.15 0.01 60 / 0.9)", color: "white", fontFamily: "'DM Mono', monospace" }}>Day 1 — Hazmat Entry</div>
+                </div>
+                <div className="relative rounded-xl overflow-hidden" style={{ aspectRatio: "4/3" }}>
+                  <img src={SELLER_HUG_PHOTO} alt="Connor hugging the seller after seeing the renovated Clovis home" className="w-full h-full object-cover" style={{ objectPosition: "center top" }} />
+                  <div className="absolute bottom-0 left-0 right-0 px-2 py-1.5 text-xs font-bold" style={{ background: "oklch(0.55 0.13 42 / 0.9)", color: "white", fontFamily: "'DM Mono', monospace" }}>After — First Time Seeing It</div>
+                </div>
+              </div>
+              <div className="relative rounded-xl overflow-hidden" style={{ aspectRatio: "16/7" }}>
+                <img src={SELLER_SIDE_PHOTO} alt="Connor with the seller outside the renovated Clovis home" className="w-full h-full object-cover" style={{ objectPosition: "center 20%" }} />
+                <div className="absolute bottom-0 left-0 right-0 px-3 py-2 text-xs font-bold" style={{ background: "oklch(0.22 0.01 60 / 0.85)", color: "white", fontFamily: "'DM Mono', monospace" }}>Connor &amp; the Seller — Clovis, CA · $200,000 Cash</div>
+              </div>
+            </div>
+            <div className="text-white">
+              <div className="flex flex-wrap gap-2 mb-5">
+                {["Murder scene", "2-yr squatter", "No utilities", "Hazmat cleanup", "Full renovation", "$200K cash"].map(t => (
+                  <span key={t} className="px-2.5 py-1 rounded text-xs font-bold" style={{ background: "oklch(0.55 0.13 42 / 0.3)", color: "oklch(0.88 0.08 60)", fontFamily: "'DM Mono', monospace" }}>{t}</span>
+                ))}
+              </div>
+              <p className="text-lg leading-relaxed mb-4" style={{ color: "oklch(0.82 0.02 80)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                A mother inherited her daughter's home in Clovis after her daughter was murdered by her husband. The murderer's mother had been living in the home as a squatter for over two years. The seller had not been able to bring herself to visit the property — not once.
+              </p>
+              <p className="text-lg leading-relaxed mb-4" style={{ color: "oklch(0.82 0.02 80)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Connor and his team suited up in full hazmat gear to enter the property for the first time. There was no water, no sewer service, and the home was filled with years of accumulated debris. They handled the squatter eviction, the hazmat remediation, and a complete renovation — all without the seller ever having to step foot inside.
+              </p>
+              <p className="text-lg leading-relaxed mb-6" style={{ color: "oklch(0.82 0.02 80)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                The seller saw the finished, renovated home for the first time on the day of closing. The photos above were taken that day. She received $200,000 cash and was able to move forward with her life.
+              </p>
+              <blockquote className="border-l-4 pl-5 italic text-lg" style={{ borderColor: "oklch(0.55 0.13 42)", color: "oklch(0.88 0.06 75)", fontFamily: "'Lora', serif" }}>
+                "I never had to see it the way it was. Connor handled everything. I just had to sign and show up to closing."
+                <div className="mt-2 text-sm not-italic" style={{ color: "oklch(0.65 0.03 80)", fontFamily: "'DM Mono', monospace" }}>— The Seller, Clovis CA</div>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Why Trust Us */}
       <section className="py-20" style={{ background: "oklch(0.96 0.02 80)" }}>
         <div className="max-w-5xl mx-auto px-6">
