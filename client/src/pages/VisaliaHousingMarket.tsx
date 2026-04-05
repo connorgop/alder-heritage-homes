@@ -1,9 +1,14 @@
-/* Visalia Housing Market Evergreen Resource Page — Alder Heritage Homes */
+/* Visalia Housing Market Evergreen Resource Page — Alder Heritage Homes
+ * Design: Heritage Warmth — dark charcoal hero, warm oat body, terracotta accents
+ * Typography: Lora serif headings, Nunito Sans body, DM Mono labels
+ */
+import { useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
-import { Phone, ArrowRight, TrendingUp, Home, DollarSign, Clock, BarChart2, CheckCircle2 } from "lucide-react";
+import { Phone, ArrowRight, TrendingUp, Home, DollarSign, Clock, BarChart2, CheckCircle2, Send, Loader2 } from "lucide-react";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import { useFormSubmit } from "@/hooks/useFormSubmit";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -35,7 +40,34 @@ const neighborhoods = [
   { name: "Tulare (adjacent)", priceRange: "$240K–$350K", daysOnMarket: "28–45", trend: "Growing, ag-driven" },
 ];
 
+const inputStyle = {
+  background: "oklch(1 0 0 / 0.08)",
+  border: "1px solid oklch(1 0 0 / 0.18)",
+  color: "white",
+  fontFamily: "'Nunito Sans', sans-serif",
+} as React.CSSProperties;
+
+const labelStyle = {
+  color: "oklch(0.82 0.04 80)",
+  fontFamily: "'DM Mono', monospace",
+  fontSize: "0.72rem",
+  letterSpacing: "0.06em",
+  textTransform: "uppercase" as const,
+};
+
 export default function VisaliaHousingMarket() {
+  const { state: formState, errorMessage, submit, reset } = useFormSubmit();
+  const [formData, setFormData] = useState({ name: "", phone: "", address: "", email: "", situation: "" });
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    await submit({ ...formData, _source: "Visalia Housing Market Page — Free Valuation" });
+  }
+
   useSEO({
     title: "Visalia Housing Market 2026 — Prices, Trends & Seller Guide",
     description: "Visalia housing market data for 2026: median home prices by neighborhood, days on market, buyer vs. seller market analysis, and when a cash sale makes more sense than listing. Updated April 2026.",
@@ -63,11 +95,9 @@ export default function VisaliaHousingMarket() {
             <a href={PHONE_HREF} className="btn-terracotta flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
               <Phone size={20} /> Get a Cash Offer Today
             </a>
-            <Link href="/contact">
-              <span className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-lg cursor-pointer" style={{ background: "white", color: "oklch(0.22 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Free Home Valuation <ArrowRight size={20} />
-              </span>
-            </Link>
+            <a href="#free-valuation" className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-lg" style={{ background: "white", color: "oklch(0.22 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Free Home Valuation <ArrowRight size={20} />
+            </a>
           </div>
         </div>
       </section>
@@ -153,7 +183,7 @@ export default function VisaliaHousingMarket() {
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-xs" style={{ color: "oklch(0.55 0.03 60)", fontFamily: "'DM Mono', monospace" }}>* Estimates based on MLS data and market observation. Contact us for a free Broker Opinion of Value on your specific home.</p>
+          <p className="mt-4 text-xs" style={{ color: "oklch(0.55 0.03 60)", fontFamily: "'DM Mono', monospace" }}>* Estimates based on MLS data and market observation. Submit the form below for a free Broker Opinion of Value on your specific home.</p>
         </div>
       </section>
 
@@ -172,26 +202,156 @@ export default function VisaliaHousingMarket() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "white" }}>Know What Your Visalia Home Is Worth</h2>
-          <p className="mb-8 text-lg" style={{ color: "oklch(0.82 0.04 80)", fontFamily: "'Nunito Sans', sans-serif" }}>
-            Free Broker Opinion of Value from a licensed California agent. No obligation, no pressure. Connor will call or text within 24 hours.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} className="btn-terracotta flex items-center justify-center gap-2 text-lg px-8 py-4 font-bold" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
-              <Phone size={20} /> Call {PHONE}
-            </a>
-            <Link href="/contact">
-              <span className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-lg cursor-pointer" style={{ background: "white", color: "oklch(0.22 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Request Free Valuation <ArrowRight size={20} />
-              </span>
-            </Link>
+      {/* Free Home Valuation Form */}
+      <section id="free-valuation" className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="max-w-2xl mx-auto px-6">
+          {/* Section header */}
+          <div className="text-center mb-10">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase" style={{ background: "oklch(0.55 0.13 42 / 0.35)", color: "oklch(0.88 0.08 60)", fontFamily: "'DM Mono', monospace" }}>
+              Free · No Obligation · 24-Hour Response
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3" style={{ fontFamily: "'Lora', serif", color: "white" }}>
+              Request Your Free Visalia Home Valuation
+            </h2>
+            <p className="text-lg" style={{ color: "oklch(0.78 0.03 80)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Get a free Broker Opinion of Value from a licensed California agent. Connor will call or text you within 24 hours with a realistic price range — no pressure, no obligation.
+            </p>
           </div>
-          <p className="mt-6 text-sm" style={{ color: "oklch(0.65 0.03 80)", fontFamily: "'Nunito Sans', sans-serif" }}>
-            Also see: <Link href="/we-buy-houses-visalia"><span className="underline cursor-pointer">We Buy Houses in Visalia</span></Link> · <Link href="/fresno-housing-market"><span className="underline cursor-pointer">Fresno Housing Market 2026</span></Link>
-          </p>
+
+          {formState === "success" ? (
+            /* Success state */
+            <div className="rounded-2xl p-10 text-center" style={{ background: "oklch(0.28 0.05 155 / 0.35)", border: "1px solid oklch(0.55 0.13 42 / 0.5)" }}>
+              <div className="text-5xl mb-4">✅</div>
+              <h3 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: "'Lora', serif" }}>Request Received!</h3>
+              <p className="text-lg mb-6" style={{ color: "oklch(0.82 0.04 80)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Connor will call or text you within 24 hours with your free home valuation. In the meantime, feel free to call directly.
+              </p>
+              <a href={PHONE_HREF} className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
+                <Phone size={18} /> Call {PHONE}
+              </a>
+              <button onClick={reset} className="block mx-auto mt-4 text-sm underline" style={{ color: "oklch(0.65 0.03 80)", fontFamily: "'Nunito Sans', sans-serif", background: "none", border: "none", cursor: "pointer" }}>
+                Submit another request
+              </button>
+            </div>
+          ) : (
+            /* Form */
+            <form onSubmit={handleSubmit} className="rounded-2xl p-8 space-y-5" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+              {/* Name + Phone row */}
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block font-bold mb-1.5" style={labelStyle}>Your Name *</label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="John Smith"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all"
+                    style={inputStyle}
+                  />
+                </div>
+                <div>
+                  <label className="block font-bold mb-1.5" style={labelStyle}>Phone Number *</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    required
+                    placeholder="(559) 555-1234"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all"
+                    style={inputStyle}
+                  />
+                </div>
+              </div>
+
+              {/* Property Address */}
+              <div>
+                <label className="block font-bold mb-1.5" style={labelStyle}>Property Address *</label>
+                <input
+                  type="text"
+                  name="address"
+                  required
+                  placeholder="123 Oak Ave, Visalia, CA 93291"
+                  value={formData.address}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all"
+                  style={inputStyle}
+                />
+              </div>
+
+              {/* Email */}
+              <div>
+                <label className="block font-bold mb-1.5" style={labelStyle}>Email (optional)</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="john@email.com"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all"
+                  style={inputStyle}
+                />
+              </div>
+
+              {/* Situation */}
+              <div>
+                <label className="block font-bold mb-1.5" style={labelStyle}>Your Situation</label>
+                <select
+                  name="situation"
+                  value={formData.situation}
+                  onChange={handleChange}
+                  className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all"
+                  style={{ ...inputStyle, background: "oklch(0.20 0.01 60)", color: formData.situation ? "white" : "oklch(0.58 0.02 80)" }}
+                >
+                  <option value="">Select your situation (optional)</option>
+                  <option value="Curious about value">Just curious about my home's value</option>
+                  <option value="Thinking of selling in 6-12 months">Thinking of selling in 6–12 months</option>
+                  <option value="Ready to sell soon">Ready to sell — want a fast offer</option>
+                  <option value="Inherited property">Inherited a property</option>
+                  <option value="Behind on mortgage / foreclosure">Behind on mortgage / facing foreclosure</option>
+                  <option value="Divorce or estate">Divorce or estate sale</option>
+                  <option value="Rental property">Selling a rental property</option>
+                  <option value="Property needs repairs">Property needs significant repairs</option>
+                </select>
+              </div>
+
+              {/* Error message */}
+              {formState === "error" && (
+                <p className="text-sm font-medium" style={{ color: "oklch(0.70 0.18 25)", fontFamily: "'Nunito Sans', sans-serif" }}>{errorMessage}</p>
+              )}
+
+              {/* Submit button */}
+              <button
+                type="submit"
+                disabled={formState === "submitting"}
+                className="w-full flex items-center justify-center gap-3 py-4 rounded-xl font-bold text-lg transition-all disabled:opacity-60"
+                style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                {formState === "submitting" ? (
+                  <><Loader2 size={20} className="animate-spin" /> Sending Request...</>
+                ) : (
+                  <><Send size={20} /> Get My Free Visalia Home Valuation</>
+                )}
+              </button>
+
+              <p className="text-center text-xs" style={{ color: "oklch(0.55 0.02 80)", fontFamily: "'DM Mono', monospace" }}>
+                Licensed CA Real Estate Agent · DRE #02219124 · No spam, ever.
+              </p>
+            </form>
+          )}
+
+          {/* Bottom links */}
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+            <a href={PHONE_HREF} className="flex items-center gap-2 font-bold" style={{ color: "oklch(0.75 0.10 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              <Phone size={18} /> Prefer to call? {PHONE}
+            </a>
+            <span style={{ color: "oklch(0.45 0.02 80)" }}>·</span>
+            <p className="text-sm" style={{ color: "oklch(0.65 0.03 80)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Also see: <Link href="/we-buy-houses-visalia"><span className="underline cursor-pointer">We Buy Houses in Visalia</span></Link> · <Link href="/fresno-housing-market"><span className="underline cursor-pointer">Fresno Market 2026</span></Link>
+            </p>
+          </div>
         </div>
       </section>
     </Layout>
