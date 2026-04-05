@@ -50,6 +50,7 @@ import SellHouseFastTulare from "./pages/SellHouseFastTulare";
 import SellHouseFastHub from "./pages/SellHouseFastHub";
 import SellHouseFastMadera from "./pages/SellHouseFastMadera";
 import CentralValleyHub from "./pages/CentralValleyHub";
+import SellHouseFastCentralValley from "./pages/SellHouseFastCentralValley";
 import CashOfferCalculator from "./pages/CashOfferCalculator";
 
 // Google Ads landing pages (no nav, conversion-optimized)
@@ -157,6 +158,7 @@ function Router() {
       <Route path="/sell-house-fast-madera-ca" component={SellHouseFastMadera} />
       <Route path="/sell-house-fast-tulare-ca" component={SellHouseFastTulare} />
       <Route path="/we-buy-houses-central-valley" component={CentralValleyHub} />
+      <Route path="/sell-house-fast-central-valley" component={SellHouseFastCentralValley} />
       <Route path="/sell-house-fast" component={SellHouseFastHub} />
       <Route path="/cash-offer-calculator" component={CashOfferCalculator} />
 

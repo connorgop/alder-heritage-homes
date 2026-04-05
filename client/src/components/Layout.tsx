@@ -199,6 +199,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     ))}
                     {/* Divider + City Fast-Sale Links */}
                     <div className="mx-4 my-2 border-t" style={{ borderColor: "oklch(0.88 0.02 85)" }} />
+                    <Link href="/sell-house-fast-central-valley" className="block px-4 py-2 text-sm font-bold hover:bg-orange-50 transition-colors" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.28 0.05 155)" }}>
+                      ⚡ All Cities — Fast Sale Hub
+                    </Link>
                     <p className="px-4 py-1 text-xs font-bold uppercase tracking-wider" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>Sell Fast By City</p>
                     {[
                       { label: "Fresno", href: "/sell-house-fast-fresno-ca" },
