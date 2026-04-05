@@ -2804,7 +2804,225 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>In addition to Porterville itself, we buy homes in Lindsay, Exeter, Strathmore, Terra Bella, Springville, and other Tulare County foothill communities.</p>
       <p>Ready to get a fair cash offer? <strong>Call (559) 281-8016</strong> or visit <a href="/we-buy-houses-porterville">our Porterville page</a> — free consultation, no obligation.</p>
     </div>
+  ),
+  "fresno-housing-market-2026": (
+    <div className="prose-heritage">
+      <p>The Fresno housing market in 2026 continues to reflect broader California trends — rising insurance costs, persistent affordability challenges, and a growing segment of homeowners who need to sell quickly due to financial pressure. For buyers and sellers alike, understanding the current market conditions is essential for making smart decisions.</p>
+      <h2>Fresno Home Prices in 2026</h2>
+      <p>Fresno's median home price has held relatively steady compared to the pandemic-era peaks, hovering in the $340,000–$380,000 range for single-family homes. This represents a significant correction from the 2022 highs, when median prices briefly touched $420,000. The correction has been driven by higher mortgage rates, which have kept many would-be buyers on the sidelines and reduced competition for available inventory.</p>
+      <p>For sellers, this means the days of receiving 10 offers above asking price are largely over. Homes that are priced correctly and show well still sell within 30–45 days, but overpriced or condition-challenged properties can sit for 90–120 days — or longer.</p>
+      <h2>Days on Market</h2>
+      <p>The average days on market for Fresno homes in 2026 is approximately 38 days for move-in-ready properties and 75–90 days for homes needing significant repairs. This is a meaningful increase from 2021–2022, when homes were going under contract in under 10 days. For homeowners who need to sell quickly, this extended timeline creates real financial pressure — carrying costs, property taxes, insurance, and maintenance continue to accumulate every month a home sits unsold.</p>
+      <h2>Mortgage Rates and Their Impact on Fresno Buyers</h2>
+      <p>With 30-year fixed mortgage rates in the 6.5–7.5% range, monthly payments on a $350,000 home have increased by $600–$800 compared to 2021 rates. This has priced a significant portion of first-time buyers out of the market, reducing the pool of qualified buyers for Fresno homes. The buyers who remain are more selective and less willing to overlook deferred maintenance or condition issues.</p>
+      <h2>Insurance Costs: A Growing Problem for Fresno Homeowners</h2>
+      <p>One of the most significant challenges facing Fresno homeowners in 2026 is the dramatic increase in homeowner's insurance costs. Several major insurers have reduced their California exposure, and those that remain have raised premiums substantially — in some cases by 40–80% over two years. For homeowners on fixed incomes or tight budgets, these increased carrying costs are pushing some toward selling sooner than planned.</p>
+      <h2>Who Is Selling in Fresno Right Now?</h2>
+      <p>The current Fresno market is seeing a higher proportion of distressed and motivated sellers than in previous years. Common situations include:</p>
+      <ul>
+        <li><strong>Inherited properties:</strong> Heirs who live out of state and don't want to manage a Fresno rental or go through a lengthy probate listing</li>
+        <li><strong>Landlord burnout:</strong> Investors who purchased during the low-rate era and are now facing negative cash flow with higher rates and insurance costs</li>
+        <li><strong>Foreclosure prevention:</strong> Homeowners who fell behind during the post-pandemic period and are now facing Notice of Default</li>
+        <li><strong>Divorce:</strong> Couples who need to liquidate the family home quickly as part of a settlement</li>
+        <li><strong>Downsizing seniors:</strong> Older homeowners who can no longer maintain their property and want to simplify</li>
+      </ul>
+      <h2>Cash Sales in the Fresno Market</h2>
+      <p>Cash sales represent approximately 25–30% of all Fresno home transactions in 2026, up from historical norms of 15–20%. This increase reflects both the growing presence of institutional buyers and the rise of individual cash buyers like Alder Heritage Homes who purchase directly from motivated sellers. For sellers who need speed and certainty, a cash sale eliminates the financing contingency risk that causes approximately 15% of traditional sales to fall through.</p>
+      <h2>Should You Sell Now or Wait?</h2>
+      <p>The answer depends entirely on your situation. If you're in a strong financial position, have a move-in-ready home, and can wait 60–90 days for the right buyer, a traditional listing may net you the highest price. But if you're facing financial pressure, have a home that needs repairs, or simply need to close quickly, a cash sale may put more money in your pocket after accounting for carrying costs, commissions, and repair expenses.</p>
+      <p>Alder Heritage Homes offers free, no-obligation Broker Price Opinions for Fresno homeowners. We'll give you an honest assessment of your options — including whether a traditional listing makes more sense for your situation. <strong>Call (559) 281-8016</strong> or visit <a href="/we-buy-houses-fresno">our Fresno page</a> to get started.</p>
+    </div>
+  ),
+  "how-much-do-cash-buyers-pay-for-houses": (
+    <div className="prose-heritage">
+      <p>One of the most common questions homeowners ask before contacting a cash buyer is: "How much will they actually offer?" The honest answer is that it depends — but understanding how cash buyers calculate their offers helps you evaluate whether a cash sale makes financial sense for your situation.</p>
+      <h2>The Basic Formula: ARV Minus Costs</h2>
+      <p>Most legitimate cash buyers use a variation of the same formula to determine their offer:</p>
+      <p><strong>Cash Offer = After Repair Value (ARV) × 70–80% − Estimated Repair Costs</strong></p>
+      <p>Here's what each component means:</p>
+      <ul>
+        <li><strong>After Repair Value (ARV):</strong> What the home would sell for on the open market after all repairs and updates are complete. This is based on comparable sales in your neighborhood.</li>
+        <li><strong>Repair Costs:</strong> The buyer's estimate of what it will cost to bring the home to market-ready condition. This includes materials, labor, permits, and a contingency buffer.</li>
+        <li><strong>Profit Margin (the 20–30%):</strong> The buyer's profit, which must cover holding costs (taxes, insurance, utilities during renovation), financing costs if they're using a hard money loan, and their time and overhead.</li>
+      </ul>
+      <h2>A Real Example</h2>
+      <p>Suppose your Fresno home has an ARV of $350,000 and needs $40,000 in repairs (new roof, HVAC, kitchen update). A cash buyer's calculation might look like this:</p>
+      <ul>
+        <li>ARV: $350,000</li>
+        <li>× 75% = $262,500</li>
+        <li>− $40,000 repairs = $222,500 offer</li>
+      </ul>
+      <p>At first glance, this seems far below market value. But consider what a traditional sale of the same home would net: $350,000 sale price minus $40,000 in repairs you'd need to make first, minus 6% agent commissions ($21,000), minus closing costs ($3,500), minus 3–4 months of carrying costs while the home is listed ($4,000–$6,000) = approximately $279,500–$285,500 in net proceeds. The gap between the cash offer and the traditional sale net is often much smaller than it appears.</p>
+      <h2>What Separates Good Cash Buyers from Bad Ones</h2>
+      <p>Not all cash buyers are created equal. Here's what to look for:</p>
+      <ul>
+        <li><strong>Transparency:</strong> A reputable buyer will show you their ARV estimate and repair cost breakdown. If they won't explain their offer, walk away.</li>
+        <li><strong>No assignment clauses:</strong> Wholesalers often put homes under contract and then assign the contract to another buyer — sometimes reducing the price at the last minute. Demand proof of funds and confirm the buyer is the end purchaser.</li>
+        <li><strong>Licensed:</strong> Working with a licensed real estate agent who also buys homes provides an additional layer of accountability and legal protection.</li>
+        <li><strong>No pressure:</strong> A legitimate buyer will give you time to consider the offer and won't pressure you to sign immediately.</li>
+      </ul>
+      <h2>How Alder Heritage Homes Calculates Offers</h2>
+      <p>We're transparent about our process. We pull comparable sales within 0.5 miles of your property, estimate repair costs based on a walkthrough or photos, and present you with a written offer that shows our math. We're a direct end-buyer — we never assign contracts to wholesalers. <strong>Call (559) 281-8016</strong> for a free, no-obligation offer on your Fresno or Central Valley home.</p>
+    </div>
+  ),
+  "california-seller-disclosure-requirements": (
+    <div className="prose-heritage">
+      <p>California has some of the most comprehensive seller disclosure requirements in the United States. Understanding what you're legally required to disclose — and what happens if you don't — is essential before selling your home, whether through a traditional listing or a cash sale.</p>
+      <h2>The Transfer Disclosure Statement (TDS)</h2>
+      <p>The Transfer Disclosure Statement is the cornerstone of California seller disclosures. Required by Civil Code Section 1102, the TDS must be provided to buyers in virtually all residential real estate transactions. It requires sellers to disclose known defects and material facts about the property, including:</p>
+      <ul>
+        <li>Structural problems (foundation, roof, walls)</li>
+        <li>Water damage, flooding, or drainage issues</li>
+        <li>Electrical, plumbing, or HVAC defects</li>
+        <li>Pest infestations or damage</li>
+        <li>Neighborhood nuisances (noise, odors, traffic)</li>
+        <li>Any additions or alterations made without permits</li>
+        <li>Deaths on the property within the last 3 years</li>
+        <li>Presence of mold</li>
+      </ul>
+      <h2>The Natural Hazard Disclosure (NHD)</h2>
+      <p>California sellers must also provide a Natural Hazard Disclosure report, which identifies whether the property is in a Special Flood Hazard Area, a Very High Fire Hazard Severity Zone, an Earthquake Fault Zone, a Seismic Hazard Zone, or other designated hazard areas. In Fresno and the Central Valley, the most relevant hazards are typically flood zones and, for foothill properties, fire hazard zones.</p>
+      <h2>Additional Required Disclosures</h2>
+      <p>Beyond the TDS and NHD, California sellers may be required to provide:</p>
+      <ul>
+        <li><strong>Lead-based paint disclosure:</strong> Required for homes built before 1978</li>
+        <li><strong>Mello-Roos and special assessment disclosure:</strong> If the property is subject to special tax districts</li>
+        <li><strong>HOA documents:</strong> If the property is in a homeowners association</li>
+        <li><strong>Smoke detector and carbon monoxide detector compliance</strong></li>
+        <li><strong>Water heater bracing compliance</strong></li>
+        <li><strong>Window security bar disclosure</strong></li>
+      </ul>
+      <h2>Selling As-Is and Disclosures</h2>
+      <p>A common misconception is that selling a home "as-is" eliminates disclosure requirements. It does not. Even in an as-is sale, California sellers must disclose all known material defects. The "as-is" designation simply means the seller won't make repairs — it doesn't mean the seller can conceal known problems.</p>
+      <h2>Cash Sales and Disclosures</h2>
+      <p>When selling to a cash buyer like Alder Heritage Homes, the disclosure process is typically simpler and faster than a traditional sale. We're experienced buyers who understand property conditions and don't require repairs — but we still conduct due diligence and appreciate honest disclosures. We handle all disclosure paperwork as part of our standard process. <strong>Call (559) 281-8016</strong> for a free consultation.</p>
+    </div>
+  ),
+  "stop-foreclosure-auction-california": (
+    <div className="prose-heritage">
+      <p>If you've received a Notice of Trustee Sale in California, you're likely feeling a combination of panic and confusion. The good news: you almost certainly have more time and more options than you think. This guide explains exactly what happens during a California foreclosure and what you can do to stop it.</p>
+      <h2>The California Foreclosure Timeline</h2>
+      <p>California uses a non-judicial foreclosure process, which is faster than judicial foreclosure but still provides meaningful windows for intervention:</p>
+      <ul>
+        <li><strong>Day 1:</strong> You miss a mortgage payment. The lender typically won't act immediately.</li>
+        <li><strong>Day 90–120:</strong> After 3–4 missed payments, the lender records a Notice of Default (NOD) with the county. This is the official start of the foreclosure process.</li>
+        <li><strong>Day 90 after NOD:</strong> The lender can record a Notice of Trustee Sale (NTS), setting the auction date at least 21 days out.</li>
+        <li><strong>Auction day:</strong> The home is sold at public auction to the highest bidder. Once the gavel falls, your options are extremely limited.</li>
+      </ul>
+      <p>The total timeline from first missed payment to auction is typically 4–6 months, sometimes longer. This means you have real time to act — but you must act quickly once you receive the NOD.</p>
+      <h2>Option 1: Loan Modification</h2>
+      <p>Contact your lender immediately and request a loan modification. Under California's Homeowner Bill of Rights, lenders cannot dual-track foreclosure and loan modification simultaneously — meaning they must pause the foreclosure process while your modification application is under review. A successful modification can reduce your interest rate, extend your loan term, or add missed payments to the back of your loan.</p>
+      <h2>Option 2: Forbearance Agreement</h2>
+      <p>A forbearance agreement temporarily reduces or suspends your mortgage payments. This is typically used for short-term hardships (job loss, medical emergency) where you expect to resume payments within 3–12 months. The missed payments are typically added to the end of your loan or repaid in a lump sum.</p>
+      <h2>Option 3: Sell the Home Before the Auction</h2>
+      <p>If you have equity in your home — meaning it's worth more than you owe — selling before the auction is often the best option. A cash sale can close in 7–14 days, well within the foreclosure timeline, and allows you to walk away with your equity intact rather than losing it all at auction. Even if you're underwater (owe more than the home is worth), a short sale may be possible with lender approval.</p>
+      <h2>Option 4: Bankruptcy</h2>
+      <p>Filing for Chapter 13 bankruptcy triggers an automatic stay that immediately halts the foreclosure process. Chapter 13 allows you to catch up on missed payments over a 3–5 year repayment plan. This is a complex option that requires an attorney, but it can be effective for homeowners who have income and want to keep their home.</p>
+      <h2>What Alder Heritage Homes Can Do</h2>
+      <p>We specialize in helping Fresno and Central Valley homeowners who are facing foreclosure. We can close in as little as 7 days — often before the auction date — and we'll pay off your mortgage balance at closing. You walk away with your equity and your credit intact. <strong>Call (559) 281-8016 immediately</strong> — the sooner you call, the more options you have. Visit our <a href="/foreclosure-help">foreclosure help page</a> for more information.</p>
+    </div>
+  ),
+  "sell-house-unpermitted-work-california": (
+    <div className="prose-heritage">
+      <p>Unpermitted additions, conversions, and improvements are extremely common in California — especially in older homes and in communities where DIY culture is strong. If your home has unpermitted work, you may be wondering whether you can sell it, what you're required to disclose, and whether a cash buyer is your best option.</p>
+      <h2>What Counts as Unpermitted Work?</h2>
+      <p>Any structural modification, addition, or major system change that required a building permit but didn't get one counts as unpermitted work. Common examples include:</p>
+      <ul>
+        <li>Garage conversions to living space (ADUs)</li>
+        <li>Room additions or sunrooms</li>
+        <li>Basement or attic conversions</li>
+        <li>Electrical panel upgrades or new circuits</li>
+        <li>Plumbing additions (new bathrooms, laundry rooms)</li>
+        <li>Pool or spa installations</li>
+        <li>Deck or patio cover additions</li>
+        <li>HVAC system replacements or additions</li>
+      </ul>
+      <h2>Do You Have to Disclose Unpermitted Work?</h2>
+      <p>Yes. California's Transfer Disclosure Statement requires sellers to disclose any additions or alterations made without permits. Failing to disclose known unpermitted work can expose you to legal liability after the sale, including demands for repair or compensation from the buyer.</p>
+      <h2>Options for Selling a Home with Unpermitted Work</h2>
+      <p>You have three main options when selling a home with unpermitted work:</p>
+      <ul>
+        <li><strong>Permit and legalize the work:</strong> Hire a contractor to bring the work up to code and obtain a retroactive permit. This can cost $5,000–$50,000+ depending on the scope and may require significant modifications to meet current code. It adds value but takes time.</li>
+        <li><strong>Sell as-is with disclosure:</strong> Disclose the unpermitted work, price the home accordingly, and let the buyer decide whether to legalize it. Traditional buyers using conventional financing may be unable to purchase if the unpermitted work affects the home's livability or safety.</li>
+        <li><strong>Sell to a cash buyer:</strong> Cash buyers are not subject to lender requirements and can purchase homes with unpermitted work as-is. This is often the fastest and simplest option.</li>
+      </ul>
+      <h2>How Lenders View Unpermitted Work</h2>
+      <p>This is where unpermitted work creates the biggest problem for traditional sales. FHA and VA loans have strict property condition requirements, and unpermitted additions often fail appraisal. Even conventional loans can be problematic if the appraiser notes unpermitted work that affects the home's value or safety. This significantly narrows your buyer pool.</p>
+      <h2>Selling to Alder Heritage Homes</h2>
+      <p>We buy homes with unpermitted work throughout Fresno and the Central Valley. We're experienced with garage conversions, unpermitted ADUs, room additions, and other common situations. We don't require you to legalize anything before selling — we handle it after closing. <strong>Call (559) 281-8016</strong> for a free, no-obligation offer.</p>
+    </div>
+  ),
+  "sell-house-fast-san-joaquin-county": (
+    <div className="prose-heritage">
+      <p>San Joaquin County — home to Stockton, Lodi, Tracy, Manteca, and Lathrop — is one of the Central Valley's most dynamic real estate markets. With its position between the Bay Area and Sacramento, San Joaquin County attracts both Bay Area transplants seeking affordability and long-time residents looking to cash out their equity. For homeowners who need to sell quickly, a cash sale offers speed and certainty that the traditional market can't match.</p>
+      <h2>The San Joaquin County Housing Market</h2>
+      <p>San Joaquin County's median home price has risen significantly over the past decade, driven by Bay Area migration and limited new construction. Stockton, the county seat, has seen particular growth in its north and east neighborhoods, while Tracy and Manteca continue to attract new development. However, the higher interest rate environment has cooled the market, and homes that need repairs or are in less desirable locations can sit for 60–90 days.</p>
+      <h2>Why San Joaquin Homeowners Choose Cash Sales</h2>
+      <p>San Joaquin County homeowners face many of the same challenges as homeowners throughout California — rising insurance costs, deferred maintenance, inherited properties, and financial hardship. A cash sale addresses all of these:</p>
+      <ul>
+        <li><strong>Speed:</strong> Close in 7–21 days instead of 45–90</li>
+        <li><strong>Certainty:</strong> No financing contingencies that can cause deals to fall through</li>
+        <li><strong>Condition:</strong> We buy homes as-is — no repairs, no cleaning, no staging</li>
+        <li><strong>Simplicity:</strong> One point of contact, straightforward paperwork, no open houses</li>
+      </ul>
+      <h2>Cities We Serve in San Joaquin County</h2>
+      <p>We buy houses throughout San Joaquin County, including Stockton, Lodi, Tracy, Manteca, Lathrop, Ripon, Escalon, and surrounding communities. Whether you're in a Stockton neighborhood dealing with deferred maintenance or a Tracy subdivision with a home that needs updating, we can make a fair cash offer.</p>
+      <h2>Common Situations in San Joaquin County</h2>
+      <p>We regularly help San Joaquin County homeowners in situations including: inherited properties from deceased relatives, landlords dealing with problem tenants or negative cash flow, homeowners facing foreclosure after job loss, divorcing couples who need to sell quickly, and homeowners with significant deferred maintenance who don't want to invest in repairs before selling.</p>
+      <p>Ready to get a cash offer on your San Joaquin County home? <strong>Call (559) 281-8016</strong> or visit <a href="/we-buy-houses-stockton">our Stockton page</a> for more information. Free consultation, no obligation.</p>
+    </div>
+  ),
+  "fresno-real-estate-investor-guide": (
+    <div className="prose-heritage">
+      <p>Fresno has long been one of California's most attractive markets for real estate investors — lower entry prices than coastal cities, strong rental demand from a large workforce, and a growing population that continues to drive housing demand. Whether you're a first-time investor or an experienced portfolio builder, understanding Fresno's investment landscape is essential for making smart decisions.</p>
+      <h2>Why Fresno for Real Estate Investment?</h2>
+      <p>Fresno offers a combination of factors that make it compelling for investors:</p>
+      <ul>
+        <li><strong>Affordability:</strong> Median home prices in the $340,000–$380,000 range are far below coastal California markets, allowing investors to enter with less capital</li>
+        <li><strong>Rental demand:</strong> Fresno State, Community Medical Centers, and a large agricultural and logistics workforce create consistent rental demand</li>
+        <li><strong>Population growth:</strong> Fresno County's population continues to grow, driven by both natural growth and in-migration from more expensive California cities</li>
+        <li><strong>Cash flow potential:</strong> While not as strong as Midwest markets, Fresno can produce positive cash flow with the right property and financing</li>
+      </ul>
+      <h2>Best Neighborhoods for Investment in Fresno</h2>
+      <p>Not all Fresno neighborhoods are equal for investment purposes. The strongest rental demand and appreciation potential tends to be in:</p>
+      <ul>
+        <li><strong>North Fresno and Clovis:</strong> Higher-income areas with strong school districts and appreciation potential</li>
+        <li><strong>Tower District:</strong> Walkable, artsy neighborhood with strong rental demand from young professionals</li>
+        <li><strong>Woodward Park area:</strong> Established neighborhood with consistent demand and stable values</li>
+        <li><strong>Southeast Fresno:</strong> Lower entry prices with improving infrastructure and growing demand</li>
+      </ul>
+      <h2>Buying Distressed Properties in Fresno</h2>
+      <p>Many Fresno investors focus on distressed properties — foreclosures, probate homes, and properties needing significant repairs — as a path to below-market acquisition. Alder Heritage Homes is both a buyer and a seller of distressed Fresno properties. We regularly purchase homes that need work and can connect investors with off-market opportunities.</p>
+      <h2>Working with Alder Heritage Homes as an Investor</h2>
+      <p>If you're an investor looking to acquire Fresno properties, we can be a valuable resource. We purchase homes throughout the Central Valley and occasionally have properties available for investor purchase. We also buy rental portfolios from tired landlords looking to exit the market. <strong>Call (559) 281-8016</strong> to discuss your investment goals.</p>
+    </div>
+  ),
+  "we-buy-houses-kings-county-ca": (
+    <div className="prose-heritage">
+      <p>Kings County sits in the heart of California's Central Valley, bounded by Fresno County to the north and Tulare County to the south. With its agricultural economy, military presence at Naval Air Station Lemoore, and tight-knit communities, Kings County has a unique real estate market that often benefits from the speed and simplicity of a cash sale.</p>
+      <h2>Kings County Cities We Serve</h2>
+      <p>Alder Heritage Homes buys houses throughout Kings County, including:</p>
+      <ul>
+        <li><strong>Hanford:</strong> The county seat and largest city, with a mix of historic homes and newer developments</li>
+        <li><strong>Lemoore:</strong> Home to NAS Lemoore, with strong demand from military families and frequent PCS moves</li>
+        <li><strong>Corcoran:</strong> Agricultural community with older housing stock</li>
+        <li><strong>Avenal:</strong> Small community in the western foothills</li>
+        <li><strong>Armona, Stratford, and surrounding unincorporated areas</strong></li>
+      </ul>
+      <h2>Why Kings County Homeowners Choose Cash Sales</h2>
+      <p>Kings County's smaller market means fewer active buyers and longer days on market compared to Fresno or Bakersfield. This makes a cash sale particularly valuable for homeowners who need to move quickly. Common situations we handle in Kings County include:</p>
+      <ul>
+        <li><strong>Military PCS moves:</strong> NAS Lemoore service members who receive orders and need to sell their home quickly</li>
+        <li><strong>Agricultural properties:</strong> Homes on agricultural parcels that are difficult to finance conventionally</li>
+        <li><strong>Inherited properties:</strong> Families who inherit Kings County homes and prefer a quick, simple sale</li>
+        <li><strong>Older homes needing major repairs:</strong> Properties with deferred maintenance that would struggle on the open market</li>
+      </ul>
+      <h2>The Kings County Cash Sale Process</h2>
+      <p>Our process in Kings County is identical to our process throughout the Central Valley: we make a fair cash offer within 24 hours, close in 7–21 days, and buy in any condition. We handle all the paperwork and pay all closing costs. You don't need to make any repairs, clean the property, or deal with showings.</p>
+      <p>Ready to sell your Kings County home? <strong>Call (559) 281-8016</strong> or visit <a href="/we-buy-houses-kings-county">our Kings County page</a> for a free, no-obligation consultation.</p>
+    </div>
   )
+
 };
 
 export default function BlogPost() {

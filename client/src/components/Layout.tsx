@@ -72,6 +72,7 @@ const cities = [
   { label: "Modesto", href: "/we-buy-houses-modesto" },
   { label: "Turlock", href: "/we-buy-houses-turlock" },
   { label: "Kings County", href: "/we-buy-houses-kings-county" },
+  { label: "San Joaquin County", href: "/we-buy-houses-san-joaquin-county" },
 ];
 
 const neighborhoods = [

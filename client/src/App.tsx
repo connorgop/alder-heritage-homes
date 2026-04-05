@@ -98,6 +98,7 @@ import StocktonPage from "./pages/cities/Stockton";
 import ModestoPage from "./pages/cities/Modesto";
 import TurlockPage from "./pages/cities/Turlock";
 import KingsCountyPage from "./pages/cities/KingsCounty";
+import SanJoaquinPage from "./pages/cities/SanJoaquin";
 import DinubaPage from "./pages/cities/Dinuba";
 import FowlerPage from "./pages/cities/Fowler";
 import KingsburgPage from "./pages/cities/Kingsburg";
@@ -180,6 +181,7 @@ function Router() {
       <Route path="/we-buy-houses-modesto" component={ModestoPage} />
       <Route path="/we-buy-houses-turlock" component={TurlockPage} />
       <Route path="/we-buy-houses-kings-county" component={KingsCountyPage} />
+      <Route path="/we-buy-houses-san-joaquin-county" component={SanJoaquinPage} />
       <Route path="/we-buy-houses-dinuba" component={DinubaPage} />
       <Route path="/we-buy-houses-fowler" component={FowlerPage} />
       <Route path="/we-buy-houses-kingsburg" component={KingsburgPage} />
