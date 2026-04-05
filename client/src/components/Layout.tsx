@@ -50,6 +50,8 @@ const trust = [
   { label: "⚠️ Vacant Home Security", href: "/vacant-property-warning" },
   { label: "Skyline REI — Our Buying Entity", href: "/skyline-rei" },
   { label: "About Connor", href: "/about" },
+  { label: "⭐ Seller Testimonials", href: "/testimonials" },
+  { label: "Fresno Housing Market 2026", href: "/fresno-housing-market" },
   { label: "Blog & Resources", href: "/blog" },
 ];
 
@@ -383,6 +385,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <MobileNavLink href="/cash-offer-calculator">🧮 Free Cash Offer Calculator</MobileNavLink>
               <MobileNavLink href="/faq">FAQ</MobileNavLink>
               <MobileNavLink href="/about">About Connor</MobileNavLink>
+              <MobileNavLink href="/testimonials">⭐ Seller Testimonials</MobileNavLink>
+              <MobileNavLink href="/fresno-housing-market">Fresno Housing Market 2026</MobileNavLink>
               <MobileNavLink href="/blog">Blog &amp; Resources</MobileNavLink>
               <MobileNavLink href="/contact">Contact</MobileNavLink>
 
@@ -473,6 +477,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Company</h4>
               <ul className="space-y-2">
                 <li><Link href="/about" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>About Us</Link></li>
+                <li><Link href="/testimonials" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Seller Testimonials</Link></li>
+                <li><Link href="/fresno-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Housing Market 2026</Link></li>
                 <li><Link href="/blog" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Blog &amp; Resources</Link></li>
                 <li><Link href="/faq" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>FAQ</Link></li>
                 <li><Link href="/why-choose-us" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Why Choose Us</Link></li>
