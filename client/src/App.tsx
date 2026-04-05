@@ -84,6 +84,8 @@ import FresnoStateArea from "./pages/neighborhoods/FresnoState";
 import NorthFresno from "./pages/neighborhoods/NorthFresno";
 import SoutheastFresno from "./pages/neighborhoods/SoutheastFresno";
 import ClovisNorth from "./pages/neighborhoods/ClovisNorth";
+import FresnoNeighborhoods from "./pages/FresnoNeighborhoods";
+import HomeWorth from "./pages/HomeWorth";
 
 // City landing pages
 import FresnoPage from "./pages/cities/Fresno";
@@ -211,6 +213,21 @@ function Router() {
       <Route path="/lp/downsize" component={LpDownsize} />
 
       {/* Fresno neighborhood pages */}
+      <Route path="/fresno-neighborhoods" component={FresnoNeighborhoods} />
+      <Route path="/fresno-neighborhoods/fig-garden" component={FigGarden} />
+      <Route path="/fresno-neighborhoods/tower-district" component={TowerDistrict} />
+      <Route path="/fresno-neighborhoods/woodward-park" component={WoodwardPark} />
+      <Route path="/fresno-neighborhoods/bullard" component={BullardNeighborhood} />
+      <Route path="/fresno-neighborhoods/sunnyside" component={SunnysideNeighborhood} />
+      <Route path="/fresno-neighborhoods/mclane" component={McLaneNeighborhood} />
+      <Route path="/fresno-neighborhoods/old-fig-garden" component={OldFigGarden} />
+      <Route path="/fresno-neighborhoods/cloverleaf-village" component={CloverleafVillage} />
+      <Route path="/fresno-neighborhoods/fig-garden-village" component={FigGardenVillage} />
+      <Route path="/fresno-neighborhoods/fresno-state" component={FresnoStateArea} />
+      <Route path="/fresno-neighborhoods/north-fresno" component={NorthFresno} />
+      <Route path="/fresno-neighborhoods/southeast-fresno" component={SoutheastFresno} />
+      <Route path="/fresno-neighborhoods/clovis-north" component={ClovisNorth} />
+      {/* Legacy neighborhood routes — redirect via same component */}
       <Route path="/fresno-fig-garden" component={FigGarden} />
       <Route path="/fresno-tower-district" component={TowerDistrict} />
       <Route path="/fresno-woodward-park" component={WoodwardPark} />
@@ -224,6 +241,8 @@ function Router() {
       <Route path="/north-fresno" component={NorthFresno} />
       <Route path="/southeast-fresno" component={SoutheastFresno} />
       <Route path="/clovis-north" component={ClovisNorth} />
+      {/* Home valuation page */}
+      <Route path="/what-is-my-home-worth" component={HomeWorth} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

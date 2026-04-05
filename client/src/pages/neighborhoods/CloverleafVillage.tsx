@@ -1,25 +1,46 @@
-import CityPage from "@/components/CityPage";
+import NeighborhoodPage from "@/components/NeighborhoodPage";
 
 export default function CloverleafVillage() {
   return (
-    <CityPage
-      city="Cloverleaf Village"
-      county="Fresno"
-      population="~18,000"
-      slug="fresno-cloverleaf-village"
-      description="Cloverleaf Village is a well-established residential neighborhood in northeast Fresno, bordered by Herndon Avenue to the north and Cedar Avenue to the east. Known for its quiet streets, mature trees, and a mix of 1970s–1990s single-family homes, Cloverleaf Village attracts longtime Fresno homeowners who have built significant equity over the decades. Many sellers in this neighborhood are downsizing, relocating for retirement, or dealing with inherited properties after a parent passes. Alder Heritage Homes buys houses throughout Cloverleaf Village for cash — no repairs, no showings, and no agent commissions."
-      neighborhoods={["Herndon Corridor", "Cedar-Herndon", "Northeast Fresno", "Clovis Unified District"]}
-      stats={[
-        { label: "Avg Home Age", value: "1980s" },
-        { label: "Median Price", value: "$340K" },
-        { label: "Days on Market", value: "18" },
-        { label: "Cash Offers", value: "28%" },
+    <NeighborhoodPage
+      name="Cloverleaf Village"
+      slug="cloverleaf-village"
+      tagline="Fresno's Cloverleaf Village neighborhood — we buy homes as-is, cash offer in 24 hours, close in 7 days."
+      description="Cloverleaf Village is a mid-century neighborhood in central Fresno, developed in the 1950s–1960s. The neighborhood features modest ranch homes on compact lots with a strong sense of community. It's an affordable entry point into the Fresno market and has steady demand from first-time buyers and investors. Sellers here often include estate sales, tired landlords, and homeowners facing financial hardship."
+      medianPrice="$240K"
+      avgDays="17"
+      priceRange="$170K–$340K"
+      yearBuilt="1950–1968"
+      characteristics={[
+        "1950s–1960s ranch homes on compact lots",
+        "Affordable entry-level price point",
+        "Central Fresno location",
+        "Strong demand from first-time buyers",
+        "Active investor market",
+        "Many homes with original mid-century details",
+        "Mature landscaping",
+        "Close to shopping and services",
+      ]}
+      sellerSituations={[
+        "Estate sale",
+        "Tired landlord",
+        "Deferred maintenance",
+        "Inherited property",
+        "Foreclosure prevention",
+        "Behind on mortgage",
+        "Divorce",
+        "Relocating",
       ]}
       faqs={[
-        { q: "Do you buy houses in Cloverleaf Village, Fresno?", a: "Yes. Alder Heritage Homes buys houses throughout Cloverleaf Village and northeast Fresno. We are a licensed California real estate agent (DRE #02219124) and real cash buyer — not a wholesaler. We can close in 5–7 days or on your timeline." },
-        { q: "What is my Cloverleaf Village home worth?", a: "Cloverleaf Village homes typically sell in the $300,000–$400,000 range depending on size, condition, and exact location. We provide a free third-party Broker Opinion of Value with every offer so you can verify our number is fair before you decide." },
-        { q: "Can I sell my Cloverleaf Village home without making repairs?", a: "Absolutely. We buy homes in any condition — deferred maintenance, outdated kitchens, foundation cracks, roof issues, or anything else. You don't need to fix a thing before we close." },
-        { q: "How fast can you close on a Cloverleaf Village home?", a: "We can close in as little as 5–7 days once we have a signed purchase agreement. If you need more time to move or arrange your next home, we work around your schedule." },
+        { q: "How much will you offer for my Cloverleaf Village home?", a: "Homes in Cloverleaf Village typically sell for $170K–$340K depending on size and condition. Our cash offer reflects the as-is value, and we provide a free Broker Opinion of Value with every offer." },
+        { q: "How fast can you close?", a: "We can close in 7–14 days on a vacant property." },
+        { q: "Do I need to make repairs?", a: "No. We buy homes in any condition." },
+        { q: "What if my home is in foreclosure?", a: "We can often close before the foreclosure auction date. Call Connor immediately at (559) 281-8016." },
+      ]}
+      nearbyNeighborhoods={[
+        { name: "McLane / Hoover", slug: "mclane" },
+        { name: "Sunnyside", slug: "sunnyside" },
+        { name: "Tower District", slug: "tower-district" },
       ]}
     />
   );

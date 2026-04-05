@@ -1,21 +1,47 @@
-import CityPage from "@/components/CityPage";
+import NeighborhoodPage from "@/components/NeighborhoodPage";
+
 export default function Sunnyside() {
-  return <CityPage
-    city="Sunnyside, Fresno"
-    county="Fresno"
-    population="22,000"
-    description="Sunnyside is a working-class neighborhood in Southeast Fresno, spanning zip codes 93727 and 93702. Homes here were built primarily between the 1940s and 1970s — solid construction, affordable price points, and a high proportion of inherited and distressed properties. Many Sunnyside homes are held by absentee landlords dealing with problem tenants, or by heirs who inherited a property they don't want to manage. Median home prices range from $200,000 to $310,000, making Sunnyside one of the most active markets for cash sales in Fresno."
-    neighborhoods={["Kings Canyon corridor", "Tulare/Chestnut area", "Sunnyside/Clovis Ave", "E. Kings Canyon Rd", "Chestnut/Tulare"]}
-    stats={[
-      { label: "Avg Home Price", value: "$200k–$310k" },
-      { label: "Zip Code(s)", value: "93727, 93702" },
-      { label: "Homes Bought", value: "20+" },
-      { label: "Avg Close Time", value: "7 Days" },
-    ]}
-    faqs={[
-      { q: "I have a rental property in Sunnyside with bad tenants — can you buy it?", a: "Yes — tenant-occupied properties are one of our specialties. We buy Sunnyside rental homes with tenants in place, whether they're paying or not. You don't have to go through a lengthy eviction process before selling. We take on the tenant situation as part of the purchase and handle it ourselves after closing." },
-      { q: "I inherited a Sunnyside home that needs a lot of work — what are my options?", a: "We buy inherited Sunnyside properties in any condition — even those that need significant repairs, have deferred maintenance, or have been vacant for years. We can close in 5–7 days and handle all the paperwork. You don't need to clean out the property or make any repairs before we close." },
-      { q: "What is my Sunnyside home worth?", a: "Sunnyside homes typically range from $200,000–$310,000 depending on size, condition, and exact location. Every offer we make includes a free third-party Broker Opinion of Value from an independent Fresno broker — so you'll know exactly what your home is worth on the open market before you decide whether a cash sale is right for you." },
-    ]}
-  />;
+  return (
+    <NeighborhoodPage
+      name="Sunnyside"
+      slug="sunnyside"
+      tagline="Southeast Fresno's established neighborhood — we buy Sunnyside homes as-is, cash offer in 24 hours, close in 7 days."
+      description="Sunnyside is one of Southeast Fresno's most established neighborhoods, located along Kings Canyon Road between Clovis Avenue and Fowler Avenue. Developed primarily in the 1950s–1970s, the neighborhood features affordable ranch-style homes on modest lots with mature landscaping. Sunnyside has strong investor activity due to its affordability and rental demand, and it's one of the most active markets for cash home sales in Fresno. Common seller situations include estate sales, deferred maintenance, and landlords looking to exit the rental market."
+      medianPrice="$265K"
+      avgDays="18"
+      priceRange="$190K–$380K"
+      yearBuilt="1950–1975"
+      characteristics={[
+        "Ranch-style homes on modest lots (5,500–8,000 sq ft)",
+        "Affordable price point — strong investor demand",
+        "Mature landscaping and established trees",
+        "Close to Kings Canyon Road commercial corridor",
+        "Strong rental market — many tenant-occupied homes",
+        "Original 1950s–1970s construction details",
+        "Many homes with original hardwood floors",
+        "Active cash buyer market",
+      ]}
+      sellerSituations={[
+        "Estate sale — longtime family home",
+        "Tired landlord — rental property exit",
+        "Deferred maintenance — roof, HVAC, plumbing",
+        "Inherited property",
+        "Foreclosure prevention",
+        "Behind on mortgage",
+        "Divorce",
+        "Relocating out of Fresno",
+      ]}
+      faqs={[
+        { q: "How much will you pay for my Sunnyside home?", a: "Sunnyside homes typically sell for $190K–$380K depending on size, condition, and lot. Our cash offer reflects the as-is value, and we provide a free Broker Opinion of Value with every offer so you can verify our number is fair." },
+        { q: "Can you close quickly on a Sunnyside property?", a: "Yes. We can close in as few as 7 days on a vacant property. Tenant-occupied properties may take 14–21 days." },
+        { q: "Do I need to clean out the house before selling?", a: "No. We buy Sunnyside homes in any condition — furniture, personal items, and all. We handle the cleanout after closing." },
+        { q: "What if my Sunnyside home has foundation issues?", a: "We buy homes with foundation issues regularly. Our offer will reflect the cost of the repair, but you don't need to fix anything before we close." },
+      ]}
+      nearbyNeighborhoods={[
+        { name: "McLane / Hoover", slug: "mclane" },
+        { name: "Southeast Fresno", slug: "southeast-fresno" },
+        { name: "Fig Garden", slug: "fig-garden" },
+      ]}
+    />
+  );
 }

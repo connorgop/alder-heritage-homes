@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2, Shield, Star, Users, Home as HomeIcon } from "lucide-react";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
+import CashOfferForm from "@/components/CashOfferForm";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -69,11 +70,9 @@ export default function Bakersfield() {
               Alder Heritage Homes buys houses in Bakersfield and throughout Kern County. Cash offer in 24 hours, close in 5–7 days. And if a cash sale isn't right for you, we'll connect you with the top listing agents in our network — not your friend who just got licensed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
-                <button className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  Get My Cash Offer <ArrowRight size={18} />
-                </button>
-              </Link>
+              <a href="#get-offer" className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Get My Cash Offer <ArrowRight size={18} />
+              </a>
               <a href={PHONE_HREF} className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.1)", border: "2px solid oklch(1 0 0 / 0.3)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
                 <Phone size={18} /> {PHONE}
               </a>
@@ -124,11 +123,9 @@ export default function Bakersfield() {
                       </li>
                     ))}
                   </ul>
-                  <Link href="/contact">
-                    <button className="mt-5 w-full py-3 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                      Get My Cash Offer
-                    </button>
-                  </Link>
+                  <a href="#get-offer" className="mt-5 block w-full py-3 rounded-lg font-bold text-white text-sm text-center" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Get My Cash Offer
+                  </a>
                 </div>
 
                 <div className="p-6 rounded-2xl" style={{ background: "white", border: "2px solid oklch(0.50 0.15 155 / 0.3)" }}>
@@ -286,24 +283,17 @@ export default function Bakersfield() {
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="py-14" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3" style={{ fontFamily: "'Lora', serif" }}>
-            Ready to Talk About Your Bakersfield Home?
-          </h2>
-          <p className="text-base mb-8" style={{ color: "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-            Cash offer, listing referral, or just an honest conversation — Connor responds same day.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              <Phone size={18} /> Call {PHONE}
-            </a>
-            <Link href="/contact">
-              <button className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Get My Free Offer Online <ArrowRight size={18} />
-              </button>
-            </Link>
+      {/* Inline Cash Offer Form CTA */}
+      <section id="get-offer" className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="max-w-2xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase" style={{ background: "oklch(0.55 0.13 42 / 0.35)", color: "oklch(0.88 0.08 60)", fontFamily: "'DM Mono', monospace" }}>Free · No Obligation · 24-Hour Response</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ fontFamily: "'Lora', serif" }}>Ready to Sell Your Bakersfield Home?</h2>
+            <p className="text-lg" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Fill out the form below and Connor will have a cash offer for your Bakersfield property within 24 hours. No repairs, no commissions, no pressure.</p>
+          </div>
+          <CashOfferForm city="Bakersfield" variant="dark" />
+          <div className="mt-6 text-center">
+            <a href={PHONE_HREF} className="inline-flex items-center gap-2 font-bold" style={{ color: "oklch(0.75 0.10 42)", fontFamily: "'Nunito Sans', sans-serif" }}><Phone size={18} /> Prefer to call? {PHONE}</a>
           </div>
         </div>
       </section>

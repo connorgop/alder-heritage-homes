@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2, MapPin, Shield, Clock, DollarSign, Home, Star } from "lucide-react";
+import CashOfferForm from "@/components/CashOfferForm";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:+15592818016";
@@ -87,7 +88,7 @@ export default function FresnoPage() {
               Alder Heritage Homes is a licensed California real estate agent and direct cash buyer serving all of Fresno and the Central Valley. We close in 7–14 days, pay all closing costs, and never send your contract to a wholesaler.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact"><button className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-lg text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>Get My Fresno Cash Offer <ArrowRight size={20} /></button></Link>
+              <a href="#get-offer" className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-lg text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>Get My Fresno Cash Offer <ArrowRight size={20} /></a>
               <a href={PHONE_HREF} className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-lg" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'DM Mono', monospace" }}><Phone size={20} /> {PHONE}</a>
             </div>
             <div className="flex flex-wrap gap-6 mt-8">
@@ -233,14 +234,17 @@ export default function FresnoPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4" style={{ fontFamily: "'Lora', serif" }}>Ready to Sell Your Fresno Home?</h2>
-          <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Call or fill out our form. We'll have a fair cash offer for your Fresno property within 24 hours — no pressure, no obligation, no wholesalers.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact"><button className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>Get My Cash Offer <ArrowRight size={20} /></button></Link>
-            <a href={PHONE_HREF} className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'DM Mono', monospace" }}><Phone size={20} /> {PHONE}</a>
+      {/* Inline Cash Offer Form CTA */}
+      <section id="get-offer" className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="max-w-2xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase" style={{ background: "oklch(0.55 0.13 42 / 0.35)", color: "oklch(0.88 0.08 60)", fontFamily: "'DM Mono', monospace" }}>Free · No Obligation · 24-Hour Response</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ fontFamily: "'Lora', serif" }}>Ready to Sell Your Fresno Home?</h2>
+            <p className="text-lg" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Fill out the form below and Connor will have a cash offer for your Fresno property within 24 hours. No repairs, no commissions, no pressure.</p>
+          </div>
+          <CashOfferForm city="Fresno" variant="dark" />
+          <div className="mt-6 text-center">
+            <a href={PHONE_HREF} className="inline-flex items-center gap-2 font-bold" style={{ color: "oklch(0.75 0.10 42)", fontFamily: "'Nunito Sans', sans-serif" }}><Phone size={18} /> Prefer to call? {PHONE}</a>
           </div>
         </div>
       </section>

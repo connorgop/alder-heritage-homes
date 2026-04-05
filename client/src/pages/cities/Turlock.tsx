@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2, Shield, Star } from "lucide-react";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
 import SchemaMarkup from "@/components/SchemaMarkup";
+import CashOfferForm from "@/components/CashOfferForm";
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp";
@@ -74,11 +75,17 @@ export default function Turlock() {
               </div>
             </div>
             <div className="space-y-6">
-              <div className="p-6 rounded-2xl sticky top-24" style={{ background: "oklch(0.55 0.13 42)", color: "white" }}>
-                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: "'Lora', serif" }}>Get Your Cash Offer</h3>
-                <p className="text-sm mb-4 opacity-90" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>Free, no-obligation offer within 24 hours. No repairs. No commissions. Close in 5–14 days.</p>
-                <Link href="/contact"><button className="w-full py-3 rounded-lg font-bold text-sm mb-3" style={{ background: "white", color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>Request My Cash Offer →</button></Link>
-                <a href={PHONE_HREF} className="flex items-center justify-center gap-2 w-full py-3 rounded-lg font-bold text-sm" style={{ background: "oklch(1 0 0 / 0.15)", border: "1px solid oklch(1 0 0 / 0.3)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}><Phone size={15} /> {PHONE}</a>
+              <div className="rounded-2xl overflow-hidden sticky top-24" style={{ background: "oklch(0.55 0.13 42)" }}>
+                <div className="px-5 pt-5 pb-2">
+                  <h3 className="font-bold text-lg mb-1" style={{ fontFamily: "'Lora', serif", color: "white" }}>Get Your Turlock Cash Offer</h3>
+                  <p className="text-xs mb-3 opacity-90" style={{ color: "oklch(0.88 0.06 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Free · No obligation · 24-hour response</p>
+                </div>
+                <div className="px-4 pb-2">
+                  <CashOfferForm city="Turlock" variant="dark" />
+                </div>
+                <div className="px-5 pb-4">
+                  <a href={PHONE_HREF} className="flex items-center justify-center gap-2 text-sm font-bold" style={{ color: "oklch(0.88 0.06 60)", fontFamily: "'DM Mono', monospace" }}><Phone size={14} /> Or call {PHONE}</a>
+                </div>
               </div>
               <div className="p-6 rounded-2xl" style={{ background: "oklch(0.22 0.01 60)" }}>
                 <div className="flex items-center gap-2 mb-3"><Shield size={18} style={{ color: "oklch(0.75 0.12 42)" }} /><span className="text-sm font-bold" style={{ color: "white", fontFamily: "'Lora', serif" }}>Connor's Guarantee</span></div>
@@ -102,13 +109,16 @@ export default function Turlock() {
           </div>
         </div>
       </section>
-      <section className="py-14" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3" style={{ fontFamily: "'Lora', serif" }}>Ready to Talk About Your Turlock Home?</h2>
-          <p className="text-base mb-8" style={{ color: "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Cash offer, listing referral, or just an honest conversation — Connor responds same day.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}><Phone size={18} /> Call {PHONE}</a>
-            <Link href="/contact"><button className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>Get My Free Offer Online <ArrowRight size={18} /></button></Link>
+      <section id="get-offer" className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="max-w-2xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase" style={{ background: "oklch(0.55 0.13 42 / 0.35)", color: "oklch(0.88 0.08 60)", fontFamily: "'DM Mono', monospace" }}>Free · No Obligation · 24-Hour Response</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ fontFamily: "'Lora', serif" }}>Ready to Sell Your Turlock Home?</h2>
+            <p className="text-lg" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Fill out the form below and Connor will have a cash offer for your Turlock property within 24 hours. No repairs, no commissions, no pressure.</p>
+          </div>
+          <CashOfferForm city="Turlock" variant="dark" />
+          <div className="mt-6 text-center">
+            <a href={PHONE_HREF} className="inline-flex items-center gap-2 font-bold" style={{ color: "oklch(0.75 0.10 42)", fontFamily: "'Nunito Sans', sans-serif" }}><Phone size={18} /> Prefer to call? {PHONE}</a>
           </div>
         </div>
       </section>

@@ -1,21 +1,47 @@
-import CityPage from "@/components/CityPage";
+import NeighborhoodPage from "@/components/NeighborhoodPage";
+
 export default function WoodwardPark() {
-  return <CityPage
-    city="Woodward Park, Fresno"
-    county="Fresno"
-    population="35,000"
-    description="Woodward Park is one of Northeast Fresno's most desirable master-planned communities, spanning zip codes 93720 and 93730. Homes here were built primarily between the 1980s and 2000s — larger floor plans, good schools, and proximity to Woodward Regional Park and the Fig Garden Golf Course. The neighborhood has a high concentration of military families from NAS Lemoore who need to sell quickly on PCS orders, as well as retirees moving to senior communities like Fairwinds Woodward Park. Median home prices range from $400,000 to $550,000."
-    neighborhoods={["Copper River area", "Shepherd/Audubon", "Audubon Dr corridor", "Friant Rd corridor", "Nees Ave area"]}
-    stats={[
-      { label: "Avg Home Price", value: "$400k–$550k" },
-      { label: "Zip Code(s)", value: "93720, 93730" },
-      { label: "Homes Bought", value: "20+" },
-      { label: "Avg Close Time", value: "7 Days" },
-    ]}
-    faqs={[
-      { q: "I have PCS orders from NAS Lemoore — can you buy my Woodward Park home fast?", a: "Yes — military PCS sales are one of our most common transactions. We understand the timeline pressure of PCS orders and can close in 5–7 days, or coordinate with your report date. We also understand BAH implications and can help you think through whether a cash sale or traditional listing makes more sense for your specific situation." },
-      { q: "I want to move to Fairwinds Woodward Park — can I sell my home and still have time to move?", a: "Absolutely. We can close on your timeline — whether that's 2 weeks or 2 months. We also offer a rent-back arrangement where you sell your home, receive your cash at closing, and continue living there while you finalize your move to Fairwinds or another retirement community. This is one of the most popular options for Woodward Park seniors." },
-      { q: "What is my Woodward Park home worth as a cash sale?", a: "Woodward Park homes typically sell for $400,000–$550,000 on the open market. Our cash offer will be based on current comparable sales — and every offer includes a free third-party Broker Opinion of Value from an independent Fresno broker so you can verify the number is fair." },
-    ]}
-  />;
+  return (
+    <NeighborhoodPage
+      name="Woodward Park"
+      slug="woodward-park"
+      tagline="North Fresno's family-friendly suburb — we buy Woodward Park homes as-is, no repairs, cash offer within 24 hours."
+      description="Woodward Park is one of North Fresno's most desirable neighborhoods, located along the Woodward Park greenbelt between Friant Road and Audubon Drive. Developed primarily in the 1980s–2000s, it features newer construction tract homes, HOA communities, and top-rated Clovis Unified schools. The neighborhood attracts families and professionals, and homes here sell quickly on the open market — but sellers who need speed, privacy, or a no-hassle sale still prefer a cash buyer. Common situations include job relocations, divorce, and homeowners who don't want to deal with HOA disclosure requirements."
+      medianPrice="$480K"
+      avgDays="19"
+      priceRange="$380K–$750K"
+      yearBuilt="1985–2005"
+      characteristics={[
+        "Newer construction tract homes (1985–2005)",
+        "HOA communities with CC&Rs and architectural guidelines",
+        "Top-rated Clovis Unified School District",
+        "Adjacent to Woodward Regional Park (300+ acres)",
+        "Gated and non-gated communities",
+        "Typical 3–5 bedroom floor plans with 2-car garages",
+        "Well-maintained streets and landscaping",
+        "Strong resale demand — low days on market",
+      ]}
+      sellerSituations={[
+        "Job relocation — need to sell fast",
+        "Divorce — need clean, fast sale",
+        "Avoiding HOA disclosure complications",
+        "Downsizing after kids leave",
+        "Inherited property in HOA community",
+        "Behind on HOA dues or assessments",
+        "Avoiding open house showings",
+        "Estate sale",
+      ]}
+      faqs={[
+        { q: "Can you buy my Woodward Park home even with HOA issues?", a: "Yes. We handle HOA payoffs, outstanding dues, and architectural violations as part of the closing process. You don't need to resolve those issues before we close." },
+        { q: "How much will you offer for my Woodward Park home?", a: "Woodward Park homes typically sell for $380K–$750K depending on size, condition, and specific community. Our cash offer reflects current comparable sales, and we provide a free Broker Opinion of Value with every offer." },
+        { q: "How fast can you close?", a: "We can close in 7–14 days. If you need more time to arrange your move, we can close in 30–45 days or offer a rent-back arrangement." },
+        { q: "Do I need to make repairs before selling?", a: "No. We buy Woodward Park homes as-is — whether they need cosmetic updates, appliance replacements, or more significant repairs. You don't touch a thing." },
+      ]}
+      nearbyNeighborhoods={[
+        { name: "Fig Garden", slug: "fig-garden" },
+        { name: "Clovis North / Copper River", slug: "clovis-north" },
+        { name: "North Fresno", slug: "north-fresno" },
+      ]}
+    />
+  );
 }

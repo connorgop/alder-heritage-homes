@@ -1245,4 +1245,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://www.alderheritagehomes.com/what-is-my-home-worth</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/fig-garden</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/tower-district</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/woodward-park</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/sunnyside</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/mclane</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/old-fig-garden</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/bullard</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/clovis-north</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/north-fresno</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/southeast-fresno</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/fresno-state</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/fig-garden-village</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/cloverleaf-village</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

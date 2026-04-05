@@ -1,21 +1,47 @@
-import CityPage from "@/components/CityPage";
+import NeighborhoodPage from "@/components/NeighborhoodPage";
+
 export default function TowerDistrict() {
-  return <CityPage
-    city="Tower District, Fresno"
-    county="Fresno"
-    population="25,000"
-    description="The Tower District is Fresno's historic midtown arts neighborhood, centered around the iconic Tower Theatre on E. Olive Ave. Zip code 93728 is home to craftsman bungalows and 1920s–1940s homes that rarely appear on the open market — many are inherited by family members who live out of state and need a fast, simple sale. Median home prices range from $250,000 to $380,000, making Tower District one of Fresno's most active markets for probate and estate sales."
-    neighborhoods={["Olive Ave corridor", "E. Belmont Ave", "N. Van Ness Ave", "Wishon Ave", "E. Divisadero St"]}
-    stats={[
-      { label: "Avg Home Price", value: "$250k–$380k" },
-      { label: "Zip Code(s)", value: "93728" },
-      { label: "Homes Bought", value: "20+" },
-      { label: "Avg Close Time", value: "7 Days" },
-    ]}
-    faqs={[
-      { q: "I inherited a Tower District home — how do I sell it quickly?", a: "Inherited Tower District properties are one of our specialties. We work with executors, trustees, and out-of-state heirs to make the process as simple as possible. We can close in 5–7 days, handle all paperwork, and you don't need to clean out or repair anything. If probate is still open, we can work around the court timeline." },
-      { q: "Do Tower District homes sell well as-is?", a: "Yes — and cash buyers are often the best option for older Tower District craftsman homes because traditional buyers frequently request repairs that are expensive on 80–100 year old homes. We buy as-is, which means no inspection contingencies, no repair requests, and no surprises at closing." },
-      { q: "What is my Tower District home worth?", a: "Tower District homes typically range from $250,000–$380,000 depending on size, condition, and exact location. Every offer we make includes a free third-party Broker Opinion of Value from an independent Fresno broker — so you'll know exactly what your home is worth before you decide anything." },
-    ]}
-  />;
+  return (
+    <NeighborhoodPage
+      name="Tower District"
+      slug="tower-district"
+      tagline="Fresno's walkable arts district — we buy Tower District bungalows and craftsman homes as-is, no repairs, cash offer in 24 hours."
+      description="The Tower District is Fresno's most vibrant urban neighborhood, centered on Olive Avenue between Blackstone and Palm. Developed primarily in the 1920s–1940s, it's defined by craftsman bungalows, Spanish Colonial cottages, and early California ranch homes on compact lots. The neighborhood has strong rental demand due to its walkability, proximity to Fresno City College, and active arts and dining scene. Sellers here often include landlords looking to exit, heirs who inherited a rental property, and longtime owners who want to avoid the hassle of showing a tenant-occupied home."
+      medianPrice="$310K"
+      avgDays="22"
+      priceRange="$220K–$450K"
+      yearBuilt="1920–1945"
+      characteristics={[
+        "Craftsman bungalows and Spanish Colonial cottages",
+        "Compact lots (4,000–6,500 sq ft) with alley access",
+        "Walkable to restaurants, bars, and shops on Olive Ave",
+        "Strong rental demand — many tenant-occupied homes",
+        "Proximity to Fresno City College",
+        "Active arts and LGBTQ+ community",
+        "Older homes with original hardwood floors and built-ins",
+        "Many homes with ADU potential",
+      ]}
+      sellerSituations={[
+        "Tired landlord — tenant-occupied property",
+        "Inherited rental property from a relative",
+        "Deferred maintenance — roof, plumbing, electrical",
+        "Problem tenants or squatters",
+        "Divorce — need fast, clean sale",
+        "Relocating out of Fresno",
+        "Behind on mortgage or property taxes",
+        "Estate sale",
+      ]}
+      faqs={[
+        { q: "Can you buy my Tower District home if it has tenants?", a: "Yes. We buy tenant-occupied properties regularly. We handle the tenant situation — whether that means honoring the lease, negotiating a move-out, or managing the legal process. You don't have to deal with it." },
+        { q: "How much is my Tower District bungalow worth?", a: "Tower District homes typically sell for $220K–$450K depending on size, condition, and whether it's tenant-occupied. Our cash offer reflects the as-is value, and we provide a free Broker Opinion of Value with every offer." },
+        { q: "How fast can you close?", a: "We can close in 7–14 days on a vacant property. Tenant-occupied properties may take 21–30 days depending on the lease terms." },
+        { q: "Do I need to evict my tenant before selling?", a: "No. We buy the property as-is with the tenant in place. We handle the transition after closing." },
+      ]}
+      nearbyNeighborhoods={[
+        { name: "Fig Garden", slug: "fig-garden" },
+        { name: "McLane / Hoover", slug: "mclane" },
+        { name: "Fresno State Area", slug: "fresno-state" },
+      ]}
+    />
+  );
 }

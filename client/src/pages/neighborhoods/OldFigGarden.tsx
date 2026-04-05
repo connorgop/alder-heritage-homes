@@ -1,21 +1,47 @@
-import CityPage from "@/components/CityPage";
+import NeighborhoodPage from "@/components/NeighborhoodPage";
+
 export default function OldFigGarden() {
-  return <CityPage
-    city="Old Fig Garden, Fresno"
-    county="Fresno"
-    population="5,500"
-    description="Old Fig Garden is Fresno's most historic residential neighborhood — a small, tree-lined enclave in Northwest Fresno (zip 93704) featuring pre-WWII craftsman bungalows, Tudor revival homes, and Spanish Colonial architecture. Located near the Fresno Country Club and adjacent to the Fig Garden neighborhood, Old Fig Garden properties are among the most distinctive in the Central Valley. Many homes here have been in the same family for generations and come to market only through estate and probate sales. Median home prices range from $380,000 to $520,000."
-    neighborhoods={["Van Ness/Shields", "Palm/Maroa", "Calaveras/Fresno St", "Fresno Country Club area", "W. Shields Ave"]}
-    stats={[
-      { label: "Avg Home Price", value: "$380k–$520k" },
-      { label: "Zip Code(s)", value: "93704" },
-      { label: "Homes Bought", value: "20+" },
-      { label: "Avg Close Time", value: "7 Days" },
-    ]}
-    faqs={[
-      { q: "I'm settling an estate for an Old Fig Garden property — how does a cash sale work?", a: "Estate and probate sales in Old Fig Garden are one of our specialties. We work directly with executors, trustees, and attorneys to make the process as simple as possible. If probate is still open, we can work around the court approval timeline. We buy as-is — no cleanout, no repairs, no staging — and can close in 5–7 days once the estate is ready." },
-      { q: "Old Fig Garden homes are unique — will a cash buyer understand the value?", a: "Absolutely. We understand that pre-WWII craftsman and Tudor revival homes in Old Fig Garden carry significant historical and architectural value that standard automated valuations often miss. Every offer we make includes a free third-party Broker Opinion of Value from an experienced Fresno broker who knows the neighborhood — so you'll get a fair number that reflects the true character of your home." },
-      { q: "Can you buy an Old Fig Garden home that needs significant restoration?", a: "Yes. We buy Old Fig Garden properties in any condition — from well-maintained homes to those that need full restoration. We appreciate the architectural character of these historic homes and factor that into our offers. You don't need to make any repairs or improvements before we close." },
-    ]}
-  />;
+  return (
+    <NeighborhoodPage
+      name="Old Fig Garden / Van Ness Extension"
+      slug="old-fig-garden"
+      tagline="Fresno's historic district — we buy Old Fig Garden homes as-is, no repairs, cash offer within 24 hours."
+      description="Old Fig Garden and the Van Ness Extension form one of Fresno's most historically significant residential areas, developed in the 1910s–1930s along Van Ness Avenue between Shields and Herndon. The neighborhood is characterized by Spanish Colonial Revival, Tudor Revival, and Craftsman homes on wide tree-lined streets with mature landscaping. Many of these homes have been in the same family for generations, and sellers often face the challenge of selling a historic property without the resources or desire to undertake a full renovation. Estate sales and probate situations are common here."
+      medianPrice="$540K"
+      avgDays="31"
+      priceRange="$380K–$900K"
+      yearBuilt="1915–1940"
+      characteristics={[
+        "Spanish Colonial Revival, Tudor Revival, and Craftsman architecture",
+        "Wide tree-lined streets with mature landscaping",
+        "Large lots (7,000–15,000 sq ft)",
+        "Historic homes — many with original details intact",
+        "Proximity to Van Ness Avenue commercial corridor",
+        "Many homes with original hardwood floors, plaster walls, and built-ins",
+        "Older plumbing and electrical — common deferred maintenance",
+        "High property values relative to Fresno average",
+      ]}
+      sellerSituations={[
+        "Estate sale — longtime family home",
+        "Inherited historic property",
+        "Deferred maintenance on older home",
+        "Probate sale",
+        "Downsizing from large historic home",
+        "Avoiding costly historic renovation",
+        "Out-of-state heir",
+        "Divorce",
+      ]}
+      faqs={[
+        { q: "Do I need to preserve historic features before selling?", a: "No. We buy Old Fig Garden homes as-is, regardless of condition. We appreciate the historic character of these homes and price our offers accordingly — you don't need to restore or preserve anything before we close." },
+        { q: "How much will you offer for my Old Fig Garden home?", a: "Homes in this area typically sell for $380K–$900K depending on size, condition, and lot. Our cash offer reflects the as-is value, and we provide a free Broker Opinion of Value with every offer." },
+        { q: "What if the home is in probate?", a: "We work with probate attorneys and courts regularly. We can make an offer subject to probate court approval and work within the required timeline." },
+        { q: "How fast can you close?", a: "We can close in 7–14 days on a clear title. Probate properties typically take 30–60 days depending on the court schedule." },
+      ]}
+      nearbyNeighborhoods={[
+        { name: "Fig Garden", slug: "fig-garden" },
+        { name: "Tower District", slug: "tower-district" },
+        { name: "Bullard / West Fresno", slug: "bullard" },
+      ]}
+    />
+  );
 }

@@ -1,25 +1,46 @@
-import CityPage from "@/components/CityPage";
+import NeighborhoodPage from "@/components/NeighborhoodPage";
 
 export default function SoutheastFresno() {
   return (
-    <CityPage
-      city="Southeast Fresno"
-      county="Fresno"
-      population="~55,000"
+    <NeighborhoodPage
+      name="Southeast Fresno"
       slug="southeast-fresno"
-      description="Southeast Fresno encompasses a broad residential area south of Kings Canyon Road and east of Highway 99, including neighborhoods like Sunnyside, Reedley Road corridor, and the communities near Selma and Fowler. This part of Fresno has a high concentration of longtime homeowners — many of whom bought their homes in the 1960s through 1980s and have significant equity built up over decades. Sellers in Southeast Fresno often come to us when they're facing foreclosure, dealing with an inherited property, or simply ready to sell without the hassle of repairs and showings. Alder Heritage Homes buys houses throughout Southeast Fresno for cash, in any condition."
-      neighborhoods={["Sunnyside", "Kings Canyon Corridor", "Reedley Road", "Selma-Fowler Border", "Easton Area"]}
-      stats={[
-        { label: "Avg Home Age", value: "1960s–1980s" },
-        { label: "Median Price", value: "$265K" },
-        { label: "Equity Avg", value: "High" },
-        { label: "Days on Market", value: "24" },
+      tagline="Southeast Fresno's growing corridor — we buy Southeast Fresno homes as-is, cash offer in 24 hours."
+      description="Southeast Fresno encompasses the residential areas south of Kings Canyon Road and east of Clovis Avenue, extending toward the Fresno-Clovis border. This area has seen significant growth in recent years, with a mix of older affordable housing and newer construction. Southeast Fresno has strong rental demand and is one of the most active markets for cash home sales in the region. Common seller situations include estate sales, tired landlords, and homeowners facing foreclosure."
+      medianPrice="$285K"
+      avgDays="17"
+      priceRange="$180K–$420K"
+      yearBuilt="1960–1990"
+      characteristics={[
+        "Mix of 1960s–1990s housing stock",
+        "Affordable price point — strong investor demand",
+        "High rental demand",
+        "Growing area with new commercial development",
+        "Easy access to Highway 180 and 99",
+        "Proximity to Fresno-Clovis border",
+        "Active cash buyer market",
+        "Strong demand from first-time buyers",
+      ]}
+      sellerSituations={[
+        "Tired landlord — rental property exit",
+        "Foreclosure prevention",
+        "Estate sale",
+        "Inherited property",
+        "Deferred maintenance",
+        "Behind on mortgage or taxes",
+        "Divorce",
+        "Relocating",
       ]}
       faqs={[
-        { q: "Do you buy houses in Southeast Fresno?", a: "Yes. Alder Heritage Homes buys houses throughout Southeast Fresno, including Sunnyside, the Kings Canyon corridor, and areas near Selma and Fowler. We are a licensed CA agent (DRE #02219124) and real cash buyer — not a wholesaler." },
-        { q: "Can I sell my Southeast Fresno home if I'm behind on payments?", a: "Yes. We specialize in helping homeowners who are behind on mortgage payments or facing foreclosure. We can often close before a foreclosure sale date, stopping the process and protecting your credit. Call us immediately if you're in this situation — time matters." },
-        { q: "Do you buy inherited homes in Southeast Fresno?", a: "Yes. We handle probate and inherited property sales regularly. Whether the estate is in probate, the property has deferred maintenance, or there are multiple heirs to coordinate, we have experience navigating these situations and can close on your timeline." },
-        { q: "What is my Southeast Fresno home worth?", a: "Southeast Fresno homes typically sell between $220,000 and $320,000 depending on size, condition, and location. We provide a free Broker Opinion of Value with every offer so you can verify our number before deciding." },
+        { q: "How much will you offer for my Southeast Fresno home?", a: "Southeast Fresno homes typically sell for $180K–$420K depending on size, condition, and location. Our cash offer reflects the as-is value, and we provide a free Broker Opinion of Value with every offer." },
+        { q: "Can you close quickly?", a: "Yes. We can close in 7–14 days on a vacant property." },
+        { q: "Do I need to make repairs?", a: "No. We buy homes in any condition — deferred maintenance, major repairs needed, or move-in ready." },
+        { q: "What if my home is in foreclosure?", a: "We can often close before the foreclosure auction date. Call Connor immediately at (559) 281-8016 to discuss your timeline." },
+      ]}
+      nearbyNeighborhoods={[
+        { name: "Sunnyside", slug: "sunnyside" },
+        { name: "McLane / Hoover", slug: "mclane" },
+        { name: "Bullard / West Fresno", slug: "bullard" },
       ]}
     />
   );

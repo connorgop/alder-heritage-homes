@@ -1,22 +1,47 @@
-import CityPage from "@/components/CityPage";
+import NeighborhoodPage from "@/components/NeighborhoodPage";
+
 export default function ClovisNorth() {
-  return <CityPage
-    city="Clovis North, Clovis"
-    county="Fresno"
-    population="42,000"
-    description="Clovis North is one of the most sought-after residential areas in the entire Central Valley, encompassing zip codes 93619 and 93611. Built primarily from the 1990s through the 2010s, Clovis North features master-planned communities with large lots, top-rated Clovis Unified schools (Buchanan High School, Clovis North High School), and easy freeway access to Highway 168. The area attracts high-income professionals, military families from NAS Lemoore, and retirees. Median home prices range from $450,000 to $700,000+, with luxury estates in gated communities like Copper River Ranch exceeding $1M. Homeowners here often need to sell quickly due to job relocation, divorce, or estate situations."
-    neighborhoods={["Copper River Ranch", "Loma Vista", "Harlan Ranch", "Buchanan area", "Shepherd/Fowler Ave corridor", "Tarpey Village"]}
-    stats={[
-      { label: "Avg Home Price", value: "$450k–$700k+" },
-      { label: "Zip Code(s)", value: "93619, 93611" },
-      { label: "Homes Bought", value: "15+" },
-      { label: "Avg Close Time", value: "7 Days" },
-    ]}
-    faqs={[
-      { q: "Can you buy a high-value Clovis North home for cash — or only lower-priced properties?", a: "We buy homes at all price points in Clovis North, including properties in Copper River Ranch and other luxury communities. Our cash offer is based on current comparable sales regardless of price. We have purchased homes from $300,000 to over $900,000 in the Clovis area. Higher-value homes may take 1–2 additional days to underwrite, but the process is the same." },
-      { q: "I'm relocating for work and need to sell my Clovis North home fast — what's the timeline?", a: "Job relocation is one of the most common reasons Clovis North homeowners call us. We can close in as few as 5–7 days, or we can match your relocation timeline if you need more time. We handle all paperwork, coordinate with your employer's relocation package if applicable, and can close while you're already in your new city." },
-      { q: "My Clovis North home is in perfect condition — will I get a fair offer or a lowball?", a: "Every offer we make includes a free third-party Broker Opinion of Value from an independent Fresno-area broker so you can verify the number is fair. We are licensed CA real estate agents (DRE #02219124) and are legally required to act in your best interest. If listing with a top-producing agent would net you significantly more, we will tell you that honestly — and refer you to one of the best agents in Clovis." },
-      { q: "What is my Clovis North home worth as a cash sale vs. listing with a realtor?", a: "Cash offers typically come in at 85–92% of market value in exchange for speed, certainty, and zero repairs or commissions. On a $600,000 Clovis North home, that's roughly $510,000–$552,000 cash vs. $600,000 minus 6% commission ($36,000), repairs, and 45–60 days of carrying costs. For many sellers, especially those relocating or dealing with an estate, the cash route nets more after all costs are factored in." },
-    ]}
-  />;
+  return (
+    <NeighborhoodPage
+      name="Clovis North / Copper River"
+      slug="clovis-north"
+      tagline="Gated golf communities and luxury estates in Clovis — we buy Copper River and Clovis North homes as-is, cash offer in 24 hours."
+      description="Clovis North and the Copper River Ranch community represent the premium end of the Clovis real estate market. Located along Friant Road north of Herndon, these neighborhoods feature gated golf course communities, luxury custom homes, and large estate properties within the Clovis Unified School District. Copper River Ranch is a master-planned community built around the Copper River Country Club golf course. Sellers here often include executives relocating, estate sales, and homeowners who need a fast, private sale without the exposure of a traditional listing."
+      medianPrice="$750K"
+      avgDays="35"
+      priceRange="$550K–$2M+"
+      yearBuilt="1995–2015"
+      characteristics={[
+        "Gated golf course communities",
+        "Luxury custom homes and estate properties",
+        "Clovis Unified School District — top-rated schools",
+        "Adjacent to Copper River Country Club",
+        "Large lots (8,000–25,000 sq ft)",
+        "High-end finishes — granite, hardwood, custom cabinetry",
+        "HOA communities with amenities",
+        "Strong demand from executives and professionals",
+      ]}
+      sellerSituations={[
+        "Executive relocation — need fast, private sale",
+        "Estate sale — luxury property",
+        "Divorce — high-value asset division",
+        "Downsizing from large estate",
+        "Behind on HOA dues or assessments",
+        "Avoiding public listing exposure",
+        "Inherited luxury property",
+        "Financial hardship — need liquidity fast",
+      ]}
+      faqs={[
+        { q: "Will you buy a luxury home in Copper River Ranch?", a: "Yes. We buy homes at all price points, including luxury properties in Copper River Ranch and Clovis North. Our offer will reflect the current as-is market value, and we provide a free Broker Opinion of Value from a luxury market specialist." },
+        { q: "How much will you offer for my Clovis North home?", a: "Homes in Clovis North and Copper River typically sell for $550K–$2M+ depending on size, condition, and golf course proximity. Our cash offer reflects the as-is value." },
+        { q: "Can you close discreetly without a public listing?", a: "Yes. We buy directly — no MLS listing, no open houses, no sign in the yard. The transaction is completely private." },
+        { q: "How fast can you close on a luxury property?", a: "We can close in 14–21 days on a luxury property. Title work on higher-value properties sometimes takes a few extra days, but we move as fast as the title company allows." },
+      ]}
+      nearbyNeighborhoods={[
+        { name: "Woodward Park", slug: "woodward-park" },
+        { name: "North Fresno", slug: "north-fresno" },
+        { name: "Fig Garden", slug: "fig-garden" },
+      ]}
+    />
+  );
 }

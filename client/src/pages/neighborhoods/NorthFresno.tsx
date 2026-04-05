@@ -1,25 +1,46 @@
-import CityPage from "@/components/CityPage";
+import NeighborhoodPage from "@/components/NeighborhoodPage";
 
 export default function NorthFresno() {
   return (
-    <CityPage
-      city="North Fresno"
-      county="Fresno"
-      population="~45,000"
+    <NeighborhoodPage
+      name="North Fresno"
       slug="north-fresno"
-      description="North Fresno is one of the fastest-growing and most desirable areas in the entire Central Valley, stretching from Shaw Avenue north to Herndon and beyond toward Clovis. The area includes master-planned communities like Copper River Ranch, Riverlakes Ranch, and the Friant Road corridor — home to newer construction, golf course communities, and executive-level properties. Sellers in North Fresno often come to us when they need a fast, private sale without the disruption of traditional listing: corporate relocations, divorce settlements, estate liquidations, and downsizing to retirement communities. Alder Heritage Homes buys houses throughout North Fresno for cash, closing on your timeline."
-      neighborhoods={["Copper River Ranch", "Riverlakes Ranch", "Friant Road Corridor", "Herndon-Willow", "Fig Garden Loop"]}
-      stats={[
-        { label: "Median Price", value: "$580K" },
-        { label: "Avg Home Size", value: "2,400 sf" },
-        { label: "Days on Market", value: "19" },
-        { label: "New Construction", value: "Active" },
+      tagline="North Fresno's suburban corridor — we buy North Fresno homes as-is, cash offer in 24 hours, close in 7–14 days."
+      description="North Fresno encompasses the residential areas north of Shaw Avenue, stretching from Highway 41 to Clovis Avenue. This broad area includes a mix of 1980s–2000s tract homes, newer construction, and established neighborhoods with top-rated schools. North Fresno is one of the most active real estate markets in the Central Valley, with strong demand from families and professionals. Sellers here often include job relocations, estate sales, and homeowners who want a fast, private sale without the hassle of a traditional listing."
+      medianPrice="$430K"
+      avgDays="20"
+      priceRange="$320K–$800K"
+      yearBuilt="1980–2010"
+      characteristics={[
+        "1980s–2000s tract homes and newer construction",
+        "Top-rated Clovis Unified and Fresno Unified schools",
+        "Strong demand from families and professionals",
+        "Mix of HOA and non-HOA communities",
+        "Easy freeway access (Highway 41 and 168)",
+        "Proximity to River Park shopping center",
+        "Well-maintained neighborhoods with low crime",
+        "Active resale market",
+      ]}
+      sellerSituations={[
+        "Job relocation — need to sell fast",
+        "Estate sale",
+        "Divorce",
+        "Downsizing",
+        "Inherited property",
+        "Avoiding HOA disclosure complications",
+        "Behind on mortgage",
+        "Relocating out of Fresno",
       ]}
       faqs={[
-        { q: "Do you buy homes in North Fresno and Copper River?", a: "Yes. Alder Heritage Homes buys homes throughout North Fresno, including Copper River Ranch, Riverlakes Ranch, and the Friant Road corridor. We are a licensed CA agent (DRE #02219124) and real cash buyer — not a wholesaler." },
-        { q: "Can I sell my North Fresno home without listing it?", a: "Yes. Many North Fresno sellers prefer a private, off-market sale for privacy and convenience. We handle the transaction completely off-market — no MLS listing, no sign in the yard, no open houses. Just a clean, professional sale." },
-        { q: "What is my North Fresno home worth in 2026?", a: "North Fresno homes range from $450,000 to $800,000+ depending on community, size, and condition. We provide a free third-party Broker Opinion of Value with every offer so you can verify our number is grounded in real market data." },
-        { q: "How quickly can you close on a North Fresno home?", a: "We can close in 5–7 days once we have a signed purchase agreement. If you need more time — to find your next home, coordinate a move to a retirement community, or handle an estate — we work around your schedule." },
+        { q: "How much will you offer for my North Fresno home?", a: "North Fresno homes typically sell for $320K–$800K depending on size, condition, and specific community. Our cash offer reflects the as-is value, and we provide a free Broker Opinion of Value with every offer." },
+        { q: "How fast can you close?", a: "We can close in 7–14 days. If you need more time, we can accommodate your timeline." },
+        { q: "Do I need to make repairs before selling?", a: "No. We buy North Fresno homes as-is — whether they need cosmetic updates or more significant repairs." },
+        { q: "Can you buy my home if it's in an HOA community?", a: "Yes. We handle HOA payoffs, outstanding dues, and any architectural violations as part of the closing process." },
+      ]}
+      nearbyNeighborhoods={[
+        { name: "Woodward Park", slug: "woodward-park" },
+        { name: "Clovis North / Copper River", slug: "clovis-north" },
+        { name: "Fig Garden", slug: "fig-garden" },
       ]}
     />
   );

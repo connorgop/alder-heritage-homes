@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
 import PageMeta from "@/components/PageMeta";
+import CashOfferForm from "@/components/CashOfferForm";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -216,21 +217,23 @@ export default function CityPage({ city, county, population, description, neighb
                 </ul>
               </div>
 
-              <div className="p-6 rounded-2xl text-white" style={{ background: "oklch(0.28 0.05 155)" }}>
-                <h3 className="font-bold text-lg mb-3" style={{ fontFamily: "'Lora', serif" }}>
-                  Get Your {city} Cash Offer
-                </h3>
-                <p className="text-sm mb-5 leading-relaxed" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  Free, no-obligation offer within 24 hours.
-                </p>
-                <Link href="/contact">
-                  <button className="w-full py-3 rounded-lg font-bold text-white mb-3" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Get My Cash Offer
-                  </button>
-                </Link>
-                <a href={PHONE_HREF} className="flex items-center justify-center gap-2 text-sm font-bold" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'DM Mono', monospace" }}>
-                  <Phone size={14} /> {PHONE}
-                </a>
+              <div className="rounded-2xl overflow-hidden" style={{ background: "oklch(0.28 0.05 155)" }}>
+                <div className="px-5 pt-5 pb-2">
+                  <h3 className="font-bold text-lg mb-1" style={{ fontFamily: "'Lora', serif", color: "white" }}>
+                    Get Your {city} Cash Offer
+                  </h3>
+                  <p className="text-xs mb-3" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Free · No obligation · 24-hour response
+                  </p>
+                </div>
+                <div className="px-4 pb-2">
+                  <CashOfferForm city={city} variant="dark" />
+                </div>
+                <div className="px-5 pb-4">
+                  <a href={PHONE_HREF} className="flex items-center justify-center gap-2 text-sm font-bold" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'DM Mono', monospace" }}>
+                    <Phone size={14} /> Or call {PHONE}
+                  </a>
+                </div>
               </div>
 
               <div className="p-6 rounded-2xl" style={{ background: "oklch(0.93 0.02 85)", border: "1px solid oklch(0.88 0.02 85)" }}>
@@ -252,23 +255,24 @@ export default function CityPage({ city, county, population, description, neighb
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4" style={{ fontFamily: "'Lora', serif" }}>
-            Ready to Sell Your {city} Home?
-          </h2>
-          <p className="text-lg mb-8 max-w-xl mx-auto" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-            Call us or fill out our form. We'll have a cash offer for your {city} property within 24 hours. No pressure, no obligation.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <button className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Get My Cash Offer <ArrowRight size={20} />
-              </button>
-            </Link>
-            <a href={PHONE_HREF} className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
-              <Phone size={20} /> {PHONE}
+      {/* Inline Cash Offer Form CTA */}
+      <section id="get-offer" className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="max-w-2xl mx-auto px-6">
+          <div className="text-center mb-8">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 tracking-widest uppercase" style={{ background: "oklch(0.55 0.13 42 / 0.35)", color: "oklch(0.88 0.08 60)", fontFamily: "'DM Mono', monospace" }}>
+              Free · No Obligation · 24-Hour Response
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ fontFamily: "'Lora', serif" }}>
+              Ready to Sell Your {city} Home?
+            </h2>
+            <p className="text-lg" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Fill out the form below and Connor will have a cash offer for your {city} property within 24 hours. No repairs, no commissions, no pressure.
+            </p>
+          </div>
+          <CashOfferForm city={city} variant="dark" />
+          <div className="mt-6 text-center">
+            <a href={PHONE_HREF} className="inline-flex items-center gap-2 font-bold" style={{ color: "oklch(0.75 0.10 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              <Phone size={18} /> Prefer to call? {PHONE}
             </a>
           </div>
         </div>

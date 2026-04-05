@@ -54,6 +54,8 @@ const trust = [
   { label: "📸 Before & After Gallery", href: "/before-after" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Fresno Housing Market 2026", href: "/fresno-housing-market" },
+  { label: "🏡 What Is My Home Worth?", href: "/what-is-my-home-worth" },
+  { label: "Fresno Neighborhoods Hub", href: "/fresno-neighborhoods" },
   { label: "Blog & Resources", href: "/blog" },
 ];
 
@@ -80,14 +82,19 @@ const cities = [
 ];
 
 const neighborhoods = [
-  { label: "Clovis North", href: "/clovis-north" },
-  { label: "Fig Garden", href: "/fresno-fig-garden" },
-  { label: "Woodward Park", href: "/fresno-woodward-park" },
-  { label: "Tower District", href: "/fresno-tower-district" },
-  { label: "North Fresno", href: "/north-fresno" },
-  { label: "Bullard", href: "/fresno-bullard" },
-  { label: "Old Fig Garden", href: "/fresno-old-fig-garden" },
-  { label: "Southeast Fresno", href: "/southeast-fresno" },
+  { label: "All Fresno Neighborhoods", href: "/fresno-neighborhoods" },
+  { label: "Clovis North", href: "/fresno-neighborhoods/clovis-north" },
+  { label: "Fig Garden", href: "/fresno-neighborhoods/fig-garden" },
+  { label: "Woodward Park", href: "/fresno-neighborhoods/woodward-park" },
+  { label: "Tower District", href: "/fresno-neighborhoods/tower-district" },
+  { label: "North Fresno", href: "/fresno-neighborhoods/north-fresno" },
+  { label: "Bullard", href: "/fresno-neighborhoods/bullard" },
+  { label: "Old Fig Garden", href: "/fresno-neighborhoods/old-fig-garden" },
+  { label: "Southeast Fresno", href: "/fresno-neighborhoods/southeast-fresno" },
+  { label: "Sunnyside", href: "/fresno-neighborhoods/sunnyside" },
+  { label: "McLane / Hoover", href: "/fresno-neighborhoods/mclane" },
+  { label: "Fig Garden Village", href: "/fresno-neighborhoods/fig-garden-village" },
+  { label: "Fresno State Area", href: "/fresno-neighborhoods/fresno-state" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
