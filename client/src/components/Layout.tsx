@@ -61,6 +61,7 @@ const trust = [
   { label: "❓ Sell House Fast FAQ", href: "/sell-house-fast-faq" },
   { label: "Visalia Neighborhoods Hub", href: "/visalia-neighborhoods" },
   { label: "Visalia Housing Market 2026", href: "/visalia-housing-market" },
+  { label: "Bakersfield Neighborhoods Hub", href: "/bakersfield-neighborhoods" },
 ];
 
 const cities = [

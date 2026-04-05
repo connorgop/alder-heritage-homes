@@ -97,8 +97,16 @@ import VisaliaNeighborhoodBenMaddox from "./pages/visalia-neighborhoods/BenMaddo
 import VisaliaNeighborhoodDowntownVisalia from "./pages/visalia-neighborhoods/DowntownVisalia";
 import VisaliaNeighborhoodMineralKing from "./pages/visalia-neighborhoods/MineralKing";
 import VisaliaNeighborhoodCaldwellAve from "./pages/visalia-neighborhoods/CaldwellAve";
-
-// City landing pages
+import BakersfieldNeighborhoods from "./pages/BakersfieldNeighborhoods";
+import BakersfieldNeighborhoodEastBakersfield from "./pages/neighborhoods/EastBakersfield";
+import BakersfieldNeighborhoodSouthwestBakersfield from "./pages/neighborhoods/SouthwestBakersfield";
+import BakersfieldNeighborhoodOildale from "./pages/neighborhoods/Oildale";
+import BakersfieldNeighborhoodKernCity from "./pages/neighborhoods/KernCity";
+import BakersfieldNeighborhoodRosedale from "./pages/neighborhoods/Rosedale";
+import BakersfieldNeighborhoodDowntownBakersfield from "./pages/neighborhoods/DowntownBakersfield";
+import BakersfieldNeighborhoodStockdale from "./pages/neighborhoods/Stockdale";
+import BakersfieldNeighborhoodOleanderSunset from "./pages/neighborhoods/OleanderSunset";
+// City landing pagess
 import FresnoPage from "./pages/cities/Fresno";
 import ClovisPage from "./pages/cities/Clovis";
 import SangerPage from "./pages/cities/Sanger";
@@ -266,6 +274,15 @@ function Router() {
       <Route path="/visalia-neighborhoods/downtown-visalia" component={VisaliaNeighborhoodDowntownVisalia} />
       <Route path="/visalia-neighborhoods/mineral-king" component={VisaliaNeighborhoodMineralKing} />
       <Route path="/visalia-neighborhoods/caldwell-ave" component={VisaliaNeighborhoodCaldwellAve} />
+      <Route path="/bakersfield-neighborhoods" component={BakersfieldNeighborhoods} />
+      <Route path="/bakersfield-neighborhoods/east-bakersfield" component={BakersfieldNeighborhoodEastBakersfield} />
+      <Route path="/bakersfield-neighborhoods/southwest-bakersfield" component={BakersfieldNeighborhoodSouthwestBakersfield} />
+      <Route path="/bakersfield-neighborhoods/oildale" component={BakersfieldNeighborhoodOildale} />
+      <Route path="/bakersfield-neighborhoods/kern-city" component={BakersfieldNeighborhoodKernCity} />
+      <Route path="/bakersfield-neighborhoods/rosedale" component={BakersfieldNeighborhoodRosedale} />
+      <Route path="/bakersfield-neighborhoods/downtown-bakersfield" component={BakersfieldNeighborhoodDowntownBakersfield} />
+      <Route path="/bakersfield-neighborhoods/stockdale" component={BakersfieldNeighborhoodStockdale} />
+      <Route path="/bakersfield-neighborhoods/oleander-sunset" component={BakersfieldNeighborhoodOleanderSunset} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
