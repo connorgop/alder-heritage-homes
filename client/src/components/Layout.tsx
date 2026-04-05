@@ -286,7 +286,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 )}
               </div>
               {/* Sell Fast CTA link */}
-              <Link href="/sell-my-house">
+              <Link href="/sell-house-fast-central-valley">
                 <span
                   className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-bold transition-all hover:opacity-90"
                   style={{ fontFamily: "'Nunito Sans', sans-serif", color: "white", background: "oklch(0.55 0.13 42)", cursor: "pointer", letterSpacing: "0.01em" }}
