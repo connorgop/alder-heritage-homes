@@ -197,6 +197,26 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         {s.label}
                       </Link>
                     ))}
+                    {/* Divider + City Fast-Sale Links */}
+                    <div className="mx-4 my-2 border-t" style={{ borderColor: "oklch(0.88 0.02 85)" }} />
+                    <p className="px-4 py-1 text-xs font-bold uppercase tracking-wider" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>Sell Fast By City</p>
+                    {[
+                      { label: "Fresno", href: "/sell-house-fast-fresno-ca" },
+                      { label: "Clovis", href: "/we-buy-houses-clovis" },
+                      { label: "Visalia", href: "/sell-house-fast-visalia-ca-guide" },
+                      { label: "Bakersfield", href: "/sell-house-fast-bakersfield-ca-guide" },
+                      { label: "Stockton", href: "/blog/sell-house-fast-stockton-ca" },
+                      { label: "Modesto", href: "/blog/sell-house-fast-modesto-ca" },
+                    ].map((c) => (
+                      <Link
+                        key={c.href}
+                        href={c.href}
+                        className="block px-4 py-2 text-sm font-medium hover:bg-orange-50 transition-colors"
+                        style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.08 42)" }}
+                      >
+                        → {c.label}
+                      </Link>
+                    ))}
                   </div>
                 )}
               </div>

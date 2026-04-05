@@ -2682,10 +2682,129 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>Many HOAs will negotiate the amount owed — especially if you're selling and the lien will be paid off at closing. They may waive some of the accumulated interest and fees if you can demonstrate financial hardship. Contact your HOA board or management company directly.</p>
       <h2>Selling to a Cash Buyer With an HOA Lien</h2>
       <p>We buy properties with HOA liens throughout Fresno County. We work with the title company and HOA to resolve the lien at closing — you don't need to pay anything upfront. The lien is simply deducted from your sale proceeds.</p>
-      <p>If the liens exceed the property's value, we can discuss a short sale or other options. <strong>Call (559) 281-8016</strong> for a free consultation.</p>
+       <p>If the liens exceed the property's value, we can discuss a short sale or other options. <strong>Call (559) 281-8016</strong> for a free consultation.</p>
+    </div>
+  ),
+  "sell-house-fast-stockton-ca": (
+    <div className="prose-heritage">
+      <p>Stockton's real estate market moves fast — but sometimes homeowners need to move even faster. Whether you're facing foreclosure, dealing with an inherited property, relocating for work, or simply done being a landlord, selling your Stockton home for cash can put money in your hand in as little as 7 days.</p>
+      <p>At Alder Heritage Homes, we buy houses throughout Stockton and San Joaquin County — in any condition, any situation, with no repairs required and no agent commissions.</p>
+      <h2>Why Stockton Homeowners Choose a Cash Sale</h2>
+      <p>Stockton has one of California's most active investor markets, but not all cash buyers are equal. Many are wholesalers who will tie up your property under contract, then try to assign it to another buyer — adding weeks of uncertainty. We are <strong>direct end-buyers</strong>: we purchase the home ourselves, close with our own funds, and never reassign your contract.</p>
+      <ul>
+        <li><strong>No repairs:</strong> We buy homes in any condition — fire damage, foundation issues, hoarder situations, deferred maintenance</li>
+        <li><strong>No commissions:</strong> We're not agents listing your home — we're buyers making a direct offer</li>
+        <li><strong>Close in 7–21 days:</strong> Or on your timeline — we can delay closing if you need more time</li>
+        <li><strong>Rent-back available:</strong> Sell now, stay in the home while you find your next place</li>
+        <li><strong>All liens handled:</strong> We work with the title company to resolve HOA liens, tax liens, and judgment liens at closing</li>
+      </ul>
+      <h2>Stockton Neighborhoods We Buy In</h2>
+      <p>We purchase homes throughout all of Stockton's neighborhoods, including Lincoln Village, Weston Ranch, Brookside, Morada, Spanos Park, Country Club, Sherwood Manor, Seaport, and downtown Stockton. We also buy in surrounding communities like Lodi, Tracy, Manteca, and Ripon.</p>
+      <h2>What's My Stockton Home Worth in a Cash Sale?</h2>
+      <p>Cash offers are typically 70–85% of a home's after-repair value (ARV). The exact percentage depends on the home's condition, location, and the cost of any needed repairs. On a Stockton home worth $350,000 in perfect condition that needs $30,000 in repairs, a fair cash offer might be $245,000–$265,000.</p>
+      <p>Compare that to a traditional sale: after 3–5% agent commissions, 1–2% closing costs, $15,000–$30,000 in repairs, and 45–90 days on market, your net proceeds from a traditional sale may not be as different as you'd expect — and you avoid all the uncertainty and hassle.</p>
+      <h2>The Stockton Cash Sale Process</h2>
+      <ol>
+        <li><strong>Call or submit your address:</strong> We gather basic information about your property</li>
+        <li><strong>We research and prepare an offer:</strong> We analyze comparable sales, condition, and repair costs — typically within 24 hours</li>
+        <li><strong>We present a written offer:</strong> No pressure, no obligation — take your time to review</li>
+        <li><strong>You choose your closing date:</strong> We open escrow and close on your schedule</li>
+        <li><strong>You receive your cash:</strong> Wire transfer at closing — no waiting for bank financing to clear</li>
+      </ol>
+      <p>Ready to get a fair cash offer for your Stockton home? <strong>Call (559) 281-8016</strong> or visit <a href="/we-buy-houses-stockton">our Stockton page</a> to get started.</p>
+    </div>
+  ),
+  "sell-house-fast-modesto-ca": (
+    <div className="prose-heritage">
+      <p>Modesto is one of the Central Valley's most dynamic housing markets — but when you need to sell quickly, the traditional listing process can feel impossibly slow. Open houses, showings, inspection negotiations, financing contingencies — it can take 60–90 days just to get to closing, with no guarantee the deal won't fall apart.</p>
+      <p>Alder Heritage Homes buys houses in Modesto and throughout Stanislaus County with cash, closing in as little as 7 days. No repairs, no commissions, no contingencies.</p>
+      <h2>Common Reasons Modesto Homeowners Sell Fast</h2>
+      <ul>
+        <li><strong>Foreclosure prevention:</strong> A cash sale can stop a foreclosure auction and preserve your credit</li>
+        <li><strong>Divorce:</strong> Quickly liquidate a shared asset without months of uncertainty</li>
+        <li><strong>Inherited property:</strong> Avoid the carrying costs and maintenance of a home you didn't plan to own</li>
+        <li><strong>Job relocation:</strong> Accept that out-of-state offer without being tied to a listing</li>
+        <li><strong>Landlord burnout:</strong> Exit your rental property without evicting tenants first</li>
+        <li><strong>Major repairs:</strong> Sell as-is instead of spending $20,000–$50,000 on updates</li>
+      </ul>
+      <h2>Modesto Neighborhoods We Buy In</h2>
+      <p>We purchase homes throughout Modesto including Beyer Park, Creekwood, Dry Creek, Lakewood, Village One, Salida, Riverbank, and Ceres. We also cover Turlock, Patterson, Newman, and other Stanislaus County communities.</p>
+      <h2>How We Determine Your Cash Offer</h2>
+      <p>Our offer is based on three factors: the home's current market value in good condition (ARV), the estimated cost of repairs needed, and our holding costs. We're transparent about our math — if you want to see how we calculated your offer, we'll walk you through it line by line.</p>
+      <h2>What Happens at Closing?</h2>
+      <p>We use a licensed California escrow company to handle the closing. At closing, your mortgage is paid off, any liens are resolved, and you receive the remaining proceeds as a wire transfer. The entire process is fully documented and legally protected.</p>
+      <p>Ready to sell your Modesto home fast? <strong>Call (559) 281-8016</strong> or visit <a href="/we-buy-houses-modesto">our Modesto page</a> for a free, no-obligation cash offer.</p>
+    </div>
+  ),
+  "sell-house-fast-merced-ca": (
+    <div className="prose-heritage">
+      <p>Merced is a growing city — UC Merced's expansion has brought new residents and rising home values. But not every homeowner is in a position to wait for the market to work in their favor. If you need to sell your Merced home quickly, a cash sale may be your best option.</p>
+      <p>Alder Heritage Homes buys houses in Merced and throughout Merced County. We close in 7–21 days, buy in any condition, and pay all closing costs.</p>
+      <h2>Merced's Unique Real Estate Landscape</h2>
+      <p>Merced's market is heavily influenced by UC Merced and the agricultural economy. Many homeowners in Merced are dealing with:</p>
+      <ul>
+        <li>Older homes built in the 1950s–1980s that need significant updates to appeal to retail buyers</li>
+        <li>Properties near agricultural areas that can be harder to finance conventionally</li>
+        <li>Inherited properties from longtime Merced families who farmed or ranched in the area</li>
+        <li>Rental properties near UC Merced that have experienced tenant issues</li>
+      </ul>
+      <p>We understand these challenges and buy homes in all of these situations.</p>
+      <h2>The Cash Sale Advantage in Merced</h2>
+      <p>When you list a home in Merced that needs work, you'll typically face one of two outcomes: you accept a low offer from an investor anyway, or you spend $15,000–$40,000 updating the home to attract a financed buyer. Either way, you're leaving money on the table or spending money you may not have.</p>
+      <p>A direct cash sale to Alder Heritage Homes eliminates this dilemma. We buy the home as-is, handle all repairs ourselves after closing, and give you a fair offer based on the home's current condition.</p>
+      <h2>Merced Areas We Serve</h2>
+      <p>We buy homes throughout Merced including Bellevue Ranch, Fahrens Park, Yosemite Lake Estates, and downtown Merced. We also serve Atwater, Livingston, Los Banos, and other Merced County communities.</p>
+      <p>Call <strong>(559) 281-8016</strong> or visit <a href="/we-buy-houses-merced">our Merced page</a> for a free cash offer — no obligation, no pressure.</p>
+    </div>
+  ),
+  "sell-house-fast-turlock-ca": (
+    <div className="prose-heritage">
+      <p>Turlock is one of the Central Valley's most underrated real estate markets — steady demand, strong agricultural economy, and a growing population. But when life throws you a curveball, waiting 60–90 days to sell through a traditional listing isn't always an option.</p>
+      <p>Alder Heritage Homes buys houses in Turlock and throughout Stanislaus County with cash. We close fast, buy as-is, and make the process as simple as possible.</p>
+      <h2>Who Sells to Us in Turlock?</h2>
+      <p>Our Turlock sellers come from all walks of life:</p>
+      <ul>
+        <li><strong>Agricultural families</strong> with older farmhouses or rural properties that are hard to finance conventionally</li>
+        <li><strong>Landlords</strong> who are tired of managing rental properties and want to exit cleanly</li>
+        <li><strong>Homeowners facing foreclosure</strong> who need to sell before the auction date</li>
+        <li><strong>Heirs</strong> who inherited a Turlock property and don't want to manage it from out of town</li>
+        <li><strong>Divorcing couples</strong> who need to liquidate quickly and move on</li>
+        <li><strong>Homeowners with deferred maintenance</strong> who don't want to invest in repairs before selling</li>
+      </ul>
+      <h2>Turlock Neighborhoods We Buy In</h2>
+      <p>We purchase homes throughout Turlock including Turlock Golf & Country Club area, Countryside, Donnelly Park, and downtown Turlock. We also buy in Ceres, Denair, Hilmar, and other nearby communities.</p>
+      <h2>Our Offer Process</h2>
+      <p>We research your property thoroughly before making an offer — we look at recent comparable sales, your home's condition, and the local market. Our offers are fair and fully explained. We don't lowball and hope you don't know better; we show you exactly how we arrived at our number.</p>
+      <p>If you accept, we open escrow with a licensed California escrow company and close on your timeline — as fast as 7 days or as slow as you need.</p>
+      <p>Ready to sell your Turlock home? <strong>Call (559) 281-8016</strong> or visit <a href="/we-buy-houses-turlock">our Turlock page</a> for a free cash offer.</p>
+    </div>
+  ),
+  "sell-house-fast-porterville-ca": (
+    <div className="prose-heritage">
+      <p>Porterville sits at the foot of the Sierra Nevada in Tulare County — a community with deep agricultural roots and a tight-knit real estate market. When Porterville homeowners need to sell quickly, they often find that the local market is thinner than in larger cities, making a cash sale an even more attractive option.</p>
+      <p>Alder Heritage Homes buys houses in Porterville and throughout Tulare County. We close in 7–21 days, buy in any condition, and handle all the paperwork.</p>
+      <h2>Why Porterville Homeowners Choose a Cash Sale</h2>
+      <p>Porterville's housing market, while stable, has fewer active buyers than Fresno or Bakersfield. This means homes can sit on the market for 60–120 days, especially if they need repairs. A cash sale eliminates the wait entirely.</p>
+      <ul>
+        <li><strong>No waiting:</strong> We close on your schedule — as fast as 7 days</li>
+        <li><strong>No repairs:</strong> We buy homes in any condition, including major deferred maintenance</li>
+        <li><strong>No commissions:</strong> You keep more of your equity</li>
+        <li><strong>No financing contingencies:</strong> Our offer won't fall through because a buyer's loan was denied</li>
+      </ul>
+      <h2>Porterville-Specific Situations We Handle</h2>
+      <p>We have experience with situations common in Porterville and the surrounding Tulare County foothills:</p>
+      <ul>
+        <li>Older homes on well and septic that are difficult to finance conventionally</li>
+        <li>Properties with agricultural zoning or mixed-use parcels</li>
+        <li>Homes affected by the 2019 Porterville Library fire or other local events</li>
+        <li>Inherited rural properties that have been in families for generations</li>
+        <li>Homes with deferred maintenance due to the owner's health or financial situation</li>
+      </ul>
+      <h2>Areas Near Porterville We Serve</h2>
+      <p>In addition to Porterville itself, we buy homes in Lindsay, Exeter, Strathmore, Terra Bella, Springville, and other Tulare County foothill communities.</p>
+      <p>Ready to get a fair cash offer? <strong>Call (559) 281-8016</strong> or visit <a href="/we-buy-houses-porterville">our Porterville page</a> — free consultation, no obligation.</p>
     </div>
   )
-
 };
 
 export default function BlogPost() {
