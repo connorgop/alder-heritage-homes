@@ -3193,6 +3193,129 @@ const articleContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+// 8 Visalia Neighborhood Blog Posts — insert before "};" in articleContent
+
+  "sell-my-house-mooney-blvd-visalia": (
+    <div>
+      <p>The Mooney Boulevard corridor is Visalia's primary commercial and residential spine — a stretch of mid-century ranch homes, newer subdivisions, and mixed-use properties that runs the full length of the city from north to south. If you own a home near Mooney Blvd and need to sell quickly, you're in one of the most liquid real estate markets in Tulare County. Cash buyers actively seek properties in this corridor because of its high demand, strong rental income potential, and consistent appreciation.</p>
+      <h2>Why Mooney Blvd Homeowners Sell to Cash Buyers</h2>
+      <p>The Mooney Blvd area attracts a wide range of sellers. Landlords who purchased rental properties in the 1990s and early 2000s are now looking to exit after decades of management. Inherited homes from parents or grandparents who lived along this corridor for 30+ years often need significant updates before a traditional listing would be viable. Sellers facing divorce, job relocation, or financial hardship also find that a cash sale eliminates the uncertainty of a traditional listing in a market that, while strong, still requires 30–60 days to close.</p>
+      <h2>What Cash Buyers Pay Near Mooney Blvd</h2>
+      <p>Homes near the Mooney Blvd corridor in Q1 2026 range from $280,000 to $450,000 depending on size, condition, and proximity to commercial areas. Cash buyers typically offer 78–88% of market value for move-in-ready homes and 68–76% for homes needing significant repairs. Because this corridor has consistent buyer demand from both owner-occupants and investors, cash offers tend to be competitive relative to other Visalia zip codes.</p>
+      <p>A 3-bedroom, 1,400 sq ft home near Mooney Blvd in average condition might receive a cash offer of $240,000–$290,000 — compared to a potential net of $265,000–$310,000 after a traditional listing that includes agent commissions, repairs, and 45–60 days of carrying costs. The gap is often smaller than sellers expect.</p>
+      <h2>The Alder Heritage Homes Process Near Mooney Blvd</h2>
+      <p>Connor Whittaker at Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) who has purchased homes throughout the Visalia area. The process is straightforward: call or submit your address, receive a cash offer within 24 hours, choose your closing date (as fast as 7 days), and close with no repairs, no commissions, and no closing costs. You receive the full offer amount at closing.</p>
+      <h2>Homes We Buy Near Mooney Blvd</h2>
+      <p>We purchase homes in any condition along the Mooney Blvd corridor: original 1960s–1980s kitchens and bathrooms, deferred maintenance, foundation issues, tenant-occupied properties, hoarder situations, fire or water damage, and inherited homes that need full renovation. If you've inherited a Mooney Blvd area property and don't want to manage the renovation process, we can close on your timeline without you ever lifting a hammer.</p>
+      <p>See also: <a href="/visalia-neighborhoods/mooney-blvd">Mooney Blvd Neighborhood Page</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia</a> · <a href="/visalia-housing-market">Visalia Housing Market 2026</a> · <a href="/blog/selling-inherited-property-california">Selling an Inherited Property in California</a></p>
+    </div>
+  ),
+
+  "sell-my-house-college-of-the-sequoias-visalia": (
+    <div>
+      <p>The College of the Sequoias (COS) area in northwest Visalia is one of the city's most active real estate markets — a mix of student rentals, faculty-owned homes, and established residential neighborhoods that has seen consistent demand from investors and owner-occupants alike. If you own a home near COS and need to sell quickly, you have more options than almost anywhere else in Tulare County.</p>
+      <h2>Why COS Area Homeowners Sell to Cash Buyers</h2>
+      <p>The COS area presents unique selling dynamics. Landlords who have rented to students for years often face significant deferred maintenance — worn flooring, damaged walls, outdated appliances — that makes a traditional listing challenging. Faculty members relocating to other institutions need a fast, certain close that a traditional sale can't guarantee. Inherited properties in this area often have long-term tenants in place, which complicates a standard listing but is no obstacle for a cash buyer.</p>
+      <h2>What Cash Buyers Pay Near COS</h2>
+      <p>Homes near College of the Sequoias in Q1 2026 range from $260,000 to $420,000. Cash buyers typically offer 78–87% of market value for well-maintained homes and 65–75% for properties with significant deferred maintenance or tenant complications. Student rental properties with multiple bedrooms often receive stronger cash offers because of their income potential.</p>
+      <h2>The Alder Heritage Homes Process Near COS</h2>
+      <p>Connor Whittaker at Alder Heritage Homes purchases homes throughout the COS area. Submit your address online or call (559) 281-8016 directly. You'll receive a cash offer within 24 hours, choose your own closing date, and close with zero repairs, zero commissions, and zero closing costs. Tenant-occupied properties are welcome — we handle the transition.</p>
+      <h2>Homes We Buy Near College of the Sequoias</h2>
+      <p>We buy student rentals, faculty homes, inherited properties, and any home in any condition near COS. Deferred maintenance, code violations, tenant issues, and major repairs are all handled by us after closing. You don't need to do anything to the property before we buy it.</p>
+      <p>See also: <a href="/visalia-neighborhoods/college-of-the-sequoias">COS Neighborhood Page</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia</a> · <a href="/blog/sell-tenant-occupied-property-california">Selling a Tenant-Occupied Property</a> · <a href="/visalia-housing-market">Visalia Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-goshen-ave-visalia": (
+    <div>
+      <p>The Goshen Avenue corridor in southwest Visalia is one of the most affordable and fastest-moving real estate markets in Tulare County. Homes along and near Goshen Ave attract first-time buyers, investors, and cash buyers who recognize the area's strong rental demand and consistent appreciation. If you own a home in the Goshen Ave area and need to sell quickly, you have a motivated buyer pool and more options than you might expect.</p>
+      <h2>Why Goshen Ave Homeowners Sell to Cash Buyers</h2>
+      <p>The Goshen Ave area has a high concentration of long-term homeowners who purchased in the 1980s and 1990s. Many of these sellers are now facing retirement, health challenges, or estate situations that require a fast, clean sale without the complications of a traditional listing. Deferred maintenance is common in this price range — older roofs, aging HVAC systems, and outdated kitchens — and cash buyers eliminate the need for pre-sale repairs entirely.</p>
+      <h2>What Cash Buyers Pay Near Goshen Ave</h2>
+      <p>Homes in the Goshen Ave corridor in Q1 2026 range from $220,000 to $360,000. Cash buyers typically offer 77–86% of market value for homes in average condition and 65–74% for homes needing significant work. Because this is an affordable, high-demand area, cash offers tend to close quickly and with fewer contingencies than higher-priced markets.</p>
+      <h2>The Alder Heritage Homes Process on Goshen Ave</h2>
+      <p>Connor Whittaker at Alder Heritage Homes (DRE #02219124) purchases homes throughout the Goshen Ave corridor. Call (559) 281-8016 or submit your address online. You'll receive a cash offer within 24 hours, choose your closing date, and close with no repairs required, no agent commissions, and no closing costs charged to you.</p>
+      <h2>Homes We Buy on Goshen Ave</h2>
+      <p>We buy homes in any condition in the Goshen Ave area: older homes with deferred maintenance, properties with foundation or roof issues, inherited homes, tenant-occupied rentals, and homes in any stage of financial distress. No repairs, no cleaning, no staging required.</p>
+      <p>See also: <a href="/visalia-neighborhoods/goshen-ave">Goshen Ave Neighborhood Page</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia</a> · <a href="/blog/sell-house-fast-visalia-ca">Sell House Fast Visalia CA</a> · <a href="/visalia-housing-market">Visalia Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-dinuba-ave-visalia": (
+    <div>
+      <p>The Dinuba Avenue corridor in southeast Visalia is a working-class residential area with strong rental demand and consistent cash buyer interest. Homes along Dinuba Ave and the surrounding streets attract investors looking for rental income and owner-occupants priced out of Visalia's more expensive northwest neighborhoods. If you own a home in this area and need to sell fast, you have options that don't require repairs, showings, or waiting 60+ days for a traditional close.</p>
+      <h2>Why Dinuba Ave Homeowners Sell to Cash Buyers</h2>
+      <p>The Dinuba Ave area has a high proportion of long-term owners and inherited properties. Many sellers in this corridor are dealing with estate situations — inheriting a home from a parent or grandparent who lived there for decades — and don't want to manage the renovation, listing, and sale process from a distance. Others are landlords who have managed rental properties in this area for years and are ready to exit. Cash buyers eliminate the complexity of both situations.</p>
+      <h2>What Cash Buyers Pay Near Dinuba Ave</h2>
+      <p>Homes in the Dinuba Ave corridor in Q1 2026 range from $200,000 to $320,000. Cash buyers typically offer 76–85% of market value for homes in average condition. Because this is an affordable market with strong rental demand, investors are actively competing for properties in this area, which keeps cash offers competitive.</p>
+      <h2>The Alder Heritage Homes Process on Dinuba Ave</h2>
+      <p>Connor Whittaker at Alder Heritage Homes purchases homes throughout the Dinuba Ave corridor. Submit your address at alderheritagehomes.com or call (559) 281-8016. You'll receive a cash offer within 24 hours, choose your closing date, and close with no repairs, no commissions, and no closing costs.</p>
+      <h2>Homes We Buy on Dinuba Ave</h2>
+      <p>We buy homes in any condition: deferred maintenance, foundation issues, roof problems, tenant-occupied properties, inherited homes, and homes in financial distress. You don't need to do anything to the property before we buy it.</p>
+      <p>See also: <a href="/visalia-neighborhoods/dinuba-ave">Dinuba Ave Neighborhood Page</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia</a> · <a href="/blog/selling-inherited-property-california">Selling an Inherited Property in California</a> · <a href="/visalia-housing-market">Visalia Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-ben-maddox-visalia": (
+    <div>
+      <p>The Ben Maddox Way corridor in east Visalia is one of the city's most established residential areas — a mix of 1960s–1980s ranch homes, newer infill construction, and well-maintained neighborhoods that attract both owner-occupants and investors. If you own a home near Ben Maddox and need to sell quickly, you're in a market with consistent demand and multiple buyer options.</p>
+      <h2>Why Ben Maddox Area Homeowners Sell to Cash Buyers</h2>
+      <p>The Ben Maddox corridor has a high concentration of long-term homeowners who have lived in the area for 20–40 years. Many are now facing retirement transitions, health challenges, or estate situations that require a fast, certain sale. Homes in this area often have deferred maintenance — original kitchens and bathrooms, aging roofs, and HVAC systems that need replacement — that can complicate a traditional listing. Cash buyers purchase these homes as-is, eliminating the need for pre-sale repairs entirely.</p>
+      <h2>What Cash Buyers Pay Near Ben Maddox</h2>
+      <p>Homes near Ben Maddox Way in Q1 2026 range from $290,000 to $460,000. Cash buyers typically offer 79–88% of market value for homes in average condition and 68–77% for homes needing significant work. The east Visalia market has strong demand from families and investors alike, keeping cash offers competitive.</p>
+      <h2>The Alder Heritage Homes Process Near Ben Maddox</h2>
+      <p>Connor Whittaker at Alder Heritage Homes (DRE #02219124) purchases homes throughout the Ben Maddox corridor. Call (559) 281-8016 or submit your address online. You'll receive a cash offer within 24 hours, choose your closing date (as fast as 7 days), and close with no repairs, no commissions, and no closing costs.</p>
+      <h2>Homes We Buy Near Ben Maddox Way</h2>
+      <p>We buy homes in any condition near Ben Maddox: original 1960s–1980s homes with deferred maintenance, properties with foundation or roof issues, inherited homes, tenant-occupied rentals, and homes facing foreclosure or financial distress. No repairs, no cleaning, no staging required.</p>
+      <p>See also: <a href="/visalia-neighborhoods/ben-maddox">Ben Maddox Neighborhood Page</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia</a> · <a href="/blog/sell-house-fast-visalia-ca">Sell House Fast Visalia CA</a> · <a href="/visalia-housing-market">Visalia Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-downtown-visalia": (
+    <div>
+      <p>Downtown Visalia is one of the most unique real estate markets in the Central Valley — a walkable urban core with historic bungalows, mixed-use properties, and a growing arts and dining scene that has attracted significant investment over the past decade. If you own a home or small commercial property in downtown Visalia and need to sell quickly, you have a motivated buyer pool that includes both investors and owner-occupants who value the area's walkability and character.</p>
+      <h2>Why Downtown Visalia Homeowners Sell to Cash Buyers</h2>
+      <p>Downtown Visalia properties present unique selling challenges. Historic homes often have deferred maintenance that is expensive to address — original plumbing, knob-and-tube wiring, foundation issues common in pre-1950 construction, and lead paint or asbestos that triggers disclosure requirements. Sellers who have owned these properties for decades often find that the cost of bringing them to traditional listing standards exceeds the benefit. Cash buyers purchase historic downtown properties as-is, with full knowledge of their condition and history.</p>
+      <h2>What Cash Buyers Pay in Downtown Visalia</h2>
+      <p>Downtown Visalia properties in Q1 2026 range from $250,000 to $550,000 depending on size, condition, and mixed-use potential. Cash buyers typically offer 75–85% of market value for historic homes needing significant work and 80–90% for well-maintained properties with strong rental income. The downtown market has seen increased investor interest as Visalia's revitalization continues, keeping cash offers competitive.</p>
+      <h2>The Alder Heritage Homes Process in Downtown Visalia</h2>
+      <p>Connor Whittaker at Alder Heritage Homes purchases homes and small income properties throughout downtown Visalia. Call (559) 281-8016 or submit your address online. You'll receive a cash offer within 24 hours, choose your closing date, and close with no repairs, no commissions, and no closing costs charged to you.</p>
+      <h2>Properties We Buy in Downtown Visalia</h2>
+      <p>We buy historic bungalows, craftsman homes, Victorian-era properties, small multi-family buildings, and mixed-use properties in downtown Visalia. Deferred maintenance, code violations, foundation issues, and tenant complications are all handled by us after closing.</p>
+      <p>See also: <a href="/visalia-neighborhoods/downtown-visalia">Downtown Visalia Neighborhood Page</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia</a> · <a href="/blog/sell-house-code-violations-fresno">Selling a House with Code Violations</a> · <a href="/visalia-housing-market">Visalia Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-mineral-king-visalia": (
+    <div>
+      <p>The Mineral King area in central Visalia is one of the city's most established and desirable residential neighborhoods — a mix of 1950s–1970s ranch homes, mature tree-lined streets, and well-maintained properties that attract owner-occupants and investors seeking stable, appreciating assets. If you own a home in the Mineral King area and need to sell quickly, you're in a market with consistent demand and multiple buyer options.</p>
+      <h2>Why Mineral King Area Homeowners Sell to Cash Buyers</h2>
+      <p>The Mineral King area has a high concentration of long-term homeowners, many of whom purchased in the 1960s–1980s. Estate sales and inherited properties are common in this neighborhood as the original owners age out. These homes often have original kitchens and bathrooms, aging mechanical systems, and deferred maintenance that makes a traditional listing complicated. Cash buyers purchase these homes as-is, allowing heirs and estate executors to close quickly without the burden of renovation.</p>
+      <h2>What Cash Buyers Pay in the Mineral King Area</h2>
+      <p>Homes in the Mineral King area in Q1 2026 range from $310,000 to $490,000. Cash buyers typically offer 80–88% of market value for homes in average condition and 70–78% for homes needing significant updates. The Mineral King area's strong location and consistent demand keep cash offers competitive relative to other Visalia neighborhoods.</p>
+      <h2>The Alder Heritage Homes Process in Mineral King</h2>
+      <p>Connor Whittaker at Alder Heritage Homes (DRE #02219124) purchases homes throughout the Mineral King area. Call (559) 281-8016 or submit your address online. You'll receive a cash offer within 24 hours, choose your closing date (as fast as 7 days), and close with no repairs, no commissions, and no closing costs.</p>
+      <h2>Homes We Buy in the Mineral King Area</h2>
+      <p>We buy original 1950s–1970s homes with deferred maintenance, inherited properties, estate sales, tenant-occupied rentals, and homes in any condition throughout the Mineral King area. No repairs, no cleaning, no staging required before closing.</p>
+      <p>See also: <a href="/visalia-neighborhoods/mineral-king">Mineral King Neighborhood Page</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia</a> · <a href="/blog/selling-inherited-property-california">Selling an Inherited Property in California</a> · <a href="/visalia-housing-market">Visalia Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-caldwell-ave-visalia": (
+    <div>
+      <p>The Caldwell Avenue corridor in north Visalia is one of the city's fastest-growing residential areas — a mix of newer subdivisions, established mid-century neighborhoods, and properties that attract families, investors, and cash buyers seeking strong appreciation potential. If you own a home near Caldwell Ave and need to sell quickly, you're in a market with active buyer demand and multiple exit options.</p>
+      <h2>Why Caldwell Ave Homeowners Sell to Cash Buyers</h2>
+      <p>The Caldwell Ave area has seen significant growth over the past decade, which means a mix of newer homes that may have construction defects or HOA complications and older homes that have been overtaken by newer development. Sellers in this corridor often face situations where a traditional listing would require repairs, staging, and 45–60 days of market time that they simply don't have. Job relocations, divorce situations, and inherited properties are all common reasons Caldwell Ave sellers choose a cash sale.</p>
+      <h2>What Cash Buyers Pay Near Caldwell Ave</h2>
+      <p>Homes near Caldwell Avenue in Q1 2026 range from $320,000 to $520,000. Cash buyers typically offer 80–89% of market value for well-maintained homes and 70–79% for homes with deferred maintenance or complications. The north Visalia market has strong demand from families relocating from the Bay Area and Southern California, keeping cash offers competitive.</p>
+      <h2>The Alder Heritage Homes Process Near Caldwell Ave</h2>
+      <p>Connor Whittaker at Alder Heritage Homes purchases homes throughout the Caldwell Ave corridor. Submit your address at alderheritagehomes.com or call (559) 281-8016. You'll receive a cash offer within 24 hours, choose your closing date, and close with no repairs, no agent commissions, and no closing costs charged to you.</p>
+      <h2>Homes We Buy Near Caldwell Ave</h2>
+      <p>We buy homes in any condition near Caldwell Ave: newer construction with defects, older homes with deferred maintenance, inherited properties, tenant-occupied rentals, homes with HOA complications, and properties in any stage of financial distress. No repairs or cleaning required before closing.</p>
+      <p>See also: <a href="/visalia-neighborhoods/caldwell-ave">Caldwell Ave Neighborhood Page</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia</a> · <a href="/blog/sell-house-fast-visalia-ca">Sell House Fast Visalia CA</a> · <a href="/visalia-housing-market">Visalia Housing Market 2026</a></p>
+    </div>
+  ),
+
 };
 
 export default function BlogPost() {
