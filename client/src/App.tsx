@@ -86,6 +86,7 @@ import SoutheastFresno from "./pages/neighborhoods/SoutheastFresno";
 import ClovisNorth from "./pages/neighborhoods/ClovisNorth";
 import FresnoNeighborhoods from "./pages/FresnoNeighborhoods";
 import HomeWorth from "./pages/HomeWorth";
+import FresnoCashOfferCalculator from "./pages/FreshoCashOfferCalculator";
 
 // City landing pages
 import FresnoPage from "./pages/cities/Fresno";
@@ -243,6 +244,7 @@ function Router() {
       <Route path="/clovis-north" component={ClovisNorth} />
       {/* Home valuation page */}
       <Route path="/what-is-my-home-worth" component={HomeWorth} />
+      <Route path="/fresno-cash-offer-calculator" component={FresnoCashOfferCalculator} />
 
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />

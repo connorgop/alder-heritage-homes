@@ -15,7 +15,7 @@ const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 
 const services = [
-  { label: "🧮 Free Cash Offer Calculator", href: "/cash-offer-calculator" },
+  { label: "🧮 Free Cash Offer Calculator", href: "/fresno-cash-offer-calculator" },
   { label: "Foreclosure Help", href: "/foreclosure-help" },
   { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
   { label: "Can't Afford My Home", href: "/cant-afford-my-home" },
@@ -55,6 +55,7 @@ const trust = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "Fresno Housing Market 2026", href: "/fresno-housing-market" },
   { label: "🏡 What Is My Home Worth?", href: "/what-is-my-home-worth" },
+  { label: "🧮 Fresno Cash Offer Calculator", href: "/fresno-cash-offer-calculator" },
   { label: "Fresno Neighborhoods Hub", href: "/fresno-neighborhoods" },
   { label: "Blog & Resources", href: "/blog" },
 ];

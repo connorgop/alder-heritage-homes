@@ -1260,4 +1260,34 @@
   <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/fresno-state</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/fig-garden-village</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.alderheritagehomes.com/fresno-neighborhoods/cloverleaf-village</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/fresno-cash-offer-calculator</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-my-house-fig-garden-fresno</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-my-house-tower-district-fresno</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-my-house-woodward-park-fresno</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-my-house-north-fresno</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.alderheritagehomes.com/blog/sell-my-house-clovis-north</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

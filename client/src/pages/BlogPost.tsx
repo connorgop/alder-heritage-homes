@@ -3053,7 +3053,76 @@ const articleContent: Record<string, React.ReactNode> = {
       <p>Call Connor directly at <strong>(559) 281-8016</strong>. The conversation is free, confidential, and without any obligation.</p>
       <p>See also: <a href="/we-buy-houses-clovis">We Buy Houses in Clovis</a> · <a href="/blog/selling-inherited-property-california">Selling an Inherited Property in California</a> · <a href="/blog/selling-house-with-squatters-california">How to Sell a House with Squatters in California</a></p>
     </div>
-  )
+  ),
+
+  "sell-my-house-fig-garden-fresno": (
+    <div>
+      <p>Fig Garden is one of Fresno's most desirable neighborhoods — and one of the most active markets for cash home buyers. Bounded by Shaw Avenue to the north, Blackstone to the east, Shields to the south, and Palm to the west, Fig Garden's tree-lined streets and mid-century ranch homes attract buyers willing to pay premium prices. If you own a home in Fig Garden and need to sell quickly, you have more options — and more leverage — than almost anywhere else in the Central Valley.</p>
+      <h2>Why Fig Garden Homeowners Sell to Cash Buyers</h2>
+      <p>Fig Garden homes sell fast on the open market, but "fast" in traditional real estate still means 30–60 days of showings, inspections, appraisals, and contingencies. Cash buyers eliminate all of that. Common reasons Fig Garden sellers choose a cash sale include inherited properties from parents or grandparents, divorce situations where both parties need a clean break, deferred maintenance on older homes built in the 1950s–1970s, and landlords tired of managing long-term tenants in a desirable rental area.</p>
+      <h2>What Cash Buyers Pay for Fig Garden Homes</h2>
+      <p>Fig Garden median home values in Q1 2026 range from $420,000 to $580,000 depending on size, lot, and condition. Cash buyers typically offer 80–88% of market value for move-in-ready homes and 68–78% for homes needing significant updates. Because Fig Garden homes hold their value well and have strong demand from renovators and owner-occupants alike, cash offers in this neighborhood tend to be competitive relative to other Fresno zip codes.</p>
+      <p>A 3-bedroom, 1,600 sq ft Fig Garden home in good condition might receive a cash offer of $360,000–$420,000 — compared to a potential net of $390,000–$430,000 after a traditional listing that includes agent commissions, repairs, and carrying costs. The gap is often smaller than sellers expect.</p>
+      <h2>The Alder Heritage Homes Process in Fig Garden</h2>
+      <p>Connor Whittaker at Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) who has purchased homes throughout the Fig Garden area. The process is straightforward: call or submit your address, receive a cash offer within 24 hours, choose your closing date (as fast as 7 days), and close with no repairs, no commissions, and no closing costs. You receive the full offer amount at closing.</p>
+      <h2>Fig Garden Homes We Buy</h2>
+      <p>We purchase Fig Garden homes in any condition: original 1950s kitchens and bathrooms, foundation issues common in older Fresno homes, deferred maintenance, hoarder situations, fire or water damage, and tenant-occupied properties. If you have inherited a Fig Garden home and don't want to deal with the renovation process, we can close on your timeline without you ever lifting a hammer.</p>
+      <p>See also: <a href="/fresno-neighborhoods/fig-garden">Fig Garden Neighborhood Page</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-cash-offer-calculator">Fresno Cash Offer Calculator</a> · <a href="/blog/fresno-housing-market-2026">Fresno Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-tower-district-fresno": (
+    <div>
+      <p>The Tower District is Fresno's most eclectic neighborhood — a walkable, arts-forward community centered on Olive Avenue between Blackstone and First Street. Known for its 1939 Tower Theatre, independent restaurants, vintage shops, and dense mix of bungalows and craftsman homes, the Tower District attracts a unique buyer pool and a distinct set of sellers. If you own a home in the Tower District and need to sell quickly, a cash buyer may be your fastest and cleanest path to closing.</p>
+      <h2>Tower District Real Estate in 2026</h2>
+      <p>Tower District home values have appreciated steadily as Fresno's urban core has grown in appeal. Median home prices in the 93728 and 93701 zip codes range from $220,000 to $350,000, with fully renovated craftsman bungalows reaching $380,000–$420,000. The neighborhood's older housing stock — most homes were built between 1920 and 1960 — means deferred maintenance is common, and many sellers prefer a cash sale over the expense and uncertainty of a full renovation before listing.</p>
+      <h2>Why Tower District Sellers Choose Cash Buyers</h2>
+      <p>Tower District homes are beloved but often come with challenges: knob-and-tube wiring, original plumbing, foundation settling, unpermitted additions, and aging roofs. Traditional buyers often walk away after inspections or demand large repair credits. Cash buyers purchase as-is, meaning you don't spend a dollar on repairs and don't risk a deal falling through after 45 days on market. For landlords with long-term tenants, estate sales, and divorce situations, a cash sale in the Tower District is often the most practical solution.</p>
+      <h2>What We Pay for Tower District Homes</h2>
+      <p>Alder Heritage Homes evaluates Tower District properties based on their after-repair value and the cost to bring them to market-ready condition. A 2-bedroom craftsman bungalow in fair condition might receive a cash offer of $185,000–$220,000. A 3-bedroom home in good condition could receive $250,000–$295,000. We cover all closing costs — you pay zero agent commissions and zero repair costs.</p>
+      <p>Call Connor at <strong>(559) 281-8016</strong> for a no-obligation cash offer on your Tower District home. We can close in 7 days or on any date you choose.</p>
+      <p>See also: <a href="/fresno-neighborhoods/tower-district">Tower District Neighborhood Page</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-cash-offer-calculator">Cash Offer Calculator</a></p>
+    </div>
+  ),
+
+  "sell-my-house-woodward-park-fresno": (
+    <div>
+      <p>Woodward Park is one of Fresno's premier northeast neighborhoods — a master-planned community built around the 300-acre Woodward Regional Park, with well-maintained streets, strong schools, and some of the highest home values in the city. If you own a Woodward Park home and need to sell quickly — whether due to relocation, inheritance, divorce, or financial pressure — a cash buyer can close in days without the disruption of a traditional listing.</p>
+      <h2>Woodward Park Home Values in 2026</h2>
+      <p>Woodward Park median home prices in Q1 2026 range from $480,000 to $680,000 for single-family homes, with larger estate properties exceeding $800,000. The neighborhood's newer construction (most homes built 1985–2005) means fewer deferred maintenance issues than older Fresno neighborhoods, but cash buyers still offer significant advantages: no showings, no contingencies, no appraisal risk, and a closing timeline you control.</p>
+      <h2>Who Sells Their Woodward Park Home to a Cash Buyer?</h2>
+      <p>Woodward Park sellers who choose cash buyers typically include: executives relocating out of state on short notice, families who inherited a parent's home and live out of the area, divorcing couples who need a fast and clean sale, and landlords with tenant-occupied properties who want to exit the rental market without waiting for leases to expire. In every case, the speed and certainty of a cash sale outweighs the potential upside of a traditional listing.</p>
+      <h2>Our Woodward Park Cash Offer Process</h2>
+      <p>Alder Heritage Homes purchases Woodward Park homes in any condition. Submit your address online or call <strong>(559) 281-8016</strong>. We'll research comparable sales, assess your home's condition, and deliver a written cash offer within 24 hours. If you accept, we can close in as few as 7 days. You pay no agent commissions, no repair costs, and no closing fees. The offer is the amount you receive.</p>
+      <p>See also: <a href="/fresno-neighborhoods/woodward-park">Woodward Park Neighborhood Page</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-cash-offer-calculator">Fresno Cash Offer Calculator</a> · <a href="/blog/fresno-housing-market-2026">Fresno Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-north-fresno": (
+    <div>
+      <p>North Fresno — the broad corridor north of Shaw Avenue stretching toward Herndon and beyond — is the fastest-growing residential area in the city. New construction communities, top-rated Clovis Unified schools, and proximity to River Park Shopping Center and Fashion Fair make North Fresno one of the most in-demand areas in the Central Valley. If you own a home in North Fresno and need to sell quickly, you're in a strong position — and a cash buyer can help you capitalize on that strength without the delays of a traditional listing.</p>
+      <h2>North Fresno Real Estate Market — Q1 2026</h2>
+      <p>North Fresno home values range widely by sub-area: entry-level homes near Shaw and Blackstone start around $380,000, while newer construction communities near Herndon and Willow can reach $600,000–$750,000. Homes in North Fresno typically sell within 18–25 days on the open market — but that still means 30–45 days to close after accepting an offer, plus the risk of buyer financing falling through. A cash sale closes in 7 days with zero contingencies.</p>
+      <h2>Common Reasons North Fresno Sellers Choose Cash</h2>
+      <p>North Fresno sellers who contact Alder Heritage Homes typically have one of these situations: a job relocation requiring a fast move, an inherited home they don't want to manage from out of state, a rental property with difficult tenants, a home that needs more repairs than they're willing to invest, or a divorce where both parties need a fast and equitable resolution. In each case, a cash sale provides certainty, speed, and simplicity that a traditional listing cannot match.</p>
+      <h2>What We Pay for North Fresno Homes</h2>
+      <p>Our cash offers for North Fresno homes are based on current comparable sales and the cost to bring the property to market-ready condition. A 4-bedroom home in good condition in the $500,000 range might receive a cash offer of $430,000–$465,000. You save 6% in agent commissions, avoid repair costs, and close on your schedule. Call Connor at <strong>(559) 281-8016</strong> for a no-obligation offer within 24 hours.</p>
+      <p>See also: <a href="/fresno-neighborhoods/north-fresno">North Fresno Neighborhood Page</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-cash-offer-calculator">Cash Offer Calculator</a> · <a href="/blog/fresno-housing-market-2026">Fresno Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-clovis-north": (
+    <div>
+      <p>Clovis North is the crown jewel of the Clovis Unified School District — a master-planned residential area in the northeast corner of the Fresno metro, anchored by Clovis North High School and surrounded by some of the most sought-after new construction communities in the Central Valley. Homes in Clovis North consistently command premium prices, and the area's strong school ratings and family-friendly amenities make it one of the most competitive real estate markets in the region. If you own a Clovis North home and need to sell quickly, a cash buyer offers speed and certainty that the open market cannot always provide.</p>
+      <h2>Clovis North Home Values — Q1 2026</h2>
+      <p>Clovis North median home prices in Q1 2026 range from $520,000 to $750,000 for single-family homes, with newer construction and larger lots exceeding $800,000. Homes in Clovis North typically receive multiple offers within the first week of listing — but even in a hot market, a traditional sale involves 30–45 days of contingencies, inspections, and appraisal risk. A cash sale eliminates all of that and closes on your timeline.</p>
+      <h2>Why Clovis North Sellers Choose Cash Buyers</h2>
+      <p>Even in a premium market like Clovis North, sellers choose cash buyers for compelling reasons: corporate relocations that require a move before a listing can close, inherited properties where heirs live out of state and want a clean, fast resolution, divorce situations where a quick sale is the priority, and landlords who want to exit the rental market without waiting for tenant leases to expire. In each case, the certainty of a cash offer — no financing contingencies, no appraisal gaps, no buyer cold feet — is worth more than the theoretical upside of a longer listing process.</p>
+      <h2>Our Clovis North Cash Offer Process</h2>
+      <p>Alder Heritage Homes purchases Clovis North homes in any condition. Call Connor at <strong>(559) 281-8016</strong> or submit your address online. We'll deliver a written cash offer within 24 hours based on current Clovis comparable sales. If you accept, we can close in as few as 7 days. You pay zero agent commissions, zero repair costs, and zero closing fees.</p>
+      <p>See also: <a href="/fresno-neighborhoods/clovis-north">Clovis North Neighborhood Page</a> · <a href="/we-buy-houses-clovis">We Buy Houses Clovis</a> · <a href="/fresno-cash-offer-calculator">Cash Offer Calculator</a> · <a href="/blog/sell-house-fast-clovis-ca">Sell House Fast in Clovis CA</a></p>
+    </div>
+  ),
 
 };
 

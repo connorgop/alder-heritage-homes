@@ -1361,6 +1361,52 @@ const _blogPostsRaw = [
     readTime: "8 min read",
     image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-hug_80f9b3b4.webp",
   },
+  {
+    slug: "sell-my-house-fig-garden-fresno",
+    title: "Sell My House in Fig Garden Fresno — Cash Buyers Who Know the Neighborhood",
+    excerpt: "Fig Garden is one of Fresno's most valuable neighborhoods. Learn what cash buyers pay for Fig Garden homes and how to sell quickly without repairs or commissions.",
+    date: "2026-04-05",
+    readTime: "5 min read",
+    category: "Fresno Neighborhoods",
+    tags: ["Fig Garden", "Fresno", "Cash Buyer", "Sell Fast"],
+  },
+  {
+    slug: "sell-my-house-tower-district-fresno",
+    title: "Sell My House in the Tower District — Fast Cash Offers for Fresno's Arts District",
+    excerpt: "Tower District homes are beloved but often need work. Find out how cash buyers handle craftsman bungalows, older plumbing, and tenant-occupied properties in this unique Fresno neighborhood.",
+    date: "2026-04-05",
+    readTime: "5 min read",
+    category: "Fresno Neighborhoods",
+    tags: ["Tower District", "Fresno", "Cash Buyer", "Craftsman Homes"],
+  },
+  {
+    slug: "sell-my-house-woodward-park-fresno",
+    title: "Sell My House in Woodward Park Fresno — Premium Cash Offers, Fast Close",
+    excerpt: "Woodward Park is one of Fresno's premier neighborhoods. Discover how to sell your Woodward Park home quickly with a cash offer — no repairs, no commissions, close in 7 days.",
+    date: "2026-04-05",
+    readTime: "5 min read",
+    category: "Fresno Neighborhoods",
+    tags: ["Woodward Park", "Fresno", "Cash Buyer", "Sell Fast"],
+  },
+  {
+    slug: "sell-my-house-north-fresno",
+    title: "Sell My House in North Fresno — Cash Buyers for the Fastest-Growing Area in the Valley",
+    excerpt: "North Fresno is booming. Learn what cash buyers pay for North Fresno homes, who sells to cash buyers in this premium market, and how to close in 7 days without an agent.",
+    date: "2026-04-05",
+    readTime: "5 min read",
+    category: "Fresno Neighborhoods",
+    tags: ["North Fresno", "Fresno", "Cash Buyer", "Sell Fast"],
+  },
+  {
+    slug: "sell-my-house-clovis-north",
+    title: "Sell My House in Clovis North — Fast Cash Offers in the Top School District",
+    excerpt: "Clovis North commands premium prices. Find out what cash buyers pay for Clovis North homes and how to sell quickly — even in a hot market — without contingencies or delays.",
+    date: "2026-04-05",
+    readTime: "5 min read",
+    category: "Clovis",
+    tags: ["Clovis North", "Clovis", "Cash Buyer", "Sell Fast"],
+  },
+
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
