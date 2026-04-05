@@ -58,6 +58,9 @@ const trust = [
   { label: "🧮 Fresno Cash Offer Calculator", href: "/fresno-cash-offer-calculator" },
   { label: "Fresno Neighborhoods Hub", href: "/fresno-neighborhoods" },
   { label: "Blog & Resources", href: "/blog" },
+  { label: "❓ Sell House Fast FAQ", href: "/sell-house-fast-faq" },
+  { label: "Visalia Neighborhoods Hub", href: "/visalia-neighborhoods" },
+  { label: "Visalia Housing Market 2026", href: "/visalia-housing-market" },
 ];
 
 const cities = [
@@ -393,7 +396,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
               <MobileNavLink href="/sell-my-house">🏠 Sell My House Fast</MobileNavLink>
               <MobileNavLink href="/cash-offer-calculator">🧮 Free Cash Offer Calculator</MobileNavLink>
-              <MobileNavLink href="/faq">FAQ</MobileNavLink>
+              <MobileNavLink href="/sell-house-fast-faq">Sell House Fast FAQ</MobileNavLink>
               <MobileNavLink href="/about">About Connor</MobileNavLink>
               <MobileNavLink href="/testimonials">⭐ Seller Testimonials</MobileNavLink>
               <MobileNavLink href="/before-after">📸 Before &amp; After Gallery</MobileNavLink>
@@ -494,7 +497,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/how-it-works" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>How It Works</Link></li>
                 <li><Link href="/fresno-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Housing Market 2026</Link></li>
                 <li><Link href="/blog" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Blog &amp; Resources</Link></li>
-                <li><Link href="/faq" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>FAQ</Link></li>
+                <li><Link href="/sell-house-fast-faq" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast FAQ</Link></li>
                 <li><Link href="/why-choose-us" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Why Choose Us</Link></li>
                 <li><Link href="/reviews" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Reviews</Link></li>
                 <li><Link href="/dont-get-wholesaled" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Don't Get Wholesaled</Link></li>

@@ -87,6 +87,16 @@ import ClovisNorth from "./pages/neighborhoods/ClovisNorth";
 import FresnoNeighborhoods from "./pages/FresnoNeighborhoods";
 import HomeWorth from "./pages/HomeWorth";
 import FresnoCashOfferCalculator from "./pages/FreshoCashOfferCalculator";
+import SellHouseFastFAQ from "./pages/SellHouseFastFAQ";
+import VisaliaNeighborhoods from "./pages/VisaliaNeighborhoods";
+import VisaliaNeighborhoodMooneyBlvd from "./pages/visalia-neighborhoods/MooneyBlvd";
+import VisaliaNeighborhoodCollegeOfTheSequoias from "./pages/visalia-neighborhoods/CollegeOfTheSequoias";
+import VisaliaNeighborhoodGoshenAve from "./pages/visalia-neighborhoods/GoshenAve";
+import VisaliaNeighborhoodDinubaAve from "./pages/visalia-neighborhoods/DinubaAve";
+import VisaliaNeighborhoodBenMaddox from "./pages/visalia-neighborhoods/BenMaddox";
+import VisaliaNeighborhoodDowntownVisalia from "./pages/visalia-neighborhoods/DowntownVisalia";
+import VisaliaNeighborhoodMineralKing from "./pages/visalia-neighborhoods/MineralKing";
+import VisaliaNeighborhoodCaldwellAve from "./pages/visalia-neighborhoods/CaldwellAve";
 
 // City landing pages
 import FresnoPage from "./pages/cities/Fresno";
@@ -245,7 +255,17 @@ function Router() {
       {/* Home valuation page */}
       <Route path="/what-is-my-home-worth" component={HomeWorth} />
       <Route path="/fresno-cash-offer-calculator" component={FresnoCashOfferCalculator} />
-
+      <Route path="/sell-house-fast-faq" component={SellHouseFastFAQ} />
+      {/* Visalia Neighborhoods */}
+      <Route path="/visalia-neighborhoods" component={VisaliaNeighborhoods} />
+      <Route path="/visalia-neighborhoods/mooney-blvd" component={VisaliaNeighborhoodMooneyBlvd} />
+      <Route path="/visalia-neighborhoods/college-of-the-sequoias" component={VisaliaNeighborhoodCollegeOfTheSequoias} />
+      <Route path="/visalia-neighborhoods/goshen-ave" component={VisaliaNeighborhoodGoshenAve} />
+      <Route path="/visalia-neighborhoods/dinuba-ave" component={VisaliaNeighborhoodDinubaAve} />
+      <Route path="/visalia-neighborhoods/ben-maddox" component={VisaliaNeighborhoodBenMaddox} />
+      <Route path="/visalia-neighborhoods/downtown-visalia" component={VisaliaNeighborhoodDowntownVisalia} />
+      <Route path="/visalia-neighborhoods/mineral-king" component={VisaliaNeighborhoodMineralKing} />
+      <Route path="/visalia-neighborhoods/caldwell-ave" component={VisaliaNeighborhoodCaldwellAve} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

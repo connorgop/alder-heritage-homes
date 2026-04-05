@@ -335,6 +335,146 @@ function InstantCashCalculator() {
   );
 }
 
+function CashOfferVsListingCalc() {
+  const [homeValue, setHomeValue] = useState(350000);
+  const [repairCost, setRepairCost] = useState(15000);
+
+  const agentCommission = Math.round(homeValue * 0.055);
+  const closingCosts = Math.round(homeValue * 0.02);
+  const stagingMarketing = 3500;
+  const daysOnMarket = 45;
+  const carryingCosts = Math.round(homeValue * 0.008);
+  const listingNet = homeValue - agentCommission - closingCosts - stagingMarketing - repairCost - carryingCosts;
+
+  const cashOfferPct = 0.84;
+  const cashOffer = Math.round(homeValue * cashOfferPct);
+  const cashNet = cashOffer;
+  const netDiff = cashNet - listingNet;
+
+  const fmt = (n: number) => n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+
+  return (
+    <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+      <div className="container max-w-4xl">
+        <div className="text-center mb-10">
+          <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+            Interactive Calculator
+          </span>
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>
+            Cash Offer vs. Listing — See the Real Numbers
+          </h2>
+          <p className="mt-3 text-white/70 max-w-xl mx-auto" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+            Adjust the sliders to match your home and see exactly what you'd net each way.
+          </p>
+        </div>
+
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
+          {/* Sliders */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div>
+              <label className="block text-white/80 text-sm font-semibold mb-2" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                Estimated Home Value: <span className="text-[#c8a96e]">{fmt(homeValue)}</span>
+              </label>
+              <input type="range" min={100000} max={900000} step={5000} value={homeValue}
+                onChange={(e) => setHomeValue(Number(e.target.value))}
+                className="w-full accent-[#c8a96e]" />
+              <div className="flex justify-between text-white/40 text-xs mt-1">
+                <span>$100K</span><span>$900K</span>
+              </div>
+            </div>
+            <div>
+              <label className="block text-white/80 text-sm font-semibold mb-2" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                Estimated Repair Costs: <span className="text-[#c8a96e]">{fmt(repairCost)}</span>
+              </label>
+              <input type="range" min={0} max={80000} step={1000} value={repairCost}
+                onChange={(e) => setRepairCost(Number(e.target.value))}
+                className="w-full accent-[#c8a96e]" />
+              <div className="flex justify-between text-white/40 text-xs mt-1">
+                <span>$0</span><span>$80K</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Comparison Table */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {/* Listing */}
+            <div className="bg-white/5 rounded-xl p-5 border border-white/10">
+              <h3 className="font-bold text-white mb-4 text-center" style={{ fontFamily: "'Lora', serif" }}>Traditional Listing</h3>
+              <div className="space-y-2 text-sm">
+                {[
+                  { label: "Sale Price", value: fmt(homeValue), positive: true },
+                  { label: `Agent Commission (5.5%)`, value: `−${fmt(agentCommission)}`, positive: false },
+                  { label: "Closing Costs (2%)", value: `−${fmt(closingCosts)}`, positive: false },
+                  { label: "Staging & Marketing", value: `−${fmt(stagingMarketing)}`, positive: false },
+                  { label: "Repairs Before Listing", value: `−${fmt(repairCost)}`, positive: false },
+                  { label: `Carrying Costs (${daysOnMarket} days)`, value: `−${fmt(carryingCosts)}`, positive: false },
+                ].map((row) => (
+                  <div key={row.label} className="flex justify-between">
+                    <span className="text-white/60">{row.label}</span>
+                    <span className={row.positive ? "text-white font-semibold" : "text-red-400"}>{row.value}</span>
+                  </div>
+                ))}
+                <div className="border-t border-white/20 pt-2 mt-2 flex justify-between">
+                  <span className="text-white font-bold">Your Net Proceeds</span>
+                  <span className="text-white font-bold text-lg">{fmt(listingNet)}</span>
+                </div>
+                <p className="text-white/40 text-xs text-center mt-1">Timeline: 45–90 days</p>
+              </div>
+            </div>
+
+            {/* Cash Offer */}
+            <div className="bg-[#c8a96e]/10 rounded-xl p-5 border border-[#c8a96e]/40">
+              <h3 className="font-bold text-[#c8a96e] mb-4 text-center" style={{ fontFamily: "'Lora', serif" }}>Alder Heritage Cash Offer</h3>
+              <div className="space-y-2 text-sm">
+                {[
+                  { label: "Cash Offer (~84% of value)", value: fmt(cashOffer), positive: true },
+                  { label: "Agent Commission", value: "$0", positive: true },
+                  { label: "Closing Costs", value: "$0 (we pay)", positive: true },
+                  { label: "Staging & Marketing", value: "$0", positive: true },
+                  { label: "Repairs", value: "$0 (as-is)", positive: true },
+                  { label: "Carrying Costs", value: "$0 (7 days)", positive: true },
+                ].map((row) => (
+                  <div key={row.label} className="flex justify-between">
+                    <span className="text-white/60">{row.label}</span>
+                    <span className="text-green-400 font-semibold">{row.value}</span>
+                  </div>
+                ))}
+                <div className="border-t border-[#c8a96e]/30 pt-2 mt-2 flex justify-between">
+                  <span className="text-white font-bold">Your Net Proceeds</span>
+                  <span className="text-[#c8a96e] font-bold text-lg">{fmt(cashNet)}</span>
+                </div>
+                <p className="text-white/40 text-xs text-center mt-1">Timeline: 7 days</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Summary */}
+          <div className="mt-6 text-center">
+            {netDiff >= 0 ? (
+              <p className="text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                With these numbers, a cash sale nets you{" "}
+                <span className="text-[#c8a96e] font-bold">{fmt(Math.abs(netDiff))} more</span>{" "}
+                than a traditional listing — and closes 38–83 days faster.
+              </p>
+            ) : (
+              <p className="text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                With these numbers, a traditional listing nets{" "}
+                <span className="text-yellow-400 font-bold">{fmt(Math.abs(netDiff))} more</span>{" "}
+                — but takes 45–90 days longer and carries the risk of deals falling through.
+              </p>
+            )}
+            <Link href="/contact">
+              <button className="mt-4 px-8 py-3 rounded-lg font-bold text-[#1a2e1a]" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Get My Real Cash Offer →
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function InlineOfferForm() {
   const [form, setForm] = useState({ name: "", phone: "", email: "", address: "", situation: "", timeline: "" });
   const { state, errorMessage, submit } = useFormSubmit();
@@ -890,6 +1030,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── CASH OFFER VS LISTING CALCULATOR ── */}
+      <CashOfferVsListingCalc />
 
       {/* ── HERITAGE DEFINITION ── */}
       <section className="py-16" style={{ background: "oklch(0.22 0.01 60)" }}>
