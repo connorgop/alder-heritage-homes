@@ -1406,6 +1406,52 @@ const _blogPostsRaw = [
     category: "Clovis",
     tags: ["Clovis North", "Clovis", "Cash Buyer", "Sell Fast"],
   },
+  {
+    slug: "sell-my-house-bullard-fresno",
+    title: "Sell My House in Bullard Fresno — Cash Buyers for an Established Neighborhood",
+    excerpt: "The Bullard area is one of Fresno's most established mid-range neighborhoods. Learn what cash buyers pay for Bullard homes and how to sell quickly without repairs or commissions.",
+    date: "2026-04-05",
+    readTime: "5 min read",
+    category: "Fresno Neighborhoods",
+    tags: ["Bullard", "Fresno", "Cash Buyer", "Sell Fast"],
+  },
+  {
+    slug: "sell-my-house-sunnyside-fresno",
+    title: "Sell My House in Sunnyside Fresno — Fast Cash Offers for Southeast Fresno",
+    excerpt: "Sunnyside is one of Fresno's most affordable and family-oriented neighborhoods. Find out how cash buyers handle inherited homes, deferred maintenance, and tenant-occupied properties in Sunnyside.",
+    date: "2026-04-05",
+    readTime: "5 min read",
+    category: "Fresno Neighborhoods",
+    tags: ["Sunnyside", "Fresno", "Cash Buyer", "Sell Fast"],
+  },
+  {
+    slug: "sell-my-house-mclane-fresno",
+    title: "Sell My House in McLane / Hoover Fresno — Cash Buyers for Multi-Family and Single-Family Homes",
+    excerpt: "The McLane and Hoover neighborhoods have a high concentration of rental properties. Learn how cash buyers handle multi-family properties, tenant-occupied homes, and deferred maintenance in central Fresno.",
+    date: "2026-04-05",
+    readTime: "5 min read",
+    category: "Fresno Neighborhoods",
+    tags: ["McLane", "Hoover", "Fresno", "Multi-Family", "Cash Buyer"],
+  },
+  {
+    slug: "sell-my-house-old-fig-garden-fresno",
+    title: "Sell My House in Old Fig Garden Fresno — Cash Buyers for Historic Homes",
+    excerpt: "Old Fig Garden is Fresno's most historic neighborhood. Discover how cash buyers handle Tudor Revival, Spanish Colonial, and Craftsman homes with knob-and-tube wiring, original plumbing, and historic preservation requirements.",
+    date: "2026-04-05",
+    readTime: "6 min read",
+    category: "Fresno Neighborhoods",
+    tags: ["Old Fig Garden", "Historic Homes", "Fresno", "Cash Buyer"],
+  },
+  {
+    slug: "sell-my-house-fresno-state-area",
+    title: "Sell My House Near Fresno State — Cash Buyers for Student Rentals and Faculty Homes",
+    excerpt: "The Fresno State area has a unique mix of student rentals, faculty homes, and long-time owner-occupied properties. Learn how cash buyers handle tenant-occupied and deferred-maintenance properties near California State University, Fresno.",
+    date: "2026-04-05",
+    readTime: "5 min read",
+    category: "Fresno Neighborhoods",
+    tags: ["Fresno State", "Student Rentals", "Fresno", "Cash Buyer"],
+  },
+
 
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];

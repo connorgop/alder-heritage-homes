@@ -3124,6 +3124,75 @@ const articleContent: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  "sell-my-house-bullard-fresno": (
+    <div>
+      <p>The Bullard area — anchored by Bullard High School and stretching along Bullard Avenue from Blackstone to Highway 99 — is one of Fresno's most established mid-range neighborhoods. With a mix of 1970s and 1980s ranch homes, mature trees, and strong community identity, Bullard is a consistent seller's market. If you own a home in the Bullard area and need to sell quickly, a cash buyer can close in days without the disruption and uncertainty of a traditional listing.</p>
+      <h2>Bullard Neighborhood Real Estate — Q1 2026</h2>
+      <p>Bullard area home values in Q1 2026 range from $320,000 to $480,000 depending on size, lot, and condition. Homes in the Bullard corridor typically sell within 20–28 days on the open market — but that still means 35–50 days to close after accepting an offer, plus the risk of buyer financing falling through. A cash sale through Alder Heritage Homes closes in 7 days with zero contingencies and zero carrying costs.</p>
+      <h2>Why Bullard Homeowners Choose Cash Buyers</h2>
+      <p>Bullard's housing stock — primarily built in the 1970s and 1980s — often comes with deferred maintenance that makes a traditional listing complicated. Aging HVAC systems, original single-pane windows, outdated kitchens, and foundation settling are common in this era of construction. Traditional buyers frequently demand repair credits or walk away after inspections. Cash buyers purchase as-is, meaning you don't spend a dollar on repairs and don't risk a deal collapsing after weeks on market.</p>
+      <p>Other common reasons Bullard sellers choose a cash sale: inherited properties from parents who raised their families in the neighborhood, divorce situations requiring a fast and clean resolution, landlords with long-term tenants who want to exit the rental market, and seniors downsizing who need a flexible closing timeline.</p>
+      <h2>What Alder Heritage Homes Pays for Bullard Properties</h2>
+      <p>Our cash offers for Bullard homes are based on current comparable sales and the cost to bring the property to market-ready condition. A 3-bedroom, 1,500 sq ft Bullard home in fair condition might receive a cash offer of $270,000–$310,000. A well-maintained 4-bedroom home could receive $360,000–$420,000. You save 5–6% in agent commissions, avoid repair costs, and close on your schedule. Call Connor at <strong>(559) 281-8016</strong> for a no-obligation offer within 24 hours.</p>
+      <h2>The Process — Simple and Transparent</h2>
+      <p>Connor Whittaker is a licensed California real estate agent (DRE #02219124) who has purchased homes throughout the Bullard area. Submit your address online or call directly. We'll research comparable sales, assess your home's condition, and deliver a written cash offer within 24 hours. If you accept, we can close in as few as 7 days — or on any date you choose. You pay zero agent commissions, zero repair costs, and zero closing fees.</p>
+      <p>See also: <a href="/fresno-neighborhoods/bullard">Bullard Neighborhood Page</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-cash-offer-calculator">Fresno Cash Offer Calculator</a> · <a href="/blog/fresno-housing-market-2026">Fresno Housing Market 2026</a></p>
+    </div>
+  ),
+
+  "sell-my-house-sunnyside-fresno": (
+    <div>
+      <p>Sunnyside is one of Fresno's most affordable and family-oriented neighborhoods — a working-class community in southeast Fresno bounded roughly by Kings Canyon Road to the north, Clovis Avenue to the east, and the 180 Freeway to the south. Known for its tight-knit community, affordable housing stock, and proximity to Sunnyside High School, the Sunnyside area is an active market for cash home buyers. If you own a home in Sunnyside and need to sell quickly, you have real options — and a cash sale may be your fastest path forward.</p>
+      <h2>Sunnyside Home Values — Q1 2026</h2>
+      <p>Sunnyside median home prices in Q1 2026 range from $240,000 to $340,000 for single-family homes. The neighborhood's older housing stock — most homes built between 1950 and 1975 — means deferred maintenance is common, and many sellers prefer a cash sale over the expense and uncertainty of a full renovation before listing. Cash buyers purchase as-is, so you don't spend a dollar on repairs and don't risk a deal falling through after weeks on market.</p>
+      <h2>Common Situations for Sunnyside Cash Sales</h2>
+      <p>Sunnyside sellers who contact Alder Heritage Homes typically have one of these situations: inherited homes from parents or grandparents who lived in the neighborhood for decades, financial hardship requiring a fast sale to avoid foreclosure, landlords with difficult tenants who want to exit the rental market, homes with deferred maintenance that would require significant investment before a traditional listing, and divorce situations where both parties need a quick and equitable resolution.</p>
+      <h2>What We Pay for Sunnyside Homes</h2>
+      <p>Our cash offers for Sunnyside homes are based on current comparable sales and the cost to bring the property to market-ready condition. A 3-bedroom, 1,200 sq ft Sunnyside home in fair condition might receive a cash offer of $195,000–$230,000. A well-maintained home in good condition could receive $260,000–$300,000. You pay zero agent commissions, zero repair costs, and zero closing fees. Call Connor at <strong>(559) 281-8016</strong> for a no-obligation cash offer within 24 hours.</p>
+      <p>See also: <a href="/fresno-neighborhoods/sunnyside">Sunnyside Neighborhood Page</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-cash-offer-calculator">Cash Offer Calculator</a> · <a href="/blog/sell-house-fast-fresno-ca-guide">Sell House Fast in Fresno CA</a></p>
+    </div>
+  ),
+
+  "sell-my-house-mclane-fresno": (
+    <div>
+      <p>The McLane / Hoover area — centered on McLane High School and Hoover High School in central-north Fresno — is a diverse, established neighborhood with a mix of post-war bungalows, 1960s ranch homes, and multi-family properties. Bounded roughly by Shaw Avenue to the north, Blackstone to the east, Shields to the south, and Highway 99 to the west, the McLane area is one of Fresno's most active markets for cash home buyers. If you own a home in this area and need to sell quickly, a cash buyer can close in days without the delays of a traditional listing.</p>
+      <h2>McLane / Hoover Area Real Estate — Q1 2026</h2>
+      <p>McLane area home values in Q1 2026 range from $210,000 to $320,000 for single-family homes, with multi-family properties (duplexes, triplexes) ranging from $280,000 to $420,000. The neighborhood's older housing stock — most homes built between 1940 and 1970 — means deferred maintenance is common. Cash buyers purchase as-is, so you don't need to invest in repairs before selling.</p>
+      <h2>Why McLane Area Sellers Choose Cash Buyers</h2>
+      <p>The McLane and Hoover neighborhoods have a high concentration of rental properties, and many sellers in this area are landlords who are tired of managing tenants and want to exit the rental market. Other common situations include inherited properties from long-time Fresno residents, homes with foundation issues or outdated electrical systems, and sellers facing financial pressure who need to close quickly. Cash buyers eliminate the uncertainty of buyer financing and the risk of deals falling through after inspections.</p>
+      <h2>Multi-Family Properties — We Buy Those Too</h2>
+      <p>The McLane area has a significant number of duplexes, triplexes, and small apartment buildings. Alder Heritage Homes purchases multi-family properties as-is, with tenants in place. You don't need to wait for leases to expire or deal with the complexity of a multi-unit listing. Call Connor at <strong>(559) 281-8016</strong> to discuss your multi-family property — we can often close faster than a single-family sale.</p>
+      <p>See also: <a href="/fresno-neighborhoods/mclane">McLane / Hoover Neighborhood Page</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-cash-offer-calculator">Cash Offer Calculator</a> · <a href="/blog/sell-tenant-occupied-property-california">Selling a Tenant-Occupied Property in California</a></p>
+    </div>
+  ),
+
+  "sell-my-house-old-fig-garden-fresno": (
+    <div>
+      <p>Old Fig Garden is Fresno's most historic and architecturally significant neighborhood — a tree-canopied enclave of Tudor Revival, Spanish Colonial, and Craftsman homes built primarily between 1910 and 1940, centered on Van Ness Boulevard between Shields and Olive Avenues. Listed on the National Register of Historic Places as a historic district, Old Fig Garden homes are among the most coveted in the city — and among the most complex to sell. If you own an Old Fig Garden home and need to sell quickly, a cash buyer who understands historic properties can save you months of complications.</p>
+      <h2>Old Fig Garden Home Values — Q1 2026</h2>
+      <p>Old Fig Garden median home prices in Q1 2026 range from $480,000 to $750,000, with fully restored historic homes on large lots exceeding $900,000. The neighborhood's historic designation means renovations require permits and must comply with preservation guidelines — a significant cost and time burden for sellers who want to update before listing. Cash buyers purchase as-is, so you don't need to navigate the historic preservation process before selling.</p>
+      <h2>Why Old Fig Garden Sellers Choose Cash Buyers</h2>
+      <p>Old Fig Garden homes are beloved but come with unique challenges: knob-and-tube wiring, original galvanized plumbing, single-pane windows, aging foundations, and deferred maintenance that can cost $50,000–$150,000 to address before a traditional listing. Many buyers who fall in love with Old Fig Garden homes walk away after inspections when they see the scope of work required. Cash buyers purchase as-is and factor the renovation cost into their offer — giving you a clean, fast sale without the uncertainty of a traditional listing process.</p>
+      <p>Other common reasons Old Fig Garden sellers choose cash buyers: estate sales where heirs live out of state and want a fast resolution, divorce situations requiring a quick and equitable sale, and long-time owners who want to downsize without the disruption of months of showings.</p>
+      <h2>Our Old Fig Garden Cash Offer Process</h2>
+      <p>Connor Whittaker at Alder Heritage Homes has experience purchasing historic properties in Fresno. We understand the unique value and unique challenges of Old Fig Garden homes. Submit your address or call <strong>(559) 281-8016</strong> for a no-obligation cash offer within 24 hours. We can close in as few as 7 days, or on any timeline that works for you.</p>
+      <p>See also: <a href="/fresno-neighborhoods/old-fig-garden">Old Fig Garden Neighborhood Page</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-cash-offer-calculator">Fresno Cash Offer Calculator</a> · <a href="/blog/selling-inherited-property-california">Selling an Inherited Property in California</a></p>
+    </div>
+  ),
+
+  "sell-my-house-fresno-state-area": (
+    <div>
+      <p>The Fresno State area — the neighborhoods surrounding California State University, Fresno along Shaw Avenue and Cedar Avenue — is one of the most dynamic real estate markets in the city. A mix of student rentals, faculty-owned homes, and long-time owner-occupied properties, the Fresno State area attracts a unique buyer pool and a distinct set of sellers. If you own a home near Fresno State and need to sell quickly, a cash buyer can close in days without the complications of a tenant-occupied or deferred-maintenance property.</p>
+      <h2>Fresno State Area Home Values — Q1 2026</h2>
+      <p>Home values in the Fresno State area (zip codes 93740, 93726, 93710) range from $260,000 to $420,000 for single-family homes, with multi-family properties and student rentals ranging from $320,000 to $550,000. The area's proximity to the university creates consistent rental demand, but also means many properties have been used as student rentals and carry deferred maintenance. Cash buyers purchase as-is — no repairs, no cleaning, no staging required.</p>
+      <h2>Why Fresno State Area Sellers Choose Cash Buyers</h2>
+      <p>The most common situations for cash sales near Fresno State include: landlords with student tenants who want to exit the rental market (especially at the end of a lease cycle), inherited properties from parents or grandparents who lived near the university, homes with deferred maintenance from years of rental use, and faculty or staff relocating out of the area on short notice. Cash buyers eliminate the uncertainty of buyer financing and the risk of deals falling through after inspections reveal years of rental wear-and-tear.</p>
+      <h2>Student Rental Properties — We Buy Them As-Is</h2>
+      <p>Student rental properties near Fresno State often have significant deferred maintenance: worn flooring, damaged walls, outdated kitchens, and aging mechanical systems. Traditional buyers frequently demand large repair credits or walk away entirely. Alder Heritage Homes purchases student rental properties as-is, with tenants in place or vacant. You don't need to repair, clean, or stage the property before selling. Call Connor at <strong>(559) 281-8016</strong> for a no-obligation cash offer within 24 hours.</p>
+      <p>See also: <a href="/fresno-neighborhoods/fresno-state">Fresno State Area Neighborhood Page</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-cash-offer-calculator">Cash Offer Calculator</a> · <a href="/blog/sell-tenant-occupied-property-california">Selling a Tenant-Occupied Property in California</a></p>
+    </div>
+  ),
+
 };
 
 export default function BlogPost() {
