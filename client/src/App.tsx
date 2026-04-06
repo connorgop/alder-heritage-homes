@@ -182,6 +182,9 @@ import SkylineREI from "./pages/SkylineREI";
 import FAQPage from "./pages/FAQ";
 import GBPTemplates from "./pages/GBPTemplates";
 import Resources from "./pages/Resources";
+import OrangeCovePage from "./pages/cities/OrangeCove";
+import SellHouseFastOrangeCove from "./pages/SellHouseFastOrangeCove";
+import SellHouseFastDinuba from "./pages/SellHouseFastDinuba";
 
 function Router() {
   return (
@@ -380,6 +383,9 @@ function Router() {
       <Route path="/sell-house-fast-reedley-ca" component={SellHouseFastReedley} />
       <Route path="/sell-house-fast-selma-ca" component={SellHouseFastSelma} />
       <Route path="/sell-house-fast-sanger-ca" component={SellHouseFastSanger} />
+      <Route path="/we-buy-houses-orange-cove" component={OrangeCovePage} />
+      <Route path="/sell-house-fast-orange-cove-ca" component={SellHouseFastOrangeCove} />
+      <Route path="/sell-house-fast-dinuba-ca" component={SellHouseFastDinuba} />
       {/* Housing Market Pages */}
       <Route path="/reedley-housing-market" component={ReedleyHousingMarket} />
       <Route path="/selma-housing-market" component={SelmaHousingMarket} />

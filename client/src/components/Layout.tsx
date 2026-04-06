@@ -80,6 +80,9 @@ const trust = [
   { label: "Sell House Fast Sanger", href: "/sell-house-fast-sanger-ca" },
   { label: "Fresno County Hub", href: "/fresno-county" },
   { label: "We Buy Houses Parlier", href: "/we-buy-houses-parlier" },
+  { label: "We Buy Houses Orange Cove", href: "/we-buy-houses-orange-cove" },
+  { label: "Sell House Fast Orange Cove", href: "/sell-house-fast-orange-cove-ca" },
+  { label: "Sell House Fast Dinuba", href: "/sell-house-fast-dinuba-ca" },
 ];
 
 const cities = [
@@ -106,6 +109,8 @@ const cities = [
   { label: "Kings County", href: "/we-buy-houses-kings-county" },
   { label: "San Joaquin County", href: "/we-buy-houses-san-joaquin-county" },
   { label: "Parlier", href: "/we-buy-houses-parlier" },
+  { label: "Orange Cove", href: "/we-buy-houses-orange-cove" },
+  { label: "Dinuba", href: "/we-buy-houses-dinuba" },
   { label: "Fresno County Hub", href: "/fresno-county" },
 ];
 
