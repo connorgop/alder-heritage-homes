@@ -31,6 +31,18 @@ const FAST_SALE_PAGES: Record<string, string> = {
   Visalia: "/sell-house-fast-visalia-ca",
   Madera: "/sell-house-fast-madera-ca",
   Bakersfield: "/sell-house-fast-bakersfield-ca",
+  Reedley: "/sell-house-fast-reedley-ca",
+  Selma: "/sell-house-fast-selma-ca",
+  Sanger: "/sell-house-fast-sanger-ca",
+  Stockton: "/sell-house-fast-stockton-ca",
+  Modesto: "/sell-house-fast-modesto-ca",
+  Tracy: "/sell-house-fast-tracy-ca",
+  Lodi: "/sell-house-fast-lodi-ca",
+  Manteca: "/sell-house-fast-manteca-ca",
+  Turlock: "/sell-house-fast-turlock-ca",
+  Dinuba: "/sell-house-fast-dinuba-ca",
+  "Orange Cove": "/sell-house-fast-orange-cove-ca",
+  "Cutler-Orosi": "/sell-house-fast-orange-cove-ca",
 };
 
 export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug, videoEmbed }: CityPageProps) {

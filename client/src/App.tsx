@@ -183,6 +183,7 @@ import FAQPage from "./pages/FAQ";
 import GBPTemplates from "./pages/GBPTemplates";
 import Resources from "./pages/Resources";
 import OrangeCovePage from "./pages/cities/OrangeCove";
+import CutlerOrosiPage from "./pages/cities/CutlerOrosi";
 import SellHouseFastOrangeCove from "./pages/SellHouseFastOrangeCove";
 import SellHouseFastDinuba from "./pages/SellHouseFastDinuba";
 
@@ -384,6 +385,7 @@ function Router() {
       <Route path="/sell-house-fast-selma-ca" component={SellHouseFastSelma} />
       <Route path="/sell-house-fast-sanger-ca" component={SellHouseFastSanger} />
       <Route path="/we-buy-houses-orange-cove" component={OrangeCovePage} />
+      <Route path="/we-buy-houses-cutler-orosi" component={CutlerOrosiPage} />
       <Route path="/sell-house-fast-orange-cove-ca" component={SellHouseFastOrangeCove} />
       <Route path="/sell-house-fast-dinuba-ca" component={SellHouseFastDinuba} />
       {/* Housing Market Pages */}

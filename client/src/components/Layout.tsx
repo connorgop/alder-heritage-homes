@@ -111,6 +111,7 @@ const cities = [
   { label: "Parlier", href: "/we-buy-houses-parlier" },
   { label: "Orange Cove", href: "/we-buy-houses-orange-cove" },
   { label: "Dinuba", href: "/we-buy-houses-dinuba" },
+  { label: "Cutler-Orosi", href: "/we-buy-houses-cutler-orosi" },
   { label: "Fresno County Hub", href: "/fresno-county" },
 ];
 
