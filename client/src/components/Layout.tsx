@@ -78,6 +78,8 @@ const trust = [
   { label: "Sell House Fast Reedley", href: "/sell-house-fast-reedley-ca" },
   { label: "Sell House Fast Selma", href: "/sell-house-fast-selma-ca" },
   { label: "Sell House Fast Sanger", href: "/sell-house-fast-sanger-ca" },
+  { label: "Fresno County Hub", href: "/fresno-county" },
+  { label: "We Buy Houses Parlier", href: "/we-buy-houses-parlier" },
 ];
 
 const cities = [
@@ -103,6 +105,8 @@ const cities = [
   { label: "Manteca", href: "/we-buy-houses-manteca" },
   { label: "Kings County", href: "/we-buy-houses-kings-county" },
   { label: "San Joaquin County", href: "/we-buy-houses-san-joaquin-county" },
+  { label: "Parlier", href: "/we-buy-houses-parlier" },
+  { label: "Fresno County Hub", href: "/fresno-county" },
 ];
 
 const neighborhoods = [
