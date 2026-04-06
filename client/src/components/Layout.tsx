@@ -66,6 +66,9 @@ const trust = [
   { label: "Bakersfield Neighborhoods Hub", href: "/bakersfield-neighborhoods" },
   { label: "Stockton Neighborhoods Hub", href: "/stockton-neighborhoods" },
   { label: "Modesto Neighborhoods Hub", href: "/modesto-neighborhoods" },
+  { label: "San Joaquin County Hub", href: "/san-joaquin-county" },
+  { label: "Sell House Fast Stockton", href: "/sell-house-fast-stockton-ca" },
+  { label: "Sell House Fast Modesto", href: "/sell-house-fast-modesto-ca" },
 ];
 
 const cities = [
@@ -242,8 +245,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       { label: "Clovis", href: "/we-buy-houses-clovis" },
                       { label: "Visalia", href: "/sell-house-fast-visalia-ca-guide" },
                       { label: "Bakersfield", href: "/sell-house-fast-bakersfield-ca-guide" },
-                      { label: "Stockton", href: "/blog/sell-house-fast-stockton-ca" },
-                      { label: "Modesto", href: "/blog/sell-house-fast-modesto-ca" },
+                      { label: "Stockton", href: "/sell-house-fast-stockton-ca" },
+                      { label: "Modesto", href: "/sell-house-fast-modesto-ca" },
+                      { label: "Tracy", href: "/we-buy-houses-tracy" },
+                      { label: "Manteca", href: "/we-buy-houses-manteca" },
                     ].map((c) => (
                       <Link
                         key={c.href}
@@ -516,6 +521,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/fresno-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Housing Market 2026</Link></li>
                 <li><Link href="/stockton-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Stockton Housing Market 2026</Link></li>
                 <li><Link href="/modesto-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Modesto Housing Market 2026</Link></li>
+                <li><Link href="/san-joaquin-county" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>San Joaquin County Hub</Link></li>
+                <li><Link href="/sell-house-fast-stockton-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Stockton</Link></li>
+                <li><Link href="/sell-house-fast-modesto-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Modesto</Link></li>
                 <li><Link href="/blog" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Blog &amp; Resources</Link></li>
                 <li><Link href="/sell-house-fast-faq" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast FAQ</Link></li>
                 <li><Link href="/why-choose-us" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Why Choose Us</Link></li>

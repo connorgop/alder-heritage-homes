@@ -51,6 +51,9 @@ import SellHouseFastHub from "./pages/SellHouseFastHub";
 import SellHouseFastMadera from "./pages/SellHouseFastMadera";
 import CentralValleyHub from "./pages/CentralValleyHub";
 import SellHouseFastCentralValley from "./pages/SellHouseFastCentralValley";
+import SellHouseFastStockton from "./pages/SellHouseFastStockton";
+import SellHouseFastModesto from "./pages/SellHouseFastModesto";
+import SanJoaquinCountyHub from "./pages/SanJoaquinCountyHub";
 import FresnoHousingMarket from "./pages/FresnoHousingMarket";
 import VisaliaHousingMarket from "./pages/VisaliaHousingMarket";
 import HowItWorks from "./pages/HowItWorks";
@@ -205,6 +208,9 @@ function Router() {
       <Route path="/sell-house-fast-bakersfield-ca" component={SellHouseFastBakersfield} />
       <Route path="/sell-house-fast-madera-ca" component={SellHouseFastMadera} />
       <Route path="/sell-house-fast-tulare-ca" component={SellHouseFastTulare} />
+      <Route path="/sell-house-fast-stockton-ca" component={SellHouseFastStockton} />
+      <Route path="/sell-house-fast-modesto-ca" component={SellHouseFastModesto} />
+      <Route path="/san-joaquin-county" component={SanJoaquinCountyHub} />
       <Route path="/we-buy-houses-central-valley" component={CentralValleyHub} />
       <Route path="/sell-house-fast-central-valley" component={SellHouseFastCentralValley} />
       <Route path="/fresno-housing-market" component={FresnoHousingMarket} />
