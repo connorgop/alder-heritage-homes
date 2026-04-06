@@ -43,6 +43,8 @@ const FAST_SALE_PAGES: Record<string, string> = {
   Dinuba: "/sell-house-fast-dinuba-ca",
   "Orange Cove": "/sell-house-fast-orange-cove-ca",
   "Cutler-Orosi": "/sell-house-fast-orange-cove-ca",
+  Kingsburg: "/sell-house-fast-kingsburg-ca",
+  Fowler: "/sell-house-fast-fowler-ca",
 };
 
 export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug, videoEmbed }: CityPageProps) {
