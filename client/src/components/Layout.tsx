@@ -85,6 +85,7 @@ const trust = [
   { label: "Sell House Fast Dinuba", href: "/sell-house-fast-dinuba-ca" },
   { label: "We Buy Houses Lindsay", href: "/we-buy-houses-lindsay" },
   { label: "Stanislaus County Hub", href: "/stanislaus-county" },
+  { label: "Sell House Fast Porterville", href: "/sell-house-fast-porterville-ca" },
 ];
 
 

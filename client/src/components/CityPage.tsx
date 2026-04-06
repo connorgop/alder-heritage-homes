@@ -45,6 +45,8 @@ const FAST_SALE_PAGES: Record<string, string> = {
   "Cutler-Orosi": "/sell-house-fast-orange-cove-ca",
   Kingsburg: "/sell-house-fast-kingsburg-ca",
   Fowler: "/sell-house-fast-fowler-ca",
+  Porterville: "/sell-house-fast-porterville-ca",
+  Lindsay: "/sell-house-fast-porterville-ca",
 };
 
 export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug, videoEmbed }: CityPageProps) {
