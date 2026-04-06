@@ -191,6 +191,10 @@ import SellHouseFastFowler from "./pages/SellHouseFastFowler";
 import StanislausCountyHub from "./pages/StanislausCountyHub";
 import SellHouseFastPorterville from "./pages/SellHouseFastPorterville";
 import LindsayPage from "./pages/cities/Lindsay";
+import ExeterPage from "./pages/cities/Exeter";
+import StrathmoreePage from "./pages/cities/Strathmore";
+import TulareCountyHub from "./pages/TulareCountyHub";
+import PortervilleHousingMarket from "./pages/PortervilleHousingMarket";
 
 function Router() {
   return (
@@ -402,6 +406,10 @@ function Router() {
       <Route path="/stanislaus-county" component={StanislausCountyHub} />
       <Route path="/sell-house-fast-porterville-ca" component={SellHouseFastPorterville} />
       <Route path="/we-buy-houses-lindsay" component={LindsayPage} />
+      <Route path="/we-buy-houses-exeter" component={ExeterPage} />
+      <Route path="/we-buy-houses-strathmore" component={StrathmoreePage} />
+      <Route path="/tulare-county" component={TulareCountyHub} />
+      <Route path="/porterville-housing-market" component={PortervilleHousingMarket} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

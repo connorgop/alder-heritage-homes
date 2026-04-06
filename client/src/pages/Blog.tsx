@@ -1858,6 +1858,42 @@ const _blogPostsRaw = [
     readTime: "11 min read",
     image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
   },
+  {
+    slug: "sell-house-fast-exeter-ca",
+    title: "Sell Your House Fast in Exeter CA — Cash Offer in 24 Hours",
+    excerpt: "Exeter is a small Tulare County city with a limited conventional buyer pool. If your home needs repairs or you need to sell quickly, a cash sale is often the fastest and most practical option. Here's what to expect.",
+    category: "Sell Fast",
+    date: "2026-04-07",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=80",
+  },
+  {
+    slug: "sell-house-fast-strathmore-ca",
+    title: "Sell Your House Fast in Strathmore CA — Rural Cash Home Buyers",
+    excerpt: "Strathmore is one of the most underserved real estate markets in Tulare County. With almost no conventional buyer pool and homes sitting 78+ days on market, a cash sale is often the only practical option for Strathmore homeowners.",
+    category: "Sell Fast",
+    date: "2026-04-07",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
+  },
+  {
+    slug: "porterville-housing-market-2026",
+    title: "Porterville CA Housing Market 2026 — Prices, Trends & Seller Guide",
+    excerpt: "Porterville's housing market in 2026 reflects the challenges facing agricultural communities in the San Joaquin Valley. Median prices around $280K, 48+ days on market, and a 35% cash buyer share. Here's what sellers need to know.",
+    category: "Market Reports",
+    date: "2026-04-07",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+  },
+  {
+    slug: "tulare-county-cash-home-buyers-guide",
+    title: "Tulare County Cash Home Buyers — Complete Guide for 2026",
+    excerpt: "From Visalia to Porterville, Lindsay to Exeter — Tulare County has one of the highest cash buyer shares in California. This guide explains why, and how to find a legitimate licensed cash buyer for your Tulare County home.",
+    category: "Seller Guides",
+    date: "2026-04-07",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 

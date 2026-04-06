@@ -86,6 +86,10 @@ const trust = [
   { label: "We Buy Houses Lindsay", href: "/we-buy-houses-lindsay" },
   { label: "Stanislaus County Hub", href: "/stanislaus-county" },
   { label: "Sell House Fast Porterville", href: "/sell-house-fast-porterville-ca" },
+  { label: "We Buy Houses Exeter", href: "/we-buy-houses-exeter" },
+  { label: "We Buy Houses Strathmore", href: "/we-buy-houses-strathmore" },
+  { label: "Tulare County Hub", href: "/tulare-county" },
+  { label: "Porterville Housing Market", href: "/porterville-housing-market" },
 ];
 
 
@@ -119,6 +123,9 @@ const cities = [
   { label: "Fresno County Hub", href: "/fresno-county" },
   { label: "Lindsay", href: "/we-buy-houses-lindsay" },
   { label: "Stanislaus County Hub", href: "/stanislaus-county" },
+  { label: "Exeter", href: "/we-buy-houses-exeter" },
+  { label: "Strathmore", href: "/we-buy-houses-strathmore" },
+  { label: "Tulare County Hub", href: "/tulare-county" },
 ];
 
 const neighborhoods = [
