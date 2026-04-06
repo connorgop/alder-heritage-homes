@@ -90,6 +90,8 @@ const trust = [
   { label: "We Buy Houses Strathmore", href: "/we-buy-houses-strathmore" },
   { label: "Tulare County Hub", href: "/tulare-county" },
   { label: "Porterville Housing Market", href: "/porterville-housing-market" },
+  { label: "We Buy Houses Woodlake", href: "/we-buy-houses-woodlake" },
+  { label: "Sell House Fast Exeter", href: "/sell-house-fast-exeter-ca" },
 ];
 
 
@@ -126,6 +128,7 @@ const cities = [
   { label: "Exeter", href: "/we-buy-houses-exeter" },
   { label: "Strathmore", href: "/we-buy-houses-strathmore" },
   { label: "Tulare County Hub", href: "/tulare-county" },
+  { label: "Woodlake", href: "/we-buy-houses-woodlake" },
 ];
 
 const neighborhoods = [

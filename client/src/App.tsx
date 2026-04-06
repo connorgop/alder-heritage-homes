@@ -195,6 +195,8 @@ import ExeterPage from "./pages/cities/Exeter";
 import StrathmoreePage from "./pages/cities/Strathmore";
 import TulareCountyHub from "./pages/TulareCountyHub";
 import PortervilleHousingMarket from "./pages/PortervilleHousingMarket";
+import WoodlakePage from "./pages/cities/Woodlake";
+import SellHouseFastExeter from "./pages/SellHouseFastExeter";
 
 function Router() {
   return (
@@ -410,6 +412,8 @@ function Router() {
       <Route path="/we-buy-houses-strathmore" component={StrathmoreePage} />
       <Route path="/tulare-county" component={TulareCountyHub} />
       <Route path="/porterville-housing-market" component={PortervilleHousingMarket} />
+      <Route path="/we-buy-houses-woodlake" component={WoodlakePage} />
+      <Route path="/sell-house-fast-exeter-ca" component={SellHouseFastExeter} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

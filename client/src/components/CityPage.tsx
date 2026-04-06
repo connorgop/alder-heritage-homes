@@ -47,6 +47,8 @@ const FAST_SALE_PAGES: Record<string, string> = {
   Fowler: "/sell-house-fast-fowler-ca",
   Porterville: "/sell-house-fast-porterville-ca",
   Lindsay: "/sell-house-fast-porterville-ca",
+  Exeter: "/sell-house-fast-exeter-ca",
+  Woodlake: "/sell-house-fast-exeter-ca",
 };
 
 export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug, videoEmbed }: CityPageProps) {
