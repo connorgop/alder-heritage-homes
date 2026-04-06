@@ -1822,6 +1822,42 @@ const _blogPostsRaw = [
     readTime: "12 min read",
     image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
   },
+  {
+    slug: "sell-house-fast-lindsay-ca",
+    title: "Sell Your House Fast in Lindsay, CA — The Complete 2026 Guide",
+    excerpt: "Lindsay is the Olive Capital of the World — but selling a home here presents real challenges. With a population of just 13,000 and an older housing stock, Lindsay homeowners face a very limited buyer pool. Here's how to sell fast and for a fair price.",
+    category: "Seller Guides",
+    date: "2026-04-06",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+  },
+  {
+    slug: "stanislaus-county-housing-market-2026",
+    title: "Stanislaus County CA Housing Market 2026 — Prices, Trends & What Sellers Need to Know",
+    excerpt: "Stanislaus County's housing market is shaped by its agricultural economy, Bay Area commuter demand, and diverse city mix from Modesto to Patterson. Here's the full picture for 2026 — city by city.",
+    category: "Market Reports",
+    date: "2026-04-06",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+  },
+  {
+    slug: "sell-house-modesto-cash-buyer-guide",
+    title: "Selling Your Modesto Home for Cash in 2026 — What You Need to Know",
+    excerpt: "Modesto is Stanislaus County's largest city with a diverse housing market. Whether you're in North Modesto's newer subdivisions or South Modesto's older neighborhoods, here's what cash buyers pay and how the process works.",
+    category: "Seller Guides",
+    date: "2026-04-06",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+  },
+  {
+    slug: "tulare-county-southeast-corridor-guide",
+    title: "Selling a Home in the Tulare County Southeast Corridor — Lindsay, Porterville, Exeter, Strathmore",
+    excerpt: "The southeast Tulare County corridor from Lindsay to Porterville is one of the most underserved real estate markets in California. Small towns, older homes, and agricultural roots create unique selling challenges. Here's what you need to know.",
+    category: "Seller Guides",
+    date: "2026-04-06",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 

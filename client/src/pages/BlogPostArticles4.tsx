@@ -806,6 +806,51 @@ const articleChunk4: Record<string, React.ReactNode> = {
     </div>
   ),
 
+  "sell-house-fast-lindsay-ca": (
+    <div>
+      <p>Lindsay, California is a small agricultural city of about 13,000 people in Tulare County, located 25 miles southeast of Visalia on Highway 65. Known as the Olive Capital of the World, Lindsay has a predominantly agricultural economy and a housing market that reflects its rural roots. Median home values hover around $255,000 and the buyer pool is very limited compared to larger cities like Visalia or Porterville.</p>
+      <h2>Why Selling a Home in Lindsay Is Different</h2>
+      <p>Lindsay's small size and limited amenities create real challenges for traditional home sellers. Buyers who want more services, better schools, or a larger job market will choose Visalia, Porterville, or Tulare instead. This means that homes in Lindsay can sit on the market for months with no serious offers. Much of Lindsay's housing stock was built in the 1950s-1970s with deferred maintenance, outdated electrical panels, and galvanized plumbing that makes conventional financing difficult.</p>
+      <h2>What Cash Buyers Pay for Lindsay Homes in 2026</h2>
+      <p>Cash buyers in Lindsay typically offer 70-80% of a home's after-repair value, minus estimated repair costs. For a Lindsay home worth $255,000 in move-in condition that needs $25,000 in repairs, a fair cash offer would typically be in the $155,000-$175,000 range. At Alder Heritage Homes, we conduct a professional Broker Opinion of Value using recent comparable sales and show you exactly how we arrived at our offer number.</p>
+      <h2>Common Situations We Handle in Lindsay</h2>
+      <p>We specialize in inherited properties, pre-foreclosure situations, agricultural and rural properties, and homes with significant deferred maintenance. Lindsay has a high rate of long-term homeownership and multi-generational families, so estate situations are common. We work with estate attorneys and can provide a written offer before probate is complete. Call us at (559) 281-8016 for a free cash offer within 24 hours.</p>
+      <p>See also: <a href="/we-buy-houses-lindsay">We Buy Houses Lindsay CA</a> · <a href="/we-buy-houses-porterville">We Buy Houses Porterville CA</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia CA</a></p>
+    </div>
+  ),
+  "stanislaus-county-housing-market-2026": (
+    <div>
+      <p>Stanislaus County's housing market in 2026 is defined by two competing forces: Bay Area commuter demand pushing prices up in the western cities (Patterson, Riverbank, Oakdale), and economic headwinds from the agricultural sector creating distressed inventory in Modesto, Ceres, and Newman. The county-wide median home price is approximately $375,000, up about 4% from 2025. Cash buyers account for approximately 32% of all transactions.</p>
+      <h2>City-by-City Breakdown</h2>
+      <p>Modesto ($370K median): The county seat and largest city. North Modesto's newer subdivisions attract Bay Area remote workers. South Modesto's older neighborhoods have higher cash buyer activity. Days on market: 28. Turlock ($380K median): Stanislaus County's second-largest city and home to CSU Stanislaus. Strong demand from faculty, students, and Bay Area commuters. Days on market: 25. Ceres ($340K median): Directly adjacent to Modesto and significantly more affordable. High cash buyer activity. Many older homes with deferred maintenance. Days on market: 32. Oakdale ($395K median): The Cowboy Capital of the World and gateway to the Sierra foothills. Strong demand from Bay Area commuters and retirees. Days on market: 35. Patterson ($400K median): A major Bay Area commuter hub with newer subdivisions dominating. Days on market: 27.</p>
+      <h2>What This Means for Sellers in 2026</h2>
+      <p>If your Stanislaus County home is in move-in condition and priced correctly, you can expect a sale in 25-35 days with multiple offers. If your home needs repairs or is in a complex situation such as foreclosure, probate, or divorce, a cash sale may be faster and more practical. Alder Heritage Homes buys houses throughout Stanislaus County. Call (559) 281-8016 for a free cash offer within 24 hours.</p>
+      <p>See also: <a href="/stanislaus-county">Stanislaus County Hub</a> · <a href="/sell-house-fast-modesto-ca">Sell House Fast Modesto</a> · <a href="/modesto-housing-market">Modesto Housing Market</a> · <a href="/we-buy-houses-turlock">We Buy Houses Turlock</a></p>
+    </div>
+  ),
+  "sell-house-modesto-cash-buyer-guide": (
+    <div>
+      <p>Modesto is Stanislaus County's largest city and the economic hub of the Central Valley's northern agricultural region. With a population of 225,000 and a median home price of approximately $370,000, Modesto has a more diverse housing market than smaller Central Valley cities but also has a significant share of distressed inventory and older housing stock where a cash sale is the fastest and most practical option.</p>
+      <h2>Understanding Modesto's Neighborhoods</h2>
+      <p>North Modesto has newer subdivisions with prices of $420,000-$500,000 and strong demand from Bay Area remote workers. Traditional listings work well here for move-in-ready properties. Central Modesto has mid-century housing from the 1950s-1970s with median prices around $350,000-$400,000 where cash buyers are active for properties with deferred maintenance. South Modesto has older housing stock, lower prices of $280,000-$360,000, and the highest concentration of distressed properties and cash buyer activity.</p>
+      <h2>What Cash Buyers Pay for Modesto Homes in 2026</h2>
+      <p>For a North Modesto home worth $460,000 in move-in condition that needs $20,000 in work, a fair cash offer would typically be in the $390,000-$415,000 range. For a South Modesto home worth $320,000 that needs $40,000 in repairs, expect $220,000-$245,000. We are fully transparent about our math and will show you exactly how we arrived at our offer. A cash sale is often the right choice when you inherited the property, you're facing foreclosure, the home needs major repairs, you're relocating, or you're going through a divorce. Call (559) 281-8016 for a free cash offer within 24 hours.</p>
+      <p>See also: <a href="/we-buy-houses-modesto">We Buy Houses Modesto CA</a> · <a href="/sell-house-fast-modesto-ca">Sell House Fast Modesto</a> · <a href="/modesto-housing-market">Modesto Housing Market 2026</a> · <a href="/stanislaus-county">Stanislaus County Hub</a></p>
+    </div>
+  ),
+  "tulare-county-southeast-corridor-guide": (
+    <div>
+      <p>The southeast Tulare County corridor stretching from Lindsay and Exeter in the north to Porterville and Strathmore in the south is one of the most underserved real estate markets in California. Small agricultural towns, older housing stock, and limited buyer pools create unique challenges for homeowners who need to sell.</p>
+      <h2>The Communities of the Southeast Tulare County Corridor</h2>
+      <p>Lindsay (pop. 13,000) is the Olive Capital of the World with a median home value of $255,000 and a cash buyer share of approximately 42%. Porterville (pop. 60,000) is the largest city in the corridor with a median home value of $280,000 and a more diverse buyer pool. Exeter (pop. 11,000) is a small citrus-growing community between Lindsay and Visalia with a median home value of $290,000. Strathmore (pop. 3,000) is an unincorporated community on the Tulare/Kern County border with many rural and agricultural properties and a cash buyer share of approximately 48%.</p>
+      <h2>Why Selling in This Corridor Is Challenging</h2>
+      <p>The southeast Tulare County corridor faces structural challenges including small buyer pools, limited amenities, older housing stock, agricultural economy volatility, and distance from major employment centers. These factors combine to create long days-on-market for traditional listings and frequent price reductions. For homeowners in this corridor, a direct cash sale is often the fastest and most practical option, especially for properties with deferred maintenance, code violations, or complex situations like probate or foreclosure.</p>
+      <h2>What Cash Buyers Pay in the Southeast Tulare County Corridor</h2>
+      <p>Cash buyers in this corridor typically offer 68-78% of a home's after-repair value, minus estimated repair costs. Alder Heritage Homes buys houses throughout the southeast Tulare County corridor. Call (559) 281-8016 for a free cash offer within 24 hours.</p>
+      <p>See also: <a href="/we-buy-houses-lindsay">We Buy Houses Lindsay CA</a> · <a href="/we-buy-houses-porterville">We Buy Houses Porterville CA</a> · <a href="/we-buy-houses-visalia">We Buy Houses Visalia CA</a> · <a href="/sell-house-fast-tulare-ca">Sell House Fast Tulare</a></p>
+    </div>
+  ),
+
 };
 
 export default articleChunk4;

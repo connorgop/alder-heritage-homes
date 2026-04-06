@@ -83,7 +83,10 @@ const trust = [
   { label: "We Buy Houses Orange Cove", href: "/we-buy-houses-orange-cove" },
   { label: "Sell House Fast Orange Cove", href: "/sell-house-fast-orange-cove-ca" },
   { label: "Sell House Fast Dinuba", href: "/sell-house-fast-dinuba-ca" },
+  { label: "We Buy Houses Lindsay", href: "/we-buy-houses-lindsay" },
+  { label: "Stanislaus County Hub", href: "/stanislaus-county" },
 ];
+
 
 const cities = [
   { label: "All Central Valley Cities", href: "/we-buy-houses-central-valley" },
@@ -113,6 +116,8 @@ const cities = [
   { label: "Dinuba", href: "/we-buy-houses-dinuba" },
   { label: "Cutler-Orosi", href: "/we-buy-houses-cutler-orosi" },
   { label: "Fresno County Hub", href: "/fresno-county" },
+  { label: "Lindsay", href: "/we-buy-houses-lindsay" },
+  { label: "Stanislaus County Hub", href: "/stanislaus-county" },
 ];
 
 const neighborhoods = [

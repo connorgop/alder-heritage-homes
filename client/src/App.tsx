@@ -188,6 +188,8 @@ import SellHouseFastOrangeCove from "./pages/SellHouseFastOrangeCove";
 import SellHouseFastDinuba from "./pages/SellHouseFastDinuba";
 import SellHouseFastKingsburg from "./pages/SellHouseFastKingsburg";
 import SellHouseFastFowler from "./pages/SellHouseFastFowler";
+import StanislausCountyHub from "./pages/StanislausCountyHub";
+import LindsayPage from "./pages/cities/Lindsay";
 
 function Router() {
   return (
@@ -396,6 +398,8 @@ function Router() {
       <Route path="/reedley-housing-market" component={ReedleyHousingMarket} />
       <Route path="/selma-housing-market" component={SelmaHousingMarket} />
       <Route path="/sanger-housing-market" component={SangerHousingMarket} />
+      <Route path="/stanislaus-county" component={StanislausCountyHub} />
+      <Route path="/we-buy-houses-lindsay" component={LindsayPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
