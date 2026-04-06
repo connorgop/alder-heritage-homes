@@ -69,6 +69,15 @@ const trust = [
   { label: "San Joaquin County Hub", href: "/san-joaquin-county" },
   { label: "Sell House Fast Stockton", href: "/sell-house-fast-stockton-ca" },
   { label: "Sell House Fast Modesto", href: "/sell-house-fast-modesto-ca" },
+  { label: "Reedley Neighborhoods Hub", href: "/reedley-neighborhoods" },
+  { label: "Selma Neighborhoods Hub", href: "/selma-neighborhoods" },
+  { label: "Sanger Neighborhoods Hub", href: "/sanger-neighborhoods" },
+  { label: "Reedley Housing Market 2026", href: "/reedley-housing-market" },
+  { label: "Selma Housing Market 2026", href: "/selma-housing-market" },
+  { label: "Sanger Housing Market 2026", href: "/sanger-housing-market" },
+  { label: "Sell House Fast Reedley", href: "/sell-house-fast-reedley-ca" },
+  { label: "Sell House Fast Selma", href: "/sell-house-fast-selma-ca" },
+  { label: "Sell House Fast Sanger", href: "/sell-house-fast-sanger-ca" },
 ];
 
 const cities = [
@@ -120,6 +129,16 @@ const neighborhoods = [
   { label: "South Modesto", href: "/modesto-neighborhoods/south-modesto" },
   { label: "Salida", href: "/modesto-neighborhoods/salida" },
   { label: "Ceres", href: "/modesto-neighborhoods/ceres" },
+  { label: "All Reedley Neighborhoods", href: "/reedley-neighborhoods" },
+  { label: "Downtown Reedley", href: "/reedley-neighborhoods/downtown-reedley" },
+  { label: "Kings River", href: "/reedley-neighborhoods/kings-river" },
+  { label: "East Reedley", href: "/reedley-neighborhoods/east-reedley" },
+  { label: "All Selma Neighborhoods", href: "/selma-neighborhoods" },
+  { label: "Downtown Selma", href: "/selma-neighborhoods/downtown-selma" },
+  { label: "West Selma", href: "/selma-neighborhoods/west-selma" },
+  { label: "All Sanger Neighborhoods", href: "/sanger-neighborhoods" },
+  { label: "Downtown Sanger", href: "/sanger-neighborhoods/downtown-sanger" },
+  { label: "Kings Canyon Corridor", href: "/sanger-neighborhoods/kings-canyon-corridor" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {

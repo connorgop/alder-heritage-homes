@@ -154,6 +154,28 @@ import LodiPage from "./pages/cities/Lodi";
 import MantecaPage from "./pages/cities/Manteca";
 import StocktonHousingMarket from "./pages/StocktonHousingMarket";
 import ModestoHousingMarket from "./pages/ModestoHousingMarket";
+import ReedleyNeighborhoods from "./pages/ReedleyNeighborhoods";
+import SelmaNeighborhoods from "./pages/SelmaNeighborhoods";
+import SangerNeighborhoods from "./pages/SangerNeighborhoods";
+import SellHouseFastReedley from "./pages/SellHouseFastReedley";
+import SellHouseFastSelma from "./pages/SellHouseFastSelma";
+import SellHouseFastSanger from "./pages/SellHouseFastSanger";
+import ReedleyHousingMarket from "./pages/ReedleyHousingMarket";
+import SelmaHousingMarket from "./pages/SelmaHousingMarket";
+import SangerHousingMarket from "./pages/SangerHousingMarket";
+import DowntownReedley from "./pages/neighborhoods/reedley/downtown-reedley";
+import KingsRiverReedley from "./pages/neighborhoods/reedley/kings-river";
+import EastReedley from "./pages/neighborhoods/reedley/east-reedley";
+import WestReedley from "./pages/neighborhoods/reedley/west-reedley";
+import NorthReedley from "./pages/neighborhoods/reedley/north-reedley";
+import DowntownSelma from "./pages/neighborhoods/selma/downtown-selma";
+import EastSelma from "./pages/neighborhoods/selma/east-selma";
+import WestSelma from "./pages/neighborhoods/selma/west-selma";
+import FloralAvenue from "./pages/neighborhoods/selma/floral-avenue";
+import DowntownSanger from "./pages/neighborhoods/sanger/downtown-sanger";
+import EastSanger from "./pages/neighborhoods/sanger/east-sanger";
+import WestSanger from "./pages/neighborhoods/sanger/west-sanger";
+import KingsCanyonCorridor from "./pages/neighborhoods/sanger/kings-canyon-corridor";
 import SkylineREI from "./pages/SkylineREI";
 import FAQPage from "./pages/FAQ";
 import GBPTemplates from "./pages/GBPTemplates";
@@ -331,6 +353,33 @@ function Router() {
       <Route path="/modesto-neighborhoods/salida" component={ModestoSalida} />
       <Route path="/modesto-neighborhoods/ceres" component={ModestoCeres} />
       <Route path="/modesto-neighborhoods/downtown-modesto" component={ModestoDowntown} />
+      {/* Reedley Neighborhoods */}
+      <Route path="/reedley-neighborhoods" component={ReedleyNeighborhoods} />
+      <Route path="/reedley-neighborhoods/downtown-reedley" component={DowntownReedley} />
+      <Route path="/reedley-neighborhoods/kings-river" component={KingsRiverReedley} />
+      <Route path="/reedley-neighborhoods/east-reedley" component={EastReedley} />
+      <Route path="/reedley-neighborhoods/west-reedley" component={WestReedley} />
+      <Route path="/reedley-neighborhoods/north-reedley" component={NorthReedley} />
+      {/* Selma Neighborhoods */}
+      <Route path="/selma-neighborhoods" component={SelmaNeighborhoods} />
+      <Route path="/selma-neighborhoods/downtown-selma" component={DowntownSelma} />
+      <Route path="/selma-neighborhoods/east-selma" component={EastSelma} />
+      <Route path="/selma-neighborhoods/west-selma" component={WestSelma} />
+      <Route path="/selma-neighborhoods/floral-avenue" component={FloralAvenue} />
+      {/* Sanger Neighborhoods */}
+      <Route path="/sanger-neighborhoods" component={SangerNeighborhoods} />
+      <Route path="/sanger-neighborhoods/downtown-sanger" component={DowntownSanger} />
+      <Route path="/sanger-neighborhoods/east-sanger" component={EastSanger} />
+      <Route path="/sanger-neighborhoods/west-sanger" component={WestSanger} />
+      <Route path="/sanger-neighborhoods/kings-canyon-corridor" component={KingsCanyonCorridor} />
+      {/* Sell Fast Pages */}
+      <Route path="/sell-house-fast-reedley-ca" component={SellHouseFastReedley} />
+      <Route path="/sell-house-fast-selma-ca" component={SellHouseFastSelma} />
+      <Route path="/sell-house-fast-sanger-ca" component={SellHouseFastSanger} />
+      {/* Housing Market Pages */}
+      <Route path="/reedley-housing-market" component={ReedleyHousingMarket} />
+      <Route path="/selma-housing-market" component={SelmaHousingMarket} />
+      <Route path="/sanger-housing-market" component={SangerHousingMarket} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
