@@ -65,8 +65,8 @@ export default function CityPage({ city, county, population, description, neighb
   return (
     <Layout>
       <PageMeta
-        title={`We Buy Houses in ${city}, CA — Cash Offers in 24 Hours`}
-        description={`Sell your ${city} home for cash. Alder Heritage Homes is a licensed CA agent (DRE #02219124) buying houses in ${city} and ${county} County. No repairs, close in 5–7 days.`}
+        title={`We Buy Houses ${city} CA | Sell My House Fast for Cash`}
+        description={`Sell your ${city} home fast for cash. Get a fair offer in 24 hours. No repairs, no commissions, no fees. Licensed CA buyer DRE #02219124. Close in 7–14 days.`}
         path={canonicalPath}
       />
       {/* FAQPage structured data — auto-generated from faqs prop */}

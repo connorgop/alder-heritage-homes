@@ -58,7 +58,7 @@ export default function ServicePage({
 }: ServicePageProps) {
   const faqId = title.toLowerCase().replace(/[^a-z0-9]/g, "-").slice(0, 40);
   const canonicalPath = slug || `/${title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
-  const metaDesc = metaDescription || `${subtitle} Alder Heritage Homes buys houses in Fresno and the Central Valley. Licensed CA Agent DRE #02219124. No repairs, close in 5–7 days.`;
+  const metaDesc = metaDescription || `${subtitle} Get a fair cash offer in 24 hours. No repairs, no commissions. Licensed CA buyer DRE #02219124.`;
   return (
     <Layout>
       <PageMeta

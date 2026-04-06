@@ -608,8 +608,8 @@ function InlineOfferForm() {
 
 export default function HomePage() {
   useSEO({
-    title: "Fresno Cash Home Buyer — Sell Your House Fast, Any Condition",
-    description: "Alder Heritage Homes buys houses directly for cash in Fresno and the Central Valley. Licensed CA Agent (DRE #02219124). No wholesaling, no bait-and-switch. Free Broker Opinion of Value. Close in 5–7 days or on your timeline.",
+    title: "Sell My House Fast Fresno CA | Cash Home Buyers",
+    description: "Get a fair cash offer for your Fresno home in 24 hours. No repairs, no commissions, no fees. Licensed CA buyer DRE #02219124. Close in 7\u201314 days.",
     canonical: "/",
     schema: faqSchema([
       { q: "How do I sell my house fast in Fresno?", a: "Contact Alder Heritage Homes at (559) 281-8016. We are a licensed CA real estate agent (DRE #02219124) who buys homes directly for cash. We can close in 5–7 days or on your timeline, with no repairs, no agent commissions, and no wholesalers." },
@@ -623,8 +623,8 @@ export default function HomePage() {
   return (
     <Layout>
       <PageMeta
-        title="Fresno Cash Home Buyer — Sell Your House Fast, Any Condition"
-        description="Alder Heritage Homes buys houses for cash in Fresno and the Central Valley. Licensed CA Agent DRE #02219124. No repairs, no commissions, close in 5–7 days. Free Broker Opinion of Value."
+        title="Sell My House Fast Fresno CA | Cash Home Buyers"
+        description="Get a fair cash offer for your Fresno home in 24 hours. No repairs, no commissions, no fees. Licensed CA buyer DRE #02219124. Close in 7–14 days."
         path="/"
       />
       {/* ── HERO ── */}
@@ -681,8 +681,12 @@ export default function HomePage() {
               {/* Social proof counter */}
               <div className="mt-3 flex items-center justify-center gap-2 px-4 py-2 rounded-full" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
                 <div className="flex -space-x-2">
-                  {["https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=32&h=32&fit=crop&crop=face","https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face","https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop&crop=face"].map((src, i) => (
-                    <img key={i} src={src} alt="" className="w-7 h-7 rounded-full border-2" style={{ borderColor: "oklch(0.22 0.01 60)" }} />
+                  {[
+                    { src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=32&h=32&fit=crop&crop=face", label: "Fresno homeowner who sold for cash" },
+                    { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face", label: "Central Valley seller" },
+                    { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop&crop=face", label: "Clovis homeowner" },
+                  ].map(({ src, label }, i) => (
+                    <img key={i} src={src} alt={label} className="w-7 h-7 rounded-full border-2" style={{ borderColor: "oklch(0.22 0.01 60)" }} />
                   ))}
                 </div>
                 <span className="text-xs text-white" style={{ fontFamily: "'DM Mono', monospace" }}>
