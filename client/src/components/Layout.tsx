@@ -413,6 +413,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     onMouseLeave={() => setResourcesOpen(false)}
                   >
                     {[
+                      { label: "📊 Keyword Strategy — 100+ Keywords", href: "/keyword-strategy" },
+                      { label: "🏗️ Site Architecture & URL Structure", href: "/site-architecture" },
                       { label: "🗺️ 90-Day SEO Roadmap", href: "/seo-roadmap" },
                       { label: "🔗 Backlink Strategy — 25+ Links", href: "/backlink-strategy" },
                       { label: "🔍 Competitor Gap Analysis", href: "/competitor-gap-analysis" },

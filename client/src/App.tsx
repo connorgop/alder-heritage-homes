@@ -222,6 +222,8 @@ import CompetitorGapAnalysis from "./pages/CompetitorGapAnalysis";
 import SEORoadmap from "./pages/SEORoadmap";
 import BacklinkStrategy from "./pages/BacklinkStrategy";
 import WholesalerWarning from "./pages/WholesalerWarning";
+import KeywordStrategy from "./pages/KeywordStrategy";
+import SiteArchitecture from "./pages/SiteArchitecture";
 
 function Router() {
   return (
@@ -328,6 +330,10 @@ function Router() {
       <Route path="/backlink-strategy" component={BacklinkStrategy} />
       <Route path="/link-building" component={BacklinkStrategy} />
       <Route path="/wholesaler-warning" component={WholesalerWarning} />
+      <Route path="/keyword-strategy" component={KeywordStrategy} />
+      <Route path="/keywords" component={KeywordStrategy} />
+      <Route path="/site-architecture" component={SiteArchitecture} />
+      <Route path="/url-structure" component={SiteArchitecture} />
       <Route path="/we-buy-houses-fresno-scam" component={WholesalerWarning} />
       <Route path="/cash-buyer-vs-wholesaler" component={WholesalerWarning} />
       <Route path="/sell-house-fast-fresno-ca" component={SellHouseFastFresno} />
