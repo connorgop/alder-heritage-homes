@@ -44,6 +44,7 @@ import ParentsHouse from "./pages/services/ParentsHouse";
 import SellMyHouse from "./pages/SellMyHouse";
 import SellHouseFastFresno from "./pages/SellHouseFastFresno";
 import SellMyHouseFresno from "./pages/SellMyHouseFresno";
+import SellMyHouseClovis from "./pages/SellMyHouseClovis";
 import SellHouseAsIsFresno from "./pages/SellHouseAsIsFresno";
 import SellMyHouseCashFresno from "./pages/SellMyHouseCashFresno";
 import SellInheritedPropertyFresno from "./pages/SellInheritedPropertyFresno";
@@ -253,6 +254,10 @@ function Router() {
       <Route path="/sell-my-house" component={SellMyHouse} />
       <Route path="/sell-my-house-fresno-ca" component={SellMyHouseFresno} />
       <Route path="/sell-my-house-fresno" component={SellMyHouseFresno} />
+      <Route path="/sell-my-house-clovis-ca" component={SellMyHouseClovis} />
+      <Route path="/sell-my-house-clovis" component={SellMyHouseClovis} />
+      <Route path="/sell-my-home-clovis" component={SellMyHouseClovis} />
+      <Route path="/sell-house-clovis-ca" component={SellMyHouseClovis} />
       <Route path="/sell-house-as-is-fresno" component={SellHouseAsIsFresno} />
       <Route path="/sell-house-as-is-fresno-ca" component={SellHouseAsIsFresno} />
       <Route path="/sell-my-house-cash-fresno" component={SellMyHouseCashFresno} />
