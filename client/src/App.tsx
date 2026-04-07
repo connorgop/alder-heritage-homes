@@ -199,6 +199,7 @@ import TulareCountyHub from "./pages/TulareCountyHub";
 import PortervilleHousingMarket from "./pages/PortervilleHousingMarket";
 import WoodlakePage from "./pages/cities/Woodlake";
 import SellHouseFastExeter from "./pages/SellHouseFastExeter";
+import SellHouseFastHanford from "./pages/SellHouseFastHanford";
 import SellYourHomeFresno from "./pages/SellYourHomeFresno";
 
 function Router() {
@@ -273,6 +274,7 @@ function Router() {
       <Route path="/we-buy-houses-madera" component={MaderaPage} />
       <Route path="/we-buy-houses-visalia" component={VisaliaPage} />
       <Route path="/we-buy-houses-hanford" component={HanfordPage} />
+      <Route path="/sell-house-fast-hanford-ca" component={SellHouseFastHanford} />
       <Route path="/we-buy-houses-reedley" component={ReedleyPage} />
       <Route path="/we-buy-houses-bakersfield" component={BakersfieldPage} />
       <Route path="/we-buy-houses-lemoore" component={LemooreePage} />

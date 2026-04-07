@@ -294,6 +294,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     {[
                       { label: "Fresno", href: "/sell-house-fast-fresno-ca" },
                       { label: "Clovis", href: "/we-buy-houses-clovis" },
+                      { label: "Hanford", href: "/sell-house-fast-hanford-ca" },
                       { label: "Visalia", href: "/sell-house-fast-visalia-ca-guide" },
                       { label: "Bakersfield", href: "/sell-house-fast-bakersfield-ca-guide" },
                       { label: "Stockton", href: "/sell-house-fast-stockton-ca" },
@@ -575,6 +576,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/san-joaquin-county" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>San Joaquin County Hub</Link></li>
                 <li><Link href="/kings-county" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Kings County Hub</Link></li>
                 <li><Link href="/fresno-real-estate-resources" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Real Estate Resources</Link></li>
+                <li><Link href="/sell-house-fast-hanford-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Hanford</Link></li>
                 <li><Link href="/sell-house-fast-stockton-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Stockton</Link></li>
                 <li><Link href="/sell-house-fast-modesto-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Modesto</Link></li>
                 <li><Link href="/blog" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Blog &amp; Resources</Link></li>
