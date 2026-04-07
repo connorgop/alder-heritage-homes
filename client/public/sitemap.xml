@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Core Pages -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/</loc>
     <lastmod>2026-04-02</lastmod>
@@ -33,7 +33,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Service Pages -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/foreclosure-help</loc>
     <lastmod>2026-04-02</lastmod>
@@ -101,7 +101,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- City Landing Pages -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/we-buy-houses-fresno</loc>
     <lastmod>2026-04-02</lastmod>
@@ -219,7 +219,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Consumer Education Pages -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/dont-get-wholesaled</loc>
     <lastmod>2026-04-02</lastmod>
@@ -245,7 +245,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Blog Posts -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/blog/sell-inherited-house-fresno</loc>
     <lastmod>2026-04-02</lastmod>
@@ -307,7 +307,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Entity & Trust Pages -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/skyline-rei</loc>
     <lastmod>2026-04-02</lastmod>
@@ -315,7 +315,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- New Blog Posts -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/blog/1031-exchange-sell-rental-portfolio-fresno</loc>
     <lastmod>2026-04-02</lastmod>
@@ -353,13 +353,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- New Blog Posts — April 2026 -->
-  <url>
-    <loc>https://www.alderheritagehomes.com/blog/sell-hoarder-house-fresno</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  
   <url>
     <loc>https://www.alderheritagehomes.com/blog/sell-house-mold-fresno</loc>
     <lastmod>2026-04-03</lastmod>
@@ -403,7 +397,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- New Service Pages — April 2026 -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/sell-house-mold</loc>
     <lastmod>2026-04-03</lastmod>
@@ -435,7 +429,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Senior / Boomer Seller Service Pages -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/sell-home-retirement-fresno</loc>
     <lastmod>2026-04-03</lastmod>
@@ -449,7 +443,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Senior / Boomer Seller Blog Posts -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/blog/sell-home-move-retirement-community-fresno</loc>
     <lastmod>2026-04-03</lastmod>
@@ -487,7 +481,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- New Senior/Boomer Blog Posts -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/blog/sell-house-move-to-fairwinds-woodward-park-fresno</loc>
     <lastmod>2026-04-03</lastmod>
@@ -507,7 +501,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Google Ads Landing Pages -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/lp/senior-seller</loc>
     <lastmod>2026-04-03</lastmod>
@@ -521,7 +515,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Fresno Neighborhood Pages -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/fresno-fig-garden</loc>
     <lastmod>2026-04-03</lastmod>
@@ -601,116 +595,73 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.alderheritagehomes.com/lp/senior-seller</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.alderheritagehomes.com/lp/downsize</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alderheritagehomes.com/resources</loc>
+    <loc>https://www.alderheritagehomes.com/resources</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/blog/fresno-real-estate-market-update-2026</loc>
+    <loc>https://www.alderheritagehomes.com/blog/fresno-real-estate-market-update-2026</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/blog/how-to-avoid-foreclosure-california-2026</loc>
+    <loc>https://www.alderheritagehomes.com/blog/how-to-avoid-foreclosure-california-2026</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/blog/sell-house-job-relocation-fresno-california</loc>
+    <loc>https://www.alderheritagehomes.com/blog/sell-house-job-relocation-fresno-california</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/blog/sell-house-code-violations-fresno-california</loc>
+    <loc>https://www.alderheritagehomes.com/blog/sell-house-code-violations-fresno-california</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/blog/central-valley-real-estate-outlook-2026-2027</loc>
+    <loc>https://www.alderheritagehomes.com/blog/central-valley-real-estate-outlook-2026-2027</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/fresno-cloverleaf-village</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-dinuba</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/fresno-fig-garden-village</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-fowler</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/fresno-state-area</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-kingsburg</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/north-fresno</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-avenal</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alderheritagehomes.com/southeast-fresno</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alderheritagehomes.com/sell-house-dinuba</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alderheritagehomes.com/sell-house-fowler</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alderheritagehomes.com/sell-house-kingsburg</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alderheritagehomes.com/sell-house-avenal</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://alderheritagehomes.com/sell-house-coalinga</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-coalinga</loc>
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Primary Keyword Page -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/sell-house-fast-fresno-ca</loc>
     <lastmod>2026-04-03</lastmod>
@@ -724,7 +675,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- New Neighborhood Page -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/clovis-north</loc>
     <lastmod>2026-04-03</lastmod>
@@ -732,7 +683,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- New Blog Posts -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/blog/sell-house-without-realtor-fresno-california</loc>
     <lastmod>2026-04-03</lastmod>
@@ -770,7 +721,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- New pages added April 3, 2026 -->
+  
   <url>
     <loc>https://www.alderheritagehomes.com/reviews</loc>
     <lastmod>2026-04-03</lastmod>
@@ -1001,12 +952,6 @@
   </url>
   <url>
     <loc>https://www.alderheritagehomes.com/blog/sell-house-with-lien-california</loc>
-    <lastmod>2026-04-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.alderheritagehomes.com/blog/selling-house-chapter-7-bankruptcy-california</loc>
     <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1516,18 +1461,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.alderheritagehomes.com/blog/sell-house-fast-stockton-ca</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.alderheritagehomes.com/blog/sell-house-fast-modesto-ca</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.alderheritagehomes.com/blog/sell-house-fast-north-stockton</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -1604,219 +1537,212 @@
   <url><loc>https://www.alderheritagehomes.com/san-joaquin-county</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.alderheritagehomes.com/kings-county</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.alderheritagehomes.com/fresno-real-estate-resources</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.alderheritagehomes.com/blog/sell-house-fast-north-stockton</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.alderheritagehomes.com/blog/sell-house-fast-south-stockton</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.alderheritagehomes.com/blog/sell-house-fast-north-modesto</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.alderheritagehomes.com/blog/sell-house-fast-ceres-ca</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.alderheritagehomes.com/blog/how-to-sell-house-with-code-violations-california</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.alderheritagehomes.com/blog/selling-house-during-divorce-california-2026</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.alderheritagehomes.com/blog/sell-house-fast-oildale-ca</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url>
-    <loc>https://alderheritage.com/sell-house-fast-reedley-ca</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-fast-reedley-ca</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sell-house-fast-selma-ca</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-fast-selma-ca</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sell-house-fast-sanger-ca</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-fast-sanger-ca</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/reedley-housing-market</loc>
+    <loc>https://www.alderheritagehomes.com/reedley-housing-market</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/selma-housing-market</loc>
+    <loc>https://www.alderheritagehomes.com/selma-housing-market</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sanger-housing-market</loc>
+    <loc>https://www.alderheritagehomes.com/sanger-housing-market</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/reedley-neighborhoods</loc>
+    <loc>https://www.alderheritagehomes.com/reedley-neighborhoods</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/selma-neighborhoods</loc>
+    <loc>https://www.alderheritagehomes.com/selma-neighborhoods</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sanger-neighborhoods</loc>
+    <loc>https://www.alderheritagehomes.com/sanger-neighborhoods</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/reedley-neighborhoods/downtown-reedley</loc>
+    <loc>https://www.alderheritagehomes.com/reedley-neighborhoods/downtown-reedley</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/reedley-neighborhoods/kings-river</loc>
+    <loc>https://www.alderheritagehomes.com/reedley-neighborhoods/kings-river</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/reedley-neighborhoods/east-reedley</loc>
+    <loc>https://www.alderheritagehomes.com/reedley-neighborhoods/east-reedley</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/reedley-neighborhoods/west-reedley</loc>
+    <loc>https://www.alderheritagehomes.com/reedley-neighborhoods/west-reedley</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/reedley-neighborhoods/north-reedley</loc>
+    <loc>https://www.alderheritagehomes.com/reedley-neighborhoods/north-reedley</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/selma-neighborhoods/downtown-selma</loc>
+    <loc>https://www.alderheritagehomes.com/selma-neighborhoods/downtown-selma</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/selma-neighborhoods/east-selma</loc>
+    <loc>https://www.alderheritagehomes.com/selma-neighborhoods/east-selma</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/selma-neighborhoods/west-selma</loc>
+    <loc>https://www.alderheritagehomes.com/selma-neighborhoods/west-selma</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/selma-neighborhoods/floral-avenue</loc>
+    <loc>https://www.alderheritagehomes.com/selma-neighborhoods/floral-avenue</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sanger-neighborhoods/downtown-sanger</loc>
+    <loc>https://www.alderheritagehomes.com/sanger-neighborhoods/downtown-sanger</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sanger-neighborhoods/east-sanger</loc>
+    <loc>https://www.alderheritagehomes.com/sanger-neighborhoods/east-sanger</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sanger-neighborhoods/west-sanger</loc>
+    <loc>https://www.alderheritagehomes.com/sanger-neighborhoods/west-sanger</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sanger-neighborhoods/kings-canyon-corridor</loc>
+    <loc>https://www.alderheritagehomes.com/sanger-neighborhoods/kings-canyon-corridor</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/fresno-county</loc>
+    <loc>https://www.alderheritagehomes.com/fresno-county</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/we-buy-houses-parlier</loc>
+    <loc>https://www.alderheritagehomes.com/we-buy-houses-parlier</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/we-buy-houses-orange-cove</loc>
+    <loc>https://www.alderheritagehomes.com/we-buy-houses-orange-cove</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sell-house-fast-orange-cove-ca</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-fast-orange-cove-ca</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sell-house-fast-dinuba-ca</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-fast-dinuba-ca</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/blog/sell-house-fast-orange-cove-ca</loc>
+    <loc>https://www.alderheritagehomes.com/blog/sell-house-fast-orange-cove-ca</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/blog/sell-house-fast-dinuba-ca</loc>
+    <loc>https://www.alderheritagehomes.com/blog/sell-house-fast-dinuba-ca</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/blog/orange-cove-housing-market-2026</loc>
+    <loc>https://www.alderheritagehomes.com/blog/orange-cove-housing-market-2026</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/blog/dinuba-housing-market-2026</loc>
+    <loc>https://www.alderheritagehomes.com/blog/dinuba-housing-market-2026</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/blog/sell-house-kings-canyon-corridor</loc>
+    <loc>https://www.alderheritagehomes.com/blog/sell-house-kings-canyon-corridor</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/we-buy-houses-cutler-orosi</loc>
+    <loc>https://www.alderheritagehomes.com/we-buy-houses-cutler-orosi</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sell-house-fast-kingsburg-ca</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-fast-kingsburg-ca</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alderheritage.com/sell-house-fast-fowler-ca</loc>
+    <loc>https://www.alderheritagehomes.com/sell-house-fast-fowler-ca</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1913,7 +1839,6 @@
   <url><loc>https://www.alderheritagehomes.com/sell-inherited-property-fresno</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.alderheritagehomes.com/hoarder-home-buyer-fresno</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.alderheritagehomes.com/sell-home-fresno-options</loc><lastmod>2026-04-07</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.alderheritagehomes.com/sell-my-home-fresno</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.alderheritagehomes.com/sell-my-property-fresno</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.alderheritagehomes.com/sell-house-fresno</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.alderheritagehomes.com/sell-house-cash-to-investor-fresno</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
