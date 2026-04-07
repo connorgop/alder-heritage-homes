@@ -649,12 +649,15 @@ export default function HomePage() {
                 </span>
               </div>
               <h1 className="fade-up fade-up-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
-                Sell Your Home in Fresno —
+                Sell Your Home in Fresno &amp; the Entire Central Valley —
                 <span style={{ color: "oklch(0.75 0.10 42)" }}> Cash Offer or Agent Listing. You Choose.</span>
               </h1>
-              <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-6 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-4 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 The <strong style={{ color: "oklch(0.92 0.04 85)" }}>only company in Fresno</strong> that is both a licensed real estate agent and a direct cash buyer. Get a cash offer in 24 hours, or let us list your home for maximum value — one call, both options, no pressure.
               </p>
+              <div className="fade-up fade-up-delay-2 mb-6 px-3 py-2 rounded-lg text-xs leading-relaxed" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.80 0.02 60)", fontFamily: "'DM Mono', monospace" }}>
+                <span style={{ color: "oklch(0.75 0.10 42)", fontWeight: 700 }}>Serving:</span> Fresno · Clovis · Madera · Visalia · Hanford · Kingsburg · Bakersfield · Stockton · anywhere in the Central Valley — <span style={{ color: "white", fontWeight: 600 }}>Connor will personally drive to your property within 24 hours.</span>
+              </div>
               <div className="fade-up fade-up-delay-3 flex flex-wrap gap-x-6 gap-y-2">
                 {["Cash offer OR agent listing", "No repairs needed", "Close in 5–7 days", "Licensed Agent DRE #02219124"].map((t) => (
                   <div key={t} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.85 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
