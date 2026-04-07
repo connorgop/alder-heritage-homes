@@ -49,6 +49,7 @@ const trust = [
   { label: "Sell House As-Is Fresno", href: "/sell-house-as-is-fresno" },
   { label: "Sell My House for Cash Fresno", href: "/sell-my-house-cash-fresno" },
   { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
+  { label: "California Probate Home Sale Guide", href: "/california-probate-home-sale" },
   { label: "Hoarder Home Buyer Fresno", href: "/hoarder-home-buyer-fresno" },
   { label: "Why We're Different", href: "/why-choose-us" },
   { label: "⭐ Reviews", href: "/reviews" },
@@ -596,6 +597,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/sell-house-as-is-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House As-Is Fresno</Link></li>
                 <li><Link href="/sell-my-house-cash-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House for Cash Fresno</Link></li>
                 <li><Link href="/sell-inherited-property-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell Inherited Property Fresno</Link></li>
+                <li><Link href="/california-probate-home-sale" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>California Probate Home Sale Guide</Link></li>
                 <li><Link href="/hoarder-home-buyer-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Hoarder Home Buyer Fresno</Link></li>
                 <li><Link href="/dont-get-wholesaled" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Don't Get Wholesaled</Link></li>
                 <li><Link href="/cash-offer-calculator" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Cash Offer Calculator</Link></li>

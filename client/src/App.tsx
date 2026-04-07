@@ -21,6 +21,7 @@ import SecondMortgage from "./pages/services/SecondMortgage";
 import RentBack from "./pages/services/RentBack";
 import ProbateHomes from "./pages/services/ProbateHomes";
 import ProbateRealEstate from "./pages/services/ProbateRealEstate";
+import CaliforniaProbateHomeSale from "./pages/CaliforniaProbateHomeSale";
 import FastSale from "./pages/services/FastSale";
 import BehindOnMortgage from "./pages/services/BehindOnMortgage";
 import RoofDamage from "./pages/services/RoofDamage";
@@ -227,6 +228,9 @@ function Router() {
       <Route path="/sell-and-stay-rent-back" component={RentBack} />
       <Route path="/probate-inherited-homes" component={ProbateHomes} />
       <Route path="/probate-real-estate-fresno" component={ProbateRealEstate} />
+      <Route path="/california-probate-home-sale" component={CaliforniaProbateHomeSale} />
+      <Route path="/sell-house-probate-california" component={CaliforniaProbateHomeSale} />
+      <Route path="/how-to-sell-probate-house-california" component={CaliforniaProbateHomeSale} />
       <Route path="/sell-house-fast" component={FastSale} />
       <Route path="/behind-on-mortgage" component={BehindOnMortgage} />
       <Route path="/sell-house-roof-damage" component={RoofDamage} />
