@@ -46,6 +46,7 @@ import SellMyHouse from "./pages/SellMyHouse";
 import SellHouseFastFresno from "./pages/SellHouseFastFresno";
 import SellMyHouseFresno from "./pages/SellMyHouseFresno";
 import SellMyHouseClovis from "./pages/SellMyHouseClovis";
+import SellMyHouseVisalia from "./pages/SellMyHouseVisalia";
 import SellMyHouseMadera from "./pages/SellMyHouseMadera";
 import SellMyHouseHanford from "./pages/SellMyHouseHanford";
 import SellMyHouseKingsburg from "./pages/SellMyHouseKingsburg";
@@ -263,6 +264,10 @@ function Router() {
       <Route path="/sell-my-house" component={SellMyHouse} />
       <Route path="/sell-my-house-fresno-ca" component={SellMyHouseFresno} />
       <Route path="/sell-my-house-fresno" component={SellMyHouseFresno} />
+      <Route path="/sell-my-house-visalia-ca" component={SellMyHouseVisalia} />
+      <Route path="/sell-my-house-visalia" component={SellMyHouseVisalia} />
+      <Route path="/sell-my-home-visalia" component={SellMyHouseVisalia} />
+      <Route path="/sell-house-visalia-ca" component={SellMyHouseVisalia} />
       <Route path="/sell-my-house-clovis-ca" component={SellMyHouseClovis} />
       <Route path="/sell-my-house-clovis" component={SellMyHouseClovis} />
       <Route path="/sell-my-home-clovis" component={SellMyHouseClovis} />
