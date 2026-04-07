@@ -224,6 +224,7 @@ import BacklinkStrategy from "./pages/BacklinkStrategy";
 import WholesalerWarning from "./pages/WholesalerWarning";
 import KeywordStrategy from "./pages/KeywordStrategy";
 import SiteArchitecture from "./pages/SiteArchitecture";
+import CompramosCasasFresno from "./pages/CompramosCasasFresno";
 
 function Router() {
   return (
@@ -333,6 +334,7 @@ function Router() {
       <Route path="/keyword-strategy" component={KeywordStrategy} />
       <Route path="/keywords" component={KeywordStrategy} />
       <Route path="/site-architecture" component={SiteArchitecture} />
+      <Route path="/compramos-casas-fresno" component={CompramosCasasFresno} />
       <Route path="/url-structure" component={SiteArchitecture} />
       <Route path="/we-buy-houses-fresno-scam" component={WholesalerWarning} />
       <Route path="/cash-buyer-vs-wholesaler" component={WholesalerWarning} />
