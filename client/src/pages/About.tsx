@@ -6,7 +6,7 @@ import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
-const VIDEO_CONNOR_INTRO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv24_ddcde10d.MP4";
+const VIDEO_CONNOR_INTRO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv23_1c0c77d4.MP4";
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
 const CONNOR_CLIENT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-side_d912ee39.webp";
 const CONNOR_HUG_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-hug_80f9b3b4.webp";
@@ -203,22 +203,28 @@ export default function About() {
         </div>
       </section>
 
-      {/* Connor's Intro Video — subtle, non-pushy */}
+      {/* Connor's Intro Video — portrait, face visible */}
       <section className="py-20" style={{ background: "white" }}>
         <div className="container">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative rounded-2xl overflow-hidden" style={{ boxShadow: "0 12px 40px oklch(0.22 0.01 60 / 0.12)" }}>
-                <video
-                  controls
-                  preload="metadata"
-                  className="w-full block"
-                  style={{ borderRadius: "1rem" }}
-                  aria-label="Connor Morris introduces Alder Heritage Homes"
+              <div className="flex justify-center">
+                <div
+                  className="relative rounded-2xl overflow-hidden shadow-2xl"
+                  style={{ aspectRatio: "9/16", width: "100%", maxWidth: "320px", background: "oklch(0.10 0.01 60)" }}
                 >
-                  <source src={VIDEO_CONNOR_INTRO} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                  <video
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-full object-contain"
+                    aria-label="Connor Morris introduces Alder Heritage Homes"
+                    style={{ borderRadius: "1rem" }}
+                  >
+                    <source src={VIDEO_CONNOR_INTRO} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
               </div>
               <div>
                 <span className="inline-block text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
