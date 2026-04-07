@@ -413,6 +413,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   >
                     {[
                       { label: "🗺️ 90-Day SEO Roadmap", href: "/seo-roadmap" },
+                      { label: "🔗 Backlink Strategy — 25+ Links", href: "/backlink-strategy" },
                       { label: "🔍 Competitor Gap Analysis", href: "/competitor-gap-analysis" },
                       { label: "📈 CRO & Lead Capture", href: "/cro-lead-capture" },
                       { label: "🏠 Our Deals — Real Properties", href: "/our-deals" },
