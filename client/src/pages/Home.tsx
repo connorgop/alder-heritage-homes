@@ -761,14 +761,14 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: "16/9" }}>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl mx-auto" style={{ aspectRatio: "9/16", maxWidth: "360px" }}>
               <video
                 controls
                 playsInline
                 preload="metadata"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 poster={HERO_IMG}
-                style={{ background: "oklch(0.22 0.01 60)" }}
+                style={{ background: "oklch(0.10 0.01 60)" }}
               >
                 <source src={VIDEO_INTRO} type="video/mp4" />
                 Your browser does not support the video tag.
