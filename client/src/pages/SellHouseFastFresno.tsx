@@ -135,6 +135,7 @@ export default function SellHouseFastFresno() {
           a: "Yes. Probate sales in California require court confirmation, which adds time — typically 60–90 days — but we are experienced with probate transactions and can work within that timeline. We can also help you understand whether your property qualifies for the Independent Administration of Estates Act, which can significantly speed up the process.",
         },
       ]}
+      showVacantWarning
       ctaTitle="Ready to Sell Your House Fast in Fresno?"
       ctaBody="Call (559) 281-8016 or enter your address below. We'll have a cash offer to you within 24 hours — no obligation, no pressure, no wholesalers."
       relatedLinks={[

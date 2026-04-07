@@ -23,6 +23,7 @@ export default function Contact() {
   const [form, setForm] = useState({
     name: "", phone: "", email: "", address: "", situation: "", message: "", timeline: ""
   });
+  const [isVacant, setIsVacant] = useState(false);
   const { state, errorMessage, submit } = useFormSubmit();
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -36,6 +37,7 @@ export default function Contact() {
       timeline: form.timeline,
       message: form.message,
       _source: "Contact Page Form",
+      isVacant: isVacant ? "Yes — property is currently vacant" : "No",
     });
   };
 
@@ -188,6 +190,38 @@ export default function Contact() {
                           <option value="60days">Within 60 days</option>
                           <option value="flexible">Flexible</option>
                         </select>
+                      </div>
+                    </div>
+
+                    {/* Vacant property checkbox */}
+                    <div
+                      className="flex items-start gap-3 p-4 rounded-xl cursor-pointer"
+                      style={{
+                        background: isVacant ? "oklch(0.28 0.08 30 / 0.08)" : "oklch(0.97 0.01 85)",
+                        border: isVacant ? "2px solid oklch(0.65 0.18 45)" : "2px solid oklch(0.88 0.02 85)",
+                        transition: "all 0.2s",
+                      }}
+                      onClick={() => setIsVacant(!isVacant)}
+                    >
+                      <div
+                        className="flex items-center justify-center rounded flex-shrink-0 mt-0.5"
+                        style={{
+                          width: "20px",
+                          height: "20px",
+                          background: isVacant ? "oklch(0.65 0.18 45)" : "white",
+                          border: isVacant ? "2px solid oklch(0.65 0.18 45)" : "2px solid oklch(0.75 0.02 60)",
+                          transition: "all 0.2s",
+                        }}
+                      >
+                        {isVacant && <span style={{ color: "white", fontSize: "13px", fontWeight: 900, lineHeight: 1 }}>✓</span>}
+                      </div>
+                      <div>
+                        <div className="font-bold text-sm" style={{ fontFamily: "'Nunito Sans', sans-serif", color: isVacant ? "oklch(0.28 0.08 30)" : "oklch(0.30 0.01 60)" }}>
+                          ⚠ Is this property currently vacant?
+                        </div>
+                        <div className="text-xs mt-0.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.50 0.03 55)" }}>
+                          Vacant homes in Fresno get broken into fast. Check this box and Connor will prioritize your call and can help secure the property the same day.
+                        </div>
                       </div>
                     </div>
 

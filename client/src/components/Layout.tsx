@@ -640,13 +640,32 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </footer>
 
       {/* Mobile sticky CTA bar */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 flex" style={{ boxShadow: "0 -4px 20px oklch(0.22 0.01 60 / 0.2)" }}>
-        <a href={PHONE_HREF} className="flex-1 flex items-center justify-center gap-2 py-4 font-bold text-white" style={{ background: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
-          <Phone size={18} /> Call Now
-        </a>
-        <Link href="/contact" className="flex-1 flex items-center justify-center py-4 font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-          Get My Offer
-        </Link>
+      <div
+        className="lg:hidden fixed bottom-0 left-0 right-0 z-40"
+        style={{ boxShadow: "0 -4px 24px oklch(0.22 0.01 60 / 0.35)" }}
+      >
+        {/* Micro label */}
+        <div className="flex items-center justify-center py-1" style={{ background: "oklch(0.22 0.01 60)", borderTop: "1px solid oklch(1 0 0 / 0.12)" }}>
+          <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "oklch(0.70 0.06 55)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.10em" }}>Fresno's Only Agent + Cash Buyer</span>
+        </div>
+        {/* Buttons */}
+        <div className="flex">
+          <a
+            href={PHONE_HREF}
+            className="flex-1 flex items-center justify-center gap-2 py-4 font-bold text-white transition-all active:scale-95"
+            style={{ background: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "1rem" }}
+          >
+            <Phone size={19} /> <span>Call Now</span>
+          </a>
+          <div style={{ width: "1px", background: "oklch(1 0 0 / 0.15)" }} />
+          <Link
+            href="/contact"
+            className="flex-1 flex items-center justify-center gap-2 py-4 font-bold text-white transition-all active:scale-95"
+            style={{ background: "linear-gradient(135deg, oklch(0.48 0.16 42) 0%, oklch(0.60 0.18 55) 100%)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "1rem" }}
+          >
+            <span style={{ fontSize: "1.1rem" }}>⚡</span> <span>Get Cash Offer</span>
+          </Link>
+        </div>
       </div>
     </div>
   );
