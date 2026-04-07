@@ -733,6 +733,61 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-20" style={{ background: "oklch(0.97 0.015 85)", clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }} />
       </section>
 
+      {/* ── VACANT PROPERTY URGENT WARNING ── */}
+      <section
+        style={{
+          background: "linear-gradient(90deg, oklch(0.28 0.08 30) 0%, oklch(0.32 0.10 35) 100%)",
+          borderTop: "3px solid oklch(0.65 0.18 45)",
+          borderBottom: "3px solid oklch(0.65 0.18 45)",
+        }}
+      >
+        <div className="container">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 py-4">
+            {/* Icon + label */}
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <div
+                className="flex items-center justify-center rounded-lg"
+                style={{
+                  width: "2.6rem",
+                  height: "2.6rem",
+                  background: "oklch(0.65 0.18 45)",
+                  boxShadow: "0 0 14px oklch(0.65 0.18 45 / 0.6)",
+                  flexShrink: 0,
+                  animation: "ping 2s cubic-bezier(0,0,0.2,1) infinite",
+                }}
+              >
+                <span style={{ fontSize: "1.2rem" }}>⚠</span>
+              </div>
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest" style={{ color: "oklch(0.90 0.12 55)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.12em" }}>Urgent — Vacant Property Warning</div>
+                <div className="text-base font-bold text-white" style={{ fontFamily: "'Lora', serif", lineHeight: 1.2 }}>Is the Home Sitting Vacant?</div>
+              </div>
+            </div>
+            {/* Message */}
+            <p className="text-sm leading-snug flex-1" style={{ color: "oklch(0.88 0.03 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Vacant homes in Fresno and the Central Valley get broken into fast — doors, windows, and crawl spaces under raised foundations. I will help you secure it or connect you with someone who can board it up and re-key every access point the same day.
+            </p>
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row gap-2 flex-shrink-0">
+              <a
+                href="tel:5592818016"
+                className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm text-white transition-all hover:scale-105"
+                style={{ background: "oklch(0.65 0.18 45)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 4px 16px oklch(0.65 0.18 45 / 0.5)", whiteSpace: "nowrap" }}
+              >
+                <Phone size={15} /> Call Now: (559) 281-8016
+              </a>
+              <a
+                href="/vacant-property-warning"
+                className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm transition-all hover:scale-105"
+                style={{ background: "oklch(1 0 0 / 0.10)", border: "1px solid oklch(1 0 0 / 0.25)", color: "oklch(0.90 0.06 55)", fontFamily: "'Nunito Sans', sans-serif", whiteSpace: "nowrap" }}
+              >
+                See All Vacant Property Risks <ArrowRight size={14} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── TRUST BAR ── */}
       <section className="py-4" style={{ background: "oklch(0.22 0.01 60)", borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
         <div className="container">
