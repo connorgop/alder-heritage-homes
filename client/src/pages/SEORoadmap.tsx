@@ -204,6 +204,35 @@ export default function SEORoadmap() {
         </div>
       </section>
 
+      {/* GSC Weekly Indexing Reminder */}
+      <section className="py-5" style={{ background: "oklch(0.97 0.12 55)", borderBottom: "3px solid oklch(0.75 0.15 55)" }}>
+        <div className="container max-w-5xl">
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="flex items-center gap-3 flex-shrink-0">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center text-xl flex-shrink-0" style={{ background: "oklch(0.55 0.13 42)", color: "white" }}>⚡</div>
+              <div>
+                <div className="text-sm font-black uppercase tracking-widest" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.30 0.05 42)" }}>Weekly GSC Indexing Reminder</div>
+                <div className="text-xs" style={{ color: "oklch(0.45 0.05 42)", fontFamily: "'Nunito Sans', sans-serif" }}>Every new page built = request indexing in GSC within 24 hours</div>
+              </div>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="text-sm" style={{ color: "oklch(0.30 0.03 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                <strong>How:</strong> GSC → URL Inspection → paste the new page URL → click <strong>"Request Indexing"</strong>. Cuts wait from 4–8 weeks to <strong>24–48 hours</strong>. Do this for every page Manus builds.
+              </div>
+            </div>
+            <a
+              href="https://search.google.com/search-console"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 px-4 py-2 rounded-lg text-sm font-bold transition-all hover:opacity-90"
+              style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}
+            >
+              Open GSC →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Roadmap Weeks */}
       <section className="py-12" style={{ background: "white" }}>
         <div className="container max-w-5xl space-y-10">

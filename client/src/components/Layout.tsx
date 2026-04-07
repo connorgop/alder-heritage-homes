@@ -47,6 +47,7 @@ const trust = [
   { label: "Sell My House Fresno CA", href: "/sell-my-house-fresno-ca" },
   { label: "Sell My House Clovis CA", href: "/sell-my-house-clovis-ca" },
   { label: "Sell My House Visalia CA", href: "/sell-my-house-visalia-ca" },
+  { label: "Sell My House Bakersfield CA", href: "/sell-my-house-bakersfield-ca" },
   { label: "Sell My House Madera CA", href: "/sell-my-house-madera-ca" },
   { label: "Sell My House Hanford CA", href: "/sell-my-house-hanford-ca" },
   { label: "Sell My House Kingsburg CA", href: "/sell-my-house-kingsburg-ca" },
@@ -193,6 +194,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [citiesOpen, setCitiesOpen] = useState(false);
   const [trustOpen, setTrustOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
   const [location] = useLocation();
 
   useEffect(() => {
@@ -206,6 +208,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     setServicesOpen(false);
     setCitiesOpen(false);
     setTrustOpen(false);
+    setResourcesOpen(false);
   }, [location]);
 
   return (
@@ -386,6 +389,44 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}
                       >
                         {t.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+              {/* Resources / Strategy dropdown */}
+              <div className="relative group">
+                <button
+                  className="flex items-center gap-1 px-4 py-2 rounded-md text-sm font-semibold transition-colors"
+                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.01 60)" }}
+                  onMouseEnter={() => setResourcesOpen(true)}
+                  onMouseLeave={() => setResourcesOpen(false)}
+                >
+                  Strategy <ChevronDown size={14} />
+                </button>
+                {resourcesOpen && (
+                  <div
+                    className="absolute top-full left-0 w-60 rounded-xl shadow-xl py-2 z-50"
+                    style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}
+                    onMouseEnter={() => setResourcesOpen(true)}
+                    onMouseLeave={() => setResourcesOpen(false)}
+                  >
+                    {[
+                      { label: "🗺️ 90-Day SEO Roadmap", href: "/seo-roadmap" },
+                      { label: "🔍 Competitor Gap Analysis", href: "/competitor-gap-analysis" },
+                      { label: "📈 CRO & Lead Capture", href: "/cro-lead-capture" },
+                      { label: "🏠 Our Deals — Real Properties", href: "/our-deals" },
+                      { label: "📰 Blog & Resources", href: "/blog" },
+                      { label: "📊 Fresno Housing Market", href: "/fresno-housing-market" },
+                      { label: "🌐 Fresno Real Estate Resources", href: "/fresno-real-estate-resources" },
+                    ].map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="block px-4 py-2.5 text-sm font-medium hover:bg-orange-50 transition-colors"
+                        style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}
+                      >
+                        {item.label}
                       </Link>
                     ))}
                   </div>
