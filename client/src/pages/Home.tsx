@@ -288,16 +288,36 @@ function InstantCashCalculator() {
 
   // Step 1: Address
   return (
-    <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ background: "oklch(1 0 0 / 0.08)", border: "1.5px solid oklch(1 0 0 / 0.20)", backdropFilter: "blur(12px)" }}>
-      <div className="px-8 py-5" style={{ background: "oklch(0.55 0.13 42)" }}>
-        <div className="flex items-center gap-2 mb-1">
-          <span className="text-white text-lg">⚡</span>
-          <h3 className="text-xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Instant Cash Offer Calculator</h3>
+    <div
+      className="rounded-2xl overflow-hidden"
+      style={{
+        background: "white",
+        border: "3px solid oklch(0.75 0.18 55)",
+        boxShadow: "0 0 0 6px oklch(0.75 0.18 55 / 0.18), 0 24px 60px oklch(0.22 0.01 60 / 0.55)",
+        position: "relative",
+      }}
+    >
+      {/* Pulsing attention ring */}
+      <div
+        className="absolute inset-0 rounded-2xl pointer-events-none"
+        style={{
+          border: "2px solid oklch(0.75 0.18 55 / 0.5)",
+          animation: "ping 2.5s cubic-bezier(0,0,0.2,1) infinite",
+          borderRadius: "inherit",
+        }}
+      />
+      {/* Header */}
+      <div className="px-7 py-5" style={{ background: "linear-gradient(135deg, oklch(0.48 0.16 42) 0%, oklch(0.60 0.18 55) 100%)" }}>
+        <div className="flex items-center gap-3 mb-1">
+          <span className="text-2xl" style={{ filter: "drop-shadow(0 0 6px oklch(0.90 0.20 75))" }}>⚡</span>
+          <h3 className="text-2xl font-bold text-white" style={{ fontFamily: "'Lora', serif", textShadow: "0 1px 8px oklch(0 0 0 / 0.3)" }}>Instant Cash Offer</h3>
+          <span className="ml-auto px-2 py-0.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.90 0.18 75)", color: "oklch(0.22 0.05 55)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.06em" }}>FREE</span>
         </div>
-        <p className="text-sm" style={{ color: "oklch(0.92 0.04 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.04em" }}>Enter your address · Get your offer by text · 60 seconds</p>
+        <p className="text-sm font-semibold" style={{ color: "oklch(0.96 0.06 85)", fontFamily: "'Nunito Sans', sans-serif" }}>Enter your address → get a cash offer by text in 60 seconds</p>
       </div>
-      <form onSubmit={handleAddressSubmit} className="p-8">
-        <label className="block text-sm font-semibold mb-2" style={{ color: "oklch(0.80 0.02 60)", fontFamily: "'Nunito Sans', sans-serif", letterSpacing: "0.04em", textTransform: "uppercase", fontSize: "0.75rem" }}>Property Address</label>
+      {/* Form */}
+      <form onSubmit={handleAddressSubmit} className="p-7">
+        <label className="block text-xs font-bold mb-2 uppercase tracking-widest" style={{ color: "oklch(0.45 0.05 55)", fontFamily: "'DM Mono', monospace" }}>Property Address</label>
         <input
           required
           type="text"
@@ -306,29 +326,38 @@ function InstantCashCalculator() {
           onChange={e => setAddress(e.target.value)}
           autoFocus
           style={{
-            background: "oklch(1 0 0 / 0.06)",
-            border: "1px solid oklch(1 0 0 / 0.25)",
-            color: "white",
+            background: "oklch(0.97 0.01 85)",
+            border: "2px solid oklch(0.75 0.18 55)",
+            color: "oklch(0.22 0.01 60)",
             fontFamily: "'Nunito Sans', sans-serif",
-            fontSize: "1.1rem",
-            borderRadius: "0.5rem",
+            fontSize: "1.05rem",
+            fontWeight: 600,
+            borderRadius: "0.6rem",
             padding: "0.9rem 1.1rem",
             width: "100%",
             outline: "none",
-            marginBottom: "1rem",
+            marginBottom: "0.9rem",
+            boxShadow: "0 2px 8px oklch(0.75 0.18 55 / 0.12)",
           }}
         />
         <button
           type="submit"
-          className="w-full flex items-center justify-center gap-3 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 hover:scale-[1.01]"
-          style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}
+          className="w-full flex items-center justify-center gap-3 py-4 rounded-xl font-bold text-lg text-white transition-all hover:scale-[1.02] active:scale-[0.99]"
+          style={{
+            background: "linear-gradient(135deg, oklch(0.48 0.16 42) 0%, oklch(0.60 0.18 55) 100%)",
+            fontFamily: "'Nunito Sans', sans-serif",
+            fontSize: "1.1rem",
+            letterSpacing: "0.01em",
+            boxShadow: "0 6px 24px oklch(0.55 0.16 42 / 0.55), 0 2px 8px oklch(0.55 0.16 42 / 0.3)",
+            textShadow: "0 1px 4px oklch(0 0 0 / 0.2)",
+          }}
         >
-          Get My Instant Cash Offer <ArrowRight size={20} />
+          Get My Instant Cash Offer <ArrowRight size={22} />
         </button>
-        <div className="flex items-center justify-center gap-4 mt-4">
-          <span className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>🔒 No obligation</span>
-          <span className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>⚡ Offer by text in minutes</span>
-          <span className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>🏠 Any condition</span>
+        <div className="flex items-center justify-center gap-5 mt-4">
+          <span className="text-xs font-semibold" style={{ color: "oklch(0.50 0.04 55)", fontFamily: "'DM Mono', monospace" }}>🔒 No obligation</span>
+          <span className="text-xs font-semibold" style={{ color: "oklch(0.50 0.04 55)", fontFamily: "'DM Mono', monospace" }}>⚡ 60 seconds</span>
+          <span className="text-xs font-semibold" style={{ color: "oklch(0.50 0.04 55)", fontFamily: "'DM Mono', monospace" }}>🏠 Any condition</span>
         </div>
       </form>
     </div>
