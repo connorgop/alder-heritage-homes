@@ -61,6 +61,7 @@ const trust = [
   { label: "Why We're Different", href: "/why-choose-us" },
   { label: "⭐ Reviews", href: "/reviews" },
   { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
+  { label: "⚠️ Wholesaler Warning", href: "/wholesaler-warning" },
   { label: "Don't Hire Your Friend Realtor", href: "/dont-hire-friend-realtor" },
   { label: "⚠️ Vacant Home Security", href: "/vacant-property-warning" },
   { label: "Skyline REI — Our Buying Entity", href: "/skyline-rei" },
