@@ -65,6 +65,7 @@ const trust = [
   { label: "Skyline REI — Our Buying Entity", href: "/skyline-rei" },
   { label: "About Connor", href: "/about" },
   { label: "⭐ Seller Testimonials", href: "/testimonials" },
+  { label: "🏠 Our Deals — Real Properties", href: "/our-deals" },
   { label: "📸 Before & After Gallery", href: "/before-after" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Fresno Housing Market 2026", href: "/fresno-housing-market" },
@@ -582,6 +583,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-2">
                 <li><Link href="/about" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>About Us</Link></li>
                 <li><Link href="/testimonials" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Seller Testimonials</Link></li>
+                <li><Link href="/our-deals" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Our Deals — Real Properties</Link></li>
                 <li><Link href="/before-after" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Before &amp; After Gallery</Link></li>
                 <li><Link href="/how-it-works" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>How It Works</Link></li>
                 <li><Link href="/fresno-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Housing Market 2026</Link></li>

@@ -57,6 +57,7 @@ import SellMyHouseCashFresno from "./pages/SellMyHouseCashFresno";
 import SellInheritedPropertyFresno from "./pages/SellInheritedPropertyFresno";
 import HoarderHomeBuyerFresno from "./pages/HoarderHomeBuyerFresno";
 import BothOptions from "./pages/BothOptions";
+import Portfolio from "./pages/Portfolio";
 import SellHouseFastClovis from "./pages/SellHouseFastClovis";
 import SellHouseFastVisalia from "./pages/SellHouseFastVisalia";
 import SellHouseFastBakersfield from "./pages/SellHouseFastBakersfield";
@@ -298,6 +299,9 @@ function Router() {
       <Route path="/hoarder-home-buyer-fresno" component={HoarderHomeBuyerFresno} />
       <Route path="/hoarder-house-buyer-fresno" component={HoarderHomeBuyerFresno} />
       <Route path="/sell-home-fresno-options" component={BothOptions} />
+      <Route path="/our-deals" component={Portfolio} />
+      <Route path="/portfolio" component={Portfolio} />
+      <Route path="/properties-purchased" component={Portfolio} />
       <Route path="/sell-my-home-fresno" component={BothOptions} />
       <Route path="/sell-my-property-fresno" component={BothOptions} />
       <Route path="/sell-home-fresno" component={BothOptions} />
