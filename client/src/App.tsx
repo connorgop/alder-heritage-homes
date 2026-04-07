@@ -43,6 +43,12 @@ import SeniorSeller from "./pages/services/SeniorSeller";
 import ParentsHouse from "./pages/services/ParentsHouse";
 import SellMyHouse from "./pages/SellMyHouse";
 import SellHouseFastFresno from "./pages/SellHouseFastFresno";
+import SellMyHouseFresno from "./pages/SellMyHouseFresno";
+import SellHouseAsIsFresno from "./pages/SellHouseAsIsFresno";
+import SellMyHouseCashFresno from "./pages/SellMyHouseCashFresno";
+import SellInheritedPropertyFresno from "./pages/SellInheritedPropertyFresno";
+import HoarderHomeBuyerFresno from "./pages/HoarderHomeBuyerFresno";
+import BothOptions from "./pages/BothOptions";
 import SellHouseFastClovis from "./pages/SellHouseFastClovis";
 import SellHouseFastVisalia from "./pages/SellHouseFastVisalia";
 import SellHouseFastBakersfield from "./pages/SellHouseFastBakersfield";
@@ -245,6 +251,22 @@ function Router() {
       <Route path="/sell-home-retirement-fresno" component={SeniorSeller} />
       <Route path="/sell-parents-house-fresno" component={ParentsHouse} />
       <Route path="/sell-my-house" component={SellMyHouse} />
+      <Route path="/sell-my-house-fresno-ca" component={SellMyHouseFresno} />
+      <Route path="/sell-my-house-fresno" component={SellMyHouseFresno} />
+      <Route path="/sell-house-as-is-fresno" component={SellHouseAsIsFresno} />
+      <Route path="/sell-house-as-is-fresno-ca" component={SellHouseAsIsFresno} />
+      <Route path="/sell-my-house-cash-fresno" component={SellMyHouseCashFresno} />
+      <Route path="/sell-house-for-cash-fresno" component={SellMyHouseCashFresno} />
+      <Route path="/sell-inherited-property-fresno" component={SellInheritedPropertyFresno} />
+      <Route path="/sell-inherited-house-fresno" component={SellInheritedPropertyFresno} />
+      <Route path="/hoarder-home-buyer-fresno" component={HoarderHomeBuyerFresno} />
+      <Route path="/hoarder-house-buyer-fresno" component={HoarderHomeBuyerFresno} />
+      <Route path="/sell-home-fresno-options" component={BothOptions} />
+      <Route path="/sell-my-home-fresno" component={BothOptions} />
+      <Route path="/sell-my-property-fresno" component={BothOptions} />
+      <Route path="/sell-home-fresno" component={BothOptions} />
+      <Route path="/sell-house-cash-to-investor-fresno" component={BothOptions} />
+      <Route path="/sell-house-fresno" component={BothOptions} />
       <Route path="/sell-house-fast-fresno-ca" component={SellHouseFastFresno} />
       <Route path="/sell-house-fast-fresno" component={SellHouseFastFresno} />
       <Route path="/sell-my-house-fast-fresno" component={SellHouseFastFresno} />
