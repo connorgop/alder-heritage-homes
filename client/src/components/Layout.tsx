@@ -1,11 +1,11 @@
 /* ============================================================
-   ALDER HERITAGE HOMES — Layout Component
-   Heritage Warmth design: Terracotta + Slate Green + Oat
-   Sticky header, phone always visible, footer with all links
+   ALDER HERITAGE HOMES — Layout Component (Simplified)
+   Montana's feedback: Clean, guided, conversion-focused nav.
+   All 216+ pages still live for SEO — just not in the nav.
    ============================================================ */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Phone, Menu, X, ChevronDown } from "lucide-react";
+import { Phone, Menu, X, ChevronDown, ChevronRight, ArrowRight } from "lucide-react";
 import FloatingCTA from "./FloatingCTA";
 import TawkChat from "./TawkChat";
 import ExitIntentPopup from "./ExitIntentPopup";
@@ -14,188 +14,58 @@ import SchemaMarkup, { localBusinessSchema, websiteSchema, breadcrumbSchema, bui
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 
-const services = [
-  { label: "🧮 Free Cash Offer Calculator", href: "/fresno-cash-offer-calculator" },
+/* ── Only the 6 highest-converting situations in the dropdown ── */
+const topSituations = [
+  { label: "Facing Foreclosure", href: "/foreclosure-help", desc: "Stop the auction — we close before your sale date" },
+  { label: "Behind on Mortgage", href: "/behind-on-mortgage", desc: "Missed payments piling up? We pay off what you owe" },
+  { label: "Inherited / Probate Home", href: "/probate-inherited-homes", desc: "100+ probate sales — we handle the paperwork" },
+  { label: "Divorce Home Sale", href: "/sell-house-divorce", desc: "Fast, private sale so both parties can move on" },
+  { label: "Need to Sell Fast", href: "/sell-house-fast", desc: "Close in as little as 5–7 days, any condition" },
+  { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back", desc: "Sell today, stay as long as you need" },
+];
+
+/* ── Footer: curated links only — all other pages still exist for SEO ── */
+const footerSituations = [
   { label: "Foreclosure Help", href: "/foreclosure-help" },
   { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
-  { label: "Can't Afford My Home", href: "/cant-afford-my-home" },
-  { label: "ARM / Rate Adjustment", href: "/arm-rate-change-help" },
-  { label: "Second Mortgage Help", href: "/second-mortgage-help" },
-  { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back" },
-  { label: "Probate / Inherited Homes", href: "/probate-inherited-homes" },
-  { label: "Probate Real Estate Fresno", href: "/probate-real-estate-fresno" },
-  { label: "Sell House Fast", href: "/sell-house-fast" },
-  { label: "Roof Damage — Sell As-Is", href: "/sell-house-roof-damage" },
-  { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
-  { label: "Mold — Sell As-Is", href: "/sell-house-mold" },
-  { label: "Fire Damage — Sell As-Is", href: "/sell-house-fire-damage" },
-  { label: "Code Violations — Sell As-Is", href: "/sell-house-code-violations-fresno" },
-  { label: "Foundation Problems", href: "/sell-house-foundation-problems" },
+  { label: "Inherited / Probate", href: "/probate-inherited-homes" },
   { label: "Divorce Home Sale", href: "/sell-house-divorce" },
+  { label: "Sell House Fast", href: "/sell-house-fast" },
+  { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back" },
+  { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
+  { label: "Fire Damage", href: "/sell-house-fire-damage" },
+  { label: "Code Violations", href: "/sell-house-code-violations-fresno" },
   { label: "Tired Landlord", href: "/tired-landlord" },
-  { label: "Portfolio Sale & 1031 Exchange", href: "/sell-rental-portfolio" },
-  { label: "Military PCS Sale", href: "/military-pcs-sell-house" },
-  { label: "Senior / Retirement Seller", href: "/sell-home-retirement-fresno" },
-  { label: "Selling Parents' Home", href: "/sell-parents-house-fresno" },
-  { label: "Junk Removal — Read This First", href: "/junk-removal-before-selling" },
-  { label: "⚠️ Vacant Property Warning", href: "/vacant-property-warning" },
+  { label: "See All Situations →", href: "/sell-my-house" },
 ];
 
-const trust = [
-  { label: "Sell My Home Fresno — All Options", href: "/sell-home-fresno-options" },
-  { label: "Sell My House — All Options", href: "/sell-my-house" },
-  { label: "Sell My House Fresno CA", href: "/sell-my-house-fresno-ca" },
-  { label: "Sell My House Clovis CA", href: "/sell-my-house-clovis-ca" },
-  { label: "Sell My House Visalia CA", href: "/sell-my-house-visalia-ca" },
-  { label: "Sell My House Bakersfield CA", href: "/sell-my-house-bakersfield-ca" },
-  { label: "Sell My House Madera CA", href: "/sell-my-house-madera-ca" },
-  { label: "Sell My House Hanford CA", href: "/sell-my-house-hanford-ca" },
-  { label: "Sell My House Kingsburg CA", href: "/sell-my-house-kingsburg-ca" },
-  { label: "Sell My House Kerman CA", href: "/sell-my-house-kerman-ca" },
-  { label: "Sell My House Chowchilla CA", href: "/sell-my-house-chowchilla-ca" },
-  { label: "Sell House As-Is Fresno", href: "/sell-house-as-is-fresno" },
-  { label: "Sell My House for Cash Fresno", href: "/sell-my-house-cash-fresno" },
-  { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
-  { label: "California Probate Home Sale Guide", href: "/california-probate-home-sale" },
-  { label: "Hoarder Home Buyer Fresno", href: "/hoarder-home-buyer-fresno" },
-  { label: "Why We're Different", href: "/why-choose-us" },
-  { label: "⭐ Reviews", href: "/reviews" },
-  { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
-  { label: "⚠️ Wholesaler Warning", href: "/wholesaler-warning" },
-  { label: "Don't Hire Your Friend Realtor", href: "/dont-hire-friend-realtor" },
-  { label: "⚠️ Vacant Home Security", href: "/vacant-property-warning" },
-  { label: "Skyline REI — Our Buying Entity", href: "/skyline-rei" },
-  { label: "About Connor", href: "/about" },
-  { label: "⭐ Seller Testimonials", href: "/testimonials" },
-  { label: "🏠 Our Deals — Real Properties", href: "/our-deals" },
-  { label: "📸 Before & After Gallery", href: "/before-after" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Fresno Housing Market 2026", href: "/fresno-housing-market" },
-  { label: "Stockton Housing Market 2026", href: "/stockton-housing-market" },
-  { label: "Modesto Housing Market 2026", href: "/modesto-housing-market" },
-  { label: "🏡 What Is My Home Worth?", href: "/what-is-my-home-worth" },
-  { label: "🧮 Fresno Cash Offer Calculator", href: "/fresno-cash-offer-calculator" },
-  { label: "Fresno Neighborhoods Hub", href: "/fresno-neighborhoods" },
-  { label: "Blog & Resources", href: "/blog" },
-  { label: "❓ Sell House Fast FAQ", href: "/sell-house-fast-faq" },
-  { label: "Visalia Neighborhoods Hub", href: "/visalia-neighborhoods" },
-  { label: "Visalia Housing Market 2026", href: "/visalia-housing-market" },
-  { label: "Bakersfield Neighborhoods Hub", href: "/bakersfield-neighborhoods" },
-  { label: "Stockton Neighborhoods Hub", href: "/stockton-neighborhoods" },
-  { label: "Modesto Neighborhoods Hub", href: "/modesto-neighborhoods" },
-  { label: "San Joaquin County Hub", href: "/san-joaquin-county" },
-  { label: "Sell House Fast Stockton", href: "/sell-house-fast-stockton-ca" },
-  { label: "Sell House Fast Modesto", href: "/sell-house-fast-modesto-ca" },
-  { label: "Reedley Neighborhoods Hub", href: "/reedley-neighborhoods" },
-  { label: "Selma Neighborhoods Hub", href: "/selma-neighborhoods" },
-  { label: "Sanger Neighborhoods Hub", href: "/sanger-neighborhoods" },
-  { label: "Reedley Housing Market 2026", href: "/reedley-housing-market" },
-  { label: "Selma Housing Market 2026", href: "/selma-housing-market" },
-  { label: "Sanger Housing Market 2026", href: "/sanger-housing-market" },
-  { label: "Sell House Fast Reedley", href: "/sell-house-fast-reedley-ca" },
-  { label: "Sell House Fast Selma", href: "/sell-house-fast-selma-ca" },
-  { label: "Sell House Fast Sanger", href: "/sell-house-fast-sanger-ca" },
-  { label: "Fresno County Hub", href: "/fresno-county" },
-  { label: "We Buy Houses Parlier", href: "/we-buy-houses-parlier" },
-  { label: "We Buy Houses Orange Cove", href: "/we-buy-houses-orange-cove" },
-  { label: "Sell House Fast Orange Cove", href: "/sell-house-fast-orange-cove-ca" },
-  { label: "Sell House Fast Dinuba", href: "/sell-house-fast-dinuba-ca" },
-  { label: "We Buy Houses Lindsay", href: "/we-buy-houses-lindsay" },
-  { label: "Stanislaus County Hub", href: "/stanislaus-county" },
-  { label: "Sell House Fast Porterville", href: "/sell-house-fast-porterville-ca" },
-  { label: "We Buy Houses Exeter", href: "/we-buy-houses-exeter" },
-  { label: "We Buy Houses Strathmore", href: "/we-buy-houses-strathmore" },
-  { label: "Tulare County Hub", href: "/tulare-county" },
-  { label: "Kings County Hub", href: "/kings-county" },
-  { label: "Porterville Housing Market", href: "/porterville-housing-market" },
-  { label: "We Buy Houses Woodlake", href: "/we-buy-houses-woodlake" },
-  { label: "Sell House Fast Exeter", href: "/sell-house-fast-exeter-ca" },
-  { label: "Sell Your Home Fresno CA", href: "/sell-your-home-fresno" },
-  { label: "Buy My House Cash Fresno", href: "/buy-my-house-cash-fresno" },
-  { label: "Fresno Real Estate Resources", href: "/fresno-real-estate-resources" },
-];
-
-
-const cities = [
-  { label: "All Central Valley Cities", href: "/we-buy-houses-central-valley" },
+const footerCities = [
   { label: "Fresno", href: "/we-buy-houses-fresno" },
   { label: "Clovis", href: "/we-buy-houses-clovis" },
-  { label: "Madera", href: "/we-buy-houses-madera" },
   { label: "Visalia", href: "/we-buy-houses-visalia" },
-  { label: "Sanger", href: "/we-buy-houses-sanger" },
-  { label: "Selma", href: "/we-buy-houses-selma" },
-  { label: "Hanford", href: "/we-buy-houses-hanford" },
-  { label: "Reedley", href: "/we-buy-houses-reedley" },
   { label: "Bakersfield", href: "/we-buy-houses-bakersfield" },
-  { label: "Lemoore", href: "/we-buy-houses-lemoore" },
-  { label: "Tulare", href: "/we-buy-houses-tulare" },
-  { label: "Porterville", href: "/we-buy-houses-porterville" },
-  { label: "Merced", href: "/we-buy-houses-merced" },
+  { label: "Madera", href: "/we-buy-houses-madera" },
+  { label: "Hanford", href: "/we-buy-houses-hanford" },
   { label: "Stockton", href: "/we-buy-houses-stockton" },
   { label: "Modesto", href: "/we-buy-houses-modesto" },
-  { label: "Turlock", href: "/we-buy-houses-turlock" },
-  { label: "Tracy", href: "/we-buy-houses-tracy" },
-  { label: "Lodi", href: "/we-buy-houses-lodi" },
-  { label: "Manteca", href: "/we-buy-houses-manteca" },
-  { label: "Kings County Hub", href: "/kings-county" },
-  { label: "Kings County", href: "/we-buy-houses-kings-county" },
-  { label: "San Joaquin County", href: "/we-buy-houses-san-joaquin-county" },
-  { label: "Parlier", href: "/we-buy-houses-parlier" },
-  { label: "Orange Cove", href: "/we-buy-houses-orange-cove" },
-  { label: "Dinuba", href: "/we-buy-houses-dinuba" },
-  { label: "Cutler-Orosi", href: "/we-buy-houses-cutler-orosi" },
-  { label: "Fresno County Hub", href: "/fresno-county" },
-  { label: "Lindsay", href: "/we-buy-houses-lindsay" },
-  { label: "Stanislaus County Hub", href: "/stanislaus-county" },
-  { label: "Exeter", href: "/we-buy-houses-exeter" },
-  { label: "Strathmore", href: "/we-buy-houses-strathmore" },
-  { label: "Tulare County Hub", href: "/tulare-county" },
-  { label: "Woodlake", href: "/we-buy-houses-woodlake" },
+  { label: "All Central Valley →", href: "/we-buy-houses-central-valley" },
 ];
 
-const neighborhoods = [
-  { label: "All Fresno Neighborhoods", href: "/fresno-neighborhoods" },
-  { label: "Clovis North", href: "/fresno-neighborhoods/clovis-north" },
-  { label: "Fig Garden", href: "/fresno-neighborhoods/fig-garden" },
-  { label: "Woodward Park", href: "/fresno-neighborhoods/woodward-park" },
-  { label: "Tower District", href: "/fresno-neighborhoods/tower-district" },
-  { label: "North Fresno", href: "/fresno-neighborhoods/north-fresno" },
-  { label: "Bullard", href: "/fresno-neighborhoods/bullard" },
-  { label: "Old Fig Garden", href: "/fresno-neighborhoods/old-fig-garden" },
-  { label: "Southeast Fresno", href: "/fresno-neighborhoods/southeast-fresno" },
-  { label: "Sunnyside", href: "/fresno-neighborhoods/sunnyside" },
-  { label: "McLane / Hoover", href: "/fresno-neighborhoods/mclane" },
-  { label: "Fig Garden Village", href: "/fresno-neighborhoods/fig-garden-village" },
-  { label: "Fresno State Area", href: "/fresno-neighborhoods/fresno-state" },
-  { label: "All Stockton Neighborhoods", href: "/stockton-neighborhoods" },
-  { label: "North Stockton", href: "/stockton-neighborhoods/north-stockton" },
-  { label: "South Stockton", href: "/stockton-neighborhoods/south-stockton" },
-  { label: "Lincoln Village", href: "/stockton-neighborhoods/lincoln-village" },
-  { label: "Weston Ranch", href: "/stockton-neighborhoods/weston-ranch" },
-  { label: "All Modesto Neighborhoods", href: "/modesto-neighborhoods" },
-  { label: "North Modesto", href: "/modesto-neighborhoods/north-modesto" },
-  { label: "South Modesto", href: "/modesto-neighborhoods/south-modesto" },
-  { label: "Salida", href: "/modesto-neighborhoods/salida" },
-  { label: "Ceres", href: "/modesto-neighborhoods/ceres" },
-  { label: "All Reedley Neighborhoods", href: "/reedley-neighborhoods" },
-  { label: "Downtown Reedley", href: "/reedley-neighborhoods/downtown-reedley" },
-  { label: "Kings River", href: "/reedley-neighborhoods/kings-river" },
-  { label: "East Reedley", href: "/reedley-neighborhoods/east-reedley" },
-  { label: "All Selma Neighborhoods", href: "/selma-neighborhoods" },
-  { label: "Downtown Selma", href: "/selma-neighborhoods/downtown-selma" },
-  { label: "West Selma", href: "/selma-neighborhoods/west-selma" },
-  { label: "All Sanger Neighborhoods", href: "/sanger-neighborhoods" },
-  { label: "Downtown Sanger", href: "/sanger-neighborhoods/downtown-sanger" },
-  { label: "Kings Canyon Corridor", href: "/sanger-neighborhoods/kings-canyon-corridor" },
+const footerCompany = [
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "About Connor", href: "/about" },
+  { label: "Reviews", href: "/reviews" },
+  { label: "Our Deals", href: "/our-deals" },
+  { label: "Before & After", href: "/before-after" },
+  { label: "Blog", href: "/blog" },
+  { label: "FAQ", href: "/sell-house-fast-faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-  const [citiesOpen, setCitiesOpen] = useState(false);
-  const [trustOpen, setTrustOpen] = useState(false);
-  const [resourcesOpen, setResourcesOpen] = useState(false);
+  const [situationsOpen, setSituationsOpen] = useState(false);
   const [location] = useLocation();
 
   useEffect(() => {
@@ -206,22 +76,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     setMobileOpen(false);
-    setServicesOpen(false);
-    setCitiesOpen(false);
-    setTrustOpen(false);
-    setResourcesOpen(false);
+    setSituationsOpen(false);
   }, [location]);
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.97 0.015 85)" }}>
-      {/* Global structured data — injected on every page */}
+      {/* Global structured data */}
       <SchemaMarkup schema={localBusinessSchema()} id="local-business" />
       <SchemaMarkup schema={aggregateRatingSchema({ ratingValue: 5.0, reviewCount: 8 })} id="aggregate-rating" />
       <SchemaMarkup schema={websiteSchema()} id="website" />
-      <SchemaMarkup
-        schema={breadcrumbSchema(buildBreadcrumbs(location))}
-        id="breadcrumb"
-      />
+      <SchemaMarkup schema={breadcrumbSchema(buildBreadcrumbs(location))} id="breadcrumb" />
+
       {/* Top bar — Price Match Guarantee */}
       <div style={{ background: "oklch(0.55 0.13 42)", color: "white" }} className="py-2 text-center">
         <div className="flex items-center justify-center gap-2 flex-wrap px-4">
@@ -236,14 +101,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </a>
         </div>
       </div>
-      {/* Sub bar — license/service area */}
+
+      {/* Sub bar — license */}
       <div style={{ background: "oklch(0.28 0.05 155)", color: "white" }} className="py-1.5 text-center">
         <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.06em", opacity: 0.85 }}>
           Licensed CA Real Estate Agent · DRE #02219124 · Serving Fresno &amp; the Central Valley
         </span>
       </div>
 
-      {/* Main nav */}
+      {/* ── MAIN NAV — Clean, 5 items max ── */}
       <header
         className="sticky top-0 z-50 transition-all duration-300"
         style={{
@@ -273,190 +139,64 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
             </Link>
 
-            {/* Desktop nav */}
+            {/* ── Desktop nav — simplified ── */}
             <nav className="hidden lg:flex items-center gap-1">
-              <NavLink href="/">Home</NavLink>
+              <NavLink href="/how-it-works">How It Works</NavLink>
 
-              {/* Services dropdown */}
+              {/* Your Situation dropdown — 6 items only */}
               <div className="relative group">
                 <button
                   className="flex items-center gap-1 px-4 py-2 rounded-md text-sm font-semibold transition-colors"
                   style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.01 60)" }}
-                  onMouseEnter={() => setServicesOpen(true)}
-                  onMouseLeave={() => setServicesOpen(false)}
+                  onMouseEnter={() => setSituationsOpen(true)}
+                  onMouseLeave={() => setSituationsOpen(false)}
                 >
-                  Solutions <ChevronDown size={14} />
+                  Your Situation <ChevronDown size={14} />
                 </button>
-                {servicesOpen && (
+                {situationsOpen && (
                   <div
-                    className="absolute top-full left-0 w-64 rounded-xl shadow-xl py-2 z-50"
+                    className="absolute top-full left-1/2 -translate-x-1/2 w-[420px] rounded-xl shadow-2xl py-3 z-50"
                     style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}
-                    onMouseEnter={() => setServicesOpen(true)}
-                    onMouseLeave={() => setServicesOpen(false)}
+                    onMouseEnter={() => setSituationsOpen(true)}
+                    onMouseLeave={() => setSituationsOpen(false)}
                   >
-                    {services.map((s) => (
+                    <p className="px-5 pb-2 text-xs font-bold uppercase tracking-wider" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
+                      We buy homes in any situation
+                    </p>
+                    {topSituations.map((s) => (
                       <Link
                         key={s.href}
                         href={s.href}
-                        className="block px-4 py-2.5 text-sm font-medium hover:bg-orange-50 transition-colors"
-                        style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}
+                        className="flex items-start gap-3 px-5 py-3 hover:bg-orange-50/60 transition-colors group/item"
                       >
-                        {s.label}
+                        <ChevronRight size={16} className="mt-0.5 shrink-0 opacity-0 group-hover/item:opacity-100 transition-opacity" style={{ color: "oklch(0.55 0.13 42)" }} />
+                        <div>
+                          <span className="block text-sm font-bold" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)" }}>
+                            {s.label}
+                          </span>
+                          <span className="block text-xs mt-0.5" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                            {s.desc}
+                          </span>
+                        </div>
                       </Link>
                     ))}
-                    {/* Divider + City Fast-Sale Links */}
-                    <div className="mx-4 my-2 border-t" style={{ borderColor: "oklch(0.88 0.02 85)" }} />
-                    <Link href="/sell-house-fast-central-valley" className="block px-4 py-2 text-sm font-bold hover:bg-orange-50 transition-colors" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.28 0.05 155)" }}>
-                      ⚡ All Cities — Fast Sale Hub
+                    <div className="mx-5 my-2 border-t" style={{ borderColor: "oklch(0.90 0.02 85)" }} />
+                    <Link
+                      href="/sell-my-house"
+                      className="flex items-center gap-2 px-5 py-2.5 text-sm font-bold hover:bg-orange-50/60 transition-colors"
+                      style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.55 0.13 42)" }}
+                    >
+                      See all situations we handle <ArrowRight size={14} />
                     </Link>
-                    <p className="px-4 py-1 text-xs font-bold uppercase tracking-wider" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>Sell Fast By City</p>
-                    {[
-                      { label: "Fresno", href: "/sell-house-fast-fresno-ca" },
-                      { label: "Clovis", href: "/we-buy-houses-clovis" },
-                      { label: "Hanford", href: "/sell-house-fast-hanford-ca" },
-                      { label: "Visalia", href: "/sell-house-fast-visalia-ca-guide" },
-                      { label: "Bakersfield", href: "/sell-house-fast-bakersfield-ca-guide" },
-                      { label: "Stockton", href: "/sell-house-fast-stockton-ca" },
-                      { label: "Modesto", href: "/sell-house-fast-modesto-ca" },
-                      { label: "Tracy", href: "/we-buy-houses-tracy" },
-                      { label: "Manteca", href: "/we-buy-houses-manteca" },
-                    ].map((c) => (
-                      <Link
-                        key={c.href}
-                        href={c.href}
-                        className="block px-4 py-2 text-sm font-medium hover:bg-orange-50 transition-colors"
-                        style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.08 42)" }}
-                      >
-                        → {c.label}
-                      </Link>
-                    ))}
                   </div>
                 )}
               </div>
 
-              {/* Cities dropdown */}
-              <div className="relative group">
-                <button
-                  className="flex items-center gap-1 px-4 py-2 rounded-md text-sm font-semibold transition-colors"
-                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.01 60)" }}
-                  onMouseEnter={() => setCitiesOpen(true)}
-                  onMouseLeave={() => setCitiesOpen(false)}
-                >
-                  Areas We Serve <ChevronDown size={14} />
-                </button>
-                {citiesOpen && (
-                  <div
-                    className="absolute top-full left-0 w-52 rounded-xl shadow-xl py-2 z-50"
-                    style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}
-                    onMouseEnter={() => setCitiesOpen(true)}
-                    onMouseLeave={() => setCitiesOpen(false)}
-                  >
-                    {cities.map((c) => (
-                      <Link
-                        key={c.href}
-                        href={c.href}
-                        className="block px-4 py-2.5 text-sm font-medium hover:bg-orange-50 transition-colors"
-                        style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}
-                      >
-                        {c.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Why We're Different dropdown */}
-              <div className="relative group">
-                <button
-                  className="flex items-center gap-1 px-4 py-2 rounded-md text-sm font-semibold transition-colors"
-                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.01 60)" }}
-                  onMouseEnter={() => setTrustOpen(true)}
-                  onMouseLeave={() => setTrustOpen(false)}
-                >
-                  Why Us <ChevronDown size={14} />
-                </button>
-                {trustOpen && (
-                  <div
-                    className="absolute top-full left-0 w-52 rounded-xl shadow-xl py-2 z-50"
-                    style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}
-                    onMouseEnter={() => setTrustOpen(true)}
-                    onMouseLeave={() => setTrustOpen(false)}
-                  >
-                    {trust.map((t) => (
-                      <Link
-                        key={t.href}
-                        href={t.href}
-                        className="block px-4 py-2.5 text-sm font-medium hover:bg-orange-50 transition-colors"
-                        style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}
-                      >
-                        {t.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-              {/* Resources / Strategy dropdown */}
-              <div className="relative group">
-                <button
-                  className="flex items-center gap-1 px-4 py-2 rounded-md text-sm font-semibold transition-colors"
-                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.01 60)" }}
-                  onMouseEnter={() => setResourcesOpen(true)}
-                  onMouseLeave={() => setResourcesOpen(false)}
-                >
-                  Strategy <ChevronDown size={14} />
-                </button>
-                {resourcesOpen && (
-                  <div
-                    className="absolute top-full left-0 w-60 rounded-xl shadow-xl py-2 z-50"
-                    style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}
-                    onMouseEnter={() => setResourcesOpen(true)}
-                    onMouseLeave={() => setResourcesOpen(false)}
-                  >
-                    {[
-                      { label: "📊 Keyword Strategy — 100+ Keywords", href: "/keyword-strategy" },
-                      { label: "🏗️ Site Architecture & URL Structure", href: "/site-architecture" },
-                      { label: "🗺️ 90-Day SEO Roadmap", href: "/seo-roadmap" },
-                      { label: "🔗 Backlink Strategy — 25+ Links", href: "/backlink-strategy" },
-                      { label: "🔍 Competitor Gap Analysis", href: "/competitor-gap-analysis" },
-                      { label: "📈 CRO & Lead Capture", href: "/cro-lead-capture" },
-                      { label: "🏠 Our Deals — Real Properties", href: "/our-deals" },
-                      { label: "📰 Blog & Resources", href: "/blog" },
-                      { label: "📊 Fresno Housing Market", href: "/fresno-housing-market" },
-                      { label: "🌐 Fresno Real Estate Resources", href: "/fresno-real-estate-resources" },
-                    ].map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block px-4 py-2.5 text-sm font-medium hover:bg-orange-50 transition-colors"
-                        style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-              {/* Sell Fast CTA link */}
-              <Link href="/sell-house-fast-central-valley">
-                <span
-                  className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-bold transition-all hover:opacity-90"
-                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "white", background: "oklch(0.55 0.13 42)", cursor: "pointer", letterSpacing: "0.01em" }}
-                >
-                  Sell My House Fast
-                </span>
-              </Link>
-              {/* Calculator standalone link */}
-              <Link href="/cash-offer-calculator">
-                <span
-                  className="flex items-center gap-1.5 px-4 py-2 rounded-md text-sm font-bold transition-colors"
-                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.28 0.05 155)", background: "oklch(0.28 0.05 155 / 0.08)", cursor: "pointer" }}
-                >
-                  🧮 Calculator
-                </span>
-              </Link>
+              <NavLink href="/about">About</NavLink>
+              <NavLink href="/reviews">Reviews</NavLink>
             </nav>
 
-            {/* Phone + CTA */}
+            {/* Phone + Primary CTA */}
             <div className="hidden lg:flex items-center gap-3">
               <a
                 href={PHONE_HREF}
@@ -467,13 +207,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 {PHONE}
               </a>
               <Link href="/contact">
-                <button className="btn-terracotta text-sm py-2.5 px-5" style={{ fontFamily: "'Nunito Sans', sans-serif", fontWeight: 700, background: "oklch(0.55 0.13 42)", color: "white", padding: "0.625rem 1.25rem", borderRadius: "0.375rem", transition: "all 0.2s" }}>
+                <button
+                  className="text-sm py-2.5 px-6 rounded-lg font-bold transition-all hover:opacity-90"
+                  style={{
+                    fontFamily: "'Nunito Sans', sans-serif",
+                    background: "oklch(0.55 0.13 42)",
+                    color: "white",
+                  }}
+                >
                   Get My Cash Offer
                 </button>
               </Link>
             </div>
 
-            {/* Mobile menu button */}
+            {/* Mobile: phone + hamburger */}
             <div className="flex lg:hidden items-center gap-3">
               <a href={PHONE_HREF} style={{ color: "oklch(0.28 0.05 155)" }}>
                 <Phone size={20} />
@@ -485,59 +232,36 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        {/* Mobile menu — accordion style for iPhone */}
+        {/* ── Mobile menu — clean, guided ── */}
         {mobileOpen && (
           <div className="lg:hidden border-t overflow-y-auto" style={{ background: "white", borderColor: "oklch(0.88 0.02 85)", maxHeight: "80vh" }}>
             <div className="py-2">
-              <MobileNavLink href="/">Home</MobileNavLink>
+              <MobileNavLink href="/how-it-works">How It Works</MobileNavLink>
 
-              {/* Solutions accordion */}
+              {/* Situations accordion */}
               <div>
                 <button
-                  onClick={() => setServicesOpen(!servicesOpen)}
+                  onClick={() => setSituationsOpen(!situationsOpen)}
                   className="w-full flex items-center justify-between px-4 py-3 text-sm font-bold"
                   style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)" }}
                 >
-                  <span>Solutions</span>
-                  <ChevronDown size={16} style={{ transform: servicesOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }} />
+                  <span>Your Situation</span>
+                  <ChevronDown size={16} style={{ transform: situationsOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }} />
                 </button>
-                {servicesOpen && (
+                {situationsOpen && (
                   <div className="pb-2" style={{ background: "oklch(0.97 0.01 85)" }}>
-                    {services.map((s) => (
+                    {topSituations.map((s) => (
                       <MobileNavLink key={s.href} href={s.href} indent>{s.label}</MobileNavLink>
                     ))}
+                    <MobileNavLink href="/sell-my-house" indent>See All Situations →</MobileNavLink>
                   </div>
                 )}
               </div>
 
-              {/* Cities accordion */}
-              <div>
-                <button
-                  onClick={() => setCitiesOpen(!citiesOpen)}
-                  className="w-full flex items-center justify-between px-4 py-3 text-sm font-bold"
-                  style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)" }}
-                >
-                  <span>Areas We Serve</span>
-                  <ChevronDown size={16} style={{ transform: citiesOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }} />
-                </button>
-                {citiesOpen && (
-                  <div className="pb-2" style={{ background: "oklch(0.97 0.01 85)" }}>
-                    {cities.map((c) => (
-                      <MobileNavLink key={c.href} href={c.href} indent>{c.label}</MobileNavLink>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <MobileNavLink href="/sell-my-house">🏠 Sell My House Fast</MobileNavLink>
-              <MobileNavLink href="/cash-offer-calculator">🧮 Free Cash Offer Calculator</MobileNavLink>
-              <MobileNavLink href="/sell-house-fast-faq">Sell House Fast FAQ</MobileNavLink>
               <MobileNavLink href="/about">About Connor</MobileNavLink>
-              <MobileNavLink href="/testimonials">⭐ Seller Testimonials</MobileNavLink>
-              <MobileNavLink href="/before-after">📸 Before &amp; After Gallery</MobileNavLink>
-              <MobileNavLink href="/how-it-works">How It Works</MobileNavLink>
-              <MobileNavLink href="/fresno-housing-market">Fresno Housing Market 2026</MobileNavLink>
-              <MobileNavLink href="/blog">Blog &amp; Resources</MobileNavLink>
+              <MobileNavLink href="/reviews">Reviews</MobileNavLink>
+              <MobileNavLink href="/sell-house-fast-faq">FAQ</MobileNavLink>
+              <MobileNavLink href="/blog">Blog</MobileNavLink>
               <MobileNavLink href="/contact">Contact</MobileNavLink>
 
               <div className="px-4 pt-3 pb-6">
@@ -558,17 +282,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Page content */}
       <main className="flex-1 pb-20 md:pb-0">{children}</main>
 
-      {/* Floating / sticky CTA — appears on all pages */}
+      {/* Global overlays */}
       <FloatingCTA />
       <TawkChat />
       <ExitIntentPopup />
 
-      {/* Footer */}
+      {/* ── FOOTER — Clean 4-column layout ── */}
       <footer style={{ background: "oklch(0.22 0.01 60)", color: "oklch(0.80 0.01 60)" }}>
         <div className="container py-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {/* Brand */}
-            <div className="lg:col-span-1">
+            <div>
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-lg" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Lora', serif" }}>A</div>
                 <div>
@@ -584,13 +308,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
                 CA DRE License #02219124
               </p>
+              <div className="mt-4 p-4 rounded-lg" style={{ background: "oklch(0.28 0.01 60)" }}>
+                <p className="text-xs mb-2" style={{ color: "oklch(0.65 0.01 60)" }}>Ready to get your offer?</p>
+                <Link href="/contact">
+                  <button className="w-full py-2 rounded-md text-sm font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Get My Cash Offer
+                  </button>
+                </Link>
+              </div>
             </div>
 
-            {/* Solutions */}
+            {/* Situations */}
             <div>
-              <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Solutions</h4>
+              <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Situations We Handle</h4>
               <ul className="space-y-2">
-                {services.map((s) => (
+                {footerSituations.map((s) => (
                   <li key={s.href}>
                     <Link href={s.href} className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>{s.label}</Link>
                   </li>
@@ -602,74 +334,24 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Areas We Serve</h4>
               <ul className="space-y-2">
-                {cities.map((c) => (
+                {footerCities.map((c) => (
                   <li key={c.href}>
                     <Link href={c.href} className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>{c.label}</Link>
                   </li>
                 ))}
-                <li><span className="text-sm" style={{ color: "oklch(0.50 0.01 60)" }}>Madera, Visalia, Hanford &amp; more</span></li>
               </ul>
             </div>
 
-            {/* Neighborhoods */}
-            <div>
-              <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Neighborhoods</h4>
-              <ul className="space-y-2">
-                {neighborhoods.map((n) => (
-                  <li key={n.href}>
-                    <Link href={n.href} className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>{n.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
             {/* Company */}
             <div>
               <h4 className="font-bold mb-4 text-sm" style={{ fontFamily: "'Lora', serif", color: "white", letterSpacing: "0.05em" }}>Company</h4>
               <ul className="space-y-2">
-                <li><Link href="/about" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>About Us</Link></li>
-                <li><Link href="/testimonials" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Seller Testimonials</Link></li>
-                <li><Link href="/our-deals" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Our Deals — Real Properties</Link></li>
-                <li><Link href="/before-after" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Before &amp; After Gallery</Link></li>
-                <li><Link href="/how-it-works" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>How It Works</Link></li>
-                <li><Link href="/fresno-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Housing Market 2026</Link></li>
-                <li><Link href="/stockton-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Stockton Housing Market 2026</Link></li>
-                <li><Link href="/modesto-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Modesto Housing Market 2026</Link></li>
-                <li><Link href="/san-joaquin-county" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>San Joaquin County Hub</Link></li>
-                <li><Link href="/kings-county" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Kings County Hub</Link></li>
-                <li><Link href="/fresno-real-estate-resources" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Real Estate Resources</Link></li>
-                <li><Link href="/sell-house-fast-hanford-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Hanford</Link></li>
-                <li><Link href="/sell-house-fast-stockton-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Stockton</Link></li>
-                <li><Link href="/sell-house-fast-modesto-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Modesto</Link></li>
-                <li><Link href="/blog" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Blog &amp; Resources</Link></li>
-                <li><Link href="/sell-house-fast-faq" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast FAQ</Link></li>
-                <li><Link href="/why-choose-us" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Why Choose Us</Link></li>
-                <li><Link href="/reviews" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Reviews</Link></li>
-                <li><Link href="/sell-home-fresno-options" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My Home Fresno — All Options</Link></li>
-                <li><Link href="/sell-my-house-fresno-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Fresno CA</Link></li>
-                <li><Link href="/sell-my-house-clovis-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Clovis CA</Link></li>
-                <li><Link href="/sell-my-house-visalia-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Visalia CA</Link></li>
-                <li><Link href="/sell-my-house-madera-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Madera CA</Link></li>
-                <li><Link href="/sell-my-house-hanford-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Hanford CA</Link></li>
-                <li><Link href="/sell-my-house-kingsburg-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Kingsburg CA</Link></li>
-                <li><Link href="/sell-my-house-kerman-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Kerman CA</Link></li>
-                <li><Link href="/sell-my-house-chowchilla-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Chowchilla CA</Link></li>
-                <li><Link href="/sell-house-as-is-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House As-Is Fresno</Link></li>
-                <li><Link href="/sell-my-house-cash-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House for Cash Fresno</Link></li>
-                <li><Link href="/sell-inherited-property-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell Inherited Property Fresno</Link></li>
-                <li><Link href="/california-probate-home-sale" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>California Probate Home Sale Guide</Link></li>
-                <li><Link href="/hoarder-home-buyer-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Hoarder Home Buyer Fresno</Link></li>
-                <li><Link href="/dont-get-wholesaled" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Don't Get Wholesaled</Link></li>
-                <li><Link href="/cash-offer-calculator" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Cash Offer Calculator</Link></li>
-                <li><Link href="/contact" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Contact</Link></li>
+                {footerCompany.map((c) => (
+                  <li key={c.href}>
+                    <Link href={c.href} className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>{c.label}</Link>
+                  </li>
+                ))}
               </ul>
-              <div className="mt-6 p-4 rounded-lg" style={{ background: "oklch(0.28 0.01 60)" }}>
-                <p className="text-xs mb-2" style={{ color: "oklch(0.65 0.01 60)" }}>Ready to get your offer?</p>
-                <Link href="/contact">
-                  <button className="w-full py-2 rounded-md text-sm font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Get Cash Offer
-                  </button>
-                </Link>
-              </div>
             </div>
           </div>
 
@@ -689,11 +371,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         className="lg:hidden fixed bottom-0 left-0 right-0 z-40"
         style={{ boxShadow: "0 -4px 24px oklch(0.22 0.01 60 / 0.35)" }}
       >
-        {/* Micro label */}
         <div className="flex items-center justify-center py-1" style={{ background: "oklch(0.22 0.01 60)", borderTop: "1px solid oklch(1 0 0 / 0.12)" }}>
           <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "oklch(0.70 0.06 55)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.10em" }}>Fresno's Only Agent + Cash Buyer</span>
         </div>
-        {/* Buttons */}
         <div className="flex">
           <a
             href={PHONE_HREF}

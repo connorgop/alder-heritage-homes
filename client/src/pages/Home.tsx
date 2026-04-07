@@ -1,8 +1,9 @@
 /* ============================================================
-   HOME PAGE — Alder Heritage Homes
-   Heritage Warmth design: Terracotta + Slate Green + Oat/Linen
-   Targets: foreclosure, second mortgage, can't pay, probate,
-            rent-back/holdback, fast sale, inherited homes
+   HOME PAGE — Alder Heritage Homes (Simplified)
+   Montana's feedback: Clean, guided, conversion-focused.
+   10 sections: Hero → Trust Bar → Cash vs Listing Calc →
+   Situation Finder → Stats → How It Works → Why Choose Us →
+   Testimonials → Areas We Serve → Final CTA
    ============================================================ */
 import { useState, useEffect, useRef } from "react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
@@ -12,19 +13,14 @@ import { useSEO, faqSchema } from "@/hooks/useSEO";
 import PageMeta from "@/components/PageMeta";
 import {
   Phone, ArrowRight, CheckCircle2, Clock, Shield, Star,
-  Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Heart, Loader2, MapPin
+  Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Loader2, MapPin
 } from "lucide-react";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp";
-const CONNOR_CLIENT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-client-clovis_ca91f4c9.webp";
-const ILLINOIS_FLIP_VIDEO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/illinois-ave-flip-fresno_924b59f9.mov";
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
-const FORECLOSURE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/foreclosure-help-TU46LJDiCeKVaTFvCVuw8j.webp";
-const VIDEO_INTRO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv23_1c0c77d4.MP4";
-const VIDEO_WHY_US = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/video-realtors_8f735f00.mp4";
 
 const situations = [
   {
@@ -158,6 +154,8 @@ const testimonials = [
     color: "oklch(0.40 0.06 155)",
   },
 ];
+
+/* ── Helper Components ── */
 
 function AnimatedCounter({ target, suffix = "" }: { target: number | string; suffix?: string }) {
   const [count, setCount] = useState(0);
@@ -297,7 +295,6 @@ function InstantCashCalculator() {
         position: "relative",
       }}
     >
-      {/* Pulsing attention ring */}
       <div
         className="absolute inset-0 rounded-2xl pointer-events-none"
         style={{
@@ -306,7 +303,6 @@ function InstantCashCalculator() {
           borderRadius: "inherit",
         }}
       />
-      {/* Header */}
       <div className="px-7 py-5" style={{ background: "linear-gradient(135deg, oklch(0.48 0.16 42) 0%, oklch(0.60 0.18 55) 100%)" }}>
         <div className="flex items-center gap-3 mb-1">
           <span className="text-2xl" style={{ filter: "drop-shadow(0 0 6px oklch(0.90 0.20 75))" }}>⚡</span>
@@ -315,7 +311,6 @@ function InstantCashCalculator() {
         </div>
         <p className="text-sm font-semibold" style={{ color: "oklch(0.96 0.06 85)", fontFamily: "'Nunito Sans', sans-serif" }}>Enter your address → get a cash offer by text in 60 seconds</p>
       </div>
-      {/* Form */}
       <form onSubmit={handleAddressSubmit} className="p-7">
         <label className="block text-xs font-bold mb-2 uppercase tracking-widest" style={{ color: "oklch(0.45 0.05 55)", fontFamily: "'DM Mono', monospace" }}>Property Address</label>
         <input
@@ -538,7 +533,6 @@ function InlineOfferForm() {
 
   return (
     <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ background: "oklch(1 0 0 / 0.06)", border: "1.5px solid oklch(1 0 0 / 0.15)" }}>
-      {/* Form header */}
       <div className="px-8 py-5" style={{ background: "oklch(0.55 0.13 42)" }}>
         <h3 className="text-xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Get Your Free Cash Offer</h3>
         <p className="text-sm mt-1" style={{ color: "oklch(0.90 0.04 85)", fontFamily: "'DM Mono', monospace" }}>No obligation · We respond within 24 hours</p>
@@ -548,49 +542,18 @@ function InlineOfferForm() {
         className="p-8 space-y-4"
       >
         <div className="grid sm:grid-cols-2 gap-4">
-          <input
-            required
-            placeholder="Your name *"
-            value={form.name}
-            onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
-            style={inputStyle}
-            onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")}
-            onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")}
-          />
-          <input
-            required
-            type="tel"
-            placeholder="Phone number *"
-            value={form.phone}
-            onChange={e => setForm(f => ({ ...f, phone: e.target.value }))}
-            style={inputStyle}
-            onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")}
-            onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")}
-          />
+          <input required placeholder="Your name *" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} style={inputStyle}
+            onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
+          <input required type="tel" placeholder="Phone number *" value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))} style={inputStyle}
+            onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
         </div>
-        <input
-          type="email"
-          placeholder="Email address (optional)"
-          value={form.email}
-          onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
-          style={inputStyle}
-          onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")}
-          onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")}
-        />
-        <input
-          placeholder="Property address"
-          value={form.address}
-          onChange={e => setForm(f => ({ ...f, address: e.target.value }))}
-          style={inputStyle}
-          onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")}
-          onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")}
-        />
+        <input type="email" placeholder="Email address (optional)" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} style={inputStyle}
+          onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
+        <input placeholder="Property address" value={form.address} onChange={e => setForm(f => ({ ...f, address: e.target.value }))} style={inputStyle}
+          onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
         <div className="grid sm:grid-cols-2 gap-4">
-          <select
-            value={form.situation}
-            onChange={e => setForm(f => ({ ...f, situation: e.target.value }))}
-            style={{ ...inputStyle, color: form.situation ? "white" : "oklch(0.65 0.01 60)" }}
-          >
+          <select value={form.situation} onChange={e => setForm(f => ({ ...f, situation: e.target.value }))}
+            style={{ ...inputStyle, color: form.situation ? "white" : "oklch(0.65 0.01 60)" }}>
             <option value="">My situation...</option>
             <option value="foreclosure">Facing foreclosure</option>
             <option value="behind">Behind on mortgage</option>
@@ -600,11 +563,8 @@ function InlineOfferForm() {
             <option value="fast-sale">Just need to sell fast</option>
             <option value="other">Other</option>
           </select>
-          <select
-            value={form.timeline}
-            onChange={e => setForm(f => ({ ...f, timeline: e.target.value }))}
-            style={{ ...inputStyle, color: form.timeline ? "white" : "oklch(0.65 0.01 60)" }}
-          >
+          <select value={form.timeline} onChange={e => setForm(f => ({ ...f, timeline: e.target.value }))}
+            style={{ ...inputStyle, color: form.timeline ? "white" : "oklch(0.65 0.01 60)" }}>
             <option value="">My timeline...</option>
             <option value="asap">As soon as possible</option>
             <option value="30days">Within 30 days</option>
@@ -635,6 +595,8 @@ function InlineOfferForm() {
   );
 }
 
+/* ── Main Page Component ── */
+
 export default function HomePage() {
   useSEO({
     title: "Sell My Home Fresno CA | Cash Offer or List With an Agent | Alder Heritage Homes",
@@ -649,6 +611,7 @@ export default function HomePage() {
       { q: "How much will you pay for my house?", a: "We provide a free third-party broker opinion of value with every offer so you can verify our number is fair. Cash offers are typically 70–85% of after-repair value depending on condition and location. We will never lowball you without explaining the math." },
     ]),
   });
+
   return (
     <Layout>
       <PageMeta
@@ -656,21 +619,16 @@ export default function HomePage() {
         description="Sell your home in Fresno CA — cash offer in 24 hours OR list with a licensed agent. The only Fresno company offering both options. DRE #02219124. No repairs, no fees. Call (559) 281-8016."
         path="/"
       />
-      {/* ── HERO ── */}
+
+      {/* ── 1. HERO ── */}
       <section className="relative min-h-[100svh] sm:min-h-[92vh] flex items-center overflow-hidden" style={{ paddingBottom: "6rem", paddingTop: "2rem" }}>
-        {/* Background image */}
         <div className="absolute inset-0">
-          <img
-            src={HERO_IMG}
-            alt="California craftsman home in Fresno"
-            className="w-full h-full object-cover"
-          />
+          <img src={HERO_IMG} alt="California craftsman home in Fresno" className="w-full h-full object-cover" />
           <div className="absolute inset-0" style={{ background: "linear-gradient(105deg, oklch(0.22 0.01 60 / 0.82) 0%, oklch(0.22 0.01 60 / 0.55) 55%, oklch(0.22 0.01 60 / 0.2) 100%)" }} />
         </div>
 
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Headline */}
             <div>
               <div className="fade-up" style={{ animationDelay: "0s" }}>
                 <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-6" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
@@ -678,15 +636,12 @@ export default function HomePage() {
                 </span>
               </div>
               <h1 className="fade-up fade-up-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
-                Sell Your Home in Fresno &amp; the Entire Central Valley —
+                Sell Your Home in Fresno —
                 <span style={{ color: "oklch(0.75 0.10 42)" }}> Cash Offer or Agent Listing. You Choose.</span>
               </h1>
               <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-4 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 The <strong style={{ color: "oklch(0.92 0.04 85)" }}>only company in Fresno</strong> that is both a licensed real estate agent and a direct cash buyer. Get a cash offer in 24 hours, or let us list your home for maximum value — one call, both options, no pressure.
               </p>
-              <div className="fade-up fade-up-delay-2 mb-6 px-3 py-2 rounded-lg text-xs leading-relaxed" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.80 0.02 60)", fontFamily: "'DM Mono', monospace" }}>
-                <span style={{ color: "oklch(0.75 0.10 42)", fontWeight: 700 }}>Serving:</span> Fresno · Clovis · Madera · Visalia · Hanford · Kingsburg · Bakersfield · Stockton · anywhere in the Central Valley — <span style={{ color: "white", fontWeight: 600 }}>Connor will personally drive to your property within 24 hours.</span>
-              </div>
               <div className="fade-up fade-up-delay-3 flex flex-wrap gap-x-6 gap-y-2">
                 {["Cash offer OR agent listing", "No repairs needed", "Close in 5–7 days", "Licensed Agent DRE #02219124"].map((t) => (
                   <div key={t} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.85 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
@@ -701,20 +656,13 @@ export default function HomePage() {
                 </a>
                 <span className="text-sm" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'DM Mono', monospace" }}>or call directly</span>
               </div>
-              <div className="fade-up fade-up-delay-4 mt-3">
-                <a href="/sell-home-fresno-options" className="inline-flex items-center gap-1.5 text-sm font-semibold transition-all hover:gap-2.5" style={{ color: "oklch(0.78 0.08 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  See all your options — cash offer vs. listing <ArrowRight size={14} />
-                </a>
-              </div>
             </div>
-              {/* Right: Instant Cash Calculator */}
             <div className="fade-up fade-up-delay-2">
               <InstantCashCalculator />
-              {/* Social proof counter */}
               <div className="mt-3 flex items-center justify-center gap-2 px-4 py-2 rounded-full" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
                 <div className="flex -space-x-2">
                   {[
-                    { src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=32&h=32&fit=crop&crop=face", label: "Fresno homeowner who sold for cash" },
+                    { src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=32&h=32&fit=crop&crop=face", label: "Fresno homeowner" },
                     { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face", label: "Central Valley seller" },
                     { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop&crop=face", label: "Clovis homeowner" },
                   ].map(({ src, label }, i) => (
@@ -728,188 +676,42 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-
-        {/* Diagonal bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-20" style={{ background: "oklch(0.97 0.015 85)", clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }} />
       </section>
 
-      {/* ── VACANT PROPERTY URGENT WARNING ── */}
-      <section
-        style={{
-          background: "linear-gradient(90deg, oklch(0.28 0.08 30) 0%, oklch(0.32 0.10 35) 100%)",
-          borderTop: "3px solid oklch(0.65 0.18 45)",
-          borderBottom: "3px solid oklch(0.65 0.18 45)",
-        }}
-      >
-        <div className="container">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 py-4">
-            {/* Icon + label */}
-            <div className="flex items-center gap-3 flex-shrink-0">
-              <div
-                className="flex items-center justify-center rounded-lg"
-                style={{
-                  width: "2.6rem",
-                  height: "2.6rem",
-                  background: "oklch(0.65 0.18 45)",
-                  boxShadow: "0 0 14px oklch(0.65 0.18 45 / 0.6)",
-                  flexShrink: 0,
-                  animation: "ping 2s cubic-bezier(0,0,0.2,1) infinite",
-                }}
-              >
-                <span style={{ fontSize: "1.2rem" }}>⚠</span>
-              </div>
-              <div>
-                <div className="text-xs font-bold uppercase tracking-widest" style={{ color: "oklch(0.90 0.12 55)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.12em" }}>Urgent — Vacant Property Warning</div>
-                <div className="text-base font-bold text-white" style={{ fontFamily: "'Lora', serif", lineHeight: 1.2 }}>Is the Home Sitting Vacant?</div>
-              </div>
-            </div>
-            {/* Message */}
-            <p className="text-sm leading-snug flex-1" style={{ color: "oklch(0.88 0.03 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Vacant homes in Fresno and the Central Valley get broken into fast — doors, windows, and crawl spaces under raised foundations. I will help you secure it or connect you with someone who can board it up and re-key every access point the same day.
-            </p>
-            {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-2 flex-shrink-0">
-              <a
-                href="tel:5592818016"
-                className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm text-white transition-all hover:scale-105"
-                style={{ background: "oklch(0.65 0.18 45)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 4px 16px oklch(0.65 0.18 45 / 0.5)", whiteSpace: "nowrap" }}
-              >
-                <Phone size={15} /> Call Now: (559) 281-8016
-              </a>
-              <a
-                href="/vacant-property-warning"
-                className="flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm transition-all hover:scale-105"
-                style={{ background: "oklch(1 0 0 / 0.10)", border: "1px solid oklch(1 0 0 / 0.25)", color: "oklch(0.90 0.06 55)", fontFamily: "'Nunito Sans', sans-serif", whiteSpace: "nowrap" }}
-              >
-                See All Vacant Property Risks <ArrowRight size={14} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── TRUST BAR ── */}
+      {/* ── 2. TRUST BAR ── */}
       <section className="py-4" style={{ background: "oklch(0.22 0.01 60)", borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
         <div className="container">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-            {/* Google stars */}
             <div className="flex items-center gap-2">
               <div className="flex gap-0.5">
                 {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />)}
               </div>
               <span className="text-sm font-bold text-white" style={{ fontFamily: "'DM Mono', monospace" }}>5.0 Google Rating</span>
             </div>
-            <div className="hidden sm:block w-px h-5" style={{ background: "oklch(1 0 0 / 0.15)" }} />
-            {/* DRE badge */}
-            <div className="flex items-center gap-2">
+            <div className="hidden sm:flex items-center gap-2">
               <Shield size={14} style={{ color: "oklch(0.65 0.10 145)" }} />
-              <span className="text-sm text-white" style={{ fontFamily: "'DM Mono', monospace" }}>Licensed CA Agent · DRE #02219124</span>
+              <span className="text-sm font-semibold text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>CA DRE #02219124</span>
             </div>
-            <div className="hidden sm:block w-px h-5" style={{ background: "oklch(1 0 0 / 0.15)" }} />
-            {/* Deals */}
+            <div className="hidden sm:flex items-center gap-2">
+              <HomeIcon size={14} style={{ color: "oklch(0.55 0.13 42)" }} />
+              <span className="text-sm font-semibold text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>47+ Homes Purchased</span>
+            </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 size={14} style={{ color: "oklch(0.65 0.10 145)" }} />
-              <span className="text-sm text-white" style={{ fontFamily: "'DM Mono', monospace" }}>47+ Homes Purchased</span>
-            </div>
-            <div className="hidden sm:block w-px h-5" style={{ background: "oklch(1 0 0 / 0.15)" }} />
-            {/* No wholesaling */}
-            <div className="flex items-center gap-2">
-              <span className="text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>REAL BUYER</span>
-              <span className="text-sm text-white" style={{ fontFamily: "'DM Mono', monospace" }}>Not a Wholesaler</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* ── INTRO VIDEO ── */}
-      <section className="py-20" style={{ background: "oklch(0.93 0.02 85)" }}>
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
-                Meet Connor
-              </span>
-              <h2 className="mt-3 text-3xl md:text-4xl font-bold mb-5" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
-                A Local Fresno Buyer You Can Actually Trust
-              </h2>
-              <p className="text-lg leading-relaxed mb-6" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Do you have a house in Fresno that you need to sell? Whether you're dealing with an inherited home, facing foreclosure, or simply ready to move on — we're here to help. Watch Connor explain how we work.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
-                  <button className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Get My Cash Offer <ArrowRight size={18} />
-                  </button>
-                </Link>
-                <a href={PHONE_HREF} className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)", color: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  <Phone size={18} /> {PHONE}
-                </a>
-              </div>
-            </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl mx-auto" style={{ aspectRatio: "9/16", maxWidth: "360px" }}>
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                className="w-full h-full object-contain"
-                poster={HERO_IMG}
-                style={{ background: "oklch(0.10 0.01 60)" }}
-              >
-                <source src={VIDEO_INTRO} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <span className="text-sm font-semibold text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>Not a Wholesaler — Real End Buyer</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── YOUTUBE EXPLAINER VIDEO ── */}
-      <section className="py-16" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="container">
-          <div className="text-center mb-10">
-            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
-              How It Works
-            </span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>
-              How Cash Home Buyers Work — Explained in 2 Minutes
-            </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Not sure what to expect? This short video walks you through the entire process — from your first call to cash in hand. No jargon, no pressure.
-            </p>
-          </div>
-          <div className="max-w-3xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ aspectRatio: "16/9" }}>
-              <iframe
-                src="https://www.youtube.com/embed/3naTL5fIqEc?rel=0&modestbranding=1&color=white&start=80"
-                title="Cash Home Buyers Explained: How They Work & What You'll Get"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-                style={{ border: "none" }}
-              />
-            </div>
-            <div className="mt-6 flex flex-wrap justify-center gap-6">
-              {[
-                { label: "No repairs needed", icon: "✓" },
-                { label: "No agent commissions", icon: "✓" },
-                { label: "Close in 7 days", icon: "✓" },
-                { label: "Any condition", icon: "✓" },
-                { label: "No open houses", icon: "✓" },
-              ].map((item) => (
-                <div key={item.label} className="flex items-center gap-2">
-                  <span className="font-bold" style={{ color: "oklch(0.55 0.13 42)" }}>{item.icon}</span>
-                  <span className="text-sm font-medium" style={{ color: "oklch(0.80 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{item.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ── 3. CASH OFFER VS LISTING CALCULATOR ── */}
+      <CashOfferVsListingCalc />
 
-      {/* ── SITUATION FINDER ── */}
+      {/* ── 4. SITUATION FINDER ── */}
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
         <div className="container">
           <div className="text-center mb-14">
-            <span className="font-mono-label" style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
               What's Your Situation?
             </span>
             <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
@@ -923,14 +725,14 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {situations.map((s) => (
               <Link key={s.href} href={s.href}>
-                <div className="situation-card h-full group" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)", borderRadius: "0.75rem", padding: "2rem", transition: "all 0.3s ease", cursor: "pointer", position: "relative", overflow: "hidden" }}>
+                <div className="h-full group" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)", borderRadius: "0.75rem", padding: "2rem", transition: "all 0.3s ease", cursor: "pointer", position: "relative", overflow: "hidden" }}>
                   <div className="absolute top-0 left-0 w-1 h-full transition-all duration-300 group-hover:w-1.5" style={{ background: s.color }} />
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: `${s.color.replace("oklch", "oklch").replace(")", " / 0.1)")}`, color: s.color }}>
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: `${s.color.replace(")", " / 0.1)")}`, color: s.color }}>
                       {s.icon}
                     </div>
                     <div>
-                      <h3 className="font-bold text-lg mb-2 group-hover:text-terracotta transition-colors" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                      <h3 className="font-bold text-lg mb-2 transition-colors" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
                         {s.title}
                       </h3>
                       <p className="text-sm leading-relaxed" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
@@ -945,10 +747,16 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+
+          <div className="text-center mt-8">
+            <Link href="/sell-my-house" className="inline-flex items-center gap-2 text-sm font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              See all situations we handle — hoarder homes, fire damage, code violations, and more <ArrowRight size={14} />
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* ── STATS BAR ── */}
+      {/* ── 5. STATS BAR ── */}
       <section className="py-16" style={{ background: "oklch(0.28 0.05 155)" }}>
         <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -970,12 +778,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── HOW IT WORKS ── */}
+      {/* ── 6. HOW IT WORKS ── */}
       <section className="py-24" style={{ background: "oklch(0.93 0.02 85)" }}>
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="font-mono-label" style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
                 Simple Process
               </span>
               <h2 className="mt-3 text-3xl md:text-4xl font-bold mb-6" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
@@ -1023,215 +831,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── RENT-BACK HIGHLIGHT ── */}
-      <section className="py-20" style={{ background: "oklch(0.28 0.05 155)" }}>
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                Unique Program
-              </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white" style={{ fontFamily: "'Lora', serif" }}>
-                "Can I Sell My House and Still Live in It?"
-              </h2>
-              <p className="text-lg mb-6 leading-relaxed" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                <strong className="text-white">Yes — and it's more common than you think.</strong> It's called a <strong className="text-white">Rent-Back</strong> (or Holdback Agreement). You sell your home to us for cash today, then rent it back from us for a period of time while you find your next place.
-              </p>
-              <ul className="space-y-3 mb-8">
-                {[
-                  "Get your cash now — don't wait months to move",
-                  "Stay in your home on a flexible rental agreement",
-                  "No rush, no pressure — move on your timeline",
-                  "Perfect if you need funds before you can relocate",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    <CheckCircle2 size={18} className="flex-shrink-0 mt-0.5" style={{ color: "oklch(0.65 0.10 145)" }} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/sell-and-stay-rent-back">
-                <button className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  Learn About Rent-Back <ArrowRight size={18} />
-                </button>
-              </Link>
-            </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img src={FORECLOSURE_IMG} alt="Homeowner considering rent-back option" className="w-full h-80 object-cover" />
-              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0.28 0.05 155 / 0.6) 0%, transparent 60%)" }} />
-              <div className="absolute bottom-6 left-6 right-6">
-                <div className="p-4 rounded-xl" style={{ background: "oklch(1 0 0 / 0.12)", backdropFilter: "blur(8px)", border: "1px solid oklch(1 0 0 / 0.2)" }}>
-                  <p className="text-sm font-medium text-white" style={{ fontFamily: "'Lora', serif", fontStyle: "italic" }}>
-                    "I sold my house and stayed for 60 days while I found my new home. I didn't even know this was an option."
-                  </p>
-                  <p className="text-xs mt-2" style={{ color: "oklch(0.75 0.02 155)", fontFamily: "'DM Mono', monospace" }}>— James K., Sanger CA</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── WHY NOT USE A REALTOR VIDEO ── */}
-      <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1" style={{ aspectRatio: "16/9" }}>
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                className="w-full h-full object-cover"
-                poster={HANDSHAKE_IMG}
-                style={{ background: "oklch(0.22 0.01 60)" }}
-              >
-                <source src={VIDEO_WHY_US} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div className="order-1 lg:order-2">
-              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
-                The Truth About Listing
-              </span>
-              <h2 className="mt-3 text-3xl md:text-4xl font-bold mb-5" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
-                Why Selling to Us Beats Listing With an Agent
-              </h2>
-              <p className="text-lg leading-relaxed mb-5" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Listing with a realtor means open houses, photographer fees, repair demands, and buyers who can back out of escrow at the last minute. Watch this short video to understand the difference.
-              </p>
-              <ul className="space-y-3 mb-6">
-                {[
-                  "No open houses or weekend showings",
-                  "No repair demands or inspection contingencies",
-                  "No risk of buyer financing falling through",
-                  "Cash in hand in 5–7 days",
-                ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-sm font-medium" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    <CheckCircle2 size={16} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/contact">
-                <button className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  Skip the Hassle — Get My Offer <ArrowRight size={18} />
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CASH OFFER VS LISTING CALCULATOR ── */}
-      <CashOfferVsListingCalc />
-
-      {/* ── HERITAGE DEFINITION ── */}
-      <section className="py-16" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="container max-w-4xl mx-auto text-center">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-6" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-            What Is Heritage?
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.25 }}>
-            Heritage is a collective of private, ethical investors &amp; real estate brokers.
-          </h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto" style={{ color: "oklch(0.78 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", lineHeight: 1.75 }}>
-            We live to serve. We work for you. We operate under many different entities — but every one of them shares the same standard: transparency, fair offers, and a commitment to doing right by the homeowner.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-            {[
-              { icon: "🤝", title: "We Work For You", body: "Our only goal is to find the best path forward for your situation — whether that's a cash sale, a traditional listing, or something in between. We tell you the truth even when it costs us the deal." },
-              { icon: "🏛️", title: "Private & Ethical", body: "Every investor in our collective is vetted, licensed where required, and held to a strict code of conduct. No bait-and-switch, no assignment clauses, no wholesaling your contract to a stranger." },
-              { icon: "🔑", title: "Multiple Entities, One Standard", body: "We buy under several entities depending on the deal structure — but the standard never changes. You always know who you're dealing with, and proof of funds is available within 24 hours." },
-            ].map((card) => (
-              <div key={card.title} className="p-6 rounded-2xl text-left" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
-                <div className="text-3xl mb-3">{card.icon}</div>
-                <h3 className="font-bold text-white mb-2" style={{ fontFamily: "'Lora', serif", fontSize: "1.05rem" }}>{card.title}</h3>
-                <p style={{ color: "oklch(0.72 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", lineHeight: 1.65 }}>{card.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── REALTOR CAUTION WARNING ── */}
-      <section className="py-16" style={{ background: "oklch(0.97 0.015 85)" }}>
-        <div className="container max-w-4xl mx-auto">
-          <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "2px solid oklch(0.65 0.20 27 / 0.5)" }}>
-            {/* Warning header */}
-            <div className="px-6 py-4 flex items-start gap-4" style={{ background: "oklch(0.65 0.20 27)" }}>
-              <span style={{ fontSize: "1.6rem", lineHeight: 1 }}>⚠️</span>
-              <div>
-                <p className="font-bold text-white text-lg" style={{ fontFamily: "'Lora', serif" }}>
-                  A Word of Caution: Don't Hire a Friend, Family Member, or Part-Time Realtor
-                </p>
-                <p className="text-sm mt-0.5" style={{ color: "oklch(0.95 0.02 60)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.04em" }}>
-                  Your home is likely your largest asset — it deserves a specialist, not a favor
-                </p>
-              </div>
-            </div>
-            {/* Body */}
-            <div className="px-6 py-6" style={{ background: "oklch(0.99 0.01 60)" }}>
-              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                We hear it constantly: <em>"My cousin just got her license"</em> or <em>"My neighbor is an agent and offered to help."</em> We understand the impulse — it feels supportive. But <strong>hiring a friend or family member who dabbles in real estate is one of the most expensive mistakes a home seller can make.</strong>
-              </p>
-              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                The Fresno market is competitive. Pricing strategy, negotiation, days-on-market management, and buyer qualification are skills that take hundreds of transactions to develop. An agent doing 5–8 deals a year — no matter how well-meaning — simply does not have the pattern recognition to protect your equity the way a specialist does.
-              </p>
-
-              {/* Red flag callout */}
-              <div className="rounded-xl p-4 mb-5" style={{ background: "oklch(0.65 0.20 27 / 0.07)", border: "1px solid oklch(0.65 0.20 27 / 0.30)" }}>
-                <p className="font-bold mb-3" style={{ color: "oklch(0.40 0.12 27)", fontFamily: "'Lora', serif" }}>What a low-volume agent costs you:</p>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-3">
-                  {[
-                    { label: "Overpriced listing → price reductions", cost: "$10,000–$30,000" },
-                    { label: "Pest & home inspection repairs", cost: "$5,000–$15,000" },
-                    { label: "Seller credits to close", cost: "$3,000–$10,000" },
-                    { label: "Agent commission", cost: "5–6% of sale price" },
-                  ].map((item) => (
-                    <div key={item.label} className="rounded-lg p-3 text-center" style={{ background: "oklch(1 0 0)", border: "1px solid oklch(0.88 0.02 85)" }}>
-                      <div className="font-bold text-sm mb-1" style={{ color: "oklch(0.65 0.20 27)", fontFamily: "'DM Mono', monospace" }}>{item.cost}</div>
-                      <div className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{item.label}</div>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-sm italic" style={{ color: "oklch(0.45 0.05 27)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  A home that sits 90+ days and gets beaten down in price will net you <strong>less</strong> than a properly priced home that closes in 30 days — even after the commission.
-                </p>
-              </div>
-
-              {/* The standard */}
-              <div className="rounded-xl p-4 mb-5" style={{ background: "oklch(0.28 0.05 155 / 0.07)", border: "1px solid oklch(0.28 0.05 155 / 0.25)" }}>
-                <p className="font-bold mb-2" style={{ color: "oklch(0.28 0.05 155)", fontFamily: "'Lora', serif" }}>The standard Connor holds: 50+ closed transactions per year in your city.</p>
-                <p className="text-sm leading-relaxed" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  If you decide a traditional listing is the right move, Connor will refer you to one of Fresno's top-producing agents — people he personally knows, trusts, and has vetted. These are agents closing 50 to 100+ deals a year in the Central Valley. They know the micro-market, they price correctly from day one, and they have the buyer network to get your home sold fast. <strong>Connor is also a licensed CA agent (DRE #02219124)</strong> and works alongside these professionals daily.
-                </p>
-              </div>
-
-              <p className="text-base leading-relaxed mb-5" style={{ color: "oklch(0.30 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                <strong>The bottom line:</strong> You have three options. Sell to Connor directly for cash (fastest, no commissions, no repairs). List with a top-producing agent Connor refers you to (best net price if your home is in good shape). Or call Connor first and let him tell you honestly which path makes more sense for your specific situation — he'll never push you toward the option that benefits him most.
-              </p>
-              <div className="mt-5 flex flex-col sm:flex-row gap-3">
-                <Link href="/contact">
-                  <button className="flex items-center gap-2 px-6 py-3 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Get a No-Obligation Cash Offer <ArrowRight size={15} />
-                  </button>
-                </Link>
-                <Link href="/dont-hire-friend-realtor">
-                  <button className="flex items-center gap-2 px-6 py-3 rounded-lg font-bold text-sm" style={{ background: "transparent", border: "2px solid oklch(0.55 0.13 42)", color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Read: Don't Hire Your Friend Realtor →
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── WHY CHOOSE US ── */}
+      {/* ── 7. WHY CHOOSE US ── */}
       <section className="py-24" style={{ background: "oklch(0.97 0.015 85)" }}>
         <div className="container">
           <div className="text-center mb-14">
-            <span className="font-mono-label" style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
               Why Alder Heritage
             </span>
             <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
@@ -1243,7 +847,6 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Comparison table */}
             <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "2px solid oklch(0.88 0.02 85)" }}>
               <div className="p-4 text-center font-bold" style={{ background: "oklch(0.93 0.02 85)", fontFamily: "'Lora', serif", color: "oklch(0.45 0.01 60)" }}>
                 Typical Wholesaler
@@ -1279,27 +882,12 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-
-          {/* Broker Opinion Callout */}
-          <div className="mt-10 max-w-4xl mx-auto p-6 rounded-2xl" style={{ background: "oklch(0.28 0.05 155 / 0.08)", border: "2px solid oklch(0.28 0.05 155 / 0.25)" }}>
-            <div className="flex flex-col md:flex-row gap-4 items-start">
-              <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center text-white font-bold text-lg" style={{ background: "oklch(0.28 0.05 155)", fontFamily: "'Lora', serif" }}>📋</div>
-              <div>
-                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>You Get an Independent Broker Opinion of Value — Before You Decide Anything</h3>
-                <p style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.01 60)", lineHeight: 1.7, fontSize: "0.95rem" }}>
-                  Connor could list your home on the MLS — but he won't, because buying and listing the same property is a conflict of interest he refuses to participate in. Instead, every property plan he sends includes a <strong>Broker Opinion of Value from an independent Fresno broker</strong> with 1,800+ completed transactions over a 25-year career — so you know exactly what your home is worth before you decide. If a traditional listing is clearly the better path, he'll tell you honestly and refer you to his trusted broker partner. His goal is to be your real estate resource and protect you from bad actors — not just to buy your house.
-                </p>
-                <a href="/why-choose-us" className="inline-flex items-center gap-2 mt-3 text-sm font-bold" style={{ color: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>Learn more about how we protect you →</a>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* ── TESTIMONIALS / GOOGLE REVIEWS ── */}
+      {/* ── 8. TESTIMONIALS ── */}
       <section className="py-20 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="container">
-          {/* Header */}
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div>
               <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
@@ -1308,295 +896,46 @@ export default function HomePage() {
               <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>
                 Homeowners We've Helped
               </h2>
-              <p className="mt-2 text-sm" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Real reviews from Central Valley homeowners — every situation, every city.
-              </p>
             </div>
-            {/* Google rating badge */}
-            <div className="flex-shrink-0 flex items-center gap-3 px-5 py-3 rounded-2xl" style={{ background: "oklch(1 0 0 / 0.07)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
-              <div>
-                <div className="text-3xl font-bold text-white" style={{ fontFamily: "'Lora', serif", lineHeight: 1 }}>5.0</div>
-                <div className="flex gap-0.5 mt-1">
-                  {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />)}
-                </div>
+            <div className="flex-shrink-0 flex items-center gap-3 px-5 py-3 rounded-2xl" style={{ background: "oklch(1 0 0 / 0.07)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
+              <div className="flex gap-0.5">
+                {[1,2,3,4,5].map(i => <Star key={i} size={16} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />)}
               </div>
-              <div style={{ borderLeft: "1px solid oklch(1 0 0 / 0.15)", paddingLeft: "0.75rem" }}>
-                <div className="text-xs font-bold text-white" style={{ fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em" }}>GOOGLE</div>
-                <div className="text-xs" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Verified Reviews</div>
-              </div>
+              <span className="text-sm font-bold text-white" style={{ fontFamily: "'DM Mono', monospace" }}>5.0 on Google</span>
             </div>
           </div>
 
-          {/* Reviews grid — 2 rows on desktop, scrollable on mobile */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t) => (
-              <div
-                key={t.name}
-                className="p-6 rounded-2xl flex flex-col gap-4 transition-transform hover:-translate-y-1"
-                style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)", backdropFilter: "blur(4px)" }}
-              >
-                {/* Top row: avatar + name + situation badge */}
-                <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-11 h-11 rounded-full overflow-hidden border-2" style={{ borderColor: t.color }}>
-                    <img
-                      src={t.avatar}
-                      alt={t.name}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const el = e.currentTarget as HTMLImageElement;
-                        el.style.display = 'none';
-                        const parent = el.parentElement;
-                        if (parent) {
-                          parent.style.background = t.color;
-                          parent.style.display = 'flex';
-                          parent.style.alignItems = 'center';
-                          parent.style.justifyContent = 'center';
-                          parent.innerHTML = `<span style="color:white;font-family:'DM Mono',monospace;font-weight:700;font-size:0.85rem">${t.initials}</span>`;
-                        }
-                      }}
-                    />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="font-bold text-white text-sm" style={{ fontFamily: "'Lora', serif" }}>{t.name}</div>
-                    <div className="text-xs" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'DM Mono', monospace" }}>{t.city}</div>
-                  </div>
-                  <span
-                    className="flex-shrink-0 px-2 py-0.5 rounded-full text-xs font-semibold"
-                    style={{ background: `${t.color}33`, color: "oklch(0.85 0.04 75)", fontFamily: "'DM Mono', monospace", fontSize: "0.65rem", letterSpacing: "0.04em", textTransform: "uppercase" }}
-                  >
-                    {t.situation}
-                  </span>
-                </div>
-
-                {/* Stars */}
-                <div className="flex gap-1">
+              <div key={t.name} className="rounded-2xl p-6" style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.10)" }}>
+                <div className="flex gap-0.5 mb-4">
                   {Array.from({ length: t.stars }).map((_, i) => (
                     <Star key={i} size={14} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />
                   ))}
                 </div>
-
-                {/* Review text */}
-                <p className="text-sm leading-relaxed flex-1" style={{ color: "oklch(0.80 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", fontStyle: "italic" }}>
+                <p className="text-sm leading-relaxed mb-5" style={{ color: "oklch(0.80 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                   "{t.text}"
                 </p>
-
-                {/* Google G icon */}
-                <div className="flex items-center gap-1.5">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
-                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                  </svg>
-                  <span style={{ fontSize: "0.65rem", color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace" }}>Google Review</span>
+                <div className="flex items-center gap-3 pt-4 border-t" style={{ borderColor: "oklch(1 0 0 / 0.10)" }}>
+                  <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover" />
+                  <div>
+                    <div className="font-bold text-sm text-white" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>{t.name}</div>
+                    <div className="text-xs" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace" }}>{t.city} · {t.situation}</div>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Bottom CTA */}
-          <div className="mt-10 text-center">
-            <p className="text-sm mb-4" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Join hundreds of Central Valley homeowners who chose a better way to sell.
-            </p>
-            <Link href="/contact">
-              <button className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Get My Free Cash Offer <ArrowRight size={16} />
-              </button>
+          <div className="text-center mt-10">
+            <Link href="/reviews" className="inline-flex items-center gap-2 text-sm font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Read all reviews <ArrowRight size={14} />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ── FEATURED DEAL: CLOVIS CASE STUDY ── */}
-      <section className="py-20" style={{ background: "oklch(0.93 0.02 85)" }}>
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-14 items-center max-w-5xl mx-auto">
-            {/* Photo side */}
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42)", aspectRatio: "4/5" }}>
-                <img
-                  src={CONNOR_CLIENT_PHOTO}
-                  alt="Connor Morris with a past client in Clovis, California"
-                  className="w-full h-full object-cover"
-                  style={{ objectPosition: "center 15%" }}
-                />
-              </div>
-              {/* Floating badge */}
-              <div className="absolute bottom-3 right-3 sm:-bottom-5 sm:-right-4 px-4 py-2.5 rounded-xl shadow-xl" style={{ background: "oklch(0.55 0.13 42)", border: "2px solid white" }}>
-                <div className="text-white font-bold text-sm" style={{ fontFamily: "'Lora', serif" }}>$200,000 Cash</div>
-                <div className="text-xs mt-0.5" style={{ color: "oklch(0.92 0.04 85)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em" }}>Clovis, CA · As-Is</div>
-              </div>
-            </div>
-            {/* Story side */}
-            <div>
-              <span className="inline-block text-xs font-bold mb-3" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-                Real Deal · Clovis, California
-              </span>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)", lineHeight: 1.25 }}>
-                We Bought a Home Nobody Else Would Touch
-              </h2>
-              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.38 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                The property behind us had a <strong>double homicide</strong> happen inside it. After the tragedy, a squatter moved in and lived there for <strong>two years</strong> — no water, no sewer, the home filled with trash. The property was in a condition most buyers would walk away from without a second look.
-              </p>
-              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.38 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                We bought it for <strong>$200,000 cash, as-is, without even seeing the interior</strong>. The seller — pictured here — needed a solution, not a lecture about condition. We gave her one.
-              </p>
-              <p className="text-base leading-relaxed mb-6" style={{ color: "oklch(0.38 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                This is what "any condition" actually means. Not just cosmetic issues or deferred maintenance — we mean <em>any condition</em>. Crime scenes, squatters, no utilities, full of trash. We have the capital and the experience to close when nobody else will.
-              </p>
-              <div className="flex flex-wrap gap-3 mb-6">
-                {["Double homicide stigma", "2-year squatter", "No water / no sewer", "Full of trash", "Bought without inspection", "Closed fast"].map((tag) => (
-                  <span key={tag} className="px-3 py-1 rounded-full text-xs font-semibold" style={{ background: "oklch(0.55 0.13 42 / 0.12)", color: "oklch(0.45 0.10 42)", fontFamily: "'DM Mono', monospace", border: "1px solid oklch(0.55 0.13 42 / 0.25)" }}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/contact">
-                  <button className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Get My Cash Offer <ArrowRight size={18} />
-                  </button>
-                </Link>
-                <a href={PHONE_HREF} className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)", color: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  <Phone size={18} /> {PHONE}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FEATURED DEAL: ILLINOIS AVE FLIP ── */}
-      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-14 items-center max-w-5xl mx-auto">
-            {/* Story side */}
-            <div>
-              <span className="inline-block text-xs font-bold mb-3" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.75 0.10 42)", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-                Real Flip · Illinois Ave, Fresno CA
-              </span>
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white" style={{ fontFamily: "'Lora', serif", lineHeight: 1.25 }}>
-                5 Break-Ins. Bed Bugs. Rats. We Bought It Anyway.
-              </h2>
-              <p className="text-base leading-relaxed mb-4" style={{ color: "oklch(0.78 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                This property on Illinois Ave in Fresno had been broken into <strong className="text-white">five times</strong>. Extensive vandalism throughout. When we purchased it, the home had <strong className="text-white">bed bugs, cockroaches, and rats</strong>. The kind of property most buyers — and all wholesalers — would never touch.
-              </p>
-              <p className="text-base leading-relaxed mb-6" style={{ color: "oklch(0.78 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                We bought it, we flipped it. Watch the video. This is what we do with properties that everyone else walks away from. If you have a home in similar condition — or worse — call us. We have seen it all and we will not flinch.
-              </p>
-              <div className="flex flex-wrap gap-3 mb-6">
-                {["5 break-ins", "Heavy vandalism", "Bed bugs", "Cockroaches", "Rats", "Fresno, CA", "Full flip"].map((tag) => (
-                  <span key={tag} className="px-3 py-1 rounded-full text-xs font-semibold" style={{ background: "oklch(0.55 0.13 42 / 0.25)", color: "oklch(0.88 0.08 75)", fontFamily: "'DM Mono', monospace", border: "1px solid oklch(0.55 0.13 42 / 0.4)" }}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/contact">
-                  <button className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Get My Cash Offer <ArrowRight size={18} />
-                  </button>
-                </Link>
-                <a href={PHONE_HREF} className="flex items-center gap-2 px-7 py-3.5 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  <Phone size={18} /> {PHONE}
-                </a>
-              </div>
-            </div>
-            {/* Video side */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ border: "3px solid oklch(0.55 0.13 42 / 0.5)", aspectRatio: "9/16", maxHeight: "480px" }}>
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                className="w-full h-full object-cover"
-                style={{ background: "oklch(0.15 0.01 60)" }}
-              >
-                <source src={ILLINOIS_FLIP_VIDEO} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute top-4 left-4 px-3 py-1.5 rounded-lg" style={{ background: "oklch(0.55 0.13 42)", backdropFilter: "blur(4px)" }}>
-                <span className="text-xs font-bold text-white" style={{ fontFamily: "'DM Mono', monospace", letterSpacing: "0.06em" }}>ILLINOIS AVE · FRESNO</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── BEFORE & AFTER DEAL SNAPSHOTS ── */}
-      <section className="py-20" style={{ background: "oklch(0.97 0.01 85)" }}>
-        <div className="container">
-          <div className="text-center mb-12">
-            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
-              Real Deals · Real Results
-            </span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
-              What "Any Condition" Actually Looks Like
-            </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              These are real properties we've purchased — not cherry-picked showcase homes. This is the work we do.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {[
-              {
-                location: "Clovis, CA",
-                headline: "Double Homicide Stigma + 2-Year Squatter",
-                before: ["Crime scene stigma", "Squatter occupied 2 years", "No water, no sewer", "Home full of trash"],
-                result: "$200,000 cash — closed as-is, no inspection",
-                tag: "Stigmatized Property",
-              },
-              {
-                location: "Illinois Ave, Fresno",
-                headline: "5 Break-Ins, Bed Bugs, Rats, Heavy Vandalism",
-                before: ["5 separate break-ins", "Bed bugs & cockroaches", "Rat infestation", "Extensive vandalism"],
-                result: "Purchased, fully renovated, and sold — watch the flip video above",
-                tag: "Full Renovation",
-              },
-              {
-                location: "Central Valley",
-                headline: "Behind on Mortgage — Foreclosure Auction in 18 Days",
-                before: ["Notice of Trustee Sale filed", "18 days to auction", "$40K behind on payments", "Couldn't qualify to refinance"],
-                result: "Closed in 12 days — seller walked away with equity, foreclosure stopped",
-                tag: "Foreclosure Prevention",
-              },
-            ].map(({ location, headline, before, result, tag }) => (
-              <div key={location} className="bg-white rounded-2xl overflow-hidden shadow-sm border" style={{ borderColor: "oklch(0.88 0.02 85)" }}>
-                <div className="px-6 py-4 flex items-center justify-between" style={{ background: "oklch(0.22 0.01 60)" }}>
-                  <span className="text-xs font-bold" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>{location}</span>
-                  <span className="px-2 py-0.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>{tag}</span>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-base mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)", lineHeight: 1.3 }}>{headline}</h3>
-                  <div className="mb-4">
-                    <div className="text-xs font-bold mb-2" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>Condition at Purchase</div>
-                    <ul className="space-y-1.5">
-                      {before.map((item) => (
-                        <li key={item} className="flex items-start gap-2 text-sm" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                          <span className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.55 0.13 42)" }}>✓</span> {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="pt-4 border-t" style={{ borderColor: "oklch(0.88 0.02 85)" }}>
-                    <div className="text-xs font-bold mb-1" style={{ color: "oklch(0.42 0.08 155)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>Outcome</div>
-                    <p className="text-sm font-semibold" style={{ color: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>{result}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <p className="text-base mb-4" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Have a property in a difficult situation? Call Connor directly — he answers every call personally.
-            </p>
-            <a href={PHONE_HREF} className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-lg text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              <Phone size={20} /> {PHONE}
-            </a>
-          </div>
-        </div>
-      </section>
-      {/* ── AREAS WE SERVE ── */}
+      {/* ── 9. AREAS WE SERVE ── */}
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
         <div className="container">
           <div className="text-center mb-12">
@@ -1606,30 +945,18 @@ export default function HomePage() {
             <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
               Serving the Entire Central Valley
             </h2>
-            <p className="mt-3 max-w-xl mx-auto" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              We buy houses in 8 cities across Fresno, Madera, Tulare, and Kings counties. Click your city for a dedicated local page.
-            </p>
           </div>
 
-          {/* City cards grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
               { city: "Fresno", county: "Fresno County", href: "/we-buy-houses-fresno", primary: true },
-              { city: "Clovis", county: "Fresno County", href: "/we-buy-houses-clovis", primary: false },
-              { city: "Bakersfield", county: "Kern County", href: "/we-buy-houses-bakersfield", primary: false },
-              { city: "Visalia", county: "Tulare County", href: "/we-buy-houses-visalia", primary: false },
-              { city: "Madera", county: "Madera County", href: "/we-buy-houses-madera", primary: false },
-              { city: "Hanford", county: "Kings County", href: "/we-buy-houses-hanford", primary: false },
-              { city: "Lemoore", county: "Kings County", href: "/we-buy-houses-lemoore", primary: false },
-              { city: "Tulare", county: "Tulare County", href: "/we-buy-houses-tulare", primary: false },
-              { city: "Porterville", county: "Tulare County", href: "/we-buy-houses-porterville", primary: false },
-              { city: "Merced", county: "Merced County", href: "/we-buy-houses-merced", primary: false },
-              { city: "Modesto", county: "Stanislaus County", href: "/we-buy-houses-modesto", primary: false },
-              { city: "Stockton", county: "San Joaquin County", href: "/we-buy-houses-stockton", primary: false },
-              { city: "Sanger", county: "Fresno County", href: "/we-buy-houses-sanger", primary: false },
-              { city: "Selma", county: "Fresno County", href: "/we-buy-houses-selma", primary: false },
-              { city: "Reedley", county: "Fresno County", href: "/we-buy-houses-reedley", primary: false },
-              { city: "Kings County", county: "Rural / Ag", href: "/we-buy-houses-kings-county", primary: false },
+              { city: "Clovis", county: "Fresno County", href: "/we-buy-houses-clovis" },
+              { city: "Bakersfield", county: "Kern County", href: "/we-buy-houses-bakersfield" },
+              { city: "Visalia", county: "Tulare County", href: "/we-buy-houses-visalia" },
+              { city: "Madera", county: "Madera County", href: "/we-buy-houses-madera" },
+              { city: "Hanford", county: "Kings County", href: "/we-buy-houses-hanford" },
+              { city: "Stockton", county: "San Joaquin County", href: "/we-buy-houses-stockton" },
+              { city: "Modesto", county: "Stanislaus County", href: "/we-buy-houses-modesto" },
             ].map((item) => (
               <Link key={item.city} href={item.href}>
                 <div
@@ -1639,32 +966,13 @@ export default function HomePage() {
                     border: item.primary ? "none" : "1px solid oklch(0.88 0.02 85)",
                   }}
                 >
-                  <div
-                    className="font-bold text-lg mb-1"
-                    style={{
-                      fontFamily: "'Lora', serif",
-                      color: item.primary ? "white" : "oklch(0.22 0.01 60)",
-                    }}
-                  >
+                  <div className="font-bold text-lg mb-1" style={{ fontFamily: "'Lora', serif", color: item.primary ? "white" : "oklch(0.22 0.01 60)" }}>
                     {item.city}
                   </div>
-                  <div
-                    className="text-xs mb-3"
-                    style={{
-                      fontFamily: "'DM Mono', monospace",
-                      color: item.primary ? "oklch(0.90 0.04 85)" : "oklch(0.55 0.01 60)",
-                      letterSpacing: "0.04em",
-                    }}
-                  >
+                  <div className="text-xs mb-3" style={{ fontFamily: "'DM Mono', monospace", color: item.primary ? "oklch(0.90 0.04 85)" : "oklch(0.55 0.01 60)", letterSpacing: "0.04em" }}>
                     {item.county}
                   </div>
-                  <div
-                    className="flex items-center gap-1 text-xs font-semibold"
-                    style={{
-                      fontFamily: "'Nunito Sans', sans-serif",
-                      color: item.primary ? "oklch(0.95 0.02 85)" : "oklch(0.55 0.13 42)",
-                    }}
-                  >
+                  <div className="flex items-center gap-1 text-xs font-semibold" style={{ fontFamily: "'Nunito Sans', sans-serif", color: item.primary ? "oklch(0.95 0.02 85)" : "oklch(0.55 0.13 42)" }}>
                     View page <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -1672,69 +980,20 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Also serve note */}
           <div className="text-center">
-            <p className="text-sm" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Also buying homes in <strong>Turlock, Dinuba, Parlier, Fowler, Kingsburg, Avenal, Corcoran</strong>, and all surrounding Central Valley communities.
-            </p>
+            <Link href="/we-buy-houses-central-valley" className="inline-flex items-center gap-2 text-sm font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              See all cities we serve <ArrowRight size={14} />
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ── WE LOVE THE VALLEY ── */}
-      <section className="py-24" style={{ background: "oklch(0.55 0.13 42)" }}>
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-14 items-center">
-            <div>
-              <div className="flex items-center gap-3 mb-5">
-                <Heart size={32} fill="white" style={{ color: "white" }} />
-                <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.95 0.03 85)" }}>
-                  From Connor
-                </span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.2 }}>
-                We Love Fresno, the Valley, and Everyone in It.
-              </h2>
-              <p className="text-lg leading-relaxed mb-5" style={{ color: "oklch(0.95 0.02 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                I grew up here. I invest here. I care about this community more than any out-of-state hedge fund or online wholesaler ever will. When you call me, you're talking to someone who knows your neighborhood, has driven your street, and genuinely wants to help you — not just close a deal.
-              </p>
-              <p className="text-lg leading-relaxed mb-5" style={{ color: "oklch(0.95 0.02 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Our reputation in this Valley means everything to us. We will never pressure you, never mislead you, and never waste your time. If we can't give you the best solution, we'll tell you honestly — and point you to someone who can.
-              </p>
-              <p className="text-base leading-relaxed" style={{ color: "oklch(0.90 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontStyle: "italic" }}>
-                "You give us your address. We give you a fair offer. That's it. No spam, no harassment, no follow-up calls from a call center. Just Connor."
-              </p>
-              <div className="mt-6 flex items-center gap-3">
-                <MapPin size={18} style={{ color: "white" }} />
-                <span className="font-semibold text-white" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>Fresno, California — Born and raised in the Central Valley</span>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { emoji: "🌾", title: "Valley Proud", desc: "We invest in our community, not just in properties. Every deal we close keeps money in the Valley." },
-                { emoji: "🤝", title: "No Pressure, Ever", desc: "We will never call you repeatedly or send you to a call center. One conversation, your decision." },
-                { emoji: "🔒", title: "Your Privacy Matters", desc: "We only ask for your address and phone number. No name, no email, no data sold to anyone." },
-                { emoji: "⚖️", title: "Licensed & Transparent", desc: "CA DRE #02219124. We include a free third-party broker opinion so you know our offer is fair." },
-              ].map((item) => (
-                <div key={item.title} className="rounded-2xl p-6" style={{ background: "oklch(1 0 0 / 0.12)", border: "1px solid oklch(1 0 0 / 0.20)" }}>
-                  <div className="text-3xl mb-3">{item.emoji}</div>
-                  <h4 className="font-bold text-white mb-2" style={{ fontFamily: "'Lora', serif" }}>{item.title}</h4>
-                  <p className="text-sm leading-relaxed" style={{ color: "oklch(0.92 0.02 85)", fontFamily: "'Nunito Sans', sans-serif" }}>{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FINAL CTA + INLINE OFFER FORM ── */}
+      {/* ── 10. FINAL CTA + INLINE OFFER FORM ── */}
       <section className="py-24 relative overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, oklch(0.55 0.13 42) 0%, transparent 50%), radial-gradient(circle at 80% 50%, oklch(0.28 0.05 155) 0%, transparent 50%)" }} />
         <div className="container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: headline + trust */}
             <div>
-              <Heart size={36} className="mb-6" style={{ color: "oklch(0.55 0.13 42)" }} />
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
                 Ready for Your Free Cash Offer?
               </h2>
@@ -1744,7 +1003,7 @@ export default function HomePage() {
               <div className="space-y-4 mb-8">
                 {[
                   { icon: "🏆", text: "We match or beat any cash offer — guaranteed" },
-                  { icon: "⚡", text: "close in as little as 5–7 days" },
+                  { icon: "⚡", text: "Close in as little as 5–7 days" },
                   { icon: "🛡️", text: "Licensed CA Agent DRE #02219124" },
                   { icon: "🏠", text: "Buy as-is — no repairs, no cleaning" },
                 ].map((item) => (
@@ -1761,35 +1020,10 @@ export default function HomePage() {
                 Licensed CA Real Estate Agent · DRE #02219124
               </p>
             </div>
-
-            {/* Right: inline offer form */}
             <InlineOfferForm />
           </div>
         </div>
       </section>
-      {/* ── STICKY MOBILE CTA BAR ── */}
-      <div
-        className="fixed bottom-0 left-0 right-0 z-50 md:hidden"
-        style={{ background: "oklch(0.22 0.01 60)", borderTop: "1px solid oklch(1 0 0 / 0.15)", padding: "0.75rem 1rem", paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))" }}
-      >
-        <div className="flex gap-3">
-          <a
-            href={PHONE_HREF}
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-white"
-            style={{ background: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem" }}
-          >
-            <Phone size={16} /> Call Now
-          </a>
-          <a
-            href="#offer-form"
-            className="flex-1 flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-white"
-            style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem" }}
-            onClick={(e) => { e.preventDefault(); document.querySelector('form')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); }}
-          >
-            Get Cash Offer <ArrowRight size={16} />
-          </a>
-        </div>
-      </div>
     </Layout>
   );
 }
