@@ -73,6 +73,9 @@ export default function ProbateHomes() {
       ctaBody="100+ probate sales. Compassionate, experienced, licensed. Call us for a free consultation — no pressure, no obligation, just honest guidance."
       showVacantWarning={true}
       relatedLinks={[
+        { label: "CA Probate Home Sale — Complete Guide", href: "/california-probate-home-sale" },
+        { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
+        { label: "California Probate Real Estate", href: "/probate-real-estate" },
         { label: "Sell House Fast", href: "/sell-house-fast" },
         { label: "Foreclosure Help", href: "/foreclosure-help" },
         { label: "Contact Us", href: "/contact" },

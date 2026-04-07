@@ -136,7 +136,9 @@ export default function SellInheritedPropertyFresno() {
       ctaTitle="Inherited a Fresno Property? Let's Talk."
       ctaBody="Free consultation. No obligation. We've completed 100+ inherited and probate sales in the Central Valley. Call (559) 281-8016 or enter the property address below."
       relatedLinks={[
+        { label: "CA Probate Home Sale — Complete Guide", href: "/california-probate-home-sale" },
         { label: "Probate & Inherited Homes — Full Guide", href: "/probate-inherited-homes" },
+        { label: "California Probate Real Estate", href: "/probate-real-estate" },
         { label: "Sell My House Fresno CA", href: "/sell-my-house-fresno-ca" },
         { label: "Sell House As-Is Fresno", href: "/sell-house-as-is-fresno" },
         { label: "Sell Hoarder House Fresno", href: "/sell-hoarder-house" },

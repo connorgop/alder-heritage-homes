@@ -144,6 +144,7 @@ export default function ProbateRealEstate() {
       ctaTitle="Selling a Probate Property in Fresno? Let's Talk."
       ctaBody="We work directly with executors and probate attorneys. Free Broker Opinion of Value included with every offer. No repairs, no commissions, close on your timeline."
       relatedLinks={[
+        { label: "CA Probate Home Sale — Complete Guide", href: "/california-probate-home-sale" },
         { label: "Inherited Home Sale Guide", href: "/sell-inherited-house-fresno" },
         { label: "CA Probate Process Guide", href: "/blog/california-probate-process-complete-guide-2026" },
         { label: "CA Probate Fees Breakdown", href: "/blog/california-probate-fees-costs-breakdown-2026" },

@@ -280,6 +280,8 @@ export default function AdsLandingPage({
             <Link href="/why-choose-us" className="underline" style={{ color: "oklch(0.60 0.01 60)" }}>Why We're Different</Link>
             {" · "}
             <Link href="/dont-get-wholesaled" className="underline" style={{ color: "oklch(0.60 0.01 60)" }}>Don't Get Wholesaled</Link>
+            {" · "}
+            <Link href="/california-probate-home-sale" className="underline" style={{ color: "oklch(0.60 0.01 60)" }}>CA Probate Home Sale Guide</Link>
           </p>
         </div>
       </section>

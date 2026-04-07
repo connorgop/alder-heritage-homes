@@ -46,6 +46,11 @@ const trust = [
   { label: "Sell My House — All Options", href: "/sell-my-house" },
   { label: "Sell My House Fresno CA", href: "/sell-my-house-fresno-ca" },
   { label: "Sell My House Clovis CA", href: "/sell-my-house-clovis-ca" },
+  { label: "Sell My House Madera CA", href: "/sell-my-house-madera-ca" },
+  { label: "Sell My House Hanford CA", href: "/sell-my-house-hanford-ca" },
+  { label: "Sell My House Kingsburg CA", href: "/sell-my-house-kingsburg-ca" },
+  { label: "Sell My House Kerman CA", href: "/sell-my-house-kerman-ca" },
+  { label: "Sell My House Chowchilla CA", href: "/sell-my-house-chowchilla-ca" },
   { label: "Sell House As-Is Fresno", href: "/sell-house-as-is-fresno" },
   { label: "Sell My House for Cash Fresno", href: "/sell-my-house-cash-fresno" },
   { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
@@ -594,6 +599,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/sell-home-fresno-options" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My Home Fresno — All Options</Link></li>
                 <li><Link href="/sell-my-house-fresno-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Fresno CA</Link></li>
                 <li><Link href="/sell-my-house-clovis-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Clovis CA</Link></li>
+                <li><Link href="/sell-my-house-madera-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Madera CA</Link></li>
+                <li><Link href="/sell-my-house-hanford-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Hanford CA</Link></li>
+                <li><Link href="/sell-my-house-kingsburg-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Kingsburg CA</Link></li>
+                <li><Link href="/sell-my-house-kerman-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Kerman CA</Link></li>
+                <li><Link href="/sell-my-house-chowchilla-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House Chowchilla CA</Link></li>
                 <li><Link href="/sell-house-as-is-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House As-Is Fresno</Link></li>
                 <li><Link href="/sell-my-house-cash-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell My House for Cash Fresno</Link></li>
                 <li><Link href="/sell-inherited-property-fresno" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell Inherited Property Fresno</Link></li>
