@@ -608,8 +608,8 @@ function InlineOfferForm() {
 
 export default function HomePage() {
   useSEO({
-    title: "Sell My House Fast Fresno CA | Cash Home Buyers",
-    description: "Get a fair cash offer for your Fresno home in 24 hours. No repairs, no commissions, no fees. Licensed CA buyer DRE #02219124. Close in 7\u201314 days.",
+    title: "Sell My House Fast Fresno CA | We Buy Houses Cash",
+    description: "Sell your home fast in Fresno CA. We buy houses for cash — no repairs, no commissions, close in 7 days. Licensed CA buyer DRE #02219124. Free offer.",
     canonical: "/",
     schema: faqSchema([
       { q: "How do I sell my house fast in Fresno?", a: "Contact Alder Heritage Homes at (559) 281-8016. We are a licensed CA real estate agent (DRE #02219124) who buys homes directly for cash. We can close in 5–7 days or on your timeline, with no repairs, no agent commissions, and no wholesalers." },
@@ -623,8 +623,8 @@ export default function HomePage() {
   return (
     <Layout>
       <PageMeta
-        title="Sell My House Fast Fresno CA | Cash Home Buyers"
-        description="Get a fair cash offer for your Fresno home in 24 hours. No repairs, no commissions, no fees. Licensed CA buyer DRE #02219124. Close in 7–14 days."
+        title="Sell My House Fast Fresno CA | We Buy Houses Cash"
+        description="Sell your home fast in Fresno CA. We buy houses for cash — no repairs, no commissions, close in 7 days. Licensed CA buyer DRE #02219124. Free offer."
         path="/"
       />
       {/* ── HERO ── */}
@@ -649,8 +649,8 @@ export default function HomePage() {
                 </span>
               </div>
               <h1 className="fade-up fade-up-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
-                Find Out What Your Home Is Worth —
-                <span style={{ color: "oklch(0.75 0.10 42)" }}> Get a Cash Offer in Minutes.</span>
+                Sell Your Home Fast in Fresno —
+                <span style={{ color: "oklch(0.75 0.10 42)" }}> Get a Cash Offer in 24 Hours.</span>
               </h1>
               <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-6 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 Enter your address below. We'll text you a fair cash offer — no repairs, no commissions, no obligation. <strong style={{ color: "oklch(0.92 0.04 85)" }}>We will never spam or harass you.</strong> One text, one offer, your choice.

@@ -9,7 +9,7 @@ import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import FloatingCTA from "./FloatingCTA";
 import TawkChat from "./TawkChat";
 import ExitIntentPopup from "./ExitIntentPopup";
-import SchemaMarkup, { localBusinessSchema, websiteSchema, breadcrumbSchema, buildBreadcrumbs } from "./SchemaMarkup";
+import SchemaMarkup, { localBusinessSchema, websiteSchema, breadcrumbSchema, buildBreadcrumbs, aggregateRatingSchema } from "./SchemaMarkup";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -92,6 +92,8 @@ const trust = [
   { label: "Porterville Housing Market", href: "/porterville-housing-market" },
   { label: "We Buy Houses Woodlake", href: "/we-buy-houses-woodlake" },
   { label: "Sell House Fast Exeter", href: "/sell-house-fast-exeter-ca" },
+  { label: "Sell Your Home Fresno CA", href: "/sell-your-home-fresno" },
+  { label: "Buy My House Cash Fresno", href: "/buy-my-house-cash-fresno" },
 ];
 
 
@@ -192,6 +194,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.97 0.015 85)" }}>
       {/* Global structured data — injected on every page */}
       <SchemaMarkup schema={localBusinessSchema()} id="local-business" />
+      <SchemaMarkup schema={aggregateRatingSchema({ ratingValue: 5.0, reviewCount: 8 })} id="aggregate-rating" />
       <SchemaMarkup schema={websiteSchema()} id="website" />
       <SchemaMarkup
         schema={breadcrumbSchema(buildBreadcrumbs(location))}

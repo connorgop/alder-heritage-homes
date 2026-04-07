@@ -197,6 +197,7 @@ import TulareCountyHub from "./pages/TulareCountyHub";
 import PortervilleHousingMarket from "./pages/PortervilleHousingMarket";
 import WoodlakePage from "./pages/cities/Woodlake";
 import SellHouseFastExeter from "./pages/SellHouseFastExeter";
+import SellYourHomeFresno from "./pages/SellYourHomeFresno";
 
 function Router() {
   return (
@@ -242,6 +243,8 @@ function Router() {
       <Route path="/sell-parents-house-fresno" component={ParentsHouse} />
       <Route path="/sell-my-house" component={SellMyHouse} />
       <Route path="/sell-house-fast-fresno-ca" component={SellHouseFastFresno} />
+      <Route path="/sell-house-fast-fresno" component={SellHouseFastFresno} />
+      <Route path="/sell-my-house-fast-fresno" component={SellHouseFastFresno} />
       <Route path="/sell-house-fast-clovis-ca" component={SellHouseFastClovis} />
       <Route path="/sell-house-fast-visalia-ca" component={SellHouseFastVisalia} />
       <Route path="/sell-house-fast-bakersfield-ca" component={SellHouseFastBakersfield} />
@@ -414,6 +417,9 @@ function Router() {
       <Route path="/porterville-housing-market" component={PortervilleHousingMarket} />
       <Route path="/we-buy-houses-woodlake" component={WoodlakePage} />
       <Route path="/sell-house-fast-exeter-ca" component={SellHouseFastExeter} />
+      <Route path="/sell-your-home-fresno" component={SellYourHomeFresno} />
+      <Route path="/sell-my-home-fresno" component={SellYourHomeFresno} />
+      <Route path="/buy-my-house-cash-fresno" component={SellYourHomeFresno} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
