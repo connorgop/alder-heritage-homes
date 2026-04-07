@@ -216,6 +216,9 @@ import WoodlakePage from "./pages/cities/Woodlake";
 import SellHouseFastExeter from "./pages/SellHouseFastExeter";
 import SellHouseFastHanford from "./pages/SellHouseFastHanford";
 import SellYourHomeFresno from "./pages/SellYourHomeFresno";
+import CROLeadCapture from "./pages/CROLeadCapture";
+import CompetitorGapAnalysis from "./pages/CompetitorGapAnalysis";
+import SEORoadmap from "./pages/SEORoadmap";
 
 function Router() {
   return (
@@ -307,6 +310,13 @@ function Router() {
       <Route path="/sell-home-fresno" component={BothOptions} />
       <Route path="/sell-house-cash-to-investor-fresno" component={BothOptions} />
       <Route path="/sell-house-fresno" component={BothOptions} />
+      <Route path="/cro-lead-capture" component={CROLeadCapture} />
+      <Route path="/lead-capture" component={CROLeadCapture} />
+      <Route path="/conversion-strategy" component={CROLeadCapture} />
+      <Route path="/competitor-gap-analysis" component={CompetitorGapAnalysis} />
+      <Route path="/competitor-analysis" component={CompetitorGapAnalysis} />
+      <Route path="/seo-roadmap" component={SEORoadmap} />
+      <Route path="/90-day-roadmap" component={SEORoadmap} />
       <Route path="/sell-house-fast-fresno-ca" component={SellHouseFastFresno} />
       <Route path="/sell-house-fast-fresno" component={SellHouseFastFresno} />
       <Route path="/sell-my-house-fast-fresno" component={SellHouseFastFresno} />
