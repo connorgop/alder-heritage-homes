@@ -143,6 +143,7 @@ import StocktonPage from "./pages/cities/Stockton";
 import ModestoPage from "./pages/cities/Modesto";
 import TurlockPage from "./pages/cities/Turlock";
 import KingsCountyPage from "./pages/cities/KingsCounty";
+import KingsCountyHub from "./pages/KingsCountyHub";
 import SanJoaquinPage from "./pages/cities/SanJoaquin";
 import DinubaPage from "./pages/cities/Dinuba";
 import FowlerPage from "./pages/cities/Fowler";
@@ -156,6 +157,7 @@ import StocktonHousingMarket from "./pages/StocktonHousingMarket";
 import ModestoHousingMarket from "./pages/ModestoHousingMarket";
 import ReedleyNeighborhoods from "./pages/ReedleyNeighborhoods";
 import FresnoCountyHub from "./pages/FresnoCountyHub";
+import FresnoRealEstateResources from "./pages/FresnoRealEstateResources";
 import ParlierPage from "./pages/cities/Parlier";
 import SelmaNeighborhoods from "./pages/SelmaNeighborhoods";
 import SangerNeighborhoods from "./pages/SangerNeighborhoods";
@@ -281,10 +283,12 @@ function Router() {
       <Route path="/we-buy-houses-modesto" component={ModestoPage} />
       <Route path="/we-buy-houses-turlock" component={TurlockPage} />
       <Route path="/we-buy-houses-kings-county" component={KingsCountyPage} />
+      <Route path="/kings-county" component={KingsCountyHub} />
       <Route path="/we-buy-houses-san-joaquin-county" component={SanJoaquinPage} />
       <Route path="/we-buy-houses-dinuba" component={DinubaPage} />
       <Route path="/we-buy-houses-parlier" component={ParlierPage} />
       <Route path="/fresno-county" component={FresnoCountyHub} />
+      <Route path="/fresno-real-estate-resources" component={FresnoRealEstateResources} />
       <Route path="/we-buy-houses-fowler" component={FowlerPage} />
       <Route path="/we-buy-houses-kingsburg" component={KingsburgPage} />
       <Route path="/we-buy-houses-avenal" component={AvenalPage} />

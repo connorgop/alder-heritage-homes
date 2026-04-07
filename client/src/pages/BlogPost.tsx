@@ -12,12 +12,14 @@ import articleChunk1 from "./BlogPostArticles1";
 import articleChunk2 from "./BlogPostArticles2";
 import articleChunk3 from "./BlogPostArticles3";
 import articleChunk4 from "./BlogPostArticles4";
+import articleChunk5 from "./BlogPostArticles5";
 
 const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk1,
   ...articleChunk2,
   ...articleChunk3,
   ...articleChunk4,
+  ...articleChunk5,
 };
 
 export default function BlogPost() {

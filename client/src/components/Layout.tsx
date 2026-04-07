@@ -89,11 +89,13 @@ const trust = [
   { label: "We Buy Houses Exeter", href: "/we-buy-houses-exeter" },
   { label: "We Buy Houses Strathmore", href: "/we-buy-houses-strathmore" },
   { label: "Tulare County Hub", href: "/tulare-county" },
+  { label: "Kings County Hub", href: "/kings-county" },
   { label: "Porterville Housing Market", href: "/porterville-housing-market" },
   { label: "We Buy Houses Woodlake", href: "/we-buy-houses-woodlake" },
   { label: "Sell House Fast Exeter", href: "/sell-house-fast-exeter-ca" },
   { label: "Sell Your Home Fresno CA", href: "/sell-your-home-fresno" },
   { label: "Buy My House Cash Fresno", href: "/buy-my-house-cash-fresno" },
+  { label: "Fresno Real Estate Resources", href: "/fresno-real-estate-resources" },
 ];
 
 
@@ -118,6 +120,7 @@ const cities = [
   { label: "Tracy", href: "/we-buy-houses-tracy" },
   { label: "Lodi", href: "/we-buy-houses-lodi" },
   { label: "Manteca", href: "/we-buy-houses-manteca" },
+  { label: "Kings County Hub", href: "/kings-county" },
   { label: "Kings County", href: "/we-buy-houses-kings-county" },
   { label: "San Joaquin County", href: "/we-buy-houses-san-joaquin-county" },
   { label: "Parlier", href: "/we-buy-houses-parlier" },
@@ -570,6 +573,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link href="/stockton-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Stockton Housing Market 2026</Link></li>
                 <li><Link href="/modesto-housing-market" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Modesto Housing Market 2026</Link></li>
                 <li><Link href="/san-joaquin-county" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>San Joaquin County Hub</Link></li>
+                <li><Link href="/kings-county" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Kings County Hub</Link></li>
+                <li><Link href="/fresno-real-estate-resources" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Real Estate Resources</Link></li>
                 <li><Link href="/sell-house-fast-stockton-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Stockton</Link></li>
                 <li><Link href="/sell-house-fast-modesto-ca" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Sell House Fast Modesto</Link></li>
                 <li><Link href="/blog" className="text-sm hover:text-white transition-colors" style={{ color: "oklch(0.65 0.01 60)" }}>Blog &amp; Resources</Link></li>
