@@ -36,6 +36,7 @@ import LandlordPortfolioSale from "./pages/services/LandlordPortfolioSale";
 import MoldHouse from "./pages/services/MoldHouse";
 import FireDamage from "./pages/services/FireDamage";
 import CodeViolation from "./pages/services/CodeViolation";
+import TaxLiens from "./pages/services/TaxLiens";
 import FoundationProblems from "./pages/services/FoundationProblems";
 import MilitaryPCS from "./pages/services/MilitaryPCS";
 import FreeOffer from "./pages/FreeOffer";
@@ -265,6 +266,7 @@ function Router() {
       <Route path="/sell-house-mold" component={MoldHouse} />
       <Route path="/sell-house-fire-damage" component={FireDamage} />
       <Route path="/sell-house-code-violations-fresno" component={CodeViolation} />
+      <Route path="/sell-house-tax-liens-fresno" component={TaxLiens} />
       <Route path="/sell-house-foundation-problems" component={FoundationProblems} />
       <Route path="/military-pcs-sell-house" component={MilitaryPCS} />
       <Route path="/free-offer" component={FreeOffer} />

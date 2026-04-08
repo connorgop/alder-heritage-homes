@@ -91,10 +91,13 @@ export default function DivorceHome() {
       ctaTitle="Get a Fair, Private Cash Offer for Your Divorce Home Sale"
       ctaBody="No open houses. No public listings. A transparent offer with an independent broker opinion so both parties can move forward with confidence."
       relatedLinks={[
-        { label: "Sell Your House Fast in Fresno", href: "/sell-house-fast" },
-        { label: "Probate & Inherited Homes", href: "/probate-inherited-homes" },
-        { label: "Why We're Different", href: "/why-choose-us" },
-        { label: "Contact Connor Directly", href: "/contact" },
+        { label: "Code Violations — Sell As-Is", href: "/sell-house-code-violations-fresno" },
+        { label: "Tax Liens — Sell With Back Taxes", href: "/sell-house-tax-liens-fresno" },
+        { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
+        { label: "Probate Home Sale", href: "/california-probate-home-sale" },
+        { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
+        { label: "Compramos Casas Fresno", href: "/compramos-casas-fresno" },
+        { label: "Tower District Cash Buyer", href: "/fresno-neighborhoods/tower-district" },
       ]}
     />
   );

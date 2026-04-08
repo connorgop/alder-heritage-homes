@@ -91,11 +91,13 @@ export default function CodeViolation() {
       ctaTitle="Get a Cash Offer on Your Code Violation Property"
       ctaBody="Don't let code violations trap you in a property you can't sell. Call us at (559) 281-8016 or submit your address below for a free, no-obligation cash offer within 24 hours."
       relatedLinks={[
+        { label: "Tax Liens — Sell With Back Taxes", href: "/sell-house-tax-liens-fresno" },
         { label: "Fire Damage — Sell As-Is", href: "/sell-house-fire-damage" },
         { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
-        { label: "Sell House Fast Fresno", href: "/sell-house-fast-fresno-ca" },
-        { label: "Code Violations Blog Guide", href: "/blog/code-violation-house-fresno-california-options" },
-        { label: "Foundation Problems", href: "/sell-house-foundation-problems" },
+        { label: "Sell During Divorce", href: "/sell-house-divorce" },
+        { label: "Probate Home Sale", href: "/california-probate-home-sale" },
+        { label: "Tower District Cash Buyer", href: "/fresno-neighborhoods/tower-district" },
+        { label: "Sunnyside Cash Buyer", href: "/fresno-neighborhoods/sunnyside" },
       ]}
       slug="/sell-house-code-violations-fresno"
       metaDescription="Sell your house with code violations in Fresno CA for cash — no repairs, no permits to pull, no fines to pay before closing. We buy code violation properties as-is. Call (559) 281-8016."

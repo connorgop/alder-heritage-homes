@@ -5,6 +5,7 @@
    Domain redirect: centrohomecashbuyers.com → this page
    ============================================================ */
 import { useState, useEffect } from "react";
+import { Link } from "wouter";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
 import Layout from "@/components/Layout";
 import PageMeta from "@/components/PageMeta";
@@ -556,6 +557,33 @@ export default function CompramosCasasFresno() {
                   </p>
                 </div>
               </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── RELATED LINKS (English pages for SEO cross-linking) ── */}
+      <section className="py-12" style={{ background: "oklch(0.97 0.01 60)", borderTop: "1px solid oklch(0.90 0.02 60)" }}>
+        <div className="container max-w-4xl">
+          <h2 className="text-2xl font-bold mb-6 text-center" style={{ fontFamily: "'Lora', serif", color: "oklch(0.25 0.02 60)" }}>
+            Más Recursos / More Resources
+          </h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+            {[
+              { label: "Sell House Code Violations Fresno", href: "/sell-house-code-violations-fresno" },
+              { label: "Sell House Tax Liens Fresno", href: "/sell-house-tax-liens-fresno" },
+              { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
+              { label: "Probate Home Sale California", href: "/california-probate-home-sale" },
+              { label: "Sell Hoarder House Fresno", href: "/sell-hoarder-house" },
+              { label: "Sell House Fire Damage", href: "/sell-house-fire-damage" },
+              { label: "Sell House During Divorce", href: "/sell-house-divorce" },
+              { label: "Tower District Cash Buyer", href: "/fresno-neighborhoods/tower-district" },
+              { label: "Sunnyside Cash Buyer", href: "/fresno-neighborhoods/sunnyside" },
+            ].map(({ label, href }) => (
+              <Link key={href} href={href} className="flex items-center gap-2 p-3 rounded-lg text-sm font-medium transition-colors hover:bg-orange-50" style={{ color: "oklch(0.35 0.08 42)", border: "1px solid oklch(0.90 0.02 60)" }}>
+                <ArrowRight size={14} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
+                {label}
+              </Link>
             ))}
           </div>
         </div>

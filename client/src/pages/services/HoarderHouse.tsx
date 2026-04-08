@@ -91,10 +91,13 @@ export default function HoarderHouse() {
       ctaTitle="Sell Your Fresno Home As-Is — No Cleanup Required"
       ctaBody="Leave everything. We'll handle the rest. Get your free cash offer and a third-party broker opinion so you can make the right decision."
       relatedLinks={[
-        { label: "Sell House With Roof Damage", href: "/sell-house-roof-damage" },
-        { label: "Probate & Inherited Homes", href: "/probate-inherited-homes" },
-        { label: "Sell Your House Fast", href: "/sell-house-fast" },
-        { label: "Why We're Different", href: "/why-choose-us" },
+        { label: "Code Violations — Sell As-Is", href: "/sell-house-code-violations-fresno" },
+        { label: "Tax Liens — Sell With Back Taxes", href: "/sell-house-tax-liens-fresno" },
+        { label: "Fire Damage — Sell As-Is", href: "/sell-house-fire-damage" },
+        { label: "Probate Home Sale", href: "/california-probate-home-sale" },
+        { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
+        { label: "Tower District Cash Buyer", href: "/fresno-neighborhoods/tower-district" },
+        { label: "Sunnyside Cash Buyer", href: "/fresno-neighborhoods/sunnyside" },
       ]}
     />
   );

@@ -389,14 +389,16 @@ export default function CaliforniaProbateHomeSale() {
               </h2>
               <div className="grid sm:grid-cols-2 gap-3">
                 {[
-                  { label: "Probate Real Estate Fresno — Full Guide", href: "/probate-real-estate-fresno" },
                   { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
-                  { label: "Probate Inherited Homes", href: "/probate-inherited-homes" },
-                  { label: "California Probate Process Guide (Blog)", href: "/blog/california-probate-process-complete-guide-2026" },
-                  { label: "Probate Fees & Costs Breakdown (Blog)", href: "/blog/california-probate-fees-costs-breakdown-2026" },
-                  { label: "What Is a Probate Home Sale? (Blog)", href: "/blog/what-is-a-probate-home-sale-california" },
-                  { label: "Sibling Wants to Keep Inherited House (Blog)", href: "/blog/sibling-wants-to-keep-inherited-house-california" },
-                  { label: "Why Choose Alder Heritage Homes", href: "/why-choose-us" },
+                  { label: "Code Violations — Sell As-Is", href: "/sell-house-code-violations-fresno" },
+                  { label: "Tax Liens — Sell With Back Taxes", href: "/sell-house-tax-liens-fresno" },
+                  { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
+                  { label: "Fire Damage — Sell As-Is", href: "/sell-house-fire-damage" },
+                  { label: "Sell During Divorce", href: "/sell-house-divorce" },
+                  { label: "Tower District Cash Buyer", href: "/fresno-neighborhoods/tower-district" },
+                  { label: "Sunnyside Cash Buyer", href: "/fresno-neighborhoods/sunnyside" },
+                  { label: "Compramos Casas Fresno", href: "/compramos-casas-fresno" },
+                  { label: "California Probate Process Guide", href: "/blog/california-probate-process-complete-guide-2026" },
                 ].map(({ label, href }) => (
                   <Link key={href} href={href} className="flex items-center gap-2 p-3 rounded-lg text-sm font-medium transition-colors hover:bg-orange-50" style={{ color: "oklch(0.35 0.08 42)", border: "1px solid oklch(0.90 0.02 60)" }}>
                     <ArrowRight size={14} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />

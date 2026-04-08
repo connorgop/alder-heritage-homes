@@ -60,6 +60,7 @@ Other common seller situations include estate sales from longtime owners who pur
         },
       ]}
       nearbyNeighborhoods={[
+        { name: "Sunnyside", slug: "sunnyside" },
         { name: "Fig Garden", slug: "fig-garden" },
         { name: "McLane / Hoover", slug: "mclane" },
         { name: "Fresno State Area", slug: "fresno-state" },

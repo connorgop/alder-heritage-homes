@@ -60,6 +60,7 @@ The neighborhood also sees above-average rates of foreclosure and mortgage delin
         },
       ]}
       nearbyNeighborhoods={[
+        { name: "Tower District", slug: "tower-district" },
         { name: "Southeast Fresno", slug: "southeast-fresno" },
         { name: "Fresno State Area", slug: "fresno-state" },
         { name: "McLane / Hoover", slug: "mclane" },

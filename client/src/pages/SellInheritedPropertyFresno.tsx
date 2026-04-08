@@ -137,15 +137,14 @@ export default function SellInheritedPropertyFresno() {
       ctaBody="Free consultation. No obligation. We've completed 100+ inherited and probate sales in the Central Valley. Call (559) 281-8016 or enter the property address below."
       relatedLinks={[
         { label: "CA Probate Home Sale — Complete Guide", href: "/california-probate-home-sale" },
-        { label: "Probate & Inherited Homes — Full Guide", href: "/probate-inherited-homes" },
-        { label: "California Probate Real Estate", href: "/probate-real-estate" },
-        { label: "Sell My House Fresno CA", href: "/sell-my-house-fresno-ca" },
-        { label: "Sell House As-Is Fresno", href: "/sell-house-as-is-fresno" },
+        { label: "Code Violations — Sell As-Is", href: "/sell-house-code-violations-fresno" },
+        { label: "Tax Liens — Sell With Back Taxes", href: "/sell-house-tax-liens-fresno" },
         { label: "Sell Hoarder House Fresno", href: "/sell-hoarder-house" },
-        { label: "Fresno County Hub", href: "/fresno-county" },
-        { label: "Why Choose Alder Heritage Homes", href: "/why-choose-us" },
-        { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
-        { label: "Sell House Fast Fresno CA", href: "/sell-house-fast-fresno-ca" },
+        { label: "Fire Damage — Sell As-Is", href: "/sell-house-fire-damage" },
+        { label: "Sell During Divorce", href: "/sell-house-divorce" },
+        { label: "Tower District Cash Buyer", href: "/fresno-neighborhoods/tower-district" },
+        { label: "Sunnyside Cash Buyer", href: "/fresno-neighborhoods/sunnyside" },
+        { label: "Compramos Casas Fresno", href: "/compramos-casas-fresno" },
       ]}
     />
   );

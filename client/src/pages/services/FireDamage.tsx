@@ -96,10 +96,13 @@ export default function FireDamage() {
       ctaTitle="Get a Cash Offer on Your Fire-Damaged Property"
       ctaBody="No repairs required. No insurance disputes. Just a fair offer and a fast close. Call (559) 281-8016 or submit your address below."
       relatedLinks={[
-        { label: "Sell a House With Mold", href: "/sell-house-mold" },
-        { label: "Sell a Hoarder House", href: "/sell-hoarder-house" },
-        { label: "Sell a House With Foundation Problems", href: "/sell-house-foundation-problems" },
-        { label: "Sell a House With Roof Damage", href: "/sell-house-roof-damage" },
+        { label: "Code Violations — Sell As-Is", href: "/sell-house-code-violations-fresno" },
+        { label: "Tax Liens — Sell With Back Taxes", href: "/sell-house-tax-liens-fresno" },
+        { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
+        { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
+        { label: "Sell During Divorce", href: "/sell-house-divorce" },
+        { label: "Tower District Cash Buyer", href: "/fresno-neighborhoods/tower-district" },
+        { label: "Sunnyside Cash Buyer", href: "/fresno-neighborhoods/sunnyside" },
       ]}
     />
   );
