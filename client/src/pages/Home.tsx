@@ -13,7 +13,8 @@ import { useSEO, faqSchema } from "@/hooks/useSEO";
 import PageMeta from "@/components/PageMeta";
 import {
   Phone, ArrowRight, CheckCircle2, Clock, Shield, Star,
-  Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Loader2, MapPin
+  Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Loader2, MapPin,
+  Play, Heart
 } from "lucide-react";
 
 const PHONE = "(559) 281-8016";
@@ -21,6 +22,8 @@ const PHONE_HREF = "tel:5592818016";
 
 const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp";
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
+const CONNOR_VIDEO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-ad_9ad5ae32.mp4";
+const CONNOR_VIDEO_THUMB = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-thumbnail_9ed7fde4.jpg";
 
 const situations = [
   {
@@ -595,6 +598,155 @@ function InlineOfferForm() {
   );
 }
 
+/* ── Meet Connor Video Component ── */
+
+function MeetConnorVideo() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+    // Small delay to let the video element render
+    setTimeout(() => {
+      videoRef.current?.play();
+    }, 100);
+  };
+
+  const handleVideoEnd = () => {
+    setIsPlaying(false);
+  };
+
+  return (
+    <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+      <div className="container">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Video */}
+            <div className="flex justify-center order-1 md:order-1">
+              <div
+                className="relative rounded-2xl overflow-hidden shadow-2xl cursor-pointer group"
+                style={{
+                  aspectRatio: "9/16",
+                  width: "100%",
+                  maxWidth: "320px",
+                  background: "oklch(0.10 0.01 60)",
+                }}
+                onClick={!isPlaying ? handlePlay : undefined}
+              >
+                {!isPlaying ? (
+                  <>
+                    <img
+                      src={CONNOR_VIDEO_THUMB}
+                      alt="Connor Morris — Meet your local home buyer"
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Dark overlay */}
+                    <div
+                      className="absolute inset-0 transition-opacity group-hover:opacity-40"
+                      style={{ background: "oklch(0 0 0 / 0.35)" }}
+                    />
+                    {/* Play button */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div
+                        className="flex items-center justify-center rounded-full transition-all group-hover:scale-110"
+                        style={{
+                          width: "72px",
+                          height: "72px",
+                          background: "oklch(0.55 0.13 42)",
+                          boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.5)",
+                        }}
+                      >
+                        <Play size={28} fill="white" style={{ color: "white", marginLeft: "3px" }} />
+                      </div>
+                    </div>
+                    {/* Duration badge */}
+                    <div
+                      className="absolute bottom-4 left-4 px-3 py-1.5 rounded-full text-xs font-bold"
+                      style={{
+                        background: "oklch(0 0 0 / 0.6)",
+                        color: "white",
+                        fontFamily: "'DM Mono', monospace",
+                        backdropFilter: "blur(8px)",
+                      }}
+                    >
+                      0:45
+                    </div>
+                  </>
+                ) : (
+                  <video
+                    ref={videoRef}
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-full object-contain"
+                    onEnded={handleVideoEnd}
+                    aria-label="Connor Morris introduces Alder Heritage Homes"
+                    style={{ borderRadius: "1rem", background: "oklch(0.05 0 0)" }}
+                  >
+                    <source src={CONNOR_VIDEO} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
+              </div>
+            </div>
+
+            {/* Copy */}
+            <div className="order-2 md:order-2">
+              <span
+                className="inline-block text-xs font-bold uppercase tracking-widest mb-4"
+                style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}
+              >
+                Meet Your Local Home Buyer
+              </span>
+              <h2
+                className="text-3xl md:text-4xl font-bold mb-5"
+                style={{ fontFamily: "'Lora', serif", color: "white", lineHeight: 1.25 }}
+              >
+                A Real Person, Not a Call Center
+              </h2>
+              <p
+                className="text-base leading-relaxed mb-6"
+                style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                When you call Alder Heritage Homes, you talk to Connor — the same person who walks through your house, writes your offer, and shows up at closing. No call centers, no sales teams, no bait-and-switch.
+              </p>
+              <p
+                className="text-base leading-relaxed mb-8"
+                style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                Watch this 45-second video to hear directly from Connor about how we help Fresno homeowners — whether you're dealing with an inherited home, foreclosure, or just need to move on.
+              </p>
+
+              <div
+                className="flex items-center gap-3 p-4 rounded-xl mb-6"
+                style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }}
+              >
+                <Heart size={20} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
+                <p className="text-sm" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  No pressure, no obligation. Just an honest conversation about your options.
+                </p>
+              </div>
+
+              <a
+                href={PHONE_HREF}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all hover:scale-105"
+                style={{
+                  background: "oklch(0.55 0.13 42)",
+                  color: "white",
+                  fontFamily: "'Nunito Sans', sans-serif",
+                  boxShadow: "0 4px 16px oklch(0.55 0.13 42 / 0.4)",
+                }}
+              >
+                <Phone size={18} /> Call Connor: {PHONE}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ── Main Page Component ── */
 
 export default function HomePage() {
@@ -884,6 +1036,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── 7.5 MEET CONNOR VIDEO ── */}
+      <MeetConnorVideo />
 
       {/* ── 8. TESTIMONIALS ── */}
       <section className="py-20 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
