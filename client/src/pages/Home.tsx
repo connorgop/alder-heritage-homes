@@ -10,6 +10,7 @@ import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import ComparableSales from "@/components/ComparableSales";
+import ConnorManifesto from "@/components/ConnorManifesto";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
 import PageMeta from "@/components/PageMeta";
 import {
@@ -1414,7 +1415,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 7.5 MEET CONNOR VIDEO ── */}
+      {/* ── 7.5 CONNOR'S MANIFESTO — WHY I'M HERE ── */}
+      <ConnorManifesto />
+
+      {/* ── 7.6 MEET CONNOR VIDEO ── */}
       <MeetConnorVideo />
 
       {/* ── 7.6 RECENT DEALS ── */}
