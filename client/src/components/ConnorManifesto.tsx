@@ -4,15 +4,14 @@
    with humor while establishing Connor's WHY and mission to
    clean up real estate in the Central Valley.
    ============================================================ */
-import { useState } from "react";
+
 import { Link } from "wouter";
-import { Phone, ArrowRight, AlertTriangle, Scale, Heart, Shield, ChevronDown } from "lucide-react";
+import { Phone, ArrowRight, AlertTriangle, Scale, Heart, Shield } from "lucide-react";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 
 export default function ConnorManifesto() {
-  const [expanded, setExpanded] = useState(false);
 
   return (
     <section className="py-20 relative overflow-hidden" style={{ background: "oklch(0.97 0.015 85)" }}>
@@ -106,8 +105,8 @@ export default function ConnorManifesto() {
               </p>
             </div>
 
-            {/* Expandable deeper content */}
-            <div className={`overflow-hidden transition-all duration-500 ${expanded ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"}`}>
+            {/* Deeper content — always visible */}
+            <div>
               {/* The AI confession */}
               <div className="rounded-xl p-5 mb-6" style={{ background: "oklch(0.55 0.13 42 / 0.06)", border: "1px solid oklch(0.55 0.13 42 / 0.12)" }}>
                 <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
@@ -178,19 +177,7 @@ export default function ConnorManifesto() {
               </p>
             </div>
 
-            {/* Expand/collapse button */}
-            <button
-              onClick={() => setExpanded(!expanded)}
-              className="flex items-center gap-2 mx-auto mb-6 px-5 py-2.5 rounded-full text-sm font-bold transition-all hover:scale-105"
-              style={{
-                background: expanded ? "oklch(0.90 0.02 85)" : "oklch(0.22 0.01 60)",
-                color: expanded ? "oklch(0.30 0.01 60)" : "white",
-                fontFamily: "'Nunito Sans', sans-serif",
-              }}
-            >
-              {expanded ? "Show Less" : "Keep Reading — The AI Confession, State Bans & My WHY"}
-              <ChevronDown size={16} className={`transition-transform duration-300 ${expanded ? "rotate-180" : ""}`} />
-            </button>
+
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4" style={{ borderTop: "1px solid oklch(0.90 0.02 85)" }}>

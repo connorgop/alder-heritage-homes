@@ -1222,16 +1222,16 @@ export default function HomePage() {
       <ConnorManifesto />
 
       {/* ── 3.1 WHY CHOOSE ALDER (COMPARISON TABLE) ── */}
-      <section className="py-24" style={{ background: "oklch(0.97 0.015 85)" }}>
+      <section className="py-12" style={{ background: "oklch(0.97 0.015 85)" }}>
         <div className="container">
-          <div className="text-center mb-14">
+          <div className="text-center mb-8">
             <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
               Why Alder Heritage
             </span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+            <h2 className="mt-2 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
               Not All Cash Buyers Are the Same
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+            <p className="mt-3 max-w-2xl mx-auto" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
               Most "we buy houses" companies are unlicensed wholesalers who flip your contract to another buyer. We're different — we're a licensed California real estate agent who actually buys your home.
             </p>
           </div>
