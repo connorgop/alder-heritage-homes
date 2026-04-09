@@ -87,6 +87,7 @@ import DivorceAd from "./pages/ads/DivorceAd";
 import SellFastAd from "./pages/ads/SellFastAd";
 import BehindMortgageAd from "./pages/ads/BehindMortgageAd";
 import WholesalerWarningAd from "./pages/ads/WholesalerWarningAd";
+import CompramosCasasAd from "./pages/ads/CompramosCasasAd";
 import LpSeniorSeller from "./pages/lp/SeniorSeller";
 import LpDownsize from "./pages/lp/Downsize";
 
@@ -405,6 +406,7 @@ function Router() {
       <Route path="/lp/sell-house-fast" component={SellFastAd} />
       <Route path="/lp/behind-on-mortgage" component={BehindMortgageAd} />
       <Route path="/lp/real-cash-buyer-not-wholesaler" component={WholesalerWarningAd} />
+      <Route path="/lp/compramos-casas" component={CompramosCasasAd} />
       <Route path="/lp/senior-seller" component={LpSeniorSeller} />
       <Route path="/lp/downsize" component={LpDownsize} />
 
