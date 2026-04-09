@@ -34,11 +34,11 @@ const SELLER_SIDE_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571
 // Recent deals data (from Portfolio page)
 const recentDeals = [
   {
-    badge: "Probate Estate",
-    address: "970 College Canyon Rd, Solvang",
-    summary: "5-acre ranch with squatter, pest damage, collapsing patio",
-    price: "$975,000 cash",
-    timeline: "Closed in days",
+    badge: "Tired Landlord",
+    address: "4573 E Huntington Ave, Fresno",
+    summary: "Landlord wanted to liquidate and retire — purchased as-is, no hassle",
+    price: "Cash close",
+    timeline: "Quick & easy",
     color: "oklch(0.55 0.13 42)",
   },
   {
