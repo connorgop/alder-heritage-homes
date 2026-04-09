@@ -1313,18 +1313,38 @@ export default function HomePage() {
             </div>
             <div className="fade-up fade-up-delay-2">
               <InstantCashCalculator />
-              <div className="mt-3 flex items-center justify-center gap-2 px-4 py-2 rounded-full" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.15)" }}>
+              {/* Trust badges directly under the form */}
+              <div className="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 px-3 py-2 rounded-xl" style={{ background: "oklch(1 0 0 / 0.10)", border: "1px solid oklch(1 0 0 / 0.18)", backdropFilter: "blur(8px)" }}>
+                <div className="flex items-center gap-1.5">
+                  <div className="flex gap-0.5">
+                    {[1,2,3,4,5].map(i => <Star key={i} size={11} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />)}
+                  </div>
+                  <span className="text-xs font-bold text-white" style={{ fontFamily: "'DM Mono', monospace" }}>5.0 Google</span>
+                </div>
+                <span className="hidden sm:inline text-white/30">·</span>
+                <div className="hidden sm:flex items-center gap-1">
+                  <Shield size={11} style={{ color: "oklch(0.65 0.10 145)" }} />
+                  <span className="text-xs font-semibold text-white/80" style={{ fontFamily: "'DM Mono', monospace" }}>DRE #02219124</span>
+                </div>
+                <span className="hidden sm:inline text-white/30">·</span>
+                <div className="hidden sm:flex items-center gap-1">
+                  <span className="text-xs font-semibold text-white/80" style={{ fontFamily: "'DM Mono', monospace" }}>700+ Homes</span>
+                </div>
+                <span className="text-white/30">·</span>
+                <span className="text-xs font-semibold text-white/80" style={{ fontFamily: "'DM Mono', monospace" }}>Not a Wholesaler</span>
+              </div>
+              <div className="mt-1.5 flex items-center justify-center gap-2 px-4 py-1.5 rounded-full" style={{ background: "oklch(1 0 0 / 0.06)" }}>
                 <div className="flex -space-x-2">
                   {[
                     { src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=32&h=32&fit=crop&crop=face", label: "Fresno homeowner" },
                     { src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face", label: "Central Valley seller" },
                     { src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop&crop=face", label: "Clovis homeowner" },
                   ].map(({ src, label }, i) => (
-                    <img key={i} src={src} alt={label} className="w-7 h-7 rounded-full border-2" style={{ borderColor: "oklch(0.22 0.01 60)" }} />
+                    <img key={i} src={src} alt={label} className="w-6 h-6 rounded-full border-2" style={{ borderColor: "oklch(0.22 0.01 60)" }} />
                   ))}
                 </div>
-                <span className="text-xs text-white" style={{ fontFamily: "'DM Mono', monospace" }}>
-                  <strong>12 homeowners</strong> requested offers this week
+                <span className="text-xs text-white/70" style={{ fontFamily: "'DM Mono', monospace" }}>
+                  <strong className="text-white">12 homeowners</strong> requested offers this week
                 </span>
               </div>
             </div>
@@ -1333,30 +1353,7 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-20" style={{ background: "oklch(0.97 0.015 85)", clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }} />
       </section>
 
-      {/* ── 2. TRUST BAR ── */}
-      <section className="py-4" style={{ background: "oklch(0.22 0.01 60)", borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
-        <div className="container">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-            <div className="flex items-center gap-2">
-              <div className="flex gap-0.5">
-                {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />)}
-              </div>
-              <span className="text-sm font-bold text-white" style={{ fontFamily: "'DM Mono', monospace" }}>5.0 Google Rating</span>
-            </div>
-            <div className="hidden sm:flex items-center gap-2">
-              <Shield size={14} style={{ color: "oklch(0.65 0.10 145)" }} />
-              <span className="text-sm font-semibold text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>CA DRE #02219124</span>
-            </div>
-            <div className="hidden sm:flex items-center gap-2">
-              <HomeIcon size={14} style={{ color: "oklch(0.55 0.13 42)" }} />
-              <span className="text-sm font-semibold text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>700+ Homes Purchased</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-semibold text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>Not a Wholesaler — Real End Buyer</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Trust bar moved into hero section above */}
 
       {/* ── 2.5 MINI CASH vs LISTING TEASER ── */}
       <MiniCashVsListing />
