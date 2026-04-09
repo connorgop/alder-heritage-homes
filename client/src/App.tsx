@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import DontGetWholesaled from "./pages/DontGetWholesaled";
+import DontGetLowballed from "./pages/DontGetLowballed";
 import DontHireFriendRealtor from "./pages/DontHireFriendRealtor";
 import VacantPropertyWarning from "./pages/VacantPropertyWarning";
 
@@ -258,6 +259,9 @@ function Router() {
       <Route path="/junk-removal-before-selling" component={JunkRemoval} />
       <Route path="/why-choose-us" component={WhyChooseUs} />
       <Route path="/dont-get-wholesaled" component={DontGetWholesaled} />
+      <Route path="/dont-get-lowballed" component={DontGetLowballed} />
+      <Route path="/lowball-cash-offer-fresno" component={DontGetLowballed} />
+      <Route path="/fair-cash-offer-home" component={DontGetLowballed} />
       <Route path="/dont-hire-friend-realtor" component={DontHireFriendRealtor} />
       <Route path="/arm-rate-change-help" component={ArmRateChange} />
       <Route path="/cant-afford-my-home" component={CantAffordHome} />
