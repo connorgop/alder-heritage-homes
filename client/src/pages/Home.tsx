@@ -1167,7 +1167,7 @@ export default function HomePage() {
                 <span style={{ color: "oklch(0.75 0.10 42)" }}> Cash Offer or Agent Listing. You Choose.</span>
               </h1>
               <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-4 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                I buy homes for cash — that's what I do. But as a <strong style={{ color: "oklch(0.92 0.04 85)" }}>licensed agent and co-owner of a local brokerage</strong>, I'll always be honest about your best option. If cash isn't it, I'll connect you with a trusted broker or buyer — no conflict of interest, just the right answer for your situation.
+                I buy homes for cash — that's what I do. But as a <strong style={{ color: "oklch(0.92 0.04 85)" }}>licensed agent and co-owner of a local brokerage</strong>, I'll always be honest about your best option. If cash isn't the right move, I'll point you to a trusted broker or one of the 2–3 real end buyers I actually know in Fresno. Sadly, 99% of "we buy houses" companies are not the buyer. I am. No middlemen, no conflict of interest — just a straight answer.
               </p>
               <div className="fade-up fade-up-delay-3 flex flex-wrap gap-x-6 gap-y-2">
                 {["Cash offer in 24 hours", "No repairs, no fees", "Close in 5–7 days", "Honest advice — even if it's not me"].map((t) => (
