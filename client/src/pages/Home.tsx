@@ -36,9 +36,9 @@ const recentDeals = [
   {
     badge: "Tired Landlord",
     address: "4573 E Huntington Ave, Fresno",
-    summary: "Landlord wanted to liquidate and retire — purchased as-is, no hassle",
-    price: "Cash close",
-    timeline: "Quick & easy",
+    summary: "Tenants destroyed it for years — no inspections, just a quick walkthrough. Wired $235K in 48 hours.",
+    price: "$235,000 cash",
+    timeline: "Wired in 48 hours",
     color: "oklch(0.55 0.13 42)",
   },
   {
