@@ -764,7 +764,7 @@ function VisualProofStrip() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {/* Photo 1: Hazmat */}
           <div className="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/5]">
             <img src={HAZMAT_PHOTO} alt="Connor with hazmat cleanup team at Clovis property" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
@@ -793,19 +793,6 @@ function VisualProofStrip() {
             </div>
           </div>
 
-          {/* Photo 3: Side by side */}
-          <div className="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/5]">
-            <img src={SELLER_SIDE_PHOTO} alt="Connor with the Clovis seller" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-            <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0 0 0 / 0.7) 0%, transparent 50%)" }} />
-            <div className="absolute bottom-0 left-0 right-0 p-5">
-              <span className="inline-block px-2 py-0.5 rounded text-[0.6rem] font-bold uppercase tracking-wider mb-2" style={{ background: "oklch(0.45 0.10 200)", color: "white", fontFamily: "'DM Mono', monospace" }}>
-                $200K Cash · As-Is
-              </span>
-              <p className="text-sm text-white font-medium" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
-                No inspections, no contingencies — just a fair offer and a handshake
-              </p>
-            </div>
-          </div>
         </div>
 
         {/* Tags */}
@@ -1231,7 +1218,66 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 3. CASH OFFER VS LISTING CALCULATOR ── */}
+      {/* ── 3. CONNOR'S MANIFESTO — THE DIRTY SECRET ── */}
+      <ConnorManifesto />
+
+      {/* ── 3.1 WHY CHOOSE ALDER (COMPARISON TABLE) ── */}
+      <section className="py-24" style={{ background: "oklch(0.97 0.015 85)" }}>
+        <div className="container">
+          <div className="text-center mb-14">
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+              Why Alder Heritage
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+              Not All Cash Buyers Are the Same
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Most "we buy houses" companies are unlicensed wholesalers who flip your contract to another buyer. We're different — we're a licensed California real estate agent who actually buys your home.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "2px solid oklch(0.88 0.02 85)" }}>
+              <div className="p-4 text-center font-bold" style={{ background: "oklch(0.93 0.02 85)", fontFamily: "'Lora', serif", color: "oklch(0.45 0.01 60)" }}>
+                Typical Wholesaler
+              </div>
+              {[
+                "Unlicensed — no accountability",
+                "Assigns your contract to a stranger",
+                "Lowball offers, hidden fees",
+                "May back out at the last minute",
+                "No probate experience",
+                "Pressures you to sign fast",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3 px-5 py-3 border-t" style={{ borderColor: "oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", color: "oklch(0.45 0.01 60)" }}>
+                  <span style={{ color: "oklch(0.577 0.245 27.325)" }}>✗</span> {item}
+                </div>
+              ))}
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "2px solid oklch(0.55 0.13 42)" }}>
+              <div className="p-4 text-center font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Lora', serif" }}>
+                Alder Heritage Homes
+              </div>
+              {[
+                "Licensed CA Agent — DRE #02219124",
+                "We buy directly — no middlemen",
+                "Independent broker opinion included",
+                "Committed — we close when we say",
+                "700+ homes purchased since 2008",
+                "You set the timeline, not us",
+              ].map((item) => (
+                <div key={item} className="flex items-center gap-3 px-5 py-3 border-t" style={{ borderColor: "oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", color: "oklch(0.30 0.01 60)" }}>
+                  <CheckCircle2 size={16} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} /> {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 3.2 MEET CONNOR VIDEO ── */}
+      <MeetConnorVideo />
+
+      {/* ── 4. CASH OFFER VS LISTING CALCULATOR ── */}
       <CashOfferVsListingCalc />
 
       {/* ── 3.5 COMPARABLE SALES NEAR YOU ── */}
@@ -1361,65 +1407,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── 7. WHY CHOOSE US ── */}
-      <section className="py-24" style={{ background: "oklch(0.97 0.015 85)" }}>
-        <div className="container">
-          <div className="text-center mb-14">
-            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
-              Why Alder Heritage
-            </span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
-              Not All Cash Buyers Are the Same
-            </h2>
-            <p className="mt-4 max-w-2xl mx-auto" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Most "we buy houses" companies are unlicensed wholesalers who flip your contract to another buyer. We're different — we're a licensed California real estate agent who actually buys your home.
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "2px solid oklch(0.88 0.02 85)" }}>
-              <div className="p-4 text-center font-bold" style={{ background: "oklch(0.93 0.02 85)", fontFamily: "'Lora', serif", color: "oklch(0.45 0.01 60)" }}>
-                Typical Wholesaler
-              </div>
-              {[
-                "Unlicensed — no accountability",
-                "Assigns your contract to a stranger",
-                "Lowball offers, hidden fees",
-                "May back out at the last minute",
-                "No probate experience",
-                "Pressures you to sign fast",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3 px-5 py-3 border-t" style={{ borderColor: "oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", color: "oklch(0.45 0.01 60)" }}>
-                  <span style={{ color: "oklch(0.577 0.245 27.325)" }}>✗</span> {item}
-                </div>
-              ))}
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "2px solid oklch(0.55 0.13 42)" }}>
-              <div className="p-4 text-center font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Lora', serif" }}>
-                Alder Heritage Homes
-              </div>
-              {[
-                "Licensed CA Agent — DRE #02219124",
-                "We buy directly — no middlemen",
-                "Independent broker opinion included",
-                "Committed — we close when we say",
-                "700+ homes purchased since 2008",
-                "You set the timeline, not us",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3 px-5 py-3 border-t" style={{ borderColor: "oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", color: "oklch(0.30 0.01 60)" }}>
-                  <CheckCircle2 size={16} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} /> {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* ── 7.5 CONNOR'S MANIFESTO — WHY I'M HERE ── */}
-      <ConnorManifesto />
 
-      {/* ── 7.6 MEET CONNOR VIDEO ── */}
-      <MeetConnorVideo />
 
       {/* ── 7.6 RECENT DEALS ── */}
       <RecentDealsTicker />
