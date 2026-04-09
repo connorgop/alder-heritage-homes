@@ -44,7 +44,7 @@ export default function NeighborhoodPage({
   useSEO({
     title: `Sell My House in ${name}, ${city} CA | Cash Buyer — Alder Heritage Homes`,
     description: `We buy houses in ${name}, ${city}. Cash offer within 24 hours, close in 7–14 days. No repairs, no commissions. ${tagline}`,
-    canonical: `https://www.alderheritagehomes.com${slug.startsWith('/') ? slug : '/' + slug}`,
+    canonical: slug.startsWith('/') ? slug : '/' + slug,
     schema: faqSchema(faqs),
   });
 
