@@ -35,7 +35,7 @@ export default function HomeWorth() {
   useSEO({
     title: "What Is My Home Worth? Free Cash Valuation — Alder Heritage Homes",
     description: "Find out what your Central Valley home is worth in today's market. Free cash offer + Broker Opinion of Value within 24 hours. No repairs, no commissions, no obligation.",
-    canonical: "https://www.alderheritagehomes.com/what-is-my-home-worth",
+    canonical: "/what-is-my-home-worth",
     schema: faqSchema(faqs),
   });
 

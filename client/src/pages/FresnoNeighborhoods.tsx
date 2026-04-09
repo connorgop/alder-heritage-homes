@@ -84,7 +84,7 @@ export default function FresnoNeighborhoods() {
     title: "Sell My House in Fresno Neighborhoods | Cash Buyer — Alder Heritage Homes",
     description:
       "We buy houses in every Fresno neighborhood — Fig Garden, Tower District, Woodward Park, Sunnyside, McLane, and more. Cash offer in 24 hours, close in 7–14 days.",
-    canonical: "https://www.alderheritagehomes.com/fresno-neighborhoods",
+    canonical: "/fresno-neighborhoods",
   });
 
   return (

@@ -54,10 +54,11 @@ export function useSEO({ title, description, canonical, ogImage, schema, noIndex
     setMeta("og:type", "website", "property");
     setMeta("og:site_name", SITE_NAME, "property");
     setMeta("og:image", ogImage || DEFAULT_OG, "property");
-    if (canonical) {
-      setMeta("og:url", `${BASE_URL}${canonical}`, "property");
-      setLink("canonical", `${BASE_URL}${canonical}`);
-    }
+    // Always set canonical and og:url — use provided path or fall back to current pathname
+    const canonicalPath = canonical || window.location.pathname;
+    const canonicalUrl = `${BASE_URL}${canonicalPath}`;
+    setMeta("og:url", canonicalUrl, "property");
+    setLink("canonical", canonicalUrl);
 
     // Twitter Card
     setMeta("twitter:card", "summary_large_image");

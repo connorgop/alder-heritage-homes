@@ -68,7 +68,7 @@ export default function FresnoCashOfferCalculator() {
   useSEO({
     title: "Fresno Cash Offer Calculator — How Much Will a Cash Buyer Pay? | Alder Heritage Homes",
     description: "Use our free Fresno cash offer calculator to estimate what a cash buyer will pay for your home. Based on real Fresno market data. Get your actual offer in 24 hours — no obligation.",
-    canonical: "https://www.alderheritagehomes.com/fresno-cash-offer-calculator",
+    canonical: "/fresno-cash-offer-calculator",
     schema: faqSchema(faqs),
   });
 

@@ -22,7 +22,7 @@ export default function ModestoNeighborhoods() {
   useSEO({
     title: "Modesto CA Neighborhoods — Sell My House Fast | Alder Heritage Homes",
     description: "We buy houses in all Modesto neighborhoods — North Modesto, South Modesto, Vintage Faire, Salida, Ceres, and Downtown. Cash offers in 24 hours. Call (559) 281-8016.",
-    canonical: "https://www.alderheritagehomes.com/modesto-neighborhoods",
+    canonical: "/modesto-neighborhoods",
   });
 
   return (

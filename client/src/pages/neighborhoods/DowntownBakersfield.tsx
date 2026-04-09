@@ -14,7 +14,7 @@ export default function DowntownBakersfieldPage() {
   useSEO({
     title: "We Buy Houses Downtown Bakersfield — Cash Offers in 24 Hours | Alder Heritage Homes",
     description: "Sell your Downtown Bakersfield home fast for cash. No repairs, no commissions, no closing costs. Cash offers in 24 hours, close in 7 days. Call (559) 281-8016.",
-    canonical: "https://www.alderheritagehomes.com/bakersfield-neighborhoods/downtown-bakersfield",
+    canonical: "/bakersfield-neighborhoods/downtown-bakersfield",
   });
 
   return (

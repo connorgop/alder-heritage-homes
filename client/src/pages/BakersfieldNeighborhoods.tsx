@@ -26,7 +26,7 @@ export default function BakersfieldNeighborhoods() {
   useSEO({
     title: "Bakersfield Neighborhoods — We Buy Houses in Every Area | Alder Heritage Homes",
     description: "We buy houses in every Bakersfield neighborhood — East Bakersfield, Oildale, Southwest, Rosedale, Kern City, Stockdale, and more. Cash offers in 24 hours, close in 7 days.",
-    canonical: "https://www.alderheritagehomes.com/bakersfield-neighborhoods",
+    canonical: "/bakersfield-neighborhoods",
   });
 
   return (
