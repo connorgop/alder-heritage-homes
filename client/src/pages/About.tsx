@@ -6,7 +6,9 @@ import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
-const VIDEO_CONNOR_INTRO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv23_1c0c77d4.MP4";
+const VIDEO_CONNOR_OLD = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/CMoAdv23_1c0c77d4.MP4";
+const VIDEO_CONNOR_NEW = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-ad_9ad5ae32.mp4";
+const VIDEO_CONNOR_THUMB = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-thumbnail_9ed7fde4.jpg";
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
 const CONNOR_CLIENT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-side_d912ee39.webp";
 const CONNOR_HUG_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-hug_80f9b3b4.webp";
@@ -203,7 +205,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Connor's Intro Video — portrait, face visible */}
+      {/* Connor's Latest Video — CMoAdv24 (primary) */}
       <section className="py-20" style={{ background: "white" }}>
         <div className="container">
           <div className="max-w-4xl mx-auto">
@@ -217,11 +219,12 @@ export default function About() {
                     controls
                     playsInline
                     preload="metadata"
+                    poster={VIDEO_CONNOR_THUMB}
                     className="w-full h-full object-contain"
-                    aria-label="Connor Morris introduces Alder Heritage Homes"
+                    aria-label="Connor Morris — Alder Heritage Homes introduction (2024)"
                     style={{ borderRadius: "1rem" }}
                   >
-                    <source src={VIDEO_CONNOR_INTRO} type="video/mp4" />
+                    <source src={VIDEO_CONNOR_NEW} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -234,13 +237,55 @@ export default function About() {
                   Do You Have a House in Fresno You Need to Sell?
                 </h2>
                 <p className="text-base leading-relaxed mb-6" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  Whether you're dealing with an inherited home, facing foreclosure, going through a divorce, or simply ready to move on — Connor understands. Watch this short message to hear how Alder Heritage Homes can help.
+                  Whether you're dealing with an inherited home, facing foreclosure, going through a divorce, or simply ready to move on — Connor understands. Watch this 45-second message to hear how Alder Heritage Homes can help.
                 </p>
                 <div className="flex items-center gap-3 p-4 rounded-xl" style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)" }}>
                   <Heart size={20} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
                   <p className="text-sm" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                     No pressure, no obligation. Just an honest conversation about your options.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Connor's Earlier Video — CMoAdv23 (secondary) */}
+      <section className="py-16" style={{ background: "oklch(0.97 0.015 85)" }}>
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="order-2 md:order-1">
+                <span className="inline-block text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
+                  More From Connor
+                </span>
+                <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)", lineHeight: 1.3 }}>
+                  How We Help Homeowners in Tough Situations
+                </h2>
+                <p className="text-base leading-relaxed mb-6" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  In this earlier video, Connor explains the situations we handle most often — from inherited properties and probate complications to foreclosure prevention and homes that need major repairs. Every situation is different, and we treat it that way.
+                </p>
+                <a href={PHONE_HREF} className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold text-white transition-all hover:scale-105" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  <Phone size={18} /> Call Connor: {PHONE}
+                </a>
+              </div>
+              <div className="flex justify-center order-1 md:order-2">
+                <div
+                  className="relative rounded-2xl overflow-hidden shadow-xl"
+                  style={{ aspectRatio: "9/16", width: "100%", maxWidth: "280px", background: "oklch(0.10 0.01 60)" }}
+                >
+                  <video
+                    controls
+                    playsInline
+                    preload="metadata"
+                    className="w-full h-full object-contain"
+                    aria-label="Connor Morris — earlier introduction video"
+                    style={{ borderRadius: "1rem" }}
+                  >
+                    <source src={VIDEO_CONNOR_OLD} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             </div>

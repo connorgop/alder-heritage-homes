@@ -3,13 +3,15 @@
    Alder Heritage Homes — Conversion-Optimized, No Nav Distractions
    Heritage Warmth design: Terracotta + Slate Green + Oat
    ============================================================ */
-import { useState } from "react";
-import { Phone, ArrowRight, CheckCircle2, Shield, Star, Clock } from "lucide-react";
+import { useState, useRef } from "react";
+import { Phone, ArrowRight, CheckCircle2, Shield, Star, Clock, Play } from "lucide-react";
 import { Link } from "wouter";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
 const CONTACT_HREF = "/contact";
+const VIDEO_15S = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-15s_eeb37000.mp4";
+const VIDEO_15S_THUMB = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-15s-thumb_42de7c44.jpg";
 
 interface AdsLandingPageProps {
   /** Keyword-matched headline — mirrors the ad copy */
@@ -32,6 +34,62 @@ interface AdsLandingPageProps {
   badge: string;
   /** Urgency statement shown above the form CTA */
   urgency: string;
+}
+
+function MeetConnorClip() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+    setTimeout(() => videoRef.current?.play(), 100);
+  };
+
+  return (
+    <section className="py-8" style={{ background: "oklch(0.97 0.015 85)" }}>
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="flex flex-col sm:flex-row items-center gap-6 p-5 rounded-2xl" style={{ background: "white", border: "1px solid oklch(0.90 0.02 85)", boxShadow: "0 2px 12px oklch(0 0 0 / 0.06)" }}>
+          {/* Video */}
+          <div
+            className="relative rounded-xl overflow-hidden cursor-pointer group flex-shrink-0"
+            style={{ width: "140px", aspectRatio: "9/16", background: "oklch(0.10 0.01 60)" }}
+            onClick={!isPlaying ? handlePlay : undefined}
+          >
+            {!isPlaying ? (
+              <>
+                <img src={VIDEO_15S_THUMB} alt="Connor Morris" className="w-full h-full object-cover" />
+                <div className="absolute inset-0 transition-opacity group-hover:opacity-30" style={{ background: "oklch(0 0 0 / 0.3)" }} />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="flex items-center justify-center rounded-full" style={{ width: "44px", height: "44px", background: "oklch(0.55 0.13 42)", boxShadow: "0 4px 16px oklch(0.55 0.13 42 / 0.5)" }}>
+                    <Play size={18} fill="white" style={{ color: "white", marginLeft: "2px" }} />
+                  </div>
+                </div>
+                <div className="absolute bottom-2 left-2 px-2 py-0.5 rounded-full text-xs font-bold" style={{ background: "oklch(0 0 0 / 0.6)", color: "white", fontFamily: "'DM Mono', monospace", fontSize: "0.65rem" }}>0:15</div>
+              </>
+            ) : (
+              <video
+                ref={videoRef}
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-contain"
+                onEnded={() => setIsPlaying(false)}
+                style={{ background: "oklch(0.05 0 0)" }}
+              >
+                <source src={VIDEO_15S} type="video/mp4" />
+              </video>
+            )}
+          </div>
+          {/* Copy */}
+          <div className="flex-1 text-center sm:text-left">
+            <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>Meet Your Buyer</div>
+            <h3 className="text-lg font-bold mb-1" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>A Real Person, Not a Call Center</h3>
+            <p className="text-sm leading-relaxed" style={{ color: "oklch(0.45 0.01 60)" }}>When you call, you talk to Connor — the same person who walks through your house, writes your offer, and shows up at closing. Watch this 15-second intro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 function ContactForm({ ctaLabel }: { ctaLabel: string }) {
@@ -177,6 +235,9 @@ export default function AdsLandingPage({
           </div>
         </div>
       </section>
+
+      {/* Meet Connor — 15s video */}
+      <MeetConnorClip />
 
       {/* Trust bar */}
       <section className="py-5 border-b" style={{ background: "white", borderColor: "oklch(0.90 0.02 85)" }}>
