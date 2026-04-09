@@ -1127,7 +1127,7 @@ function MeetConnorVideo() {
 export default function HomePage() {
   useSEO({
     title: "Sell My Home Fresno CA | Cash Offer or List With an Agent | Alder Heritage Homes",
-    description: "Sell your home in Fresno CA — cash offer in 24 hours OR list with a licensed agent. The only Fresno company offering both options. DRE #02219124. No repairs, no fees. Call (559) 281-8016.",
+    description: "Sell your home in Fresno CA — direct cash buyer and licensed agent. Honest advice on your best option, whether that's a cash offer or a trusted broker. DRE #02219124. No repairs, no fees. Call (559) 281-8016.",
     canonical: "/",
     schema: faqSchema([
       { q: "How do I sell my house fast in Fresno?", a: "Contact Alder Heritage Homes at (559) 281-8016. We are a licensed CA real estate agent (DRE #02219124) who buys homes directly for cash. We can close in 5–7 days or on your timeline, with no repairs, no agent commissions, and no wholesalers." },
@@ -1143,7 +1143,7 @@ export default function HomePage() {
     <Layout>
       <PageMeta
         title="Sell My Home Fresno CA | Cash Offer or List With an Agent | Alder Heritage Homes"
-        description="Sell your home in Fresno CA — cash offer in 24 hours OR list with a licensed agent. The only Fresno company offering both options. DRE #02219124. No repairs, no fees. Call (559) 281-8016."
+        description="Sell your home in Fresno CA — direct cash buyer and licensed agent. Honest advice on your best option, whether that's a cash offer or a trusted broker. DRE #02219124. No repairs, no fees. Call (559) 281-8016."
         path="/"
       />
 
@@ -1159,7 +1159,7 @@ export default function HomePage() {
             <div>
               <div className="fade-up" style={{ animationDelay: "0s" }}>
                 <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-6" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-                  Fresno's Only Agent + Cash Buyer in One
+                  Direct Cash Buyer · Licensed CA Agent · DRE #02219124
                 </span>
               </div>
               <h1 className="fade-up fade-up-delay-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
@@ -1167,10 +1167,10 @@ export default function HomePage() {
                 <span style={{ color: "oklch(0.75 0.10 42)" }}> Cash Offer or Agent Listing. You Choose.</span>
               </h1>
               <p className="fade-up fade-up-delay-2 text-lg md:text-xl mb-4 leading-relaxed" style={{ color: "oklch(0.88 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                The <strong style={{ color: "oklch(0.92 0.04 85)" }}>only company in Fresno</strong> that is both a licensed real estate agent and a direct cash buyer. Get a cash offer in 24 hours, or let us list your home for maximum value — one call, both options, no pressure.
+                I buy homes for cash — that's what I do. But as a <strong style={{ color: "oklch(0.92 0.04 85)" }}>licensed agent and co-owner of a local brokerage</strong>, I'll always be honest about your best option. If cash isn't it, I'll connect you with a trusted broker or buyer — no conflict of interest, just the right answer for your situation.
               </p>
               <div className="fade-up fade-up-delay-3 flex flex-wrap gap-x-6 gap-y-2">
-                {["Cash offer OR agent listing", "No repairs needed", "Close in 5–7 days", "Licensed Agent DRE #02219124"].map((t) => (
+                {["Cash offer in 24 hours", "No repairs, no fees", "Close in 5–7 days", "Honest advice — even if it's not me"].map((t) => (
                   <div key={t} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.85 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                     <CheckCircle2 size={16} style={{ color: "oklch(0.65 0.10 145)" }} />
                     {t}

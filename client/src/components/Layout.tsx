@@ -372,7 +372,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         style={{ boxShadow: "0 -4px 24px oklch(0.22 0.01 60 / 0.35)" }}
       >
         <div className="flex items-center justify-center py-1" style={{ background: "oklch(0.22 0.01 60)", borderTop: "1px solid oklch(1 0 0 / 0.12)" }}>
-          <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "oklch(0.70 0.06 55)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.10em" }}>Fresno's Only Agent + Cash Buyer</span>
+          <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "oklch(0.70 0.06 55)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.10em" }}>Direct Cash Buyer · Licensed Agent · Honest Advice</span>
         </div>
         <div className="flex">
           <a
