@@ -14,7 +14,7 @@ import PageMeta from "@/components/PageMeta";
 import {
   Phone, ArrowRight, CheckCircle2, Clock, Shield, Star,
   Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Loader2, MapPin,
-  Play, Heart
+  Play, Heart, ChevronDown, ChevronUp, BookOpen, Camera, Zap, MessageCircle
 } from "lucide-react";
 
 const PHONE = "(559) 281-8016";
@@ -24,6 +24,95 @@ const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyN
 const HANDSHAKE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-handshake-h3sNkSMXKTXvEAG5butBYp.webp";
 const CONNOR_VIDEO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-ad_9ad5ae32.mp4";
 const CONNOR_VIDEO_THUMB = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-thumbnail_9ed7fde4.jpg";
+
+// Before/After photos
+const HAZMAT_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-hazmat-team-clovis_6f37d7da.webp";
+const SELLER_HUG_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-hug_80f9b3b4.webp";
+const SELLER_SIDE_PHOTO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-seller-clovis-side_d912ee39.webp";
+
+// Recent deals data (from Portfolio page)
+const recentDeals = [
+  {
+    badge: "Probate Estate",
+    address: "970 College Canyon Rd, Solvang",
+    summary: "5-acre ranch with squatter, pest damage, collapsing patio",
+    price: "$975,000 cash",
+    timeline: "Closed in days",
+    color: "oklch(0.55 0.13 42)",
+  },
+  {
+    badge: "3-Property Estate",
+    address: "4031 E Pontiac Way + 2 more, Fresno",
+    summary: "Mother passed, squatters in 2 properties, family needed fast payout",
+    price: "3 homes, 1 close",
+    timeline: "Single transaction",
+    color: "oklch(0.28 0.05 155)",
+  },
+  {
+    badge: "Cash Purchase",
+    address: "1749 W Santa Ana Ave, Fresno",
+    summary: "Quick sale needed — purchased, renovated, resold at $305K",
+    price: "Cash close",
+    timeline: "7 days",
+    color: "oklch(0.45 0.10 200)",
+  },
+  {
+    badge: "Murder Scene",
+    address: "Clovis, CA (address withheld)",
+    summary: "Homicide, 2-year squatter, no water/sewer, hazmat required",
+    price: "$200,000 cash",
+    timeline: "As-is, no contingencies",
+    color: "oklch(0.50 0.12 42)",
+  },
+];
+
+// Featured blog posts
+const featuredPosts = [
+  {
+    slug: "dont-get-wholesaled-fresno-cash-buyer-warning",
+    title: "Don't Get Wholesaled: How to Spot a Fake Cash Buyer",
+    excerpt: "Most 'we buy houses' companies have no capital. They lock you into a contract, then sell it to a real investor.",
+    category: "Consumer Warning",
+    readTime: "9 min",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp",
+  },
+  {
+    slug: "how-to-stop-foreclosure-fresno",
+    title: "How to Stop Foreclosure in Fresno: Your Options Explained",
+    excerpt: "Facing foreclosure? You have more options than you think — even if the auction date is weeks away.",
+    category: "Foreclosure",
+    readTime: "7 min",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/foreclosure-help-TU46LJDiCeKVaTFvCVuw8j.webp",
+  },
+  {
+    slug: "sell-inherited-house-fresno-probate",
+    title: "How to Sell an Inherited House in Fresno: Complete Guide",
+    excerpt: "Inherited a home after a loved one passed? This guide walks you through the probate process.",
+    category: "Probate",
+    readTime: "9 min",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/probate-home-ZeanN6iaQ9xcreUKU8kCg3.webp",
+  },
+];
+
+// Mini FAQ for homepage
+const homepageFAQs = [
+  {
+    q: "How fast can you actually close?",
+    a: "We can close in as little as 5–7 business days once we have a signed purchase agreement and clear title. If you need more time — to find your next home, coordinate a move, or handle an estate — we work around your schedule. We've closed in 3 days when a seller needed it.",
+  },
+  {
+    q: "Do I need to make any repairs or clean the house?",
+    a: "No. We buy homes in any condition — fire damage, foundation issues, mold, hoarder situations, deferred maintenance, or anything else. Leave whatever you don't want. Furniture, appliances, personal belongings — we handle all of it after closing.",
+  },
+  {
+    q: "How do I know you're not a wholesaler?",
+    a: "We are a licensed California real estate agent (DRE #02219124) who buys with our own capital. We never use 'and/or assignee' language, we provide proof of funds within 24 hours, and we include a free third-party Broker Opinion of Value with every offer. Wholesalers can't do any of these things.",
+  },
+  {
+    q: "Are there any fees or commissions?",
+    a: "No agent commissions, no listing fees, no closing cost surprises. We cover standard seller-side closing costs. The offer we make is the amount you receive at closing, minus any outstanding mortgage payoff, liens, or back taxes.",
+  },
+];
 
 const situations = [
   {
@@ -598,6 +687,290 @@ function InlineOfferForm() {
   );
 }
 
+/* ── Recent Deals Ticker ── */
+
+function RecentDealsTicker() {
+  return (
+    <section className="py-16 overflow-hidden" style={{ background: "oklch(0.20 0.01 60)" }}>
+      <div className="container">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+          <div>
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+              Real Transactions
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>
+              Recent Deals We've Closed
+            </h2>
+          </div>
+          <Link href="/our-deals" className="flex-shrink-0 inline-flex items-center gap-2 text-sm font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+            See all deals <ArrowRight size={14} />
+          </Link>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {recentDeals.map((deal) => (
+            <Link key={deal.address} href="/our-deals">
+              <div
+                className="group rounded-xl p-5 cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg h-full"
+                style={{ background: "oklch(1 0 0 / 0.05)", border: "1px solid oklch(1 0 0 / 0.10)" }}
+              >
+                <span
+                  className="inline-block px-2.5 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider mb-3"
+                  style={{ background: deal.color.replace(")", " / 0.2)"), color: deal.color, fontFamily: "'DM Mono', monospace" }}
+                >
+                  {deal.badge}
+                </span>
+                <div className="text-sm font-bold text-white mb-1" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                  {deal.address}
+                </div>
+                <p className="text-xs leading-relaxed mb-4" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  {deal.summary}
+                </p>
+                <div className="flex items-center justify-between pt-3 border-t" style={{ borderColor: "oklch(1 0 0 / 0.08)" }}>
+                  <span className="text-xs font-bold" style={{ color: deal.color, fontFamily: "'DM Mono', monospace" }}>
+                    {deal.price}
+                  </span>
+                  <span className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
+                    {deal.timeline}
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Visual Proof / Before & After Strip ── */
+
+function VisualProofStrip() {
+  return (
+    <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
+      <div className="container">
+        <div className="text-center mb-12">
+          <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+            <Camera size={14} className="inline mr-2" style={{ verticalAlign: "middle" }} />
+            Real Photos · Real Stories
+          </span>
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+            Properties Nobody Else Would Touch
+          </h2>
+          <p className="mt-4 max-w-2xl mx-auto" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+            We bought a home in Clovis with a homicide history, a 2-year squatter, no water, and no sewer. Here's what happened.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          {/* Photo 1: Hazmat */}
+          <div className="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/5]">
+            <img src={HAZMAT_PHOTO} alt="Connor with hazmat cleanup team at Clovis property" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0 0 0 / 0.7) 0%, transparent 50%)" }} />
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <span className="inline-block px-2 py-0.5 rounded text-[0.6rem] font-bold uppercase tracking-wider mb-2" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>
+                Hazmat Cleanup
+              </span>
+              <p className="text-sm text-white font-medium" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                Connor on-site with the hazmat team after purchasing the property
+              </p>
+            </div>
+          </div>
+
+          {/* Photo 2: Seller hug */}
+          <div className="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/5]">
+            <img src={SELLER_HUG_PHOTO} alt="Connor hugging the seller after closing" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0 0 0 / 0.7) 0%, transparent 50%)" }} />
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <span className="inline-block px-2 py-0.5 rounded text-[0.6rem] font-bold uppercase tracking-wider mb-2" style={{ background: "oklch(0.28 0.05 155)", color: "white", fontFamily: "'DM Mono', monospace" }}>
+                Closing Day
+              </span>
+              <p className="text-sm text-white font-medium" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                The seller hugging Connor after a smooth, stress-free close
+              </p>
+            </div>
+          </div>
+
+          {/* Photo 3: Side by side */}
+          <div className="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/5]">
+            <img src={SELLER_SIDE_PHOTO} alt="Connor with the Clovis seller" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0 0 0 / 0.7) 0%, transparent 50%)" }} />
+            <div className="absolute bottom-0 left-0 right-0 p-5">
+              <span className="inline-block px-2 py-0.5 rounded text-[0.6rem] font-bold uppercase tracking-wider mb-2" style={{ background: "oklch(0.45 0.10 200)", color: "white", fontFamily: "'DM Mono', monospace" }}>
+                $200K Cash · As-Is
+              </span>
+              <p className="text-sm text-white font-medium" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                No inspections, no contingencies — just a fair offer and a handshake
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Tags */}
+        <div className="flex flex-wrap justify-center gap-2 mt-8 max-w-3xl mx-auto">
+          {["Murder scene", "2-yr squatter", "No utilities", "Hazmat cleanup", "Full renovation", "$200K cash"].map((tag) => (
+            <span key={tag} className="px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.22 0.01 60 / 0.08)", color: "oklch(0.35 0.01 60)", fontFamily: "'DM Mono', monospace", border: "1px solid oklch(0.22 0.01 60 / 0.12)" }}>
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div className="text-center mt-8">
+          <Link href="/before-after" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all hover:scale-105" style={{ background: "oklch(0.22 0.01 60)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
+            See More Transformations <ArrowRight size={16} />
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Featured Blog Posts ── */
+
+function FeaturedBlogPosts() {
+  return (
+    <section className="py-20" style={{ background: "oklch(0.93 0.02 85)" }}>
+      <div className="container">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+          <div>
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+              <BookOpen size={14} className="inline mr-2" style={{ verticalAlign: "middle" }} />
+              Expert Guides
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+              Know Your Options Before You Decide
+            </h2>
+          </div>
+          <Link href="/blog" className="flex-shrink-0 inline-flex items-center gap-2 text-sm font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+            All articles <ArrowRight size={14} />
+          </Link>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {featuredPosts.map((post) => (
+            <Link key={post.slug} href={`/blog/${post.slug}`}>
+              <div className="group rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl h-full" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
+                <div className="relative h-48 overflow-hidden">
+                  <img src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>
+                    {post.category}
+                  </span>
+                </div>
+                <div className="p-5">
+                  <h3 className="font-bold text-lg mb-2 transition-colors " style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)", lineHeight: 1.3 }}>
+                    {post.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed mb-4" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center gap-2 text-xs" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
+                    <Clock size={12} /> {post.readTime}
+                  </div>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Mini FAQ Accordion ── */
+
+function HomepageFAQ() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  return (
+    <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
+      <div className="container">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+              <MessageCircle size={14} className="inline mr-2" style={{ verticalAlign: "middle" }} />
+              Common Questions
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+              Questions Sellers Ask Us
+            </h2>
+          </div>
+
+          <div className="space-y-3">
+            {homepageFAQs.map((faq, i) => (
+              <div
+                key={i}
+                className="rounded-xl overflow-hidden transition-all"
+                style={{ background: "white", border: openIndex === i ? "1.5px solid oklch(0.55 0.13 42 / 0.3)" : "1px solid oklch(0.88 0.02 85)" }}
+              >
+                <button
+                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                  className="w-full flex items-center justify-between p-5 text-left"
+                >
+                  <span className="font-bold text-base pr-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                    {faq.q}
+                  </span>
+                  {openIndex === i ? (
+                    <ChevronUp size={20} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
+                  ) : (
+                    <ChevronDown size={20} style={{ color: "oklch(0.55 0.01 60)", flexShrink: 0 }} />
+                  )}
+                </button>
+                {openIndex === i && (
+                  <div className="px-5 pb-5">
+                    <p className="text-sm leading-relaxed" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                      {faq.a}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link href="/faq" className="inline-flex items-center gap-2 text-sm font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              See all 40+ questions <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── What Happens After You Submit ── */
+
+function WhatHappensNext() {
+  const nextSteps = [
+    { icon: <Zap size={20} />, title: "You Submit", desc: "Fill out the form or call — takes 60 seconds" },
+    { icon: <Phone size={20} />, title: "Connor Calls You", desc: "Within 2 hours, you'll hear from Connor directly" },
+    { icon: <HomeIcon size={20} />, title: "Quick Walkthrough", desc: "15-minute visit — no pressure, just an honest look" },
+    { icon: <DollarSign size={20} />, title: "Written Offer Same Day", desc: "Fair price + free Broker Opinion of Value included" },
+  ];
+
+  return (
+    <div className="rounded-2xl p-8 mb-8" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.12)" }}>
+      <h3 className="text-lg font-bold text-white mb-6" style={{ fontFamily: "'Lora', serif" }}>
+        What Happens After You Submit?
+      </h3>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {nextSteps.map((step, i) => (
+          <div key={i} className="text-center">
+            <div className="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3" style={{ background: "oklch(0.55 0.13 42 / 0.2)", color: "oklch(0.75 0.10 42)" }}>
+              {step.icon}
+            </div>
+            <div className="text-sm font-bold text-white mb-1" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+              {step.title}
+            </div>
+            <div className="text-xs" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              {step.desc}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 /* ── Meet Connor Video Component ── */
 
 function MeetConnorVideo() {
@@ -1040,6 +1413,12 @@ export default function HomePage() {
       {/* ── 7.5 MEET CONNOR VIDEO ── */}
       <MeetConnorVideo />
 
+      {/* ── 7.6 RECENT DEALS ── */}
+      <RecentDealsTicker />
+
+      {/* ── 7.7 VISUAL PROOF ── */}
+      <VisualProofStrip />
+
       {/* ── 8. TESTIMONIALS ── */}
       <section className="py-20 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="container">
@@ -1089,6 +1468,12 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── 8.5 FEATURED BLOG POSTS ── */}
+      <FeaturedBlogPosts />
+
+      {/* ── 8.6 HOMEPAGE FAQ ── */}
+      <HomepageFAQ />
 
       {/* ── 9. AREAS WE SERVE ── */}
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
@@ -1155,6 +1540,7 @@ export default function HomePage() {
               <p className="text-lg mb-8 leading-relaxed" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 Fill out the form and we'll get back to you within a few hours. No obligation, no pressure — just a fair, honest offer from a licensed local buyer.
               </p>
+              <WhatHappensNext />
               <div className="space-y-4 mb-8">
                 {[
                   { icon: "🏆", text: "We match or beat any cash offer — guaranteed" },
