@@ -1,0 +1,81 @@
+/* ============================================================
+   Google Places Autocomplete — Custom Styling
+   Matches Alder Heritage Homes brand (warm earth tones)
+   ============================================================ */
+
+/* Container */
+.pac-container {
+  background: #faf8f5 !important;
+  border: 2px solid oklch(0.75 0.18 55) !important;
+  border-top: none !important;
+  border-radius: 0 0 0.6rem 0.6rem !important;
+  box-shadow: 0 8px 32px oklch(0.22 0.01 60 / 0.25) !important;
+  font-family: 'Nunito Sans', sans-serif !important;
+  margin-top: -2px !important;
+  z-index: 10000 !important;
+  padding: 4px 0 !important;
+}
+
+/* Individual suggestion items */
+.pac-item {
+  padding: 10px 14px !important;
+  border-top: 1px solid oklch(0.90 0.02 85) !important;
+  cursor: pointer !important;
+  font-size: 0.9rem !important;
+  color: oklch(0.30 0.02 60) !important;
+  transition: background 0.15s ease !important;
+  line-height: 1.4 !important;
+}
+
+.pac-item:first-child {
+  border-top: none !important;
+}
+
+/* Hover state */
+.pac-item:hover,
+.pac-item-selected {
+  background: oklch(0.55 0.13 42 / 0.08) !important;
+}
+
+/* Main text (street address) */
+.pac-item-query {
+  color: oklch(0.22 0.01 60) !important;
+  font-weight: 700 !important;
+  font-size: 0.9rem !important;
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+
+/* Secondary text (city, state) */
+.pac-item span:not(.pac-item-query) {
+  color: oklch(0.50 0.03 60) !important;
+  font-size: 0.8rem !important;
+}
+
+/* Location pin icon */
+.pac-icon {
+  background-image: none !important;
+  width: 18px !important;
+  height: 18px !important;
+  margin-right: 8px !important;
+  background-color: oklch(0.55 0.13 42) !important;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'%3E%3C/path%3E%3Ccircle cx='12' cy='10' r='3'%3E%3C/circle%3E%3C/svg%3E") center / contain no-repeat !important;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'%3E%3C/path%3E%3Ccircle cx='12' cy='10' r='3'%3E%3C/circle%3E%3C/svg%3E") center / contain no-repeat !important;
+}
+
+/* Hide "Powered by Google" logo */
+.pac-container::after {
+  display: none !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .pac-container {
+    width: calc(100% - 56px) !important;
+    left: 28px !important;
+  }
+  
+  .pac-item {
+    padding: 12px 12px !important;
+    font-size: 0.85rem !important;
+  }
+}

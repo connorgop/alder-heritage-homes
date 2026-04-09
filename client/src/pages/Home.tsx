@@ -10,6 +10,7 @@ import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import ComparableSales from "@/components/ComparableSales";
+import { usePlacesAutocomplete } from "@/hooks/usePlacesAutocomplete";
 import ConnorManifesto from "@/components/ConnorManifesto";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
 import PageMeta from "@/components/PageMeta";
@@ -423,6 +424,12 @@ function InstantCashCalculator() {
   const [submitting, setSubmitting] = useState(false);
   const { submit } = useFormSubmit();
 
+  const { inputRef: addressInputRef } = usePlacesAutocomplete({
+    onSelect: (selectedAddress) => {
+      setAddress(selectedAddress);
+    },
+  });
+
   const handleAddressSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (address.trim().length > 5) setStep("phone");
@@ -539,12 +546,14 @@ function InstantCashCalculator() {
       <form onSubmit={handleAddressSubmit} className="p-7">
         <label className="block text-xs font-bold mb-2 uppercase tracking-widest" style={{ color: "oklch(0.45 0.05 55)", fontFamily: "'DM Mono', monospace" }}>Property Address</label>
         <input
+          ref={addressInputRef}
           required
           type="text"
-          placeholder="123 Main St, Fresno, CA"
+          placeholder="Start typing your address..."
           value={address}
           onChange={e => setAddress(e.target.value)}
           autoFocus
+          autoComplete="off"
           style={{
             background: "oklch(0.97 0.01 85)",
             border: "2px solid oklch(0.75 0.18 55)",
