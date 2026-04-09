@@ -14,7 +14,7 @@ import ConnorManifesto from "@/components/ConnorManifesto";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
 import PageMeta from "@/components/PageMeta";
 import {
-  Phone, ArrowRight, CheckCircle2, Clock, Shield, Star,
+  Phone, ArrowRight, CheckCircle2, Clock, Shield, Star, Calculator,
   Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Loader2, MapPin,
   Play, Heart, ChevronDown, ChevronUp, BookOpen, Camera, Zap, MessageCircle
 } from "lucide-react";
@@ -282,6 +282,137 @@ function AnimatedCounter({ target, suffix = "" }: { target: number | string; suf
     <div ref={ref}>
       {typeof target === "number" ? count + suffix : target}
     </div>
+  );
+}
+
+/* ── Mini Cash vs. Listing Teaser ── */
+function MiniCashVsListing() {
+  const [val, setVal] = useState(350000);
+  const fmt = (n: number) => '$' + Math.round(n / 1000) + 'K';
+
+  // Listing path costs
+  const commission = val * 0.055;
+  const closing = val * 0.02;
+  const repairs = val * 0.04;
+  const staging = 3500;
+  const carrying = val * 0.008;
+  const listingNet = val - commission - closing - repairs - staging - carrying;
+
+  // Cash path
+  const cashOffer = Math.round(val * 0.84);
+  const cashNet = cashOffer;
+  const diff = cashNet - listingNet;
+
+  return (
+    <section className="py-6" style={{ background: "oklch(0.97 0.015 85)" }}>
+      <div className="container max-w-3xl">
+        <div
+          className="rounded-2xl overflow-hidden"
+          style={{ background: "oklch(0.22 0.01 60)", border: "1px solid oklch(1 0 0 / 0.08)" }}
+        >
+          <div className="px-5 py-4 md:px-8 md:py-5">
+            {/* Header row */}
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
+                  <Calculator size={12} className="inline mr-1" style={{ verticalAlign: "middle" }} />
+                  Quick Compare
+                </p>
+                <h3 className="text-lg md:text-xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>
+                  Cash Offer vs. Listing — Your Numbers
+                </h3>
+              </div>
+              <Link href="/cash-offer-calculator">
+                <span className="text-xs underline cursor-pointer" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
+                  Full Calculator →
+                </span>
+              </Link>
+            </div>
+
+            {/* Slider */}
+            <div className="mb-4">
+              <div className="flex justify-between items-center mb-1">
+                <span className="text-xs text-white/60" style={{ fontFamily: "'DM Mono', monospace" }}>Home Value</span>
+                <span className="text-sm font-bold" style={{ color: "oklch(0.75 0.10 42)", fontFamily: "'DM Mono', monospace" }}>
+                  ${val.toLocaleString()}
+                </span>
+              </div>
+              <input
+                type="range" min={100000} max={900000} step={5000} value={val}
+                onChange={(e) => setVal(Number(e.target.value))}
+                className="w-full accent-[#c8a96e] h-2"
+              />
+              <div className="flex justify-between text-white/30 text-[0.65rem] mt-0.5" style={{ fontFamily: "'DM Mono', monospace" }}>
+                <span>$100K</span><span>$900K</span>
+              </div>
+            </div>
+
+            {/* Side by side results */}
+            <div className="grid grid-cols-2 gap-3">
+              {/* Listing side */}
+              <div className="rounded-xl p-4" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.08)" }}>
+                <p className="text-[0.65rem] font-bold uppercase tracking-wider text-white/50 mb-2" style={{ fontFamily: "'DM Mono', monospace" }}>Traditional Listing</p>
+                <p className="text-xl md:text-2xl font-bold text-white mb-1" style={{ fontFamily: "'Lora', serif" }}>
+                  {fmt(listingNet)}
+                </p>
+                <p className="text-[0.65rem] text-white/40" style={{ fontFamily: "'DM Mono', monospace" }}>net after 45–90 days</p>
+                <div className="mt-2 space-y-1">
+                  {[
+                    { label: "Agent fees", val: fmt(commission) },
+                    { label: "Repairs", val: fmt(repairs) },
+                    { label: "Closing", val: fmt(closing) },
+                  ].map((r) => (
+                    <div key={r.label} className="flex justify-between text-[0.6rem]">
+                      <span className="text-white/40">{r.label}</span>
+                      <span className="text-red-400/80">−{r.val}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Cash side */}
+              <div className="rounded-xl p-4" style={{ background: "oklch(0.55 0.13 42 / 0.1)", border: "1px solid oklch(0.55 0.13 42 / 0.3)" }}>
+                <p className="text-[0.65rem] font-bold uppercase tracking-wider mb-2" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>Alder Cash Offer</p>
+                <p className="text-xl md:text-2xl font-bold mb-1" style={{ fontFamily: "'Lora', serif", color: "oklch(0.75 0.10 42)" }}>
+                  {fmt(cashNet)}
+                </p>
+                <p className="text-[0.65rem] text-white/40" style={{ fontFamily: "'DM Mono', monospace" }}>net in 7 days</p>
+                <div className="mt-2 space-y-1">
+                  {[
+                    { label: "Agent fees", val: "$0" },
+                    { label: "Repairs", val: "$0" },
+                    { label: "Closing", val: "$0" },
+                  ].map((r) => (
+                    <div key={r.label} className="flex justify-between text-[0.6rem]">
+                      <span className="text-white/40">{r.label}</span>
+                      <span className="text-green-400/80">{r.val}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom summary */}
+            <div className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 pt-3" style={{ borderTop: "1px solid oklch(1 0 0 / 0.08)" }}>
+              <p className="text-sm text-white/70" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                {diff >= 0 ? (
+                  <>Cash nets you <strong className="text-[#c8a96e]">{fmt(Math.abs(diff))} more</strong> — and closes 38–83 days faster</>
+                ) : (
+                  <>Listing nets {fmt(Math.abs(diff))} more — but takes 45–90 days longer</>
+                )}
+              </p>
+              <a
+                href="tel:5592818016"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold transition-all hover:scale-105 whitespace-nowrap"
+                style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                <Phone size={14} /> Get My Real Offer
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -1217,6 +1348,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── 2.5 MINI CASH vs LISTING TEASER ── */}
+      <MiniCashVsListing />
 
       {/* ── 3. CONNOR'S MANIFESTO — THE DIRTY SECRET ── */}
       <ConnorManifesto />
