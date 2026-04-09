@@ -147,7 +147,7 @@ const situations = [
   {
     icon: <Users size={28} />,
     title: "Inherited or Probate Home",
-    desc: "Lost a loved one and inherited their home? We've completed 100+ probate sales and can guide you through every step.",
+    desc: "Lost a loved one and inherited their home? We've completed 700+ home purchases since 2008 and can guide you through every step.",
     href: "/probate-inherited-homes",
     color: "oklch(0.35 0.05 155)",
   },
@@ -161,7 +161,7 @@ const situations = [
 ];
 
 const stats = [
-  { value: 47, suffix: "+", label: "Homes Purchased", sub: "in the Central Valley" },
+  { value: 700, suffix: "+", label: "Homes Purchased", sub: "since 2008 across all entities" },
   { value: 7, suffix: " days", label: "Fastest Close", sub: "no repairs needed" },
   { value: 0, prefix: "$", suffix: "", label: "Commissions or Fees", sub: "ever" },
   { value: 24, suffix: "hr", label: "Cash Offer", sub: "after walkthrough" },
@@ -1221,7 +1221,7 @@ export default function HomePage() {
             </div>
             <div className="hidden sm:flex items-center gap-2">
               <HomeIcon size={14} style={{ color: "oklch(0.55 0.13 42)" }} />
-              <span className="text-sm font-semibold text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>47+ Homes Purchased</span>
+              <span className="text-sm font-semibold text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>700+ Homes Purchased</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-sm font-semibold text-white/80" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>Not a Wholesaler — Real End Buyer</span>
@@ -1402,7 +1402,7 @@ export default function HomePage() {
                 "We buy directly — no middlemen",
                 "Independent broker opinion included",
                 "Committed — we close when we say",
-                "100+ probate sales completed",
+                "700+ homes purchased since 2008",
                 "You set the timeline, not us",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3 px-5 py-3 border-t" style={{ borderColor: "oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", color: "oklch(0.30 0.01 60)" }}>

@@ -18,7 +18,7 @@ const PHONE_HREF = "tel:5592818016";
 const topSituations = [
   { label: "Facing Foreclosure", href: "/foreclosure-help", desc: "Stop the auction — we close before your sale date" },
   { label: "Behind on Mortgage", href: "/behind-on-mortgage", desc: "Missed payments piling up? We pay off what you owe" },
-  { label: "Inherited / Probate Home", href: "/probate-inherited-homes", desc: "100+ probate sales — we handle the paperwork" },
+  { label: "Inherited / Probate Home", href: "/probate-inherited-homes", desc: "700+ homes purchased — we handle the paperwork" },
   { label: "Divorce Home Sale", href: "/sell-house-divorce", desc: "Fast, private sale so both parties can move on" },
   { label: "Need to Sell Fast", href: "/sell-house-fast", desc: "Close in as little as 5–7 days, any condition" },
   { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back", desc: "Sell today, stay as long as you need" },

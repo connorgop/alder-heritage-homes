@@ -207,7 +207,7 @@ export default function BlogPost() {
                 <ul className="space-y-2">
                   {[
                     "Licensed CA Agent DRE #02219124",
-                    "100+ probate sales",
+                    "700+ homes purchased",
                     "Close in 5–7 days or on your timeline",
                     "No repairs needed",
                     "Rent-back option available",

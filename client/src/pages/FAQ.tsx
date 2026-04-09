@@ -96,7 +96,7 @@ const faqCategories: FAQCategory[] = [
       },
       {
         q: "Can I sell an inherited or probate home?",
-        a: "Yes. We handle probate and inherited property sales regularly. If the estate is in probate, we work directly with the executor and the probate court. If probate is complete, we can close quickly. We've completed 100+ probate transactions in the Central Valley.",
+        a: "Yes. We handle probate and inherited property sales regularly. If the estate is in probate, we work directly with the executor and the probate court. If probate is complete, we can close quickly. We've completed 700+ home purchases since 2008 across our group of entities, including many probate transactions in the Central Valley.",
       },
       {
         q: "Can I sell if I'm going through a divorce?",

@@ -121,7 +121,7 @@ export default function CityPage({ city, county, population, description, neighb
                 Whether you're facing foreclosure, behind on your mortgage, dealing with a second mortgage, going through probate after a loved one passed away, or simply need to sell fast — Alder Heritage Homes is the trusted local cash buyer in {city}.
               </p>
               <p className="leading-relaxed mb-8" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Unlike out-of-state wholesalers who flip your contract to unknown buyers, we are a licensed California real estate agent (DRE #02219124) who actually buys your home. We've completed 100+ transactions in the Central Valley, including many in {city} and {county} County.
+                Unlike out-of-state wholesalers who flip your contract to unknown buyers, we are a licensed California real estate agent (DRE #02219124) who actually buys your home. We've completed 700+ home purchases since 2008 across our group of entities, including many in {city} and {county} County.
               </p>
 
               {stats && stats.length > 0 && (
@@ -220,7 +220,7 @@ export default function CityPage({ city, county, population, description, neighb
                 <ul className="space-y-3">
                   {[
                     "Licensed CA Agent DRE #02219124",
-                    "100+ sales in the Central Valley",
+                    "700+ homes purchased since 2008",
                     "close in as little as 5–7 days",
                     "No repairs or cleaning",
                     "No agent commissions",

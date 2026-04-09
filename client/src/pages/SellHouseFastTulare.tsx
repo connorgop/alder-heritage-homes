@@ -24,7 +24,7 @@ export default function SellHouseFastTulare() {
         "Any property condition — fire, mold, code violations",
         "Any situation — foreclosure, probate, divorce, relocation",
         "Licensed CA Real Estate Agent DRE #02219124",
-        "100+ Central Valley transactions completed",
+        "700+ homes purchased since 2008",
         "Local Tulare County market expertise",
         "In-house construction crew for any condition property",
         "Rent-back option — stay in your home after closing",
@@ -32,7 +32,7 @@ export default function SellHouseFastTulare() {
       sections={[
         {
           heading: "We Buy Houses Throughout Tulare County",
-          body: `Tulare County is one of the most agriculturally productive counties in the world — and one of the most underserved markets when it comes to honest, local cash home buyers. Alder Heritage Homes fills that gap. We are a licensed California real estate brokerage (DRE #02219124) that buys homes directly throughout Tulare County, including Tulare city, Porterville, Lindsay, Dinuba, Exeter, Farmersville, Woodlake, Springville, and all surrounding communities.\n\nUnlike out-of-state wholesalers who advertise in Tulare County and then assign your contract to an unknown investor, we use our own funds and close directly. You know exactly who you're selling to from day one. We've completed 100+ transactions in the Central Valley and understand the unique dynamics of the Tulare County market — including agricultural land, rural properties, and homes in smaller communities that traditional buyers often overlook.`,
+          body: `Tulare County is one of the most agriculturally productive counties in the world — and one of the most underserved markets when it comes to honest, local cash home buyers. Alder Heritage Homes fills that gap. We are a licensed California real estate brokerage (DRE #02219124) that buys homes directly throughout Tulare County, including Tulare city, Porterville, Lindsay, Dinuba, Exeter, Farmersville, Woodlake, Springville, and all surrounding communities.\n\nUnlike out-of-state wholesalers who advertise in Tulare County and then assign your contract to an unknown investor, we use our own funds and close directly. You know exactly who you're selling to from day one. We've completed 700+ home purchases since 2008 and understand the unique dynamics of the Tulare County market — including agricultural land, rural properties, and homes in smaller communities that traditional buyers often overlook.`,
         },
         {
           heading: "Tulare County Real Estate Market — 2026 Overview",

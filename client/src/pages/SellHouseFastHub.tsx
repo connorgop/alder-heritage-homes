@@ -128,7 +128,7 @@ export default function SellHouseFastHub() {
             </a>
           </div>
           <div className="flex flex-wrap justify-center gap-6 mt-8">
-            {["Licensed CA Agent DRE #02219124", "100+ Homes Purchased", "Close in 7 Days", "No Commissions"].map(t => (
+            {["Licensed CA Agent DRE #02219124", "700+ Homes Purchased", "Close in 7 Days", "No Commissions"].map(t => (
               <div key={t} className="flex items-center gap-2 text-sm" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 <CheckCircle2 size={15} style={{ color: "oklch(0.55 0.13 42)" }} /> {t}
               </div>
@@ -210,7 +210,7 @@ export default function SellHouseFastHub() {
                   { title: "Licensed California Real Estate Brokerage", desc: "DRE #02219124. We're held to a higher legal and ethical standard than unlicensed investors. You have real consumer protections when you work with us." },
                   { title: "Broker Opinion of Value — Fair Offers", desc: "We use a professional BOV analysis to determine your offer — not an arbitrary lowball number. You'll understand exactly how we arrived at our offer." },
                   { title: "45+ In-House Crew Members", desc: "We have our own construction crew, property managers, and real estate team. We can handle any property condition — fire damage, mold, foundation issues, hoarder situations." },
-                  { title: "100+ Transactions in the Central Valley", desc: "We've bought homes in every situation — foreclosure, probate, divorce, code violations, squatters, and more. We've seen it all and we know how to close." },
+                  { title: "700+ Homes Purchased Since 2008", desc: "We've bought homes in every situation — foreclosure, probate, divorce, code violations, squatters, and more. We've seen it all and we know how to close." },
                 ].map((item) => (
                   <div key={item.title} className="flex gap-4 p-4 rounded-xl" style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)" }}>
                     <CheckCircle2 size={20} className="flex-shrink-0 mt-0.5" style={{ color: "oklch(0.55 0.13 42)" }} />

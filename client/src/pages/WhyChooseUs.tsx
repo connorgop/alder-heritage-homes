@@ -49,7 +49,7 @@ const comparisonData = [
   { feature: "Will refer you to a listing agent if that's better for you", alder: true, typical: false },
   { feature: "Offer is the same at closing — no last-minute reductions", alder: true, typical: false },
   { feature: "Connor is the actual buyer — no mystery third party", alder: true, typical: false },
-  { feature: "100+ probate & distressed property transactions", alder: true, typical: false },
+  { feature: "700+ homes purchased since 2008", alder: true, typical: false },
   { feature: "Fresno-native, local market expertise", alder: true, typical: false },
   { feature: "Matches or beats any competing cash offer", alder: true, typical: false },
   { feature: "Transparent about how offer is calculated", alder: true, typical: false },
@@ -267,7 +267,7 @@ export default function WhyChooseUs() {
             </div>
             <div className="grid sm:grid-cols-3 gap-6 mb-12">
               {[
-                { icon: <Award size={32} />, stat: "100+", label: "Probate & distressed sales completed in the Central Valley" },
+                { icon: <Award size={32} />, stat: "700+", label: "Homes purchased since 2008 across all entities" },
                 { icon: <Users size={32} />, stat: "25 yrs", label: "Partner broker's experience — 1,800+ transactions" },
                 { icon: <Star size={32} />, stat: "DRE #02219124", label: "Licensed California real estate agent" },
               ].map((item) => (

@@ -66,7 +66,7 @@ export default function About() {
                   We operate differently. As a licensed California real estate agent (DRE #02219124), we're held to a higher legal and ethical standard. We buy homes directly — no middlemen, no contract flipping. We explain every step of the process, answer every question honestly, and never pressure you to accept an offer.
                 </p>
                 <p>
-                  With 100+ transactions completed in Fresno and the Central Valley — including over 100 probate sales — we have the experience to handle even the most complex situations.
+                  With 700+ homes purchased since 2008 across our group of entities — including 103 purchases from 2023–2026 alone — we have the experience to handle even the most complex situations.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function About() {
               {
                 icon: <Award size={32} />,
                 title: "Real Expertise",
-                desc: "100+ probate sales. Experience with foreclosure, short sales, multiple liens, and complex estates. We've seen it all and know how to navigate it.",
+                desc: "700+ homes purchased since 2008. Experience with foreclosure, short sales, multiple liens, and complex estates. We've seen it all and know how to navigate it.",
               },
             ].map((v) => (
               <div key={v.title} className="p-8 rounded-2xl text-center" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
@@ -188,7 +188,7 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-4">
             {[
               "Licensed California Real Estate Agent — DRE #02219124",
-              "100+ probate and estate sales completed",
+              "700+ homes purchased since 2008 across all entities",
               "Serving Fresno and the Central Valley since founding",
               "Experience with foreclosure, short sales, and multiple liens",
               "Rent-back / holdback program available",
