@@ -9,6 +9,7 @@ import { useState, useEffect, useRef } from "react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
+import ComparableSales from "@/components/ComparableSales";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
 import PageMeta from "@/components/PageMeta";
 import {
@@ -1231,6 +1232,9 @@ export default function HomePage() {
 
       {/* ── 3. CASH OFFER VS LISTING CALCULATOR ── */}
       <CashOfferVsListingCalc />
+
+      {/* ── 3.5 COMPARABLE SALES NEAR YOU ── */}
+      <ComparableSales />
 
       {/* ── 4. SITUATION FINDER ── */}
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
