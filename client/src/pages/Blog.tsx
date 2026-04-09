@@ -1409,9 +1409,9 @@ const _blogPostsRaw = [
   {
     slug: "sell-my-house-sunnyside-fresno",
     title: "Sell My House in Sunnyside Fresno — Fast Cash Offers for Southeast Fresno",
-    excerpt: "Sunnyside is one of Fresno's most affordable and family-oriented neighborhoods. Find out how cash buyers handle inherited homes, deferred maintenance, and tenant-occupied properties in Sunnyside.",
+    excerpt: "Sunnyside is one of Fresno's most affordable and family-oriented neighborhoods — a working-class community in southeast Fresno with deep roots and a housing stock built primarily between 1950 and 1978. Learn how cash buyers handle inherited homes, deferred maintenance, tenant-occupied properties, and pre-foreclosure situations in Sunnyside, plus the real math behind cash offers vs. traditional listings.",
     date: "2026-04-05",
-    readTime: "5 min read",
+    readTime: "10 min read",
     category: "Fresno Neighborhoods",
     tags: ["Sunnyside", "Fresno", "Cash Buyer", "Sell Fast"],
   },

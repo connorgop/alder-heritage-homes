@@ -44,7 +44,7 @@ export default function NeighborhoodPage({
   useSEO({
     title: `Sell My House in ${name}, ${city} CA | Cash Buyer — Alder Heritage Homes`,
     description: `We buy houses in ${name}, ${city}. Cash offer within 24 hours, close in 7–14 days. No repairs, no commissions. ${tagline}`,
-    canonical: `https://www.alderheritagehomes.com/fresno-neighborhoods/${slug}`,
+    canonical: `https://www.alderheritagehomes.com${slug.startsWith('/') ? slug : '/' + slug}`,
     schema: faqSchema(faqs),
   });
 
@@ -55,7 +55,7 @@ export default function NeighborhoodPage({
         <div className="max-w-5xl mx-auto flex items-center gap-2 text-xs" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
           <Link href="/" className="hover:underline" style={{ color: "oklch(0.65 0.01 60)" }}>Home</Link>
           <span>/</span>
-          <Link href="/fresno-neighborhoods" className="hover:underline" style={{ color: "oklch(0.65 0.01 60)" }}>Fresno Neighborhoods</Link>
+          <Link href={`/${city.toLowerCase()}-neighborhoods`} className="hover:underline" style={{ color: "oklch(0.65 0.01 60)" }}>{city} Neighborhoods</Link>
           <span>/</span>
           <span style={{ color: "oklch(0.75 0.12 42)" }}>{name}</span>
         </div>
@@ -187,14 +187,14 @@ export default function NeighborhoodPage({
               <ul className="space-y-2">
                 {nearbyNeighborhoods.map((n) => (
                   <li key={n.slug}>
-                    <Link href={`/fresno-neighborhoods/${n.slug}`} className="flex items-center gap-2 text-sm font-medium hover:underline" style={{ color: "oklch(0.45 0.12 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    <Link href={n.slug.startsWith('/') ? n.slug : `/${city.toLowerCase()}-neighborhoods/${n.slug}`} className="flex items-center gap-2 text-sm font-medium hover:underline" style={{ color: "oklch(0.45 0.12 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
                       <ArrowRight size={13} /> {n.name}
                     </Link>
                   </li>
                 ))}
                 <li>
-                  <Link href="/fresno-neighborhoods" className="flex items-center gap-2 text-sm font-medium hover:underline" style={{ color: "oklch(0.45 0.12 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    <ArrowRight size={13} /> All Fresno Neighborhoods →
+                  <Link href={`/${city.toLowerCase()}-neighborhoods`} className="flex items-center gap-2 text-sm font-medium hover:underline" style={{ color: "oklch(0.45 0.12 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    <ArrowRight size={13} /> All {city} Neighborhoods →
                   </Link>
                 </li>
               </ul>
