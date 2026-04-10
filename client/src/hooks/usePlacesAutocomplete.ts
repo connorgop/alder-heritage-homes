@@ -2,6 +2,9 @@
    usePlacesAutocomplete — Google Places Autocomplete hook
    Uses the Manus Maps proxy to load the Places library and
    attach autocomplete suggestions to an input ref.
+   
+   PERFORMANCE: Maps script is loaded LAZILY on first input focus,
+   NOT on component mount, to avoid render-blocking on page load.
    ============================================================ */
 import { useEffect, useRef, useCallback } from "react";
 
@@ -82,7 +85,9 @@ export function usePlacesAutocomplete({
   const onSelectRef = useRef(onSelect);
   onSelectRef.current = onSelect;
 
-  const init = useCallback(async () => {
+  const initAutocomplete = useCallback(async () => {
+    // Already initialized
+    if (autocompleteRef.current) return;
     try {
       await loadPlacesScript();
     } catch {
@@ -118,9 +123,30 @@ export function usePlacesAutocomplete({
     autocompleteRef.current = autocomplete;
   }, [biasCenter, biasRadius, country]);
 
+  // LAZY LOAD: only load Maps script when user focuses the input
   useEffect(() => {
-    init();
-  }, [init]);
+    const input = inputRef.current;
+    if (!input) return;
+
+    const handleFocus = () => {
+      initAutocomplete();
+    };
+
+    // Preload script on mouseover for slightly faster UX (non-blocking)
+    const handleMouseover = () => {
+      if (!loaded && !loadPromise) {
+        loadPlacesScript().catch(() => {});
+      }
+    };
+
+    input.addEventListener("focus", handleFocus);
+    input.addEventListener("mouseover", handleMouseover, { once: true });
+
+    return () => {
+      input.removeEventListener("focus", handleFocus);
+      input.removeEventListener("mouseover", handleMouseover);
+    };
+  }, [initAutocomplete]);
 
   return { inputRef };
 }

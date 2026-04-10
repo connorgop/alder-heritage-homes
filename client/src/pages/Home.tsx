@@ -342,8 +342,12 @@ function MiniCashVsListing() {
                 type="range" min={100000} max={900000} step={5000} value={val}
                 onChange={(e) => setVal(Number(e.target.value))}
                 className="w-full accent-[#c8a96e] h-2"
+                aria-label="Home value estimate"
+                aria-valuemin={100000}
+                aria-valuemax={900000}
+                aria-valuenow={val}
               />
-              <div className="flex justify-between text-white/30 text-[0.65rem] mt-0.5" style={{ fontFamily: "'DM Mono', monospace" }}>
+              <div className="flex justify-between text-white/50 text-[0.65rem] mt-0.5" style={{ fontFamily: "'DM Mono', monospace" }}>
                 <span>$100K</span><span>$900K</span>
               </div>
             </div>
@@ -385,7 +389,7 @@ function MiniCashVsListing() {
                     { label: "Closing", val: "$0" },
                   ].map((r) => (
                     <div key={r.label} className="flex justify-between text-[0.6rem]">
-                      <span className="text-white/40">{r.label}</span>
+                      <span className="text-white/50">{r.label}</span>
                       <span className="text-green-400/80">{r.val}</span>
                     </div>
                   ))}
@@ -482,6 +486,7 @@ function InstantCashCalculator() {
             placeholder="Your cell phone number"
             value={phone}
             onChange={e => setPhone(e.target.value)}
+            aria-label="Your cell phone number"
             autoFocus
             style={{
               background: "oklch(1 0 0 / 0.06)",
@@ -633,7 +638,7 @@ function CashOfferVsListingCalc() {
               <label className="block text-white/80 text-sm font-semibold mb-2" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
                 Estimated Home Value: <span className="text-[#c8a96e]">{fmt(homeValue)}</span>
               </label>
-              <input type="range" min={100000} max={900000} step={5000} value={homeValue}
+              <input type="range" min={100000} max={900000} step={5000} value={homeValue} aria-label="Home value"
                 onChange={(e) => setHomeValue(Number(e.target.value))}
                 className="w-full accent-[#c8a96e]" />
               <div className="flex justify-between text-white/40 text-xs mt-1">
@@ -644,7 +649,7 @@ function CashOfferVsListingCalc() {
               <label className="block text-white/80 text-sm font-semibold mb-2" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
                 Estimated Repair Costs: <span className="text-[#c8a96e]">{fmt(repairCost)}</span>
               </label>
-              <input type="range" min={0} max={80000} step={1000} value={repairCost}
+              <input type="range" min={0} max={80000} step={1000} value={repairCost} aria-label="Estimated repair cost"
                 onChange={(e) => setRepairCost(Number(e.target.value))}
                 className="w-full accent-[#c8a96e]" />
               <div className="flex justify-between text-white/40 text-xs mt-1">
@@ -776,17 +781,18 @@ function InlineOfferForm() {
         className="p-8 space-y-4"
       >
         <div className="grid sm:grid-cols-2 gap-4">
-          <input required placeholder="Your name *" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} style={inputStyle}
+          <input required placeholder="Your name *" aria-label="Your name" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} style={inputStyle}
             onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
-          <input required type="tel" placeholder="Phone number *" value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))} style={inputStyle}
+          <input required type="tel" placeholder="Phone number *" aria-label="Phone number" value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))} style={inputStyle}
             onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
         </div>
-        <input type="email" placeholder="Email address (optional)" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} style={inputStyle}
+        <input type="email" placeholder="Email address (optional)" aria-label="Email address" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} style={inputStyle}
           onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
-        <input placeholder="Property address" value={form.address} onChange={e => setForm(f => ({ ...f, address: e.target.value }))} style={inputStyle}
+        <input placeholder="Property address" aria-label="Property address" value={form.address} onChange={e => setForm(f => ({ ...f, address: e.target.value }))} style={inputStyle}
           onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
         <div className="grid sm:grid-cols-2 gap-4">
           <select value={form.situation} onChange={e => setForm(f => ({ ...f, situation: e.target.value }))}
+            aria-label="Your situation"
             style={{ ...inputStyle, color: form.situation ? "white" : "oklch(0.65 0.01 60)" }}>
             <option value="">My situation...</option>
             <option value="foreclosure">Facing foreclosure</option>
@@ -798,6 +804,7 @@ function InlineOfferForm() {
             <option value="other">Other</option>
           </select>
           <select value={form.timeline} onChange={e => setForm(f => ({ ...f, timeline: e.target.value }))}
+            aria-label="Your timeline to sell"
             style={{ ...inputStyle, color: form.timeline ? "white" : "oklch(0.65 0.01 60)" }}>
             <option value="">My timeline...</option>
             <option value="asap">As soon as possible</option>
@@ -907,7 +914,7 @@ function VisualProofStrip() {
         <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {/* Photo 1: Hazmat */}
           <div className="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/5]">
-            <img src={HAZMAT_PHOTO} alt="Connor with hazmat cleanup team at Clovis property" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src={HAZMAT_PHOTO} alt="Connor with hazmat cleanup team at Clovis property" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
             <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0 0 0 / 0.7) 0%, transparent 50%)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-5">
               <span className="inline-block px-2 py-0.5 rounded text-[0.6rem] font-bold uppercase tracking-wider mb-2" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>
@@ -921,7 +928,7 @@ function VisualProofStrip() {
 
           {/* Photo 2: Seller hug */}
           <div className="group relative rounded-2xl overflow-hidden shadow-lg aspect-[4/5]">
-            <img src={SELLER_HUG_PHOTO} alt="Connor hugging the seller after closing" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <img src={SELLER_HUG_PHOTO} alt="Connor hugging the seller after closing" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
             <div className="absolute inset-0" style={{ background: "linear-gradient(to top, oklch(0 0 0 / 0.7) 0%, transparent 50%)" }} />
             <div className="absolute bottom-0 left-0 right-0 p-5">
               <span className="inline-block px-2 py-0.5 rounded text-[0.6rem] font-bold uppercase tracking-wider mb-2" style={{ background: "oklch(0.28 0.05 155)", color: "white", fontFamily: "'DM Mono', monospace" }}>
@@ -980,7 +987,7 @@ function FeaturedBlogPosts() {
             <Link key={post.slug} href={`/blog/${post.slug}`}>
               <div className="group rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-xl h-full" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
                 <div className="relative h-48 overflow-hidden">
-                  <img src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
                   <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>
                     {post.category}
                   </span>
@@ -1141,6 +1148,8 @@ function MeetConnorVideo() {
                       src={CONNOR_VIDEO_THUMB}
                       alt="Connor Morris — Meet your local home buyer"
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     {/* Dark overlay */}
                     <div
@@ -1277,7 +1286,7 @@ export default function HomePage() {
       {/* ── 1. HERO ── */}
       <section className="relative min-h-[100svh] sm:min-h-[92vh] flex items-center overflow-hidden" style={{ paddingBottom: "6rem", paddingTop: "2rem" }}>
         <div className="absolute inset-0">
-          <img src={HERO_IMG} alt="California craftsman home in Fresno" className="w-full h-full object-cover" />
+          <img src={HERO_IMG} alt="California craftsman home in Fresno" className="w-full h-full object-cover" fetchPriority="high" decoding="async" />
           <div className="absolute inset-0" style={{ background: "linear-gradient(105deg, oklch(0.22 0.01 60 / 0.82) 0%, oklch(0.22 0.01 60 / 0.55) 55%, oklch(0.22 0.01 60 / 0.2) 100%)" }} />
         </div>
 
@@ -1326,12 +1335,14 @@ export default function HomePage() {
                   <Shield size={11} style={{ color: "oklch(0.65 0.10 145)" }} />
                   <span className="text-xs font-semibold text-white/80" style={{ fontFamily: "'DM Mono', monospace" }}>DRE #02219124</span>
                 </div>
-                <span className="hidden sm:inline text-white/30">·</span>
+                <span className="hidden sm:inline text-white/50">·</span>
                 <div className="hidden sm:flex items-center gap-1">
                   <span className="text-xs font-semibold text-white/80" style={{ fontFamily: "'DM Mono', monospace" }}>700+ Homes</span>
                 </div>
-                <span className="text-white/30">·</span>
-                <span className="text-xs font-semibold text-white/80" style={{ fontFamily: "'DM Mono', monospace" }}>Not a Wholesaler</span>
+                <span className="hidden sm:inline text-white/50">·</span>
+                <div className="hidden sm:flex items-center gap-1">
+                  <span className="text-xs font-semibold text-white/80" style={{ fontFamily: "'DM Mono', monospace" }}>Not a Wholesaler</span>
+                </div>
               </div>
               <div className="mt-1.5 flex items-center justify-center gap-2 px-4 py-1.5 rounded-full" style={{ background: "oklch(1 0 0 / 0.06)" }}>
                 <div className="flex -space-x-2">
@@ -1531,7 +1542,7 @@ export default function HomePage() {
             </div>
             <div className="relative pb-8 sm:pb-0">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <img src={HANDSHAKE_IMG} alt="Alder Heritage Homes closing a deal" className="w-full h-72 sm:h-96 object-cover" />
+                <img src={HANDSHAKE_IMG} alt="Alder Heritage Homes closing a deal" className="w-full h-72 sm:h-96 object-cover" loading="lazy" decoding="async" />
               </div>
               <div className="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:-left-6 p-4 rounded-xl shadow-xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
                 <div className="flex items-center gap-3">

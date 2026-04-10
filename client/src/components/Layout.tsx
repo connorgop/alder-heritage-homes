@@ -148,6 +148,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <button
                   className="flex items-center gap-1 px-4 py-2 rounded-md text-sm font-semibold transition-colors"
                   style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.35 0.01 60)" }}
+                  aria-haspopup="true"
+                  aria-expanded={situationsOpen}
                   onMouseEnter={() => setSituationsOpen(true)}
                   onMouseLeave={() => setSituationsOpen(false)}
                 >
@@ -222,10 +224,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
             {/* Mobile: phone + hamburger */}
             <div className="flex lg:hidden items-center gap-3">
-              <a href={PHONE_HREF} style={{ color: "oklch(0.28 0.05 155)" }}>
+              <a href={PHONE_HREF} aria-label="Call Alder Heritage Homes at (559) 281-8016" style={{ color: "oklch(0.28 0.05 155)" }}>
                 <Phone size={20} />
               </a>
-              <button onClick={() => setMobileOpen(!mobileOpen)} style={{ color: "oklch(0.22 0.01 60)" }}>
+              <button onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={mobileOpen} style={{ color: "oklch(0.22 0.01 60)" }}>
                 {mobileOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
             </div>
@@ -244,12 +246,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   onClick={() => setSituationsOpen(!situationsOpen)}
                   className="w-full flex items-center justify-between px-4 py-3 text-sm font-bold"
                   style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.22 0.01 60)" }}
+                  aria-expanded={situationsOpen}
+                  aria-controls="mobile-situations-menu"
                 >
                   <span>Your Situation</span>
                   <ChevronDown size={16} style={{ transform: situationsOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }} />
                 </button>
                 {situationsOpen && (
-                  <div className="pb-2" style={{ background: "oklch(0.97 0.01 85)" }}>
+                  <div id="mobile-situations-menu" className="pb-2" style={{ background: "oklch(0.97 0.01 85)" }}>
                     {topSituations.map((s) => (
                       <MobileNavLink key={s.href} href={s.href} indent>{s.label}</MobileNavLink>
                     ))}
