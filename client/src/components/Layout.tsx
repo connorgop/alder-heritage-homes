@@ -102,10 +102,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
       </div>
 
-      {/* Sub bar — license */}
-      <div style={{ background: "oklch(0.28 0.05 155)", color: "white" }} className="py-1.5 text-center">
-        <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.7rem", letterSpacing: "0.06em", opacity: 0.85 }}>
-          Licensed CA Real Estate Agent · DRE #02219124 · Serving Fresno &amp; the Central Valley
+      {/* Sub bar — license + end buyer differentiator */}
+      <div style={{ background: "oklch(0.28 0.05 155)", color: "white" }} className="py-1.5 text-center px-4">
+        {/* Desktop: full message */}
+        <span className="hidden md:inline" style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.68rem", letterSpacing: "0.05em", opacity: 0.92 }}>
+          Licensed CA Real Estate Agent · DRE #02219124 ·{" "}
+          <span style={{ color: "oklch(0.88 0.12 85)", fontWeight: 700 }}>Direct End Buyer — We Actually Purchase Your Home</span>
+          {" "}· Not a Wholesaler · Honest, Transparent &amp; Fair
+        </span>
+        {/* Mobile: condensed */}
+        <span className="md:hidden" style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.64rem", letterSpacing: "0.04em", opacity: 0.92 }}>
+          DRE #02219124 ·{" "}
+          <span style={{ color: "oklch(0.88 0.12 85)", fontWeight: 700 }}>Real End Buyer — Not a Wholesaler</span>
         </span>
       </div>
 

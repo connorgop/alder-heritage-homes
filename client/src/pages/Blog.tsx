@@ -2020,6 +2020,33 @@ const _blogPostsRaw = [
     readTime: "14 min read",
     image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
   },
+  {
+    slug: "sell-house-code-violations-fresno",
+    title: "Sell a House With Code Violations in Fresno CA — As-Is, No Repairs",
+    excerpt: "Unpermitted additions, red tags, electrical violations, or active city notices? You can still sell your Fresno home fast for cash. This guide covers what violations cost you, how cash buyers price code-violation homes, and how to get the most money without fixing a thing.",
+    category: "Property Condition",
+    date: "2026-04-10",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+  },
+  {
+    slug: "sell-house-fast-visalia-ca",
+    title: "Sell Your House Fast in Visalia CA — Cash Offer in 24 Hours",
+    excerpt: "Need to sell your Visalia home quickly? This guide covers the Visalia housing market, how cash buyers price homes in Tulare County, the real math on cash vs. MLS, and every neighborhood we buy in. Close in 7 days or on your timeline.",
+    category: "Fast Sale",
+    date: "2026-04-10",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
+  },
+  {
+    slug: "sell-rental-property-fresno-ca",
+    title: "Sell Your Rental Property in Fresno CA — Tenants, Taxes & Timing",
+    excerpt: "Selling a rental property in Fresno involves tenant rights, capital gains taxes, depreciation recapture, and 1031 exchange timing. This guide covers every option for tired landlords — including selling with tenants in place to a direct cash buyer.",
+    category: "Landlord & Rental",
+    date: "2026-04-10",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
