@@ -2047,6 +2047,33 @@ const _blogPostsRaw = [
     readTime: "12 min read",
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
   },
+  {
+    slug: "sell-house-fast-bakersfield-ca-guide",
+    title: "Sell Your House Fast in Bakersfield CA — Cash Offer in 24 Hours",
+    excerpt: "Bakersfield's oil-driven economy creates unique real estate dynamics. This guide covers the Kern County market, why cash buyers are the right fit for older Bakersfield homes, the real math on cash vs. MLS, and how to avoid the wholesalers who dominate local advertising.",
+    category: "Bakersfield",
+    date: "2026-04-10",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+  },
+  {
+    slug: "sell-house-fast-stockton-ca-guide",
+    title: "Sell Your House Fast in Stockton CA — Direct Cash Buyer, No Wholesalers",
+    excerpt: "Stockton's housing market has recovered significantly since its 2012 bankruptcy, but older neighborhoods still have homes that don't qualify for conventional financing. This guide covers the San Joaquin County market, cash vs. MLS math, and how to protect yourself from predatory buyers.",
+    category: "Stockton",
+    date: "2026-04-10",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
+  },
+  {
+    slug: "sell-house-fast-modesto-ca-guide",
+    title: "Sell Your House Fast in Modesto CA — Cash Offer, Any Condition",
+    excerpt: "Modesto is the economic hub of Stanislaus County, with a housing market shaped by agriculture, food processing, and Bay Area spillover demand. This guide covers the local market, transparent pricing math, neighborhoods we buy in, and what makes a direct end buyer different from the wholesalers flooding the market.",
+    category: "Modesto",
+    date: "2026-04-10",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
@@ -2061,7 +2088,10 @@ const categoryColors: Record<string, string> = {
   "Landlord": "oklch(0.35 0.08 200)",
   "Property Security": "oklch(0.42 0.12 25)",
   "Bakersfield": "oklch(0.50 0.10 42)",
+  "Stockton": "oklch(0.38 0.08 200)",
+  "Modesto": "oklch(0.42 0.09 155)",
   "Northern Valley": "oklch(0.38 0.06 155)",
+  "Landlord & Rental": "oklch(0.35 0.08 200)",
   "Property Condition": "oklch(0.42 0.10 35)",
   "Military": "oklch(0.35 0.08 220)",
   "Real Deals": "oklch(0.48 0.14 42)",
@@ -2086,7 +2116,6 @@ const categoryColors: Record<string, string> = {
   "Difficult Situations": "oklch(0.42 0.14 25)",
   "Local Market": "oklch(0.38 0.08 155)",
   "Seller Guides": "oklch(0.42 0.12 155)",
-  "Landlord & Rental": "oklch(0.35 0.08 200)",
   "Foreclosure & Financial": "oklch(0.50 0.12 42)",
   "Divorce & Life Changes": "oklch(0.45 0.12 320)",
 };

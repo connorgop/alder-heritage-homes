@@ -16,6 +16,7 @@ import articleChunk5 from "./BlogPostArticles5";
 import articleChunk6 from "./BlogPostArticles6";
 import articleChunk7 from "./BlogPostArticles7";
 import articleChunk8 from "./BlogPostArticles8";
+import articleChunk9 from "./BlogPostArticles9";
 
 const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk1,
@@ -26,6 +27,7 @@ const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk6,
   ...articleChunk7,
   ...articleChunk8,
+  ...articleChunk9,
 };
 
 export default function BlogPost() {
@@ -106,6 +108,26 @@ export default function BlogPost() {
       { label: "Tired Landlord", href: "/tired-landlord" },
       { label: "Sell Rental Portfolio", href: "/sell-rental-portfolio" },
       { label: "Tenant Issues", href: "/tenant-issues" },
+    ],
+    "Bakersfield": [
+      { label: "Sell My House Bakersfield", href: "/sell-my-house-bakersfield-ca" },
+      { label: "We Buy Houses Bakersfield", href: "/we-buy-houses-bakersfield" },
+      { label: "Cash Offer Calculator", href: "/calculator" },
+    ],
+    "Stockton": [
+      { label: "Sell My House Stockton", href: "/sell-my-house-stockton-ca" },
+      { label: "We Buy Houses Stockton", href: "/we-buy-houses-stockton" },
+      { label: "Cash Offer Calculator", href: "/calculator" },
+    ],
+    "Modesto": [
+      { label: "Sell My House Modesto", href: "/sell-my-house-modesto-ca" },
+      { label: "We Buy Houses Modesto", href: "/we-buy-houses-modesto" },
+      { label: "Cash Offer Calculator", href: "/calculator" },
+    ],
+    "Northern Valley": [
+      { label: "Sell My House Stockton", href: "/sell-my-house-stockton-ca" },
+      { label: "Sell My House Modesto", href: "/sell-my-house-modesto-ca" },
+      { label: "Cash Offer Calculator", href: "/calculator" },
     ],
     "Foreclosure": [
       { label: "Foreclosure Help", href: "/foreclosure-help" },
