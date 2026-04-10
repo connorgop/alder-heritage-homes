@@ -1975,6 +1975,51 @@ const _blogPostsRaw = [
     readTime: "11 min read",
     image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=800&q=80",
   },
+  {
+    slug: "how-much-do-cash-buyers-pay-fresno",
+    title: "How Much Do Cash Buyers Pay for Houses in Fresno? (The Real Math)",
+    excerpt: "Before you call a cash buyer, know what to expect. This guide breaks down the ARV formula, the real net difference vs. listing, and how to get the highest cash offer in Fresno without getting lowballed.",
+    category: "Seller Guides",
+    date: "2026-04-10",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+  },
+  {
+    slug: "avoid-cash-buyer-scams-fresno",
+    title: "How to Avoid Cash Home Buyer Scams in Fresno CA (Wholesaler Warning)",
+    excerpt: "Fresno is flooded with wholesalers and predatory buyers posing as cash buyers. Learn the 7 red flags that identify a scam, the 5 questions to ask before you sign, and how to tell a real cash buyer from a middleman.",
+    category: "Consumer Warning",
+    date: "2026-04-10",
+    readTime: "11 min read",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+  },
+  {
+    slug: "sell-house-with-tenants-fresno",
+    title: "Sell a Tenant-Occupied House in Fresno CA — Landlord's Complete Guide",
+    excerpt: "Selling a rental property in Fresno with tenants in place is legally complex. This guide covers California tenant notice requirements, AB 1482, cash for keys, and why tired landlords choose a direct cash sale.",
+    category: "Landlord & Rental",
+    date: "2026-04-10",
+    readTime: "12 min read",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+  },
+  {
+    slug: "sell-house-no-equity-fresno",
+    title: "Selling a House With No Equity or Underwater Mortgage in Fresno CA",
+    excerpt: "Underwater on your Fresno mortgage? You have more options than you think. This guide covers short sales, loan modifications, deed in lieu, and how to sell even when you owe more than your home is worth.",
+    category: "Foreclosure & Financial",
+    date: "2026-04-10",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
+  },
+  {
+    slug: "sell-house-fast-fresno-complete-guide",
+    title: "Sell My House Fast Fresno CA — The Complete 2026 Guide",
+    excerpt: "The most comprehensive guide to selling your house fast in Fresno in 2026. Every option, every timeline, every cost — from cash buyers and iBuyers to MLS listings and auctions. Make the best decision for your situation.",
+    category: "Fast Sale",
+    date: "2026-04-10",
+    readTime: "14 min read",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
@@ -2013,6 +2058,10 @@ const categoryColors: Record<string, string> = {
   "Legal & Financial": "oklch(0.38 0.10 240)",
   "Difficult Situations": "oklch(0.42 0.14 25)",
   "Local Market": "oklch(0.38 0.08 155)",
+  "Seller Guides": "oklch(0.42 0.12 155)",
+  "Landlord & Rental": "oklch(0.35 0.08 200)",
+  "Foreclosure & Financial": "oklch(0.50 0.12 42)",
+  "Divorce & Life Changes": "oklch(0.45 0.12 320)",
 };
 
 export default function Blog() {

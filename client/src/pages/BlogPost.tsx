@@ -14,6 +14,7 @@ import articleChunk3 from "./BlogPostArticles3";
 import articleChunk4 from "./BlogPostArticles4";
 import articleChunk5 from "./BlogPostArticles5";
 import articleChunk6 from "./BlogPostArticles6";
+import articleChunk7 from "./BlogPostArticles7";
 
 const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk1,
@@ -22,6 +23,7 @@ const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk4,
   ...articleChunk5,
   ...articleChunk6,
+  ...articleChunk7,
 };
 
 export default function BlogPost() {
@@ -82,6 +84,41 @@ export default function BlogPost() {
     "Legal & Probate": [
       { label: "Probate Real Estate Fresno", href: "/probate-real-estate-fresno" },
       { label: "Probate Homes", href: "/probate-homes" },
+    ],
+    "Seller Guides": [
+      { label: "Sell My House Fresno", href: "/sell-my-house-fresno-ca" },
+      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Why Choose Us", href: "/why-choose-us" },
+    ],
+    "Consumer Warning": [
+      { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
+      { label: "Why Choose Us", href: "/why-choose-us" },
+      { label: "Sell My House Fresno", href: "/sell-my-house-fresno-ca" },
+    ],
+    "Fast Sale": [
+      { label: "Sell House Fast Fresno", href: "/sell-house-fast-fresno-ca" },
+      { label: "We Buy Houses Fresno", href: "/we-buy-houses-fresno" },
+      { label: "Cash Offer Calculator", href: "/calculator" },
+    ],
+    "Landlord": [
+      { label: "Tired Landlord", href: "/tired-landlord" },
+      { label: "Sell Rental Portfolio", href: "/sell-rental-portfolio" },
+      { label: "Tenant Issues", href: "/tenant-issues" },
+    ],
+    "Foreclosure": [
+      { label: "Foreclosure Help", href: "/foreclosure-help" },
+      { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
+      { label: "Stop Foreclosure Fresno", href: "/we-buy-houses-fresno" },
+    ],
+    "Mortgage Help": [
+      { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
+      { label: "Foreclosure Help", href: "/foreclosure-help" },
+      { label: "Can't Afford Home", href: "/cant-afford-home" },
+    ],
+    "Probate": [
+      { label: "Probate Real Estate Fresno", href: "/probate-real-estate-fresno" },
+      { label: "Sell Inherited House", href: "/probate-inherited-homes" },
+      { label: "Sell House Fast Fresno", href: "/sell-house-fast-fresno-ca" },
     ],
   };
   const serviceLinks = categoryServiceLinks[post.category] || [
