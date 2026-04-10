@@ -1372,56 +1372,132 @@ export default function HomePage() {
       {/* ── 3. CONNOR'S MANIFESTO — THE DIRTY SECRET ── */}
       <ConnorManifesto />
 
-      {/* ── 3.1 WHY CHOOSE ALDER (COMPARISON TABLE) ── */}
-      <section className="py-12" style={{ background: "oklch(0.97 0.015 85)" }}>
+      {/* ── 3.1 WHY WE PAY MORE — WHOLESALER VS DIRECT BUYER ── */}
+      <section className="py-20" style={{ background: "oklch(0.13 0.02 60)" }}>
         <div className="container">
-          <div className="text-center mb-8">
-            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
-              Why Alder Heritage
+          {/* Header */}
+          <div className="text-center mb-4">
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.72rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
+              The Truth About "We Buy Houses" Companies
             </span>
-            <h2 className="mt-2 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
-              Not All Cash Buyers Are the Same
+            <h2 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-white" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
+              Why We Can Pay More Than<br className="hidden md:block" /> 99% of Our Competitors
             </h2>
-            <p className="mt-3 max-w-2xl mx-auto" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Most "we buy houses" companies are unlicensed wholesalers who flip your contract to another buyer. We're different — we're a licensed California real estate agent who actually buys your home.
+            <p className="mt-4 max-w-2xl mx-auto text-base leading-relaxed" style={{ color: "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Most "cash buyers" in Fresno are wholesalers — they don't have the money to buy your home. They lock you into a contract, then shop it to real investors and pocket the difference. <strong className="text-white">That spread comes directly out of your pocket.</strong>
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "2px solid oklch(0.88 0.02 85)" }}>
-              <div className="p-4 text-center font-bold" style={{ background: "oklch(0.93 0.02 85)", fontFamily: "'Lora', serif", color: "oklch(0.45 0.01 60)" }}>
-                Typical Wholesaler
-              </div>
-              {[
-                "Unlicensed — no accountability",
-                "Assigns your contract to a stranger",
-                "Lowball offers, hidden fees",
-                "May back out at the last minute",
-                "No probate experience",
-                "Pressures you to sign fast",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3 px-5 py-3 border-t" style={{ borderColor: "oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", color: "oklch(0.45 0.01 60)" }}>
-                  <span style={{ color: "oklch(0.577 0.245 27.325)" }}>✗</span> {item}
-                </div>
-              ))}
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-lg" style={{ border: "2px solid oklch(0.55 0.13 42)" }}>
-              <div className="p-4 text-center font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Lora', serif" }}>
-                Alder Heritage Homes
-              </div>
-              {[
-                "Licensed CA Agent — DRE #02219124",
-                "We buy directly — no middlemen",
-                "Independent broker opinion included",
-                "Committed — we close when we say",
-                "700+ homes purchased since 2008",
-                "You set the timeline, not us",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3 px-5 py-3 border-t" style={{ borderColor: "oklch(0.88 0.02 85)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.9rem", color: "oklch(0.30 0.01 60)" }}>
-                  <CheckCircle2 size={16} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} /> {item}
-                </div>
-              ))}
+
+          {/* The key insight callout */}
+          <div className="max-w-3xl mx-auto mb-12 mt-8 rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center gap-5"
+            style={{ background: "oklch(0.55 0.13 42 / 0.15)", border: "1px solid oklch(0.55 0.13 42 / 0.40)" }}>
+            <div className="text-4xl shrink-0">💡</div>
+            <div>
+              <p className="font-bold text-white mb-1" style={{ fontFamily: "'Lora', serif", fontSize: "1.1rem" }}>
+                The Wholesaler Markup Is Your Money
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                A wholesaler buys your contract for $200,000 and sells it to a real investor for $220,000. That $20,000 is called an "assignment fee" — and it's money that should have gone to you. Because we are the end buyer, there is no assignment fee. We pay you the full amount.
+              </p>
             </div>
           </div>
+
+          {/* Side-by-side comparison table */}
+          <div className="max-w-5xl mx-auto">
+            {/* Column headers */}
+            <div className="grid grid-cols-3 mb-3">
+              <div className="col-span-1" />
+              <div className="col-span-1 text-center px-3 py-3 rounded-t-xl" style={{ background: "oklch(0.22 0.01 60)", border: "1px solid oklch(0.30 0.01 60)", borderBottom: "none" }}>
+                <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "oklch(0.577 0.245 27.325)", fontFamily: "'DM Mono', monospace" }}>⚠ Typical Wholesaler</div>
+                <div className="text-sm font-semibold" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>99% of "We Buy Houses" Ads</div>
+              </div>
+              <div className="col-span-1 text-center px-3 py-3 rounded-t-xl" style={{ background: "oklch(0.55 0.13 42)", border: "2px solid oklch(0.65 0.13 42)", borderBottom: "none" }}>
+                <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "oklch(0.92 0.08 85)", fontFamily: "'DM Mono', monospace" }}>✓ Connor — Alder Heritage</div>
+                <div className="text-sm font-semibold text-white" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>Direct End Buyer · DRE #02219124</div>
+              </div>
+            </div>
+
+            {/* Rows */}
+            {[
+              {
+                category: "Who Actually Buys Your Home",
+                wholesaler: { text: "An unknown third party — the wholesaler assigns your contract to whoever bids highest", bad: true },
+                connor: { text: "Connor Morris — his legal name is on the purchase contract from day one", good: true },
+              },
+              {
+                category: "Where the Money Comes From",
+                wholesaler: { text: "They don't have it. They need to find a buyer first — your deal can fall apart if they can't", bad: true },
+                connor: { text: "Our own capital. No lender approval, no assignment needed, no waiting", good: true },
+              },
+              {
+                category: "What You're Actually Paid",
+                wholesaler: { text: "Their offer minus a $10,000–$40,000 assignment fee they pocket — you never see that money", bad: true },
+                connor: { text: "The full offer amount. No assignment spread. No middleman taking a cut", good: true },
+              },
+              {
+                category: "License & Accountability",
+                wholesaler: { text: "Typically unlicensed — no DRE oversight, no fiduciary duty to you, no recourse if they behave badly", bad: true },
+                connor: { text: "Licensed CA Real Estate Agent · DRE #02219124 · Regulated by the California DRE", good: true },
+              },
+              {
+                category: "Independent Valuation",
+                wholesaler: { text: "None. You have no way to verify if their offer is fair", bad: true },
+                connor: { text: "Free Broker Opinion of Value from an independent Fresno broker — so you can compare", good: true },
+              },
+              {
+                category: "Closing Certainty",
+                wholesaler: { text: "High risk. If they can't find a buyer to assign to, they cancel — often days before close", bad: true },
+                connor: { text: "We close when we say. Our capital is committed the day you sign — no assignment risk", good: true },
+              },
+              {
+                category: "Transparency",
+                wholesaler: { text: "They hide the assignment fee in the contract. You often don't know you're being wholesaled", bad: true },
+                connor: { text: "We show you the math: ARV, repair estimate, our margin. Nothing hidden", good: true },
+              },
+              {
+                category: "Probate & Complex Situations",
+                wholesaler: { text: "Most won't touch probate, liens, or title issues — too complicated to assign", bad: true },
+                connor: { text: "700+ homes purchased since 2008 including probate, liens, code violations, and inherited properties", good: true },
+              },
+            ].map((row, i) => (
+              <div key={i} className="grid grid-cols-3" style={{ borderBottom: "1px solid oklch(0.22 0.01 60)" }}>
+                {/* Category label */}
+                <div className="col-span-1 px-4 py-4 flex items-center" style={{ background: "oklch(0.17 0.01 60)", borderLeft: "1px solid oklch(0.22 0.01 60)" }}>
+                  <span className="text-xs font-bold uppercase tracking-wide" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'DM Mono', monospace", lineHeight: 1.4 }}>{row.category}</span>
+                </div>
+                {/* Wholesaler */}
+                <div className="col-span-1 px-4 py-4 flex items-start gap-2" style={{ background: "oklch(0.16 0.01 60)", borderLeft: "1px solid oklch(0.22 0.01 60)" }}>
+                  <span className="mt-0.5 shrink-0 text-sm" style={{ color: "oklch(0.577 0.245 27.325)" }}>✗</span>
+                  <span className="text-sm leading-relaxed" style={{ color: "oklch(0.58 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{row.wholesaler.text}</span>
+                </div>
+                {/* Connor */}
+                <div className="col-span-1 px-4 py-4 flex items-start gap-2" style={{ background: "oklch(0.55 0.13 42 / 0.10)", borderLeft: "2px solid oklch(0.55 0.13 42 / 0.50)", borderRight: "2px solid oklch(0.55 0.13 42 / 0.50)" }}>
+                  <CheckCircle2 size={15} className="mt-0.5 shrink-0" style={{ color: "oklch(0.72 0.13 42)" }} />
+                  <span className="text-sm leading-relaxed text-white" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>{row.connor.text}</span>
+                </div>
+              </div>
+            ))}
+
+            {/* Bottom CTA row */}
+            <div className="grid grid-cols-3">
+              <div className="col-span-1 px-4 py-5 rounded-bl-xl" style={{ background: "oklch(0.17 0.01 60)", border: "1px solid oklch(0.22 0.01 60)", borderTop: "none" }} />
+              <div className="col-span-1 px-4 py-5 text-center" style={{ background: "oklch(0.16 0.01 60)", border: "1px solid oklch(0.22 0.01 60)", borderTop: "none" }}>
+                <span className="text-sm" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>You deserve better.</span>
+              </div>
+              <div className="col-span-1 px-4 py-5 text-center rounded-br-xl" style={{ background: "oklch(0.55 0.13 42)", border: "2px solid oklch(0.65 0.13 42)", borderTop: "none" }}>
+                <Link href="/contact">
+                  <button className="text-sm font-bold text-white px-5 py-2 rounded-lg transition-opacity hover:opacity-90" style={{ background: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    Get Connor's Offer →
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom trust line */}
+          <p className="text-center mt-10 text-sm" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.04em" }}>
+            Connor Morris · Licensed CA Real Estate Agent · DRE #02219124 · His name is on every contract
+          </p>
         </div>
       </section>
 
