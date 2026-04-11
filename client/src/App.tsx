@@ -55,6 +55,16 @@ import SellMyHouseHanford from "./pages/SellMyHouseHanford";
 import SellMyHouseKingsburg from "./pages/SellMyHouseKingsburg";
 import SellMyHouseKerman from "./pages/SellMyHouseKerman";
 import SellMyHouseChowchilla from "./pages/SellMyHouseChowchilla";
+import SellMyHouseStockton from "./pages/SellMyHouseStockton";
+import SellMyHouseModesto from "./pages/SellMyHouseModesto";
+import SellMyHouseMerced from "./pages/SellMyHouseMerced";
+import SellMyHouseTulare from "./pages/SellMyHouseTulare";
+import SellMyHousePorterville from "./pages/SellMyHousePorterville";
+import SellMyHouseTurlock from "./pages/SellMyHouseTurlock";
+import SellMyHouseLemoore from "./pages/SellMyHouseLemoore";
+import SellMyHouseSelma from "./pages/SellMyHouseSelma";
+import SellMyHouseSanger from "./pages/SellMyHouseSanger";
+import SellMyHouseReedley from "./pages/SellMyHouseReedley";
 import SellHouseAsIsFresno from "./pages/SellHouseAsIsFresno";
 import SellMyHouseCashFresno from "./pages/SellMyHouseCashFresno";
 import SellInheritedPropertyFresno from "./pages/SellInheritedPropertyFresno";
@@ -311,6 +321,36 @@ function Router() {
       <Route path="/sell-my-house-chowchilla-ca" component={SellMyHouseChowchilla} />
       <Route path="/sell-my-house-chowchilla" component={SellMyHouseChowchilla} />
       <Route path="/sell-my-home-chowchilla" component={SellMyHouseChowchilla} />
+      <Route path="/sell-my-house-stockton-ca" component={SellMyHouseStockton} />
+      <Route path="/sell-my-house-stockton" component={SellMyHouseStockton} />
+      <Route path="/sell-my-home-stockton" component={SellMyHouseStockton} />
+      <Route path="/sell-my-house-modesto-ca" component={SellMyHouseModesto} />
+      <Route path="/sell-my-house-modesto" component={SellMyHouseModesto} />
+      <Route path="/sell-my-home-modesto" component={SellMyHouseModesto} />
+      <Route path="/sell-my-house-merced-ca" component={SellMyHouseMerced} />
+      <Route path="/sell-my-house-merced" component={SellMyHouseMerced} />
+      <Route path="/sell-my-home-merced" component={SellMyHouseMerced} />
+      <Route path="/sell-my-house-tulare-ca" component={SellMyHouseTulare} />
+      <Route path="/sell-my-house-tulare" component={SellMyHouseTulare} />
+      <Route path="/sell-my-home-tulare" component={SellMyHouseTulare} />
+      <Route path="/sell-my-house-porterville-ca" component={SellMyHousePorterville} />
+      <Route path="/sell-my-house-porterville" component={SellMyHousePorterville} />
+      <Route path="/sell-my-home-porterville" component={SellMyHousePorterville} />
+      <Route path="/sell-my-house-turlock-ca" component={SellMyHouseTurlock} />
+      <Route path="/sell-my-house-turlock" component={SellMyHouseTurlock} />
+      <Route path="/sell-my-home-turlock" component={SellMyHouseTurlock} />
+      <Route path="/sell-my-house-lemoore-ca" component={SellMyHouseLemoore} />
+      <Route path="/sell-my-house-lemoore" component={SellMyHouseLemoore} />
+      <Route path="/sell-my-home-lemoore" component={SellMyHouseLemoore} />
+      <Route path="/sell-my-house-selma-ca" component={SellMyHouseSelma} />
+      <Route path="/sell-my-house-selma" component={SellMyHouseSelma} />
+      <Route path="/sell-my-home-selma" component={SellMyHouseSelma} />
+      <Route path="/sell-my-house-sanger-ca" component={SellMyHouseSanger} />
+      <Route path="/sell-my-house-sanger" component={SellMyHouseSanger} />
+      <Route path="/sell-my-home-sanger" component={SellMyHouseSanger} />
+      <Route path="/sell-my-house-reedley-ca" component={SellMyHouseReedley} />
+      <Route path="/sell-my-house-reedley" component={SellMyHouseReedley} />
+      <Route path="/sell-my-home-reedley" component={SellMyHouseReedley} />
       <Route path="/sell-house-as-is-fresno" component={SellHouseAsIsFresno} />
       <Route path="/sell-house-as-is-fresno-ca" component={SellHouseAsIsFresno} />
       <Route path="/sell-my-house-cash-fresno" component={SellMyHouseCashFresno} />
