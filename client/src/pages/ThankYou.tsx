@@ -25,10 +25,18 @@ export default function ThankYou() {
     // Google Ads conversion tracking — fires when user lands on /thank-you
     // This is the conversion event you set up in Google Ads → Tools → Conversions
     if (typeof window !== "undefined" && (window as any).gtag) {
+      // Google Ads conversion tracking — fires when user lands on /thank-you after form submission
+      // Account: AW-18059779523 | Conversion action: Submit lead form (ctId: 7559336525)
       (window as any).gtag("event", "conversion", {
-        send_to: "AW-CONVERSION_ID/CONVERSION_LABEL", // Replace with your actual conversion ID from Google Ads
+        send_to: "AW-18059779523/submit_lead_form",
         value: 150.0,
         currency: "USD",
+        transaction_id: Date.now().toString(),
+      });
+      // Also fire a standard GA4 lead event for analytics
+      (window as any).gtag("event", "generate_lead", {
+        currency: "USD",
+        value: 150.0,
       });
     }
   }, []);

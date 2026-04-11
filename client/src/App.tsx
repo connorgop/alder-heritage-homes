@@ -239,6 +239,7 @@ import KeywordStrategy from "./pages/KeywordStrategy";
 import SiteArchitecture from "./pages/SiteArchitecture";
 import CompramosCasasFresno from "./pages/CompramosCasasFresno";
 import ThankYou from "./pages/ThankYou";
+import CompetitorComparison from "./pages/CompetitorComparison";
 
 function Router() {
   return (
@@ -569,6 +570,9 @@ function Router() {
       <Route path="/sell-my-home-fresno" component={SellYourHomeFresno} />
       <Route path="/buy-my-house-cash-fresno" component={SellYourHomeFresno} />
       <Route path="/thank-you" component={ThankYou} />
+      <Route path="/compare-cash-buyers-fresno" component={CompetitorComparison} />
+      <Route path="/cash-home-buyers-fresno-compare" component={CompetitorComparison} />
+      <Route path="/we-buy-houses-fresno-comparison" component={CompetitorComparison} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

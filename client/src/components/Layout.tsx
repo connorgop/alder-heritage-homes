@@ -57,6 +57,7 @@ const footerCompany = [
   { label: "Reviews", href: "/reviews" },
   { label: "Our Deals", href: "/our-deals" },
   { label: "Before & After", href: "/before-after" },
+  { label: "Compare Cash Buyers", href: "/compare-cash-buyers-fresno" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/sell-house-fast-faq" },
   { label: "Contact", href: "/contact" },
