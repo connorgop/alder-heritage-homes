@@ -2,6 +2,7 @@
    useFormSubmit — Alder Heritage Homes
    Posts form data to Formspree → connor@primeinvestpartners.com
    Also fires ntfy.sh push notification to Connor's phone.
+   On success, redirects to /thank-you for Google Ads conversion tracking.
 
    NTFY SETUP (free, 2 min):
    1. Download "ntfy" app (iOS or Android)
@@ -59,6 +60,9 @@ export function useFormSubmit() {
     try {
       if (formResult.status === "fulfilled" && formResult.value.ok) {
         setState("success");
+        // Redirect to /thank-you for Google Ads conversion tracking
+        // Google Ads fires its conversion tag when this page loads
+        window.location.href = "/thank-you";
       } else if (formResult.status === "fulfilled") {
         const json = await formResult.value.json().catch(() => ({}));
         setErrorMessage(

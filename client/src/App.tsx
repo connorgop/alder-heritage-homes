@@ -238,6 +238,7 @@ import WholesalerWarning from "./pages/WholesalerWarning";
 import KeywordStrategy from "./pages/KeywordStrategy";
 import SiteArchitecture from "./pages/SiteArchitecture";
 import CompramosCasasFresno from "./pages/CompramosCasasFresno";
+import ThankYou from "./pages/ThankYou";
 
 function Router() {
   return (
@@ -567,6 +568,7 @@ function Router() {
       <Route path="/sell-your-home-fresno" component={SellYourHomeFresno} />
       <Route path="/sell-my-home-fresno" component={SellYourHomeFresno} />
       <Route path="/buy-my-house-cash-fresno" component={SellYourHomeFresno} />
+      <Route path="/thank-you" component={ThankYou} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
