@@ -12,6 +12,7 @@ import Layout from "@/components/Layout";
 import ComparableSales from "@/components/ComparableSales";
 import { usePlacesAutocomplete } from "@/hooks/usePlacesAutocomplete";
 import ConnorManifesto from "@/components/ConnorManifesto";
+import { NeighborhoodsMap } from "@/components/NeighborhoodsMap";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
 import PageMeta from "@/components/PageMeta";
 import {
@@ -1721,6 +1722,10 @@ export default function HomePage() {
             </h2>
           </div>
 
+          {/* Interactive map */}
+          <div className="mb-10">
+            <NeighborhoodsMap />
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
             {[
               { city: "Fresno", county: "Fresno County", href: "/we-buy-houses-fresno", primary: true },

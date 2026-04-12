@@ -9,6 +9,7 @@ import Layout from "@/components/Layout";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
+import { CashOfferEstimator } from "@/components/CashOfferEstimator";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -150,6 +151,21 @@ export default function HomeWorth() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Cash Offer Estimator */}
+      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "oklch(0.75 0.12 42)", fontFamily: "'DM Mono', monospace" }}>Free Tool</span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Estimate Your Cash Offer Instantly</h2>
+            <p className="mt-3 text-base" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Select your city, bedrooms, and condition to see an estimated offer range based on current Central Valley market data.</p>
+          </div>
+          <div className="max-w-lg mx-auto">
+            <CashOfferEstimator />
+          </div>
+          <p className="text-center mt-6 text-sm" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Want an exact number? <a href="tel:5592818016" style={{ color: "oklch(0.75 0.12 42)", fontWeight: 700 }}>Call (559) 281-8016</a> or fill out the form above — Connor responds within 24 hours.</p>
         </div>
       </section>
 
