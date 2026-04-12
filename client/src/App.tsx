@@ -39,6 +39,7 @@ const MoldHouse = lazy(() => import("./pages/services/MoldHouse"));
 const FireDamage = lazy(() => import("./pages/services/FireDamage"));
 const CodeViolation = lazy(() => import("./pages/services/CodeViolation"));
 const TaxLiens = lazy(() => import("./pages/services/TaxLiens"));
+const TaxDelinquent = lazy(() => import("./pages/TaxDelinquent"));
 const FoundationProblems = lazy(() => import("./pages/services/FoundationProblems"));
 const MilitaryPCS = lazy(() => import("./pages/services/MilitaryPCS"));
 const FreeOffer = lazy(() => import("./pages/FreeOffer"));
@@ -286,6 +287,7 @@ function Router() {
       <Route path="/sell-house-fire-damage" component={FireDamage} />
       <Route path="/sell-house-code-violations-fresno" component={CodeViolation} />
       <Route path="/sell-house-tax-liens-fresno" component={TaxLiens} />
+      <Route path="/tax-delinquent-property-fresno" component={TaxDelinquent} />
       <Route path="/sell-house-foundation-problems" component={FoundationProblems} />
       <Route path="/military-pcs-sell-house" component={MilitaryPCS} />
       <Route path="/free-offer" component={FreeOffer} />

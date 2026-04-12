@@ -13,8 +13,10 @@ import ComparableSales from "@/components/ComparableSales";
 import { usePlacesAutocomplete } from "@/hooks/usePlacesAutocomplete";
 import ConnorManifesto from "@/components/ConnorManifesto";
 import { NeighborhoodsMap } from "@/components/NeighborhoodsMap";
+import { CashOfferEstimator } from "@/components/CashOfferEstimator";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
 import PageMeta from "@/components/PageMeta";
+import SchemaMarkup, { localBusinessSchema } from "@/components/SchemaMarkup";
 import {
   Phone, ArrowRight, CheckCircle2, Clock, Shield, Star, Calculator,
   Home as HomeIcon, AlertTriangle, Key, Users, DollarSign, Loader2, MapPin,
@@ -1292,6 +1294,7 @@ export default function HomePage() {
         description="Sell your home in Fresno CA — direct cash buyer and licensed agent. Honest advice on your best option, whether that's a cash offer or a trusted broker. DRE #02219124. No repairs, no fees. Call (559) 281-8016."
         path="/"
       />
+      <SchemaMarkup schema={localBusinessSchema()} id="local-business" />
 
       {/* ── 1. HERO ── */}
       <section className="relative min-h-[100svh] sm:min-h-[92vh] flex items-center overflow-hidden" style={{ paddingBottom: "6rem", paddingTop: "2rem" }}>
@@ -1375,9 +1378,33 @@ export default function HomePage() {
       </section>
 
       {/* Trust bar moved into hero section above */}
-
       {/* ── 2.5 MINI CASH vs LISTING TEASER ── */}
       <MiniCashVsListing />
+
+      {/* ── 2.7 INSTANT CASH OFFER ESTIMATOR ── */}
+      <section className="py-16" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "oklch(0.75 0.12 42)", fontFamily: "'DM Mono', monospace" }}>Free Tool — No Obligation</span>
+              <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif", lineHeight: 1.2 }}>See What Your Home Might Be Worth as a Cash Sale</h2>
+              <p className="mt-4 text-base leading-relaxed" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Select your city, bedrooms, and condition to get an instant estimated cash offer range — based on real Central Valley market data. No address needed, no spam.</p>
+              <div className="mt-6 space-y-3">
+                {[
+                  "Based on Q1 2026 Central Valley comps",
+                  "Shows ARV, repair costs, and net offer",
+                  "Submit your address for an exact written offer",
+                ].map(t => (
+                  <div key={t} className="flex items-center gap-3 text-sm" style={{ color: "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                    <span style={{ color: "oklch(0.75 0.12 42)", fontSize: "1rem" }}>✓</span> {t}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <CashOfferEstimator />
+          </div>
+        </div>
+      </section>
 
       {/* ── 3. CONNOR'S MANIFESTO — THE DIRTY SECRET ── */}
       <ConnorManifesto />
