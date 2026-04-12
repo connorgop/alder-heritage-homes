@@ -2191,6 +2191,7 @@ const categoryColors: Record<string, string> = {
   "Seller Guides": "oklch(0.42 0.12 155)",
   "Foreclosure & Financial": "oklch(0.50 0.12 42)",
   "Divorce & Life Changes": "oklch(0.45 0.12 320)",
+  "Competitor Comparison": "oklch(0.38 0.12 240)",
 };
 
 export default function Blog() {

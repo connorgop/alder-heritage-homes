@@ -1328,7 +1328,7 @@ export default function HomePage() {
                   <div className="flex gap-0.5">
                     {[1,2,3,4,5].map(i => <Star key={i} size={11} fill="oklch(0.82 0.17 75)" style={{ color: "oklch(0.82 0.17 75)" }} />)}
                   </div>
-                  <span className="text-xs font-bold text-white" style={{ fontFamily: "'DM Mono', monospace" }}>5.0 (8 Reviews)</span>
+                  <span className="text-xs font-bold text-white" style={{ fontFamily: "'DM Mono', monospace" }}>5.0 (13 Reviews)</span>
                 </div>
                 <span className="hidden sm:inline text-white/30">·</span>
                 <div className="hidden sm:flex items-center gap-1">
@@ -1355,7 +1355,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <span className="text-xs text-white/70" style={{ fontFamily: "'DM Mono', monospace" }}>
-                  <strong className="text-white">12 homeowners</strong> requested offers this week
+                  <strong className="text-white">17 homeowners</strong> requested offers this week
                 </span>
               </div>
             </div>

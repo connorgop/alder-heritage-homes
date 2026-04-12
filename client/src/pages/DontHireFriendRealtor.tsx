@@ -8,6 +8,7 @@
    ============================================================ */
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
+import { useSEO } from "@/hooks/useSEO";
 import {
   AlertTriangle, CheckCircle2, XCircle, Phone, ArrowRight,
   Shield, Users, Award, Globe, Briefcase, Clock
@@ -95,6 +96,11 @@ const questions = [
 ];
 
 export default function DontHireFriendRealtor() {
+  useSEO({
+    title: "Don't Hire Your Friend or Family Member as Your Realtor",
+    description: "Thinking about hiring a friend or family member to sell your Fresno home? Read this first. The risks of part-time or inexperienced agents — and what to do instead.",
+    canonical: "/dont-hire-friend-realtor",
+  });
   return (
     <Layout>
       {/* Hero */}

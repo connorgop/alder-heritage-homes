@@ -3,15 +3,17 @@
    Conversion tracking page for Google Ads.
    Users land here after submitting the cash offer form.
    Google Ads conversion tag fires on this page.
+   Improvements: Google review CTA, referral ask, better next steps
    ============================================================ */
 import { useEffect } from "react";
 import { Link } from "wouter";
-import { Phone, CheckCircle, Clock, Star, ArrowRight } from "lucide-react";
+import { Phone, CheckCircle, Clock, Star, ArrowRight, ExternalLink, Heart, Users } from "lucide-react";
 import Layout from "@/components/Layout";
 import { useSEO } from "@/hooks/useSEO";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
+const GOOGLE_REVIEW_URL = "https://search.google.com/local/writereview?placeid=ChIJ17433669692443093026"; // Alder Heritage Homes GBP
 
 export default function ThankYou() {
   useSEO({
@@ -22,8 +24,6 @@ export default function ThankYou() {
 
   // Fire Google Ads conversion event when this page loads
   useEffect(() => {
-    // Google Ads conversion tracking — fires when user lands on /thank-you
-    // This is the conversion event you set up in Google Ads → Tools → Conversions
     if (typeof window !== "undefined" && (window as any).gtag) {
       // Google Ads conversion tracking — fires when user lands on /thank-you after form submission
       // Account: AW-18059779523 | Conversion action: Submit lead form (ctId: 7559336525)
@@ -44,7 +44,7 @@ export default function ThankYou() {
   return (
     <Layout>
       <div
-        className="min-h-screen flex flex-col items-center justify-center px-4 py-20"
+        className="min-h-screen flex flex-col items-center justify-center px-4 py-16"
         style={{ background: "oklch(0.12 0.02 60)" }}
       >
         {/* Success card */}
@@ -82,7 +82,7 @@ export default function ThankYou() {
 
           {/* What happens next */}
           <div
-            className="rounded-xl p-5 mb-8 text-left space-y-4"
+            className="rounded-xl p-5 mb-6 text-left space-y-4"
             style={{ background: "oklch(0.22 0.03 60)", border: "1px solid oklch(0.32 0.04 60)" }}
           >
             <p
@@ -130,17 +130,99 @@ export default function ThankYou() {
           {/* Back to home */}
           <Link
             href="/"
-            className="inline-flex items-center gap-1 text-sm underline"
+            className="inline-flex items-center gap-1 text-sm underline mb-0"
             style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.60 0.04 80)" }}
           >
             Back to home <ArrowRight size={14} />
           </Link>
         </div>
 
+        {/* Google Review Ask */}
+        <div
+          className="w-full max-w-lg mt-6 rounded-2xl p-6 text-center"
+          style={{
+            background: "oklch(0.16 0.03 60)",
+            border: "1px solid oklch(0.28 0.04 60)",
+          }}
+        >
+          <div className="flex justify-center gap-1 mb-3">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} size={20} fill="oklch(0.78 0.18 75)" style={{ color: "oklch(0.78 0.18 75)" }} />
+            ))}
+          </div>
+          <h2
+            className="text-lg font-bold mb-2"
+            style={{ fontFamily: "'Lora', serif", color: "oklch(0.90 0.04 80)" }}
+          >
+            Had a great experience with us?
+          </h2>
+          <p
+            className="text-sm mb-4 leading-relaxed"
+            style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.65 0.04 80)" }}
+          >
+            A quick Google review helps other Fresno homeowners find an honest cash buyer. It takes 30 seconds and means the world to us.
+          </p>
+          <a
+            href="https://g.page/r/17433669692443093026/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all hover:opacity-90"
+            style={{
+              background: "oklch(0.22 0.03 60)",
+              border: "1px solid oklch(0.42 0.06 80)",
+              color: "oklch(0.88 0.06 80)",
+              fontFamily: "'Nunito Sans', sans-serif",
+            }}
+          >
+            <Star size={16} fill="oklch(0.78 0.18 75)" style={{ color: "oklch(0.78 0.18 75)" }} />
+            Leave a Google Review
+            <ExternalLink size={14} />
+          </a>
+        </div>
+
+        {/* Referral ask */}
+        <div
+          className="w-full max-w-lg mt-4 rounded-2xl p-6 text-center"
+          style={{
+            background: "oklch(0.16 0.03 60)",
+            border: "1px solid oklch(0.28 0.04 60)",
+          }}
+        >
+          <div className="flex justify-center mb-3">
+            <div
+              className="w-10 h-10 rounded-full flex items-center justify-center"
+              style={{ background: "oklch(0.28 0.05 155 / 0.3)" }}
+            >
+              <Users size={20} style={{ color: "oklch(0.65 0.13 155)" }} />
+            </div>
+          </div>
+          <h2
+            className="text-base font-bold mb-2"
+            style={{ fontFamily: "'Lora', serif", color: "oklch(0.90 0.04 80)" }}
+          >
+            Know someone else who needs to sell?
+          </h2>
+          <p
+            className="text-sm mb-4"
+            style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.65 0.04 80)" }}
+          >
+            We pay <strong style={{ color: "oklch(0.78 0.13 42)" }}>$500 referral fees</strong> for any closed deal you send our way. Just mention your name when they call.
+          </p>
+          <div className="flex items-center justify-center gap-2">
+            <Heart size={14} style={{ color: "oklch(0.65 0.18 25)" }} />
+            <span
+              className="text-xs"
+              style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.04 60)" }}
+            >
+              Family · Neighbors · Friends · Coworkers
+            </span>
+          </div>
+        </div>
+
         {/* Trust bar */}
         <div
-          className="mt-8 flex flex-wrap justify-center gap-6 text-xs"
-          style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.50 0.03 60)" }}
+          className="mt-8 flex flex-wrap justify-center gap-4 text-xs"
+          style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.45 0.03 60)" }}
         >
           <span>Licensed CA Agent · DRE #02219124</span>
           <span>·</span>
@@ -148,7 +230,7 @@ export default function ThankYou() {
           <span>·</span>
           <span>Not a Wholesaler</span>
           <span>·</span>
-          <span>5.0 ★ Reviews</span>
+          <span>5.0 ★ · 13 Google Reviews</span>
         </div>
       </div>
     </Layout>

@@ -54,7 +54,7 @@ const schema = {
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "8",
+    "reviewCount": "13",
     "bestRating": "5"
   }
 };
@@ -105,7 +105,7 @@ export default function CentralValleyHub() {
             <span className="flex items-center gap-2"><CheckCircle2 size={16} /> 45+ Crew Members</span>
             <span className="flex items-center gap-2"><CheckCircle2 size={16} /> Close in 7–14 Days</span>
             <span className="flex items-center gap-2"><CheckCircle2 size={16} /> 22+ Cities Served</span>
-            <span className="flex items-center gap-2"><Star size={16} fill="white" /> 5.0 Stars — 8 Reviews</span>
+            <span className="flex items-center gap-2"><Star size={16} fill="white" /> 5.0 Stars — 13 Reviews</span>
           </div>
         </div>
       </section>

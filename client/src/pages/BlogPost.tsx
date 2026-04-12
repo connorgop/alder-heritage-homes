@@ -47,7 +47,7 @@ export default function BlogPost() {
       </Layout>
     );
   }
-  const related: BlogPostEntry[] = (blogPosts as BlogPostEntry[]).filter((p) => p.slug !== slug && p.category === post!.category).slice(0, 2);
+  const related: BlogPostEntry[] = (blogPosts as BlogPostEntry[]).filter((p) => p.slug !== slug && p.category === post!.category).slice(0, 3);
   // Internal linking: map blog categories to relevant service pages
   const categoryServiceLinks: Record<string, { label: string; href: string }[]> = {
     "Foreclosure & Financial": [
@@ -140,6 +140,11 @@ export default function BlogPost() {
       { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
       { label: "Foreclosure Help", href: "/foreclosure-help" },
       { label: "Can't Afford Home", href: "/cant-afford-home" },
+    ],
+    "Competitor Comparison": [
+      { label: "Compare Cash Buyers", href: "/compare-cash-buyers" },
+      { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
+      { label: "Get My Cash Offer", href: "/contact" },
     ],
     "Probate": [
       { label: "Probate Real Estate Fresno", href: "/probate-real-estate-fresno" },
