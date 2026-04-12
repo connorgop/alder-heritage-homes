@@ -7,7 +7,16 @@ import React from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import PageMeta from "@/components/PageMeta";
+import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
 import { ArrowRight, CheckCircle2, Phone, Shield, Star, AlertTriangle } from "lucide-react";
+
+const COMPETITOR_FAQS = [
+  { q: "Is Osborne Homes a legitimate company?", a: "Yes. Osborne Homes is a legitimate California-based cash buyer that has been operating since 2018. They are a direct end buyer, not a wholesaler. Their offers tend to be at the lower end of the market range due to their statewide overhead." },
+  { q: "Is HomeVestors / We Buy Ugly Houses a scam?", a: "No. HomeVestors is the largest cash buyer franchise in the US with 1,100+ franchisees. They are legitimate buyers. However, their franchise model means local operators pay royalties, which affects offer prices. Always compare their offer to local independent buyers." },
+  { q: "How do I know if a cash buyer is a wholesaler?", a: "Look for 'and/or assigns' in the purchase contract. Ask directly: 'Are you the end buyer, or will you assign this contract?' Ask to see the comparable sales behind their offer. Wholesalers typically can't answer these questions clearly." },
+  { q: "Can I get multiple offers from cash buyers?", a: "Yes — and you should. Any legitimate cash buyer will give you a no-obligation offer. Get at least 2–3 offers and compare the net proceeds, not just the headline price." },
+  { q: "What is a Broker Opinion of Value (BOV)?", a: "A BOV is a professional analysis of your home's market value based on recent comparable sales in your neighborhood. Alder Heritage Homes provides a full BOV with every offer so you can see exactly how we calculated our price." },
+];
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -93,8 +102,9 @@ export default function CompetitorComparison() {
       <PageMeta
         title="Cash Home Buyers Fresno — Compare All Options (2026 Guide) | Alder Heritage Homes"
         description="Honest comparison of every cash home buyer in Fresno: Osborne Homes, HomeVestors, Home Helpers Group, Greimagedko, and more. See offer ranges, processes, and red flags before you sign."
-        path="/compare-cash-buyers-fresno"
+        path="/compare-cash-buyers"
       />
+      <SchemaMarkup schema={faqPageSchema(COMPETITOR_FAQS)} id="competitor-faq" />
 
       {/* Hero */}
       <section

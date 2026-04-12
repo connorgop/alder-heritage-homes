@@ -57,7 +57,7 @@ const footerCompany = [
   { label: "Reviews", href: "/reviews" },
   { label: "Our Deals", href: "/our-deals" },
   { label: "Before & After", href: "/before-after" },
-  { label: "Compare Cash Buyers", href: "/compare-cash-buyers-fresno" },
+  { label: "Compare Cash Buyers", href: "/compare-cash-buyers" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/sell-house-fast-faq" },
   { label: "Contact", href: "/contact" },
@@ -84,7 +84,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.97 0.015 85)" }}>
       {/* Global structured data */}
       <SchemaMarkup schema={localBusinessSchema()} id="local-business" />
-      <SchemaMarkup schema={aggregateRatingSchema({ ratingValue: 5.0, reviewCount: 8 })} id="aggregate-rating" />
+      <SchemaMarkup schema={aggregateRatingSchema({ ratingValue: 5.0, reviewCount: 13 })} id="aggregate-rating" />
       <SchemaMarkup schema={websiteSchema()} id="website" />
       <SchemaMarkup schema={breadcrumbSchema(buildBreadcrumbs(location))} id="breadcrumb" />
 

@@ -1790,6 +1790,68 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── Competitor Comparison Section — internal link cluster ── */}
+      <section className="py-16" style={{ background: "oklch(0.97 0.015 85)" }}>
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <div
+              className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4"
+              style={{ background: "oklch(0.55 0.13 42 / 0.12)", color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}
+            >
+              Fresno Cash Buyer Comparison
+            </div>
+            <h2
+              className="text-2xl md:text-3xl font-bold mb-3"
+              style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}
+            >
+              How Does Alder Heritage Homes Compare?
+            </h2>
+            <p
+              className="text-base max-w-2xl mx-auto"
+              style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}
+            >
+              Before you accept any cash offer, compare your options. We're not the only buyer in Fresno — and we'll be the first to tell you that.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5 mb-8">
+            {[
+              { title: "Osborne Homes vs. Alder Heritage", slug: "osborne-homes-reviews-fresno-alternatives", tag: "Osborne Homes" },
+              { title: "HomeVestors / We Buy Ugly Houses Fresno", slug: "homevestors-we-buy-ugly-houses-fresno-review", tag: "HomeVestors" },
+              { title: "How to Spot a Trustworthy Cash Buyer", slug: "we-buy-houses-fresno-who-to-trust", tag: "Buyer Guide" },
+            ].map((post) => (
+              <a
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group block p-5 rounded-xl border bg-white hover:shadow-md transition-all"
+                style={{ borderColor: "oklch(0.88 0.02 85)" }}
+              >
+                <span
+                  className="inline-block px-2.5 py-1 rounded-full text-xs font-bold mb-3"
+                  style={{ background: "oklch(0.55 0.13 42 / 0.10)", color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}
+                >
+                  {post.tag}
+                </span>
+                <p className="font-bold text-sm leading-snug" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                  {post.title}
+                </p>
+                <span className="text-xs font-semibold mt-2 inline-flex items-center gap-1 group-hover:gap-2 transition-all" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  Read Guide →
+                </span>
+              </a>
+            ))}
+          </div>
+          <div className="text-center">
+            <a
+              href="/compare-cash-buyers"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold text-sm border-2 transition-all hover:shadow-md"
+              style={{ borderColor: "oklch(0.55 0.13 42)", color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", background: "white" }}
+            >
+              See Full Comparison of All Fresno Cash Buyers →
+            </a>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
