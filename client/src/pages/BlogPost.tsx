@@ -24,6 +24,7 @@ import articleChunk13 from "./BlogPostArticles13";
 import articleChunk14 from "./BlogPostArticles14";
 import articleChunk15 from "./BlogPostArticles15";
 import articleChunk16 from "./BlogPostArticles16";
+import articleChunk17 from "./BlogPostArticles17";
 
 const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk1,
@@ -42,6 +43,7 @@ const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk14,
   ...articleChunk15,
   ...articleChunk16,
+  ...articleChunk17,
 };
 
 export default function BlogPost() {
@@ -162,6 +164,36 @@ export default function BlogPost() {
       { label: "Probate Real Estate Fresno", href: "/probate-real-estate-fresno" },
       { label: "Sell Inherited House", href: "/probate-inherited-homes" },
       { label: "Sell House Fast Fresno", href: "/sell-house-fast-fresno-ca" },
+    ],
+    "Merced": [
+      { label: "Sell House Fast Merced", href: "/sell-house-fast-merced-ca" },
+      { label: "Sell My House Merced", href: "/sell-my-house-merced-ca" },
+      { label: "Cash Offer Calculator", href: "/calculator" },
+    ],
+    "Kings County": [
+      { label: "Sell House Fast Hanford", href: "/sell-house-fast-hanford-ca" },
+      { label: "Sell House Fast Lemoore", href: "/sell-house-fast-lemoore-ca" },
+      { label: "Kings County Hub", href: "/kings-county" },
+    ],
+    "Market Updates": [
+      { label: "Sell My House Fresno", href: "/sell-my-house-fresno-ca" },
+      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Compare Cash Buyers", href: "/compare-cash-buyers" },
+    ],
+    "Code Violations": [
+      { label: "Sell House Code Violations", href: "/sell-house-code-violations-fresno" },
+      { label: "Sell As-Is", href: "/sell-as-is" },
+      { label: "Get My Cash Offer", href: "/contact" },
+    ],
+    "Problem Properties": [
+      { label: "Hoarder House", href: "/hoarder-house" },
+      { label: "Sell As-Is", href: "/sell-as-is" },
+      { label: "Get My Cash Offer", href: "/contact" },
+    ],
+    "Difficult Situations": [
+      { label: "Sell My House Madera", href: "/sell-my-house-madera-ca" },
+      { label: "Foreclosure Help", href: "/foreclosure-help" },
+      { label: "Get My Cash Offer", href: "/contact" },
     ],
   };
   const serviceLinks = categoryServiceLinks[post.category] || [

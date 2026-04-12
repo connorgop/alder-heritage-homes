@@ -225,6 +225,8 @@ const StanislausCountyHub = lazy(() => import("./pages/StanislausCountyHub"));
 const SellHouseFastPorterville = lazy(() => import("./pages/SellHouseFastPorterville"));
 const LindsayPage = lazy(() => import("./pages/cities/Lindsay"));
 const SellHouseFastLindsay = lazy(() => import("./pages/SellHouseFastLindsay"));
+const SellHouseFastMerced = lazy(() => import("./pages/SellHouseFastMerced"));
+const SellHouseFastLemoore = lazy(() => import("./pages/SellHouseFastLemoore"));
 const ExeterPage = lazy(() => import("./pages/cities/Exeter"));
 const StrathmoreePage = lazy(() => import("./pages/cities/Strathmore"));
 const TulareCountyHub = lazy(() => import("./pages/TulareCountyHub"));
@@ -565,6 +567,14 @@ function Router() {
       <Route path="/stanislaus-county" component={StanislausCountyHub} />
       <Route path="/sell-house-fast-porterville-ca" component={SellHouseFastPorterville} />
       <Route path="/we-buy-houses-lindsay" component={LindsayPage} />
+      <Route path="/sell-house-fast-merced-ca" component={SellHouseFastMerced} />
+      <Route path="/sell-my-house-fast-merced-ca" component={SellHouseFastMerced} />
+      <Route path="/cash-home-buyers-merced-ca" component={SellHouseFastMerced} />
+      <Route path="/we-buy-houses-merced-ca" component={SellHouseFastMerced} />
+      <Route path="/sell-house-fast-lemoore-ca" component={SellHouseFastLemoore} />
+      <Route path="/sell-my-house-fast-lemoore-ca" component={SellHouseFastLemoore} />
+      <Route path="/cash-home-buyers-lemoore-ca" component={SellHouseFastLemoore} />
+      <Route path="/we-buy-houses-lemoore-ca" component={SellHouseFastLemoore} />
       <Route path="/sell-house-fast-lindsay-ca" component={SellHouseFastLindsay} />
       <Route path="/sell-my-house-fast-lindsay" component={SellHouseFastLindsay} />
       <Route path="/cash-home-buyer-lindsay-ca" component={SellHouseFastLindsay} />
