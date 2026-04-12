@@ -224,6 +224,7 @@ const SellHouseFastFowler = lazy(() => import("./pages/SellHouseFastFowler"));
 const StanislausCountyHub = lazy(() => import("./pages/StanislausCountyHub"));
 const SellHouseFastPorterville = lazy(() => import("./pages/SellHouseFastPorterville"));
 const LindsayPage = lazy(() => import("./pages/cities/Lindsay"));
+const SellHouseFastLindsay = lazy(() => import("./pages/SellHouseFastLindsay"));
 const ExeterPage = lazy(() => import("./pages/cities/Exeter"));
 const StrathmoreePage = lazy(() => import("./pages/cities/Strathmore"));
 const TulareCountyHub = lazy(() => import("./pages/TulareCountyHub"));
@@ -564,6 +565,9 @@ function Router() {
       <Route path="/stanislaus-county" component={StanislausCountyHub} />
       <Route path="/sell-house-fast-porterville-ca" component={SellHouseFastPorterville} />
       <Route path="/we-buy-houses-lindsay" component={LindsayPage} />
+      <Route path="/sell-house-fast-lindsay-ca" component={SellHouseFastLindsay} />
+      <Route path="/sell-my-house-fast-lindsay" component={SellHouseFastLindsay} />
+      <Route path="/cash-home-buyer-lindsay-ca" component={SellHouseFastLindsay} />
       <Route path="/we-buy-houses-exeter" component={ExeterPage} />
       <Route path="/we-buy-houses-strathmore" component={StrathmoreePage} />
       <Route path="/tulare-county" component={TulareCountyHub} />
