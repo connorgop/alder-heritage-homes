@@ -35,12 +35,18 @@ export default function ExitIntentPopup() {
       if (document.visibilityState === "hidden") show();
     };
 
+    // Timer trigger: show after 45 seconds of inactivity on the page
+    const timerRef = setTimeout(() => {
+      show();
+    }, 45000);
+
     document.addEventListener("mouseleave", handleMouseLeave);
     document.addEventListener("visibilitychange", handleVisibility);
 
     return () => {
       document.removeEventListener("mouseleave", handleMouseLeave);
       document.removeEventListener("visibilitychange", handleVisibility);
+      clearTimeout(timerRef);
     };
   }, [show]);
 

@@ -48,7 +48,7 @@ const labelLight: React.CSSProperties = {
 
 export default function CashOfferForm({ city, variant = "dark" }: CashOfferFormProps) {
   const { state: formState, errorMessage, submit, reset } = useFormSubmit();
-  const [formData, setFormData] = useState({ name: "", phone: "", address: "", situation: "" });
+  const [formData, setFormData] = useState({ name: "", phone: "", email: "", address: "", situation: "" });
 
   const isDark = variant === "dark";
   const inputStyle = isDark ? inputDark : inputLight;
@@ -122,6 +122,20 @@ export default function CashOfferForm({ city, variant = "dark" }: CashOfferFormP
           required
           placeholder="(559) 555-1234"
           value={formData.phone}
+          onChange={handleChange}
+          className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all"
+          style={inputStyle}
+        />
+      </div>
+
+      {/* Email */}
+      <div>
+        <label className="block font-bold mb-1.5" style={labelStyle}>Email Address <span style={{ fontWeight: 400, opacity: 0.6 }}>(optional)</span></label>
+        <input
+          type="email"
+          name="email"
+          placeholder="you@example.com"
+          value={formData.email}
           onChange={handleChange}
           className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all"
           style={inputStyle}

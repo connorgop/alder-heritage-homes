@@ -776,6 +776,15 @@ function InlineOfferForm() {
         <h3 className="text-xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Get Your Free Cash Offer</h3>
         <p className="text-sm mt-1" style={{ color: "oklch(0.90 0.04 85)", fontFamily: "'DM Mono', monospace" }}>No obligation · We respond within 24 hours</p>
       </div>
+      {/* Proof of Funds + Urgency trust strip */}
+      <div className="px-8 pt-4 pb-2 flex flex-wrap gap-3 items-center" style={{ borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
+        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.28 0.05 155 / 0.25)", border: "1px solid oklch(0.55 0.18 145 / 0.4)", color: "oklch(0.75 0.12 145)", fontFamily: "'DM Mono', monospace" }}>
+          <Shield size={12} /> Proof of Funds Available in 24 hrs
+        </div>
+        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.55 0.13 42 / 0.18)", border: "1px solid oklch(0.55 0.13 42 / 0.35)", color: "oklch(0.85 0.08 75)", fontFamily: "'DM Mono', monospace" }}>
+          🔥 3 offers sent this week in Fresno
+        </div>
+      </div>
       <form
         onSubmit={async (e) => { e.preventDefault(); await submit({ ...form, _source: "Homepage Inline Form" }); }}
         className="p-8 space-y-4"
