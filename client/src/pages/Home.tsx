@@ -1319,7 +1319,7 @@ export default function HomePage() {
   return (
     <Layout>
       <PageMeta
-        title="Sell My Home Fresno CA | Cash Offer or List With an Agent | Alder Heritage Homes"
+        title="Sell My Home Fresno CA | Cash Offer or List With an Agent"
         description="Sell your home in Fresno CA — direct cash buyer and licensed agent. Honest advice on your best option, whether that's a cash offer or a trusted broker. DRE #02219124. No repairs, no fees. Call (559) 281-8016."
         path="/"
       />
