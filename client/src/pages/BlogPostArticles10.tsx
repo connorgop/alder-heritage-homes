@@ -21,7 +21,7 @@ const articleChunk10: Record<string, React.ReactNode> = {
 
       <h2>How Osborne Homes Works</h2>
       <p>
-        Osborne Homes is a California-based direct cash buyer that has been operating since 2018. They purchase homes across Southern California and have expanded into the Central Valley market including Fresno. Their process is similar to most cash buyers:
+        Osborne Homes is a California-based real estate marketing company that has been operating since 2018, running heavy ad campaigns across Southern California and the Central Valley including Fresno. Their advertised process looks like a typical cash buyer:
       </p>
       <ol>
         <li>You submit your property information online or by phone</li>
@@ -30,7 +30,7 @@ const articleChunk10: Record<string, React.ReactNode> = {
         <li>If you accept, they open escrow and close in 7–30 days</li>
       </ol>
       <p>
-        Osborne Homes is a legitimate end buyer — meaning they actually purchase the home with their own funds, not a wholesaler who assigns contracts. That's an important distinction.
+        <strong>Important:</strong> Osborne Homes operates as a wholesaler — meaning they put your home under contract and then assign that contract to a third-party investor for a fee, rather than purchasing the home with their own funds. The actual buyer of your home is someone you've never met, and Osborne collects an assignment fee in the middle. California law requires wholesalers to disclose this arrangement, but many sellers don't realize it until they're deep in the process. Always ask any buyer directly: <em>"Are you the end buyer, or will you assign this contract?"</em>
       </p>
 
       <h2>What Sellers Say About Osborne Homes</h2>
@@ -57,7 +57,7 @@ const articleChunk10: Record<string, React.ReactNode> = {
             </tr>
           </thead>
           <tbody>
-            <tr><td className="p-3 border">Type of buyer</td><td className="p-3 border">Direct cash buyer</td><td className="p-3 border">Direct cash buyer (licensed CA agent)</td></tr>
+            <tr><td className="p-3 border">Type of buyer</td><td className="p-3 border"><strong style={{color:"oklch(0.50 0.15 25)"}}>Wholesaler</strong> — assigns contracts to 3rd-party investors</td><td className="p-3 border">Direct end buyer — licensed CA agent (DRE #02219124)</td></tr>
             <tr><td className="p-3 border">Service area</td><td className="p-3 border">Statewide CA</td><td className="p-3 border">Central Valley focused (Fresno, Clovis, Visalia, Bakersfield)</td></tr>
             <tr><td className="p-3 border">Offer transparency</td><td className="p-3 border">Offer presented without detailed breakdown</td><td className="p-3 border">Full Broker Opinion of Value with every offer</td></tr>
             <tr><td className="p-3 border">Closing timeline</td><td className="p-3 border">7–30 days</td><td className="p-3 border">7–21 days</td></tr>
@@ -202,7 +202,7 @@ const articleChunk10: Record<string, React.ReactNode> = {
 
       <h3>1. Direct End Buyers (The Good Ones)</h3>
       <p>
-        These companies purchase homes with their own funds and close the transaction themselves. They take on the renovation risk and profit from the resale. Examples: Alder Heritage Homes, Osborne Homes, some local investors. <strong>These are the buyers you want.</strong>
+        These companies purchase homes with their own funds and close the transaction themselves. They take on the renovation risk and profit from the resale. Examples: Alder Heritage Homes, some local independent investors. <strong>These are the buyers you want.</strong>
       </p>
 
       <h3>2. Wholesalers (The Ones to Watch Out For)</h3>
@@ -272,11 +272,10 @@ const articleChunk10: Record<string, React.ReactNode> = {
               <td className="p-3 border">7–21 days</td>
               <td className="p-3 border">Any condition, local expertise, transparent offers</td>
             </tr>
-            <tr>
-              <td className="p-3 border">Osborne Homes</td>
-              <td className="p-3 border">65–80% ARV</td>
-              <td className="p-3 border">7–30 days</td>
-              <td className="p-3 border">Statewide coverage, established brand</td>
+            <tr><td className="p-3 border">Osborne Homes <em style={{fontSize:"0.75rem",color:"oklch(0.50 0.15 25)"}}>(wholesaler)</em></td>
+              <td className="p-3 border">Varies — depends on end buyer</td>
+              <td className="p-3 border">7–30 days (depends on end buyer)</td>
+              <td className="p-3 border">Heavy marketing; assigns contracts to 3rd-party investors</td>
             </tr>
             <tr>
               <td className="p-3 border">HomeVestors / We Buy Ugly Houses</td>

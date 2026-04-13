@@ -11,7 +11,7 @@ import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
 import { ArrowRight, CheckCircle2, Phone, Shield, Star, AlertTriangle } from "lucide-react";
 
 const COMPETITOR_FAQS = [
-  { q: "Is Osborne Homes a legitimate company?", a: "Yes. Osborne Homes is a legitimate California-based cash buyer that has been operating since 2018. They are a direct end buyer, not a wholesaler. Their offers tend to be at the lower end of the market range due to their statewide overhead." },
+  { q: "Is Osborne Homes a legitimate company?", a: "Osborne Homes is a California-based real estate company that has been operating since 2018. However, they operate as a wholesaler — meaning they put your home under contract and then assign that contract to a third-party investor for a fee, rather than purchasing the home themselves. Always ask any buyer: 'Are you the end buyer, or will you assign this contract?' before signing anything." },
   { q: "Is HomeVestors / We Buy Ugly Houses a scam?", a: "No. HomeVestors is the largest cash buyer franchise in the US with 1,100+ franchisees. They are legitimate buyers. However, their franchise model means local operators pay royalties, which affects offer prices. Always compare their offer to local independent buyers." },
   { q: "How do I know if a cash buyer is a wholesaler?", a: "Look for 'and/or assigns' in the purchase contract. Ask directly: 'Are you the end buyer, or will you assign this contract?' Ask to see the comparable sales behind their offer. Wholesalers typically can't answer these questions clearly." },
   { q: "Can I get multiple offers from cash buyers?", a: "Yes — and you should. Any legitimate cash buyer will give you a no-obligation offer. Get at least 2–3 offers and compare the net proceeds, not just the headline price." },
@@ -181,10 +181,10 @@ export default function CompetitorComparison() {
                   <td className="p-4 text-green-700 font-semibold">Full BOV provided</td>
                 </tr>
                 <tr className="border-b">
-                  <td className="p-4 font-semibold">Osborne Homes</td>
-                  <td className="p-4">65–80% ARV</td>
-                  <td className="p-4">7–30 days</td>
-                  <td className="p-4 text-green-700">Low</td>
+                  <td className="p-4 font-semibold">Osborne Homes <span style={{fontSize:"0.7rem",color:"oklch(0.50 0.15 25)",fontWeight:"normal"}}>(wholesaler)</span></td>
+                  <td className="p-4">Varies — end buyer sets price</td>
+                  <td className="p-4">7–30 days (depends on end buyer)</td>
+                  <td className="p-4" style={{color:"oklch(0.50 0.15 25)",fontWeight:"600"}}>High — assigns contracts</td>
                   <td className="p-4 text-yellow-700">Offer only</td>
                 </tr>
                 <tr className="border-b">
@@ -381,7 +381,7 @@ export default function CompetitorComparison() {
             {[
               {
                 q: "Is Osborne Homes a legitimate company?",
-                a: "Yes. Osborne Homes is a legitimate California-based cash buyer that has been operating since 2018. They are a direct end buyer, not a wholesaler. Their offers tend to be at the lower end of the market range due to their statewide overhead.",
+                a: "Osborne Homes is a California-based real estate company that has been operating since 2018. However, they operate as a wholesaler — meaning they put your home under contract and then assign that contract to a third-party investor for a fee, rather than purchasing the home themselves. Always ask any buyer: 'Are you the end buyer, or will you assign this contract?' before signing anything.",
               },
               {
                 q: "Is HomeVestors / We Buy Ugly Houses a scam?",
