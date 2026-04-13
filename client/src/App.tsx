@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, Redirect } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
@@ -268,8 +268,8 @@ function Router() {
       <Route path="/probate-inherited-homes" component={ProbateHomes} />
       <Route path="/probate-real-estate-fresno" component={ProbateRealEstate} />
       <Route path="/california-probate-home-sale" component={CaliforniaProbateHomeSale} />
-      <Route path="/sell-house-probate-california" component={CaliforniaProbateHomeSale} />
-      <Route path="/how-to-sell-probate-house-california" component={CaliforniaProbateHomeSale} />
+      <Route path="/sell-house-probate-california"><Redirect to="/california-probate-home-sale" /></Route>
+      <Route path="/how-to-sell-probate-house-california"><Redirect to="/california-probate-home-sale" /></Route>
       <Route path="/sell-house-fast" component={FastSale} />
       <Route path="/behind-on-mortgage" component={BehindOnMortgage} />
       <Route path="/sell-house-roof-damage" component={RoofDamage} />
@@ -280,8 +280,8 @@ function Router() {
       <Route path="/why-choose-us" component={WhyChooseUs} />
       <Route path="/dont-get-wholesaled" component={DontGetWholesaled} />
       <Route path="/dont-get-lowballed" component={DontGetLowballed} />
-      <Route path="/lowball-cash-offer-fresno" component={DontGetLowballed} />
-      <Route path="/fair-cash-offer-home" component={DontGetLowballed} />
+      <Route path="/lowball-cash-offer-fresno"><Redirect to="/dont-get-lowballed" /></Route>
+      <Route path="/fair-cash-offer-home"><Redirect to="/dont-get-lowballed" /></Route>
       <Route path="/dont-hire-friend-realtor" component={DontHireFriendRealtor} />
       <Route path="/arm-rate-change-help" component={ArmRateChange} />
       <Route path="/cant-afford-my-home" component={CantAffordHome} />
@@ -301,104 +301,104 @@ function Router() {
       <Route path="/sell-parents-house-fresno" component={ParentsHouse} />
       <Route path="/sell-my-house" component={SellMyHouse} />
       <Route path="/sell-my-house-fresno-ca" component={SellMyHouseFresno} />
-      <Route path="/sell-my-house-fresno" component={SellMyHouseFresno} />
+      <Route path="/sell-my-house-fresno"><Redirect to="/sell-my-house-fresno-ca" /></Route>
       <Route path="/sell-my-house-visalia-ca" component={SellMyHouseVisalia} />
-      <Route path="/sell-my-house-visalia" component={SellMyHouseVisalia} />
-      <Route path="/sell-my-home-visalia" component={SellMyHouseVisalia} />
-      <Route path="/sell-house-visalia-ca" component={SellMyHouseVisalia} />
+      <Route path="/sell-my-house-visalia"><Redirect to="/sell-my-house-visalia-ca" /></Route>
+      <Route path="/sell-my-home-visalia"><Redirect to="/sell-my-house-visalia-ca" /></Route>
+      <Route path="/sell-house-visalia-ca"><Redirect to="/sell-my-house-visalia-ca" /></Route>
       <Route path="/sell-my-house-bakersfield-ca" component={SellMyHouseBakersfield} />
-      <Route path="/sell-my-house-bakersfield" component={SellMyHouseBakersfield} />
-      <Route path="/sell-my-home-bakersfield" component={SellMyHouseBakersfield} />
-      <Route path="/sell-house-bakersfield-ca" component={SellMyHouseBakersfield} />
-      <Route path="/cash-home-buyer-bakersfield" component={SellMyHouseBakersfield} />
+      <Route path="/sell-my-house-bakersfield"><Redirect to="/sell-my-house-bakersfield-ca" /></Route>
+      <Route path="/sell-my-home-bakersfield"><Redirect to="/sell-my-house-bakersfield-ca" /></Route>
+      <Route path="/sell-house-bakersfield-ca"><Redirect to="/sell-my-house-bakersfield-ca" /></Route>
+      <Route path="/cash-home-buyer-bakersfield"><Redirect to="/sell-my-house-bakersfield-ca" /></Route>
       <Route path="/sell-my-house-clovis-ca" component={SellMyHouseClovis} />
-      <Route path="/sell-my-house-clovis" component={SellMyHouseClovis} />
-      <Route path="/sell-my-home-clovis" component={SellMyHouseClovis} />
-      <Route path="/sell-house-clovis-ca" component={SellMyHouseClovis} />
+      <Route path="/sell-my-house-clovis"><Redirect to="/sell-my-house-clovis-ca" /></Route>
+      <Route path="/sell-my-home-clovis"><Redirect to="/sell-my-house-clovis-ca" /></Route>
+      <Route path="/sell-house-clovis-ca"><Redirect to="/sell-my-house-clovis-ca" /></Route>
       <Route path="/sell-my-house-madera-ca" component={SellMyHouseMadera} />
-      <Route path="/sell-my-house-madera" component={SellMyHouseMadera} />
-      <Route path="/sell-my-home-madera" component={SellMyHouseMadera} />
-      <Route path="/sell-house-madera-ca" component={SellMyHouseMadera} />
+      <Route path="/sell-my-house-madera"><Redirect to="/sell-my-house-madera-ca" /></Route>
+      <Route path="/sell-my-home-madera"><Redirect to="/sell-my-house-madera-ca" /></Route>
+      <Route path="/sell-house-madera-ca"><Redirect to="/sell-my-house-madera-ca" /></Route>
       <Route path="/sell-my-house-hanford-ca" component={SellMyHouseHanford} />
-      <Route path="/sell-my-house-hanford" component={SellMyHouseHanford} />
-      <Route path="/sell-my-home-hanford" component={SellMyHouseHanford} />
-      <Route path="/sell-house-hanford-ca" component={SellMyHouseHanford} />
+      <Route path="/sell-my-house-hanford"><Redirect to="/sell-my-house-hanford-ca" /></Route>
+      <Route path="/sell-my-home-hanford"><Redirect to="/sell-my-house-hanford-ca" /></Route>
+      <Route path="/sell-house-hanford-ca"><Redirect to="/sell-my-house-hanford-ca" /></Route>
       <Route path="/sell-my-house-kingsburg-ca" component={SellMyHouseKingsburg} />
-      <Route path="/sell-my-house-kingsburg" component={SellMyHouseKingsburg} />
-      <Route path="/sell-my-home-kingsburg" component={SellMyHouseKingsburg} />
+      <Route path="/sell-my-house-kingsburg"><Redirect to="/sell-my-house-kingsburg-ca" /></Route>
+      <Route path="/sell-my-home-kingsburg"><Redirect to="/sell-my-house-kingsburg-ca" /></Route>
       <Route path="/sell-my-house-kerman-ca" component={SellMyHouseKerman} />
-      <Route path="/sell-my-house-kerman" component={SellMyHouseKerman} />
-      <Route path="/sell-my-home-kerman" component={SellMyHouseKerman} />
+      <Route path="/sell-my-house-kerman"><Redirect to="/sell-my-house-kerman-ca" /></Route>
+      <Route path="/sell-my-home-kerman"><Redirect to="/sell-my-house-kerman-ca" /></Route>
       <Route path="/sell-my-house-chowchilla-ca" component={SellMyHouseChowchilla} />
-      <Route path="/sell-my-house-chowchilla" component={SellMyHouseChowchilla} />
-      <Route path="/sell-my-home-chowchilla" component={SellMyHouseChowchilla} />
+      <Route path="/sell-my-house-chowchilla"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
+      <Route path="/sell-my-home-chowchilla"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
       <Route path="/sell-my-house-stockton-ca" component={SellMyHouseStockton} />
-      <Route path="/sell-my-house-stockton" component={SellMyHouseStockton} />
-      <Route path="/sell-my-home-stockton" component={SellMyHouseStockton} />
+      <Route path="/sell-my-house-stockton"><Redirect to="/sell-my-house-stockton-ca" /></Route>
+      <Route path="/sell-my-home-stockton"><Redirect to="/sell-my-house-stockton-ca" /></Route>
       <Route path="/sell-my-house-modesto-ca" component={SellMyHouseModesto} />
-      <Route path="/sell-my-house-modesto" component={SellMyHouseModesto} />
-      <Route path="/sell-my-home-modesto" component={SellMyHouseModesto} />
+      <Route path="/sell-my-house-modesto"><Redirect to="/sell-my-house-modesto-ca" /></Route>
+      <Route path="/sell-my-home-modesto"><Redirect to="/sell-my-house-modesto-ca" /></Route>
       <Route path="/sell-my-house-merced-ca" component={SellMyHouseMerced} />
-      <Route path="/sell-my-house-merced" component={SellMyHouseMerced} />
-      <Route path="/sell-my-home-merced" component={SellMyHouseMerced} />
+      <Route path="/sell-my-house-merced"><Redirect to="/sell-my-house-merced-ca" /></Route>
+      <Route path="/sell-my-home-merced"><Redirect to="/sell-my-house-merced-ca" /></Route>
       <Route path="/sell-my-house-tulare-ca" component={SellMyHouseTulare} />
-      <Route path="/sell-my-house-tulare" component={SellMyHouseTulare} />
-      <Route path="/sell-my-home-tulare" component={SellMyHouseTulare} />
+      <Route path="/sell-my-house-tulare"><Redirect to="/sell-my-house-tulare-ca" /></Route>
+      <Route path="/sell-my-home-tulare"><Redirect to="/sell-my-house-tulare-ca" /></Route>
       <Route path="/sell-my-house-porterville-ca" component={SellMyHousePorterville} />
-      <Route path="/sell-my-house-porterville" component={SellMyHousePorterville} />
-      <Route path="/sell-my-home-porterville" component={SellMyHousePorterville} />
+      <Route path="/sell-my-house-porterville"><Redirect to="/sell-my-house-porterville-ca" /></Route>
+      <Route path="/sell-my-home-porterville"><Redirect to="/sell-my-house-porterville-ca" /></Route>
       <Route path="/sell-my-house-turlock-ca" component={SellMyHouseTurlock} />
-      <Route path="/sell-my-house-turlock" component={SellMyHouseTurlock} />
-      <Route path="/sell-my-home-turlock" component={SellMyHouseTurlock} />
+      <Route path="/sell-my-house-turlock"><Redirect to="/sell-my-house-turlock-ca" /></Route>
+      <Route path="/sell-my-home-turlock"><Redirect to="/sell-my-house-turlock-ca" /></Route>
       <Route path="/sell-my-house-lemoore-ca" component={SellMyHouseLemoore} />
-      <Route path="/sell-my-house-lemoore" component={SellMyHouseLemoore} />
-      <Route path="/sell-my-home-lemoore" component={SellMyHouseLemoore} />
+      <Route path="/sell-my-house-lemoore"><Redirect to="/sell-my-house-lemoore-ca" /></Route>
+      <Route path="/sell-my-home-lemoore"><Redirect to="/sell-my-house-lemoore-ca" /></Route>
       <Route path="/sell-my-house-selma-ca" component={SellMyHouseSelma} />
-      <Route path="/sell-my-house-selma" component={SellMyHouseSelma} />
-      <Route path="/sell-my-home-selma" component={SellMyHouseSelma} />
+      <Route path="/sell-my-house-selma"><Redirect to="/sell-my-house-selma-ca" /></Route>
+      <Route path="/sell-my-home-selma"><Redirect to="/sell-my-house-selma-ca" /></Route>
       <Route path="/sell-my-house-sanger-ca" component={SellMyHouseSanger} />
-      <Route path="/sell-my-house-sanger" component={SellMyHouseSanger} />
-      <Route path="/sell-my-home-sanger" component={SellMyHouseSanger} />
+      <Route path="/sell-my-house-sanger"><Redirect to="/sell-my-house-sanger-ca" /></Route>
+      <Route path="/sell-my-home-sanger"><Redirect to="/sell-my-house-sanger-ca" /></Route>
       <Route path="/sell-my-house-reedley-ca" component={SellMyHouseReedley} />
-      <Route path="/sell-my-house-reedley" component={SellMyHouseReedley} />
-      <Route path="/sell-my-home-reedley" component={SellMyHouseReedley} />
+      <Route path="/sell-my-house-reedley"><Redirect to="/sell-my-house-reedley-ca" /></Route>
+      <Route path="/sell-my-home-reedley"><Redirect to="/sell-my-house-reedley-ca" /></Route>
       <Route path="/sell-house-as-is-fresno" component={SellHouseAsIsFresno} />
-      <Route path="/sell-house-as-is-fresno-ca" component={SellHouseAsIsFresno} />
+      <Route path="/sell-house-as-is-fresno-ca"><Redirect to="/sell-house-as-is-fresno" /></Route>
       <Route path="/sell-my-house-cash-fresno" component={SellMyHouseCashFresno} />
-      <Route path="/sell-house-for-cash-fresno" component={SellMyHouseCashFresno} />
+      <Route path="/sell-house-for-cash-fresno"><Redirect to="/sell-my-house-cash-fresno" /></Route>
       <Route path="/sell-inherited-property-fresno" component={SellInheritedPropertyFresno} />
-      <Route path="/sell-inherited-house-fresno" component={SellInheritedPropertyFresno} />
+      <Route path="/sell-inherited-house-fresno"><Redirect to="/sell-inherited-property-fresno" /></Route>
       <Route path="/hoarder-home-buyer-fresno" component={HoarderHomeBuyerFresno} />
-      <Route path="/hoarder-house-buyer-fresno" component={HoarderHomeBuyerFresno} />
+      <Route path="/hoarder-house-buyer-fresno"><Redirect to="/hoarder-home-buyer-fresno" /></Route>
       <Route path="/sell-home-fresno-options" component={BothOptions} />
       <Route path="/our-deals" component={Portfolio} />
-      <Route path="/portfolio" component={Portfolio} />
-      <Route path="/properties-purchased" component={Portfolio} />
-      <Route path="/sell-my-home-fresno" component={BothOptions} />
-      <Route path="/sell-my-property-fresno" component={BothOptions} />
-      <Route path="/sell-home-fresno" component={BothOptions} />
-      <Route path="/sell-house-cash-to-investor-fresno" component={BothOptions} />
-      <Route path="/sell-house-fresno" component={BothOptions} />
+      <Route path="/portfolio"><Redirect to="/our-deals" /></Route>
+      <Route path="/properties-purchased"><Redirect to="/our-deals" /></Route>
+      <Route path="/sell-my-home-fresno"><Redirect to="/sell-your-home-fresno" /></Route>
+      <Route path="/sell-my-property-fresno"><Redirect to="/sell-home-fresno-options" /></Route>
+      <Route path="/sell-home-fresno"><Redirect to="/sell-home-fresno-options" /></Route>
+      <Route path="/sell-house-cash-to-investor-fresno"><Redirect to="/sell-home-fresno-options" /></Route>
+      <Route path="/sell-house-fresno"><Redirect to="/sell-home-fresno-options" /></Route>
       <Route path="/cro-lead-capture" component={CROLeadCapture} />
-      <Route path="/lead-capture" component={CROLeadCapture} />
-      <Route path="/conversion-strategy" component={CROLeadCapture} />
+      <Route path="/lead-capture"><Redirect to="/cro-lead-capture" /></Route>
+      <Route path="/conversion-strategy"><Redirect to="/cro-lead-capture" /></Route>
       <Route path="/competitor-gap-analysis" component={CompetitorGapAnalysis} />
-      <Route path="/competitor-analysis" component={CompetitorGapAnalysis} />
+      <Route path="/competitor-analysis"><Redirect to="/competitor-gap-analysis" /></Route>
       <Route path="/seo-roadmap" component={SEORoadmap} />
-      <Route path="/90-day-roadmap" component={SEORoadmap} />
+      <Route path="/90-day-roadmap"><Redirect to="/seo-roadmap" /></Route>
       <Route path="/backlink-strategy" component={BacklinkStrategy} />
-      <Route path="/link-building" component={BacklinkStrategy} />
+      <Route path="/link-building"><Redirect to="/backlink-strategy" /></Route>
       <Route path="/wholesaler-warning" component={WholesalerWarning} />
       <Route path="/keyword-strategy" component={KeywordStrategy} />
-      <Route path="/keywords" component={KeywordStrategy} />
+      <Route path="/keywords"><Redirect to="/keyword-strategy" /></Route>
       <Route path="/site-architecture" component={SiteArchitecture} />
       <Route path="/compramos-casas-fresno" component={CompramosCasasFresno} />
-      <Route path="/url-structure" component={SiteArchitecture} />
-      <Route path="/we-buy-houses-fresno-scam" component={WholesalerWarning} />
-      <Route path="/cash-buyer-vs-wholesaler" component={WholesalerWarning} />
+      <Route path="/url-structure"><Redirect to="/site-architecture" /></Route>
+      <Route path="/we-buy-houses-fresno-scam"><Redirect to="/wholesaler-warning" /></Route>
+      <Route path="/cash-buyer-vs-wholesaler"><Redirect to="/wholesaler-warning" /></Route>
       <Route path="/sell-house-fast-fresno-ca" component={SellHouseFastFresno} />
-      <Route path="/sell-house-fast-fresno" component={SellHouseFastFresno} />
-      <Route path="/sell-my-house-fast-fresno" component={SellHouseFastFresno} />
+      <Route path="/sell-house-fast-fresno"><Redirect to="/sell-house-fast-fresno-ca" /></Route>
+      <Route path="/sell-my-house-fast-fresno"><Redirect to="/sell-house-fast-fresno-ca" /></Route>
       <Route path="/sell-house-fast-clovis-ca" component={SellHouseFastClovis} />
       <Route path="/sell-house-fast-visalia-ca" component={SellHouseFastVisalia} />
       <Route path="/sell-house-fast-bakersfield-ca" component={SellHouseFastBakersfield} />
@@ -481,19 +481,19 @@ function Router() {
       <Route path="/fresno-neighborhoods/southeast-fresno" component={SoutheastFresno} />
       <Route path="/fresno-neighborhoods/clovis-north" component={ClovisNorth} />
       {/* Legacy neighborhood routes — redirect via same component */}
-      <Route path="/fresno-fig-garden" component={FigGarden} />
-      <Route path="/fresno-tower-district" component={TowerDistrict} />
-      <Route path="/fresno-woodward-park" component={WoodwardPark} />
-      <Route path="/fresno-bullard" component={BullardNeighborhood} />
-      <Route path="/fresno-sunnyside" component={SunnysideNeighborhood} />
-      <Route path="/fresno-mclane" component={McLaneNeighborhood} />
-      <Route path="/fresno-old-fig-garden" component={OldFigGarden} />
-      <Route path="/fresno-cloverleaf-village" component={CloverleafVillage} />
-      <Route path="/fresno-fig-garden-village" component={FigGardenVillage} />
-      <Route path="/fresno-state-area" component={FresnoStateArea} />
-      <Route path="/north-fresno" component={NorthFresno} />
-      <Route path="/southeast-fresno" component={SoutheastFresno} />
-      <Route path="/clovis-north" component={ClovisNorth} />
+      <Route path="/fresno-fig-garden"><Redirect to="/fresno-neighborhoods/fig-garden" /></Route>
+      <Route path="/fresno-tower-district"><Redirect to="/fresno-neighborhoods/tower-district" /></Route>
+      <Route path="/fresno-woodward-park"><Redirect to="/fresno-neighborhoods/woodward-park" /></Route>
+      <Route path="/fresno-bullard"><Redirect to="/fresno-neighborhoods/bullard" /></Route>
+      <Route path="/fresno-sunnyside"><Redirect to="/fresno-neighborhoods/sunnyside" /></Route>
+      <Route path="/fresno-mclane"><Redirect to="/fresno-neighborhoods/mclane" /></Route>
+      <Route path="/fresno-old-fig-garden"><Redirect to="/fresno-neighborhoods/old-fig-garden" /></Route>
+      <Route path="/fresno-cloverleaf-village"><Redirect to="/fresno-neighborhoods/cloverleaf-village" /></Route>
+      <Route path="/fresno-fig-garden-village"><Redirect to="/fresno-neighborhoods/fig-garden-village" /></Route>
+      <Route path="/fresno-state-area"><Redirect to="/fresno-neighborhoods/fresno-state" /></Route>
+      <Route path="/north-fresno"><Redirect to="/fresno-neighborhoods/north-fresno" /></Route>
+      <Route path="/southeast-fresno"><Redirect to="/fresno-neighborhoods/southeast-fresno" /></Route>
+      <Route path="/clovis-north"><Redirect to="/fresno-neighborhoods/clovis-north" /></Route>
       {/* Home valuation page */}
       <Route path="/what-is-my-home-worth" component={HomeWorth} />
       <Route path="/fresno-cash-offer-calculator" component={FresnoCashOfferCalculator} />
@@ -570,23 +570,23 @@ function Router() {
       <Route path="/sell-house-fast-porterville-ca" component={SellHouseFastPorterville} />
       <Route path="/we-buy-houses-lindsay" component={LindsayPage} />
       <Route path="/sell-house-fast-merced-ca" component={SellHouseFastMerced} />
-      <Route path="/sell-my-house-fast-merced-ca" component={SellHouseFastMerced} />
-      <Route path="/cash-home-buyers-merced-ca" component={SellHouseFastMerced} />
-      <Route path="/we-buy-houses-merced-ca" component={SellHouseFastMerced} />
+      <Route path="/sell-my-house-fast-merced-ca"><Redirect to="/sell-house-fast-merced-ca" /></Route>
+      <Route path="/cash-home-buyers-merced-ca"><Redirect to="/sell-house-fast-merced-ca" /></Route>
+      <Route path="/we-buy-houses-merced-ca"><Redirect to="/sell-house-fast-merced-ca" /></Route>
       <Route path="/sell-house-fast-lemoore-ca" component={SellHouseFastLemoore} />
       <Route path="/sell-house-fast-turlock-ca" component={SellHouseFastTurlock} />
-      <Route path="/sell-my-house-fast-turlock-ca" component={SellHouseFastTurlock} />
-      <Route path="/cash-home-buyers-turlock-ca" component={SellHouseFastTurlock} />
-      <Route path="/we-buy-houses-turlock-ca" component={SellHouseFastTurlock} />
+      <Route path="/sell-my-house-fast-turlock-ca"><Redirect to="/sell-house-fast-turlock-ca" /></Route>
+      <Route path="/cash-home-buyers-turlock-ca"><Redirect to="/sell-house-fast-turlock-ca" /></Route>
+      <Route path="/we-buy-houses-turlock-ca"><Redirect to="/sell-house-fast-turlock-ca" /></Route>
       <Route path="/how-much-do-cash-buyers-pay-for-houses" component={HowMuchCashBuyersPay} />
-      <Route path="/how-much-do-cash-buyers-pay-for-houses-california" component={HowMuchCashBuyersPay} />
-      <Route path="/how-much-do-cash-home-buyers-pay" component={HowMuchCashBuyersPay} />
-      <Route path="/sell-my-house-fast-lemoore-ca" component={SellHouseFastLemoore} />
-      <Route path="/cash-home-buyers-lemoore-ca" component={SellHouseFastLemoore} />
-      <Route path="/we-buy-houses-lemoore-ca" component={SellHouseFastLemoore} />
+      <Route path="/how-much-do-cash-buyers-pay-for-houses-california"><Redirect to="/how-much-do-cash-buyers-pay-for-houses" /></Route>
+      <Route path="/how-much-do-cash-home-buyers-pay"><Redirect to="/how-much-do-cash-buyers-pay-for-houses" /></Route>
+      <Route path="/sell-my-house-fast-lemoore-ca"><Redirect to="/sell-house-fast-lemoore-ca" /></Route>
+      <Route path="/cash-home-buyers-lemoore-ca"><Redirect to="/sell-house-fast-lemoore-ca" /></Route>
+      <Route path="/we-buy-houses-lemoore-ca"><Redirect to="/sell-house-fast-lemoore-ca" /></Route>
       <Route path="/sell-house-fast-lindsay-ca" component={SellHouseFastLindsay} />
-      <Route path="/sell-my-house-fast-lindsay" component={SellHouseFastLindsay} />
-      <Route path="/cash-home-buyer-lindsay-ca" component={SellHouseFastLindsay} />
+      <Route path="/sell-my-house-fast-lindsay"><Redirect to="/sell-house-fast-lindsay-ca" /></Route>
+      <Route path="/cash-home-buyer-lindsay-ca"><Redirect to="/sell-house-fast-lindsay-ca" /></Route>
       <Route path="/we-buy-houses-exeter" component={ExeterPage} />
       <Route path="/we-buy-houses-strathmore" component={StrathmoreePage} />
       <Route path="/tulare-county" component={TulareCountyHub} />
@@ -594,12 +594,12 @@ function Router() {
       <Route path="/we-buy-houses-woodlake" component={WoodlakePage} />
       <Route path="/sell-house-fast-exeter-ca" component={SellHouseFastExeter} />
       <Route path="/sell-your-home-fresno" component={SellYourHomeFresno} />
-      <Route path="/sell-my-home-fresno" component={SellYourHomeFresno} />
-      <Route path="/buy-my-house-cash-fresno" component={SellYourHomeFresno} />
+      <Route path="/sell-my-home-fresno"><Redirect to="/sell-your-home-fresno" /></Route>
+      <Route path="/buy-my-house-cash-fresno"><Redirect to="/sell-your-home-fresno" /></Route>
       <Route path="/thank-you" component={ThankYou} />
       <Route path="/compare-cash-buyers-fresno" component={CompetitorComparison} />
-      <Route path="/cash-home-buyers-fresno-compare" component={CompetitorComparison} />
-      <Route path="/we-buy-houses-fresno-comparison" component={CompetitorComparison} />
+      <Route path="/cash-home-buyers-fresno-compare"><Redirect to="/compare-cash-buyers-fresno" /></Route>
+      <Route path="/we-buy-houses-fresno-comparison"><Redirect to="/compare-cash-buyers-fresno" /></Route>
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

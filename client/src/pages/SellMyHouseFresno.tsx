@@ -39,12 +39,6 @@ const LOCAL_BUSINESS_SCHEMA = {
     { "@type": "City", "name": "Visalia" },
     { "@type": "City", "name": "Bakersfield" }
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "13",
-    "bestRating": "5"
-  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Cash Home Buying Services",

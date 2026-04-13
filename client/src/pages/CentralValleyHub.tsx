@@ -50,13 +50,7 @@ const schema = {
   "description": "We buy houses for cash throughout the Central Valley of California — Fresno, Clovis, Visalia, Bakersfield, Madera, Tulare, Stockton, Modesto, Merced, and 13+ more cities. No repairs, no commissions, close in 7–14 days.",
   "url": "https://www.alderheritagehomes.com/we-buy-houses-central-valley",
   "telephone": "+15592818016",
-  "areaServed": counties.map(c => ({ "@type": "AdministrativeArea", "name": c.name })),
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "13",
-    "bestRating": "5"
-  }
+  "areaServed": counties.map(c => ({ "@type": "AdministrativeArea", "name": c.name }))
 };
 
 export default function CentralValleyHub() {

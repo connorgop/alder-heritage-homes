@@ -9,7 +9,7 @@ import { Phone, Menu, X, ChevronDown, ChevronRight, ArrowRight } from "lucide-re
 import FloatingCTA from "./FloatingCTA";
 import TawkChat from "./TawkChat";
 import ExitIntentPopup from "./ExitIntentPopup";
-import SchemaMarkup, { localBusinessSchema, websiteSchema, breadcrumbSchema, buildBreadcrumbs, aggregateRatingSchema } from "./SchemaMarkup";
+import SchemaMarkup, { localBusinessSchema, websiteSchema, breadcrumbSchema, buildBreadcrumbs } from "./SchemaMarkup";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -82,9 +82,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "oklch(0.97 0.015 85)" }}>
-      {/* Global structured data */}
+      {/* Global structured data — aggregateRating is ONLY on Home and Reviews pages to avoid duplicate schema errors */}
       <SchemaMarkup schema={localBusinessSchema()} id="local-business" />
-      <SchemaMarkup schema={aggregateRatingSchema({ ratingValue: 5.0, reviewCount: 13 })} id="aggregate-rating" />
       <SchemaMarkup schema={websiteSchema()} id="website" />
       <SchemaMarkup schema={breadcrumbSchema(buildBreadcrumbs(location))} id="breadcrumb" />
 
