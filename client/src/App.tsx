@@ -257,6 +257,9 @@ const SiteArchitecture = lazy(() => import("./pages/SiteArchitecture"));
 const CompramosCasasFresno = lazy(() => import("./pages/CompramosCasasFresno"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 const CompetitorComparison = lazy(() => import("./pages/CompetitorComparison"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const SmsConsent = lazy(() => import("./pages/SmsConsent"));
 
 function Router() {
   return (
@@ -598,6 +601,12 @@ function Router() {
       <Route path="/we-buy-houses-turlock-ca"><Redirect to="/sell-house-fast-turlock-ca" /></Route>
       <Route path="/how-much-do-cash-buyers-pay-for-houses" component={HowMuchCashBuyersPay} />
       <Route path="/leave-a-review" component={LeaveAReview} />
+      <Route path="/terms-of-service" component={TermsOfService} />
+      <Route path="/terms" component={TermsOfService} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/privacy" component={PrivacyPolicy} />
+      <Route path="/sms-consent" component={SmsConsent} />
+      <Route path="/sms-opt-in" component={SmsConsent} />
       <Route path="/lp" component={LandingPage} />
       <Route path="/get-cash-offer"><Redirect to="/lp" /></Route>
       <Route path="/sell-house-tax-liens-fresno-ca"><Redirect to="/sell-house-tax-liens-fresno" /></Route>
