@@ -5,7 +5,7 @@
    Heritage Warmth: Terracotta + Slate Green + Oat
    ============================================================ */
 import { useState, useEffect } from "react";
-import { Phone, CheckCircle2, Star, Shield, Clock, ArrowRight, ChevronDown } from "lucide-react";
+import { Phone, CheckCircle2, Star, Shield, Clock, ArrowRight, ChevronDown, MessageSquare, Home, CalendarCheck, FileText, DollarSign, Key } from "lucide-react";
 import PageMeta from "@/components/PageMeta";
 import SchemaMarkup, { localBusinessSchema } from "@/components/SchemaMarkup";
 
@@ -306,26 +306,171 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-16">
+      {/* How It Works — Prominent Section */}
+      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
-            How It Works — 3 Simple Steps
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { step: "1", title: "Tell Us About Your Home", body: "Fill out the form or call us. We'll ask a few questions about your property's condition, situation, and your timeline." },
-              { step: "2", title: "Get Your Cash Offer", body: "We visit the property (or do a virtual walkthrough) and present a written cash offer within 24 hours. No obligation." },
-              { step: "3", title: "Close on Your Timeline", body: "If you accept, we handle all the paperwork. Close in as little as 7 days — or take the time you need." },
-            ].map(({ step, title, body }) => (
-              <div key={step} className="rounded-xl p-6 text-center" style={{ background: "white", border: "1px solid oklch(0.88 0.01 60)" }}>
-                <div className="w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold text-white mx-auto mb-4" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Lora', serif" }}>
-                  {step}
+          {/* Section Header */}
+          <div className="text-center mb-14">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4" style={{ background: "oklch(0.55 0.13 42 / 0.25)", border: "1px solid oklch(0.55 0.13 42 / 0.5)", color: "oklch(0.85 0.08 42)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.1em" }}>
+              THE PROCESS
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4" style={{ fontFamily: "'Lora', serif", lineHeight: 1.15 }}>
+              How It Works —{" "}
+              <span style={{ color: "oklch(0.75 0.13 42)" }}>3 Simple Steps</span>
+            </h2>
+            <p className="text-lg max-w-2xl mx-auto" style={{ color: "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", lineHeight: 1.6 }}>
+              From first contact to cash in hand — here's exactly what happens when you work with Alder Heritage Homes.
+            </p>
+          </div>
+
+          {/* Step Cards with Connectors */}
+          <div className="relative">
+            {/* Connector line — desktop only */}
+            <div className="hidden md:block absolute top-16 left-[calc(16.67%+2rem)] right-[calc(16.67%+2rem)] h-0.5" style={{ background: "linear-gradient(to right, oklch(0.55 0.13 42), oklch(0.45 0.12 155), oklch(0.55 0.13 42))" }} />
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  step: "01",
+                  icon: MessageSquare,
+                  title: "Tell Us About Your Home",
+                  timeline: "Day 1",
+                  timelineColor: "oklch(0.55 0.13 42)",
+                  body: "Fill out the short form above or call us directly. We'll ask a few quick questions about your property's condition, your situation, and your ideal timeline. No commitment required — just a conversation.",
+                  details: ["Takes 2–3 minutes", "Phone or online form", "No credit check", "No obligation whatsoever"],
+                },
+                {
+                  step: "02",
+                  icon: Home,
+                  title: "We Assess & Present Your Offer",
+                  timeline: "Within 24 Hours",
+                  timelineColor: "oklch(0.45 0.12 155)",
+                  body: "Connor personally visits your property (or does a virtual walkthrough if you prefer). He reviews comparable sales, repair costs, and market conditions — then presents a written cash offer with a full breakdown of how the number was calculated.",
+                  details: ["In-person or virtual walkthrough", "Written offer with full math shown", "No hidden deductions later", "Free Broker Opinion of Value included"],
+                },
+                {
+                  step: "03",
+                  icon: CalendarCheck,
+                  title: "Close on Your Timeline",
+                  timeline: "7–30 Days",
+                  timelineColor: "oklch(0.55 0.13 42)",
+                  body: "If you accept the offer, we open escrow immediately. We handle all the paperwork, pay all closing costs, and close in as little as 7 days — or on whatever date works best for you. You walk away with cash.",
+                  details: ["We pay all closing costs", "No repairs needed", "Close in 7 days or your timeline", "Cash wired same day as closing"],
+                },
+              ].map(({ step, icon: Icon, title, timeline, timelineColor, body, details }) => (
+                <div key={step} className="relative flex flex-col rounded-2xl overflow-hidden" style={{ background: "oklch(0.28 0.02 60)", border: "1px solid oklch(0.35 0.02 60)" }}>
+                  {/* Step number + timeline badge */}
+                  <div className="flex items-center justify-between px-6 pt-6 pb-4">
+                    <div className="w-14 h-14 rounded-2xl flex items-center justify-center" style={{ background: timelineColor }}>
+                      <Icon size={24} className="text-white" />
+                    </div>
+                    <div className="text-right">
+                      <div className="text-xs font-bold" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.06em" }}>STEP</div>
+                      <div className="text-3xl font-bold" style={{ color: "oklch(0.35 0.02 60)", fontFamily: "'Lora', serif", lineHeight: 1 }}>{step}</div>
+                    </div>
+                  </div>
+
+                  {/* Timeline pill */}
+                  <div className="px-6 mb-3">
+                    <span className="inline-block px-3 py-1 rounded-full text-xs font-bold" style={{ background: `${timelineColor}33`, border: `1px solid ${timelineColor}66`, color: "oklch(0.85 0.08 42)", fontFamily: "'DM Mono', monospace" }}>
+                      ⏱ {timeline}
+                    </span>
+                  </div>
+
+                  {/* Title + body */}
+                  <div className="px-6 pb-5">
+                    <h3 className="text-xl font-bold mb-3 text-white" style={{ fontFamily: "'Lora', serif" }}>{title}</h3>
+                    <p className="text-sm leading-relaxed mb-5" style={{ color: "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{body}</p>
+                    {/* Detail bullets */}
+                    <div className="flex flex-col gap-2">
+                      {details.map(d => (
+                        <div key={d} className="flex items-center gap-2">
+                          <CheckCircle2 size={14} style={{ color: timelineColor, flexShrink: 0 }} />
+                          <span className="text-xs" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{d}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>{title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{body}</p>
+              ))}
+            </div>
+          </div>
+
+          {/* Timeline Summary Bar */}
+          <div className="mt-12 rounded-2xl p-6" style={{ background: "oklch(0.28 0.02 60)", border: "1px solid oklch(0.35 0.02 60)" }}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {[
+                { icon: MessageSquare, label: "First Contact", value: "Today", sub: "Call or fill out the form" },
+                { icon: FileText, label: "Written Offer", value: "24 Hours", sub: "Full calculation shown" },
+                { icon: DollarSign, label: "Escrow Opens", value: "Day 2–3", sub: "We handle all paperwork" },
+                { icon: Key, label: "Cash in Hand", value: "7–30 Days", sub: "On your timeline" },
+              ].map(({ icon: Icon, label, value, sub }) => (
+                <div key={label} className="text-center">
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center mx-auto mb-2" style={{ background: "oklch(0.55 0.13 42 / 0.2)" }}>
+                    <Icon size={18} style={{ color: "oklch(0.75 0.13 42)" }} />
+                  </div>
+                  <div className="text-xs font-bold mb-0.5" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.06em", textTransform: "uppercase" }}>{label}</div>
+                  <div className="text-lg font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>{value}</div>
+                  <div className="text-xs" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{sub}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Comparison: Cash Sale vs. Listing */}
+          <div className="mt-10">
+            <h3 className="text-xl font-bold text-white text-center mb-6" style={{ fontFamily: "'Lora', serif" }}>
+              Cash Sale vs. Traditional Listing — Side by Side
+            </h3>
+            <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid oklch(0.35 0.02 60)" }}>
+              <div className="grid grid-cols-3 text-xs font-bold" style={{ background: "oklch(0.32 0.02 60)", fontFamily: "'DM Mono', monospace", letterSpacing: "0.06em" }}>
+                <div className="px-4 py-3" style={{ color: "oklch(0.60 0.01 60)" }}>FACTOR</div>
+                <div className="px-4 py-3 text-center" style={{ color: "oklch(0.75 0.13 42)" }}>ALDER HERITAGE CASH SALE</div>
+                <div className="px-4 py-3 text-center" style={{ color: "oklch(0.60 0.01 60)" }}>TRADITIONAL LISTING</div>
               </div>
-            ))}
+              {[
+                { factor: "Time to close", cash: "7–30 days", trad: "45–90 days", cashGood: true },
+                { factor: "Repairs required", cash: "None — as-is", trad: "$5K–$30K+ typical", cashGood: true },
+                { factor: "Realtor commission", cash: "$0", trad: "5–6% ($15K–$22K)", cashGood: true },
+                { factor: "Closing costs", cash: "We pay all", trad: "Seller pays 1–2%", cashGood: true },
+                { factor: "Showings & open houses", cash: "None", trad: "Multiple required", cashGood: true },
+                { factor: "Sale price", cash: "80–90% of retail", trad: "Up to 100% retail", cashGood: false },
+                { factor: "Certainty of closing", cash: "Guaranteed", trad: "30% fall through", cashGood: true },
+              ].map(({ factor, cash, trad, cashGood }) => (
+                <div key={factor} className="grid grid-cols-3 border-t" style={{ borderColor: "oklch(0.32 0.02 60)" }}>
+                  <div className="px-4 py-3 text-sm" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{factor}</div>
+                  <div className="px-4 py-3 text-sm text-center font-semibold" style={{ color: cashGood ? "oklch(0.75 0.13 42)" : "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", background: cashGood ? "oklch(0.55 0.13 42 / 0.08)" : "transparent" }}>{cash}</div>
+                  <div className="px-4 py-3 text-sm text-center" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{trad}</div>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-center mt-3" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              For many sellers, the certainty, speed, and zero-cost closing more than offset the price difference.
+            </p>
+          </div>
+
+          {/* CTA inside section */}
+          <div className="mt-12 text-center">
+            <p className="text-lg mb-5 text-white" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+              Ready to start? It takes 2 minutes and there's zero obligation.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })
+                }
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-white text-lg transition-opacity hover:opacity-90"
+                style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                Get My Cash Offer <ArrowRight size={20} />
+              </button>
+              <a
+                href={PHONE_HREF}
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-lg border-2 transition-opacity hover:opacity-80"
+                style={{ borderColor: "oklch(0.55 0.13 42 / 0.6)", color: "oklch(0.85 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                <Phone size={20} /> Call {PHONE}
+              </a>
+            </div>
           </div>
         </div>
       </section>
