@@ -227,6 +227,8 @@ const LindsayPage = lazy(() => import("./pages/cities/Lindsay"));
 const SellHouseFastLindsay = lazy(() => import("./pages/SellHouseFastLindsay"));
 const SellHouseFastMerced = lazy(() => import("./pages/SellHouseFastMerced"));
 const SellHouseFastLemoore = lazy(() => import("./pages/SellHouseFastLemoore"));
+const SellHouseFastTurlock = lazy(() => import("./pages/SellHouseFastTurlock"));
+const HowMuchCashBuyersPay = lazy(() => import("./pages/HowMuchCashBuyersPay"));
 const ExeterPage = lazy(() => import("./pages/cities/Exeter"));
 const StrathmoreePage = lazy(() => import("./pages/cities/Strathmore"));
 const TulareCountyHub = lazy(() => import("./pages/TulareCountyHub"));
@@ -572,6 +574,13 @@ function Router() {
       <Route path="/cash-home-buyers-merced-ca" component={SellHouseFastMerced} />
       <Route path="/we-buy-houses-merced-ca" component={SellHouseFastMerced} />
       <Route path="/sell-house-fast-lemoore-ca" component={SellHouseFastLemoore} />
+      <Route path="/sell-house-fast-turlock-ca" component={SellHouseFastTurlock} />
+      <Route path="/sell-my-house-fast-turlock-ca" component={SellHouseFastTurlock} />
+      <Route path="/cash-home-buyers-turlock-ca" component={SellHouseFastTurlock} />
+      <Route path="/we-buy-houses-turlock-ca" component={SellHouseFastTurlock} />
+      <Route path="/how-much-do-cash-buyers-pay-for-houses" component={HowMuchCashBuyersPay} />
+      <Route path="/how-much-do-cash-buyers-pay-for-houses-california" component={HowMuchCashBuyersPay} />
+      <Route path="/how-much-do-cash-home-buyers-pay" component={HowMuchCashBuyersPay} />
       <Route path="/sell-my-house-fast-lemoore-ca" component={SellHouseFastLemoore} />
       <Route path="/cash-home-buyers-lemoore-ca" component={SellHouseFastLemoore} />
       <Route path="/we-buy-houses-lemoore-ca" component={SellHouseFastLemoore} />

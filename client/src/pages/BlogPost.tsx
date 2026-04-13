@@ -25,6 +25,7 @@ import articleChunk14 from "./BlogPostArticles14";
 import articleChunk15 from "./BlogPostArticles15";
 import articleChunk16 from "./BlogPostArticles16";
 import articleChunk17 from "./BlogPostArticles17";
+import articleChunk18 from "./BlogPostArticles18";
 
 const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk1,
@@ -44,6 +45,7 @@ const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk15,
   ...articleChunk16,
   ...articleChunk17,
+  ...articleChunk18,
 };
 
 export default function BlogPost() {
@@ -174,6 +176,16 @@ export default function BlogPost() {
       { label: "Sell House Fast Hanford", href: "/sell-house-fast-hanford-ca" },
       { label: "Sell House Fast Lemoore", href: "/sell-house-fast-lemoore-ca" },
       { label: "Kings County Hub", href: "/kings-county" },
+    ],
+    "Turlock": [
+      { label: "Sell House Fast Turlock", href: "/sell-house-fast-turlock-ca" },
+      { label: "Sell My House Modesto", href: "/sell-my-house-modesto-ca" },
+      { label: "Cash Offer Calculator", href: "/calculator" },
+    ],
+    "Seller Education": [
+      { label: "How Much Cash Buyers Pay", href: "/how-much-do-cash-buyers-pay-for-houses" },
+      { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
+      { label: "Why Choose Us", href: "/why-choose-us" },
     ],
     "Market Updates": [
       { label: "Sell My House Fresno", href: "/sell-my-house-fresno-ca" },
