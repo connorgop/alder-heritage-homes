@@ -164,10 +164,18 @@ const SelmaPage = lazy(() => import("./pages/cities/Selma"));
 const MaderaPage = lazy(() => import("./pages/cities/Madera"));
 const VisaliaPage = lazy(() => import("./pages/cities/Visalia"));
 const HanfordPage = lazy(() => import("./pages/cities/Hanford"));
+const DowntownHanford = lazy(() => import("./pages/neighborhoods/hanford/DowntownHanford"));
+const NorthHanford = lazy(() => import("./pages/neighborhoods/hanford/NorthHanford"));
+const SouthHanford = lazy(() => import("./pages/neighborhoods/hanford/SouthHanford"));
+const EastHanford = lazy(() => import("./pages/neighborhoods/hanford/EastHanford"));
 const ReedleyPage = lazy(() => import("./pages/cities/Reedley"));
 const BakersfieldPage = lazy(() => import("./pages/cities/Bakersfield"));
 const LemooreePage = lazy(() => import("./pages/cities/Lemoore"));
 const TularePage = lazy(() => import("./pages/cities/Tulare"));
+const DowntownTulare = lazy(() => import("./pages/neighborhoods/tulare/DowntownTulare"));
+const NorthTulare = lazy(() => import("./pages/neighborhoods/tulare/NorthTulare"));
+const SouthTulare = lazy(() => import("./pages/neighborhoods/tulare/SouthTulare"));
+const EastTulare = lazy(() => import("./pages/neighborhoods/tulare/EastTulare"));
 const PortervillePage = lazy(() => import("./pages/cities/Porterville"));
 const MercedPage = lazy(() => import("./pages/cities/Merced"));
 const StocktonPage = lazy(() => import("./pages/cities/Stockton"));
@@ -230,6 +238,7 @@ const SellHouseFastLemoore = lazy(() => import("./pages/SellHouseFastLemoore"));
 const SellHouseFastTurlock = lazy(() => import("./pages/SellHouseFastTurlock"));
 const HowMuchCashBuyersPay = lazy(() => import("./pages/HowMuchCashBuyersPay"));
 const LeaveAReview = lazy(() => import("./pages/LeaveAReview"));
+const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ExeterPage = lazy(() => import("./pages/cities/Exeter"));
 const StrathmoreePage = lazy(() => import("./pages/cities/Strathmore"));
 const TulareCountyHub = lazy(() => import("./pages/TulareCountyHub"));
@@ -427,10 +436,18 @@ function Router() {
       <Route path="/we-buy-houses-visalia" component={VisaliaPage} />
       <Route path="/we-buy-houses-hanford" component={HanfordPage} />
       <Route path="/sell-house-fast-hanford-ca" component={SellHouseFastHanford} />
+      <Route path="/hanford-neighborhoods/downtown-hanford" component={DowntownHanford} />
+      <Route path="/hanford-neighborhoods/north-hanford" component={NorthHanford} />
+      <Route path="/hanford-neighborhoods/south-hanford" component={SouthHanford} />
+      <Route path="/hanford-neighborhoods/east-hanford" component={EastHanford} />
       <Route path="/we-buy-houses-reedley" component={ReedleyPage} />
       <Route path="/we-buy-houses-bakersfield" component={BakersfieldPage} />
       <Route path="/we-buy-houses-lemoore" component={LemooreePage} />
       <Route path="/we-buy-houses-tulare" component={TularePage} />
+      <Route path="/tulare-neighborhoods/downtown-tulare" component={DowntownTulare} />
+      <Route path="/tulare-neighborhoods/north-tulare" component={NorthTulare} />
+      <Route path="/tulare-neighborhoods/south-tulare" component={SouthTulare} />
+      <Route path="/tulare-neighborhoods/east-tulare" component={EastTulare} />
       <Route path="/we-buy-houses-porterville" component={PortervillePage} />
       <Route path="/we-buy-houses-merced" component={MercedPage} />
       <Route path="/we-buy-houses-stockton" component={StocktonPage} />
@@ -581,6 +598,10 @@ function Router() {
       <Route path="/we-buy-houses-turlock-ca"><Redirect to="/sell-house-fast-turlock-ca" /></Route>
       <Route path="/how-much-do-cash-buyers-pay-for-houses" component={HowMuchCashBuyersPay} />
       <Route path="/leave-a-review" component={LeaveAReview} />
+      <Route path="/lp" component={LandingPage} />
+      <Route path="/get-cash-offer"><Redirect to="/lp" /></Route>
+      <Route path="/sell-house-tax-liens-fresno-ca"><Redirect to="/sell-house-tax-liens-fresno" /></Route>
+      <Route path="/tax-liens-fresno"><Redirect to="/sell-house-tax-liens-fresno" /></Route>
       <Route path="/review"><Redirect to="/leave-a-review" /></Route>
       <Route path="/reviews/leave"><Redirect to="/leave-a-review" /></Route>
       <Route path="/how-much-do-cash-buyers-pay-for-houses-california"><Redirect to="/how-much-do-cash-buyers-pay-for-houses" /></Route>

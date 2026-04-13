@@ -1,7 +1,9 @@
 /* ============================================================
    REUSABLE SERVICE PAGE TEMPLATE — Alder Heritage Homes
    Heritage Warmth design: Terracotta + Slate Green + Oat
+   Sticky mobile phone bar added for conversion optimization
    ============================================================ */
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
@@ -56,9 +58,20 @@ export default function ServicePage({
   metaDescription,
   videoEmbed,
 }: ServicePageProps) {
+  const [showStickyBar, setShowStickyBar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowStickyBar(window.scrollY > 350);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const faqId = title.toLowerCase().replace(/[^a-z0-9]/g, "-").slice(0, 40);
   const canonicalPath = slug || `/${title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
   const metaDesc = metaDescription || `${subtitle} Get a fair cash offer in 24 hours. No repairs, no commissions. Licensed CA buyer DRE #02219124.`;
+
   return (
     <Layout>
       <PageMeta
@@ -70,6 +83,44 @@ export default function ServicePage({
       {faq && faq.length > 0 && (
         <SchemaMarkup schema={faqPageSchema(faq)} id={`faq-${faqId}`} />
       )}
+
+      {/* Sticky Mobile Phone Bar — appears after 350px scroll, hidden on lg+ */}
+      <div
+        className="fixed bottom-0 left-0 right-0 z-50 lg:hidden transition-transform duration-300"
+        style={{ transform: showStickyBar ? "translateY(0)" : "translateY(100%)" }}
+      >
+        <div
+          className="flex items-center justify-between px-4 py-3 gap-3"
+          style={{ background: "oklch(0.22 0.01 60)", borderTop: "2px solid oklch(0.55 0.13 42)" }}
+        >
+          <div className="min-w-0">
+            <p className="text-white text-xs font-bold truncate" style={{ fontFamily: "'Lora', serif" }}>
+              Ready for a cash offer?
+            </p>
+            <p className="text-xs" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
+              DRE #02219124 · Licensed CA Buyer
+            </p>
+          </div>
+          <div className="flex gap-2 flex-shrink-0">
+            <a
+              href={PHONE_HREF}
+              className="flex items-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-white text-sm"
+              style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}
+            >
+              <Phone size={15} /> Call Now
+            </a>
+            <Link href="/contact">
+              <button
+                className="flex items-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-sm"
+                style={{ background: "oklch(0.98 0.005 60)", color: "oklch(0.22 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                Get Offer
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Hero */}
       <section className="relative py-24 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="absolute inset-0">
