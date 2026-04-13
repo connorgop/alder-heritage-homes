@@ -5,7 +5,7 @@
    Situation Finder → Stats → How It Works → Why Choose Us →
    Testimonials → Areas We Serve → Final CTA
    ============================================================ */
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
@@ -747,7 +747,10 @@ function CashOfferVsListingCalc() {
 }
 
 function InlineOfferForm() {
-  const [form, setForm] = useState({ name: "", phone: "", email: "", address: "", situation: "", timeline: "" });
+  const [step, setStep] = useState<1 | 2>(1);
+  const [address, setAddress] = useState("");
+  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("");
   const { state, errorMessage, submit } = useFormSubmit();
 
   const inputStyle = {
@@ -779,85 +782,101 @@ function InlineOfferForm() {
   }
 
   return (
-    <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ background: "oklch(1 0 0 / 0.06)", border: "1.5px solid oklch(1 0 0 / 0.15)" }}>
-      <div className="px-8 py-5" style={{ background: "oklch(0.55 0.13 42)" }}>
-        <h3 className="text-xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Get Your Free Cash Offer</h3>
-        <p className="text-sm mt-1" style={{ color: "oklch(0.90 0.04 85)", fontFamily: "'DM Mono', monospace" }}>No obligation · We respond within 24 hours</p>
-      </div>
-      {/* Proof of Funds + Urgency trust strip */}
-      <div className="px-8 pt-4 pb-2 flex flex-wrap gap-3 items-center" style={{ borderBottom: "1px solid oklch(1 0 0 / 0.08)" }}>
-        <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.28 0.05 155 / 0.25)", border: "1px solid oklch(0.55 0.18 145 / 0.4)", color: "oklch(0.75 0.12 145)", fontFamily: "'DM Mono', monospace" }}>
-          <Shield size={12} /> Proof of Funds Available in 24 hrs
+    <div className="rounded-2xl overflow-hidden" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.14)" }}>
+      {/* Header */}
+      <div className="px-8 pt-7 pb-4 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.55 0.13 42 / 0.25)", border: "1px solid oklch(0.55 0.13 42 / 0.40)", color: "oklch(0.90 0.10 75)", fontFamily: "'DM Mono', monospace" }}>
+            <Shield size={12} /> Proof of Funds Available in 24 hrs
+          </div>
         </div>
         <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.55 0.13 42 / 0.18)", border: "1px solid oklch(0.55 0.13 42 / 0.35)", color: "oklch(0.85 0.08 75)", fontFamily: "'DM Mono', monospace" }}>
           🔥 3 offers sent this week in Fresno
         </div>
       </div>
-      <form
-        onSubmit={async (e) => { e.preventDefault(); await submit({ ...form, _source: "Homepage Inline Form" }); }}
-        className="p-8 space-y-4"
-      >
-        <div className="grid sm:grid-cols-2 gap-4">
-          <input required placeholder="Your name *" aria-label="Your name" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} style={inputStyle}
-            onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
-          <input required type="tel" placeholder="Phone number *" aria-label="Phone number" value={form.phone} onChange={e => setForm(f => ({ ...f, phone: e.target.value }))} style={inputStyle}
-            onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
-        </div>
-        <input type="email" placeholder="Email address (optional)" aria-label="Email address" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} style={inputStyle}
-          onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
-        <input placeholder="Property address" aria-label="Property address" value={form.address} onChange={e => setForm(f => ({ ...f, address: e.target.value }))} style={inputStyle}
-          onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
-        <div className="grid sm:grid-cols-2 gap-4">
-          <select value={form.situation} onChange={e => setForm(f => ({ ...f, situation: e.target.value }))}
-            aria-label="Your situation"
-            style={{ ...inputStyle, color: form.situation ? "white" : "oklch(0.65 0.01 60)" }}>
-            <option value="">My situation...</option>
-            <option value="foreclosure">Facing foreclosure</option>
-            <option value="behind">Behind on mortgage</option>
-            <option value="second-mortgage">Second mortgage / HELOC</option>
-            <option value="inherited">Inherited / probate home</option>
-            <option value="rent-back">Sell &amp; stay (rent-back)</option>
-            <option value="fast-sale">Just need to sell fast</option>
-            <option value="other">Other</option>
-          </select>
-          <select value={form.timeline} onChange={e => setForm(f => ({ ...f, timeline: e.target.value }))}
-            aria-label="Your timeline to sell"
-            style={{ ...inputStyle, color: form.timeline ? "white" : "oklch(0.65 0.01 60)" }}>
-            <option value="">My timeline...</option>
-            <option value="asap">As soon as possible</option>
-            <option value="30days">Within 30 days</option>
-            <option value="60days">Within 60 days</option>
-            <option value="flexible">I'm flexible</option>
-          </select>
-        </div>
-        {state === "error" && (
-          <p className="text-sm text-red-400 text-center">{errorMessage}</p>
-        )}
-        <button
-          type="submit"
-          disabled={state === "submitting"}
-          className="w-full flex items-center justify-center gap-3 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 hover:scale-[1.01] disabled:opacity-70"
-          style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}
+
+      {/* Step indicator */}
+      <div className="px-8 pb-4 flex items-center gap-2">
+        <div className="flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold" style={{ background: step >= 1 ? "oklch(0.55 0.13 42)" : "oklch(1 0 0 / 0.15)", color: "white", fontFamily: "'DM Mono', monospace" }}>1</div>
+        <div className="flex-1 h-px" style={{ background: step === 2 ? "oklch(0.55 0.13 42)" : "oklch(1 0 0 / 0.15)" }} />
+        <div className="flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold" style={{ background: step === 2 ? "oklch(0.55 0.13 42)" : "oklch(1 0 0 / 0.15)", color: step === 2 ? "white" : "oklch(0.65 0.01 60)", fontFamily: "'DM Mono', monospace" }}>2</div>
+      </div>
+
+      {step === 1 ? (
+        <form onSubmit={(e) => { e.preventDefault(); if (address.trim().length > 3) setStep(2); }} className="px-8 pb-8 space-y-4">
+          <div>
+            <label className="block text-xs font-bold mb-2 uppercase tracking-widest" style={{ color: "oklch(0.65 0.03 80)", fontFamily: "'DM Mono', monospace" }}>Property Address</label>
+            <div className="relative">
+              <MapPin size={16} className="absolute left-3 top-1/2 -translate-y-1/2" style={{ color: "oklch(0.55 0.13 42)" }} />
+              <input
+                type="text"
+                required
+                autoFocus
+                placeholder="Start typing your address..."
+                value={address}
+                onChange={e => setAddress(e.target.value)}
+                style={{ ...inputStyle, paddingLeft: "2.25rem" }}
+                onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")}
+                onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")}
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            className="w-full flex items-center justify-center gap-3 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 hover:scale-[1.01]"
+            style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}
+          >
+            Get My Free Cash Offer <ArrowRight size={20} />
+          </button>
+          <p className="text-center text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
+            🏆 We match or beat any cash offer · No obligation
+          </p>
+        </form>
+      ) : (
+        <form
+          onSubmit={async (e) => { e.preventDefault(); await submit({ address, phone, name: name || "Not provided", _source: "Homepage Inline Form" }); }}
+          className="px-8 pb-8 space-y-4"
         >
-          {state === "submitting" ? (
-            <><Loader2 size={20} className="animate-spin" /> Sending...</>
-          ) : (
-            <>Get My Free Cash Offer <ArrowRight size={20} /></>
+          {/* Address confirmation */}
+          <div className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs" style={{ background: "oklch(0.55 0.13 42 / 0.15)", border: "1px solid oklch(0.55 0.13 42 / 0.30)" }}>
+            <MapPin size={13} style={{ color: "oklch(0.55 0.13 42)", flexShrink: 0 }} />
+            <span className="truncate font-semibold text-white" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>{address}</span>
+            <button type="button" onClick={() => setStep(1)} className="ml-auto text-xs underline flex-shrink-0" style={{ color: "oklch(0.65 0.01 60)", background: "none", border: "none", cursor: "pointer", fontFamily: "'DM Mono', monospace" }}>Edit</button>
+          </div>
+          <div>
+            <label className="block text-xs font-bold mb-2 uppercase tracking-widest" style={{ color: "oklch(0.65 0.03 80)", fontFamily: "'DM Mono', monospace" }}>Phone Number *</label>
+            <input required autoFocus type="tel" placeholder="(559) 555-1234" value={phone} onChange={e => setPhone(e.target.value)} style={inputStyle}
+              onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
+          </div>
+          <div>
+            <label className="block text-xs font-bold mb-2 uppercase tracking-widest" style={{ color: "oklch(0.65 0.03 80)", fontFamily: "'DM Mono', monospace" }}>Your Name <span style={{ fontWeight: 400, opacity: 0.6 }}>(optional)</span></label>
+            <input type="text" placeholder="First name is fine" value={name} onChange={e => setName(e.target.value)} style={inputStyle}
+              onFocus={e => (e.target.style.borderColor = "oklch(0.75 0.10 42)")} onBlur={e => (e.target.style.borderColor = "oklch(1 0 0 / 0.18)")} />
+          </div>
+          {state === "error" && (
+            <p className="text-sm text-red-400 text-center">{errorMessage}</p>
           )}
-        </button>
-        <p className="text-center text-xs" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
-          🏆 We match or beat any cash offer · No obligation
-        </p>
-        <p className="text-center" style={{ fontSize: "0.68rem", color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", lineHeight: 1.5 }}>
-          By submitting, you consent to receive SMS messages from Alder Heritage Homes. Msg &amp; data rates may apply. Reply STOP to opt out.{" "}
-          <a href="/privacy-policy" style={{ color: "oklch(0.55 0.13 42)", textDecoration: "underline" }}>Privacy Policy</a>{" · "}
-          <a href="/terms-of-service" style={{ color: "oklch(0.55 0.13 42)", textDecoration: "underline" }}>Terms</a>
-        </p>
-      </form>
+          <button
+            type="submit"
+            disabled={state === "submitting"}
+            className="w-full flex items-center justify-center gap-3 py-4 rounded-lg font-bold text-lg text-white transition-all hover:opacity-90 hover:scale-[1.01] disabled:opacity-70"
+            style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif", boxShadow: "0 8px 32px oklch(0.55 0.13 42 / 0.4)" }}
+          >
+            {state === "submitting" ? (
+              <><Loader2 size={20} className="animate-spin" /> Sending...</>
+            ) : (
+              <>Send My Offer Request <ArrowRight size={20} /></>
+            )}
+          </button>
+          <p className="text-center" style={{ fontSize: "0.68rem", color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", lineHeight: 1.5 }}>
+            By submitting, you consent to receive SMS from Alder Heritage Homes. Msg &amp; data rates may apply. Reply STOP to opt out.{" "}
+            <a href="/privacy-policy" style={{ color: "oklch(0.55 0.13 42)", textDecoration: "underline" }}>Privacy</a>
+          </p>
+        </form>
+      )}
     </div>
   );
 }
-
 /* ── Recent Deals Ticker ── */
 
 function RecentDealsTicker() {
