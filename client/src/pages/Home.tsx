@@ -596,6 +596,11 @@ function InstantCashCalculator() {
           <span className="text-xs font-semibold" style={{ color: "oklch(0.50 0.04 55)", fontFamily: "'DM Mono', monospace" }}>⚡ 60 seconds</span>
           <span className="text-xs font-semibold" style={{ color: "oklch(0.50 0.04 55)", fontFamily: "'DM Mono', monospace" }}>🏠 Any condition</span>
         </div>
+        <p className="text-center mt-3" style={{ fontSize: "0.68rem", color: "oklch(0.55 0.03 55)", fontFamily: "'Nunito Sans', sans-serif", lineHeight: 1.5 }}>
+          By submitting, you consent to receive SMS messages from Alder Heritage Homes. Msg &amp; data rates may apply. Reply STOP to opt out.{" "}
+          <a href="/privacy-policy" style={{ color: "oklch(0.70 0.08 55)", textDecoration: "underline" }}>Privacy Policy</a>{" · "}
+          <a href="/terms-of-service" style={{ color: "oklch(0.70 0.08 55)", textDecoration: "underline" }}>Terms</a>
+        </p>
       </form>
     </div>
   );
@@ -842,6 +847,11 @@ function InlineOfferForm() {
         </button>
         <p className="text-center text-xs" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
           🏆 We match or beat any cash offer · No obligation
+        </p>
+        <p className="text-center" style={{ fontSize: "0.68rem", color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", lineHeight: 1.5 }}>
+          By submitting, you consent to receive SMS messages from Alder Heritage Homes. Msg &amp; data rates may apply. Reply STOP to opt out.{" "}
+          <a href="/privacy-policy" style={{ color: "oklch(0.55 0.13 42)", textDecoration: "underline" }}>Privacy Policy</a>{" · "}
+          <a href="/terms-of-service" style={{ color: "oklch(0.55 0.13 42)", textDecoration: "underline" }}>Terms</a>
         </p>
       </form>
     </div>

@@ -256,8 +256,10 @@ export default function Contact() {
                         <>Get My Free Cash Offer <ArrowRight size={20} /></>
                       )}
                     </button>
-                    <p className="text-xs text-center" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                      By submitting, you agree to be contacted about your property. We never sell your information.
+                    <p className="text-xs text-center" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif", lineHeight: 1.6 }}>
+                      By submitting, you consent to receive SMS messages from Alder Heritage Homes. Msg &amp; data rates may apply. Reply STOP to opt out. We never sell your information.{" "}
+                      <a href="/privacy-policy" style={{ color: "oklch(0.55 0.13 42)", textDecoration: "underline" }}>Privacy Policy</a>{" · "}
+                      <a href="/terms-of-service" style={{ color: "oklch(0.55 0.13 42)", textDecoration: "underline" }}>Terms</a>
                     </p>
                   </form>
                 </div>
