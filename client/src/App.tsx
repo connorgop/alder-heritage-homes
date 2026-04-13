@@ -229,6 +229,7 @@ const SellHouseFastMerced = lazy(() => import("./pages/SellHouseFastMerced"));
 const SellHouseFastLemoore = lazy(() => import("./pages/SellHouseFastLemoore"));
 const SellHouseFastTurlock = lazy(() => import("./pages/SellHouseFastTurlock"));
 const HowMuchCashBuyersPay = lazy(() => import("./pages/HowMuchCashBuyersPay"));
+const LeaveAReview = lazy(() => import("./pages/LeaveAReview"));
 const ExeterPage = lazy(() => import("./pages/cities/Exeter"));
 const StrathmoreePage = lazy(() => import("./pages/cities/Strathmore"));
 const TulareCountyHub = lazy(() => import("./pages/TulareCountyHub"));
@@ -579,6 +580,9 @@ function Router() {
       <Route path="/cash-home-buyers-turlock-ca"><Redirect to="/sell-house-fast-turlock-ca" /></Route>
       <Route path="/we-buy-houses-turlock-ca"><Redirect to="/sell-house-fast-turlock-ca" /></Route>
       <Route path="/how-much-do-cash-buyers-pay-for-houses" component={HowMuchCashBuyersPay} />
+      <Route path="/leave-a-review" component={LeaveAReview} />
+      <Route path="/review"><Redirect to="/leave-a-review" /></Route>
+      <Route path="/reviews/leave"><Redirect to="/leave-a-review" /></Route>
       <Route path="/how-much-do-cash-buyers-pay-for-houses-california"><Redirect to="/how-much-do-cash-buyers-pay-for-houses" /></Route>
       <Route path="/how-much-do-cash-home-buyers-pay"><Redirect to="/how-much-do-cash-buyers-pay-for-houses" /></Route>
       <Route path="/sell-my-house-fast-lemoore-ca"><Redirect to="/sell-house-fast-lemoore-ca" /></Route>
