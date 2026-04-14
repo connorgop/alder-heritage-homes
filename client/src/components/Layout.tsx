@@ -58,6 +58,7 @@ const footerCompany = [
   { label: "Our Deals", href: "/our-deals" },
   { label: "Before & After", href: "/before-after" },
   { label: "Compare Cash Buyers", href: "/compare-cash-buyers" },
+  { label: "Case Studies", href: "/case-studies" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/sell-house-fast-faq" },
   { label: "Contact", href: "/contact" },
@@ -207,6 +208,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
               <NavLink href="/about">About</NavLink>
               <NavLink href="/reviews">Reviews</NavLink>
+              <NavLink href="/case-studies">Case Studies</NavLink>
             </nav>
 
             {/* Phone + Primary CTA */}
@@ -275,6 +277,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
               <MobileNavLink href="/about">About Connor</MobileNavLink>
               <MobileNavLink href="/reviews">Reviews</MobileNavLink>
+              <MobileNavLink href="/case-studies">Case Studies</MobileNavLink>
               <MobileNavLink href="/sell-house-fast-faq">FAQ</MobileNavLink>
               <MobileNavLink href="/blog">Blog</MobileNavLink>
               <MobileNavLink href="/contact">Contact</MobileNavLink>

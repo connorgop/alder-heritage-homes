@@ -69,6 +69,18 @@ export default function Visalia() {
           a: "Fill out the form on this page or call (559) 281-8016. Connor will review your property and send a no-obligation cash offer within 24 hours. There's no pressure and no obligation to accept.",
         },
       ]}
+      realDeals={[
+        {
+          href: "/case-studies/hurley-property-visalia",
+          tag: "Probate Estate",
+          tagColor: "oklch(0.38 0.06 280)",
+          address: "Hurley Property, Visalia",
+          stat1: { label: "Purchase Price", value: "$225K" },
+          stat2: { label: "Comps Available", value: "None" },
+          summary: "Probate estate with squatters, no comparable sales. We paid $225K, handled the sheriff lockout, and gave the family 30 days post-close to retrieve personal items.",
+          quote: "We couldn't even get inside the house. Connor made an offer anyway and handled everything.",
+        },
+      ]}
     />
   );
 }

@@ -241,6 +241,7 @@ export default function FresnoPage() {
                 stat1: { label: "Sale Price", value: "$185K" },
                 stat2: { label: "Days to Close", value: "5" },
                 summary: "FaceTime walkthrough instead of inspection. DocuSign paperwork. Connor paid for the moving truck.",
+                quote: "I didn't have to lift a finger. Connor handled everything — even paid for the moving truck.",
               },
               {
                 href: "/case-studies/3346-dovewood-lane-fresno",
@@ -251,6 +252,7 @@ export default function FresnoPage() {
                 stat1: { label: "Properties", value: "3" },
                 stat2: { label: "Seller Location", value: "OC" },
                 summary: "81-year-old OC landlord. We paid above-market, helped tenants relocate, and earned a 3-deal relationship.",
+                quote: "He was the only buyer who actually followed through on every single thing he promised.",
               },
               {
                 href: "/case-studies/1463-n-ferger-ave-fresno",
@@ -261,6 +263,7 @@ export default function FresnoPage() {
                 stat1: { label: "Deal #", value: "2 of 3" },
                 stat2: { label: "Process", value: "Smooth" },
                 summary: "The second property in John's Fresno portfolio. Trust from deal #1 made this one effortless.",
+                quote: "By the second property, I didn't even need to ask questions. I just trusted the process.",
               },
               {
                 href: "/case-studies/811-n-roosevelt-fresno",
@@ -271,6 +274,7 @@ export default function FresnoPage() {
                 stat1: { label: "Purchase Price", value: "$170K" },
                 stat2: { label: "Seller's Risk", value: "Zero" },
                 summary: "Squatters broke in post-close and flooded the house. The seller walked away clean — we took on all the risk.",
+                quote: "I was terrified when I heard about the squatters. Connor told me not to worry — it was already his problem.",
               },
             ].map((deal) => (
               <Link
@@ -300,7 +304,12 @@ export default function FresnoPage() {
                       </div>
                     ))}
                   </div>
-                  <p className="text-xs leading-relaxed" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{deal.summary}</p>
+                  <p className="text-xs leading-relaxed mb-3" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{deal.summary}</p>
+                  {deal.quote && (
+                    <div className="rounded-lg p-3" style={{ background: "oklch(0.22 0.01 60)", borderLeft: "3px solid oklch(0.55 0.13 42)" }}>
+                      <p className="text-xs italic" style={{ color: "oklch(0.75 0.02 60)", fontFamily: "'Lora', serif" }}>"{deal.quote}"</p>
+                    </div>
+                  )}
                 </div>
                 {/* Card footer */}
                 <div className="px-5 py-3 flex items-center justify-between" style={{ borderTop: "1px solid oklch(0.35 0.01 60)" }}>

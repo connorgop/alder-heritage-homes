@@ -65,6 +65,18 @@ export default function Hanford() {
         { label: "Agent License", value: "DRE #02219124" },
         { label: "Homes Purchased", value: "700+" },
       ]}
+      realDeals={[
+        {
+          href: "/case-studies/hurley-property-visalia",
+          tag: "Nearby Deal — Visalia",
+          tagColor: "oklch(0.38 0.06 280)",
+          address: "Hurley Property, Visalia CA",
+          stat1: { label: "Purchase Price", value: "$225K" },
+          stat2: { label: "Comps Available", value: "None" },
+          summary: "Probate estate with squatters and no comparable sales in Tulare County. We paid $225K, handled the sheriff lockout, and gave the family 30 days post-close to collect belongings.",
+          quote: "Connor made an offer without even being able to get inside. He handled every single thing.",
+        },
+      ]}
     />
   );
 }

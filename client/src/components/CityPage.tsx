@@ -32,6 +32,16 @@ interface CityPageProps {
     imgUrl?: string;
     sellerName?: string;
   };
+  realDeals?: {
+    href: string;
+    tag: string;
+    tagColor: string;
+    address: string;
+    stat1: { label: string; value: string };
+    stat2: { label: string; value: string };
+    summary: string;
+    quote?: string;
+  }[];
 }
 
 const FAST_SALE_PAGES: Record<string, string> = {
@@ -60,7 +70,7 @@ const FAST_SALE_PAGES: Record<string, string> = {
   Woodlake: "/sell-house-fast-exeter-ca",
 };
 
-export default function CityPage({ city, county, population, description, neighborhoods, neighborhoodLinks, faqs, stats, slug, videoEmbed, caseStudy }: CityPageProps) {
+export default function CityPage({ city, county, population, description, neighborhoods, neighborhoodLinks, faqs, stats, slug, videoEmbed, caseStudy, realDeals }: CityPageProps) {
   const fastSaleHref = FAST_SALE_PAGES[city] ?? "/sell-house-fast";
   const services = [
     { label: "Foreclosure Help", href: "/foreclosure-help" },
@@ -327,6 +337,64 @@ export default function CityPage({ city, county, population, description, neighb
           </div>
         </div>
       </section>
+
+      {/* Real Deals Section */}
+      {realDeals && realDeals.length > 0 && (
+        <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+          <div className="container">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>Real Transactions — Not Stock Photos</div>
+                <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Real Deals We've Closed in {city}</h2>
+                <p className="mt-3 text-base max-w-xl" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Every deal below is a real transaction — real address, real seller, real outcome.</p>
+              </div>
+              <Link href="/case-studies" className="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.2)", color: "oklch(0.80 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                All Case Studies <ArrowRight size={14} />
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {realDeals.map((deal) => (
+                <Link
+                  key={deal.href}
+                  href={deal.href}
+                  className="group flex flex-col rounded-2xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl"
+                  style={{ background: "oklch(0.28 0.01 60)", border: "1px solid oklch(0.35 0.01 60)" }}
+                >
+                  <div className="p-5 flex-1">
+                    <span className="inline-block px-2.5 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider mb-3" style={{ background: deal.tagColor, color: "white", fontFamily: "'DM Mono', monospace" }}>
+                      {deal.tag}
+                    </span>
+                    <div className="flex items-start gap-2 mb-3">
+                      <div>
+                        <div className="font-bold text-sm text-white" style={{ fontFamily: "'Lora', serif" }}>{deal.address}</div>
+                        <div className="text-xs" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace" }}>{city}, CA</div>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2 mb-4">
+                      {[deal.stat1, deal.stat2].map((s) => (
+                        <div key={s.label} className="rounded-lg p-2.5 text-center" style={{ background: "oklch(0.22 0.01 60)" }}>
+                          <div className="text-base font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>{s.value}</div>
+                          <div className="text-[0.6rem] mt-0.5" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.05em" }}>{s.label}</div>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-xs leading-relaxed mb-3" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{deal.summary}</p>
+                    {deal.quote && (
+                      <div className="rounded-lg p-3" style={{ background: "oklch(0.22 0.01 60)", borderLeft: "3px solid oklch(0.55 0.13 42)" }}>
+                        <p className="text-xs italic" style={{ color: "oklch(0.75 0.02 60)", fontFamily: "'Lora', serif" }}>"{deal.quote}"</p>
+                      </div>
+                    )}
+                  </div>
+                  <div className="px-5 py-3 flex items-center justify-between" style={{ borderTop: "1px solid oklch(0.35 0.01 60)" }}>
+                    <span className="text-xs font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.06em" }}>Read Full Story</span>
+                    <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" style={{ color: "oklch(0.55 0.13 42)" }} />
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Inline Cash Offer Form CTA */}
       <section id="get-offer" className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
