@@ -1758,7 +1758,77 @@ export default function HomePage() {
       <FeaturedBlogPosts />
 
       {/* ── 8.6 HOMEPAGE FAQ ── */}
-      <HomepageFAQ />
+       <HomepageFAQ />
+
+      {/* ── 8.7 REAL DEAL CASE STUDY ── */}
+      <section className="py-20" style={{ background: "oklch(0.13 0.02 60)" }}>
+        <div className="container">
+          <div className="text-center mb-12">
+            <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.65 0.13 42)" }}>Real Deal — Fresno, CA</span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.97 0.015 85)" }}>Closed in 5 Days. No Hassle.</h2>
+            <p className="mt-4 text-lg max-w-2xl mx-auto" style={{ color: "oklch(0.75 0.02 60)" }}>A real transaction — not a stock photo. Here's exactly how it went.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
+            {/* Photo */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/iowa-ave-case-study_f5eb3adf.webp"
+                alt="4444 Iowa Ave Fresno CA — We Buy Houses Cash deal closed in 5 days"
+                className="w-full h-auto object-cover"
+                style={{ aspectRatio: "4/3" }}
+              />
+              <div className="absolute bottom-0 left-0 right-0 px-4 py-3" style={{ background: "linear-gradient(to top, oklch(0.10 0.02 60) 0%, transparent 100%)" }}>
+                <p className="text-sm font-bold" style={{ color: "oklch(0.97 0.015 85)", fontFamily: "'DM Mono', monospace" }}>4444 Iowa Ave — Fresno, CA</p>
+              </div>
+            </div>
+
+            {/* Story */}
+            <div className="flex flex-col gap-6">
+              {/* Stats row */}
+              <div className="grid grid-cols-3 gap-4">
+                {[
+                  { label: "Sale Price", value: "$185K", icon: "💰" },
+                  { label: "Days to Close", value: "5", icon: "📅" },
+                  { label: "Inspections", value: "Zero", icon: "✅" },
+                ].map((stat) => (
+                  <div key={stat.label} className="rounded-xl p-4 text-center" style={{ background: "oklch(0.20 0.01 60)" }}>
+                    <div className="text-2xl mb-1">{stat.icon}</div>
+                    <div className="text-xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.97 0.015 85)" }}>{stat.value}</div>
+                    <div className="text-xs mt-1" style={{ color: "oklch(0.60 0.02 60)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.05em" }}>{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Story text */}
+              <div className="rounded-2xl p-6" style={{ background: "oklch(0.20 0.01 60)", borderLeft: "4px solid oklch(0.55 0.13 42)" }}>
+                <p className="text-base leading-relaxed" style={{ color: "oklch(0.80 0.02 60)" }}>
+                  The seller needed to move fast. We did a <strong style={{ color: "oklch(0.97 0.015 85)" }}>FaceTime walkthrough</strong> instead of a formal inspection, signed everything via <strong style={{ color: "oklch(0.97 0.015 85)" }}>DocuSign</strong>, and closed in 5 days. Connor personally paid for the seller's moving truck to make the transition as easy as possible.
+                </p>
+              </div>
+
+              {/* Timeline */}
+              <div className="flex flex-col gap-3">
+                {[
+                  { day: "Day 1", text: "Seller called. Connor made a cash offer within hours." },
+                  { day: "Day 2", text: "FaceTime walkthrough — no inspector, no delays." },
+                  { day: "Day 3", text: "DocuSign paperwork completed remotely." },
+                  { day: "Day 5", text: "Closed. Seller moved out. Connor paid for the truck." },
+                ].map((step) => (
+                  <div key={step.day} className="flex items-start gap-3">
+                    <span className="shrink-0 text-xs font-bold px-2 py-1 rounded" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>{step.day}</span>
+                    <p className="text-sm" style={{ color: "oklch(0.75 0.02 60)" }}>{step.text}</p>
+                  </div>
+                ))}
+              </div>
+
+              <Link href="/cash-offer/fresno" className="inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 font-bold text-white transition-all hover:opacity-90" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                Get Your Cash Offer Today <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ── 9. AREAS WE SERVE ── */}
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
