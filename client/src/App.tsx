@@ -79,6 +79,7 @@ const SellHouseFastBakersfield = lazy(() => import("./pages/SellHouseFastBakersf
 const SellHouseFastTulare = lazy(() => import("./pages/SellHouseFastTulare"));
 const SellHouseFastHub = lazy(() => import("./pages/SellHouseFastHub"));
 const SellHouseFastMadera = lazy(() => import("./pages/SellHouseFastMadera"));
+const WeBuyHousesMadera = lazy(() => import("./pages/WeBuyHousesMadera"));
 const CentralValleyHub = lazy(() => import("./pages/CentralValleyHub"));
 const SellHouseFastCentralValley = lazy(() => import("./pages/SellHouseFastCentralValley"));
 const SellHouseFastStockton = lazy(() => import("./pages/SellHouseFastStockton"));
@@ -424,6 +425,9 @@ function Router() {
       <Route path="/sell-house-fast-visalia-ca" component={SellHouseFastVisalia} />
       <Route path="/sell-house-fast-bakersfield-ca" component={SellHouseFastBakersfield} />
       <Route path="/sell-house-fast-madera-ca" component={SellHouseFastMadera} />
+      <Route path="/sell-my-house-fast-madera" component={WeBuyHousesMadera} />
+      <Route path="/we-buy-houses-madera-ca"><Redirect to="/sell-my-house-fast-madera" /></Route>
+      <Route path="/cash-home-buyers-madera"><Redirect to="/sell-my-house-fast-madera" /></Route>
       <Route path="/sell-house-fast-tulare-ca" component={SellHouseFastTulare} />
       <Route path="/sell-house-fast-stockton-ca" component={SellHouseFastStockton} />
       <Route path="/sell-house-fast-modesto-ca" component={SellHouseFastModesto} />
