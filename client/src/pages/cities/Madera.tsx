@@ -10,23 +10,39 @@ export default function Madera() {
       city="Madera"
       county="Madera"
       population="70,000+"
-      description="Madera is a growing agricultural and residential community in the heart of California's San Joaquin Valley. As Madera County's seat, it sits just 20 miles north of Fresno and has seen rapid residential growth alongside economic pressures that have left many homeowners struggling with mortgage payments, inherited properties, and foreclosure risk. Alder Heritage Homes has been buying homes throughout Madera and Madera County for years — we understand the local market, the neighborhoods, and the unique challenges Madera homeowners face."
-      neighborhoods={[
-        "Downtown Madera",
-        "Millview",
-        "Country Club Estates",
-        "Tesoro Viejo",
-        "Riverstone",
-        "Bonadelle Ranchos",
-        "Madera Ranchos",
-        "Gateway",
-        "Parkwood",
-        "Sunset Acres",
+      description="Madera is a growing agricultural and residential community in the heart of California's San Joaquin Valley. As Madera County's seat, it sits just 20 miles north of Fresno and has seen rapid residential growth alongside economic pressures that have left many homeowners struggling with mortgage payments, inherited properties, and foreclosure risk. Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) and a direct cash buyer serving all of Madera and Madera County. We close in 5–14 days, pay all closing costs, and never assign your contract to a wholesaler. Whether your home needs major repairs, you're behind on payments, going through probate, or simply need to sell fast — we make fair cash offers and close on your timeline."
+      stats={[
+        { label: "County", value: "Madera County" },
+        { label: "Median Home Price", value: "$330K" },
+        { label: "Close Timeline", value: "5–14 Days" },
+        { label: "Offer Turnaround", value: "24 Hours" },
+        { label: "Agent License", value: "DRE #02219124" },
+        { label: "Homes Purchased", value: "700+" },
+      ]}
+      neighborhoodLinks={[
+        { name: "Downtown Madera", href: "/madera-neighborhoods/downtown-madera", desc: "Historic core, older homes" },
+        { name: "North Madera", href: "/madera-neighborhoods/north-madera", desc: "Newer residential growth" },
+        { name: "South Madera", href: "/madera-neighborhoods/south-madera", desc: "Established family neighborhoods" },
+        { name: "East Madera", href: "/madera-neighborhoods/east-madera", desc: "Newer subdivisions" },
+        { name: "Madera Ranchos", href: "/madera-neighborhoods/north-madera", desc: "Rural residential" },
+        { name: "Bonadelle Ranchos", href: "/madera-neighborhoods/south-madera", desc: "Country estates" },
       ]}
       faqs={[
         {
           q: "How fast can you buy my Madera home?",
-          a: "We can close in as little as 5–7 days on a Madera property. If you need more time, we work on your schedule — whether that's 2 weeks or 60 days.",
+          a: "We can close in as little as 5–7 days on a Madera property. If you need more time, we work on your schedule — whether that's 2 weeks or 60 days. We've closed Madera deals in as few as 5 days when sellers needed to move quickly.",
+        },
+        {
+          q: "Do I need to make repairs before selling my Madera house?",
+          a: "No. We buy Madera homes as-is, in any condition. No cleaning, no repairs, no staging. We've purchased homes with foundation issues, water damage, pest infestations, and homes full of belongings. You walk away — we handle everything.",
+        },
+        {
+          q: "Are you a wholesaler or a real cash buyer in Madera?",
+          a: "We are a direct end-buyer. We purchase your Madera home with our own funds — we do not assign contracts to third-party investors. We are licensed under California DRE #02219124. You deal with one person from offer to close.",
+        },
+        {
+          q: "What if I'm behind on my mortgage in Madera?",
+          a: "We specialize in helping Madera homeowners who are behind on mortgage payments avoid foreclosure. We can close quickly and help you walk away with cash before the bank takes action.",
         },
         {
           q: "Do you buy homes in Madera Ranchos?",
@@ -40,12 +56,14 @@ export default function Madera() {
           q: "My Madera home needs major repairs. Will you still buy it?",
           a: "Yes — we buy homes in any condition. Roof damage, foundation issues, fire damage, deferred maintenance — none of it matters. We buy as-is and handle all repairs ourselves after closing.",
         },
-      ]}
-      stats={[
-        { label: "Median Home Value", value: "$320K" },
-        { label: "Avg. Days to Close", value: "7–14" },
-        { label: "Homes Bought Nearby", value: "30+" },
-        { label: "Miles from Fresno", value: "20" },
+        {
+          q: "Will you buy a Madera rental property with tenants?",
+          a: "Yes. We buy occupied rental properties throughout Madera County. We handle tenant communication and coordinate a smooth transition. You don't need to evict anyone before selling to us.",
+        },
+        {
+          q: "How do I get a cash offer for my Madera home?",
+          a: "Fill out the form on this page or call (559) 281-8016. Connor will review your property and send a no-obligation cash offer within 24 hours. There's no pressure and no obligation to accept.",
+        },
       ]}
     />
   );

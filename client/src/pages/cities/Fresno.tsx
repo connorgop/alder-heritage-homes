@@ -27,14 +27,18 @@ const faqs = [
 ];
 
 const neighborhoods = [
-  { name: "Tower District", desc: "Historic arts district with bungalows and craftsman homes. High demand, fast sales." },
-  { name: "Fig Garden", desc: "Established mid-century neighborhood. We've bought multiple homes here in any condition." },
-  { name: "Woodward Park", desc: "North Fresno's premier area. We buy estates, downsizer homes, and distressed properties." },
-  { name: "Old Fig Garden", desc: "Luxury historic homes. We work with estates, probate, and inherited properties here." },
-  { name: "Southeast Fresno", desc: "High volume of distressed and as-is sales. We close quickly with no inspection contingencies." },
-  { name: "West Fresno", desc: "We buy homes in any condition throughout West Fresno with fast, fair cash offers." },
-  { name: "Bullard", desc: "Strong mid-range market. We buy from landlords, divorcing couples, and estate sellers." },
-  { name: "Sunnyside", desc: "Active market east of downtown. We've purchased homes here in all conditions." },
+  { name: "Tower District", href: "/fresno-neighborhoods/tower-district", desc: "Historic arts district with bungalows and craftsman homes. High demand, fast sales." },
+  { name: "Fig Garden", href: "/fresno-neighborhoods/fig-garden", desc: "Established mid-century neighborhood. We've bought multiple homes here in any condition." },
+  { name: "Woodward Park", href: "/fresno-neighborhoods/woodward-park", desc: "North Fresno's premier area. We buy estates, downsizer homes, and distressed properties." },
+  { name: "Old Fig Garden", href: "/fresno-neighborhoods/old-fig-garden", desc: "Luxury historic homes. We work with estates, probate, and inherited properties here." },
+  { name: "Southeast Fresno", href: "/fresno-neighborhoods/southeast-fresno", desc: "High volume of distressed and as-is sales. We close quickly with no inspection contingencies." },
+  { name: "North Fresno", href: "/fresno-neighborhoods/north-fresno", desc: "Newer subdivisions, strong market. We buy from landlords, estates, and downsizers." },
+  { name: "Bullard", href: "/fresno-neighborhoods/bullard", desc: "Strong mid-range market. We buy from landlords, divorcing couples, and estate sellers." },
+  { name: "Sunnyside", href: "/fresno-neighborhoods/sunnyside", desc: "Active market east of downtown. We've purchased homes here in all conditions." },
+  { name: "McLane", href: "/fresno-neighborhoods/mclane", desc: "Central Fresno neighborhood with high as-is purchase volume." },
+  { name: "Fresno State Area", href: "/fresno-neighborhoods/fresno-state", desc: "Near CSU Fresno — rental properties, student housing, investor deals." },
+  { name: "Fig Garden Village", href: "/fresno-neighborhoods/fig-garden-village", desc: "Upscale shopping corridor, established homes nearby." },
+  { name: "Cloverleaf Village", href: "/fresno-neighborhoods/cloverleaf-village", desc: "Northeast Fresno residential community." },
 ];
 
 const situations = [
@@ -204,10 +208,10 @@ export default function FresnoPage() {
           <p className="text-lg mb-10 max-w-2xl" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>We know Fresno's neighborhoods intimately — from the historic bungalows of Tower District to the newer construction in North Fresno. No matter where your property is located, we'll make you a fair cash offer.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {neighborhoods.map((n) => (
-              <div key={n.name} className="p-5 rounded-xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
-                <div className="flex items-center gap-2 mb-2"><MapPin size={14} style={{ color: "oklch(0.55 0.13 42)" }} /><span className="font-bold text-sm" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>{n.name}</span></div>
+              <Link key={n.name} href={n.href} className="group block p-5 rounded-xl transition-all hover:shadow-md" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
+                <div className="flex items-center gap-2 mb-2"><MapPin size={14} style={{ color: "oklch(0.55 0.13 42)" }} /><span className="font-bold text-sm group-hover:underline" style={{ fontFamily: "'Lora', serif", color: "oklch(0.55 0.13 42)" }}>{n.name}</span></div>
                 <p className="text-xs leading-relaxed" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{n.desc}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

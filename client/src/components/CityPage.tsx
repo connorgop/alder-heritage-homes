@@ -15,6 +15,7 @@ interface CityPageProps {
   population: string;
   description: string;
   neighborhoods?: string[];
+  neighborhoodLinks?: { name: string; href: string; desc?: string }[];
   faqs?: { q: string; a: string }[];
   stats?: { label: string; value: string }[];
   slug?: string; // e.g. "we-buy-houses-fresno"
@@ -22,6 +23,14 @@ interface CityPageProps {
     youtubeId: string;
     title: string;
     caption?: string;
+  };
+  caseStudy?: {
+    address: string;
+    price: string;
+    days: string;
+    story: string;
+    imgUrl?: string;
+    sellerName?: string;
   };
 }
 
@@ -51,7 +60,7 @@ const FAST_SALE_PAGES: Record<string, string> = {
   Woodlake: "/sell-house-fast-exeter-ca",
 };
 
-export default function CityPage({ city, county, population, description, neighborhoods, faqs, stats, slug, videoEmbed }: CityPageProps) {
+export default function CityPage({ city, county, population, description, neighborhoods, neighborhoodLinks, faqs, stats, slug, videoEmbed, caseStudy }: CityPageProps) {
   const fastSaleHref = FAST_SALE_PAGES[city] ?? "/sell-house-fast";
   const services = [
     { label: "Foreclosure Help", href: "/foreclosure-help" },
@@ -135,7 +144,26 @@ export default function CityPage({ city, county, population, description, neighb
                 </div>
               )}
 
-              {neighborhoods && neighborhoods.length > 0 && (
+              {/* Linked neighborhood grid */}
+              {neighborhoodLinks && neighborhoodLinks.length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                    {city} Neighborhoods We Buy In
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    {neighborhoodLinks.map((n) => (
+                      <Link key={n.href} href={n.href}
+                        className="group flex flex-col gap-1 p-3 rounded-xl transition-all hover:shadow-md"
+                        style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
+                        <span className="font-semibold text-sm group-hover:underline" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>{n.name}</span>
+                        {n.desc && <span className="text-xs" style={{ color: "oklch(0.50 0.01 60)" }}>{n.desc}</span>}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {/* Plain neighborhood tags (fallback, no links) */}
+              {!neighborhoodLinks && neighborhoods && neighborhoods.length > 0 && (
                 <div className="mb-8">
                   <h3 className="text-xl font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
                     Neighborhoods We Buy in {city}
@@ -186,6 +214,33 @@ export default function CityPage({ city, county, population, description, neighb
                   </div>
                 </div>
               )}
+              {/* Case Study */}
+              {caseStudy && (
+                <div className="mt-10 p-6 rounded-2xl" style={{ background: "oklch(0.97 0.02 85)", border: "2px solid oklch(0.88 0.04 85)" }}>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>Real Deal</span>
+                    <span className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>{caseStudy.address}</span>
+                  </div>
+                  {caseStudy.imgUrl && (
+                    <img src={caseStudy.imgUrl} alt={`Cash home purchase at ${caseStudy.address}`} className="w-full h-48 object-cover rounded-xl mb-4" />
+                  )}
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="p-3 rounded-xl text-center" style={{ background: "white" }}>
+                      <div className="text-xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.55 0.13 42)" }}>{caseStudy.price}</div>
+                      <div className="text-xs uppercase tracking-wider" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>Cash Paid</div>
+                    </div>
+                    <div className="p-3 rounded-xl text-center" style={{ background: "white" }}>
+                      <div className="text-xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.55 0.13 42)" }}>{caseStudy.days}</div>
+                      <div className="text-xs uppercase tracking-wider" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>Days to Close</div>
+                    </div>
+                  </div>
+                  <p className="text-sm leading-relaxed" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{caseStudy.story}</p>
+                  {caseStudy.sellerName && (
+                    <p className="mt-3 text-xs font-semibold" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>— {caseStudy.sellerName}</p>
+                  )}
+                </div>
+              )}
+
               {/* Local Market Video */}
               {videoEmbed && (
                 <div className="mt-10">
