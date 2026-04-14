@@ -2759,6 +2759,15 @@ const _blogPostsRaw = [
     category: "Competitor Comparison",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
   },
+  {
+    slug: "559-home-buyers-alternatives-fresno",
+    title: "559 Home Buyers Alternatives in Fresno — Who Pays More for Your House in 2025?",
+    excerpt: "559 Home Buyers is Fresno's highest-profile cash buyer with 300+ reviews. Before you accept their offer, here's how they compare to every other cash buyer in the Fresno market — and how to get the best price.",
+    date: "April 14, 2026",
+    readTime: "9 min read",
+    category: "Competitor Comparison",
+    image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80",
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
