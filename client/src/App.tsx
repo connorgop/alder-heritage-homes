@@ -173,6 +173,10 @@ const BakersfieldPage = lazy(() => import("./pages/cities/Bakersfield"));
 const LemooreePage = lazy(() => import("./pages/cities/Lemoore"));
 const TularePage = lazy(() => import("./pages/cities/Tulare"));
 const DowntownTulare = lazy(() => import("./pages/neighborhoods/tulare/DowntownTulare"));
+const DowntownMadera = lazy(() => import("./pages/neighborhoods/madera/DowntownMadera"));
+const NorthMadera = lazy(() => import("./pages/neighborhoods/madera/NorthMadera"));
+const SouthMadera = lazy(() => import("./pages/neighborhoods/madera/SouthMadera"));
+const EastMadera = lazy(() => import("./pages/neighborhoods/madera/EastMadera"));
 const NorthTulare = lazy(() => import("./pages/neighborhoods/tulare/NorthTulare"));
 const SouthTulare = lazy(() => import("./pages/neighborhoods/tulare/SouthTulare"));
 const EastTulare = lazy(() => import("./pages/neighborhoods/tulare/EastTulare"));
@@ -451,6 +455,10 @@ function Router() {
       <Route path="/tulare-neighborhoods/north-tulare" component={NorthTulare} />
       <Route path="/tulare-neighborhoods/south-tulare" component={SouthTulare} />
       <Route path="/tulare-neighborhoods/east-tulare" component={EastTulare} />
+      <Route path="/madera-neighborhoods/downtown-madera" component={DowntownMadera} />
+      <Route path="/madera-neighborhoods/north-madera" component={NorthMadera} />
+      <Route path="/madera-neighborhoods/south-madera" component={SouthMadera} />
+      <Route path="/madera-neighborhoods/east-madera" component={EastMadera} />
       <Route path="/we-buy-houses-porterville" component={PortervillePage} />
       <Route path="/we-buy-houses-merced" component={MercedPage} />
       <Route path="/we-buy-houses-stockton" component={StocktonPage} />
