@@ -217,6 +217,102 @@ export default function FresnoPage() {
         </div>
       </section>
 
+      {/* Real Deals in Fresno */}
+      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="container">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+            <div>
+              <div className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>Real Transactions — Not Stock Photos</div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Real Deals We've Closed in Fresno</h2>
+              <p className="mt-3 text-base max-w-xl" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Every deal below is a real transaction — real address, real seller, real outcome. We share these so you know exactly what working with us looks like.</p>
+            </div>
+            <Link href="/case-studies" className="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.2)", color: "oklch(0.80 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              All Case Studies <ArrowRight size={14} />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              {
+                href: "/case-studies/4444-iowa-ave-fresno",
+                tag: "5-Day Close",
+                tagColor: "oklch(0.28 0.05 155)",
+                address: "4444 Iowa Ave",
+                city: "Fresno, CA",
+                stat1: { label: "Sale Price", value: "$185K" },
+                stat2: { label: "Days to Close", value: "5" },
+                summary: "FaceTime walkthrough instead of inspection. DocuSign paperwork. Connor paid for the moving truck.",
+              },
+              {
+                href: "/case-studies/3346-dovewood-lane-fresno",
+                tag: "Landlord Portfolio",
+                tagColor: "oklch(0.55 0.13 42)",
+                address: "3346 W Dovewood Ln",
+                city: "Fresno, CA",
+                stat1: { label: "Properties", value: "3" },
+                stat2: { label: "Seller Location", value: "OC" },
+                summary: "81-year-old OC landlord. We paid above-market, helped tenants relocate, and earned a 3-deal relationship.",
+              },
+              {
+                href: "/case-studies/1463-n-ferger-ave-fresno",
+                tag: "Repeat Seller",
+                tagColor: "oklch(0.40 0.08 200)",
+                address: "1463 N Ferger Ave",
+                city: "Fresno, CA",
+                stat1: { label: "Deal #", value: "2 of 3" },
+                stat2: { label: "Process", value: "Smooth" },
+                summary: "The second property in John's Fresno portfolio. Trust from deal #1 made this one effortless.",
+              },
+              {
+                href: "/case-studies/811-n-roosevelt-fresno",
+                tag: "High-Risk Property",
+                tagColor: "oklch(0.45 0.10 30)",
+                address: "811 N Roosevelt Ave",
+                city: "Fresno, CA",
+                stat1: { label: "Purchase Price", value: "$170K" },
+                stat2: { label: "Seller's Risk", value: "Zero" },
+                summary: "Squatters broke in post-close and flooded the house. The seller walked away clean — we took on all the risk.",
+              },
+            ].map((deal) => (
+              <Link
+                key={deal.href}
+                href={deal.href}
+                className="group flex flex-col rounded-2xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl"
+                style={{ background: "oklch(0.28 0.01 60)", border: "1px solid oklch(0.35 0.01 60)" }}
+              >
+                {/* Card header */}
+                <div className="p-5 flex-1">
+                  <span className="inline-block px-2.5 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider mb-3" style={{ background: deal.tagColor, color: "white", fontFamily: "'DM Mono', monospace" }}>
+                    {deal.tag}
+                  </span>
+                  <div className="flex items-start gap-2 mb-3">
+                    <MapPin size={13} className="flex-shrink-0 mt-0.5" style={{ color: "oklch(0.55 0.13 42)" }} />
+                    <div>
+                      <div className="font-bold text-sm text-white" style={{ fontFamily: "'Lora', serif" }}>{deal.address}</div>
+                      <div className="text-xs" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace" }}>{deal.city}</div>
+                    </div>
+                  </div>
+                  {/* Stats */}
+                  <div className="grid grid-cols-2 gap-2 mb-4">
+                    {[deal.stat1, deal.stat2].map((s) => (
+                      <div key={s.label} className="rounded-lg p-2.5 text-center" style={{ background: "oklch(0.22 0.01 60)" }}>
+                        <div className="text-base font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>{s.value}</div>
+                        <div className="text-[0.6rem] mt-0.5" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.05em" }}>{s.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-xs leading-relaxed" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{deal.summary}</p>
+                </div>
+                {/* Card footer */}
+                <div className="px-5 py-3 flex items-center justify-between" style={{ borderTop: "1px solid oklch(0.35 0.01 60)" }}>
+                  <span className="text-xs font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.06em" }}>Read Full Story</span>
+                  <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" style={{ color: "oklch(0.55 0.13 42)" }} />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Wholesaler Warning */}
       <section className="py-16" style={{ background: "oklch(0.55 0.13 42)" }}>
         <div className="container">
