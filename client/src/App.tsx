@@ -174,6 +174,10 @@ const LemooreePage = lazy(() => import("./pages/cities/Lemoore"));
 const TularePage = lazy(() => import("./pages/cities/Tulare"));
 const DowntownTulare = lazy(() => import("./pages/neighborhoods/tulare/DowntownTulare"));
 const DowntownMadera = lazy(() => import("./pages/neighborhoods/madera/DowntownMadera"));
+const DowntownVisalia = lazy(() => import("./pages/neighborhoods/visalia/DowntownVisalia"));
+const NorthVisalia = lazy(() => import("./pages/neighborhoods/visalia/NorthVisalia"));
+const SouthVisalia = lazy(() => import("./pages/neighborhoods/visalia/SouthVisalia"));
+const EastVisalia = lazy(() => import("./pages/neighborhoods/visalia/EastVisalia"));
 const NorthMadera = lazy(() => import("./pages/neighborhoods/madera/NorthMadera"));
 const SouthMadera = lazy(() => import("./pages/neighborhoods/madera/SouthMadera"));
 const EastMadera = lazy(() => import("./pages/neighborhoods/madera/EastMadera"));
@@ -456,6 +460,10 @@ function Router() {
       <Route path="/tulare-neighborhoods/south-tulare" component={SouthTulare} />
       <Route path="/tulare-neighborhoods/east-tulare" component={EastTulare} />
       <Route path="/madera-neighborhoods/downtown-madera" component={DowntownMadera} />
+      <Route path="/visalia-neighborhoods/downtown-visalia" component={DowntownVisalia} />
+      <Route path="/visalia-neighborhoods/north-visalia" component={NorthVisalia} />
+      <Route path="/visalia-neighborhoods/south-visalia" component={SouthVisalia} />
+      <Route path="/visalia-neighborhoods/east-visalia" component={EastVisalia} />
       <Route path="/madera-neighborhoods/north-madera" component={NorthMadera} />
       <Route path="/madera-neighborhoods/south-madera" component={SouthMadera} />
       <Route path="/madera-neighborhoods/east-madera" component={EastMadera} />
