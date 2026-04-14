@@ -785,16 +785,10 @@ function InlineOfferForm() {
     <div className="rounded-2xl overflow-hidden" style={{ background: "oklch(1 0 0 / 0.04)", border: "1px solid oklch(1 0 0 / 0.14)" }}>
       {/* Header */}
       <div className="px-8 pt-7 pb-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.55 0.13 42 / 0.25)", border: "1px solid oklch(0.55 0.13 42 / 0.40)", color: "oklch(0.90 0.10 75)", fontFamily: "'DM Mono', monospace" }}>
-            <Shield size={12} /> Proof of Funds Available in 24 hrs
-          </div>
-        </div>
         <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "oklch(0.55 0.13 42 / 0.18)", border: "1px solid oklch(0.55 0.13 42 / 0.35)", color: "oklch(0.85 0.08 75)", fontFamily: "'DM Mono', monospace" }}>
-          🔥 3 offers sent this week in Fresno
+           🔥 3 offers sent this week in Fresno
         </div>
       </div>
-
       {/* Step indicator */}
       <div className="px-8 pb-4 flex items-center gap-2">
         <div className="flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold" style={{ background: step >= 1 ? "oklch(0.55 0.13 42)" : "oklch(1 0 0 / 0.15)", color: "white", fontFamily: "'DM Mono', monospace" }}>1</div>
