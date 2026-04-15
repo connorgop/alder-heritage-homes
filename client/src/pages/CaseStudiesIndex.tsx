@@ -123,6 +123,30 @@ const deals = [
     tags: ["Foreclosure", "Hoarder", "Clovis"],
   },
   {
+    href: "/case-studies/lake-van-ness-fresno-500k",
+    tag: "$500K Cash",
+    tagColor: "oklch(0.28 0.05 155)",
+    city: "Fresno, CA",
+    address: "Lake Van Ness Area",
+    stat1: { label: "Purchase Price", value: "$500K" },
+    stat2: { label: "Repairs Required", value: "Zero" },
+    summary: "Family wanted zero updates, zero repairs, zero showings. $500,000 cash. We covered all escrow fees and transfer taxes — our total cost exceeded $500K. They kept every dollar.",
+    quote: "We didn't want to deal with any of it. Connor made it simple — he bought it as-is and we didn't have to touch a thing.",
+    tags: ["High Value", "As-Is", "All Fees Covered", "Fresno"],
+  },
+  {
+    href: "/case-studies/4-property-landlord-portfolio-fresno",
+    tag: "4 Properties · 1 Close",
+    tagColor: "oklch(0.45 0.15 25)",
+    city: "Fresno, CA",
+    address: "4-Property Portfolio",
+    stat1: { label: "Properties Purchased", value: "4" },
+    stat2: { label: "Competitors Failed", value: "2" },
+    summary: "4 Fresno rentals with non-paying tenants, destroyed interiors, no inspections. Two competitors failed to close before us. We bought all four — and lost money on two. We closed anyway.",
+    quote: "Two buyers already failed on me. I needed someone who would actually close.",
+    tags: ["Portfolio", "Non-Paying Tenants", "Fresno"],
+  },
+  {
     href: "/case-studies/armona-ca",
     tag: "Wholesaler Exposed",
     tagColor: "oklch(0.45 0.15 25)",
@@ -178,9 +202,9 @@ export default function CaseStudiesIndex() {
         <div className="container">
           <div className="flex flex-wrap justify-center gap-8">
             {[
-              { value: "9", label: "Published Case Studies" },
+              { value: "11", label: "Published Case Studies" },
               { value: "5", label: "Cities Covered" },
-              { value: "$225K", label: "Highest Deal" },
+              { value: "$500K", label: "Highest Deal" },
               { value: "5 Days", label: "Fastest Close" },
             ].map((s) => (
               <div key={s.label} className="text-center">

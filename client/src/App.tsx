@@ -22,6 +22,8 @@ const CaseStudyHurleyVisalia = lazy(() => import("./pages/case-studies/hurley-pr
 const CaseStudyTulareStCA = lazy(() => import("./pages/case-studies/tulare-st-tulare-ca"));
 const CaseStudyPurvisAveClovis = lazy(() => import("./pages/case-studies/1648-purvis-ave-clovis"));
 const CaseStudyArmonaCA = lazy(() => import("./pages/case-studies/armona-ca"));
+const CaseStudy4PropertyPortfolio = lazy(() => import("./pages/case-studies/4-property-landlord-portfolio-fresno"));
+const CaseStudyLakeVanNess = lazy(() => import("./pages/case-studies/lake-van-ness-fresno-500k"));
 const CaseStudyIdlewoodHanford = lazy(() => import("./pages/case-studies/1944-idlewood-circle-hanford"));
 const CaseStudiesIndex = lazy(() => import("./pages/CaseStudiesIndex"));
 const DontGetLowballed = lazy(() => import("./pages/DontGetLowballed"));
@@ -302,6 +304,8 @@ function Router() {
       <Route path="/case-studies/tulare-st-tulare-ca" component={CaseStudyTulareStCA} />
       <Route path="/case-studies/1648-purvis-ave-clovis" component={CaseStudyPurvisAveClovis} />
       <Route path="/case-studies/armona-ca" component={CaseStudyArmonaCA} />
+      <Route path="/case-studies/4-property-landlord-portfolio-fresno" component={CaseStudy4PropertyPortfolio} />
+      <Route path="/case-studies/lake-van-ness-fresno-500k" component={CaseStudyLakeVanNess} />
       <Route path="/case-studies/1944-idlewood-circle-hanford" component={CaseStudyIdlewoodHanford} />
       <Route path="/resources" component={Resources} />
       <Route path="/gbp-post-templates" component={GBPTemplates} />

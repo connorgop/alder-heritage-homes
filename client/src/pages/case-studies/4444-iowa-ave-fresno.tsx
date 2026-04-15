@@ -88,18 +88,35 @@ export default function IowaAveCaseStudy() {
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
-            {/* Photo */}
-            <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/iowa-ave-case-study_f5eb3adf.webp"
-                alt="4444 Iowa Ave Fresno CA — cash home sale closed in 5 days"
-                className="w-full h-auto object-cover"
-                style={{ aspectRatio: "4/3" }}
-              />
-              <div className="p-4" style={{ background: "white", borderTop: "1px solid oklch(0.88 0.02 85)" }}>
-                <div className="flex items-center gap-2">
-                  <MapPin size={14} style={{ color: "oklch(0.55 0.13 42)" }} />
-                  <span className="text-sm font-bold" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.35 0.01 60)" }}>4444 Iowa Ave — Fresno, CA</span>
+            {/* Photo + Video */}
+            <div className="space-y-4">
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/iowa-ave-seller-still_f0f6ba66.webp"
+                  alt="Connor greeting the seller at 4444 Iowa Ave Fresno on moving day"
+                  className="w-full h-auto object-cover"
+                  style={{ aspectRatio: "4/3" }}
+                />
+                <div className="p-4" style={{ background: "white", borderTop: "1px solid oklch(0.88 0.02 85)" }}>
+                  <div className="flex items-center gap-2">
+                    <MapPin size={14} style={{ color: "oklch(0.55 0.13 42)" }} />
+                    <span className="text-sm font-bold" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.35 0.01 60)" }}>Connor greeting the seller — Moving Day · 4444 Iowa Ave, Fresno</span>
+                  </div>
+                </div>
+              </div>
+              {/* Real video from moving day */}
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <video
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/iowa-ave-seller-moving-day_6488ed00.mov"
+                  poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/iowa-ave-seller-still_f0f6ba66.webp"
+                  controls
+                  playsInline
+                  className="w-full"
+                  style={{ display: "block", background: "oklch(0.22 0.01 60)" }}
+                />
+                <div className="p-4" style={{ background: "white", borderTop: "1px solid oklch(0.88 0.02 85)" }}>
+                  <span className="text-xs font-bold" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)", textTransform: "uppercase", letterSpacing: "0.08em" }}>📹 Real Video — Moving Day</span>
+                  <p className="text-sm mt-1" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Connor greeting the seller the day he moved out. No actors. No stock footage.</p>
                 </div>
               </div>
             </div>
