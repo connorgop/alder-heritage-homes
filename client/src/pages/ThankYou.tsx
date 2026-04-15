@@ -26,9 +26,9 @@ export default function ThankYou() {
   useEffect(() => {
     if (typeof window !== "undefined" && (window as any).gtag) {
       // Google Ads conversion tracking — fires when user lands on /thank-you after form submission
-      // Account: AW-18059779523 | Conversion action: Submit lead form (ctId: 7559336525)
+      // Account: AW-18059779523 | Conversion label: do7rCPPsz5wcEMO7yaND (Contact Lead Form)
       (window as any).gtag("event", "conversion", {
-        send_to: "AW-18059779523/submit_lead_form",
+        send_to: "AW-18059779523/do7rCPPsz5wcEMO7yaND",
         value: 150.0,
         currency: "USD",
         transaction_id: Date.now().toString(),

@@ -24,9 +24,9 @@ declare global {
 // Conversion labels — replace these with your actual labels from Google Ads
 // Found in: Google Ads → Tools → Conversions → click your conversion → Tag setup
 const CONVERSION_LABELS = {
-  formSubmit: "FORM_SUBMIT_LABEL",    // e.g. "AbCdEfGhIjKlMnOp"
-  phoneClick: "PHONE_CLICK_LABEL",    // e.g. "QrStUvWxYzAbCdEf"
-  addressSubmit: "ADDRESS_SUBMIT_LABEL", // e.g. "GhIjKlMnOpQrStUv"
+  formSubmit: "do7rCPPsz5wcEMO7yaND",    // Contact Lead Form — AW-18059779523
+  phoneClick: "do7rCPPsz5wcEMO7yaND",    // Reuse same label for phone clicks (same campaign goal)
+  addressSubmit: "do7rCPPsz5wcEMO7yaND", // Reuse same label for address submissions
 };
 
 function fireConversion(label: string) {
