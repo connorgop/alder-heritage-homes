@@ -182,6 +182,18 @@ const deals = [
     quote: "I didn't think anyone would want it. Connor came out, looked at it honestly, and made me a fair offer. I finally felt like I could move on.",
     tags: ["Vacant Home", "Coarsegold", "Rural Property"],
   },
+  {
+    href: "/case-studies/ferger-ave-steve-landlord-fresno",
+    tag: "Outbid a Wholesaler",
+    tagColor: "oklch(0.35 0.15 25)",
+    city: "Fresno, CA",
+    address: "Ferger Ave, Fresno",
+    stat1: { label: "Situation", value: "Outbid Wholesaler" },
+    stat2: { label: "Buyer Type", value: "Direct — No Middleman" },
+    summary: "Steve was already working with a wholesaler when Connor stepped in with a higher direct offer. No assignment fee skimmed off the top — Steve kept more money and closed faster.",
+    quote: "Connor explained exactly why his offer was higher. Once I understood the difference, it was an easy decision.",
+    tags: ["Wholesaler vs Direct", "Fresno", "Landlord Sale"],
+  },
 ];
 
 export default function CaseStudiesIndex() {
@@ -226,7 +238,7 @@ export default function CaseStudiesIndex() {
         <div className="container">
           <div className="flex flex-wrap justify-center gap-8">
             {[
-              { value: "13", label: "Published Case Studies" },
+              { value: "14", label: "Published Case Studies" },
               { value: "6", label: "Cities Covered" },
               { value: "$500K", label: "Highest Deal" },
               { value: "5 Days", label: "Fastest Close" },

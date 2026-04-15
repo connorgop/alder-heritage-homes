@@ -1452,31 +1452,6 @@ export default function HomePage() {
       {/* ── 2.5 MINI CASH vs LISTING TEASER ── */}
       <MiniCashVsListing />
 
-      {/* ── 2.7 INSTANT CASH OFFER ESTIMATOR ── */}
-      <section className="py-16" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "oklch(0.75 0.12 42)", fontFamily: "'DM Mono', monospace" }}>Free Tool — No Obligation</span>
-              <h2 className="mt-3 text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif", lineHeight: 1.2 }}>See What Your Home Might Be Worth as a Cash Sale</h2>
-              <p className="mt-4 text-base leading-relaxed" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>Select your city, bedrooms, and condition to get an instant estimated cash offer range — based on real Central Valley market data. No address needed, no spam.</p>
-              <div className="mt-6 space-y-3">
-                {[
-                  "Based on Q1 2026 Central Valley comps",
-                  "Shows ARV, repair costs, and net offer",
-                  "Submit your address for an exact written offer",
-                ].map(t => (
-                  <div key={t} className="flex items-center gap-3 text-sm" style={{ color: "oklch(0.72 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    <span style={{ color: "oklch(0.75 0.12 42)", fontSize: "1rem" }}>✓</span> {t}
-                  </div>
-                ))}
-              </div>
-            </div>
-            <CashOfferEstimator />
-          </div>
-        </div>
-      </section>
-
       {/* ── 3. CONNOR'S MANIFESTO — THE DIRTY SECRET ── */}
       <ConnorManifesto />
 
@@ -1614,9 +1589,6 @@ export default function HomePage() {
 
       {/* ── 4. CASH OFFER VS LISTING CALCULATOR ── */}
       <CashOfferVsListingCalc />
-
-      {/* ── 3.5 COMPARABLE SALES NEAR YOU ── */}
-      <ComparableSales />
 
       {/* ── 4. SITUATION FINDER ── */}
       <section className="py-20" style={{ background: "oklch(0.97 0.015 85)" }}>
@@ -1974,6 +1946,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── 9.5 COMPARABLE SALES NEAR YOU ── */}
+      <ComparableSales />
 
       {/* ── 10. FINAL CTA + INLINE OFFER FORM ── */}
       <section className="py-24 relative overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>

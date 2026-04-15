@@ -53,7 +53,6 @@ const footerCities = [
 ];
 
 const footerCompany = [
-  { label: "How It Works", href: "/how-it-works" },
   { label: "About Connor", href: "/about" },
   { label: "Reviews", href: "/reviews" },
   { label: "Our Deals", href: "/our-deals" },
@@ -155,8 +154,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
             {/* ── Desktop nav — simplified ── */}
             <nav className="hidden lg:flex items-center gap-1">
-              <NavLink href="/how-it-works">How It Works</NavLink>
-
               {/* Your Situation dropdown — 6 items only */}
               <div className="relative group">
                 <button
@@ -256,8 +253,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {mobileOpen && (
           <div className="lg:hidden border-t overflow-y-auto" style={{ background: "white", borderColor: "oklch(0.88 0.02 85)", maxHeight: "80vh" }}>
             <div className="py-2">
-              <MobileNavLink href="/how-it-works">How It Works</MobileNavLink>
-
               {/* Situations accordion */}
               <div>
                 <button

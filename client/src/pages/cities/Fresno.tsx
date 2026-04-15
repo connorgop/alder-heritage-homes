@@ -276,6 +276,17 @@ export default function FresnoPage() {
                 summary: "Squatters broke in post-close and flooded the house. The seller walked away clean — we took on all the risk.",
                 quote: "I was terrified when I heard about the squatters. Connor told me not to worry — it was already his problem.",
               },
+              {
+                href: "/case-studies/ferger-ave-steve-landlord-fresno",
+                tag: "Outbid a Wholesaler",
+                tagColor: "oklch(0.35 0.15 25)",
+                address: "Ferger Ave, Fresno",
+                city: "Fresno, CA",
+                stat1: { label: "Situation", value: "Outbid Wholesaler" },
+                stat2: { label: "Buyer Type", value: "Direct" },
+                summary: "Steve was already working with a wholesaler. Connor came in with a higher direct offer — no middleman fee, more money in Steve's pocket.",
+                quote: "Connor explained exactly why his offer was higher. Once I understood the difference, it was an easy decision.",
+              },
             ].map((deal) => (
               <Link
                 key={deal.href}

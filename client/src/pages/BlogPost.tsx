@@ -414,6 +414,7 @@ export default function BlogPost() {
                     { label: "Armona, CA — 3 free weeks post-close", href: "/case-studies/armona-ca" },
                     { label: "Indianapolis Ave, Clovis — elderly tenants, we handled everything", href: "/case-studies/5561-indianapolis-ave-clovis" },
                     { label: "Coarsegold, CA — vacant family home, Sierra foothills", href: "/case-studies/coarsegold-ca-vacant-home" },
+                    { label: "Ferger Ave, Fresno — outbid a wholesaler, Steve the landlord", href: "/case-studies/ferger-ave-steve-landlord-fresno" },
                   ].map((cs) => (
                     <li key={cs.href}>
                       <Link href={cs.href} className="flex items-start gap-2 text-xs font-medium hover:underline" style={{ color: "oklch(0.78 0.05 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
@@ -423,7 +424,7 @@ export default function BlogPost() {
                   ))}
                 </ul>
                 <Link href="/case-studies" className="flex items-center gap-1 text-xs font-bold mt-4" style={{ color: "oklch(0.75 0.12 42)", fontFamily: "'DM Mono', monospace" }}>
-                  <ArrowRight size={11} /> All 13 Case Studies →
+                  <ArrowRight size={11} /> All 14 Case Studies →
                 </Link>
               </div>
 

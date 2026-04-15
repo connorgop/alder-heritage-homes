@@ -17,6 +17,7 @@ const DontGetWholesaled = lazy(() => import("./pages/DontGetWholesaled"));
 const CaseStudyIowaAve = lazy(() => import("./pages/case-studies/4444-iowa-ave-fresno"));
 const CaseStudyDovewood = lazy(() => import("./pages/case-studies/3346-dovewood-lane-fresno"));
 const CaseStudyFerger = lazy(() => import("./pages/case-studies/1463-n-ferger-ave-fresno"));
+const CaseStudyFergerSteve = lazy(() => import("./pages/case-studies/ferger-ave-steve-landlord-fresno"));
 const CaseStudyRoosevelt = lazy(() => import("./pages/case-studies/811-n-roosevelt-fresno"));
 const CaseStudyHurleyVisalia = lazy(() => import("./pages/case-studies/hurley-property-visalia"));
 const CaseStudyTulareStCA = lazy(() => import("./pages/case-studies/tulare-st-tulare-ca"));
@@ -102,7 +103,6 @@ const SellHouseFastModesto = lazy(() => import("./pages/SellHouseFastModesto"));
 const SanJoaquinCountyHub = lazy(() => import("./pages/SanJoaquinCountyHub"));
 const FresnoHousingMarket = lazy(() => import("./pages/FresnoHousingMarket"));
 const VisaliaHousingMarket = lazy(() => import("./pages/VisaliaHousingMarket"));
-const HowItWorks = lazy(() => import("./pages/HowItWorks"));
 const BeforeAfter = lazy(() => import("./pages/BeforeAfter"));
 const Testimonials = lazy(() => import("./pages/Testimonials"));
 const CashOfferCalculator = lazy(() => import("./pages/CashOfferCalculator"));
@@ -301,6 +301,7 @@ function Router() {
       <Route path="/case-studies/4444-iowa-ave-fresno" component={CaseStudyIowaAve} />
       <Route path="/case-studies/3346-dovewood-lane-fresno" component={CaseStudyDovewood} />
       <Route path="/case-studies/1463-n-ferger-ave-fresno" component={CaseStudyFerger} />
+      <Route path="/case-studies/ferger-ave-steve-landlord-fresno" component={CaseStudyFergerSteve} />
       <Route path="/case-studies/811-n-roosevelt-fresno" component={CaseStudyRoosevelt} />
       <Route path="/case-studies/hurley-property-visalia" component={CaseStudyHurleyVisalia} />
       <Route path="/case-studies/tulare-st-tulare-ca" component={CaseStudyTulareStCA} />
@@ -467,7 +468,7 @@ function Router() {
       <Route path="/sell-house-fast-central-valley" component={SellHouseFastCentralValley} />
       <Route path="/fresno-housing-market" component={FresnoHousingMarket} />
       <Route path="/visalia-housing-market" component={VisaliaHousingMarket} />
-      <Route path="/how-it-works" component={HowItWorks} />
+      <Route path="/how-it-works"><Redirect to="/contact" /></Route>
       <Route path="/before-after" component={BeforeAfter} />
       <Route path="/testimonials" component={Testimonials} />
       <Route path="/sell-house-fast" component={SellHouseFastHub} />
