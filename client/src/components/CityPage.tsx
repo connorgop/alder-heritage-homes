@@ -70,6 +70,60 @@ const FAST_SALE_PAGES: Record<string, string> = {
   Woodlake: "/sell-house-fast-exeter-ca",
 };
 
+function localBusinessSchema(city: string, county: string, canonicalPath: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Alder Heritage Homes",
+    "description": `We buy houses fast for cash in ${city}, ${county}. Licensed CA real estate agent DRE #02219124. No repairs, no commissions, close in 7–14 days.`,
+    "url": `https://www.alderheritagehomes.com${canonicalPath}`,
+    "telephone": "+15592818016",
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "City",
+      "name": city,
+      "containedInPlace": {
+        "@type": "AdministrativeArea",
+        "name": county
+      }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": city,
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Connor Morris",
+      "jobTitle": "Licensed CA Real Estate Agent",
+      "identifier": "DRE #02219124"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "California Real Estate License",
+      "recognizedBy": { "@type": "Organization", "name": "California Department of Real Estate" },
+      "identifier": "DRE #02219124"
+    },
+    "sameAs": [
+      "https://www.google.com/maps/place/Alder+Heritage+Homes",
+      "https://www.facebook.com/alderheritagehomes"
+    ]
+  };
+}
+
+function breadcrumbSchema(city: string, canonicalPath: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alderheritagehomes.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Cities We Serve", "item": "https://www.alderheritagehomes.com/we-buy-houses" },
+      { "@type": "ListItem", "position": 3, "name": `We Buy Houses ${city} CA`, "item": `https://www.alderheritagehomes.com${canonicalPath}` }
+    ]
+  };
+}
+
 export default function CityPage({ city, county, population, description, neighborhoods, neighborhoodLinks, faqs, stats, slug, videoEmbed, caseStudy, realDeals }: CityPageProps) {
   const fastSaleHref = FAST_SALE_PAGES[city] ?? "/sell-house-fast";
   const services = [
@@ -90,6 +144,10 @@ export default function CityPage({ city, county, population, description, neighb
         description={`Sell your ${city} home fast for cash. Get a fair offer in 24 hours. No repairs, no commissions, no fees. Licensed CA buyer DRE #02219124. Close in 7–14 days.`}
         path={canonicalPath}
       />
+      {/* LocalBusiness / RealEstateAgent structured data */}
+      <SchemaMarkup schema={localBusinessSchema(city, county, canonicalPath)} id={`local-business-${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`} />
+      {/* BreadcrumbList structured data */}
+      <SchemaMarkup schema={breadcrumbSchema(city, canonicalPath)} id={`breadcrumb-${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`} />
       {/* FAQPage structured data — auto-generated from faqs prop */}
       {faqs && faqs.length > 0 && (
         <SchemaMarkup schema={faqPageSchema(faqs)} id={`faq-${city.toLowerCase().replace(/[^a-z0-9]/g, "-")}`} />

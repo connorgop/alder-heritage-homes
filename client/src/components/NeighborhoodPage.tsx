@@ -5,6 +5,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { MapPin, ArrowRight, Phone, CheckCircle2, Home as HomeIcon } from "lucide-react";
 import { useSEO, faqSchema } from "@/hooks/useSEO";
+import SchemaMarkup from "@/components/SchemaMarkup";
 import CashOfferForm from "@/components/CashOfferForm";
 
 const PHONE = "(559) 281-8016";
@@ -48,8 +49,31 @@ export default function NeighborhoodPage({
     schema: faqSchema(faqs),
   });
 
+  const canonicalSlug = slug.startsWith('/') ? slug : '/' + slug;
+  const nbBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alderheritagehomes.com/" },
+      { "@type": "ListItem", "position": 2, "name": `We Buy Houses ${city}`, "item": `https://www.alderheritagehomes.com/we-buy-houses-${city.toLowerCase()}` },
+      { "@type": "ListItem", "position": 3, "name": `${name} Neighborhood`, "item": `https://www.alderheritagehomes.com${canonicalSlug}` }
+    ]
+  };
+  const nbLocalBusiness = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Alder Heritage Homes",
+    "description": `We buy houses fast for cash in ${name}, ${city}, CA. Licensed CA real estate agent DRE #02219124.`,
+    "url": `https://www.alderheritagehomes.com${canonicalSlug}`,
+    "telephone": "+15592818016",
+    "areaServed": { "@type": "Place", "name": `${name}, ${city}, CA` },
+    "address": { "@type": "PostalAddress", "addressLocality": city, "addressRegion": "CA", "addressCountry": "US" }
+  };
+
   return (
     <Layout>
+      <SchemaMarkup schema={nbBreadcrumb} id={`breadcrumb-nb-${slug.replace(/[^a-z0-9]/g, "-")}`} />
+      <SchemaMarkup schema={nbLocalBusiness} id={`local-business-nb-${slug.replace(/[^a-z0-9]/g, "-")}`} />
       {/* Breadcrumb */}
       <div className="py-3 px-6" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="max-w-5xl mx-auto flex items-center gap-2 text-xs" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace" }}>

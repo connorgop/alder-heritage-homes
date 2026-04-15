@@ -397,6 +397,34 @@ export default function BlogPost() {
                   <ArrowRight size={11} /> All Central Valley Cities
                 </Link>
               </div>
+              {/* Case Studies callout — internal links to case study pages */}
+              <div className="p-6 rounded-2xl" style={{ background: "oklch(0.22 0.01 60)", border: "1px solid oklch(0.30 0.02 60)" }}>
+                <h3 className="font-bold text-sm mb-1" style={{ fontFamily: "'Lora', serif", color: "oklch(0.75 0.12 42)" }}>
+                  Real Deals — See It In Action
+                </h3>
+                <p className="text-xs mb-4" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  Real addresses, real prices, real sellers.
+                </p>
+                <ul className="space-y-2">
+                  {[
+                    { label: "Iowa Ave, Fresno — $185K, 5-day close", href: "/case-studies/4444-iowa-ave-fresno" },
+                    { label: "Idlewood Circle, Hanford — outbid wholesaler", href: "/case-studies/1944-idlewood-circle-hanford" },
+                    { label: "Hurley Property, Visalia — probate + squatters", href: "/case-studies/hurley-property-visalia" },
+                    { label: "Purvis Ave, Clovis — foreclosure + hoarder home", href: "/case-studies/1648-purvis-ave-clovis" },
+                    { label: "Armona, CA — 3 free weeks post-close", href: "/case-studies/armona-ca" },
+                  ].map((cs) => (
+                    <li key={cs.href}>
+                      <Link href={cs.href} className="flex items-start gap-2 text-xs font-medium hover:underline" style={{ color: "oklch(0.78 0.05 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                        <ArrowRight size={11} className="mt-0.5 flex-shrink-0" style={{ color: "oklch(0.75 0.12 42)" }} /> {cs.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/case-studies" className="flex items-center gap-1 text-xs font-bold mt-4" style={{ color: "oklch(0.75 0.12 42)", fontFamily: "'DM Mono', monospace" }}>
+                  <ArrowRight size={11} /> All 9 Case Studies →
+                </Link>
+              </div>
+
               {related.length > 0 && (
                 <div className="p-6 rounded-2xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
                   <h3 className="font-bold text-sm mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
