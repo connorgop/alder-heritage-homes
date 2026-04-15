@@ -27,6 +27,18 @@ export default function Madera() {
         { name: "Madera Ranchos", href: "/madera-neighborhoods/north-madera", desc: "Rural residential" },
         { name: "Bonadelle Ranchos", href: "/madera-neighborhoods/south-madera", desc: "Country estates" },
       ]}
+      realDeals={[
+        {
+          href: "/case-studies/coarsegold-ca-vacant-home",
+          tag: "Vacant Family Home",
+          tagColor: "oklch(0.40 0.08 200)",
+          address: "Coarsegold, Madera County",
+          stat1: { label: "Property Type", value: "Vacant" },
+          stat2: { label: "Repairs Required", value: "None" },
+          summary: "A family home in the Sierra Nevada foothills had been sitting vacant for years. Traditional buyers passed. Connor drove out, made a fair cash offer, and helped her finally close the chapter.",
+          quote: "I didn't think anyone would want it. Connor came out, looked at it honestly, and made me a fair offer. I finally felt like I could move on.",
+        },
+      ]}
       faqs={[
         {
           q: "How fast can you buy my Madera home?",

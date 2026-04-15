@@ -412,6 +412,8 @@ export default function BlogPost() {
                     { label: "Hurley Property, Visalia — probate + squatters", href: "/case-studies/hurley-property-visalia" },
                     { label: "Purvis Ave, Clovis — foreclosure + hoarder home", href: "/case-studies/1648-purvis-ave-clovis" },
                     { label: "Armona, CA — 3 free weeks post-close", href: "/case-studies/armona-ca" },
+                    { label: "Indianapolis Ave, Clovis — elderly tenants, we handled everything", href: "/case-studies/5561-indianapolis-ave-clovis" },
+                    { label: "Coarsegold, CA — vacant family home, Sierra foothills", href: "/case-studies/coarsegold-ca-vacant-home" },
                   ].map((cs) => (
                     <li key={cs.href}>
                       <Link href={cs.href} className="flex items-start gap-2 text-xs font-medium hover:underline" style={{ color: "oklch(0.78 0.05 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
@@ -421,7 +423,7 @@ export default function BlogPost() {
                   ))}
                 </ul>
                 <Link href="/case-studies" className="flex items-center gap-1 text-xs font-bold mt-4" style={{ color: "oklch(0.75 0.12 42)", fontFamily: "'DM Mono', monospace" }}>
-                  <ArrowRight size={11} /> All 9 Case Studies →
+                  <ArrowRight size={11} /> All 13 Case Studies →
                 </Link>
               </div>
 

@@ -158,6 +158,30 @@ const deals = [
     quote: "Connor was the only real buyer in the room — and he paid me more.",
     tags: ["Wholesaler", "Kings County", "Armona"],
   },
+  {
+    href: "/case-studies/5561-indianapolis-ave-clovis",
+    tag: "Elderly Tenants",
+    tagColor: "oklch(0.38 0.06 280)",
+    city: "Clovis, CA",
+    address: "5561 Indianapolis Ave",
+    stat1: { label: "Tenants Helped", value: "2" },
+    stat2: { label: "Pressure on Tenants", value: "Zero" },
+    summary: "Two elderly tenants — one blind, one homebound. Connor handled all paperwork, took his time, and helped them find a new clean home. Closed only when they were fully ready.",
+    quote: "Connor didn't rush us. He sat down with us, explained everything, and made sure we had a place to go before we ever had to leave.",
+    tags: ["Elderly Tenants", "Clovis", "Tenant Care"],
+  },
+  {
+    href: "/case-studies/coarsegold-ca-vacant-home",
+    tag: "Vacant Family Home",
+    tagColor: "oklch(0.40 0.08 200)",
+    city: "Coarsegold, CA",
+    address: "Coarsegold, Madera County",
+    stat1: { label: "Property Type", value: "Vacant" },
+    stat2: { label: "Repairs Required", value: "None" },
+    summary: "A family home in the Sierra Nevada foothills had been sitting vacant for years. Traditional buyers passed. Connor drove out, made a fair cash offer, and helped her finally close the chapter.",
+    quote: "I didn't think anyone would want it. Connor came out, looked at it honestly, and made me a fair offer. I finally felt like I could move on.",
+    tags: ["Vacant Home", "Coarsegold", "Rural Property"],
+  },
 ];
 
 export default function CaseStudiesIndex() {
@@ -202,8 +226,8 @@ export default function CaseStudiesIndex() {
         <div className="container">
           <div className="flex flex-wrap justify-center gap-8">
             {[
-              { value: "11", label: "Published Case Studies" },
-              { value: "5", label: "Cities Covered" },
+              { value: "13", label: "Published Case Studies" },
+              { value: "6", label: "Cities Covered" },
               { value: "$500K", label: "Highest Deal" },
               { value: "5 Days", label: "Fastest Close" },
             ].map((s) => (

@@ -393,7 +393,7 @@ export default function ClovisPage() {
             </div>
             <Link href="/case-studies" className="text-sm font-bold flex items-center gap-1" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)" }}>All Case Studies →</Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link href="/case-studies/1648-purvis-ave-clovis" className="block rounded-2xl p-6 transition-all hover:-translate-y-1" style={{ background: "oklch(0.22 0.01 60)", textDecoration: "none" }}>
               <div className="flex gap-2 mb-3 flex-wrap">
                 <span className="px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: "oklch(0.45 0.15 25)", color: "white", fontFamily: "'DM Mono', monospace" }}>Foreclosure</span>
@@ -420,6 +420,20 @@ export default function ClovisPage() {
               </div>
               <p className="text-sm mb-3" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.68 0.01 60)" }}>Seller was under contract with a company claiming to be California's biggest buyer — actually a wholesaler. Connor paid more, free moving truck, 3 free weeks post-close.</p>
               <p className="text-sm italic" style={{ fontFamily: "'Lora', serif", color: "oklch(0.72 0.04 60)" }}>"Connor was the only real buyer in the room — and he paid me more."</p>
+              <div className="mt-4 text-xs font-bold uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)" }}>Read Full Story →</div>
+            </Link>
+            <Link href="/case-studies/5561-indianapolis-ave-clovis" className="block rounded-2xl p-6 transition-all hover:-translate-y-1" style={{ background: "oklch(0.22 0.01 60)", textDecoration: "none" }}>
+              <div className="flex gap-2 mb-3 flex-wrap">
+                <span className="px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: "oklch(0.38 0.06 280)", color: "white", fontFamily: "'DM Mono', monospace" }}>Elderly Tenants</span>
+                <span className="px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: "oklch(0.28 0.05 155)", color: "white", fontFamily: "'DM Mono', monospace" }}>We Handled Everything</span>
+              </div>
+              <div className="text-lg font-bold text-white mb-1" style={{ fontFamily: "'Lora', serif" }}>5561 Indianapolis Ave, Clovis</div>
+              <div className="flex gap-4 mb-3">
+                <div><div className="text-xl font-bold" style={{ color: "oklch(0.75 0.12 55)", fontFamily: "'Lora', serif" }}>2</div><div className="text-xs uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.01 60)" }}>Tenants Helped</div></div>
+                <div><div className="text-xl font-bold" style={{ color: "oklch(0.75 0.12 55)", fontFamily: "'Lora', serif" }}>Zero</div><div className="text-xs uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.01 60)" }}>Pressure on Them</div></div>
+              </div>
+              <p className="text-sm mb-3" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.68 0.01 60)" }}>Two elderly tenants — one blind, one homebound. Connor handled all paperwork, took his time, and helped them find a new clean home before closing.</p>
+              <p className="text-sm italic" style={{ fontFamily: "'Lora', serif", color: "oklch(0.72 0.04 60)" }}>"Connor didn't rush us. He made sure we had a place to go before we ever had to leave."</p>
               <div className="mt-4 text-xs font-bold uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)" }}>Read Full Story →</div>
             </Link>
           </div>
