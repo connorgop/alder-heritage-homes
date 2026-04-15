@@ -110,6 +110,30 @@ const deals = [
     quote: "I didn't know that's what they were doing. Once Connor explained it, it was obvious. I got $15,000 more.",
     tags: ["Wholesaler", "Inherited", "Tulare"],
   },
+  {
+    href: "/case-studies/1648-purvis-ave-clovis",
+    tag: "Foreclosure + Hoarder",
+    tagColor: "oklch(0.35 0.06 280)",
+    city: "Clovis, CA",
+    address: "1648 Purvis Ave",
+    stat1: { label: "Days to Close", value: "12" },
+    stat2: { label: "Moving Help", value: "Free Truck" },
+    summary: "Hoarder-condition home facing foreclosure. Bought as-is, arranged a free moving truck, closed in 12 days before the bank could act. Seller moved to her new mobile home.",
+    quote: "Connor didn't just buy it — he helped me move. I didn't have to ask. He just did it.",
+    tags: ["Foreclosure", "Hoarder", "Clovis"],
+  },
+  {
+    href: "/case-studies/armona-ca",
+    tag: "Wholesaler Exposed",
+    tagColor: "oklch(0.45 0.15 25)",
+    city: "Armona, CA",
+    address: "Armona, Kings County",
+    stat1: { label: "vs. Wholesaler", value: "More $" },
+    stat2: { label: "Free Post-Close", value: "3 Weeks" },
+    summary: "Seller was under contract with a company claiming to be California's biggest buyer — actually a wholesaler. Connor paid more, provided a free moving truck, and gave 3 free weeks post-close.",
+    quote: "Connor was the only real buyer in the room — and he paid me more.",
+    tags: ["Wholesaler", "Kings County", "Armona"],
+  },
 ];
 
 export default function CaseStudiesIndex() {
@@ -154,8 +178,8 @@ export default function CaseStudiesIndex() {
         <div className="container">
           <div className="flex flex-wrap justify-center gap-8">
             {[
-              { value: "7", label: "Published Case Studies" },
-              { value: "4", label: "Cities Covered" },
+              { value: "9", label: "Published Case Studies" },
+              { value: "5", label: "Cities Covered" },
               { value: "$225K", label: "Highest Deal" },
               { value: "5 Days", label: "Fastest Close" },
             ].map((s) => (

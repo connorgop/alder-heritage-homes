@@ -383,6 +383,49 @@ export default function ClovisPage() {
           </p>
         </div>
       </section>
+      {/* Real Deals */}
+      <section className="py-16" style={{ background: "oklch(0.97 0.015 85)", borderTop: "1px solid oklch(0.90 0.02 85)" }}>
+        <div className="container">
+          <div className="flex items-end justify-between mb-8 flex-wrap gap-4">
+            <div>
+              <div className="text-xs font-bold uppercase tracking-widest mb-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)" }}>Real Deals We've Closed</div>
+              <h2 className="text-2xl md:text-3xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>Clovis &amp; Kings County — Actual Closings</h2>
+            </div>
+            <Link href="/case-studies" className="text-sm font-bold flex items-center gap-1" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)" }}>All Case Studies →</Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link href="/case-studies/1648-purvis-ave-clovis" className="block rounded-2xl p-6 transition-all hover:-translate-y-1" style={{ background: "oklch(0.22 0.01 60)", textDecoration: "none" }}>
+              <div className="flex gap-2 mb-3 flex-wrap">
+                <span className="px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: "oklch(0.45 0.15 25)", color: "white", fontFamily: "'DM Mono', monospace" }}>Foreclosure</span>
+                <span className="px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: "oklch(0.35 0.06 280)", color: "white", fontFamily: "'DM Mono', monospace" }}>Hoarder</span>
+              </div>
+              <div className="text-lg font-bold text-white mb-1" style={{ fontFamily: "'Lora', serif" }}>1648 Purvis Ave, Clovis</div>
+              <div className="flex gap-4 mb-3">
+                <div><div className="text-xl font-bold" style={{ color: "oklch(0.75 0.12 55)", fontFamily: "'Lora', serif" }}>12 Days</div><div className="text-xs uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.01 60)" }}>to Close</div></div>
+                <div><div className="text-xl font-bold" style={{ color: "oklch(0.75 0.12 55)", fontFamily: "'Lora', serif" }}>Free Truck</div><div className="text-xs uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.01 60)" }}>Moving Help</div></div>
+              </div>
+              <p className="text-sm mb-3" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.68 0.01 60)" }}>Hoarder-condition home facing foreclosure. Bought as-is, arranged a free moving truck, closed in 12 days before the bank could act.</p>
+              <p className="text-sm italic" style={{ fontFamily: "'Lora', serif", color: "oklch(0.72 0.04 60)" }}>"Connor didn't just buy it — he helped me move. I didn't have to ask. He just did it."</p>
+              <div className="mt-4 text-xs font-bold uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)" }}>Read Full Story →</div>
+            </Link>
+            <Link href="/case-studies/armona-ca" className="block rounded-2xl p-6 transition-all hover:-translate-y-1" style={{ background: "oklch(0.22 0.01 60)", textDecoration: "none" }}>
+              <div className="flex gap-2 mb-3 flex-wrap">
+                <span className="px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: "oklch(0.45 0.15 25)", color: "white", fontFamily: "'DM Mono', monospace" }}>Wholesaler Exposed</span>
+                <span className="px-2 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>More Money</span>
+              </div>
+              <div className="text-lg font-bold text-white mb-1" style={{ fontFamily: "'Lora', serif" }}>Armona, CA — Kings County</div>
+              <div className="flex gap-4 mb-3">
+                <div><div className="text-xl font-bold" style={{ color: "oklch(0.75 0.12 55)", fontFamily: "'Lora', serif" }}>More $</div><div className="text-xs uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.01 60)" }}>vs. Wholesaler</div></div>
+                <div><div className="text-xl font-bold" style={{ color: "oklch(0.75 0.12 55)", fontFamily: "'Lora', serif" }}>3 Weeks</div><div className="text-xs uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.01 60)" }}>Free Post-Close</div></div>
+              </div>
+              <p className="text-sm mb-3" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.68 0.01 60)" }}>Seller was under contract with a company claiming to be California's biggest buyer — actually a wholesaler. Connor paid more, free moving truck, 3 free weeks post-close.</p>
+              <p className="text-sm italic" style={{ fontFamily: "'Lora', serif", color: "oklch(0.72 0.04 60)" }}>"Connor was the only real buyer in the room — and he paid me more."</p>
+              <div className="mt-4 text-xs font-bold uppercase tracking-wider" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)" }}>Read Full Story →</div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section id="get-offer" className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="max-w-2xl mx-auto px-6">
           <div className="text-center mb-8">
