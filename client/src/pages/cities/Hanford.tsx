@@ -67,14 +67,14 @@ export default function Hanford() {
       ]}
       realDeals={[
         {
-          href: "/case-studies/hurley-property-visalia",
-          tag: "Nearby Deal — Visalia",
-          tagColor: "oklch(0.38 0.06 280)",
-          address: "Hurley Property, Visalia CA",
-          stat1: { label: "Purchase Price", value: "$225K" },
-          stat2: { label: "Comps Available", value: "None" },
-          summary: "Probate estate with squatters and no comparable sales in Tulare County. We paid $225K, handled the sheriff lockout, and gave the family 30 days post-close to collect belongings.",
-          quote: "Connor made an offer without even being able to get inside. He handled every single thing.",
+          href: "/case-studies/1944-idlewood-circle-hanford",
+          tag: "4-Day Close",
+          tagColor: "oklch(0.55 0.13 42)",
+          address: "1944 Idlewood Circle, Hanford",
+          stat1: { label: "Purchase Price", value: "$220K" },
+          stat2: { label: "Days to Close", value: "4" },
+          summary: "Family burned by two wholesalers who wasted months of their time. We made an offer from photos alone, outbid the competition with a real purchase, and closed in 4 days.",
+          quote: "Are you actually going to buy it, or are you going to do what the other guys did? — Connor bought it.",
         },
       ]}
     />

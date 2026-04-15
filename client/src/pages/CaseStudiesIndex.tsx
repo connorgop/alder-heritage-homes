@@ -75,6 +75,18 @@ const deals = [
     tags: ["Squatters", "Fresno"],
   },
   {
+    href: "/case-studies/1944-idlewood-circle-hanford",
+    tag: "4-Day Close",
+    tagColor: "oklch(0.55 0.13 42)",
+    city: "Hanford, CA",
+    address: "1944 Idlewood Circle",
+    stat1: { label: "Purchase Price", value: "$220K" },
+    stat2: { label: "Days to Close", value: "4" },
+    summary: "Family burned by two wholesalers. We made an offer from photos alone, outbid the competition with a real purchase, and closed in 4 days. Renovated and sold to a new Hanford family.",
+    quote: "Are you actually going to buy it, or are you going to do what the other guys did? Connor bought it.",
+    tags: ["Fast Close", "Outbid Wholesalers", "Hanford"],
+  },
+  {
     href: "/case-studies/hurley-property-visalia",
     tag: "Probate Estate",
     tagColor: "oklch(0.38 0.06 280)",
@@ -130,8 +142,8 @@ export default function CaseStudiesIndex() {
         <div className="container">
           <div className="flex flex-wrap justify-center gap-8">
             {[
-              { value: "5", label: "Published Case Studies" },
-              { value: "2", label: "Cities Covered" },
+              { value: "6", label: "Published Case Studies" },
+              { value: "3", label: "Cities Covered" },
               { value: "$225K", label: "Highest Deal" },
               { value: "5 Days", label: "Fastest Close" },
             ].map((s) => (

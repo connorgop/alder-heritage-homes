@@ -19,6 +19,7 @@ const CaseStudyDovewood = lazy(() => import("./pages/case-studies/3346-dovewood-
 const CaseStudyFerger = lazy(() => import("./pages/case-studies/1463-n-ferger-ave-fresno"));
 const CaseStudyRoosevelt = lazy(() => import("./pages/case-studies/811-n-roosevelt-fresno"));
 const CaseStudyHurleyVisalia = lazy(() => import("./pages/case-studies/hurley-property-visalia"));
+const CaseStudyIdlewoodHanford = lazy(() => import("./pages/case-studies/1944-idlewood-circle-hanford"));
 const CaseStudiesIndex = lazy(() => import("./pages/CaseStudiesIndex"));
 const DontGetLowballed = lazy(() => import("./pages/DontGetLowballed"));
 const DontHireFriendRealtor = lazy(() => import("./pages/DontHireFriendRealtor"));
@@ -295,6 +296,7 @@ function Router() {
       <Route path="/case-studies/1463-n-ferger-ave-fresno" component={CaseStudyFerger} />
       <Route path="/case-studies/811-n-roosevelt-fresno" component={CaseStudyRoosevelt} />
       <Route path="/case-studies/hurley-property-visalia" component={CaseStudyHurleyVisalia} />
+      <Route path="/case-studies/1944-idlewood-circle-hanford" component={CaseStudyIdlewoodHanford} />
       <Route path="/resources" component={Resources} />
       <Route path="/gbp-post-templates" component={GBPTemplates} />
 
