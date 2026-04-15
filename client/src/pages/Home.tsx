@@ -629,7 +629,8 @@ function CashOfferVsListingCalc() {
 
   return (
     <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
-      <div className="container max-w-4xl">
+      <div className="container">
+        {/* Section header */}
         <div className="text-center mb-10">
           <span style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "oklch(0.55 0.13 42)" }}>
             Interactive Calculator
@@ -638,9 +639,53 @@ function CashOfferVsListingCalc() {
             Cash Offer vs. Listing — See the Real Numbers
           </h2>
           <p className="mt-3 text-white/70 max-w-xl mx-auto" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
-            Adjust the sliders to match your home and see exactly what you'd net each way.
+            Adjust the sliders to match your home and see exactly what you’d net each way.
           </p>
         </div>
+
+        {/* Two-column layout: trust points left, calculator right */}
+        <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+          {/* Left column: why cash makes sense */}
+          <div className="space-y-8">
+            {/* Key reasons */}
+            <div className="space-y-5">
+              {[
+                { icon: "⚡", title: "Close in 7 days", body: "No waiting 45–90 days for a buyer, no contingencies, no fall-throughs. Pick your closing date." },
+                { icon: "🛠️", title: "Zero repairs required", body: "We buy as-is. Don’t clean, fix, or stage anything. We handle it all after closing." },
+                { icon: "💰", title: "No commissions or fees", body: "No agent fees (5.5%), no closing costs, no staging. What we offer is what you walk away with." },
+                { icon: "📜", title: "Licensed CA agent on every deal", body: "Connor is DRE #02219124. His name is on every contract — you have legal protections most cash buyers don’t offer." },
+              ].map((item) => (
+                <div key={item.title} className="flex items-start gap-4">
+                  <div className="text-2xl flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: "oklch(0.55 0.13 42 / 0.15)", border: "1px solid oklch(0.55 0.13 42 / 0.3)" }}>
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-white text-sm mb-1" style={{ fontFamily: "'Lora', serif" }}>{item.title}</h3>
+                    <p className="text-sm leading-relaxed" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{item.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Steve proof callout */}
+            <div className="rounded-2xl p-5" style={{ background: "oklch(0.35 0.15 25 / 0.15)", border: "1px solid oklch(0.35 0.15 25 / 0.4)" }}>
+              <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "oklch(0.75 0.12 42)", fontFamily: "'DM Mono', monospace" }}>Real Example — Fresno, CA</p>
+              <p className="text-sm leading-relaxed text-white/80 mb-3" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>
+                Steve was already under contract with a wholesaler. Connor came in with a <strong className="text-white">higher direct offer</strong> — no middleman fee skimmed off the top. Steve cancelled with the wholesaler and walked away with more money.
+              </p>
+              <a href="/case-studies/ferger-ave-steve-landlord-fresno" className="text-xs font-bold underline" style={{ color: "oklch(0.75 0.12 42)", fontFamily: "'DM Mono', monospace" }}>Read Steve’s story →</a>
+            </div>
+
+            {/* Quick credential strip */}
+            <div className="flex flex-wrap gap-3">
+              {["CA DRE #02219124", "5.0 ★ Google", "14 Published Deals", "Buys with own funds"].map((c) => (
+                <span key={c} className="px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "oklch(1 0 0 / 0.06)", border: "1px solid oklch(1 0 0 / 0.15)", color: "oklch(0.75 0.02 60)", fontFamily: "'DM Mono', monospace" }}>{c}</span>
+              ))}
+            </div>
+          </div>
+
+          {/* Right column: calculator */}
+          <div className="max-w-2xl w-full">
 
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
           {/* Sliders */}
@@ -744,6 +789,8 @@ function CashOfferVsListingCalc() {
             </Link>
           </div>
         </div>
+        </div>{/* end right column */}
+        </div>{/* end two-column grid */}
       </div>
     </section>
   );
@@ -1455,6 +1502,9 @@ export default function HomePage() {
       {/* ── 3. CONNOR'S MANIFESTO — THE DIRTY SECRET ── */}
       <ConnorManifesto />
 
+      {/* ── 3.05 VISUAL PROOF — REAL PHOTOS ── */}
+      <VisualProofStrip />
+
       {/* ── 3.1 WHY WE PAY MORE — WHOLESALER VS DIRECT BUYER ── */}
       <section className="py-20" style={{ background: "oklch(0.13 0.02 60)" }}>
         <div className="container">
@@ -1720,9 +1770,6 @@ export default function HomePage() {
 
       {/* ── 7.6 RECENT DEALS ── */}
       <RecentDealsTicker />
-
-      {/* ── 7.7 VISUAL PROOF ── */}
-      <VisualProofStrip />
 
       {/* ── 8. TESTIMONIALS ── */}
       <section className="py-20 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
