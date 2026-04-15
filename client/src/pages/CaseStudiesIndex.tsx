@@ -98,6 +98,18 @@ const deals = [
     quote: "We couldn't even get inside the house. Connor made an offer anyway and handled everything.",
     tags: ["Probate", "Squatters", "Visalia"],
   },
+  {
+    href: "/case-studies/tulare-st-tulare-ca",
+    tag: "Wholesaler Exposed",
+    tagColor: "oklch(0.45 0.15 25)",
+    city: "Tulare, CA",
+    address: "Tulare St",
+    stat1: { label: "Cash Paid", value: "$215K" },
+    stat2: { label: "vs. Wholesaler", value: "+$15K" },
+    summary: "A landlord with an inherited property nearly got wholesaled by a Southern California company offering $200K. Connor paid $215K — $15K more — as a direct local buyer.",
+    quote: "I didn't know that's what they were doing. Once Connor explained it, it was obvious. I got $15,000 more.",
+    tags: ["Wholesaler", "Inherited", "Tulare"],
+  },
 ];
 
 export default function CaseStudiesIndex() {
@@ -142,8 +154,8 @@ export default function CaseStudiesIndex() {
         <div className="container">
           <div className="flex flex-wrap justify-center gap-8">
             {[
-              { value: "6", label: "Published Case Studies" },
-              { value: "3", label: "Cities Covered" },
+              { value: "7", label: "Published Case Studies" },
+              { value: "4", label: "Cities Covered" },
               { value: "$225K", label: "Highest Deal" },
               { value: "5 Days", label: "Fastest Close" },
             ].map((s) => (

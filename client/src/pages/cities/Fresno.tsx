@@ -322,6 +322,61 @@ export default function FresnoPage() {
         </div>
       </section>
 
+      {/* Why Connor vs. the Others — Competitor Comparison Table */}
+      <section className="py-20" style={{ background: "oklch(0.13 0.02 60)" }}>
+        <div className="container">
+          <div className="text-center mb-12">
+            <span className="text-xs font-bold uppercase tracking-widest" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.65 0.13 42)", letterSpacing: "0.12em" }}>Side-by-Side Comparison</span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.97 0.015 85)" }}>Why Connor vs. the Others</h2>
+            <p className="mt-4 text-base max-w-2xl mx-auto" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.68 0.02 60)" }}>Before you sign anything, compare your options. We're not the only cash buyer in Fresno — and we'll be the first to tell you that. Here's how we stack up against the two most-advertised competitors.</p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full max-w-4xl mx-auto" style={{ borderCollapse: "separate", borderSpacing: 0 }}>
+              <thead>
+                <tr>
+                  <th className="text-left py-4 px-5 text-sm" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.02 60)", background: "oklch(0.17 0.02 60)", borderRadius: "12px 0 0 0", width: "30%" }}>Feature</th>
+                  <th className="py-4 px-5 text-center" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'Lora', serif", fontSize: "1rem", fontWeight: 700, width: "23%" }}>
+                    <div>Alder Heritage</div>
+                    <div className="text-xs font-normal mt-0.5" style={{ fontFamily: "'DM Mono', monospace", opacity: 0.85 }}>Connor Morris</div>
+                  </th>
+                  <th className="py-4 px-5 text-center" style={{ background: "oklch(0.22 0.02 60)", color: "oklch(0.75 0.02 60)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.95rem", fontWeight: 700, width: "23%" }}>559 Home Buyers</th>
+                  <th className="py-4 px-5 text-center" style={{ background: "oklch(0.22 0.02 60)", color: "oklch(0.75 0.02 60)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.95rem", fontWeight: 700, borderRadius: "0 12px 0 0", width: "24%" }}>Home Helpers Group</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { feature: "Licensed CA Agent", alder: { val: "Yes — DRE #02219124", good: true }, c559: { val: "Not verified", good: false }, hhg: { val: "Not verified", good: false } },
+                  { feature: "Real End-Buyer (No Wholesaling)", alder: { val: "Buys with own funds", good: true }, c559: { val: "Assigns contracts", good: false }, hhg: { val: "Assigns contracts", good: false } },
+                  { feature: "Price Match Guarantee", alder: { val: "Match or beat any offer", good: true }, c559: { val: "None offered", good: false }, hhg: { val: "None offered", good: false } },
+                  { feature: "Published Case Studies", alder: { val: "7 deals with real addresses", good: true }, c559: { val: "None published", good: false }, hhg: { val: "None published", good: false } },
+                  { feature: "Free Broker Opinion of Value", alder: { val: "Included with every offer", good: true }, c559: { val: "Not offered", good: false }, hhg: { val: "Not offered", good: false } },
+                  { feature: "Local Central Valley Office", alder: { val: "Fresno-based, born & raised", good: true }, c559: { val: "Local", good: true }, hhg: { val: "Multi-state operation", good: false } },
+                  { feature: "Close Timeline", alder: { val: "5–14 days (your choice)", good: true }, c559: { val: "7–21 days", good: true }, hhg: { val: "14–30 days", good: false } },
+                  { feature: "Seller Pays Closing Costs", alder: { val: "No — we cover all costs", good: true }, c559: { val: "Varies", good: false }, hhg: { val: "Varies", good: false } },
+                ].map((row, i) => (
+                  <tr key={row.feature} style={{ background: i % 2 === 0 ? "oklch(0.17 0.02 60)" : "oklch(0.20 0.02 60)" }}>
+                    <td className="py-4 px-5 text-sm font-bold" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.82 0.02 60)", borderRight: "1px solid oklch(0.28 0.02 60)" }}>{row.feature}</td>
+                    <td className="py-4 px-5 text-center text-sm" style={{ background: "oklch(0.55 0.13 42 / 0.12)", borderRight: "1px solid oklch(0.55 0.13 42 / 0.3)", borderLeft: "1px solid oklch(0.55 0.13 42 / 0.3)" }}>
+                      <span className="font-bold" style={{ color: "oklch(0.85 0.12 80)", fontFamily: "'Nunito Sans', sans-serif" }}>✓ {row.alder.val}</span>
+                    </td>
+                    <td className="py-4 px-5 text-center text-sm" style={{ borderRight: "1px solid oklch(0.28 0.02 60)" }}>
+                      <span style={{ color: row.c559.good ? "oklch(0.65 0.12 145)" : "oklch(0.60 0.08 25)", fontFamily: "'Nunito Sans', sans-serif" }}>{row.c559.good ? "✓" : "✗"} {row.c559.val}</span>
+                    </td>
+                    <td className="py-4 px-5 text-center text-sm">
+                      <span style={{ color: row.hhg.good ? "oklch(0.65 0.12 145)" : "oklch(0.60 0.08 25)", fontFamily: "'Nunito Sans', sans-serif" }}>{row.hhg.good ? "✓" : "✗"} {row.hhg.val}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-center mt-6 text-xs" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.45 0.02 60)" }}>Competitor information based on publicly available data as of 2026. We encourage you to verify independently.</p>
+          <div className="mt-10 text-center">
+            <Link href="/compare-cash-buyers-fresno" className="inline-flex items-center gap-2 text-sm font-bold underline" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.65 0.13 42)" }}>Full Comparison Page →</Link>
+          </div>
+        </div>
+      </section>
+
       {/* Wholesaler Warning */}
       <section className="py-16" style={{ background: "oklch(0.55 0.13 42)" }}>
         <div className="container">

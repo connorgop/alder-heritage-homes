@@ -65,6 +65,18 @@ export default function Tulare() {
           a: "Fill out the form on this page or call (559) 281-8016. Connor will review your property and send a no-obligation cash offer within 24 hours. There's no pressure and no obligation to accept.",
         },
       ]}
+      realDeals={[
+        {
+          tag: "Wholesaler Exposed",
+          address: "Tulare St — Tulare, CA",
+          stat1: { label: "Cash Paid", value: "$215K" },
+          stat2: { label: "vs. Wholesaler", value: "+$15K" },
+          summary: "A landlord with an inherited property nearly got wholesaled by a Southern California company offering $200K. Connor paid $215K — $15K more — as a direct local buyer with no middlemen.",
+          href: "/case-studies/tulare-st-tulare-ca",
+          quote: "I didn't know that's what they were doing. Once Connor explained it, it was obvious. I got $15,000 more and dealt with someone who actually knew Tulare.",
+          tagColor: "oklch(0.45 0.15 25)",
+        },
+      ]}
     />
   );
 }
