@@ -211,6 +211,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <NavLink href="/about">About</NavLink>
               <NavLink href="/reviews">Reviews</NavLink>
               <NavLink href="/case-studies">Case Studies</NavLink>
+              <NavLink href="/compare-cash-buyers-fresno">Compare</NavLink>
             </nav>
 
             {/* Phone + Primary CTA */}
@@ -281,6 +282,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <MobileNavLink href="/about">About Connor</MobileNavLink>
               <MobileNavLink href="/reviews">Reviews</MobileNavLink>
               <MobileNavLink href="/case-studies">Case Studies</MobileNavLink>
+              <MobileNavLink href="/compare-cash-buyers-fresno">Compare Cash Buyers</MobileNavLink>
               <MobileNavLink href="/sell-house-fast-faq">FAQ</MobileNavLink>
               <MobileNavLink href="/blog">Blog</MobileNavLink>
               <MobileNavLink href="/contact">Contact</MobileNavLink>

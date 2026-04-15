@@ -1401,6 +1401,30 @@ export default function HomePage() {
       </section>
 
       {/* Trust bar moved into hero section above */}
+
+      {/* ── 2.4 AS SEEN IN / MEDIA TRUST BAR ── */}
+      <section className="py-8" style={{ background: "oklch(0.97 0.015 85)", borderBottom: "1px solid oklch(0.88 0.02 85)" }}>
+        <div className="container">
+          <div className="flex flex-col items-center gap-5">
+            <p className="text-xs font-bold uppercase tracking-widest" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.03 60)", letterSpacing: "0.15em" }}>As Seen In &amp; Trusted By</p>
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+              {[
+                { name: "ABC30 Fresno", abbr: "ABC", color: "oklch(0.35 0.15 250)" },
+                { name: "The Fresno Bee", abbr: "Fresno Bee", color: "oklch(0.30 0.12 25)" },
+                { name: "GBP Verified", abbr: "Google\nVerified", color: "oklch(0.35 0.18 145)" },
+                { name: "BBB Accredited", abbr: "BBB", color: "oklch(0.35 0.15 25)" },
+                { name: "CA DRE Licensed", abbr: "DRE\n#02219124", color: "oklch(0.28 0.05 155)" },
+              ].map((m) => (
+                <div key={m.name} className="flex flex-col items-center gap-1 opacity-70 hover:opacity-100 transition-opacity">
+                  <span className="text-lg font-black text-center leading-tight" style={{ fontFamily: "'Lora', serif", color: m.color, whiteSpace: "pre-line" }}>{m.abbr}</span>
+                  <span className="text-xs" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.02 60)", fontSize: "0.65rem" }}>{m.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── 2.5 MINI CASH vs LISTING TEASER ── */}
       <MiniCashVsListing />
 
@@ -1826,6 +1850,46 @@ export default function HomePage() {
                 Get Your Cash Offer Today <ArrowRight size={16} />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 8.8 MORE REAL DEALS GRID ── */}
+      <section className="py-16" style={{ background: "oklch(0.10 0.02 60)" }}>
+        <div className="container">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.65 0.13 42)", letterSpacing: "0.12em" }}>More Real Deals</span>
+              <h2 className="mt-2 text-2xl md:text-3xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.97 0.015 85)" }}>Every Deal. Real Address. Real Outcome.</h2>
+            </div>
+            <Link href="/case-studies" className="text-sm font-bold underline shrink-0" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.65 0.13 42)" }}>All Case Studies →</Link>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { tag: "Probate + Squatters", address: "Hurley Property — Visalia, CA", price: "$225K", days: "30", summary: "No comps. Squatters. Sheriff lockout. We still paid $225K and gave the family time after close to gather belongings.", href: "/case-studies/hurley-property-visalia", quote: "Connor handled everything — the eviction, the lockout, all of it. We just needed out.", tagColor: "oklch(0.45 0.10 200)" },
+              { tag: "Wholesaler Victims", address: "1944 Idlewood Cir — Hanford, CA", price: "$220K", days: "4", summary: "Family burned by two wholesalers. We outbid both, bought from photos only, and closed in 4 days.", href: "/case-studies/1944-idlewood-circle-hanford", quote: "We were so frustrated. Connor actually showed up and got it done.", tagColor: "oklch(0.45 0.12 42)" },
+              { tag: "OC Landlord Portfolio", address: "3346 W Dovewood Ln — Fresno, CA", price: "Above Market", days: "14", summary: "Out-of-state landlord needed to exit 3 Fresno properties. We paid above market and handled tenant relocation.", href: "/case-studies/3346-dovewood-lane-fresno", quote: "Connor paid more than I expected and handled everything remotely.", tagColor: "oklch(0.55 0.13 42)" },
+            ].map((deal) => (
+              <Link key={deal.address} href={deal.href}>
+                <div className="group h-full rounded-2xl p-6 flex flex-col gap-4 cursor-pointer transition-all hover:-translate-y-1 hover:shadow-2xl" style={{ background: "oklch(0.17 0.02 60)", border: "1px solid oklch(0.28 0.03 60)" }}>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold px-2 py-1 rounded" style={{ background: `${deal.tagColor} / 0.2`, color: deal.tagColor, fontFamily: "'DM Mono', monospace", border: `1px solid ${deal.tagColor}` }}>{deal.tag}</span>
+                    <div className="flex gap-3 text-center">
+                      <div><div className="text-lg font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.97 0.015 85)" }}>{deal.price}</div><div className="text-xs" style={{ color: "oklch(0.55 0.02 60)", fontFamily: "'DM Mono', monospace" }}>CASH</div></div>
+                      <div><div className="text-lg font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.97 0.015 85)" }}>{deal.days}</div><div className="text-xs" style={{ color: "oklch(0.55 0.02 60)", fontFamily: "'DM Mono', monospace" }}>DAYS</div></div>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold mb-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.75 0.06 42)" }}>{deal.address}</p>
+                    <p className="text-sm leading-relaxed" style={{ color: "oklch(0.68 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{deal.summary}</p>
+                  </div>
+                  <blockquote className="mt-auto rounded-xl px-4 py-3 text-sm italic" style={{ background: "oklch(0.22 0.02 60)", color: "oklch(0.75 0.02 60)", fontFamily: "'Nunito Sans', sans-serif", borderLeft: `3px solid ${deal.tagColor}` }}>
+                    “{deal.quote}”
+                  </blockquote>
+                  <span className="text-xs font-bold" style={{ color: deal.tagColor, fontFamily: "'DM Mono', monospace" }}>Read Full Story →</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
