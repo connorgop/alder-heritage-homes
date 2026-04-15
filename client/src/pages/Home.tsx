@@ -1447,28 +1447,7 @@ export default function HomePage() {
 
       {/* Trust bar moved into hero section above */}
 
-      {/* ── 2.4 AS SEEN IN / MEDIA TRUST BAR ── */}
-      <section className="py-8" style={{ background: "oklch(0.97 0.015 85)", borderBottom: "1px solid oklch(0.88 0.02 85)" }}>
-        <div className="container">
-          <div className="flex flex-col items-center gap-5">
-            <p className="text-xs font-bold uppercase tracking-widest" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.03 60)", letterSpacing: "0.15em" }}>As Seen In &amp; Trusted By</p>
-            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-              {[
-                { name: "ABC30 Fresno", abbr: "ABC", color: "oklch(0.35 0.15 250)" },
-                { name: "The Fresno Bee", abbr: "Fresno Bee", color: "oklch(0.30 0.12 25)" },
-                { name: "GBP Verified", abbr: "Google\nVerified", color: "oklch(0.35 0.18 145)" },
-                { name: "BBB Accredited", abbr: "BBB", color: "oklch(0.35 0.15 25)" },
-                { name: "CA DRE Licensed", abbr: "DRE\n#02219124", color: "oklch(0.28 0.05 155)" },
-              ].map((m) => (
-                <div key={m.name} className="flex flex-col items-center gap-1 opacity-70 hover:opacity-100 transition-opacity">
-                  <span className="text-lg font-black text-center leading-tight" style={{ fontFamily: "'Lora', serif", color: m.color, whiteSpace: "pre-line" }}>{m.abbr}</span>
-                  <span className="text-xs" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.02 60)", fontSize: "0.65rem" }}>{m.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* ── 2.5 MINI CASH vs LISTING TEASER ── */}
       <MiniCashVsListing />

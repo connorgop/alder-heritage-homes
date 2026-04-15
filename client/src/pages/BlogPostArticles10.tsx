@@ -16,7 +16,7 @@ const articleChunk10: Record<string, React.ReactNode> = {
         Osborne Homes is one of the most heavily marketed cash home buyer brands in California. If you've searched "sell my house fast Fresno," you've almost certainly seen their ads. But is Osborne Homes the right buyer for your situation — or are there better alternatives in the Fresno market?
       </p>
       <p>
-        This is an honest comparison. We're a competitor, and we'll tell you that upfront. But we'll also give you the information you need to make a smart decision — because the right buyer for your home depends on your specific situation, not on who has the biggest ad budget.
+        This is an honest comparison. We're a competitor, and we'll tell you that upfront. But we'll also give you the information you need to make a smart decision — because the right buyer for your home depends on your specific situation, not on who has the biggest ad budget. <em style={{fontSize:"0.85rem",color:"oklch(0.50 0.01 60)"}}>This post reflects publicly available information as of April 2026. Business models and practices change — always verify details directly with any buyer before signing.</em>
       </p>
 
       <h2>How Osborne Homes Works</h2>
@@ -30,7 +30,7 @@ const articleChunk10: Record<string, React.ReactNode> = {
         <li>If you accept, they open escrow and close in 7–30 days</li>
       </ol>
       <p>
-        <strong>Important:</strong> Osborne Homes operates as a wholesaler — meaning they put your home under contract and then assign that contract to a third-party investor for a fee, rather than purchasing the home with their own funds. The actual buyer of your home is someone you've never met, and Osborne collects an assignment fee in the middle. California law requires wholesalers to disclose this arrangement, but many sellers don't realize it until they're deep in the process. Always ask any buyer directly: <em>"Are you the end buyer, or will you assign this contract?"</em>
+        <strong>Something to verify:</strong> Some sellers and industry sources have reported that Osborne Homes has at times operated using a wholesale model — meaning the company puts your home under contract and then assigns that contract to a third-party investor, rather than purchasing the home directly with their own funds. We cannot confirm whether this reflects their current practice, and business models do change. California law requires any buyer using an assignment model to disclose this arrangement upfront. Before signing anything with any cash buyer, ask directly: <em>"Are you the end buyer, or will you assign this contract to someone else?"</em> A legitimate buyer will answer that question clearly.
       </p>
 
       <h2>What Sellers Say About Osborne Homes</h2>
@@ -57,7 +57,7 @@ const articleChunk10: Record<string, React.ReactNode> = {
             </tr>
           </thead>
           <tbody>
-            <tr><td className="p-3 border">Type of buyer</td><td className="p-3 border"><strong style={{color:"oklch(0.50 0.15 25)"}}>Wholesaler</strong> — assigns contracts to 3rd-party investors</td><td className="p-3 border">Direct end buyer — licensed CA agent (DRE #02219124)</td></tr>
+            <tr><td className="p-3 border">Type of buyer</td><td className="p-3 border">Reported by some sources as a wholesale model — verify directly before signing</td><td className="p-3 border">Direct end buyer — licensed CA agent (DRE #02219124)</td></tr>
             <tr><td className="p-3 border">Service area</td><td className="p-3 border">Statewide CA</td><td className="p-3 border">Central Valley focused (Fresno, Clovis, Visalia, Bakersfield)</td></tr>
             <tr><td className="p-3 border">Offer transparency</td><td className="p-3 border">Offer presented without detailed breakdown</td><td className="p-3 border">Full Broker Opinion of Value with every offer</td></tr>
             <tr><td className="p-3 border">Closing timeline</td><td className="p-3 border">7–30 days</td><td className="p-3 border">7–21 days</td></tr>
