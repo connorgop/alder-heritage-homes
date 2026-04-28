@@ -35,6 +35,7 @@ import articleChunk24 from "./BlogPostArticles24";
 import articleChunk25 from "./BlogPostArticles25";
 import articleChunk26 from "./BlogPostArticles26";
 import articleChunk27 from "./BlogPostArticles27";
+import articleChunk28 from "./BlogPostArticles28";
 
 const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk1,
@@ -64,6 +65,7 @@ const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk25,
   ...articleChunk26,
   ...articleChunk27,
+  ...articleChunk28,
 };
 
 export default function BlogPost() {
