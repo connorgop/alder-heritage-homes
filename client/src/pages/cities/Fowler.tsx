@@ -67,6 +67,18 @@ export default function Fowler() {
         { label: "Miles from Fresno", value: "15" },
       ]}
       slug="we-buy-houses-fowler"
+      realDeals={[
+        {
+          href: "/case-studies/3346-dovewood-lane-fresno",
+          tag: "Portfolio Deal",
+          tagColor: "oklch(0.35 0.12 42)",
+          address: "3346 Dovewood Ln, Fresno — 12 mi north",
+          stat1: { label: "Seller Age", value: "81" },
+          stat2: { label: "Properties Bought", value: "3 of 3" },
+          summary: "81-year-old OC landlord with three Fresno properties. We paid above-market, helped tenants relocate, and earned a 3-deal relationship built entirely on trust.",
+          quote: "He didn't lowball me. He explained everything and let me decide on my own timeline.",
+        },
+      ]}
     />
   );
 }

@@ -63,6 +63,18 @@ export default function Sanger() {
           a: "Yes. Connor Morris holds a California Real Estate License (DRE #02219124). We are a direct cash buyer — not a wholesaler, not a middleman. We purchase your home with our own funds.",
         },
       ]}
+      realDeals={[
+        {
+          href: "/case-studies/3346-dovewood-lane-fresno",
+          tag: "Portfolio Deal",
+          tagColor: "oklch(0.35 0.12 42)",
+          address: "3346 Dovewood Ln, Fresno — 15 mi west",
+          stat1: { label: "Seller Age", value: "81" },
+          stat2: { label: "Properties Bought", value: "3 of 3" },
+          summary: "81-year-old OC landlord with three Fresno properties. We paid above-market, helped tenants relocate, and earned a 3-deal relationship built entirely on trust.",
+          quote: "He didn't lowball me. He explained everything and let me decide on my own timeline.",
+        },
+      ]}
     />
   );
 }

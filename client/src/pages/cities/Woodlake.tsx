@@ -66,6 +66,18 @@ export default function Woodlake() {
           a: "No. We cover all standard closing costs. There are no agent commissions, no inspection fees, no repair credits, and no last-minute deductions. The offer we make is the amount you receive at closing.",
         },
       ]}
+      realDeals={[
+        {
+          href: "/case-studies/hurley-property-visalia",
+          tag: "Probate + Squatters",
+          tagColor: "oklch(0.35 0.12 42)",
+          address: "Hurley Property, Visalia — 15 mi west",
+          stat1: { label: "Purchase Price", value: "$225K" },
+          stat2: { label: "Post-Close Access", value: "30 Days" },
+          summary: "Probate estate with squatters, no comparable sales. We paid $225K, handled the sheriff lockout, and gave the family 30 days post-close to retrieve personal items.",
+          quote: "We couldn't even get inside the house. Connor made an offer anyway and handled everything.",
+        },
+      ]}
     />
   );
 }

@@ -63,6 +63,18 @@ export default function Selma() {
           a: "Yes. Connor Morris holds a California Real Estate License (DRE #02219124). We are a direct cash buyer — not a wholesaler, not a middleman. We buy your home with our own funds.",
         },
       ]}
+      realDeals={[
+        {
+          href: "/case-studies/armona-ca",
+          tag: "Outbid California's 'Biggest Buyer'",
+          tagColor: "oklch(0.45 0.15 25)",
+          address: "Armona, CA — 30 mi south",
+          stat1: { label: "Post-Close Move-Out Time", value: "3 Weeks Free" },
+          stat2: { label: "Moving Truck", value: "Paid by Connor" },
+          summary: "Seller had already signed with a company calling itself 'California's biggest home buyer.' Connor exposed the wholesaler contract, outbid them, and gave the seller 3 free weeks post-close.",
+          quote: "Connor explained exactly what they were doing with my contract. I had no idea.",
+        },
+      ]}
     />
   );
 }

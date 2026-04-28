@@ -63,6 +63,18 @@ export default function Dinuba() {
           a: "We are a licensed California real estate agent (DRE #02219124). We buy with our own funds — we are not a wholesaler who will assign your contract to an unknown third party. When you sell to us, you know exactly who you're selling to.",
         },
       ]}
+      realDeals={[
+        {
+          href: "/case-studies/tulare-st-tulare-ca",
+          tag: "Wholesaler Outbid",
+          tagColor: "oklch(0.45 0.15 25)",
+          address: "Tulare St, Tulare — 20 mi south",
+          stat1: { label: "Extra Cash vs. Wholesaler", value: "+$15K" },
+          stat2: { label: "Days to Close", value: "14" },
+          summary: "Landlord had already signed with a wholesaler who was planning to flip the contract. Connor outbid them, paid $15K more, and closed directly — no middleman.",
+          quote: "I didn't know that's what they were doing. Once Connor explained it, it was obvious.",
+        },
+      ]}
     />
   );
 }

@@ -48,6 +48,18 @@ export default function Parlier() {
           a: "Yes. We regularly purchase inherited and probate properties in Parlier and throughout Fresno County. If the estate is in probate, we can work with your attorney to structure the sale correctly under California probate law. If the property has already cleared probate, we can close quickly — often within 10–14 days. Many inherited Parlier homes have been sitting vacant for months, accumulating utility costs, insurance premiums, and maintenance issues. A cash sale eliminates that burden immediately.",
         },
       ]}
+      realDeals={[
+        {
+          href: "/case-studies/3346-dovewood-lane-fresno",
+          tag: "Portfolio Deal",
+          tagColor: "oklch(0.35 0.12 42)",
+          address: "3346 Dovewood Ln, Fresno — 15 mi north",
+          stat1: { label: "Seller Age", value: "81" },
+          stat2: { label: "Properties Bought", value: "3 of 3" },
+          summary: "81-year-old OC landlord with three Fresno properties. We paid above-market, helped tenants relocate, and earned a 3-deal relationship built entirely on trust.",
+          quote: "He didn't lowball me. He explained everything and let me decide on my own timeline.",
+        },
+      ]}
     />
   );
 }

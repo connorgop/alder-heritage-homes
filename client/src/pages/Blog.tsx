@@ -2840,6 +2840,42 @@ const _blogPostsRaw = [
     category: "Property Condition",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
   },
+  {
+    slug: "sell-house-fast-coarsegold-ca",
+    title: "How to Sell Your House Fast in Coarsegold, CA — 2026 Guide",
+    excerpt: "Coarsegold homes face unique challenges: well and septic issues, wildfire insurance gaps, and thin buyer pools. Here's every option available to Coarsegold homeowners who need to sell quickly in 2026.",
+    date: "April 28, 2026",
+    readTime: "7 min read",
+    category: "Seller Guides",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+  },
+  {
+    slug: "sell-house-fast-kings-county-ca",
+    title: "How to Sell Your House Fast in Kings County, CA — 2026 Guide",
+    excerpt: "Kings County's thin market and agricultural economy create unique challenges for sellers who need to move quickly. Here's everything Hanford, Lemoore, Armona, and Corcoran homeowners need to know.",
+    date: "April 28, 2026",
+    readTime: "8 min read",
+    category: "Kings County",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+  },
+  {
+    slug: "how-to-sell-inherited-house-fresno",
+    title: "How to Sell an Inherited House in Fresno, CA — Complete 2026 Guide",
+    excerpt: "From probate to stepped-up basis to choosing between listing and a cash sale — everything Fresno heirs need to know about selling an inherited property quickly and for the most money.",
+    date: "April 28, 2026",
+    readTime: "10 min read",
+    category: "Probate & Inherited",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+  },
+  {
+    slug: "sell-house-fast-porterville-ca",
+    title: "How to Sell Your House Fast in Porterville, CA — 2026 Guide",
+    excerpt: "Porterville's affordable market has a thin buyer pool for distressed properties. Whether you're dealing with repairs, tenants, or a tight timeline, here are all your options for 2026.",
+    date: "April 28, 2026",
+    readTime: "7 min read",
+    category: "Seller Guides",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 

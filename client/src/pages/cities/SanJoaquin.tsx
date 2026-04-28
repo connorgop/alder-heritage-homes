@@ -23,6 +23,18 @@ export default function SanJoaquin() {
         { q: "Do you buy homes in Tracy or Manteca?", a: "Yes. We buy throughout San Joaquin County including Tracy, Manteca, and Lathrop — areas that have seen significant growth and where homeowners sometimes need to sell quickly due to financial changes or relocation." },
         { q: "Are there any fees or commissions when selling to you?", a: "None. We pay all closing costs. The offer we make is what you receive, minus your mortgage payoff and any existing liens. No agent commissions, no repair costs, no hidden fees of any kind." },
       ]}
+      realDeals={[
+        {
+          href: "/case-studies/armona-ca",
+          tag: "Outbid a Wholesaler",
+          tagColor: "oklch(0.45 0.15 25)",
+          address: "Armona, CA — Kings County",
+          stat1: { label: "Post-Close Move-Out Time", value: "3 Weeks Free" },
+          stat2: { label: "Moving Truck", value: "Paid by Connor" },
+          summary: "Seller had already signed with a company calling itself 'California's biggest home buyer.' Connor exposed the wholesaler contract, outbid them, and gave the seller 3 free weeks post-close.",
+          quote: "Connor explained exactly what they were doing with my contract. I had no idea.",
+        },
+      ]}
     />
   );
 }

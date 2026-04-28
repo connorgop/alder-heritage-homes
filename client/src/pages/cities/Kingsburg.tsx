@@ -66,6 +66,18 @@ export default function Kingsburg() {
         { label: "Miles from Fresno", value: "25" },
       ]}
       slug="we-buy-houses-kingsburg"
+      realDeals={[
+        {
+          href: "/case-studies/tulare-st-tulare-ca",
+          tag: "Outbid a Wholesaler",
+          tagColor: "oklch(0.45 0.15 25)",
+          address: "Tulare St, Tulare — 20 mi south",
+          stat1: { label: "Extra Cash vs. Wholesaler", value: "+$15K" },
+          stat2: { label: "Days to Close", value: "14" },
+          summary: "Landlord had already signed with a wholesaler who was planning to flip the contract. Connor outbid them, paid $15K more, and closed directly — no middleman.",
+          quote: "I didn't know that's what they were doing. Once Connor explained it, it was obvious.",
+        },
+      ]}
     />
   );
 }
