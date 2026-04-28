@@ -293,6 +293,7 @@ const SiteArchitecture = lazy(() => import("./pages/SiteArchitecture"));
 const CompramosCasasFresno = lazy(() => import("./pages/CompramosCasasFresno"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 const CompetitorComparison = lazy(() => import("./pages/CompetitorComparison"));
+const CompareOptions = lazy(() => import("./pages/CompareOptions"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const SmsConsent = lazy(() => import("./pages/SmsConsent"));
@@ -707,6 +708,7 @@ function Router() {
       <Route path="/sell-my-home-fresno"><Redirect to="/sell-your-home-fresno" /></Route>
       <Route path="/buy-my-house-cash-fresno"><Redirect to="/sell-your-home-fresno" /></Route>
       <Route path="/thank-you" component={ThankYou} />
+      <Route path="/compare-options" component={CompareOptions} />
       <Route path="/compare-cash-buyers-fresno" component={CompetitorComparison} />
       <Route path="/cash-home-buyers-fresno-compare"><Redirect to="/compare-cash-buyers-fresno" /></Route>
       <Route path="/we-buy-houses-fresno-comparison"><Redirect to="/compare-cash-buyers-fresno" /></Route>

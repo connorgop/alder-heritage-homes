@@ -65,6 +65,7 @@ const footerCompany = [
   { label: "Reviews", href: "/reviews" },
   { label: "Our Deals", href: "/our-deals" },
   { label: "Before & After", href: "/before-after" },
+  { label: "Compare Your Options", href: "/compare-options" },
   { label: "Compare Cash Buyers", href: "/compare-cash-buyers" },
   { label: "Second Opinion on Offer", href: "/second-opinion" },
   { label: "Case Studies", href: "/case-studies" },
@@ -218,7 +219,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <NavLink href="/about">About</NavLink>
               <NavLink href="/reviews">Reviews</NavLink>
               <NavLink href="/case-studies">Case Studies</NavLink>
-              <NavLink href="/compare-cash-buyers-fresno">Compare</NavLink>
+              <NavLink href="/compare-options">Compare</NavLink>
               <NavLink href="/dont-get-wholesaled">⚠ Don't Get Wholesaled</NavLink>
               <NavLink href="/second-opinion">Second Opinion</NavLink>
             </nav>
@@ -289,7 +290,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <MobileNavLink href="/about">About Connor</MobileNavLink>
               <MobileNavLink href="/reviews">Reviews</MobileNavLink>
               <MobileNavLink href="/case-studies">Case Studies</MobileNavLink>
-              <MobileNavLink href="/compare-cash-buyers-fresno">Compare Cash Buyers</MobileNavLink>
+              <MobileNavLink href="/compare-options">Compare Your Options</MobileNavLink>
               <MobileNavLink href="/dont-get-wholesaled">⚠ Don't Get Wholesaled</MobileNavLink>
               <MobileNavLink href="/second-opinion">Second Opinion</MobileNavLink>
               <MobileNavLink href="/sell-house-fast-faq">FAQ</MobileNavLink>
