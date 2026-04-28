@@ -178,6 +178,7 @@ const ModestoDowntown = lazy(() => import("./pages/neighborhoods/modesto/downtow
 const FresnoPage = lazy(() => import("./pages/cities/Fresno"));
 const ClovisPage = lazy(() => import("./pages/cities/Clovis"));
 const SangerPage = lazy(() => import("./pages/cities/Sanger"));
+const CoarsegoldPage = lazy(() => import("./pages/cities/Coarsegold"));
 const SelmaPage = lazy(() => import("./pages/cities/Selma"));
 const MaderaPage = lazy(() => import("./pages/cities/Madera"));
 const VisaliaPage = lazy(() => import("./pages/cities/Visalia"));
@@ -482,6 +483,7 @@ function Router() {
       <Route path="/we-buy-houses-fresno" component={FresnoPage} />
       <Route path="/we-buy-houses-clovis" component={ClovisPage} />
       <Route path="/we-buy-houses-sanger" component={SangerPage} />
+      <Route path="/we-buy-houses-coarsegold-ca" component={CoarsegoldPage} />
       <Route path="/we-buy-houses-selma" component={SelmaPage} />
       <Route path="/we-buy-houses-madera" component={MaderaPage} />
       <Route path="/we-buy-houses-visalia" component={VisaliaPage} />

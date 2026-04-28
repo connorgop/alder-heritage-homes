@@ -46,6 +46,7 @@ const footerCities = [
   { label: "Visalia", href: "/we-buy-houses-visalia" },
   { label: "Bakersfield", href: "/we-buy-houses-bakersfield" },
   { label: "Madera", href: "/we-buy-houses-madera" },
+  { label: "Coarsegold", href: "/we-buy-houses-coarsegold-ca" },
   { label: "Hanford", href: "/we-buy-houses-hanford" },
   { label: "Stockton", href: "/we-buy-houses-stockton" },
   { label: "Modesto", href: "/we-buy-houses-modesto" },
@@ -331,6 +332,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
                 CA DRE License #02219124
               </p>
+              <a
+                href="https://g.page/r/CYkqZmmWM0NOEAE/review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 mt-2 text-xs hover:opacity-80 transition-opacity"
+                style={{ color: "oklch(0.75 0.13 75)", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                ★★★★★ Leave a Google Review
+              </a>
               <div className="mt-4 p-4 rounded-lg" style={{ background: "oklch(0.28 0.01 60)" }}>
                 <p className="text-xs mb-2" style={{ color: "oklch(0.65 0.01 60)" }}>Ready to get your offer?</p>
                 <Link href="/contact">

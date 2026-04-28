@@ -283,6 +283,96 @@ export default function Bakersfield() {
         </div>
       </section>
 
+      {/* Real Deals Near Bakersfield */}
+      <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
+        <div className="container">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+            <div>
+              <div className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>Real Transactions — Not Stock Photos</div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>Deals We've Closed in the Central Valley</h2>
+              <p className="mt-3 text-base max-w-xl" style={{ color: "oklch(0.65 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>We actively buy throughout Kern County and the surrounding region. Here are a few recent deals that show what working with us looks like.</p>
+            </div>
+            <a href="/case-studies" className="flex-shrink-0 flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold" style={{ background: "oklch(1 0 0 / 0.08)", border: "1px solid oklch(1 0 0 / 0.2)", color: "oklch(0.80 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              All 14 Case Studies <ArrowRight size={14} />
+            </a>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              {
+                href: "/case-studies/hurley-property-visalia",
+                tag: "Landlord Exit",
+                tagColor: "oklch(0.40 0.10 30)",
+                address: "Hurley Property",
+                city: "Visalia, CA",
+                stat1: { label: "Situation", value: "Tired Landlord" },
+                stat2: { label: "Result", value: "Clean Exit" },
+                summary: "Long-time Visalia landlord ready to exit. Connor handled everything — tenants, paperwork, and a fast close. No evictions required.",
+                quote: "I was done being a landlord. Connor made it easy to finally walk away.",
+              },
+              {
+                href: "/case-studies/1944-idlewood-circle-hanford",
+                tag: "Hanford Deal",
+                tagColor: "oklch(0.28 0.05 155)",
+                address: "1944 Idlewood Circle",
+                city: "Hanford, CA",
+                stat1: { label: "Location", value: "Kings County" },
+                stat2: { label: "Close", value: "Fast" },
+                summary: "Hanford property purchased as-is. Seller needed speed and certainty — no repairs, no showings, no agent fees.",
+                quote: "Exactly what I needed — fast, fair, and no drama.",
+              },
+              {
+                href: "/case-studies/tulare-st-tulare-ca",
+                tag: "Tulare Deal",
+                tagColor: "oklch(0.35 0.08 200)",
+                address: "Tulare St",
+                city: "Tulare, CA",
+                stat1: { label: "County", value: "Tulare" },
+                stat2: { label: "Process", value: "Smooth" },
+                summary: "Tulare County property purchased cash. Seller had been trying to sell for months — Connor closed in under two weeks.",
+                quote: "Two weeks from first call to cash in hand. I wish I'd called sooner.",
+              },
+            ].map((deal) => (
+              <a
+                key={deal.href}
+                href={deal.href}
+                className="group flex flex-col rounded-2xl overflow-hidden transition-all hover:-translate-y-1 hover:shadow-xl"
+                style={{ background: "oklch(0.28 0.01 60)", border: "1px solid oklch(0.35 0.01 60)", textDecoration: "none" }}
+              >
+                <div className="p-5 flex-1">
+                  <span className="inline-block px-2.5 py-1 rounded-full text-[0.65rem] font-bold uppercase tracking-wider mb-3" style={{ background: deal.tagColor, color: "white", fontFamily: "'DM Mono', monospace" }}>
+                    {deal.tag}
+                  </span>
+                  <div className="flex items-start gap-2 mb-3">
+                    <div>
+                      <div className="font-bold text-sm text-white" style={{ fontFamily: "'Lora', serif" }}>{deal.address}</div>
+                      <div className="text-xs" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'DM Mono', monospace" }}>{deal.city}</div>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 mb-4">
+                    {[deal.stat1, deal.stat2].map((s) => (
+                      <div key={s.label} className="rounded-lg p-2.5 text-center" style={{ background: "oklch(0.22 0.01 60)" }}>
+                        <div className="text-base font-bold text-white" style={{ fontFamily: "'Lora', serif" }}>{s.value}</div>
+                        <div className="text-[0.6rem] mt-0.5" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.05em" }}>{s.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-xs leading-relaxed mb-3" style={{ color: "oklch(0.60 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{deal.summary}</p>
+                  {deal.quote && (
+                    <div className="rounded-lg p-3" style={{ background: "oklch(0.22 0.01 60)", borderLeft: "3px solid oklch(0.55 0.13 42)" }}>
+                      <p className="text-xs italic" style={{ color: "oklch(0.75 0.02 60)", fontFamily: "'Lora', serif" }}>&#34;{deal.quote}&#34;</p>
+                    </div>
+                  )}
+                </div>
+                <div className="px-5 py-3 flex items-center justify-between" style={{ borderTop: "1px solid oklch(0.35 0.01 60)" }}>
+                  <span className="text-xs font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace", textTransform: "uppercase", letterSpacing: "0.06em" }}>Read Full Story</span>
+                  <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" style={{ color: "oklch(0.55 0.13 42)" }} />
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Inline Cash Offer Form CTA */}
       <section id="get-offer" className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="max-w-2xl mx-auto px-6">

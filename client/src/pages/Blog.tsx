@@ -2768,6 +2768,24 @@ const _blogPostsRaw = [
     category: "Competitor Comparison",
     image: "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80",
   },
+  {
+    slug: "how-to-sell-house-coarsegold-ca",
+    title: "How to Sell a House in Coarsegold, CA — Your Complete 2025 Guide",
+    excerpt: "Selling a home in Coarsegold is different from selling in Fresno. Thin buyer demand, well and septic systems, and vacant properties require a different approach. Here's every option available to Coarsegold homeowners in 2025.",
+    date: "April 28, 2026",
+    readTime: "8 min read",
+    category: "Seller Guides",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+  },
+  {
+    slug: "what-happens-if-you-dont-sell-vacant-house-california",
+    title: "What Happens If You Don't Sell Your Vacant House in California?",
+    excerpt: "Every month a vacant home sits, it costs you money and accumulates risk. Squatters, deterioration, code violations, and liability — here's the real financial picture and what to do about it.",
+    date: "April 28, 2026",
+    readTime: "7 min read",
+    category: "Seller Guides",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 

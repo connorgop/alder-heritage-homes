@@ -231,9 +231,20 @@ export default function FresnoPage() {
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {[
-              {
-                href: "/case-studies/4444-iowa-ave-fresno",
+              {[
+                {
+                  href: "/case-studies/lake-van-ness-fresno-500k",
+                  tag: "$500K Cash Deal",
+                  tagColor: "oklch(0.28 0.05 155)",
+                  address: "Lake Van Ness Ave",
+                  city: "Fresno, CA",
+                  stat1: { label: "Sale Price", value: "$500K" },
+                  stat2: { label: "Close Time", value: "Fast" },
+                  summary: "High-value Fresno home purchased all-cash. Seller needed speed and certainty — no financing contingencies, no appraisal delays.",
+                  quote: "Connor made a real offer on a real timeline. No games, no lowballing after the walkthrough.",
+                },
+                {
+                  href: "/case-studies/4444-iowa-ave-fresno",
                 tag: "5-Day Close",
                 tagColor: "oklch(0.28 0.05 155)",
                 address: "4444 Iowa Ave",
