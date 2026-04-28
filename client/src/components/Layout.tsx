@@ -37,6 +37,8 @@ const footerSituations = [
   { label: "Fire Damage", href: "/sell-house-fire-damage" },
   { label: "Code Violations", href: "/sell-house-code-violations-fresno" },
   { label: "Tired Landlord", href: "/tired-landlord" },
+  { label: "Sell Vacant House", href: "/sell-vacant-house-fresno" },
+  { label: "Second Opinion on Offer", href: "/second-opinion" },
   { label: "See All Situations →", href: "/sell-my-house" },
 ];
 

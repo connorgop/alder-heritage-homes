@@ -15,6 +15,7 @@ const BlogPost = lazy(() => import("./pages/BlogPost"));
 const DontGetWholesaled = lazy(() => import("./pages/DontGetWholesaled"));
 const SecondOpinion = lazy(() => import("./pages/SecondOpinion"));
 const SellIn57Days = lazy(() => import("./pages/SellIn57Days"));
+const SellVacantHouse = lazy(() => import("./pages/SellVacantHouse"));
 // Case Studies
 const CaseStudyIowaAve = lazy(() => import("./pages/case-studies/4444-iowa-ave-fresno"));
 const CaseStudyDovewood = lazy(() => import("./pages/case-studies/3346-dovewood-lane-fresno"));
@@ -338,6 +339,7 @@ function Router() {
       <Route path="/dont-get-wholesaled" component={DontGetWholesaled} />
       <Route path="/second-opinion" component={SecondOpinion} />
       <Route path="/sell-your-house-in-5-7-days-no-repairs-no-commissions-no-stress" component={SellIn57Days} />
+      <Route path="/sell-vacant-house-fresno" component={SellVacantHouse} />
       <Route path="/dont-get-lowballed" component={DontGetLowballed} />
       <Route path="/lowball-cash-offer-fresno"><Redirect to="/dont-get-lowballed" /></Route>
       <Route path="/fair-cash-offer-home"><Redirect to="/dont-get-lowballed" /></Route>
