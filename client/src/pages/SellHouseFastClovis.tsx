@@ -115,6 +115,7 @@ export default function SellHouseFastClovis() {
         { label: "Sell House Fast Fresno CA", href: "/sell-house-fast-fresno-ca" },
         { label: "Stop Foreclosure in Fresno", href: "/foreclosure-help" },
         { label: "Sell Inherited Home — Probate", href: "/probate-inherited-homes" },
+        { label: "Case Study: Clovis Divorce Settlement", href: "/case-studies/clovis-divorce-settlement" },
       ]}
     />
   );

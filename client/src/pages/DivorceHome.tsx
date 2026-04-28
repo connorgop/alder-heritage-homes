@@ -72,6 +72,8 @@ export default function DivorceHome() {
         { label: "Probate Home Sale", href: "/probate-real-estate-fresno" },
         { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
         { label: "Why Choose Us", href: "/why-choose-us" },
+        { label: "Case Study: Clovis Divorce Settlement", href: "/case-studies/clovis-divorce-settlement" },
+        { label: "Seller Education Hub", href: "/seller-education" },
       ]}
     />
   );

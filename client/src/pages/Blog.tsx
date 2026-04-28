@@ -3168,9 +3168,12 @@ export default function Blog() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: "'Lora', serif" }}>
             Fresno Home Seller Resources
           </h1>
-          <p className="text-lg max-w-xl mx-auto" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+          <p className="text-lg max-w-xl mx-auto mb-6" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
             Honest, practical guides for homeowners facing foreclosure, probate, mortgage problems, and more.
           </p>
+          <a href="/seller-education" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-colors" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
+            Browse the Seller Education Hub →
+          </a>
         </div>
       </section>
 

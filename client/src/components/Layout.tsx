@@ -52,6 +52,9 @@ const footerCities = [
   { label: "Hanford", href: "/we-buy-houses-hanford" },
   { label: "Stockton", href: "/we-buy-houses-stockton" },
   { label: "Modesto", href: "/we-buy-houses-modesto" },
+  { label: "Delano", href: "/sell-house-fast-delano-ca" },
+  { label: "Wasco", href: "/sell-house-fast-wasco-ca" },
+  { label: "Corcoran", href: "/sell-house-fast-corcoran-ca" },
   { label: "All Central Valley →", href: "/we-buy-houses-central-valley" },
 ];
 
@@ -63,6 +66,7 @@ const footerCompany = [
   { label: "Compare Cash Buyers", href: "/compare-cash-buyers" },
   { label: "Second Opinion on Offer", href: "/second-opinion" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Seller Education", href: "/seller-education" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/sell-house-fast-faq" },
   { label: "Contact", href: "/contact" },

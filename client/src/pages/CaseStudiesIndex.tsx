@@ -194,6 +194,18 @@ const deals = [
     quote: "Connor explained exactly why his offer was higher. Once I understood the difference, it was an easy decision.",
     tags: ["Wholesaler vs Direct", "Fresno", "Landlord Sale"],
   },
+  {
+    href: "/case-studies/clovis-divorce-settlement",
+    tag: "Divorce Settlement",
+    tagColor: "oklch(0.38 0.10 280)",
+    city: "Clovis, CA",
+    address: "3BR Near Clovis Unified",
+    stat1: { label: "Purchase Price", value: "$378K" },
+    stat2: { label: "Days to Close", value: "18 Days" },
+    summary: "Court-ordered divorce sale with a 30-day deadline. Connor coordinated with both attorneys, resolved an HOA lien at closing, and closed in 18 days — 12 days ahead of the court order. No repairs, no commissions.",
+    quote: "Connor was the most organized buyer I've worked with — he communicated with both attorneys and closed 12 days early. My client didn't have to think about the house once after signing.",
+    tags: ["Divorce", "Court Deadline", "Clovis"],
+  },
 ];
 
 export default function CaseStudiesIndex() {
