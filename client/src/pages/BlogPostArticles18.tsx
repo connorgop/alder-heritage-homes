@@ -97,32 +97,149 @@ const BlogPostArticles18: Record<string, React.ReactNode> = {
 
   "california-seller-disclosure-requirements-2026": (
     <div className="prose-content">
-      <h2>California Seller Disclosure Requirements 2026: Complete Guide</h2>
-      <p>California has some of the most comprehensive seller disclosure requirements in the United States. Failing to disclose known defects can expose you to significant legal liability — even after the sale closes. This guide covers everything California sellers need to know about disclosure requirements in 2026, including what must be disclosed, when, and how a cash sale simplifies the process.</p>
+      <h2>California Seller Disclosure Requirements 2026: The Complete Guide for Home Sellers</h2>
+      <p>California has some of the most comprehensive seller disclosure requirements in the United States. Failing to disclose known defects can expose you to significant legal liability — even years after the sale closes. This guide covers every disclosure form California sellers must complete in 2026, what each one requires, the new laws that took effect this year, and how a cash sale simplifies the entire process.</p>
 
-      <h3>The Transfer Disclosure Statement (TDS)</h3>
-      <p>The Transfer Disclosure Statement is California's primary disclosure document, required for most residential property sales (1–4 units). The TDS requires sellers to disclose:</p>
+      <h3>Quick Reference: Every Disclosure Form California Sellers Must Complete</h3>
+      <p>Before diving into the details, here is a complete list of the disclosure documents typically required in a California residential sale:</p>
       <ul>
-        <li>Known defects in the property's systems (roof, HVAC, plumbing, electrical, foundation)</li>
-        <li>Any known neighborhood nuisances (noise, odors, traffic)</li>
-        <li>Any pending legal actions involving the property</li>
-        <li>Any deaths on the property within the last 3 years (with some exceptions)</li>
-        <li>Any known environmental hazards (lead paint, asbestos, mold)</li>
-        <li>Any unpermitted additions or improvements</li>
+        <li><strong>Transfer Disclosure Statement (TDS)</strong> — Required for most 1–4 unit residential sales</li>
+        <li><strong>Seller Property Questionnaire (SPQ)</strong> — Supplements the TDS with additional property history questions</li>
+        <li><strong>Natural Hazard Disclosure (NHD) Report</strong> — Required for all California residential sales</li>
+        <li><strong>Lead-Based Paint Disclosure</strong> — Required for homes built before 1978 (federal law)</li>
+        <li><strong>Mello-Roos / Special Assessment Disclosure</strong> — Required if the property is in a special tax district</li>
+        <li><strong>Homeowners Association (HOA) Disclosures</strong> — Required if the property is in an HOA</li>
+        <li><strong>Water Heater and Smoke Detector Compliance Statement</strong> — Required for all sales</li>
+        <li><strong>Carbon Monoxide Detector Compliance</strong> — Required for all sales</li>
+        <li><strong>Military Ordnance Location Disclosure</strong> — Required if property is within 1 mile of a former military facility</li>
+        <li><strong>Methamphetamine Contamination Disclosure</strong> — Required if property was previously used as a meth lab</li>
+        <li><strong>Death Disclosure</strong> — Required to disclose deaths on the property within the last 3 years</li>
+        <li><strong>Earthquake Fault Zone / Seismic Hazard Zone Disclosure</strong> — Included in the NHD report</li>
+        <li><strong>Flood Zone Disclosure</strong> — Included in the NHD report</li>
+        <li><strong>Fire Hazard Severity Zone Disclosure</strong> — Included in the NHD report; increasingly important in 2026</li>
       </ul>
-      <p>The TDS must be delivered to the buyer before they sign the purchase agreement. If delivered after signing, the buyer has 3 days to rescind.</p>
 
-      <h3>Natural Hazard Disclosure (NHD)</h3>
-      <p>California requires sellers to provide a Natural Hazard Disclosure report identifying whether the property is in a special flood hazard area, fire hazard severity zone, earthquake fault zone, seismic hazard zone, or other designated hazard area. Most sellers purchase a third-party NHD report for $100–$150.</p>
+      <h3>The Transfer Disclosure Statement (TDS) — In Detail</h3>
+      <p>The Transfer Disclosure Statement (Civil Code §1102) is California's primary disclosure document, required for most residential property sales of 1–4 units. The TDS is a three-part form: Part I is completed by the seller's agent, Part II is completed by the seller, and Part III is completed by the buyer's agent after a visual inspection.</p>
+      <p>As the seller, your Part II obligations require you to disclose:</p>
+      <ul>
+        <li>Known defects in the property's major systems: roof, HVAC, plumbing, electrical, foundation, walls, windows, and doors</li>
+        <li>Any known neighborhood nuisances or conditions: noise, odors, traffic, flooding, drainage, easements, encroachments</li>
+        <li>Any pending legal actions involving the property (lawsuits, liens, code enforcement actions)</li>
+        <li>Any deaths on the property within the last 3 years (with limited exceptions for deaths related to HIV/AIDS)</li>
+        <li>Any known environmental hazards: lead paint, asbestos, mold, underground storage tanks, contaminated soil or water</li>
+        <li>Any unpermitted additions, conversions, or improvements</li>
+        <li>Any significant defects or malfunctions you are aware of</li>
+      </ul>
+      <p>The TDS must be delivered to the buyer before they sign the purchase agreement. If delivered after signing, the buyer has 3 days (if delivered in person) or 5 days (if mailed) to rescind the contract. The key legal standard is "known" — you must disclose what you actually know, but you are not required to conduct an investigation to discover unknown defects.</p>
 
-      <h3>Lead Paint Disclosure</h3>
-      <p>For homes built before 1978, federal law requires sellers to disclose known lead-based paint hazards and provide buyers with an EPA-approved pamphlet. Buyers must be given 10 days to conduct a lead paint inspection (they can waive this right).</p>
+      <h3>Seller Property Questionnaire (SPQ)</h3>
+      <p>The Seller Property Questionnaire is a companion document to the TDS that asks more detailed questions about the property's history. The SPQ covers:</p>
+      <ul>
+        <li>Insurance claims filed on the property in the last 5 years</li>
+        <li>Whether the property has ever been used for drug manufacturing</li>
+        <li>Pest and termite history</li>
+        <li>Roof history (age, repairs, leaks)</li>
+        <li>Foundation and drainage issues</li>
+        <li>Neighbor disputes or boundary issues</li>
+        <li>Whether the property is in a flight path, near a freeway, or subject to other noise sources</li>
+      </ul>
+      <p>The SPQ is not legally required in California, but it is standard practice and is included in virtually all California Association of Realtors (CAR) purchase agreements. Completing it honestly protects you from post-closing liability.</p>
 
-      <h3>How a Cash Sale Simplifies Disclosures</h3>
-      <p>When you sell to a cash buyer like Alder Heritage Homes, you still complete all required disclosures — but the process is simpler. Cash buyers buy as-is, meaning they won't use disclosure items as leverage to renegotiate the price or demand repairs. They've already factored the home's condition into their offer. There's no lender appraisal, no inspection contingency, and no 45-day escrow period during which new disclosure issues can derail the sale.</p>
+      <h3>Natural Hazard Disclosure (NHD) Report</h3>
+      <p>California requires sellers to provide a Natural Hazard Disclosure report for all residential sales. The NHD report identifies whether the property is located in any of the following designated hazard zones:</p>
+      <ul>
+        <li><strong>Special Flood Hazard Area (FEMA):</strong> Areas with a 1% annual chance of flooding</li>
+        <li><strong>Fire Hazard Severity Zone:</strong> State-designated zones based on fuel, slope, fire weather, and ember cast. In 2026, this is increasingly important — many Central Valley properties near foothills are now in elevated fire zones following CAL FIRE's 2023 remapping</li>
+        <li><strong>Earthquake Fault Zone (Alquist-Priolo):</strong> Areas within 50 feet of an active fault trace</li>
+        <li><strong>Seismic Hazard Zone:</strong> Areas subject to liquefaction or landslide during an earthquake</li>
+        <li><strong>Very High Fire Hazard Severity Zone (Local Agency):</strong> Locally designated fire zones</li>
+        <li><strong>Wildland Fire Area (State Responsibility Area):</strong> Areas where CAL FIRE has primary responsibility for fire protection</li>
+      </ul>
+      <p>Most sellers purchase a third-party NHD report from a company like JCP-LGS, Property ID, or First American for approximately $100–$150. The NHD company provides a written report and assumes liability for the accuracy of the zone determinations, protecting the seller from claims that they misidentified a hazard zone.</p>
+
+      <h3>2026 Updates: What Changed This Year</h3>
+      <p>Several disclosure-related changes took effect in California in 2025–2026 that sellers need to know:</p>
+      <ul>
+        <li><strong>Expanded Fire Hazard Disclosure:</strong> AB 38 (2019) and subsequent regulations require sellers of homes in High or Very High Fire Hazard Severity Zones to provide documentation of compliance with defensible space requirements (100-foot clearance) or disclose non-compliance. In 2026, enforcement of this requirement has increased significantly.</li>
+        <li><strong>Death Disclosure Clarification:</strong> California law requires disclosure of deaths on the property within 3 years. A 2023 clarification confirmed that this applies to all causes of death, not just violent deaths — though deaths related to HIV/AIDS remain exempt from disclosure.</li>
+        <li><strong>ADU Disclosure Requirements:</strong> With the explosion of ADU construction in California, sellers must now more carefully disclose the permit status of any ADU or JADU on the property. Unpermitted ADUs are a significant liability in 2026 as local governments have increased enforcement.</li>
+        <li><strong>Climate Risk Disclosures:</strong> While not yet legally required statewide, many buyers in 2026 are requesting climate risk reports (flood risk, wildfire risk, heat risk) as part of their due diligence. Sellers who proactively provide this information are seeing fewer inspection contingency issues.</li>
+      </ul>
+
+      <h3>Lead-Based Paint Disclosure (Homes Built Before 1978)</h3>
+      <p>Federal law (42 U.S.C. §4852d) requires sellers of homes built before 1978 to:</p>
+      <ul>
+        <li>Disclose any known lead-based paint or lead-based paint hazards in the home</li>
+        <li>Provide buyers with any available records or reports related to lead paint</li>
+        <li>Provide buyers with the EPA pamphlet "Protect Your Family from Lead in Your Home"</li>
+        <li>Give buyers a 10-day opportunity to conduct a lead paint inspection (buyers can waive this right)</li>
+      </ul>
+      <p>In the Central Valley, a significant portion of housing stock was built before 1978 — particularly in Fresno, Selma, Bakersfield, and Visalia. If your home was built before 1978, this disclosure is mandatory regardless of whether you know of any lead paint.</p>
+
+      <h3>Mello-Roos and Special Assessment Districts</h3>
+      <p>If your property is located within a Community Facilities District (CFD) or other special assessment district, California law requires you to disclose this to buyers. Mello-Roos taxes can add $1,000–$5,000+ per year to a property's tax burden, and buyers have a right to know before they commit to a purchase. Your property tax bill will show any special assessments. If you're unsure, your title company or escrow officer can identify any special districts during the escrow process.</p>
+
+      <h3>HOA Disclosures</h3>
+      <p>If your property is in a homeowners association, California Civil Code §4525 requires you to provide buyers with a comprehensive package of HOA documents, including:</p>
+      <ul>
+        <li>CC&Rs (Covenants, Conditions, and Restrictions)</li>
+        <li>Bylaws and operating rules</li>
+        <li>Current budget and reserve study</li>
+        <li>Most recent financial statements</li>
+        <li>Minutes from the last 12 months of board meetings</li>
+        <li>Any pending or threatened litigation involving the HOA</li>
+        <li>Any pending special assessments</li>
+      </ul>
+      <p>You must request these documents from the HOA management company, which typically charges $200–$500 for the package and takes 10 business days to deliver. Budget for this cost and timeline when planning your sale.</p>
+
+      <h3>Water Heater, Smoke Detector, and Carbon Monoxide Compliance</h3>
+      <p>California requires sellers to certify that the property complies with state requirements for:</p>
+      <ul>
+        <li><strong>Water heater strapping:</strong> Water heaters must be strapped to the wall to prevent tipping during an earthquake</li>
+        <li><strong>Smoke detectors:</strong> Working smoke detectors must be installed in each bedroom, outside each sleeping area, and on each floor of the home</li>
+        <li><strong>Carbon monoxide detectors:</strong> Required in all homes with an attached garage or any fuel-burning appliance</li>
+      </ul>
+      <p>These are inexpensive to comply with (smoke detectors cost $15–$30 each, CO detectors $25–$50), but failure to certify compliance can delay or derail a sale.</p>
 
       <h3>What Happens If You Don't Disclose?</h3>
-      <p>Failure to disclose known defects can result in the buyer rescinding the sale, a lawsuit for damages, and in egregious cases, fraud charges. California courts have consistently held sellers liable for non-disclosure even when the seller claims they "didn't think it was important." When in doubt, disclose. Call {PHONE} if you have questions about how disclosures work in a cash sale.</p>
+      <p>Non-disclosure in California carries serious legal consequences:</p>
+      <ul>
+        <li><strong>Rescission:</strong> The buyer can rescind the sale and demand their money back, even after closing, if they discover a material defect that was not disclosed</li>
+        <li><strong>Damages:</strong> The buyer can sue for the cost of repairs, diminution in value, and consequential damages</li>
+        <li><strong>Fraud:</strong> In cases of intentional concealment, sellers can face fraud claims with punitive damages</li>
+        <li><strong>License consequences:</strong> If you are a licensed real estate agent selling your own property, non-disclosure can result in license discipline</li>
+      </ul>
+      <p>California courts have consistently held that the "as-is" clause in a purchase agreement does not protect sellers from liability for known defects that were not disclosed. "As-is" means the buyer accepts the condition of the property as disclosed — it does not mean the seller can conceal known problems.</p>
+
+      <h3>Seller Disclosure Checklist: Before You List</h3>
+      <p>Use this checklist to prepare your disclosures before listing your California home:</p>
+      <ul>
+        <li>☐ Walk through the property and document every known defect, repair, or issue</li>
+        <li>☐ Gather all repair records, permits, and contractor invoices from your ownership period</li>
+        <li>☐ Order a Natural Hazard Disclosure report from a third-party provider</li>
+        <li>☐ If the home was built before 1978, prepare the lead paint disclosure package</li>
+        <li>☐ Check your property tax bill for Mello-Roos or special assessments</li>
+        <li>☐ If in an HOA, request the disclosure package from the management company (allow 10 business days)</li>
+        <li>☐ Verify smoke detectors, CO detectors, and water heater strapping are in compliance</li>
+        <li>☐ Check the permit history for any additions or improvements (available from your city or county building department)</li>
+        <li>☐ Review your homeowner's insurance claim history (your insurer can provide a CLUE report)</li>
+        <li>☐ Disclose any neighbor disputes, easements, or boundary issues you are aware of</li>
+      </ul>
+
+      <h3>How a Cash Sale Simplifies Disclosures</h3>
+      <p>When you sell to a cash buyer like Alder Heritage Homes, you still complete all required disclosures — but the process is dramatically simpler. Here's why:</p>
+      <ul>
+        <li><strong>No inspection contingency:</strong> Cash buyers don't require a home inspection as a condition of sale. They conduct their own walkthrough and factor the home's condition into their offer upfront.</li>
+        <li><strong>No renegotiation:</strong> Conventional buyers routinely use disclosure items and inspection findings to demand price reductions or repairs. Cash buyers don't — the offer is firm.</li>
+        <li><strong>No lender appraisal:</strong> Lenders require appraisals that can flag unpermitted work, deferred maintenance, and condition issues. Cash buyers have no lender requirements.</li>
+        <li><strong>Faster close:</strong> Without inspection contingencies, lender approval, and appraisal delays, a cash sale can close in 7–14 days vs. 45–60 days for a conventional sale.</li>
+        <li><strong>As-is purchase:</strong> You don't need to make any repairs to satisfy a lender or buyer. The home sells in its current condition.</li>
+      </ul>
+      <p>This doesn't mean you skip disclosures — you complete them honestly, just as you would in any sale. But the disclosures don't become weapons for renegotiation or reasons for the deal to fall apart.</p>
+
+      <h3>Disclosure Questions? We Can Help.</h3>
+      <p>Connor Morris is a licensed California real estate agent (DRE #02219124) who has guided hundreds of Central Valley sellers through the disclosure process. Whether you're selling conventionally or considering a cash sale, we're happy to answer your disclosure questions at no charge. Call or text {PHONE} — we'll tell you honestly what needs to be disclosed, what your options are, and whether a cash sale makes sense for your situation.</p>
     </div>
   ),
 
