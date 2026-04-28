@@ -266,6 +266,8 @@ const SellHouseFastLindsay = lazy(() => import("./pages/SellHouseFastLindsay"));
 const SellHouseFastDelano = lazy(() => import("./pages/SellHouseFastDelano"));
 const SellHouseFastWasco = lazy(() => import("./pages/SellHouseFastWasco"));
 const SellHouseFastCorcoran = lazy(() => import("./pages/SellHouseFastCorcoran"));
+const SellHouseFastMcFarland = lazy(() => import("./pages/SellHouseFastMcFarland"));
+const SellHouseFastShafter = lazy(() => import("./pages/SellHouseFastShafter"));
 const SellerEducation = lazy(() => import("./pages/SellerEducation"));
 const SellHouseFastMerced = lazy(() => import("./pages/SellHouseFastMerced"));
 const SellHouseFastLemoore = lazy(() => import("./pages/SellHouseFastLemoore"));
@@ -690,6 +692,8 @@ function Router() {
       <Route path="/sell-house-fast-delano-ca" component={SellHouseFastDelano} />
       <Route path="/sell-house-fast-wasco-ca" component={SellHouseFastWasco} />
       <Route path="/sell-house-fast-corcoran-ca" component={SellHouseFastCorcoran} />
+      <Route path="/sell-house-fast-mcfarland-ca" component={SellHouseFastMcFarland} />
+      <Route path="/sell-house-fast-shafter-ca" component={SellHouseFastShafter} />
       <Route path="/seller-education" component={SellerEducation} />
       <Route path="/sell-my-house-fast-lindsay"><Redirect to="/sell-house-fast-lindsay-ca" /></Route>
       <Route path="/cash-home-buyer-lindsay-ca"><Redirect to="/sell-house-fast-lindsay-ca" /></Route>

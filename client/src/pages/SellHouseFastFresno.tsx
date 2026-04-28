@@ -138,6 +138,11 @@ export default function SellHouseFastFresno() {
       showVacantWarning
       ctaTitle="Ready to Sell Your House Fast in Fresno?"
       ctaBody="Call (559) 281-8016 or enter your address below. We'll have a cash offer to you within 24 hours — no obligation, no pressure, no wholesalers."
+      relatedCaseStudies={[
+        { label: "Lake Van Ness Fresno — $500,000 Cash Purchase", href: "/case-studies/lake-van-ness-fresno-500k", summary: "High-end Fresno home, $500K cash offer, seller needed certainty over a financed buyer." },
+        { label: "1463 N Ferger Ave Fresno — Cash Home Sale", href: "/case-studies/1463-n-ferger-ave-fresno", summary: "Older Fresno home, deferred maintenance, fast close. FaceTime walkthrough, DocuSign, done." },
+        { label: "4-Property Landlord Portfolio — Fresno", href: "/case-studies/4-property-landlord-portfolio-fresno", summary: "Tired landlord sold all 4 Fresno rentals in one transaction. No evictions required." },
+      ]}
       relatedLinks={[
         { label: "Sell House With Mold", href: "/sell-house-mold" },
         { label: "Sell House in Foreclosure", href: "/foreclosure-help" },

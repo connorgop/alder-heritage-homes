@@ -162,6 +162,9 @@ export default function SellHouseFastHanford() {
       ]}
       ctaTitle="Ready to Sell Your House Fast in Hanford?"
       ctaBody="Call (559) 281-8016 or enter your address below. We'll have a cash offer to you within 24 hours — no obligation, no pressure, no wholesalers."
+      relatedCaseStudies={[
+        { label: "1944 Idlewood Circle Hanford — $220K, 4-Day Close", href: "/case-studies/1944-idlewood-circle-hanford", summary: "Outbid wholesalers, $220,000 cash, closed in 4 days. Hanford seller needed speed over price." },
+      ]}
       relatedLinks={[
         { label: "We Buy Houses Hanford CA", href: "/we-buy-houses-hanford" },
         { label: "Kings County Hub", href: "/kings-county" },

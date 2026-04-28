@@ -30,6 +30,7 @@ interface ServicePageProps {
   ctaTitle: string;
   ctaBody: string;
   relatedLinks?: { label: string; href: string }[];
+  relatedCaseStudies?: { label: string; href: string; summary: string }[];
   showVacantWarning?: boolean;
   slug?: string;           // canonical path, e.g. "/sell-house-mold"
   metaDescription?: string; // custom 150-char meta description
@@ -53,6 +54,7 @@ export default function ServicePage({
   ctaTitle,
   ctaBody,
   relatedLinks,
+  relatedCaseStudies,
   showVacantWarning,
   slug,
   metaDescription,
@@ -256,6 +258,31 @@ export default function ServicePage({
                 </a>
               </div>
 
+              {/* Related Case Studies */}
+              {relatedCaseStudies && relatedCaseStudies.length > 0 && (
+                <div className="p-6 rounded-2xl" style={{ background: "white", border: "2px solid oklch(0.55 0.13 42 / 0.25)" }}>
+                  <h3 className="font-bold text-sm mb-4 flex items-center gap-2" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
+                    <span style={{ color: "oklch(0.55 0.13 42)" }}>📋</span> Real Deals in This Area
+                  </h3>
+                  <ul className="space-y-4">
+                    {relatedCaseStudies.map((cs) => (
+                      <li key={cs.href}>
+                        <Link href={cs.href} className="block group">
+                          <span className="flex items-center gap-1.5 text-sm font-bold group-hover:underline" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'Lora', serif" }}>
+                            <ArrowRight size={12} /> {cs.label}
+                          </span>
+                          <span className="text-xs leading-relaxed mt-0.5 block" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                            {cs.summary}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link href="/case-studies" className="inline-flex items-center gap-1 text-xs font-bold mt-4" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
+                    View all case studies →
+                  </Link>
+                </div>
+              )}
               {/* Related links */}
               {relatedLinks && relatedLinks.length > 0 && (
                 <div className="p-6 rounded-2xl" style={{ background: "oklch(0.93 0.02 85)", border: "1px solid oklch(0.88 0.02 85)" }}>

@@ -55,6 +55,8 @@ const footerCities = [
   { label: "Delano", href: "/sell-house-fast-delano-ca" },
   { label: "Wasco", href: "/sell-house-fast-wasco-ca" },
   { label: "Corcoran", href: "/sell-house-fast-corcoran-ca" },
+  { label: "McFarland", href: "/sell-house-fast-mcfarland-ca" },
+  { label: "Shafter", href: "/sell-house-fast-shafter-ca" },
   { label: "All Central Valley →", href: "/we-buy-houses-central-valley" },
 ];
 

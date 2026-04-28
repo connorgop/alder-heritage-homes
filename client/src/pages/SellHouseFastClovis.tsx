@@ -109,6 +109,10 @@ export default function SellHouseFastClovis() {
       ]}
       ctaTitle="Get Your Clovis Cash Offer Today"
       ctaBody="Call Connor directly at (559) 281-8016 or fill out the form. No obligation, no pressure — just an honest conversation about your Clovis home and your options."
+      relatedCaseStudies={[
+        { label: "Clovis Divorce Settlement — Closed in 11 Days", href: "/case-studies/clovis-divorce-settlement", summary: "Divorcing couple, Clovis Unified area, deferred maintenance, $312,000 cash. Closed in 11 days." },
+        { label: "1648 Purvis Ave Clovis — Hoarder Home, Foreclosure", href: "/case-studies/1648-purvis-ave-clovis", summary: "Hoarder home facing foreclosure auction. Cash offer, free moving truck, closed before auction date." },
+      ]}
       relatedLinks={[
         { label: "We Buy Houses in Clovis CA", href: "/we-buy-houses-clovis" },
         { label: "Clovis North Neighborhood Guide", href: "/clovis-north" },

@@ -95,6 +95,9 @@ export default function SellHouseFastBakersfield() {
       ]}
       ctaTitle="Get a Cash Offer on Your Bakersfield Home"
       ctaBody="Call us at (559) 281-8016 or submit your address below. We'll text you a fair cash offer within 24 hours — no repairs needed, no commissions, no obligation."
+      relatedCaseStudies={[
+        { label: "Bakersfield Inherited Duplex — Closed in 16 Days", href: "/case-studies/bakersfield-inherited-duplex", summary: "Two heirs, one duplex, deferred maintenance, $285,000 cash. Closed in 16 days." },
+      ]}
       relatedLinks={[
         { label: "We Buy Houses Bakersfield", href: "/we-buy-houses-bakersfield" },
         { label: "Sell House Fast Fresno CA", href: "/sell-house-fast-fresno-ca" },

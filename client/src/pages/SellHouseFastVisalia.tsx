@@ -132,6 +132,9 @@ export default function SellHouseFastVisalia() {
       ]}
       ctaTitle="Get Your Visalia Cash Offer Today"
       ctaBody="Call Connor directly at (559) 281-8016 or fill out the form. No obligation, no pressure — just an honest conversation about your Visalia home and your options."
+      relatedCaseStudies={[
+        { label: "Visalia Probate Home With Squatters — $225K Cash", href: "/case-studies/hurley-property-visalia", summary: "Probate property with squatters in Visalia. $225,000 cash offer, time after close to collect belongings." },
+      ]}
       relatedLinks={[
         { label: "We Buy Houses in Visalia CA", href: "/we-buy-houses-visalia" },
         { label: "Sell House Fast Fresno CA", href: "/sell-house-fast-fresno-ca" },

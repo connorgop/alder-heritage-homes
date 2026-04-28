@@ -74,6 +74,9 @@ export default function SellHouseFastTulare() {
       }}
       ctaTitle="Ready to Sell Your Tulare County Home?"
       ctaBody="Call us today or submit your property online. We'll have a fair cash offer in your hands within 24 hours — no obligation, no pressure, no fees."
+      relatedCaseStudies={[
+        { label: "Tulare Landlord Escaped Wholesaler — Got $15K More", href: "/case-studies/tulare-st-tulare-ca", summary: "Tulare landlord was about to sign with a wholesaler. We beat the offer by $15,000 and closed faster." },
+      ]}
       relatedLinks={[
         { label: "We Buy Houses in Visalia", href: "/we-buy-houses-visalia" },
         { label: "Sell House Fast in Visalia", href: "/sell-house-fast-visalia-ca" },
