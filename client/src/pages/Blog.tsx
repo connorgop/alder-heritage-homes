@@ -3092,6 +3092,54 @@ const _blogPostsRaw = [
     category: "City Guide",
     image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
   },
+  {
+    slug: "california-cash-buyer-red-flags",
+    title: "California Cash Buyer Red Flags: How to Avoid Wholesalers and Scams",
+    excerpt: "Learn the 10 red flags that identify wholesalers, scammers, and predatory cash buyers. Protect yourself with this complete guide.",
+    category: "Consumer Warning",
+    date: "2026-04-28",
+    author: "Connor Morris"
+  },
+  {
+    slug: "selling-house-with-tax-lien-california",
+    title: "Can You Sell a House With a Tax Lien in California? Yes — Here's How",
+    excerpt: "Tax liens don't prevent sales, but they complicate the process. Learn how to sell with a tax lien and why cash buyers are your best option.",
+    category: "Legal & Probate",
+    date: "2026-04-28",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-after-job-loss-california",
+    title: "Sell Your House After Job Loss in California: Fast Cash Options",
+    excerpt: "Job loss creates financial pressure. Discover why a cash sale is often the best option when you need liquidity fast.",
+    category: "Relocation",
+    date: "2026-04-28",
+    author: "Connor Morris"
+  },
+  {
+    slug: "selling-rental-property-with-tenant-problems",
+    title: "Selling a Rental Property With Tenant Problems: Cash Buyer Guide",
+    excerpt: "Problem tenants? Learn how to exit a rental property quickly without eviction by selling to a cash buyer.",
+    category: "Landlord",
+    date: "2026-04-28",
+    author: "Connor Morris"
+  },
+  {
+    slug: "selling-house-with-code-violations-california",
+    title: "Selling a House With Code Violations in California: Cash Buyer Options",
+    excerpt: "Code violations block conventional sales. Discover how cash buyers can close with violations in place.",
+    category: "Code Violations",
+    date: "2026-04-28",
+    author: "Connor Morris"
+  },
+  {
+    slug: "selling-house-with-judgment-lien-california",
+    title: "Selling a House With a Judgment Lien in California: What You Need to Know",
+    excerpt: "Judgment liens must be paid at closing. Learn how to sell with a judgment lien and why cash buyers make it simple.",
+    category: "Legal & Probate",
+    date: "2026-04-28",
+    author: "Connor Morris"
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
