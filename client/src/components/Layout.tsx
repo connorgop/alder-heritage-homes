@@ -57,6 +57,9 @@ const footerCities = [
   { label: "Corcoran", href: "/sell-house-fast-corcoran-ca" },
   { label: "McFarland", href: "/sell-house-fast-mcfarland-ca" },
   { label: "Shafter", href: "/sell-house-fast-shafter-ca" },
+  { label: "Sanger", href: "/sell-house-fast-sanger-ca" },
+  { label: "Reedley", href: "/sell-house-fast-reedley-ca" },
+  { label: "Kingsburg", href: "/sell-house-fast-kingsburg-ca" },
   { label: "All Central Valley →", href: "/we-buy-houses-central-valley" },
 ];
 
