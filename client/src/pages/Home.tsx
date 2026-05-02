@@ -126,6 +126,10 @@ const homepageFAQs = [
     q: "What's your Price Match Guarantee?",
     a: "We offer the highest cash offers in Fresno and the Central Valley. If you have a competing offer, we will match it or beat it — guaranteed. And unlike most companies, we won't ask for a price reduction at the last second. We close escrow faster than anyone else, so you get your cash sooner.",
   },
+  {
+    q: "Is selling off-market for cash my only option?",
+    a: "No. I partner with the best broker in Fresno. If you want, I will have my broker partner provide you with a free Broker Opinion of Value and a traditional listing analysis. You will have TWO real options: sell off-market for cash to me, or list on the MLS with professional representation. But here is the thing — if you choose to sell off-market for cash to me, I will pay you MORE than you will get from any other buyer. You deserve to know all your options.",
+  },
 ];
 
 const situations = [

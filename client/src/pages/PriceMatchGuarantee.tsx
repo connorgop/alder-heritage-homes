@@ -138,7 +138,61 @@ export default function PriceMatchGuarantee() {
         </div>
       </section>
 
-      {/* Why This Matters */}
+      {/* Broker Partnership */}
+      <section className="py-20 bg-white border-t-4 border-green-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold font-serif mb-12 text-gray-900">
+            Your Options Matter — We Want You to Decide
+          </h2>
+
+          <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 border-2 border-green-600 mb-8">
+            <h3 className="text-2xl font-bold text-green-700 mb-6">I Partner With the Best Broker in Fresno</h3>
+            <p className="text-gray-800 text-lg mb-6">
+              Here's what separates me from every other cash buyer: <strong>I actually want what's best for YOU, not just what's best for me.</strong>
+            </p>
+
+            <div className="space-y-4">
+              <p className="text-gray-800">
+                If you want, I will have my broker partner provide you with a <strong>free Broker Opinion of Value</strong> and a <strong>traditional listing analysis</strong>. You'll get to see both options side by side:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 my-6">
+                <div className="bg-white rounded-lg p-6 border-l-4 border-amber-600">
+                  <h4 className="font-bold text-amber-700 mb-3 text-lg">Option 1: Sell Off-Market for Cash</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>✓ Close in 5–7 days</li>
+                    <li>✓ No inspections or appraisals</li>
+                    <li>✓ No contingencies</li>
+                    <li>✓ Certainty (no buyer falling through)</li>
+                    <li>✓ Sell as-is (no repairs needed)</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-6 border-l-4 border-blue-600">
+                  <h4 className="font-bold text-blue-700 mb-3 text-lg">Option 2: List on the MLS</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>✓ Potentially higher sale price</li>
+                    <li>✓ Professional marketing</li>
+                    <li>✓ Access to all buyers</li>
+                    <li>✗ 30–90 day closing timeline</li>
+                    <li>✗ Buyer contingencies & inspections</li>
+                  </ul>
+                </div>
+              </div>
+
+              <p className="text-gray-800 font-semibold bg-white rounded-lg p-4 border-l-4 border-green-600">
+                <strong>Here's the thing:</strong> If you choose to sell off-market for cash to me, I will pay you MORE than you'll get from any other buyer. I'm not a wholesaler. I have the capital. I can afford to pay top dollar because I'm buying it for myself, not trying to flip it to someone else.
+              </p>
+
+              <p className="text-gray-800">
+                You deserve to know all your options. Call me. Let's talk about what makes sense for YOUR situation. If a traditional listing is better for you, I'll say so. If a cash sale to me is better, I'll show you why. But you get to decide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            {/* Why This Matters */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold font-serif mb-12 text-gray-900">
