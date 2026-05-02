@@ -66,6 +66,7 @@ const footerCompany = [
   { label: "Our Deals", href: "/our-deals" },
   { label: "Before & After", href: "/before-after" },
   { label: "Compare Your Options", href: "/compare-options" },
+  { label: "Price Match Guarantee", href: "/price-match-guarantee" },
   { label: "Compare Cash Buyers", href: "/compare-cash-buyers" },
   { label: "Second Opinion on Offer", href: "/second-opinion" },
   { label: "Case Studies", href: "/case-studies" },

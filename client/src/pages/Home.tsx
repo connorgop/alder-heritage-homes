@@ -122,6 +122,10 @@ const homepageFAQs = [
     q: "Are there any fees or commissions?",
     a: "No agent commissions, no listing fees, no closing cost surprises. We cover standard seller-side closing costs. The offer we make is the amount you receive at closing, minus any outstanding mortgage payoff, liens, or back taxes.",
   },
+  {
+    q: "What's your Price Match Guarantee?",
+    a: "We offer the highest cash offers in Fresno and the Central Valley. If you have a competing offer, we will match it or beat it — guaranteed. And unlike most companies, we won't ask for a price reduction at the last second. We close escrow faster than anyone else, so you get your cash sooner.",
+  },
 ];
 
 const situations = [
@@ -264,9 +268,17 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <div className="mb-6 flex items-center gap-2">
-            <Award size={20} className="text-amber-400" />
-            <span className="text-sm font-semibold text-amber-400 uppercase tracking-wider">Licensed DRE #02219124</span>
+          <div className="mb-6 flex flex-col gap-3">
+            <div className="flex items-center gap-2">
+              <Award size={20} className="text-amber-400" />
+              <span className="text-sm font-semibold text-amber-400 uppercase tracking-wider">Licensed DRE #02219124</span>
+            </div>
+            <div className="inline-block bg-gradient-to-r from-green-400 to-emerald-400 text-gray-900 px-4 py-2 rounded-lg font-bold text-sm">
+              ✓ Highest Cash Offers in Fresno/Central Valley
+            </div>
+            <div className="inline-block bg-gradient-to-r from-amber-300 to-yellow-300 text-gray-900 px-4 py-2 rounded-lg font-bold text-sm">
+              ✓ Price Match Guarantee — We Beat Any Offer & Close Faster
+            </div>
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight font-serif">
@@ -362,6 +374,85 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-lg mb-2">Fair Offers</h3>
               <p className="text-sm text-gray-600">Free Broker Opinion of Value included</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================
+          WHOLESALER WARNING — Critical Consumer Alert
+          ============================================================ */}
+      <section className="py-16 bg-gradient-to-r from-red-50 to-orange-50 border-t-4 border-red-500">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-xl shadow-lg p-8 border-l-4 border-red-600">
+            <div className="flex gap-4 mb-6 items-start">
+              <AlertTriangle size={32} className="text-red-600 flex-shrink-0 mt-1" />
+              <h2 className="text-3xl md:text-4xl font-bold text-red-700 font-serif">WARNING: 99% of Cash Buyers Are Wholesalers</h2>
+            </div>
+
+            <div className="space-y-6 text-gray-800">
+              <p className="text-lg font-semibold">
+                If you're talking to a "cash buyer" company, here's what's really happening:
+              </p>
+
+              <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-500">
+                <h3 className="font-bold text-red-700 mb-3 text-lg">The Wholesaling Scam:</h3>
+                <ol className="space-y-3 list-decimal list-inside text-gray-700">
+                  <li><strong>They "tie up" your home</strong> with a contract that says "and/or assignee"</li>
+                  <li><strong>They DON'T have money</strong> to actually buy it</li>
+                  <li><strong>They go find a REAL buyer</strong> (usually me or another investor)</li>
+                  <li><strong>They assign the contract</strong> to that buyer for a $10K-$50K "assignment fee"</li>
+                  <li><strong>YOU get less money</strong> because the wholesaler took their cut</li>
+                  <li><strong>YOU think you sold it</strong>, but really you just gave them a commission to find a buyer</li>
+                </ol>
+              </div>
+
+              <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-600">
+                <h3 className="font-bold text-green-700 mb-3 text-lg">Why I Know This:</h3>
+                <p className="mb-3">
+                  <strong>I am the largest independent single-family home buyer in the Central Valley.</strong> My phone and email get blasted DAILY with wholesalers trying to assign me contracts from their sellers. I see it constantly.
+                </p>
+                <p>
+                  <strong>Every single competitor who contacts me is a wholesaler.</strong> They don't have capital. They don't buy homes. They just "tie them up" and try to sell the contract to me.
+                </p>
+              </div>
+
+              <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <h3 className="font-bold text-blue-700 mb-3 text-lg">How to Know If You're Talking to a Wholesaler:</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>✗ Their contract says "and/or assignee" (RED FLAG)</li>
+                  <li>✗ They can't provide proof of funds within 24 hours</li>
+                  <li>✗ They take 30+ days to close (they're looking for a buyer)</li>
+                  <li>✗ They ask for a price reduction at the last second</li>
+                  <li>✗ They're not a licensed real estate agent</li>
+                  <li>✗ They won't give you a Broker Opinion of Value</li>
+                </ul>
+              </div>
+
+              <div className="bg-amber-50 rounded-lg p-6 border-l-4 border-amber-600">
+                <h3 className="font-bold text-amber-700 mb-3 text-lg">How to Know If You're Talking to a REAL Buyer (Like Me):</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>✓ Licensed California real estate agent (DRE #02219124)</li>
+                  <li>✓ Proof of funds within 24 hours (not 30 days)</li>
+                  <li>✓ Close in 5–7 days (we have the money)</li>
+                  <li>✓ No "and/or assignee" language</li>
+                  <li>✓ Free Broker Opinion of Value included</li>
+                  <li>✓ No price reductions at closing</li>
+                  <li>✓ 700+ homes purchased since 2008</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-r from-amber-100 to-orange-100 rounded-lg p-6 border-2 border-amber-600">
+                <p className="text-lg font-bold text-amber-900 mb-3">
+                  🔍 Want Proof Your "Buyer" Is a Wholesaler?
+                </p>
+                <p className="text-gray-800 mb-4">
+                  Call me at <span className="font-bold text-amber-700">{PHONE}</span>. Show me their contract or tell me their company name. I'll tell you exactly if they're a wholesaler and show you proof that they've contacted me trying to assign contracts.
+                </p>
+                <p className="text-sm text-gray-700">
+                  I get contacted by wholesalers every single day. I can usually identify them within 30 seconds.
+                </p>
+              </div>
             </div>
           </div>
         </div>
