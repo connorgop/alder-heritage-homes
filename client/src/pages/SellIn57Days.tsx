@@ -21,10 +21,10 @@ const schema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Can you really sell a house in 5–7 days with no repairs?",
+      "name": "Can you really sell a house in 3 days with no repairs?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Alder Heritage Homes purchases homes in as-is condition — no repairs, no cleaning, no showings. Once you accept our cash offer, we can close in as little as 5–7 days because we pay with our own funds and don't need bank financing or appraisals."
+        "text": "Yes. Alder Heritage Homes purchases homes in as-is condition — no repairs, no cleaning, no showings. Once you accept our cash offer, we can close in as little as 3 days because we pay with our own funds and don't need bank financing or appraisals."
       }
     },
     {
@@ -70,7 +70,7 @@ const steps = [
   {
     number: "03",
     title: "Pick your closing date",
-    desc: "As fast as 5–7 days, or whenever works for you. We work around your schedule.",
+    desc: "As fast as 3 days, or whenever works for you. We work around your schedule.",
     icon: Clock,
   },
   {
@@ -82,7 +82,7 @@ const steps = [
 ];
 
 const comparisons = [
-  { label: "Closing timeline", cash: "5–7 days", listing: "45–90 days" },
+  { label: "Closing timeline", cash: "3 days", listing: "45–90 days" },
   { label: "Agent commissions", cash: "$0", listing: "5–6% of sale price" },
   { label: "Repairs required", cash: "None — as-is", listing: "Often $10K–$40K+" },
   { label: "Closing costs", cash: "We pay them", listing: "Seller typically pays" },
@@ -103,7 +103,7 @@ export default function SellIn57Days() {
     <Layout>
       <PageMeta
         title="Sell Your House in 5–7 Days | No Repairs, No Commissions, No Stress | Alder Heritage Homes"
-        description="Sell your Central Valley home in as little as 5–7 days. No repairs, no agent commissions, no closing costs. Cash offer in 24 hours. Call (559) 281-8016."
+        description="Sell your Central Valley home in as little as 3 days. No repairs, no agent commissions, no closing costs. Cash offer in 24 hours. Call (559) 281-8016."
         path="/sell-your-house-in-5-7-days-no-repairs-no-commissions-no-stress"
       />
       <SchemaMarkup schema={schema} id="sell-57-days-faq" />
@@ -120,7 +120,7 @@ export default function SellIn57Days() {
             <span className="text-[#C4622D]">No Repairs. No Commissions.<br />No Stress.</span>
           </h1>
           <p className="text-lg text-[#D4C5A9] max-w-2xl mb-8 leading-relaxed">
-            We buy homes throughout the Central Valley in any condition — cash in hand in as little as 5–7 days.
+            We buy homes throughout the Central Valley in any condition — cash in hand in as little as 3 days.
             No agent fees, no repair demands, no showings. Just a fair offer and a smooth close.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "How fast can you close in Bakersfield?",
-    a: "We can close in as little as 5–7 days for a cash sale, or on whatever timeline works for you. If you need 30, 60, or 90 days, we can accommodate that too.",
+    a: "We can close in as little as 3 days for a cash sale, or on whatever timeline works for you. If you need 30, 60, or 90 days, we can accommodate that too.",
   },
   {
     q: "What types of Bakersfield homes do you buy?",
@@ -45,7 +45,7 @@ const neighborhoods = [
 export default function Bakersfield() {
   useSEO({
     title: "We Buy Houses in Bakersfield CA — Cash Offers, Fast Close",
-    description: "Alder Heritage Homes buys houses in Bakersfield and Kern County for cash. Licensed CA Agent (DRE #02219124). No wholesaling. Free Broker Opinion of Value. Close in 5–7 days. Also connecting sellers with top listing agents.",
+    description: "Alder Heritage Homes buys houses in Bakersfield and Kern County for cash. Licensed CA Agent (DRE #02219124). No wholesaling. Free Broker Opinion of Value. Close in 3 days. Also connecting sellers with top listing agents.",
     canonical: "/we-buy-houses-bakersfield",
     schema: faqSchema(faqs),
   });
@@ -67,7 +67,7 @@ export default function Bakersfield() {
               Sell Your Bakersfield Home for Cash — Or List It With the Right Agent
             </h1>
             <p className="text-lg mb-8 leading-relaxed" style={{ color: "oklch(0.80 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Alder Heritage Homes buys houses in Bakersfield and throughout Kern County. Cash offer in 24 hours, close in 5–7 days. And if a cash sale isn't right for you, we'll connect you with the top listing agents in our network — not your friend who just got licensed.
+              Alder Heritage Homes buys houses in Bakersfield and throughout Kern County. Cash offer in 24 hours, close in 3 days. And if a cash sale isn't right for you, we'll connect you with the top listing agents in our network — not your friend who just got licensed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#get-offer" className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
@@ -110,7 +110,7 @@ export default function Bakersfield() {
                   </div>
                   <ul className="space-y-2">
                     {[
-                      "Close in 5–7 days or your timeline",
+                      "Close in 3 days or your timeline",
                       "No repairs, no cleaning, no showings",
                       "No agent commissions",
                       "Any condition, any situation",
@@ -179,7 +179,7 @@ export default function Bakersfield() {
                   { num: "1", title: "Call or Fill Out the Form", desc: "Tell Connor about your Bakersfield property and your situation. Takes 5 minutes." },
                   { num: "2", title: "Get a Cash Offer or Referral", desc: "Within 24 hours, you'll have a written cash offer — plus an honest recommendation on whether a listing might net you more." },
                   { num: "3", title: "Choose Your Path", desc: "Cash sale, listing referral, or rent-back. You decide. No pressure, no obligation." },
-                  { num: "4", title: "Close on Your Timeline", desc: "5–7 days for cash, or whatever timeline works for you. Connor handles all paperwork." },
+                  { num: "4", title: "Close on Your Timeline", desc: "3 days for cash, or whatever timeline works for you. Connor handles all paperwork." },
                 ].map((step) => (
                   <div key={step.num} className="flex gap-4 p-4 rounded-xl" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)" }}>
                     <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace", fontSize: "0.85rem" }}>
@@ -218,7 +218,7 @@ export default function Bakersfield() {
                     "Licensed CA Agent DRE #02219124",
                     "Actual buyer — not a wholesaler",
                     "Free Broker Opinion of Value",
-                    "Close in 5–7 days",
+                    "Close in 3 days",
                     "No repairs or cleaning",
                     "No agent commissions on cash sales",
                     "Listing referrals to vetted top agents",

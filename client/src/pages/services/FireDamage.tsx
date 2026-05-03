@@ -29,7 +29,7 @@ export default function FireDamage() {
                 <strong>Option 2: Sell the property and the open insurance claim together.</strong> If you have an active claim, you can sell the property while the claim is still open. The buyer takes over both the property and the claim. This is more complex but allows you to exit quickly without waiting for the claim to resolve. We have structured these transactions before.
               </p>
               <p>
-                <strong>Option 3: Sell as-is to a cash buyer.</strong> If you want the fastest, cleanest exit — no insurance disputes, no contractor management, no uncertainty — we will make you a fair cash offer and close in 5–7 days. We handle all remediation and reconstruction ourselves after closing.
+                <strong>Option 3: Sell as-is to a cash buyer.</strong> If you want the fastest, cleanest exit — no insurance disputes, no contractor management, no uncertainty — we will make you a fair cash offer and close in 3 days. We handle all remediation and reconstruction ourselves after closing.
               </p>
             </div>
           ),
@@ -65,7 +65,7 @@ export default function FireDamage() {
         "Can purchase with open insurance claims",
         "Third-party broker opinion included",
         "Cash offer within 48 hours",
-        "Close in as few as 5–7 days",
+        "Close in as few as 3 days",
         "We pay all closing costs",
         "No agent commissions",
         "We handle all remediation after closing",
@@ -85,7 +85,7 @@ export default function FireDamage() {
         },
         {
           q: "How quickly can you close on a fire-damaged property?",
-          a: "We can close in as few as 5–7 days. If you have an open insurance claim that needs to be resolved first, we can accommodate a longer timeline. We work on your schedule.",
+          a: "We can close in as few as 3 days. If you have an open insurance claim that needs to be resolved first, we can accommodate a longer timeline. We work on your schedule.",
         },
       ]}
       videoEmbed={{

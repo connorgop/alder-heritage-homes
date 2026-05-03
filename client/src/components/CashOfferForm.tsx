@@ -152,7 +152,7 @@ export default function CashOfferForm({ city, variant = "dark" }: CashOfferFormP
           </button>
 
           <p className="text-center text-xs" style={{ color: subtextColor, fontFamily: "'DM Mono', monospace" }}>
-            No repairs · No commissions · Close in 5–7 days
+            No repairs · No commissions · Close in 3 days
           </p>
         </form>
       ) : (

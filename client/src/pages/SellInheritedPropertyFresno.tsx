@@ -64,7 +64,7 @@ export default function SellInheritedPropertyFresno() {
                   <li>• Successor trustee has authority to sell</li>
                   <li>• Timeline: Can close in weeks, not months</li>
                   <li>• Simpler process — closer to a standard sale</li>
-                  <li>• We can close in 5–7 days once trust docs are confirmed</li>
+                  <li>• We can close in 3 days once trust docs are confirmed</li>
                 </ul>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function SellInheritedPropertyFresno() {
         "Work with multiple heirs and out-of-state sellers",
         "Free consultation — no obligation, no pressure",
         "Cash offer within 24 hours",
-        "Close in 5–7 days (trust) or after court approval (probate)",
+        "Close in 3 days (trust) or after court approval (probate)",
         "Free third-party Broker Opinion of Value",
         "Licensed CA Real Estate Agent DRE #02219124",
         "Patient, compassionate process — we move at your pace",
@@ -110,7 +110,7 @@ export default function SellInheritedPropertyFresno() {
         },
         {
           q: "How long does it take to sell a probate property in Fresno?",
-          a: "Under Independent Administration (IAEA), the sale can close in 4–8 weeks after the executor is appointed. Under Court Confirmation, add 2–4 months for the court hearing. Trust properties (no probate required) can close in as few as 5–7 days once the trustee's authority is confirmed.",
+          a: "Under Independent Administration (IAEA), the sale can close in 4–8 weeks after the executor is appointed. Under Court Confirmation, add 2–4 months for the court hearing. Trust properties (no probate required) can close in as few as 3 days once the trustee's authority is confirmed.",
         },
         {
           q: "Do I have to clean out the inherited house before selling?",

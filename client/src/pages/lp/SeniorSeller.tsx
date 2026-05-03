@@ -83,7 +83,7 @@ export default function LpSeniorSeller() {
             Sell Your Fresno Home Fast — So You Can Move to the Retirement Community You've Been Waiting For
           </h1>
           <p style={{ color: "oklch(0.75 0.01 60)", fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "0.75rem" }}>
-            Fairwinds, The Terraces, Oakmont — retirement communities give you a short window when your unit opens. A traditional listing takes 60–90 days. We close in 5–7 days, or on your timeline.
+            Fairwinds, The Terraces, Oakmont — retirement communities give you a short window when your unit opens. A traditional listing takes 60–90 days. We close in 3 days, or on your timeline.
           </p>
           <p style={{ color: "oklch(0.65 0.01 60)", fontSize: "0.9rem", marginBottom: "2rem" }}>
             Connor Alder · Licensed CA Real Estate Agent · DRE #02219124 · (559) 281-8016

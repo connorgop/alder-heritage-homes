@@ -51,7 +51,7 @@ const faqSchema = {
       "name": "How fast can you close on a house in Fresno?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We can close in as little as 5–7 days for straightforward transactions. Most of our deals close in 14–21 days depending on the seller's timeline and any title issues. We work on your schedule — if you need 60 days, we can do that too."
+        "text": "We can close in as little as 3 days for straightforward transactions. Most of our deals close in 14–21 days depending on the seller's timeline and any title issues. We work on your schedule — if you need 60 days, we can do that too."
       }
     },
     {
@@ -505,7 +505,7 @@ export default function BeforeAfter() {
               },
               {
                 q: "How fast can you close on a house in Fresno?",
-                a: "We can close in as little as 5–7 days for straightforward transactions. Most of our deals close in 14–21 days depending on the seller's timeline and any title issues. We work on your schedule — if you need 60 days, we can do that too."
+                a: "We can close in as little as 3 days for straightforward transactions. Most of our deals close in 14–21 days depending on the seller's timeline and any title issues. We work on your schedule — if you need 60 days, we can do that too."
               },
               {
                 q: "Do you buy houses that need major repairs?",

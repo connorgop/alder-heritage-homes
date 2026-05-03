@@ -80,7 +80,7 @@ export default function BothOptions() {
                 title: "Option 1: Cash Offer",
                 color: "oklch(0.55 0.13 42)",
                 points: [
-                  "Close in 5–7 days",
+                  "Close in 3 days",
                   "No repairs or cleaning",
                   "No agent commissions",
                   "Guaranteed close — no financing risk",
@@ -255,7 +255,7 @@ export default function BothOptions() {
               </thead>
               <tbody>
                 {[
-                  ["Time to close", "5–7 days", "60–90 days", "7–30 days"],
+                  ["Time to close", "3 days", "60–90 days", "7–30 days"],
                   ["Repairs required", "None", "Varies", "None"],
                   ["Agent commissions", "$0", "2.5–3% buyer side only", "$0"],
                   ["Financing contingency", "None", "Yes", "None"],

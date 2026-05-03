@@ -229,7 +229,7 @@ export default function AdsLandingPage({
               <div className="text-lg font-bold mb-1" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>
                 Get Your Free Cash Offer
               </div>
-              <div className="text-xs" style={{ color: "oklch(0.55 0.01 60)" }}>No repairs. No commissions. Close in 5–7 days.</div>
+              <div className="text-xs" style={{ color: "oklch(0.55 0.01 60)" }}>No repairs. No commissions. Close in 3 days.</div>
             </div>
             <ContactForm ctaLabel={ctaLabel} />
           </div>

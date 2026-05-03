@@ -16,10 +16,10 @@ export default function SellMyHouseChowchilla() {
       slug="/sell-my-house-chowchilla-ca"
       badge="Chowchilla's Trusted Cash Home Buyer"
       title="Sell My House in Chowchilla, CA"
-      subtitle="Ready to sell your Chowchilla home? Get a fair cash offer in 24 hours. Close in 5–7 days or on your timeline. No repairs, no agent fees, no wholesalers."
+      subtitle="Ready to sell your Chowchilla home? Get a fair cash offer in 24 hours. Close in 3 days or on your timeline. No repairs, no agent fees, no wholesalers."
       heroImage={HERO_IMG}
       heroImageAlt="Sell my house Chowchilla CA — Alder Heritage Homes cash buyer"
-      metaDescription="Sell my house Chowchilla CA — Alder Heritage Homes pays cash, closes in 5–7 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. Call (559) 281-8016."
+      metaDescription="Sell my house Chowchilla CA — Alder Heritage Homes pays cash, closes in 3 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. Call (559) 281-8016."
       intro="If you're thinking 'I need to sell my house in Chowchilla,' Alder Heritage Homes is the local, licensed solution. We are a licensed California real estate agent (DRE #02219124) and a direct cash buyer serving all of Madera County. We are not a wholesaler. Connor Morris personally buys every home, closes with his own funds, and makes sure every seller understands exactly what their home is worth before deciding. Chowchilla is Madera County's second-largest city — and many homes here are older, need updating, or are owned by long-term residents ready to move on. We make that transition simple."
       sections={[
         {
@@ -44,7 +44,7 @@ export default function SellMyHouseChowchilla() {
                 {
                   num: "3",
                   title: "Sell Direct to Alder Heritage Homes",
-                  pros: "Cash offer in 24 hours. Close in 5–7 days. No repairs, no commissions, no financing contingency. Free Broker Opinion of Value so you know the offer is fair.",
+                  pros: "Cash offer in 24 hours. Close in 3 days. No repairs, no commissions, no financing contingency. Free Broker Opinion of Value so you know the offer is fair.",
                   cons: "Cash offers are typically below full retail market value — we factor in repair costs and carrying costs.",
                   best: "Best if: You need speed, certainty, or your home needs work.",
                 },
@@ -125,7 +125,7 @@ export default function SellMyHouseChowchilla() {
       ]}
       benefits={[
         "Cash offer within 24 hours — guaranteed",
-        "Close in 5–7 days or on your timeline",
+        "Close in 3 days or on your timeline",
         "No repairs, no cleaning, no staging required",
         "No agent commissions — save 5–6%",
         "No financing contingency — we always close",

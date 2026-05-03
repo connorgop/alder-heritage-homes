@@ -31,7 +31,7 @@ export default function FreeOffer() {
     <div style={{ minHeight: "100vh", background: "oklch(0.97 0.015 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
       <PageMeta
         title="Get Your Free Cash Offer — No Obligation"
-        description="Enter your address and get a fair cash offer for your Fresno home within 24 hours. No repairs, no commissions, close in 5–7 days. Licensed CA Agent DRE #02219124."
+        description="Enter your address and get a fair cash offer for your Fresno home within 24 hours. No repairs, no commissions, close in 3 days. Licensed CA Agent DRE #02219124."
         path="/free-offer"
         noIndex={true}
       />

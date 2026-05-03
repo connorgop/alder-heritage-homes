@@ -16,10 +16,10 @@ export default function SellMyHouseHanford() {
       slug="/sell-my-house-hanford-ca"
       badge="Hanford's Trusted Cash Home Buyer"
       title="Sell My House in Hanford, CA"
-      subtitle="Ready to sell your Hanford home? Get a fair cash offer in 24 hours. Close in 5–7 days or on your timeline. No repairs, no agent fees, no wholesalers."
+      subtitle="Ready to sell your Hanford home? Get a fair cash offer in 24 hours. Close in 3 days or on your timeline. No repairs, no agent fees, no wholesalers."
       heroImage={HERO_IMG}
       heroImageAlt="Sell my house Hanford CA — Alder Heritage Homes cash buyer"
-      metaDescription="Sell my house Hanford CA — Alder Heritage Homes pays cash, closes in 5–7 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. Call (559) 281-8016."
+      metaDescription="Sell my house Hanford CA — Alder Heritage Homes pays cash, closes in 3 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. Call (559) 281-8016."
       intro="If you're thinking 'I need to sell my house in Hanford,' you have more options than you might realize. Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) and a direct cash buyer serving all of Kings County. We are not a wholesaler. Connor Morris personally buys every home, closes with his own funds, and makes sure every seller understands exactly what their home is worth before they decide anything. Whether you're a military family at NAS Lemoore facing a PCS move, dealing with an inherited property, or simply need to sell fast — we make the process simple, transparent, and fair."
       sections={[
         {
@@ -44,7 +44,7 @@ export default function SellMyHouseHanford() {
                 {
                   num: "3",
                   title: "Sell Direct to Alder Heritage Homes",
-                  pros: "Cash offer in 24 hours. Close in 5–7 days. No repairs, no commissions, no financing contingency. Free Broker Opinion of Value so you know the offer is fair.",
+                  pros: "Cash offer in 24 hours. Close in 3 days. No repairs, no commissions, no financing contingency. Free Broker Opinion of Value so you know the offer is fair.",
                   cons: "Cash offers are typically below full retail market value — we factor in repair costs and carrying costs.",
                   best: "Best if: You need speed, certainty, or your home needs work.",
                 },
@@ -125,7 +125,7 @@ export default function SellMyHouseHanford() {
       ]}
       benefits={[
         "Cash offer within 24 hours — guaranteed",
-        "Close in 5–7 days — ideal for PCS military moves",
+        "Close in 3 days — ideal for PCS military moves",
         "No repairs, no cleaning, no staging required",
         "No agent commissions — save 5–6%",
         "No financing contingency — we always close",
@@ -142,7 +142,7 @@ export default function SellMyHouseHanford() {
         },
         {
           q: "I'm at NAS Lemoore and got PCS orders — can you help me sell fast?",
-          a: "Absolutely. Military PCS moves are one of the most time-sensitive situations we handle. We can close in 5–7 days, work around your reporting date, and handle everything remotely if needed. We've helped multiple military families in the Hanford/Lemoore area sell quickly without the stress of a traditional listing.",
+          a: "Absolutely. Military PCS moves are one of the most time-sensitive situations we handle. We can close in 3 days, work around your reporting date, and handle everything remotely if needed. We've helped multiple military families in the Hanford/Lemoore area sell quickly without the stress of a traditional listing.",
         },
         {
           q: "What is my Hanford house worth?",

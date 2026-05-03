@@ -19,7 +19,7 @@ export default function ArmRateAd() {
         "You need to sell before the adjustment hits, not after",
       ]}
       benefits={[
-        "Cash offer in 24 hours — close in 5–7 days or your timeline",
+        "Cash offer in 24 hours — close in 3 days or your timeline",
         "We pay off your existing mortgage at closing — you keep the equity",
         "No repairs, no commissions, no showings or open houses",
         "Free independent Broker Opinion of Value — know our offer is fair",
@@ -30,7 +30,7 @@ export default function ArmRateAd() {
       trustPoints={[
         { icon: <Shield size={20} />, text: "Licensed CA Real Estate Agent · DRE #02219124" },
         { icon: <Award size={20} />, text: "Free independent Broker Opinion of Value with every offer" },
-        { icon: <Clock size={20} />, text: "Close in 5–7 days or on your timeline" },
+        { icon: <Clock size={20} />, text: "Close in 3 days or on your timeline" },
       ]}
       urgency="Every month you wait after an ARM adjustment is a month of overpaying — and a month of equity erosion if you fall behind. Sellers who act before the reset date almost always walk away with more money and more options than those who wait."
       faqs={[

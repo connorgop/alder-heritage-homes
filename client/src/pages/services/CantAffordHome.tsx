@@ -57,7 +57,7 @@ export default function CantAffordHome() {
         },
       ]}
       benefits={[
-        "Cash offer in 24 hours — close in 5–7 days or your timeline",
+        "Cash offer in 24 hours — close in 3 days or your timeline",
         "Bad credit is not a problem — equity is what matters",
         "We pay off your mortgage and any liens at closing",
         "Free independent Broker Opinion of Value — know our offer is fair",

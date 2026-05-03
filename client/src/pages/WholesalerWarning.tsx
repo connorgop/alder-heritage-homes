@@ -16,7 +16,7 @@ export default function WholesalerWarning() {
     },
     {
       flag: "They ask for a long inspection or 'due diligence' period",
-      detail: "Real cash buyers inspect quickly — usually 5–7 days. Wholesalers need 14–30 days because they're using that time to find a buyer. A 30-day inspection period on a cash deal is a major red flag.",
+      detail: "Real cash buyers inspect quickly — usually 3 days. Wholesalers need 14–30 days because they're using that time to find a buyer. A 30-day inspection period on a cash deal is a major red flag.",
       icon: "⏰",
     },
     {
@@ -297,7 +297,7 @@ export default function WholesalerWarning() {
               ["Proof of funds", "Available same day", "Cannot provide — no money"],
               ["Who buys your home", "Us — directly", "Unknown third party"],
               ["Contract language", "Clean buyer name", "'And/or assigns' clause"],
-              ["Inspection period", "5–7 days", "14–30 days (finding a buyer)"],
+              ["Inspection period", "3 days", "14–30 days (finding a buyer)"],
               ["Price after signing", "Never changes", "Often reduced 10–30%"],
               ["TV commercials / billboards", "No — we don't need them", "Yes — requires volume"],
               ["Licensed real estate agent", "Yes — DRE #02219124", "Usually no"],

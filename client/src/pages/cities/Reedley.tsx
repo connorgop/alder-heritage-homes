@@ -38,7 +38,7 @@ export default function Reedley() {
         },
         {
           q: "I'm facing foreclosure on my Reedley home. How fast can you help?",
-          a: "We can move very quickly — sometimes closing in as little as 5–7 days. If you've received a foreclosure notice, call us immediately at (559) 281-8016. The sooner we talk, the more options you have.",
+          a: "We can move very quickly — sometimes closing in as little as 3 days. If you've received a foreclosure notice, call us immediately at (559) 281-8016. The sooner we talk, the more options you have.",
         },
       ]}
       stats={[

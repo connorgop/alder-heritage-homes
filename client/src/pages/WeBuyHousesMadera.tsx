@@ -24,7 +24,7 @@ const SLUG = "/sell-my-house-fast-madera";
 const faqs = [
   {
     q: "How fast can you close on my Madera home?",
-    a: "We can close in as few as 5–7 days if you need to move quickly. If you need more time — 30, 60, or even 90 days — we work around your schedule. You set the closing date.",
+    a: "We can close in as few as 3 days if you need to move quickly. If you need more time — 30, 60, or even 90 days — we work around your schedule. You set the closing date.",
   },
   {
     q: "Do I need to make any repairs before selling?",
@@ -156,7 +156,7 @@ export default function WeBuyHousesMadera() {
     <Layout>
       <PageMeta
         title="Sell My House Fast Madera CA | We Buy Houses Madera | Alder Heritage Homes"
-        description="Sell your house fast in Madera, CA. Alder Heritage Homes pays cash, closes in 5–7 days, buys any condition. Licensed CA Broker DRE #02219124. No repairs, no commissions. Call (559) 281-8016."
+        description="Sell your house fast in Madera, CA. Alder Heritage Homes pays cash, closes in 3 days, buys any condition. Licensed CA Broker DRE #02219124. No repairs, no commissions. Call (559) 281-8016."
         path={SLUG}
       />
       <SchemaMarkup schema={faqSchema} id="madera-fast-sale-faq" />

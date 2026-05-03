@@ -21,7 +21,7 @@ const topSituations = [
   { label: "Behind on Mortgage", href: "/behind-on-mortgage", desc: "Missed payments piling up? We pay off what you owe" },
   { label: "Inherited / Probate Home", href: "/probate-inherited-homes", desc: "700+ homes purchased — we handle the paperwork" },
   { label: "Divorce Home Sale", href: "/sell-house-divorce", desc: "Fast, private sale so both parties can move on" },
-  { label: "Need to Sell Fast", href: "/sell-house-fast", desc: "Close in as little as 5–7 days, any condition" },
+  { label: "Need to Sell Fast", href: "/sell-house-fast", desc: "Close in as little as 3 days, any condition" },
   { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back", desc: "Sell today, stay as long as you need" },
 ];
 

@@ -625,7 +625,7 @@ const articleChunk7: Record<string, React.ReactNode> = {
 
       <div className="p-6 rounded-xl text-center" style={{ background: "oklch(0.55 0.13 42)" }}>
         <p className="text-white font-bold text-lg mb-2" style={{ fontFamily: "'Lora', serif" }}>Ready to Sell Your Fresno House Fast?</p>
-        <p className="text-white/80 text-sm mb-4">Cash offer in 24 hours. Free independent valuation. Close in 5–7 days or on your timeline.</p>
+        <p className="text-white/80 text-sm mb-4">Cash offer in 24 hours. Free independent valuation. Close in 3 days or on your timeline.</p>
         <a href={PHONE_HREF} className="inline-block px-6 py-3 rounded-lg font-bold text-sm" style={{ background: "white", color: "oklch(0.45 0.13 42)" }}>
           Call {PHONE}
         </a>

@@ -30,7 +30,7 @@ export default function Visalia() {
       faqs={[
         {
           q: "How quickly can you close on my Visalia home?",
-          a: "We can close in as little as 5–7 days on a Visalia property. We handle all escrow, title, and paperwork — you just show up to sign and collect your check.",
+          a: "We can close in as little as 3 days on a Visalia property. We handle all escrow, title, and paperwork — you just show up to sign and collect your check.",
         },
         {
           q: "Do you buy homes in all Visalia neighborhoods?",

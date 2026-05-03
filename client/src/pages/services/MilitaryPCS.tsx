@@ -13,10 +13,10 @@ export default function MilitaryPCS() {
     <ServicePage
       badge="Military PCS Sales"
       title="PCS Orders at NAS Lemoore? We Can Close Before Your Report Date"
-      subtitle="Military families at NAS Lemoore and throughout Kings County trust us to close fast — 5–7 days, guaranteed, no financing contingency. We understand military timelines."
+      subtitle="Military families at NAS Lemoore and throughout Kings County trust us to close fast — 3 days, guaranteed, no financing contingency. We understand military timelines."
       heroImage={HERO_IMG}
       heroImageAlt="Military family selling home near NAS Lemoore California"
-      intro="When PCS orders come in, you have weeks — not months — to figure out your housing situation. The traditional real estate process was not designed for military timelines. A cash sale closes in 5–7 days. No financing contingency. No inspection delays. No uncertainty about whether the deal will close before your report date."
+      intro="When PCS orders come in, you have weeks — not months — to figure out your housing situation. The traditional real estate process was not designed for military timelines. A cash sale closes in 3 days. No financing contingency. No inspection delays. No uncertainty about whether the deal will close before your report date."
       sections={[
         {
           heading: "The NAS Lemoore Housing Market",
@@ -49,7 +49,7 @@ export default function MilitaryPCS() {
         },
       ]}
       benefits={[
-        "Close in 5–7 days — before your report date",
+        "Close in 3 days — before your report date",
         "No financing contingency — guaranteed close",
         "Third-party broker opinion included",
         "Rent-back option available if needed",
@@ -61,7 +61,7 @@ export default function MilitaryPCS() {
       faq={[
         {
           q: "How fast can you close on a home near NAS Lemoore?",
-          a: "We can close in as few as 5–7 days from the time you accept our offer. If you need a specific close date to align with your report date, we can accommodate that as well.",
+          a: "We can close in as few as 3 days from the time you accept our offer. If you need a specific close date to align with your report date, we can accommodate that as well.",
         },
         {
           q: "Can I sell my home if I have a VA loan?",

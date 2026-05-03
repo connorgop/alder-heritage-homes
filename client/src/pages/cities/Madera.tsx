@@ -42,7 +42,7 @@ export default function Madera() {
       faqs={[
         {
           q: "How fast can you buy my Madera home?",
-          a: "We can close in as little as 5–7 days on a Madera property. If you need more time, we work on your schedule — whether that's 2 weeks or 60 days. We've closed Madera deals in as few as 5 days when sellers needed to move quickly.",
+          a: "We can close in as little as 3 days on a Madera property. If you need more time, we work on your schedule — whether that's 2 weeks or 60 days. We've closed Madera deals in as few as 5 days when sellers needed to move quickly.",
         },
         {
           q: "Do I need to make repairs before selling my Madera house?",

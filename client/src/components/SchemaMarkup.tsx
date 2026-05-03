@@ -47,7 +47,7 @@ export function localBusinessSchema() {
     name: "Alder Heritage Homes",
     alternateName: "Alder Heritage Homes — Cash Home Buyer Fresno",
     description:
-      "Alder Heritage Homes is a licensed California real estate agency (DRE #02219124) that buys houses for cash in Fresno and the Central Valley. We buy homes in any condition — no repairs, no commissions, close in 5–7 days.",
+      "Alder Heritage Homes is a licensed California real estate agency (DRE #02219124) that buys houses for cash in Fresno and the Central Valley. We buy homes in any condition — no repairs, no commissions, close in 3 days.",
     url: "https://www.alderheritagehomes.com",
     telephone: "+15592818016",
     email: "connor@alderheritagehomes.com",
@@ -394,7 +394,7 @@ export function websiteSchema() {
     "@id": "https://www.alderheritagehomes.com/#website",
     name: "Alder Heritage Homes",
     url: "https://www.alderheritagehomes.com",
-    description: "Fresno's honest cash home buyer. Licensed CA agent. No repairs, no commissions, close in 5–7 days.",
+    description: "Fresno's honest cash home buyer. Licensed CA agent. No repairs, no commissions, close in 3 days.",
     publisher: {
       "@id": "https://www.alderheritagehomes.com/#business",
     },

@@ -13,7 +13,7 @@ export default function Lemoore() {
         { label: "Offer Turnaround", value: "24 Hours" },
       ]}
       faqs={[
-        { q: "Do you buy homes near NAS Lemoore?", a: "Yes. We regularly work with military families receiving PCS orders who need to sell quickly. We understand the urgency and can close in 5–7 days or on whatever timeline works for your orders." },
+        { q: "Do you buy homes near NAS Lemoore?", a: "Yes. We regularly work with military families receiving PCS orders who need to sell quickly. We understand the urgency and can close in 3 days or on whatever timeline works for your orders." },
         { q: "Do you buy homes in Kings County?", a: "Absolutely. We buy throughout Kings County including Lemoore, Hanford, and the surrounding agricultural communities. No repairs needed, no agent commissions." },
         { q: "What if my Lemoore home needs major repairs?", a: "We buy as-is. We've purchased homes with foundation issues, fire damage, pest infestations, and full of trash. You don't need to clean or fix anything." },
         { q: "How is Alder Heritage Homes different from other cash buyers in Lemoore?", a: "We are a licensed California real estate agent (DRE #02219124) and a real buyer with actual capital. We are not a wholesaler who will lock you into a contract and then try to sell it to someone else. We close what we open." },

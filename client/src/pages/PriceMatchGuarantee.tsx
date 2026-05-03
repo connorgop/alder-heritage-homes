@@ -113,7 +113,7 @@ export default function PriceMatchGuarantee() {
                   Fastest Closing Timeline
                 </h3>
                 <p className="text-gray-700 text-lg">
-                  We close escrow faster than any competitor. While other buyers are still doing inspections and appraisals, we're already wiring your cash. 5–7 days is standard. We can do it in 3 if you need it.
+                  We close escrow faster than any competitor. While other buyers are still doing inspections and appraisals, we're already wiring your cash. 3 days is standard. We can do it in 3 if you need it.
                 </p>
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function PriceMatchGuarantee() {
                 <div className="bg-white rounded-lg p-6 border-l-4 border-amber-600">
                   <h4 className="font-bold text-amber-700 mb-3 text-lg">Option 1: Sell Off-Market for Cash</h4>
                   <ul className="space-y-2 text-gray-700">
-                    <li>✓ Close in 5–7 days</li>
+                    <li>✓ Close in 3 days</li>
                     <li>✓ No inspections or appraisals</li>
                     <li>✓ No contingencies</li>
                     <li>✓ Certainty (no buyer falling through)</li>
@@ -330,7 +330,7 @@ export default function PriceMatchGuarantee() {
                 <div className="text-3xl font-bold text-purple-600 flex-shrink-0">4</div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Close Faster</h3>
-                  <p className="text-gray-700">Accept our offer and close in 5–7 days. Get your cash sooner than anyone else can deliver.</p>
+                  <p className="text-gray-700">Accept our offer and close in 3 days. Get your cash sooner than anyone else can deliver.</p>
                 </div>
               </div>
             </div>

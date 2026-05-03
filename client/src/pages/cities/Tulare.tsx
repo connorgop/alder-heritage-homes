@@ -34,7 +34,7 @@ export default function Tulare() {
         },
         {
           q: "How fast can you close on a Tulare home?",
-          a: "We can close in as little as 5–7 days. If you need more time to move or arrange your next steps, we work on your timeline — not ours.",
+          a: "We can close in as little as 3 days. If you need more time to move or arrange your next steps, we work on your timeline — not ours.",
         },
         {
           q: "Do I need to make repairs before selling?",

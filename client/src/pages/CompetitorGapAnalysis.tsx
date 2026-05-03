@@ -27,7 +27,7 @@ const competitors = [
     type: "iBuyer / Tech Platform",
     strengths: ["Massive brand recognition", "Slick UX and instant offer tool", "Heavy digital advertising"],
     weaknesses: ["Only buy move-in ready homes", "Refuse distressed, hoarder, fire-damaged properties", "Charge 5–8% service fees", "Slow to close (14–30 days minimum)", "No personal contact — all automated"],
-    ourAdvantage: "We buy any condition — hoarder houses, fire damage, squatters, probate. iBuyers reject 80%+ of distressed sellers. We close in 5–7 days with a real human on every call.",
+    ourAdvantage: "We buy any condition — hoarder houses, fire damage, squatters, probate. iBuyers reject 80%+ of distressed sellers. We close in 3 days with a real human on every call.",
     keywordGaps: ["sell house as is fresno", "sell hoarder house fresno", "cash buyer any condition fresno"],
     color: "oklch(0.45 0.10 200)",
   },

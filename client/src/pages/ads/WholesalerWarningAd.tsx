@@ -22,13 +22,13 @@ export default function WholesalerWarningAd() {
         "No 'and/or Assignee' language — no contract flipping",
         "Free independent Broker Opinion of Value — know our offer is fair",
         "Licensed CA Agent (DRE #02219124) — legal fiduciary duty to you",
-        "Close in 5–7 days with his own capital",
+        "Close in 3 days with his own capital",
         "If we can't agree on price, Connor refers you to the real buyers he trusts",
       ]}
       trustPoints={[
         { icon: <Shield size={20} />, text: "Licensed CA Real Estate Agent · DRE #02219124" },
         { icon: <Award size={20} />, text: "Free independent Broker Opinion of Value with every offer" },
-        { icon: <Clock size={20} />, text: "Close in 5–7 days — no inspection period games" },
+        { icon: <Clock size={20} />, text: "Close in 3 days — no inspection period games" },
       ]}
       urgency="California has not yet passed laws requiring wholesalers to disclose that they are not the end buyer. Arizona, Illinois, and other states have. Until California catches up, you need to know the red flags. The most important: if the contract says 'and/or Assignee,' you are dealing with a wholesaler."
       ctaLabel="Talk to the Actual Buyer"

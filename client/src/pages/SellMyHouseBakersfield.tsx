@@ -15,10 +15,10 @@ export default function SellMyHouseBakersfield() {
       slug="/sell-my-house-bakersfield-ca"
       badge="Bakersfield's Trusted Cash Home Buyer"
       title="Sell My House in Bakersfield, CA"
-      subtitle="Ready to sell your Bakersfield home? Get a fair cash offer in 24 hours. Close in 5–7 days or on your timeline. No repairs, no agent fees, no wholesalers."
+      subtitle="Ready to sell your Bakersfield home? Get a fair cash offer in 24 hours. Close in 3 days or on your timeline. No repairs, no agent fees, no wholesalers."
       heroImage={HERO_IMG}
       heroImageAlt="Sell my house Bakersfield CA — Alder Heritage Homes cash buyer"
-      metaDescription="Sell my house Bakersfield CA — Alder Heritage Homes pays cash, closes in 5–7 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. Call (559) 281-8016."
+      metaDescription="Sell my house Bakersfield CA — Alder Heritage Homes pays cash, closes in 3 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. Call (559) 281-8016."
       intro="If you're thinking 'I need to sell my house in Bakersfield,' you have more options than most sellers realize — and more protection than most know to ask for. Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) and a direct cash buyer serving Kern County and the entire Central Valley. We are not a wholesaler. We are not a hedge fund. Connor Morris personally buys every home, closes with his own funds, and makes sure every Bakersfield seller understands exactly what their home is worth before they decide anything. Whether you need to sell in 7 days or 90 days, we make the process simple, transparent, and fair."
       sections={[
         {
@@ -43,7 +43,7 @@ export default function SellMyHouseBakersfield() {
                 {
                   num: "3",
                   title: "Sell Direct to Alder Heritage Homes",
-                  pros: "Cash offer in 24 hours. Close in 5–7 days. No repairs, no commissions, no financing contingency. Free Broker Opinion of Value so you know the offer is fair.",
+                  pros: "Cash offer in 24 hours. Close in 3 days. No repairs, no commissions, no financing contingency. Free Broker Opinion of Value so you know the offer is fair.",
                   cons: "Cash offers are typically below full retail market value — we factor in repair costs and carrying costs.",
                   best: "Best if: You need speed, certainty, or your Bakersfield home needs work.",
                 },
@@ -160,7 +160,7 @@ export default function SellMyHouseBakersfield() {
       ]}
       benefits={[
         "Cash offer within 24 hours — guaranteed",
-        "Close in 5–7 days or on your timeline",
+        "Close in 3 days or on your timeline",
         "No repairs, no cleaning, no staging required",
         "No agent commissions — save 5–6%",
         "No financing contingency — we always close",

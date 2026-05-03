@@ -50,7 +50,7 @@ export default function DivorceHome() {
         },
         {
           q: "Can you close before our court date?",
-          a: "Yes. We can close in as few as 5–7 days if needed. If your divorce settlement requires a specific closing date, let us know and we'll structure the transaction around it.",
+          a: "Yes. We can close in as few as 3 days if needed. If your divorce settlement requires a specific closing date, let us know and we'll structure the transaction around it.",
         },
         {
           q: "What if one spouse is living in the home?",

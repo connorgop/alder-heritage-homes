@@ -34,7 +34,7 @@ export default function LpDownsize() {
     <div style={{ minHeight: "100vh", background: "oklch(0.97 0.015 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
       <PageMeta
         title="Downsize Your Fresno Home Fast — Leave Everything Behind"
-        description="Ready to downsize? We buy your Fresno home as-is — leave the furniture, the clutter, everything. Cash offer in 24 hours. Close in 5–7 days. Licensed CA Agent DRE #02219124."
+        description="Ready to downsize? We buy your Fresno home as-is — leave the furniture, the clutter, everything. Cash offer in 24 hours. Close in 3 days. Licensed CA Agent DRE #02219124."
         path="/lp/downsize"
         noIndex={true}
       />

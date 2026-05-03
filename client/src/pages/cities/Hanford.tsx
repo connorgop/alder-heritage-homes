@@ -26,7 +26,7 @@ export default function Hanford() {
         },
         {
           q: "How fast can you close on a Hanford home?",
-          a: "We can close in as little as 5–7 days on a Hanford property. If you need more time to move or sort out your next steps, we work on your schedule — whether that's 2 weeks or 60 days.",
+          a: "We can close in as little as 3 days on a Hanford property. If you need more time to move or sort out your next steps, we work on your schedule — whether that's 2 weeks or 60 days.",
         },
         {
           q: "Do I need to make repairs before selling my Hanford house?",

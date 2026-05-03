@@ -86,7 +86,7 @@ const officialResources = [
 ];
 
 const sellerGuides = [
-  { title: "How to Sell Your House Fast in Fresno (2026 Guide)", href: "/sell-house-fast", type: "service", desc: "Complete guide to selling your Fresno home in 5–7 days for cash." },
+  { title: "How to Sell Your House Fast in Fresno (2026 Guide)", href: "/sell-house-fast", type: "service", desc: "Complete guide to selling your Fresno home in 3 days for cash." },
   { title: "Cash Buyer vs. Traditional Listing: Which Is Right for You?", href: "/blog/cash-buyer-vs-traditional-listing-fresno", type: "blog", desc: "Side-by-side comparison of net proceeds, timeline, and risk." },
   { title: "How to Avoid Foreclosure in California: 6 Options", href: "/blog/how-to-avoid-foreclosure-california-2026", type: "blog", desc: "Practical steps to protect your credit and equity before the auction." },
   { title: "Selling an Inherited Home in Fresno: Probate Guide", href: "/sell-inherited-house-fresno", type: "service", desc: "Step-by-step guide to selling a probate or inherited property in Fresno County." },
@@ -114,7 +114,7 @@ const faqs = [
   },
   {
     q: "How long does it take to sell a house in Fresno on the open market?",
-    a: "The average days on market for Fresno homes in 2026 is approximately 32 days from listing to accepted offer, plus 30–45 days for escrow. Total timeline from listing to close is typically 60–90 days. Cash buyers like Alder Heritage Homes can close in 5–7 days.",
+    a: "The average days on market for Fresno homes in 2026 is approximately 32 days from listing to accepted offer, plus 30–45 days for escrow. Total timeline from listing to close is typically 60–90 days. Cash buyers like Alder Heritage Homes can close in 3 days.",
   },
   {
     q: "What are the typical costs of selling a house in Fresno?",

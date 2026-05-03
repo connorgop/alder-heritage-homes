@@ -34,7 +34,7 @@ const faqCategories: FAQCategory[] = [
     faqs: [
       {
         q: "How does the cash home buying process work?",
-        a: "It's three steps. First, you contact us with your property address. Second, we research the property and prepare a written cash offer within 24 hours — no obligation. Third, if you accept, we open escrow with a licensed title company and close on your chosen date, typically 5–7 days. You receive your cash at closing. No repairs, no showings, no commissions.",
+        a: "It's three steps. First, you contact us with your property address. Second, we research the property and prepare a written cash offer within 24 hours — no obligation. Third, if you accept, we open escrow with a licensed title company and close on your chosen date, typically 3 days. You receive your cash at closing. No repairs, no showings, no commissions.",
       },
       {
         q: "How fast can you close?",
@@ -132,7 +132,7 @@ const faqCategories: FAQCategory[] = [
       },
       {
         q: "I have PCS orders from NAS Lemoore. Can you close fast enough?",
-        a: "Yes. We specialize in military PCS sales and understand the urgency of relocation orders. We can close in 5–7 days, which is typically faster than the timeline required by your orders. We work with military families throughout Hanford, Lemoore, and Kings County regularly.",
+        a: "Yes. We specialize in military PCS sales and understand the urgency of relocation orders. We can close in 3 days, which is typically faster than the timeline required by your orders. We work with military families throughout Hanford, Lemoore, and Kings County regularly.",
       },
     ],
   },

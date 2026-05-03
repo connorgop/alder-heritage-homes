@@ -14,7 +14,7 @@ export default function SellHouseAsIsFresno() {
       slug="/sell-house-as-is-fresno"
       badge="Sell As-Is · Any Condition · Fresno CA"
       title="Sell Your House As-Is in Fresno, CA"
-      subtitle="No repairs. No cleaning. No staging. We buy Fresno homes in any condition for cash — and close in 5–7 days or on your timeline."
+      subtitle="No repairs. No cleaning. No staging. We buy Fresno homes in any condition for cash — and close in 3 days or on your timeline."
       heroImage={HERO_IMG}
       heroImageAlt="Sell house as-is Fresno CA — cash buyer any condition"
       metaDescription="Sell your house as-is in Fresno CA. Alder Heritage Homes buys any condition — no repairs, no cleaning, no fees. Cash offer in 24 hours. Licensed CA Agent DRE #02219124. Call (559) 281-8016."
@@ -111,7 +111,7 @@ export default function SellHouseAsIsFresno() {
                 <tbody>
                   {[
                     ["Repairs required", "None", "$10,000–$50,000+"],
-                    ["Time to close", "5–7 days", "60–90 days"],
+                    ["Time to close", "3 days", "60–90 days"],
                     ["Agent commission", "$0", "5–6% of sale price"],
                     ["Financing contingency", "None — cash", "Buyer can back out"],
                     ["Showings / open houses", "None", "10–30+ showings"],
@@ -138,7 +138,7 @@ export default function SellHouseAsIsFresno() {
         "Buy in any condition — no exceptions",
         "No repairs, no cleaning, no staging",
         "Cash offer within 24 hours",
-        "Close in 5–7 days or your timeline",
+        "Close in 3 days or your timeline",
         "No agent commissions or fees",
         "No financing contingency — we always close",
         "Free third-party Broker Opinion of Value",

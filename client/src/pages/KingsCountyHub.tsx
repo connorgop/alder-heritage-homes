@@ -79,7 +79,7 @@ const situations = [
   {
     icon: "🎖️",
     title: "Military PCS Orders",
-    desc: "Stationed at NAS Lemoore and received orders? We close in 5–7 days so you can move without carrying two mortgages.",
+    desc: "Stationed at NAS Lemoore and received orders? We close in 3 days so you can move without carrying two mortgages.",
   },
   {
     icon: "🌾",
@@ -115,7 +115,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   "name": "Alder Heritage Homes",
-  "description": "We buy houses for cash throughout Kings County CA — Hanford, Lemoore, Avenal, Corcoran, and all rural communities. Close in 5–7 days, no repairs, no fees.",
+  "description": "We buy houses for cash throughout Kings County CA — Hanford, Lemoore, Avenal, Corcoran, and all rural communities. Close in 3 days, no repairs, no fees.",
   "url": "https://www.alderheritagehomes.com/kings-county-hub",
   "telephone": "+15592818016",
   "areaServed": {
@@ -129,7 +129,7 @@ export default function KingsCountyHub() {
     <Layout>
       <PageMeta
         title="We Buy Houses Kings County CA | Cash Home Buyers Hanford & Lemoore"
-        description="Sell your Kings County home fast for cash. We buy houses in Hanford, Lemoore, Avenal, Corcoran, and all rural communities. Close in 5–7 days, no repairs, no fees."
+        description="Sell your Kings County home fast for cash. We buy houses in Hanford, Lemoore, Avenal, Corcoran, and all rural communities. Close in 3 days, no repairs, no fees."
         path="/kings-county-hub"
       />
       <SchemaMarkup schema={schema} id="kings-county-hub" />
@@ -152,7 +152,7 @@ export default function KingsCountyHub() {
             We Buy Houses in Kings County, CA
           </h1>
           <p className="text-xl mb-8 max-w-2xl" style={{ color: "oklch(0.88 0.04 72)" }}>
-            Cash offers for homes in Hanford, Lemoore, Avenal, Corcoran, and every rural community in Kings County. Close in 5–7 days. No repairs. No agent fees.
+            Cash offers for homes in Hanford, Lemoore, Avenal, Corcoran, and every rural community in Kings County. Close in 3 days. No repairs. No agent fees.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -186,7 +186,7 @@ export default function KingsCountyHub() {
                 Kings County's housing market is dominated by agricultural employment, military families at NAS Lemoore, and rural communities where conventional buyers are scarce. In cities like Avenal and Corcoran, cash buyers represent 40–45% of all transactions — far above the national average — because traditional financing is difficult to obtain for older, rural, or non-standard properties.
               </p>
               <p className="text-lg mb-4" style={{ color: "oklch(0.35 0.04 42)" }}>
-                Military families receiving PCS orders from NAS Lemoore often have 30–60 days to relocate. A traditional listing takes 60–90 days on average. We close in 5–7 days, which means you can accept orders without the stress of a home sale hanging over your move.
+                Military families receiving PCS orders from NAS Lemoore often have 30–60 days to relocate. A traditional listing takes 60–90 days on average. We close in 3 days, which means you can accept orders without the stress of a home sale hanging over your move.
               </p>
               <p className="text-lg" style={{ color: "oklch(0.35 0.04 42)" }}>
                 Whether your property is a 1960s ranch home in Hanford, a farmhouse outside Corcoran, or an inherited property in Avenal, we make a fair cash offer within 24 hours and close on your schedule.
@@ -372,7 +372,7 @@ export default function KingsCountyHub() {
               },
               {
                 q: "How fast can you close on a Kings County home?",
-                a: "We can close in as few as 5–7 days once you accept our offer. If you need more time, we can close on any date that works for you — we work on your schedule, not ours.",
+                a: "We can close in as few as 3 days once you accept our offer. If you need more time, we can close on any date that works for you — we work on your schedule, not ours.",
               },
               {
                 q: "Do you buy homes near NAS Lemoore?",
@@ -407,7 +407,7 @@ export default function KingsCountyHub() {
             Ready to Sell Your Kings County Home?
           </h2>
           <p className="text-lg mb-8" style={{ color: "oklch(0.92 0.04 72)" }}>
-            Call us today or submit your address online. Cash offer within 24 hours. Close in 5–7 days.
+            Call us today or submit your address online. Cash offer within 24 hours. Close in 3 days.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

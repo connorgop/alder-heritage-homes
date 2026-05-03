@@ -14,10 +14,10 @@ export default function SellMyHouseCashFresno() {
       slug="/sell-my-house-cash-fresno"
       badge="Real Cash Buyer · Fresno CA · Licensed Agent"
       title="Sell My House for Cash in Fresno, CA"
-      subtitle="Get a real cash offer — not a wholesaler's lowball — within 24 hours. Close in 5–7 days. Licensed CA Agent DRE #02219124."
+      subtitle="Get a real cash offer — not a wholesaler's lowball — within 24 hours. Close in 3 days. Licensed CA Agent DRE #02219124."
       heroImage={HERO_IMG}
       heroImageAlt="Sell my house for cash Fresno CA — Alder Heritage Homes"
-      metaDescription="Sell my house for cash in Fresno CA. Real cash buyer — not a wholesaler. Offer in 24 hours, close in 5–7 days. Free Broker Opinion of Value. Licensed CA Agent DRE #02219124. Call (559) 281-8016."
+      metaDescription="Sell my house for cash in Fresno CA. Real cash buyer — not a wholesaler. Offer in 24 hours, close in 3 days. Free Broker Opinion of Value. Licensed CA Agent DRE #02219124. Call (559) 281-8016."
       intro="When you search 'sell my house for cash in Fresno,' you'll find dozens of results — but most of them are not cash buyers. They are wholesalers who will put your home under contract, then sell that contract to a real investor for a $15,000–$40,000 profit. Alder Heritage Homes is different. Connor Morris is a licensed California real estate agent (DRE #02219124) who buys homes directly with his own funds. His name goes on the contract. His money closes the deal. And he provides a free independent Broker Opinion of Value with every offer so you know the cash offer is fair before you sign anything."
       sections={[
         {
@@ -107,7 +107,7 @@ export default function SellMyHouseCashFresno() {
         "Real cash buyer — not a wholesaler",
         "Cash offer within 24 hours",
         "Proof of funds available on request",
-        "Close in 5–7 days or your timeline",
+        "Close in 3 days or your timeline",
         "No repairs, no cleaning, no staging",
         "No agent commissions or closing fees",
         "No financing contingency — guaranteed close",

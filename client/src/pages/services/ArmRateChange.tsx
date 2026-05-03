@@ -13,11 +13,11 @@ const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyN
 export default function ArmRateChange() {
   useSEO({
     title: "My Interest Rate Is Changing — ARM Help for Fresno Homeowners",
-    description: "Adjustable-rate mortgage resetting in Fresno or the Central Valley? You have options before the payment jumps. Sell for cash in 5–7 days or explore refinance and loan modification paths.",
+    description: "Adjustable-rate mortgage resetting in Fresno or the Central Valley? You have options before the payment jumps. Sell for cash in 3 days or explore refinance and loan modification paths.",
     canonical: "/arm-rate-change-help",
     schema: faqSchema([
       { q: "What happens when my ARM adjusts?", a: "When an adjustable-rate mortgage resets, your monthly payment can increase by hundreds or thousands of dollars depending on current interest rates. Most ARMs reset after 5, 7, or 10 years. If you cannot afford the new payment, you have several options: refinance, loan modification, sell, or rent-back." },
-      { q: "Can I sell my house before my ARM adjusts?", a: "Yes — and this is often the best option. Selling before the adjustment gives you the most time and leverage. Alder Heritage Homes can close in 5–7 days, which means you can sell, pay off your mortgage, and avoid the higher payment entirely." },
+      { q: "Can I sell my house before my ARM adjusts?", a: "Yes — and this is often the best option. Selling before the adjustment gives you the most time and leverage. Alder Heritage Homes can close in 3 days, which means you can sell, pay off your mortgage, and avoid the higher payment entirely." },
       { q: "What if I can't afford my mortgage after the ARM resets?", a: "Contact your lender immediately about a loan modification or forbearance. If that fails, selling for cash is the fastest way to avoid foreclosure. Alder Heritage Homes buys homes as-is in any condition and can close quickly before a foreclosure filing damages your credit." },
       { q: "How do I know if selling is better than refinancing?", a: "If your home has equity and you can qualify for a new loan, refinancing may make sense. If you have little equity, bad credit, or cannot qualify for a new loan, selling for cash is often the better path. We offer a free broker opinion of value so you can see exactly what your home is worth before deciding." },
     ]),
@@ -42,7 +42,7 @@ export default function ArmRateChange() {
               <p className="mb-3">Acting before the reset gives you the most options and the most leverage. Here's what's available:</p>
               <ul className="space-y-3">
                 <li><strong>Refinance into a fixed-rate mortgage:</strong> If your credit is strong and you have equity, refinancing may lock in a rate before the adjustment. Contact your lender immediately — this process takes 30–60 days.</li>
-                <li><strong>Sell your home for cash:</strong> If refinancing isn't feasible, selling before the rate adjusts means you sell from a position of strength — not desperation. You control the timeline, the price negotiation, and the closing date. We can close in 5–7 days if needed.</li>
+                <li><strong>Sell your home for cash:</strong> If refinancing isn't feasible, selling before the rate adjusts means you sell from a position of strength — not desperation. You control the timeline, the price negotiation, and the closing date. We can close in 3 days if needed.</li>
                 <li><strong>Request a loan modification:</strong> Some lenders will convert an ARM to a fixed rate or extend the introductory period for borrowers who demonstrate financial hardship. This requires documentation and takes time — start immediately.</li>
                 <li><strong>Negotiate a rate cap:</strong> Many ARMs have annual and lifetime caps on how much the rate can increase. Review your loan documents carefully — you may have more protection than you realize.</li>
               </ul>
@@ -60,7 +60,7 @@ export default function ArmRateChange() {
       ]}
       benefits={[
         "Act before the rate adjusts — more options, more leverage",
-        "Cash offer in 24 hours, close in 5–7 days or your timeline",
+        "Cash offer in 24 hours, close in 3 days or your timeline",
         "Free independent Broker Opinion of Value included",
         "No repairs, no commissions, no showings",
         "We pay off your existing mortgage at closing",

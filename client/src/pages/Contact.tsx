@@ -48,7 +48,7 @@ export default function Contact() {
     <Layout>
       <PageMeta
         title="Get My Free Cash Offer — Sell Your Fresno Home Fast"
-        description="Get a no-obligation cash offer for your Fresno home within 24 hours. Licensed CA Agent DRE #02219124. No repairs, no commissions, close in 5–7 days. Call (559) 281-8016."
+        description="Get a no-obligation cash offer for your Fresno home within 24 hours. Licensed CA Agent DRE #02219124. No repairs, no commissions, close in 3 days. Call (559) 281-8016."
         path="/contact"
       />
       {/* Hero */}
@@ -131,7 +131,7 @@ export default function Contact() {
                         Continue <ArrowRight size={20} />
                       </button>
                       <p className="text-xs text-center" style={{ color: "oklch(0.55 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                        No repairs · No commissions · Close in 5–7 days
+                        No repairs · No commissions · Close in 3 days
                       </p>
                     </form>
                   ) : (

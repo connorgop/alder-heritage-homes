@@ -62,7 +62,7 @@ export default function MoldHouse() {
         "Full mold disclosure handled properly",
         "Third-party broker opinion included",
         "Cash offer within 48 hours",
-        "Close in as few as 5–7 days",
+        "Close in as few as 3 days",
         "We pay all closing costs",
         "No agent commissions",
         "We handle all remediation after closing",

@@ -15,10 +15,10 @@ export default function SellHouseFastHanford() {
       slug="/sell-house-fast-hanford-ca"
       badge="Hanford's Trusted Cash Home Buyer"
       title="Sell Your House Fast in Hanford, CA"
-      subtitle="Get a fair cash offer in 24 hours. Close in 5–7 days — or on your timeline. No repairs, no agent commissions, no wholesalers."
+      subtitle="Get a fair cash offer in 24 hours. Close in 3 days — or on your timeline. No repairs, no agent commissions, no wholesalers."
       heroImage={HERO_IMG}
       heroImageAlt="Sell house fast Hanford CA — Alder Heritage Homes"
-      metaDescription="Sell your house fast in Hanford, CA. Alder Heritage Homes pays cash, closes in 5–7 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. Serving all of Kings County."
+      metaDescription="Sell your house fast in Hanford, CA. Alder Heritage Homes pays cash, closes in 3 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. Serving all of Kings County."
       intro="If you need to sell your house fast in Hanford, California, you have three realistic options: list with a realtor and wait 60–90 days, accept a lowball offer from a wholesaler who may never close, or call Alder Heritage Homes. We are a licensed California real estate agent (DRE #02219124) and a real cash buyer — our name goes on the contract, our money closes the deal, and we never assign your contract to a stranger. We buy houses throughout Hanford and Kings County in any condition, any situation, on any timeline."
       sections={[
         {
@@ -112,7 +112,7 @@ export default function SellHouseFastHanford() {
       ]}
       benefits={[
         "Cash offer within 24 hours — guaranteed",
-        "Close in 5–7 days or on your timeline",
+        "Close in 3 days or on your timeline",
         "No repairs, no cleaning, no staging",
         "No agent commissions (save 5–6%)",
         "No financing contingency — we always close",

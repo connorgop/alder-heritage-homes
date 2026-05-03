@@ -71,7 +71,7 @@ export default function RoofDamage() {
       benefits={[
         "No roof repairs required — ever",
         "Cash offer within 48 hours",
-        "close in as few as 5–7 days",
+        "close in as few as 3 days",
         "We pay all closing costs",
         "No agent commissions or fees",
         "No contractor bids or inspections",

@@ -44,7 +44,7 @@ const LOCAL_BUSINESS_SCHEMA = {
     "name": "Cash Home Buying Services",
     "itemListElement": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cash offer within 24 hours" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Close in 5–7 days" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Close in 3 days" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Free Broker Opinion of Value" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Buy houses in any condition" } }
     ]
@@ -60,7 +60,7 @@ const FAQ_SCHEMA = {
       "name": "Is it worth selling your house for cash in Fresno?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — for the right seller. A cash sale makes sense when you need speed (closing in 5–7 days vs. 60–90 days on the MLS), when your home needs significant repairs, or when your situation involves foreclosure, probate, or divorce. The key is making sure the cash offer is fair. Alder Heritage Homes provides a free third-party Broker Opinion of Value with every offer so you can compare the cash price to what your home would actually sell for on the open market. That way you never get lowballed."
+        "text": "Yes — for the right seller. A cash sale makes sense when you need speed (closing in 3 days vs. 60–90 days on the MLS), when your home needs significant repairs, or when your situation involves foreclosure, probate, or divorce. The key is making sure the cash offer is fair. Alder Heritage Homes provides a free third-party Broker Opinion of Value with every offer so you can compare the cash price to what your home would actually sell for on the open market. That way you never get lowballed."
       }
     },
     {
@@ -141,10 +141,10 @@ export default function SellMyHouseFresno() {
       slug="/sell-my-house-fresno-ca"
       badge="Fresno's Trusted Cash Home Buyer"
       title="Sell My House in Fresno, CA — Get the Most Cash Without Getting Lowballed"
-      subtitle="Want to sell your Fresno home for cash and actually get a fair price? We give you a free independent valuation with every offer so you know exactly what your home is worth — then you decide. Cash offer in 24 hours. Close in 5–7 days. No repairs, no commissions, no wholesalers."
+      subtitle="Want to sell your Fresno home for cash and actually get a fair price? We give you a free independent valuation with every offer so you know exactly what your home is worth — then you decide. Cash offer in 24 hours. Close in 3 days. No repairs, no commissions, no wholesalers."
       heroImage={HERO_IMG}
       heroImageAlt="Sell my house Fresno CA for cash — Alder Heritage Homes licensed cash buyer"
-      metaDescription="Sell my house Fresno CA for the most cash — Alder Heritage Homes pays cash, provides a free Broker Opinion of Value so you don't get lowballed, closes in 5–7 days. Licensed CA Agent DRE #02219124. Call (559) 281-8016."
+      metaDescription="Sell my house Fresno CA for the most cash — Alder Heritage Homes pays cash, provides a free Broker Opinion of Value so you don't get lowballed, closes in 3 days. Licensed CA Agent DRE #02219124. Call (559) 281-8016."
       intro="If you're searching 'sell my house cash Fresno' or 'sell my house Fresno for the most money,' you've found the right page — and you're asking the right question. Most Fresno homeowners who call cash buyers have no idea what their home is actually worth. That's exactly how lowball offers happen. Alder Heritage Homes does something no other cash buyer in Fresno does: we give you a free third-party Broker Opinion of Value from an independent Fresno broker with 1,800+ completed transactions before you sign anything. You see what your home would sell for on the open market. You see our cash offer. You decide. Connor Morris is a licensed California real estate agent (DRE #02219124) and a direct cash buyer — not a wholesaler, not a hedge fund. His name is on every contract, his money closes every deal."
       sections={[
         {
@@ -185,7 +185,7 @@ export default function SellMyHouseFresno() {
                   <tbody>
                     {[
                       { situation: "Home needs $20k+ in repairs", path: "Cash sale", why: "Avoid repair costs + 5–6% commission. Net difference is often small." },
-                      { situation: "Need to close in under 30 days", path: "Cash sale", why: "MLS takes 60–90 days. Cash closes in 5–7 days." },
+                      { situation: "Need to close in under 30 days", path: "Cash sale", why: "MLS takes 60–90 days. Cash closes in 3 days." },
                       { situation: "Facing foreclosure or NOD", path: "Cash sale", why: "Speed is everything. Cash closes before the auction date." },
                       { situation: "Probate or inherited property", path: "Cash sale", why: "Simplifies the estate process. No repairs, no showings." },
                       { situation: "Home is move-in ready, no rush", path: "MLS listing", why: "Full retail price minus 5–6% commission is usually higher." },
@@ -322,7 +322,7 @@ export default function SellMyHouseFresno() {
                 {
                   num: "3",
                   title: "Sell Direct to Alder Heritage Homes",
-                  pros: "Cash offer in 24 hours. Close in 5–7 days. No repairs, no commissions, no financing contingency. Free independent Broker Opinion of Value so you know the offer is fair. Licensed CA Agent — not a wholesaler.",
+                  pros: "Cash offer in 24 hours. Close in 3 days. No repairs, no commissions, no financing contingency. Free independent Broker Opinion of Value so you know the offer is fair. Licensed CA Agent — not a wholesaler.",
                   cons: "Cash offers are typically 10–20% below full retail market value — we factor in repair costs and carrying costs. We show you the math.",
                   best: "Best if: You need speed, certainty, or your home needs work — and you want to know you're getting the most cash possible.",
                 },
@@ -408,7 +408,7 @@ export default function SellMyHouseFresno() {
       benefits={[
         "Cash offer within 24 hours — guaranteed",
         "Free Broker Opinion of Value — know your home's worth before you decide",
-        "Close in 5–7 days or on your timeline",
+        "Close in 3 days or on your timeline",
         "No repairs, no cleaning, no staging required",
         "No agent commissions — save 5–6%",
         "No financing contingency — we always close",
@@ -420,7 +420,7 @@ export default function SellMyHouseFresno() {
       faq={[
         {
           q: "Is it worth selling your house for cash in Fresno?",
-          a: "Yes — for the right seller. A cash sale makes sense when you need speed (closing in 5–7 days vs. 60–90 days on the MLS), when your home needs significant repairs, or when your situation involves foreclosure, probate, or divorce. The key is making sure the cash offer is fair. Alder Heritage Homes provides a free third-party Broker Opinion of Value with every offer so you can compare the cash price to what your home would actually sell for on the open market. That way you never get lowballed.",
+          a: "Yes — for the right seller. A cash sale makes sense when you need speed (closing in 3 days vs. 60–90 days on the MLS), when your home needs significant repairs, or when your situation involves foreclosure, probate, or divorce. The key is making sure the cash offer is fair. Alder Heritage Homes provides a free third-party Broker Opinion of Value with every offer so you can compare the cash price to what your home would actually sell for on the open market. That way you never get lowballed.",
         },
         {
           q: "Who gives you the most money for your house in Fresno?",

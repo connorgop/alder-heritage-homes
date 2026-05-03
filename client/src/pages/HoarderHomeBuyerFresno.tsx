@@ -14,11 +14,11 @@ export default function HoarderHomeBuyerFresno() {
       slug="/hoarder-home-buyer-fresno"
       badge="Hoarder Home Specialist · Fresno CA · No Judgment"
       title="Sell a Hoarder House in Fresno, CA"
-      subtitle="Leave everything. We buy hoarder homes as-is — no cleanout, no judgment, no embarrassment. Cash offer in 48 hours. Close in 5–7 days."
+      subtitle="Leave everything. We buy hoarder homes as-is — no cleanout, no judgment, no embarrassment. Cash offer in 48 hours. Close in 3 days."
       heroImage={HERO_IMG}
       heroImageAlt="Sell hoarder house Fresno CA — hoarder home cash buyer"
       metaDescription="Sell a hoarder house in Fresno CA. Leave everything — no cleanout required. Cash offer in 48 hours. No judgment. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. Call (559) 281-8016."
-      intro="Selling a hoarder house is one of the most emotionally and logistically complex situations a homeowner can face. Whether you're the homeowner, a family member, or an executor dealing with an inherited hoarder property, Alder Heritage Homes specializes in exactly this situation. We buy hoarder homes throughout Fresno and the Central Valley as-is — you leave everything, we handle the cleanout, and we close in 5–7 days. No judgment. No embarrassment. No cost to you for cleanup."
+      intro="Selling a hoarder house is one of the most emotionally and logistically complex situations a homeowner can face. Whether you're the homeowner, a family member, or an executor dealing with an inherited hoarder property, Alder Heritage Homes specializes in exactly this situation. We buy hoarder homes throughout Fresno and the Central Valley as-is — you leave everything, we handle the cleanout, and we close in 3 days. No judgment. No embarrassment. No cost to you for cleanup."
       sections={[
         {
           heading: "What Is a Hoarder House? (And Why It's Hard to Sell Traditionally)",
@@ -85,7 +85,7 @@ export default function HoarderHomeBuyerFresno() {
         "No judgment, no embarrassment, full discretion",
         "Buy any level of hoarding — including biohazard",
         "Cash offer within 48 hours",
-        "Close in 5–7 days or your timeline",
+        "Close in 3 days or your timeline",
         "No repairs, no cleaning, no staging",
         "No agent commissions or fees",
         "Free third-party Broker Opinion of Value",

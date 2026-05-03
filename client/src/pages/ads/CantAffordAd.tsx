@@ -19,7 +19,7 @@ export default function CantAffordAd() {
         "You need a clean exit fast, without the stress of a traditional sale",
       ]}
       benefits={[
-        "Cash offer in 24 hours — close in 5–7 days or your timeline",
+        "Cash offer in 24 hours — close in 3 days or your timeline",
         "Bad credit is not a problem — equity is what matters",
         "We pay off your mortgage and any liens at closing",
         "Free independent Broker Opinion of Value — know our offer is fair",
@@ -30,7 +30,7 @@ export default function CantAffordAd() {
       trustPoints={[
         { icon: <Shield size={20} />, text: "Licensed CA Real Estate Agent · DRE #02219124" },
         { icon: <Award size={20} />, text: "Free independent Broker Opinion of Value with every offer" },
-        { icon: <Clock size={20} />, text: "Close in 5–7 days or on your timeline" },
+        { icon: <Clock size={20} />, text: "Close in 3 days or on your timeline" },
       ]}
       urgency="Every missed payment damages your credit and reduces your options. Homeowners who call before they've fallen behind almost always walk away with more equity and more choices. The sooner you act, the more you keep."
       faqs={[

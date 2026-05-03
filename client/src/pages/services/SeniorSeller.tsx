@@ -21,7 +21,7 @@ export default function SeniorSeller() {
       sections={[
         {
           heading: "The Timing Problem — And How We Solve It",
-          body: "The biggest challenge for seniors moving to a retirement community is timing. Most communities in Fresno have waitlists. When your spot opens up, you may have weeks — not months — to make your move. A traditional listing takes 45–90 days. A cash sale with us closes in 5–7 days, or on whatever date works for your move. If you need to stay in the home for 30–60 days after closing while you finalize your transition, we offer a rent-back arrangement. You get your cash at closing and rent from us while you get settled.",
+          body: "The biggest challenge for seniors moving to a retirement community is timing. Most communities in Fresno have waitlists. When your spot opens up, you may have weeks — not months — to make your move. A traditional listing takes 45–90 days. A cash sale with us closes in 3 days, or on whatever date works for your move. If you need to stay in the home for 30–60 days after closing while you finalize your transition, we offer a rent-back arrangement. You get your cash at closing and rent from us while you get settled.",
         },
         {
           heading: "You Don't Have to Clean the House Out",
@@ -57,7 +57,7 @@ export default function SeniorSeller() {
         },
       ]}
       benefits={[
-        "Close in 5–7 days or on your timeline",
+        "Close in 3 days or on your timeline",
         "Rent-back available — stay after closing",
         "Leave belongings — no cleanout required",
         "Third-party broker opinion included",

@@ -17,7 +17,7 @@ export default function SellFastAd() {
         "Want to know the offer is fair before you commit to anything",
       ]}
       benefits={[
-        "Cash offer in 24 hours — close in 5–7 days or your timeline",
+        "Cash offer in 24 hours — close in 3 days or your timeline",
         "We are the actual buyer — not a wholesaler, not a middleman",
         "Free independent Broker Opinion of Value — know our offer is fair",
         "No repairs, no cleaning, no commissions",
@@ -28,7 +28,7 @@ export default function SellFastAd() {
       trustPoints={[
         { icon: <Shield size={20} />, text: "Licensed CA Real Estate Agent · DRE #02219124" },
         { icon: <Award size={20} />, text: "Free independent Broker Opinion of Value with every offer" },
-        { icon: <Clock size={20} />, text: "Close in 5–7 days or on your timeline" },
+        { icon: <Clock size={20} />, text: "Close in 3 days or on your timeline" },
       ]}
       urgency="Most 'we buy houses' companies in Fresno are wholesalers — they lock you into a contract and try to sell it to a real investor. Connor Alder is the actual buyer. His name is on the contract. He closes with his own capital."
       ctaLabel="Get My Cash Offer Today"

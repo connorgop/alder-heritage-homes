@@ -15,10 +15,10 @@ export default function SellHouseFastFresno() {
       slug="/sell-house-fast-fresno-ca"
       badge="Fresno's Fastest Cash Home Sale"
       title="Sell Your House Fast in Fresno, CA"
-      subtitle="Get a fair cash offer in 24 hours. Close in 5–7 days — or on your timeline. No repairs, no agent commissions, no wholesalers."
+      subtitle="Get a fair cash offer in 24 hours. Close in 3 days — or on your timeline. No repairs, no agent commissions, no wholesalers."
       heroImage={HERO_IMG}
       heroImageAlt="Sell house fast Fresno CA — Alder Heritage Homes"
-      metaDescription="Sell your house fast in Fresno, CA. Alder Heritage Homes pays cash, closes in 5–7 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. No wholesalers."
+      metaDescription="Sell your house fast in Fresno, CA. Alder Heritage Homes pays cash, closes in 3 days, buys any condition. Licensed CA Agent DRE #02219124. Free Broker Opinion of Value. No wholesalers."
       intro="If you need to sell your house fast in Fresno, California, you have three options: list with a realtor and wait 60–120 days, accept a lowball offer from a wholesaler who can't actually close, or call Alder Heritage Homes. We are a licensed California real estate agent (DRE #02219124) and a real cash buyer — meaning our name goes on the contract, our money closes the deal, and we do not assign your contract to a stranger. We buy houses in Fresno and across the Central Valley in any condition, any situation, on any timeline."
       sections={[
         {
@@ -91,7 +91,7 @@ export default function SellHouseFastFresno() {
       ]}
       benefits={[
         "Cash offer within 24 hours — guaranteed",
-        "Close in 5–7 days or on your timeline",
+        "Close in 3 days or on your timeline",
         "No repairs, no cleaning, no staging",
         "No agent commissions (save 5–6%)",
         "No financing contingency — we always close",

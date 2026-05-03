@@ -171,7 +171,7 @@ const situations = [
   {
     icon: <Clock size={28} />,
     title: "Need to Sell Fast",
-    desc: "Divorce, job relocation, medical bills, or just ready to move on? We can close in as little as 5–7 days.",
+    desc: "Divorce, job relocation, medical bills, or just ready to move on? We can close in as little as 3 days.",
     href: "/sell-house-fast",
     color: "oklch(0.40 0.05 155)",
   },
@@ -198,7 +198,7 @@ const steps = [
   {
     num: "03",
     title: "Close & Get Paid",
-    desc: "You pick the closing date — as fast as 5–7 days or whenever you're ready. We handle all paperwork. You walk away with cash, zero fees.",
+    desc: "You pick the closing date — as fast as 3 days or whenever you're ready. We handle all paperwork. You walk away with cash, zero fees.",
   },
 ];
 
@@ -242,7 +242,7 @@ export default function Home() {
 
   useSEO({
     title: "Sell Your House Fast for Cash in Fresno | Alder Heritage Homes",
-    description: "Licensed cash home buyer in Fresno & Central Valley. Buy homes as-is, close in 5-7 days, no repairs needed. Get a free offer today.",
+    description: "Licensed cash home buyer in Fresno & Central Valley. Buy homes as-is, close in 3 days, no repairs needed. Get a free offer today.",
     canonical: "https://www.alderheritagehomes.com",
   });
 
@@ -251,7 +251,7 @@ export default function Home() {
       <PageMeta
         path="/"
         title="Sell Your House Fast for Cash in Fresno | Alder Heritage Homes"
-        description="Licensed cash home buyer in Fresno & Central Valley. Buy homes as-is, close in 5-7 days, no repairs needed. Get a free offer today."
+        description="Licensed cash home buyer in Fresno & Central Valley. Buy homes as-is, close in 3 days, no repairs needed. Get a free offer today."
         image={HERO_IMG}
       />
 
@@ -311,7 +311,7 @@ export default function Home() {
           <div className="mt-12 flex flex-col sm:flex-row gap-8 text-sm">
             <div className="flex items-center gap-3">
               <CheckCircle2 size={20} className="text-green-400" />
-              <span>Close in 5–7 days</span>
+              <span>Close in 3 days</span>
             </div>
             <div className="flex items-center gap-3">
               <CheckCircle2 size={20} className="text-green-400" />
@@ -438,7 +438,7 @@ export default function Home() {
                 <ul className="space-y-2 text-gray-700">
                   <li>✓ Licensed California real estate agent (DRE #02219124)</li>
                   <li>✓ Proof of funds within 24 hours (not 30 days)</li>
-                  <li>✓ Close in 5–7 days (we have the money)</li>
+                  <li>✓ Close in 3 days (we have the money)</li>
                   <li>✓ No "and/or assignee" language</li>
                   <li>✓ Free Broker Opinion of Value included</li>
                   <li>✓ No price reductions at closing</li>

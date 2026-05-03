@@ -112,7 +112,7 @@ Connor is a licensed CA agent (DRE #02219124) who can also connect you with a pr
     title: "PCS Orders? We Close Fast",
     post: `🎖️ Got PCS orders from NAS Lemoore or another Central Valley base?
 
-We close in 5–7 days — which means you can sell your home, pocket the equity, and report to your next duty station without carrying two housing payments.
+We close in 3 days — which means you can sell your home, pocket the equity, and report to your next duty station without carrying two housing payments.
 
 We understand BAH, VA loans, and military timelines. We've worked with active duty families throughout Kings County and Fresno County.
 

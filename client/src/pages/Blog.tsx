@@ -64,7 +64,7 @@ const _blogPostsRaw = [
   {
     slug: "how-fast-can-i-sell-my-house-fresno",
     title: "How Fast Can I Sell My House in Fresno? (Honest Answer)",
-    excerpt: "Traditional sales take 45–90 days. Cash sales can Close in 5–7 days or on your timeline. Here's an honest breakdown of the timeline for each option and what affects how fast you can sell.",
+    excerpt: "Traditional sales take 45–90 days. Cash sales can Close in 3 days or on your timeline. Here's an honest breakdown of the timeline for each option and what affects how fast you can sell.",
     category: "Fast Sale",
     date: "January 28, 2025",
     readTime: "5 min read",
@@ -1942,7 +1942,7 @@ const _blogPostsRaw = [
   {
     slug: "sell-house-fast-kings-county-ca",
     title: "Sell Your House Fast in Kings County CA — Hanford, Lemoore & Beyond",
-    excerpt: "Kings County has one of California's highest cash buyer shares. This guide explains why, covers every city in the county, and shows you how to close in 5–7 days.",
+    excerpt: "Kings County has one of California's highest cash buyer shares. This guide explains why, covers every city in the county, and shows you how to close in 3 days.",
     category: "Fast Sale",
     date: "2026-04-06",
     readTime: "9 min read",

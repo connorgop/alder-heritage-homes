@@ -56,7 +56,7 @@ export default function HoarderHouse() {
         "No judgment, no embarrassment",
         "Third-party broker opinion included",
         "Cash offer within 48 hours",
-        "close in as few as 5–7 days",
+        "close in as few as 3 days",
         "We pay all closing costs",
         "Estate and probate specialists",
         "Licensed agent — not a wholesaler",

@@ -67,7 +67,7 @@ export default function ParentsHouse() {
       ]}
       benefits={[
         "Experience with POA, probate, and trust sales",
-        "Close in 5–7 days or on your timeline",
+        "Close in 3 days or on your timeline",
         "Leave belongings — no cleanout required",
         "Third-party broker opinion included",
         "No repairs, no staging, no showings",

@@ -123,7 +123,7 @@ const ctaBestPractices = [
     practices: [
       { label: "Situation-specific CTAs", desc: "'Facing Foreclosure? Get Your Cash Offer Before the Auction Date' converts 3–5x better than 'Get a Cash Offer.'" },
       { label: "Remove friction words", desc: "Replace 'Submit' with 'Get My Free Cash Offer.' Replace 'Contact Us' with 'Call Connor Now.' Specificity reduces hesitation." },
-      { label: "Time anchoring", desc: "'Cash offer in 24 hours' and 'Close in 5–7 days' give sellers a concrete timeline — the #1 anxiety for motivated sellers is uncertainty." },
+      { label: "Time anchoring", desc: "'Cash offer in 24 hours' and 'Close in 3 days' give sellers a concrete timeline — the #1 anxiety for motivated sellers is uncertainty." },
       { label: "No-obligation language", desc: "Every CTA includes 'no obligation, no pressure' — motivated sellers are already stressed and need to know they can walk away." },
     ],
   },

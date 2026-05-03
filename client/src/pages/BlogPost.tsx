@@ -39,6 +39,7 @@ import articleChunk28 from "./BlogPostArticles28";
 import articleChunk29 from "./BlogPostArticles29";
 import { articleChunk30 } from "./BlogPostArticles30";
 
+
 const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk1,
   ...articleChunk2,
@@ -70,6 +71,7 @@ const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk28,
   ...articleChunk29,
   ...articleChunk30,
+
 };
 
 export default function BlogPost() {
@@ -358,7 +360,7 @@ export default function BlogPost() {
                   {[
                     "Licensed CA Agent DRE #02219124",
                     "700+ homes purchased",
-                    "Close in 5–7 days or on your timeline",
+                    "Close in 3 days or on your timeline",
                     "No repairs needed",
                     "Rent-back option available",
                   ].map((b) => (

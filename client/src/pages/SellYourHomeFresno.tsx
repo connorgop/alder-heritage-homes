@@ -38,7 +38,7 @@ export default function SellYourHomeFresnoPage() {
                 <li><strong>Behind on mortgage / Second mortgage:</strong> We buy homes with multiple liens. We pay off what you owe and put cash in your pocket.</li>
                 <li><strong>Needs major repairs:</strong> Foundation issues, fire damage, mold, roof damage, code violations — we buy as-is. You don't lift a finger.</li>
                 <li><strong>Tired landlord / Bad tenants:</strong> We buy occupied rentals. You don't have to evict anyone before closing.</li>
-                <li><strong>Relocation / Job transfer:</strong> We close on your timeline — as fast as 5–7 days or as slow as 60 days if you need time to move.</li>
+                <li><strong>Relocation / Job transfer:</strong> We close on your timeline — as fast as 3 days or as slow as 60 days if you need time to move.</li>
                 <li><strong>Sell and stay (rent-back):</strong> Need to sell but not ready to move? Ask about our rent-back program — sell today, stay as long as you need.</li>
               </ul>
             </div>
@@ -80,7 +80,7 @@ export default function SellYourHomeFresnoPage() {
       ]}
       benefits={[
         "Written cash offer within 24 hours of walkthrough",
-        "Close in as little as 5–7 days or on your timeline",
+        "Close in as little as 3 days or on your timeline",
         "No repairs, no cleaning, no staging required",
         "Zero agent commissions — ever",
         "No closing costs charged to the seller",
@@ -93,7 +93,7 @@ export default function SellYourHomeFresnoPage() {
       faq={[
         {
           q: "How do I sell my home in Fresno CA fast?",
-          a: "Contact Alder Heritage Homes at (559) 281-8016. We are a licensed CA real estate agent (DRE #02219124) who buys homes directly for cash. We can close in 5–7 days or on your timeline, with no repairs, no agent commissions, and no wholesalers. We serve all Fresno neighborhoods and surrounding cities.",
+          a: "Contact Alder Heritage Homes at (559) 281-8016. We are a licensed CA real estate agent (DRE #02219124) who buys homes directly for cash. We can close in 3 days or on your timeline, with no repairs, no agent commissions, and no wholesalers. We serve all Fresno neighborhoods and surrounding cities.",
         },
         {
           q: "How much will I get if I sell my home for cash in Fresno?",
@@ -117,7 +117,7 @@ export default function SellYourHomeFresnoPage() {
         },
         {
           q: "How long does it take to sell my home for cash in Fresno?",
-          a: "We can close in as little as 5–7 days once you accept the offer. If you need more time to move or arrange your next home, we can close on your timeline — 30, 45, or 60 days. We also offer a rent-back program where you sell today and stay in the home for an agreed period.",
+          a: "We can close in as little as 3 days once you accept the offer. If you need more time to move or arrange your next home, we can close on your timeline — 30, 45, or 60 days. We also offer a rent-back program where you sell today and stay in the home for an agreed period.",
         },
         {
           q: "Is there a fee to get a cash offer for my Fresno home?",
