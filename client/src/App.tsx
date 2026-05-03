@@ -60,6 +60,9 @@ const LeadMagnet = lazy(() => import("./pages/LeadMagnet"));
 const HowToSpotWholesaler = lazy(() => import("./pages/blog/HowToSpotWholesaler"));
 const CashBuyerVsListing = lazy(() => import("./pages/blog/CashBuyerVsListing"));
 const ProbateHomeSaleGuide = lazy(() => import("./pages/blog/ProbateHomeSaleGuide"));
+const FresnoComparison = lazy(() => import("./pages/PriceComparisons/FresnoComparison"));
+const ClovisComparison = lazy(() => import("./pages/PriceComparisons/ClovisComparison"));
+const VisaliaComparison = lazy(() => import("./pages/PriceComparisons/VisaliaComparison"));
 const ArmRateChange = lazy(() => import("./pages/services/ArmRateChange"));
 const CantAffordHome = lazy(() => import("./pages/services/CantAffordHome"));
 const LandlordPortfolioSale = lazy(() => import("./pages/services/LandlordPortfolioSale"));
@@ -324,6 +327,9 @@ function Router() {
       <Route path="/cash-buyer-vs-traditional-listing" component={CashBuyerVsListing} />
       <Route path="/blog/probate-home-sale-guide" component={ProbateHomeSaleGuide} />
       <Route path="/probate-home-sale" component={ProbateHomeSaleGuide} />
+      <Route path="/price-comparison-fresno" component={FresnoComparison} />
+      <Route path="/price-comparison-clovis" component={ClovisComparison} />
+      <Route path="/price-comparison-visalia" component={VisaliaComparison} />
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
