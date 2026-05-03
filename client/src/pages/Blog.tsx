@@ -3140,6 +3140,70 @@ const _blogPostsRaw = [
     date: "2026-04-28",
     author: "Connor Morris"
   },
+  {
+    slug: "probate-executor-duties-california",
+    title: "Probate Executor Duties in California: Complete Guide",
+    excerpt: "Learn what executors actually need to do in California probate — filing petitions, obtaining Letters Testamentary, managing creditor claims, and selling property.",
+    category: "Probate",
+    date: "2026-05-03",
+    author: "Connor Morris"
+  },
+  {
+    slug: "probate-costs-and-fees-california",
+    title: "Probate Costs and Fees in California: Full Breakdown",
+    excerpt: "Probate costs 5-10% of estate value. Here's a detailed breakdown of court fees, attorney fees, appraisals, commissions, and how to minimize costs.",
+    category: "Probate",
+    date: "2026-05-03",
+    author: "Connor Morris"
+  },
+  {
+    slug: "how-to-avoid-probate-delays-california",
+    title: "How to Avoid Probate Delays in California",
+    excerpt: "Probate delays are common and expensive. Learn the 6 most common sources of delay and how to avoid them.",
+    category: "Probate",
+    date: "2026-05-03",
+    author: "Connor Morris"
+  },
+  {
+    slug: "out-of-state-heirs-selling-inherited-property-california",
+    title: "Out-of-State Heirs Selling Inherited Property in California",
+    excerpt: "Out-of-state heirs face unique challenges. Learn how to manage probate remotely and why a cash buyer is ideal.",
+    category: "Probate",
+    date: "2026-05-03",
+    author: "Connor Morris"
+  },
+  {
+    slug: "probate-vs-living-trust-california",
+    title: "Probate vs. Living Trust: Which is Better?",
+    excerpt: "Living trusts avoid probate and save money. Here's the complete comparison and why living trusts are better for estate planning.",
+    category: "Probate",
+    date: "2026-05-03",
+    author: "Connor Morris"
+  },
+  {
+    slug: "small-estate-probate-california",
+    title: "Small Estate Probate in California: Simplified Process",
+    excerpt: "Estates under $166,250 can use simplified probate. Learn how small estate probate works and how to qualify.",
+    category: "Probate",
+    date: "2026-05-03",
+    author: "Connor Morris"
+  },
+  {
+    slug: "probate-attorney-costs-california",
+    title: "Probate Attorney Costs in California: What to Expect",
+    excerpt: "Probate attorneys charge $2,000-$5,000 flat fee or hourly rates. Learn what they do and when to hire one.",
+    category: "Probate",
+    date: "2026-05-03",
+    author: "Connor Morris"
+  },
+  {
+    slug: "probate-timeline-by-county-fresno-kern-tulare",
+    title: "Probate Timeline by County: Fresno, Kern, Tulare, Madera",
+    excerpt: "Probate timelines vary by county. Fresno takes 8-14 months, Tulare takes 5-10 months. Here's the breakdown.",
+    category: "Probate",
+    date: "2026-05-03",
+    author: "Connor Morris"
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
