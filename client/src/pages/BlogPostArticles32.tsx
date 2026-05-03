@@ -34,6 +34,14 @@ const articleChunk32 = {
       <p>Executors have a fiduciary duty to the estate and heirs. If an executor mismanages estate assets, fails to pay creditors, or breaches their duty, they can be held personally liable. This is why many executors hire probate attorneys — to protect themselves from liability.</p>
 
       <p><strong>Need help selling an inherited property?</strong> Alder Heritage Homes has worked with 100+ executors throughout the Central Valley. We understand the probate process and can close quickly after court confirmation. Call (559) 281-8016 for a free offer.</p>
+
+      <h2>Related Probate Resources</h2>
+<ul>
+<li><a href="/blog/probate-costs-and-fees-california">Probate Costs and Fees</a></li>
+<li><a href="/blog/how-to-avoid-probate-delays-california">How to Avoid Probate Delays</a></li>
+<li><a href="/blog/probate-timeline-by-county-fresno-kern-tulare">Probate Timeline by County</a></li>
+</ul>
+
     </div>
   ),
 
@@ -77,6 +85,14 @@ const articleChunk32 = {
       <p><strong>Sell As-Is:</strong> Selling the property as-is eliminates repair costs and allows for a faster sale.</p>
 
       <p><strong>Ready to sell your inherited property without the high costs?</strong> Alder Heritage Homes buys properties as-is, no repairs needed, no agent commissions. Call Connor at (559) 281-8016 for a free offer.</p>
+
+      <h2>Related Probate Resources</h2>
+<ul>
+<li><a href="/blog/probate-executor-duties-california">Probate Executor Duties</a></li>
+<li><a href="/blog/probate-attorney-costs-california">Probate Attorney Costs</a></li>
+<li><a href="/blog/small-estate-probate-california">Small Estate Probate</a></li>
+</ul>
+
     </div>
   ),
 
@@ -106,6 +122,14 @@ const articleChunk32 = {
       <p>A cash buyer can close within 3 days after court confirmation, eliminating the most common sources of delay: financing contingencies, inspection issues, and appraisal problems. For executors managing probate, a cash buyer provides certainty and speed.</p>
 
       <p><strong>Alder Heritage Homes closes probate sales in 3 days after court confirmation.</strong> Connor and his team have completed 100+ probate sales in Fresno and the Central Valley. Call (559) 281-8016 to discuss your probate property.</p>
+
+      <h2>Related Probate Resources</h2>
+<ul>
+<li><a href="/blog/probate-executor-duties-california">Probate Executor Duties</a></li>
+<li><a href="/blog/probate-timeline-by-county-fresno-kern-tulare">Probate Timeline by County</a></li>
+<li><a href="/blog/probate-vs-living-trust-california">Probate vs. Living Trust</a></li>
+</ul>
+
     </div>
   ),
 
@@ -129,6 +153,14 @@ const articleChunk32 = {
       <p>A cash buyer is ideal for out-of-state heirs because: (1) the buyer handles all inspections and due diligence, (2) no financing contingencies means no delays, (3) the buyer can close quickly after court confirmation, (4) minimal coordination required from the heirs, (5) certainty and speed reduce stress.</p>
 
       <p><strong>Alder Heritage Homes specializes in probate sales for out-of-state heirs.</strong> Connor and his team handle all coordination — from court confirmation to closing. You don't need to be present. Call (559) 281-8016 for a free offer.</p>
+
+      <h2>Related Probate Resources</h2>
+<ul>
+<li><a href="/blog/probate-timeline-by-county-fresno-kern-tulare">Probate Timeline by County</a></li>
+<li><a href="/blog/probate-executor-duties-california">Probate Executor Duties</a></li>
+<li><a href="/probate-homes">Probate Home Sales</a></li>
+</ul>
+
     </div>
   ),
 
@@ -183,6 +215,14 @@ const articleChunk32 = {
       <p>If your loved one passed without a living trust, the property must go through probate. But you can still minimize costs and delays by: (1) using a cash buyer to eliminate agent commissions, (2) selling as-is to reduce repair costs, (3) closing quickly to reduce carrying costs.</p>
 
       <p><strong>Alder Heritage Homes helps families navigate probate sales quickly and affordably.</strong> Connor has completed 100+ probate sales in the Central Valley. Call (559) 281-8016 for a free offer.</p>
+
+      <h2>Related Probate Resources</h2>
+<ul>
+<li><a href="/blog/probate-executor-duties-california">Probate Executor Duties</a></li>
+<li><a href="/blog/probate-costs-and-fees-california">Probate Costs and Fees</a></li>
+<li><a href="/blog/how-to-avoid-probate-delays-california">How to Avoid Probate Delays</a></li>
+</ul>
+
     </div>
   ),
 
@@ -206,6 +246,14 @@ const articleChunk32 = {
       <p>If the small estate includes real property, heirs can sell the property using the small estate succession order. This is faster than full probate because there's no overbid process and no formal court confirmation hearing.</p>
 
       <p><strong>Alder Heritage Homes helps families with small estate probate sales.</strong> Connor can provide a cash offer quickly, allowing you to close within days of receiving the succession order. Call (559) 281-8016 for a free offer.</p>
+
+      <h2>Related Probate Resources</h2>
+<ul>
+<li><a href="/blog/probate-costs-and-fees-california">Probate Costs and Fees</a></li>
+<li><a href="/blog/probate-timeline-by-county-fresno-kern-tulare">Probate Timeline by County</a></li>
+<li><a href="/blog/probate-vs-living-trust-california">Probate vs. Living Trust</a></li>
+</ul>
+
     </div>
   ),
 
@@ -231,6 +279,14 @@ const articleChunk32 = {
       <p>You can minimize attorney costs by: (1) being organized and providing all necessary documents, (2) making decisions quickly to avoid delays, (3) using a cash buyer to simplify the property sale, (4) avoiding disputes among heirs.</p>
 
       <p><strong>Alder Heritage Homes works with probate attorneys throughout the Central Valley.</strong> We understand the probate process and can close quickly, reducing attorney involvement and costs. Call Connor at (559) 281-8016 for a free offer.</p>
+
+      <h2>Related Probate Resources</h2>
+<ul>
+<li><a href="/blog/probate-costs-and-fees-california">Probate Costs and Fees</a></li>
+<li><a href="/blog/probate-executor-duties-california">Probate Executor Duties</a></li>
+<li><a href="/blog/how-to-avoid-probate-delays-california">How to Avoid Probate Delays</a></li>
+</ul>
+
     </div>
   ),
 
@@ -260,6 +316,14 @@ const articleChunk32 = {
       <p>Probate timelines are affected by: (1) court case volume, (2) complexity of the estate, (3) disputes among heirs, (4) creditor claims, (5) tax issues, (6) property condition, (7) buyer financing contingencies.</p>
 
       <p><strong>Alder Heritage Homes has completed probate sales in all Central Valley counties.</strong> Connor understands each county's unique timeline and can close quickly after court confirmation. Call (559) 281-8016 for a free offer.</p>
+
+      <h2>Related Probate Resources</h2>
+<ul>
+<li><a href="/blog/probate-executor-duties-california">Probate Executor Duties</a></li>
+<li><a href="/blog/how-to-avoid-probate-delays-california">How to Avoid Probate Delays</a></li>
+<li><a href="/blog/out-of-state-heirs-selling-inherited-property-california">Out-of-State Heirs</a></li>
+</ul>
+
     </div>
   ),
 };
