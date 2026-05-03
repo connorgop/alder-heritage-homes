@@ -58,6 +58,8 @@ const CompetitorWarning = lazy(() => import("./pages/CompetitorWarning"));
 const CompetitorWarningAd = lazy(() => import("./pages/ads/CompetitorWarningAd"));
 const LeadMagnet = lazy(() => import("./pages/LeadMagnet"));
 const HowToSpotWholesaler = lazy(() => import("./pages/blog/HowToSpotWholesaler"));
+const CashBuyerVsListing = lazy(() => import("./pages/blog/CashBuyerVsListing"));
+const ProbateHomeSaleGuide = lazy(() => import("./pages/blog/ProbateHomeSaleGuide"));
 const ArmRateChange = lazy(() => import("./pages/services/ArmRateChange"));
 const CantAffordHome = lazy(() => import("./pages/services/CantAffordHome"));
 const LandlordPortfolioSale = lazy(() => import("./pages/services/LandlordPortfolioSale"));
@@ -318,6 +320,10 @@ function Router() {
       <Route path="/free-guide" component={LeadMagnet} />
       <Route path="/blog/how-to-spot-a-wholesaler" component={HowToSpotWholesaler} />
       <Route path="/how-to-spot-wholesaler" component={HowToSpotWholesaler} />
+      <Route path="/blog/cash-buyer-vs-listing" component={CashBuyerVsListing} />
+      <Route path="/cash-buyer-vs-traditional-listing" component={CashBuyerVsListing} />
+      <Route path="/blog/probate-home-sale-guide" component={ProbateHomeSaleGuide} />
+      <Route path="/probate-home-sale" component={ProbateHomeSaleGuide} />
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
