@@ -294,14 +294,20 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/compare-options">
+            <Link href="/contact">
               <button className="px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold rounded-lg shadow-lg transition-all duration-300 flex items-center gap-2">
+                <MessageCircle size={20} />
+                Talk to Connor
+              </button>
+            </Link>
+            <Link href="/compare-options">
+              <button className="px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-bold rounded-lg border border-white/40 transition-all duration-300 flex items-center gap-2">
                 <Calculator size={20} />
                 Compare Your Options
               </button>
             </Link>
             <a href={PHONE_HREF}>
-              <button className="px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-bold rounded-lg border border-white/40 transition-all duration-300 flex items-center gap-2">
+              <button className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-lg border border-white/30 transition-all duration-300 flex items-center gap-2">
                 <Phone size={20} />
                 Call {PHONE}
               </button>
