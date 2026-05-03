@@ -67,6 +67,8 @@ const footerCities = [
 
 const footerCompany = [
   { label: "About Connor", href: "/about" },
+  { label: "Why I Left GREimagined", href: "/why-i-left" },
+  { label: "Competitor Warning", href: "/competitor-warning" },
   { label: "Reviews", href: "/reviews" },
   { label: "Our Deals", href: "/our-deals" },
   { label: "Before & After", href: "/before-after" },
@@ -223,10 +225,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </div>
 
               <NavLink href="/about">About</NavLink>
+              <NavLink href="/competitor-warning">⚠ Competitor Warning</NavLink>
               <NavLink href="/reviews">Reviews</NavLink>
               <NavLink href="/case-studies">Case Studies</NavLink>
               <NavLink href="/compare-options">Compare</NavLink>
-              <NavLink href="/dont-get-wholesaled">⚠ Don't Get Wholesaled</NavLink>
+              <NavLink href="/dont-get-wholesaled">Don't Get Wholesaled</NavLink>
               <NavLink href="/second-opinion">Second Opinion</NavLink>
             </nav>
 
