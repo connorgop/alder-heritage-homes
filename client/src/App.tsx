@@ -55,6 +55,7 @@ const JunkRemoval = lazy(() => import("./pages/services/JunkRemoval"));
 const WhyChooseUs = lazy(() => import("./pages/WhyChooseUs"));
 const WhyILeft = lazy(() => import("./pages/WhyILeft"));
 const CompetitorWarning = lazy(() => import("./pages/CompetitorWarning"));
+const CompetitorWarningAd = lazy(() => import("./pages/ads/CompetitorWarningAd"));
 const ArmRateChange = lazy(() => import("./pages/services/ArmRateChange"));
 const CantAffordHome = lazy(() => import("./pages/services/CantAffordHome"));
 const LandlordPortfolioSale = lazy(() => import("./pages/services/LandlordPortfolioSale"));
@@ -310,6 +311,7 @@ function Router() {
       <Route path="/why-i-left" component={WhyILeft} />
       <Route path="/competitor-warning" component={CompetitorWarning} />
       <Route path="/wholesaler-warning" component={CompetitorWarning} />
+      <Route path="/ads/competitor-warning" component={CompetitorWarningAd} />
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
