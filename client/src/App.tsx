@@ -336,6 +336,7 @@ function Router() {
       <Route path="/second-mortgage-help" component={SecondMortgage} />
       <Route path="/sell-and-stay-rent-back" component={RentBack} />
       <Route path="/probate-inherited-homes" component={ProbateHomes} />
+      <Route path="/probate-homes" component={ProbateHomes} />
       <Route path="/probate-real-estate-fresno" component={ProbateRealEstate} />
       <Route path="/california-probate-home-sale" component={CaliforniaProbateHomeSale} />
       <Route path="/sell-house-probate-california"><Redirect to="/california-probate-home-sale" /></Route>

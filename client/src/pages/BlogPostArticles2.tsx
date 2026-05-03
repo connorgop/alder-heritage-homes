@@ -865,23 +865,39 @@ const articleChunk2: Record<string, React.ReactNode> = {
 
   "selling-house-during-probate-california-timeline": (
     <div>
-      <p>Selling a house during California probate is a process that most families have never navigated before — and the timeline surprises almost everyone. It's longer than a standard sale, involves court oversight, and has procedures (like the overbid process) that don't exist in regular real estate transactions. Here's the complete 2026 timeline, step by step.</p>
+      <p>Selling a house during California probate is a process that most families have never navigated before — and the timeline surprises almost everyone. It's longer than a standard sale, involves court oversight, and has procedures (like the overbid process) that don't exist in regular real estate transactions. Here's the complete 2026 timeline, step by step, with county-specific details for Fresno, Kern, Kings, Tulare, Merced, and Madera counties.</p>
+
+      <h2>Understanding California Probate: The Basics</h2>
+      <p>California probate is a court-supervised process that transfers property from a deceased person's name to their heirs or beneficiaries. When someone dies owning real property in California, their estate typically must go through probate before the property can be sold — unless it was held in a living trust, with a joint tenant, or qualifies for a simplified probate process (like a small estate).</p>
+      <p>The probate process exists to: (1) verify the validity of the will, (2) identify and notify creditors, (3) inventory and appraise estate assets, (4) pay debts and taxes, and (5) distribute remaining assets to heirs. For real property, this means the property cannot be sold until the executor has court authority to do so.</p>
 
       <h2>Before Probate Opens — The First 30 Days</h2>
-      <p>When someone dies owning real property in California, their estate typically must go through probate before the property can be sold (unless it was held in a living trust or with a joint tenant). The process begins when the executor named in the will (or an administrator, if there's no will) files a petition to open probate with the Superior Court in the county where the decedent lived.</p>
-      <p>In Fresno County, the probate court is located at 1100 Van Ness Ave, Fresno. Filing fees are approximately $465. The court sets an initial hearing date approximately 6–8 weeks after filing. During this waiting period, the executor has limited authority to manage the estate — they can secure and maintain the property, but typically cannot sell it without court approval.</p>
+      <p>When someone dies owning real property in California, the process begins when the executor named in the will (or an administrator, if there's no will) files a petition to open probate with the Superior Court in the county where the decedent lived.</p>
+      <p><strong>County-Specific Details:</strong></p>
+      <ul>
+        <li><strong>Fresno County:</strong> Probate court is located at 1100 Van Ness Ave, Fresno. Filing fees are approximately $465. Initial hearing date is set 6–8 weeks after filing. Fresno County has a higher case volume, so timelines tend to be longer.</li>
+        <li><strong>Kern County:</strong> Probate court is in Bakersfield. Filing fees similar to Fresno. Kern County probate moves at a moderate pace.</li>
+        <li><strong>Kings County:</strong> Smaller county with lower case volume. Probate typically moves faster than Fresno or Kern.</li>
+        <li><strong>Tulare County:</strong> Probate court in Visalia. Lower case volume means faster processing than Fresno.</li>
+        <li><strong>Merced County:</strong> Moderate case volume. Probate timelines are generally in the middle range.</li>
+        <li><strong>Madera County:</strong> Smaller county. Probate typically moves faster due to lower case volume.</li>
+      </ul>
+      <p>During the initial waiting period (6–8 weeks), the executor has limited authority to manage the estate — they can secure and maintain the property, but typically cannot sell it without court approval. This is the time to arrange property inspections, address any immediate maintenance issues, and begin gathering documentation for the probate petition.</p>
 
       <h2>Months 1–3 — Opening Probate and Letters Testamentary</h2>
       <p>At the initial hearing, the court formally opens probate, appoints the executor (or administrator), and issues "Letters Testamentary" (or Letters of Administration) — the legal document that gives the executor authority to act on behalf of the estate. With Letters Testamentary in hand, the executor can open estate bank accounts, manage assets, and begin the process of selling real property.</p>
-      <p>During this period, the executor must also publish a "Notice to Creditors" in a local newspaper for 4 consecutive weeks, giving creditors 4 months to file claims against the estate. This creditor claim period runs concurrently with the rest of the probate process.</p>
+      <p>During this period, the executor must also publish a "Notice to Creditors" in a local newspaper for 4 consecutive weeks, giving creditors 4 months to file claims against the estate. This creditor claim period runs concurrently with the rest of the probate process and is a critical protection for the estate.</p>
+      <p><strong>Pro Tip:</strong> This is an ideal time to contact a cash buyer. A preliminary offer can be obtained before the formal listing process begins, giving the family a realistic expectation of proceeds and helping them make informed decisions about the property's future.</p>
 
       <h2>Months 2–4 — Listing and Accepting an Offer</h2>
       <p>Once the executor has Letters Testamentary, they can list the property for sale. California Probate Code §10309 requires that the sale price be at least 90% of the property's appraised value (as determined by a probate referee appointed by the court). The executor must obtain a probate referee appraisal before listing.</p>
+      <p>The probate referee appraisal is a critical step. The referee is a court-appointed professional who determines the fair market value of the property. This appraisal value sets the floor for the sale price — any accepted offer must be at least 90% of this value. If the property is in poor condition or needs significant repairs, the appraisal value may be lower than expected, which can affect the executor's decision-making.</p>
       <p>When an offer is accepted, the executor must file a "Report of Sale and Petition for Order Confirming Sale" with the probate court. This petition includes the accepted offer price and requests a court hearing to confirm the sale. The court sets a hearing date approximately 4–6 weeks after filing.</p>
 
       <h2>The Court Confirmation Hearing — The Overbid Process</h2>
       <p>This is the step that surprises most families. At the court confirmation hearing, the accepted offer is presented to the court — but any member of the public can appear and submit a higher bid (an "overbid"). The minimum overbid is the accepted price plus 5% plus $500. If an overbid is submitted, there's an auction in the courtroom, with the property going to the highest bidder.</p>
-      <p>The overbid process is designed to protect the estate by ensuring the property sells at or above market value. In practice, overbids are relatively rare (perhaps 10–20% of probate sales), but they do happen — particularly for desirable properties in good condition. If the property is sold to an overbidder, the original buyer loses the sale but typically receives their deposit back.</p>
+      <p>The overbid process is designed to protect the estate by ensuring the property sells at or above market value. In practice, overbids are relatively rare (perhaps 10–20% of probate sales), but they do happen — particularly for desirable properties in good condition or in hot real estate markets. If the property is sold to an overbidder, the original buyer loses the sale but typically receives their deposit back.</p>
+      <p><strong>Why This Matters:</strong> The overbid process creates uncertainty for buyers. A buyer who thinks they've purchased a property can lose it to a higher bidder at the court hearing. This is why cash buyers are so valuable in probate sales — they can close quickly and with certainty, and they understand the overbid risk.</p>
 
       <h2>Months 4–6 — Closing After Court Confirmation</h2>
       <p>After the court confirms the sale (either to the original buyer or an overbidder), escrow can close. The closing process is similar to a standard sale, but the executor signs all documents on behalf of the estate. Proceeds go into the estate account, not to individual heirs.</p>
@@ -889,10 +905,26 @@ const articleChunk2: Record<string, React.ReactNode> = {
 
       <h2>The Independent Administration of Estates Act (IAEA)</h2>
       <p>California's IAEA allows executors with "full authority" under the act to sell real property without court confirmation — skipping the overbid process entirely. This can reduce the timeline by 2–3 months. However, the executor must provide notice to all heirs and beneficiaries, who have 15 days to object. If anyone objects, court confirmation is required. IAEA authority must be requested at the initial probate hearing.</p>
+      <p>Not all estates qualify for IAEA. The estate must meet specific criteria, and the will must grant the executor "full authority." Consult with a probate attorney to determine if IAEA is available for your estate.</p>
+
+      <h2>Common Delays and How to Avoid Them</h2>
+      <ul>
+        <li><strong>Creditor Claims:</strong> If creditors file claims against the estate, the executor must resolve these before distributing proceeds. This can add months to the timeline.</li>
+        <li><strong>Tax Issues:</strong> If the estate owes federal or state taxes, the executor must file returns and resolve tax liabilities. This can delay the sale or closing.</li>
+        <li><strong>Disputes Among Heirs:</strong> If heirs disagree about the sale or the property's disposition, litigation can delay the process significantly.</li>
+        <li><strong>Financing Contingencies:</strong> If the buyer has a mortgage contingency and the loan is denied after court confirmation, the sale fails and the process must start over. This is why cash buyers are so valuable.</li>
+        <li><strong>Property Condition Issues:</strong> If the property has significant defects discovered during inspection, the buyer may back out or renegotiate, causing delays.</li>
+      </ul>
 
       <h2>Selling to a Cash Buyer During Probate</h2>
       <p>Cash buyers are particularly valuable in probate sales because they eliminate financing contingencies — the most common reason probate sales fall apart. If a buyer's loan is denied after the court confirmation hearing, the sale fails and the process must start over. A cash buyer closes with certainty.</p>
-      <p>Alder Heritage Homes works with probate attorneys and executors throughout Fresno County. We can provide a preliminary offer before probate is even opened, giving the family a realistic expectation of proceeds. Call (559) 281-8016 to discuss your probate property.</p>
+      <p>Additionally, cash buyers understand the probate process and can work with executors and probate attorneys to accommodate court timelines. They don't require inspections or appraisals (which can delay traditional sales), and they can close quickly after court confirmation.</p>
+      <p>For properties in poor condition or with title issues, a cash buyer is often the only viable option. Traditional buyers require financing, which means the property must appraise at a certain value — if it doesn't, the sale falls apart. A cash buyer eliminates this risk.</p>
+
+      <h2>Probate Sales in Fresno and the Central Valley</h2>
+      <p>Alder Heritage Homes has completed 100+ probate sales throughout Fresno, Kern, Kings, Tulare, Merced, and Madera counties. We work directly with probate attorneys, executors, and families to provide cash offers that allow estates to close quickly and with certainty.</p>
+      <p>We can provide a preliminary offer before probate is even opened, giving the family a realistic expectation of proceeds. We handle all aspects of the transaction, including coordinating with the probate court, managing the overbid process, and closing on the executor's timeline.</p>
+      <p><strong>Call (559) 281-8016 today to discuss your probate property and get a free cash offer.</strong></p>
     </div>
   ),
 
