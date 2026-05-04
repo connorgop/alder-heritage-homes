@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -6,6 +6,14 @@ import { Card } from '@/components/ui/card';
 import { CheckCircle2, Clock, DollarSign, AlertCircle } from 'lucide-react';
 
 export default function LeadCapture() {
+  useEffect(() => {
+    // Load Tidio live chat widget
+    const script = document.createElement('script');
+    script.src = 'https://code.tidio.co/ci_fed0e8e3acfe483aaf69342512f602d8.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     firstName: '',
