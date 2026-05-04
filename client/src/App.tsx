@@ -60,6 +60,7 @@ const LeadMagnet = lazy(() => import("./pages/LeadMagnet"));
 const HowToSpotWholesaler = lazy(() => import("./pages/blog/HowToSpotWholesaler"));
 const CashBuyerVsListing = lazy(() => import("./pages/blog/CashBuyerVsListing"));
 const ProbateHomeSaleGuide = lazy(() => import("./pages/blog/ProbateHomeSaleGuide"));
+const LeadCapture = lazy(() => import("./pages/ads/LeadCapture"));
 const FresnoComparison = lazy(() => import("./pages/PriceComparisons/FresnoComparison"));
 const ClovisComparison = lazy(() => import("./pages/PriceComparisons/ClovisComparison"));
 const VisaliaComparison = lazy(() => import("./pages/PriceComparisons/VisaliaComparison"));
@@ -330,6 +331,8 @@ function Router() {
       <Route path="/price-comparison-fresno" component={FresnoComparison} />
       <Route path="/price-comparison-clovis" component={ClovisComparison} />
       <Route path="/price-comparison-visalia" component={VisaliaComparison} />
+      <Route path="/ads/lead-capture" component={LeadCapture} />
+      <Route path="/lead-capture" component={LeadCapture} />
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
