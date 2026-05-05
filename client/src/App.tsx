@@ -309,8 +309,8 @@ const PriceMatchGuarantee = lazy(() => import("./pages/PriceMatchGuarantee"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const SmsConsent = lazy(() => import("./pages/SmsConsent"));
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center" style={{background:"oklch(0.97 0.015 85)"}}><div className="w-8 h-8 rounded-full border-4 border-t-transparent animate-spin" style={{borderColor:"oklch(0.55 0.13 42)",borderTopColor:"transparent"}}></div></div>}>
       <Switch>
