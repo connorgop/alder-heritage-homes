@@ -57,3 +57,10 @@
 - [x] Build homepage reviews carousel section with star ratings, reviewer initials, Google branding
 - [x] Test end-to-end review fetch and display (all 10 reviews showing in carousel)
 - [x] Add 'See all 32 reviews on Google' link to Google Maps
+
+## Admin Dashboard (Completed)
+- [x] Add updateLeadStatus helper to server/db.ts
+- [x] Add leads.updateStatus tRPC endpoint (admin only, protected)
+- [x] Build AdminLeads.tsx page with stats cards, leads table, and inline status management
+- [x] Register /admin/leads and /admin routes in App.tsx
+- [x] Auth gating: shows login prompt for unauthenticated users, access denied for non-admins

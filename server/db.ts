@@ -166,6 +166,14 @@ export async function setLastReviewSync(date: Date): Promise<void> {
   });
 }
 
+export async function updateLeadStatus(id: number, status: "new" | "contacted" | "qualified" | "closed" | "lost"): Promise<void> {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database not available");
+  }
+  await db.update(leads).set({ status, updatedAt: new Date() }).where(eq(leads.id, id));
+}
+
 export async function seedGoogleReviews(reviews: InsertGoogleReview[]): Promise<void> {
   const db = await getDb();
   if (!db) return;

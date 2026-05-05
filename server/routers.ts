@@ -3,7 +3,7 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { notifyOwner } from "./_core/notification";
 import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
-import { getAllLeads, insertLead, getGoogleReviews, getLastReviewSync, setLastReviewSync, seedGoogleReviews, upsertGoogleReviews } from "./db";
+import { getAllLeads, insertLead, updateLeadStatus, getGoogleReviews, getLastReviewSync, setLastReviewSync, seedGoogleReviews, upsertGoogleReviews } from "./db";
 import { z } from "zod";
 
 // Seed data - 10 real reviews scraped from Google Maps
@@ -106,6 +106,20 @@ export const appRouter = router({
           throw new Error("Unauthorized");
         }
         return getAllLeads();
+      }),
+
+    // Protected endpoint - update lead status (admin only)
+    updateStatus: protectedProcedure
+      .input(z.object({
+        id: z.number().int().positive(),
+        status: z.enum(["new", "contacted", "qualified", "closed", "lost"]),
+      }))
+      .mutation(async ({ ctx, input }) => {
+        if (ctx.user.role !== "admin") {
+          throw new Error("Unauthorized");
+        }
+        await updateLeadStatus(input.id, input.status);
+        return { success: true };
       }),
   }),
 
