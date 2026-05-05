@@ -1,0 +1,1 @@
+ALTER TABLE `google_reviews` ADD CONSTRAINT `author_name_idx` UNIQUE(`authorName`);

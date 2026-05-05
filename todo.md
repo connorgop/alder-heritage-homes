@@ -46,3 +46,14 @@
 - [x] Make site fully responsive and mobile-optimized
 - [x] Add navigation header with logo
 - [x] Add footer with contact info and license number
+
+## Google Reviews Section
+- [x] Find Google Place ID for Alder Heritage Homes (ChIJA90t8-tblWARD-P1pOT1L0I)
+- [x] Create Google Places API key in Google Cloud Console
+- [x] Add GOOGLE_PLACES_API_KEY to project secrets
+- [x] Add google_reviews and settings tables to database schema (db:push run)
+- [x] Build getGoogleReviews, upsertGoogleReviews, seedGoogleReviews, getLastReviewSync, setLastReviewSync helpers in server/db.ts
+- [x] Add reviews.list tRPC endpoint (returns cached reviews, refreshes if >24h stale, seeds 10 real reviews)
+- [x] Build homepage reviews carousel section with star ratings, reviewer initials, Google branding
+- [x] Test end-to-end review fetch and display (all 10 reviews showing in carousel)
+- [x] Add 'See all 32 reviews on Google' link to Google Maps

@@ -3,8 +3,22 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { notifyOwner } from "./_core/notification";
 import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
-import { getAllLeads, insertLead } from "./db";
+import { getAllLeads, insertLead, getGoogleReviews, getLastReviewSync, setLastReviewSync, seedGoogleReviews, upsertGoogleReviews } from "./db";
 import { z } from "zod";
+
+// Seed data - 10 real reviews scraped from Google Maps
+const SEED_REVIEWS = [
+  { authorName: "Madison Jones", rating: 5, text: "Connor exceeded all of our expectations. From the initial consultation to the final result, everything was handled with professionalism and care. The quality of work is outstanding, and the entire process felt seamless. We're so happy with our home and would absolutely recommend them to anyone!", relativeTimeDescription: "3 days ago" },
+  { authorName: "MM A", rating: 5, text: "Connor was awesome to work with and very detail oriented. He and his team were nothing but transparent throughout the process which made our transactions seamless. Well done Connor, looking forward to more wins in the future.", relativeTimeDescription: "a week ago" },
+  { authorName: "Patrick Rocha", rating: 5, text: "I've had the pleasure of working side by side with Connar for a few years and has always been a great experience! Easy to trust and look forward to working together again!", relativeTimeDescription: "a week ago" },
+  { authorName: "Erik Harrison", rating: 5, text: "Conner is knowledgeable and easy to work with!", relativeTimeDescription: "a week ago" },
+  { authorName: "Anthony Georgouses", rating: 5, text: "I can't recommend Alder Heritage Homes enough. I typically never make reviews, but Connor deserves a review for genuinely caring about working with his clients to ensure that the process is a smooth as possible. He does not make you feel pressured & if you need any guidance for selling your home quickly, definitely reach out.", relativeTimeDescription: "2 weeks ago" },
+  { authorName: "Jordan Jackson", rating: 5, text: "I've had the chance to get to know the team at Alder Heritage Homes and can confidently say they operate with a high level of integrity and professionalism. They genuinely care about the people they do business with.", relativeTimeDescription: "2 weeks ago" },
+  { authorName: "Tommy Hogan", rating: 5, text: "Connor exemplifies the definition of the consummate professional. His attention to detail and dogged determination was both refreshing and impressive. I recommend working with Connor Morris without hesitation.", relativeTimeDescription: "2 weeks ago" },
+  { authorName: "Chuck Wheaton", rating: 5, text: "Awesome people! Work with these guys", relativeTimeDescription: "2 weeks ago" },
+  { authorName: "Evan Belli", rating: 5, text: "I've known Connor for years as a close friend, and his integrity and honest values always stand out. In real estate, those qualities matter more than anything. He's straightforward, never sugarcoats anything, and genuinely puts his clients first.", relativeTimeDescription: "2 weeks ago" },
+  { authorName: "Lauren Gibson", rating: 5, text: "I had a great experience working with Alder Heritage Homes! In a space that's often crowded with real estate wholesalers who don't always operate with transparency, their team truly stands out. Connor guides clients with professional, honest advice.", relativeTimeDescription: "2 weeks ago" },
+];
 
 export const appRouter = router({
   system: systemRouter,
@@ -93,6 +107,81 @@ export const appRouter = router({
         }
         return getAllLeads();
       }),
+  }),
+
+  reviews: router({
+    // Public endpoint - returns cached Google reviews from DB
+    list: publicProcedure.query(async () => {
+      // Seed the DB if empty
+      await seedGoogleReviews(SEED_REVIEWS);
+
+      // Check if we should try to refresh from Google Places API
+      const lastSync = await getLastReviewSync();
+      const now = new Date();
+      const oneDayMs = 24 * 60 * 60 * 1000;
+      const shouldRefresh = !lastSync || (now.getTime() - lastSync.getTime()) > oneDayMs;
+
+      if (shouldRefresh && process.env.GOOGLE_PLACES_API_KEY) {
+        try {
+          // Try Google Places API (New) text search
+          const searchRes = await fetch('https://places.googleapis.com/v1/places:searchText', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-Goog-Api-Key': process.env.GOOGLE_PLACES_API_KEY,
+              'X-Goog-FieldMask': 'places.id,places.reviews,places.rating,places.userRatingCount,places.displayName',
+            },
+            body: JSON.stringify({ textQuery: 'Alder Heritage Homes Fresno CA' }),
+          });
+
+          if (searchRes.ok) {
+            type PlaceReview = {
+              authorAttribution?: { displayName?: string; photoUri?: string };
+              rating?: number;
+              text?: { text?: string };
+              relativePublishTimeDescription?: string;
+              publishTime?: string;
+            };
+            const searchData = await searchRes.json() as {
+              places?: Array<{
+                id?: string;
+                reviews?: PlaceReview[];
+              }>;
+            };
+            const place = searchData.places?.[0];
+            if (place?.reviews && place.reviews.length > 0) {
+              const apiReviews = place.reviews.map((r: PlaceReview, i: number) => ({
+                authorName: r.authorAttribution?.displayName || 'Google Reviewer',
+                authorPhotoUrl: r.authorAttribution?.photoUri || null,
+                rating: r.rating || 5,
+                text: r.text?.text || '',
+                relativeTimeDescription: r.relativePublishTimeDescription || null,
+                publishedAt: r.publishTime ? new Date(r.publishTime) : null,
+                sortOrder: i,
+              }));
+              await upsertGoogleReviews(apiReviews);
+              console.log(`[Reviews] Refreshed ${apiReviews.length} reviews from Google Places API`);
+              // Only mark sync successful when we actually got reviews
+              await setLastReviewSync(now);
+            } else {
+              console.log('[Reviews] Google Places API returned no reviews, keeping cached data');
+            }
+          } else {
+            console.warn(`[Reviews] Google Places API returned status ${searchRes.status}, keeping cached data`);
+          }
+        } catch (err) {
+          console.error('[Reviews] Failed to fetch from Google Places API:', err);
+          // Don't fail - use cached reviews
+        }
+      }
+
+      const reviews = await getGoogleReviews();
+      return {
+        reviews,
+        totalRating: 5.0,
+        totalCount: 32,
+      };
+    }),
   }),
 });
 

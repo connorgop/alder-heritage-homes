@@ -1,4 +1,4 @@
-import { int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { int, mysqlEnum, mysqlTable, text, timestamp, varchar, uniqueIndex } from "drizzle-orm/mysql-core";
 
 /**
  * Core user table backing auth flow.
@@ -40,3 +40,35 @@ export const leads = mysqlTable("leads", {
 
 export type Lead = typeof leads.$inferSelect;
 export type InsertLead = typeof leads.$inferInsert;
+
+/**
+ * Google Reviews cache table - stores reviews fetched from Google Places API
+ * authorName is unique to prevent duplicate rows on refresh
+ */
+export const googleReviews = mysqlTable("google_reviews", {
+  id: int("id").autoincrement().primaryKey(),
+  authorName: varchar("authorName", { length: 255 }).notNull(),
+  authorPhotoUrl: text("authorPhotoUrl"),
+  rating: int("rating").notNull(),
+  text: text("text").notNull(),
+  relativeTimeDescription: varchar("relativeTimeDescription", { length: 100 }),
+  publishedAt: timestamp("publishedAt"),
+  isVisible: int("isVisible").default(1).notNull(),
+  sortOrder: int("sortOrder").default(0),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+}, (table) => ({
+  authorNameIdx: uniqueIndex("author_name_idx").on(table.authorName),
+}));
+
+export type GoogleReview = typeof googleReviews.$inferSelect;
+export type InsertGoogleReview = typeof googleReviews.$inferInsert;
+
+/**
+ * Settings table - stores app-level settings like last review sync time
+ */
+export const settings = mysqlTable("settings", {
+  key: varchar("key", { length: 100 }).primaryKey(),
+  value: text("value"),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});

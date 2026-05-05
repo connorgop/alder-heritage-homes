@@ -1,6 +1,6 @@
-import { desc, eq } from "drizzle-orm";
+import { desc, eq, asc } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertLead, InsertUser, leads, users } from "../drizzle/schema";
+import { GoogleReview, InsertGoogleReview, InsertLead, InsertUser, googleReviews, leads, settings, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -114,4 +114,64 @@ export async function getLeadById(id: number) {
   }
   const result = await db.select().from(leads).where(eq(leads.id, id)).limit(1);
   return result.length > 0 ? result[0] : undefined;
+}
+
+// Google Reviews queries
+export async function getGoogleReviews(): Promise<GoogleReview[]> {
+  const db = await getDb();
+  if (!db) return [];
+  return db
+    .select()
+    .from(googleReviews)
+    .where(eq(googleReviews.isVisible, 1))
+    .orderBy(asc(googleReviews.sortOrder), desc(googleReviews.createdAt));
+}
+
+export async function getGoogleReviewCount(): Promise<number> {
+  const db = await getDb();
+  if (!db) return 0;
+  const result = await db.select().from(googleReviews).where(eq(googleReviews.isVisible, 1));
+  return result.length;
+}
+
+export async function upsertGoogleReviews(reviews: InsertGoogleReview[]): Promise<void> {
+  const db = await getDb();
+  if (!db) return;
+  for (const review of reviews) {
+    await db.insert(googleReviews).values(review).onDuplicateKeyUpdate({
+      set: {
+        rating: review.rating,
+        text: review.text,
+        relativeTimeDescription: review.relativeTimeDescription,
+        authorPhotoUrl: review.authorPhotoUrl,
+        updatedAt: new Date(),
+      },
+    });
+  }
+}
+
+export async function getLastReviewSync(): Promise<Date | null> {
+  const db = await getDb();
+  if (!db) return null;
+  const result = await db.select().from(settings).where(eq(settings.key, 'last_review_sync')).limit(1);
+  if (result.length === 0 || !result[0].value) return null;
+  return new Date(result[0].value);
+}
+
+export async function setLastReviewSync(date: Date): Promise<void> {
+  const db = await getDb();
+  if (!db) return;
+  await db.insert(settings).values({ key: 'last_review_sync', value: date.toISOString() }).onDuplicateKeyUpdate({
+    set: { value: date.toISOString(), updatedAt: new Date() },
+  });
+}
+
+export async function seedGoogleReviews(reviews: InsertGoogleReview[]): Promise<void> {
+  const db = await getDb();
+  if (!db) return;
+  const existing = await db.select().from(googleReviews).limit(1);
+  if (existing.length > 0) return; // Already seeded
+  for (let i = 0; i < reviews.length; i++) {
+    await db.insert(googleReviews).values({ ...reviews[i], sortOrder: i });
+  }
 }
