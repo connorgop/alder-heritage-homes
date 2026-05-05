@@ -15,7 +15,7 @@
 - [x] Verify end-to-end form submission works on dev server
 
 ## SEO & Content
-- [ ] Restore and preserve Home.tsx content (schema markup, FAQ, trust badges)
+- [x] Restore and preserve Home.tsx content (schema markup, FAQ, trust badges)
 - [ ] Add city-specific landing pages (Fresno, Clovis, Visalia, Bakersfield, Tulare, Hanford)
 - [ ] Add blog section with SEO-optimized content
 - [ ] Add sitemap.xml

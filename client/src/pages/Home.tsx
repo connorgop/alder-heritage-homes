@@ -5,10 +5,6 @@ import { CheckCircle2, Clock, DollarSign, AlertCircle, MapPin, Phone, Award } fr
 import { Link } from 'wouter';
 
 export default function Home() {
-  // The userAuth hooks provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
-
   useEffect(() => {
     // Add JSON-LD schema markup for LocalBusiness
     const schema = {
