@@ -34,3 +34,15 @@
 ## Admin Dashboard
 - [ ] Admin leads dashboard to view all submissions
 - [ ] Lead status management (new → contacted → qualified → closed)
+
+## Website Redesign (Visual Overhaul)
+- [x] Research old website design via Wayback Machine and live site screenshots
+- [x] Gather photos of Connor and property images for the site
+- [x] Redesign homepage hero with professional photo of Connor
+- [x] Add "About Connor" section with personal story and photo
+- [x] Add professional property/house imagery throughout
+- [x] Improve overall typography, spacing, and color scheme
+- [ ] Add testimonials section with real social proof
+- [x] Make site fully responsive and mobile-optimized
+- [x] Add navigation header with logo
+- [x] Add footer with contact info and license number
