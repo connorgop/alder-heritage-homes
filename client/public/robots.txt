@@ -1,7 +1,43 @@
 # robots.txt — Alder Heritage Homes
 # https://www.alderheritagehomes.com
+# Last updated: 2026-05-05
 
+# All standard crawlers
 User-agent: *
+Allow: /
+
+# Explicitly allow AI/LLM crawlers for ChatGPT, Perplexity, Gemini, Claude visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Applebot
 Allow: /
 
 # Sitemap location

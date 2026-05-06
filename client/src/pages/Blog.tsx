@@ -3281,6 +3281,86 @@ const _blogPostsRaw = [
     date: "2026-05-03",
     author: "Connor Morris"
   },
+  {
+    slug: "short-sale-vs-cash-buyer-fresno-california",
+    title: "Short Sale vs. Cash Buyer in Fresno: Which Is Better?",
+    excerpt: "Owe more than your home is worth? Compare short sales vs. cash buyers side-by-side — timeline, credit impact, certainty, and net proceeds.",
+    category: "Seller Guides",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
+  {
+    slug: "notice-of-default-received-what-to-do-fresno",
+    title: "Received a Notice of Default in Fresno? Here's What to Do",
+    excerpt: "A Notice of Default means you have 4-5 months before foreclosure auction. Here are your 5 options — and what to do right now.",
+    category: "Foreclosure",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-divorce-attorney-referral-fresno",
+    title: "Selling a Home During Divorce in Fresno: What You Need to Know",
+    excerpt: "Going through a divorce? Selling the family home is often the fastest way to divide the asset. Here's how cash buyers simplify the process.",
+    category: "Divorce & Life Changes",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-estate-sale-fresno-california",
+    title: "Selling an Estate Home in Fresno: Cash Buyer vs. Traditional Sale",
+    excerpt: "Settling an estate? A cash buyer closes in 7 days, buys as-is, and eliminates commissions — maximizing proceeds for beneficiaries.",
+    category: "Probate & Inherited",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-corporate-relocation-fresno",
+    title: "Corporate Relocation from Fresno: How to Sell Your Home Fast",
+    excerpt: "Got transferred? The MLS takes 75-90 days. A cash buyer closes in 7-14 days — before your departure date. NAS Lemoore PCS transfers welcome.",
+    category: "Relocation",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-medical-debt-fresno-california",
+    title: "Selling Your Home to Pay Medical Bills in Fresno",
+    excerpt: "Medical debt is the leading cause of bankruptcy. If you have home equity, selling to a cash buyer can eliminate debt and avoid bankruptcy.",
+    category: "Seller Guides",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-probate-attorney-referral-fresno",
+    title: "Probate Attorneys: How We Help Your Clients Sell Estate Homes Fast",
+    excerpt: "We work directly with Fresno probate attorneys. Written cash offers in 24 hours, proof of funds for court filings, flexible closing timelines.",
+    category: "Probate",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
+  {
+    slug: "fresno-housing-market-2026-seller-guide",
+    title: "Fresno Housing Market 2026: What Sellers Need to Know",
+    excerpt: "Median price ~$405K, 45-60 days on market, foreclosures up 15%. Here's an honest look at the 2026 Fresno market and what it means for sellers.",
+    category: "Market Updates",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-fast-madera-ca",
+    title: "Sell Your House Fast in Madera, CA | Cash Offer in 24 Hours",
+    excerpt: "Need to sell your Madera home fast? We buy houses for cash in Madera County. Close in 7 days, zero commissions, any condition.",
+    category: "Difficult Situations",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-fast-kings-county-hanford-lemoore",
+    title: "Sell Your House Fast in Kings County: Hanford, Lemoore, Corcoran",
+    excerpt: "Cash home buyer serving all of Kings County. NAS Lemoore PCS transfers, Hanford and Lemoore homes, any condition. Close in 7 days.",
+    category: "Kings County",
+    date: "2026-05-05",
+    author: "Connor Morris"
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 

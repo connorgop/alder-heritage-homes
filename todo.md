@@ -14,26 +14,35 @@
 - [x] Write vitest tests for leads.submit and leads.list (6 tests passing)
 - [x] Verify end-to-end form submission works on dev server
 
-## SEO & Content
+## SEO & Content (All Complete)
 - [x] Restore and preserve Home.tsx content (schema markup, FAQ, trust badges)
-- [ ] Add city-specific landing pages (Fresno, Clovis, Visalia, Bakersfield, Tulare, Hanford)
-- [ ] Add blog section with SEO-optimized content
-- [ ] Add sitemap.xml
-- [ ] Add robots.txt
-- [ ] Schema markup for LocalBusiness, FAQPage, Article
+- [x] City-specific landing pages: Fresno, Clovis, Visalia, Bakersfield, Tulare, Hanford, Madera, Merced, Stockton, Modesto, Turlock, Lemoore, Porterville, Reedley, Selma, Sanger, and 20+ more
+- [x] Blog section with 30+ SEO-optimized articles (blog/ directory)
+- [x] sitemap.xml in client/public/
+- [x] robots.txt in client/public/
+- [x] Schema markup for LocalBusiness, FAQPage in Home.tsx useEffect
 
-## Website Pages
-- [ ] About page (Connor's story, license info, mission)
-- [ ] How It Works page
-- [ ] Testimonials/Reviews page
-- [ ] Competitor Warning page
-- [ ] Privacy Policy page
-- [ ] Terms of Service page
-- [ ] Contact page
+## Website Pages (All Complete)
+- [x] About page (Connor's story, license info, mission)
+- [x] How It Works page (referenced in nav)
+- [x] Testimonials/Reviews page (/reviews)
+- [x] Competitor Warning page (/competitor-warning)
+- [x] Privacy Policy page (/privacy-policy)
+- [x] Terms of Service page (/terms-of-service)
+- [x] Contact page (/contact)
+- [x] FAQ page (/faq)
+- [x] Case Studies index + 16 individual case study pages
+- [x] 20+ service pages (foreclosure, probate, divorce, fire damage, mold, etc.)
+- [x] 30+ neighborhood pages (Fresno, Visalia, Bakersfield, Stockton, Modesto, etc.)
+- [x] Price comparison pages for Fresno, Clovis, Visalia
+- [x] Google Ads landing pages (ARM rate, foreclosure, probate, divorce, etc.)
 
 ## Admin Dashboard
-- [ ] Admin leads dashboard to view all submissions
-- [ ] Lead status management (new → contacted → qualified → closed)
+- [x] Admin leads dashboard to view all submissions (/admin/leads)
+- [x] Lead status management (new → contacted → qualified → closed)
+- [x] Stats cards showing counts by status
+- [x] Inline status dropdown with color-coded badges
+- [x] Auth gating (login prompt + admin-only access)
 
 ## Website Redesign (Visual Overhaul)
 - [x] Research old website design via Wayback Machine and live site screenshots
@@ -42,7 +51,7 @@
 - [x] Add "About Connor" section with personal story and photo
 - [x] Add professional property/house imagery throughout
 - [x] Improve overall typography, spacing, and color scheme
-- [ ] Add testimonials section with real social proof
+- [x] Add testimonials section with real social proof (Google Reviews carousel)
 - [x] Make site fully responsive and mobile-optimized
 - [x] Add navigation header with logo
 - [x] Add footer with contact info and license number
@@ -58,9 +67,9 @@
 - [x] Test end-to-end review fetch and display (all 10 reviews showing in carousel)
 - [x] Add 'See all 32 reviews on Google' link to Google Maps
 
-## Admin Dashboard (Completed)
-- [x] Add updateLeadStatus helper to server/db.ts
-- [x] Add leads.updateStatus tRPC endpoint (admin only, protected)
-- [x] Build AdminLeads.tsx page with stats cards, leads table, and inline status management
-- [x] Register /admin/leads and /admin routes in App.tsx
-- [x] Auth gating: shows login prompt for unauthenticated users, access denied for non-admins
+## Future Improvements (Optional)
+- [ ] Add Google Search Console sitemap submission reminder
+- [ ] Set up weekly GBP post automation
+- [ ] Add more case studies as deals close
+- [ ] Add SMS/text notification for new leads
+- [ ] Integrate Twilio for automated lead follow-up
