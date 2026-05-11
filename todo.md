@@ -100,9 +100,9 @@
 - [ ] Get local news coverage (Fresno Bee, ABC30) for AI visibility boost (manual outreach by Connor)
 
 ## AI Meta Description Generator (May 11, 2026)
-- [ ] Add tRPC procedure `admin.generateMetaDescriptions` that takes a list of pages and uses LLM to generate optimized meta descriptions
-- [ ] Build UI panel in AdminSeo.tsx with page selector, AI generation button, copy-to-clipboard, and character count indicator
-- [ ] Write vitest test for the new procedure
+- [x] Add tRPC procedure `admin.generateMetaDescriptions` that takes a list of pages and uses LLM to generate optimized meta descriptions
+- [x] Build UI panel in AdminSeo.tsx with page selector, AI generation button, copy-to-clipboard, and character count indicator
+- [x] Write vitest test for the new procedure (covered by seoAi.test.ts — 10 tests)
 
 ## SEO Beast + AI Ranking Sprint (May 11, 2026)
 

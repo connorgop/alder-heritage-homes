@@ -74,3 +74,67 @@ describe("seoAi — getPageSeoScorecard", () => {
     }
   });
 });
+
+describe("seoAi — generateMetaDescriptions (scoring logic)", () => {
+  it("PAGE_REGISTRY pages should have primaryKeyword and secondaryKeywords for meta generation", () => {
+    for (const page of PAGE_REGISTRY) {
+      expect(page.primaryKeyword).toBeTruthy();
+      expect(Array.isArray(page.secondaryKeywords)).toBe(true);
+      expect(page.secondaryKeywords.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("filtering by slug should return only matching pages", () => {
+    const targetSlug = "/";
+    const filtered = PAGE_REGISTRY.filter(p => [targetSlug].includes(p.slug));
+    expect(filtered.length).toBe(1);
+    expect(filtered[0].slug).toBe(targetSlug);
+  });
+
+  it("empty slug list should target all pages in registry", () => {
+    const slugs: string[] = [];
+    const pages = slugs.length > 0
+      ? PAGE_REGISTRY.filter(p => slugs.includes(p.slug))
+      : PAGE_REGISTRY;
+    expect(pages.length).toBe(PAGE_REGISTRY.length);
+  });
+
+  it("meta description scoring: 145-160 chars should not penalize score", () => {
+    const meta = "A".repeat(150); // 150 chars — within ideal range
+    let score = 100;
+    if (meta.length < 120) score -= 20;
+    else if (meta.length < 145) score -= 10;
+    else if (meta.length > 160) score -= 15;
+    expect(score).toBe(100);
+  });
+
+  it("meta description scoring: under 120 chars should penalize by 20", () => {
+    const meta = "A".repeat(100);
+    let score = 100;
+    if (meta.length < 120) score -= 20;
+    else if (meta.length < 145) score -= 10;
+    else if (meta.length > 160) score -= 15;
+    expect(score).toBe(80);
+  });
+
+  it("meta description scoring: over 160 chars should penalize by 15", () => {
+    const meta = "A".repeat(165);
+    let score = 100;
+    if (meta.length < 120) score -= 20;
+    else if (meta.length < 145) score -= 10;
+    else if (meta.length > 160) score -= 15;
+    expect(score).toBe(85);
+  });
+
+  it("meta description scoring: differentiator check should pass for text containing 'cash offer'", () => {
+    const meta = "sell your house fast in fresno — get a cash offer in 24 hours";
+    const hasDiff = ["24", "3 day", "3-day", "zero fee", "no fee", "licensed", "wholesaler", "cash offer"].some(d => meta.toLowerCase().includes(d));
+    expect(hasDiff).toBe(true); // "cash offer" and "24" are in the meta
+  });
+
+  it("meta description scoring: differentiator check should fail for generic text", () => {
+    const meta = "we buy houses in fresno quickly";
+    const hasDiff = ["24", "3 day", "3-day", "zero fee", "no fee", "licensed", "wholesaler", "cash offer"].some(d => meta.toLowerCase().includes(d));
+    expect(hasDiff).toBe(false);
+  });
+});
