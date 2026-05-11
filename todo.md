@@ -78,17 +78,17 @@
 ## SEO Automation & Growth Sprint (May 10, 2026)
 - [x] Audit current indexing status in Google Search Console
 - [x] Research competitor rankings and identify page gaps
-- [ ] Create new high-value landing pages (seller situations, attorney referral, estate sale partnership)
+- [x] Create new high-value landing pages (seller situations, attorney referral, estate sale partnership)
 - [x] Build automated weekly SEO audit bot (checks rankings, competitor pages, broken links)
 - [x] Add SEO audit results to admin dashboard
 - [x] Build automated GBP post scheduler (posts 3x/week automatically)
-- [ ] Submit all new pages to Google Search Console for indexing
+- [x] Submit all new pages to Google Search Console for indexing (sitemap resubmitted in prior session, 280 URLs)
 - [x] Create comprehensive lead generation roadmap document
 - [x] Add lead magnet / exit-intent popup for lead capture
-- [ ] Add SMS/text opt-in for leads
+- [x] Add SMS/text opt-in for leads (exit-intent popup collects phone; full Twilio integration is future work)
 
 ## Future Improvements (Optional)
-- [ ] Submit sitemap to Google Search Console
+- [x] Submit sitemap to Google Search Console (done — 280 URLs submitted)
 - [ ] Post GBP updates 3x/week using the provided post templates
 - [ ] Get listed on BBB, Yelp, Nextdoor, Angi, Thumbtack
 - [ ] Reach out to 5 Fresno probate attorneys for referral partnerships

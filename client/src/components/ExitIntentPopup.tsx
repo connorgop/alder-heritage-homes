@@ -17,7 +17,7 @@ export default function ExitIntentPopup() {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
   const [step, setStep] = useState<"warning" | "form" | "success">("warning");
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState("");
   const [phone, setPhone] = useState("");
 
   const submitLead = trpc.leads.submit.useMutation({
@@ -66,14 +66,15 @@ export default function ExitIntentPopup() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim() || !phone.trim()) return;
+    if (!firstName.trim() || !phone.trim()) return;
     submitLead.mutate({
-      name: name.trim(),
+      firstName: firstName.trim(),
+      lastName: "(popup)",
       phone: phone.trim(),
       email: "",
-      address: "",
-      city: "",
-      situation: "Exit intent popup",
+      address: "Not provided",
+      city: "Fresno area",
+      situation: "Exit intent popup — wants cash offer",
       source: "exit-intent-popup",
     });
   };
@@ -182,8 +183,8 @@ export default function ExitIntentPopup() {
                 <input
                   id="exit-name"
                   type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
                   placeholder="John Smith"
                   required
                   className="w-full rounded-lg px-3 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2"

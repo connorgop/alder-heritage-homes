@@ -312,6 +312,9 @@ const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const SmsConsent = lazy(() => import("./pages/SmsConsent"));
 const AdminLeads = lazy(() => import("./pages/AdminLeads"));
 const AdminSeo = lazy(() => import("./pages/AdminSeo"));
+const ForProbateAttorneys = lazy(() => import("./pages/ForProbateAttorneys"));
+const ForDivorceAttorneys = lazy(() => import("./pages/ForDivorceAttorneys"));
+const EstateSalePartnership = lazy(() => import("./pages/EstateSalePartnership"));
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -748,6 +751,9 @@ function Router() {
       <Route path="/we-buy-houses-fresno-comparison"><Redirect to="/compare-cash-buyers-fresno" /></Route>
       <Route path="/admin/leads" component={AdminLeads} />
       <Route path="/admin/seo" component={AdminSeo} />
+      <Route path="/for-probate-attorneys" component={ForProbateAttorneys} />
+      <Route path="/for-divorce-attorneys" component={ForDivorceAttorneys} />
+      <Route path="/estate-sale-partnership" component={EstateSalePartnership} />
       <Route path="/admin"><Redirect to="/admin/leads" /></Route>
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
