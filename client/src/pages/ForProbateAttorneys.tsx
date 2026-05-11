@@ -1,38 +1,37 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Clock, DollarSign, Phone, Mail, Shield, Users, FileText, Star } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
+import SchemaMarkup, { faqPageSchema, localBusinessSchema, breadcrumbSchema, personSchema } from "@/components/SchemaMarkup";
+
+const PROBATE_FAQS = [
+  { q: "Are you a wholesaler?", a: "No. I am a licensed California real estate agent (DRE #02219124) and I purchase properties directly with my own capital. I do not assign contracts to other buyers. When I make an offer, I have the funds to close." },
+  { q: "Can you provide proof of funds?", a: "Yes. I can provide a written proof of funds letter within 24 hours of reviewing the property. This can be provided to the court or to other parties in the estate as needed." },
+  { q: "What if the property has liens, back taxes, or code violations?", a: "I purchase properties in any condition, including those with liens, back taxes, deferred maintenance, or code violations. I handle these issues as part of the purchase — the estate does not need to resolve them before closing." },
+  { q: "What is your service area?", a: "I purchase homes throughout the Central Valley, including Fresno, Clovis, Visalia, Bakersfield, Tulare, Hanford, Madera, Kings County, and surrounding areas." },
+  { q: "Is there a referral fee?", a: "I do not pay referral fees to attorneys, as this may implicate California State Bar rules. However, I am happy to provide a reciprocal referral relationship and to be a reliable resource for your clients." },
+  { q: "How quickly can you close on a probate property?", a: "I can close in as little as 3 days once the court approves the sale, or on whatever timeline the probate court requires. I am experienced with court confirmation sales and independent administration." },
+  { q: "Do you work with properties that have multiple heirs?", a: "Yes. I have experience working with estates where multiple heirs disagree on price or timeline. I am patient, professional, and experienced at navigating complex family dynamics." },
+  { q: "What counties do you serve for probate properties?", a: "I serve Fresno County, Kings County, Tulare County, Kern County, Madera County, and surrounding Central Valley counties." },
+];
 
 export default function ForProbateAttorneys() {
-  useEffect(() => {
-    document.title = "For Probate Attorneys | Trusted Cash Buyer Referral Partner | Alder Heritage Homes";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Probate attorneys in Fresno: refer your clients to a licensed, trusted cash buyer. Connor Morris buys inherited homes fast — proof of funds in 24 hours, close in 3 days. No wholesalers, no surprises.");
-
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "For Probate Attorneys — Referral Partner Program",
-      "description": "Trusted cash buyer referral partner for Fresno probate attorneys. Licensed CA real estate agent, proof of funds in 24 hours, closes in 3 days.",
-      "url": "https://www.alderheritagehomes.com/for-probate-attorneys",
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alderheritagehomes.com" },
-          { "@type": "ListItem", "position": 2, "name": "For Probate Attorneys", "item": "https://www.alderheritagehomes.com/for-probate-attorneys" }
-        ]
-      }
-    };
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
 
   return (
     <div className="min-h-screen bg-white">
+      <PageMeta
+        title="For Probate Attorneys | Trusted Cash Buyer Referral Partner"
+        description="Probate attorneys in Fresno: refer your clients to a licensed, trusted cash buyer. Connor buys inherited homes fast — proof of funds in 24 hours, close in 3 days. No wholesalers."
+        path="/for-probate-attorneys"
+      />
+      <SchemaMarkup schema={localBusinessSchema()} id="probate-atty-local-biz" />
+      <SchemaMarkup schema={faqPageSchema(PROBATE_FAQS)} id="probate-atty-faq" />
+      <SchemaMarkup schema={personSchema()} id="probate-atty-person" />
+      <SchemaMarkup schema={breadcrumbSchema([
+        { name: "Home", url: "https://www.alderheritagehomes.com" },
+        { name: "For Probate Attorneys", url: "https://www.alderheritagehomes.com/for-probate-attorneys" },
+      ])} id="probate-atty-breadcrumb" />
       {/* Hero */}
       <section className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">

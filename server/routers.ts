@@ -5,6 +5,7 @@ import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
 import { getAllLeads, insertLead, updateLeadStatus, getGoogleReviews, getLastReviewSync, setLastReviewSync, seedGoogleReviews, upsertGoogleReviews } from "./db";
 import { runSeoAudit, scheduleGbpPost, pingSitemaps, GBP_POSTS } from "./cron";
+import { generateMetaDescriptions, generateTitleTags, generateFaqPairs, optimizeForAnswerEngines, generateContentBrief, getPageSeoScorecard, PAGE_REGISTRY } from "./seoAi";
 import { z } from "zod";
 
 // Seed data - 10 real reviews scraped from Google Maps
@@ -152,6 +153,73 @@ export const appRouter = router({
       if (ctx.user.role !== "admin") throw new Error("Unauthorized");
       return { posts: GBP_POSTS, total: GBP_POSTS.length };
     }),
+
+    // ── AI SEO Tools ──────────────────────────────────────────────────────────
+
+    // Get the page SEO scorecard (no AI needed — instant)
+    getPageSeoScorecard: protectedProcedure.query(async ({ ctx }) => {
+      if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+      return getPageSeoScorecard();
+    }),
+
+    // Get the full page registry
+    getPageRegistry: protectedProcedure.query(async ({ ctx }) => {
+      if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+      return PAGE_REGISTRY;
+    }),
+
+    // AI: Generate optimized meta descriptions for selected pages
+    generateMetaDescriptions: protectedProcedure
+      .input(z.object({
+        slugs: z.array(z.string()).default([]),
+      }))
+      .mutation(async ({ ctx, input }) => {
+        if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+        const results = await generateMetaDescriptions(input.slugs);
+        return { results };
+      }),
+
+    // AI: Generate optimized title tags for selected pages
+    generateTitleTags: protectedProcedure
+      .input(z.object({
+        slugs: z.array(z.string()).default([]),
+      }))
+      .mutation(async ({ ctx, input }) => {
+        if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+        const results = await generateTitleTags(input.slugs);
+        return { results };
+      }),
+
+    // AI: Generate FAQ pairs for a specific page
+    generateFaqPairs: protectedProcedure
+      .input(z.object({
+        slug: z.string(),
+      }))
+      .mutation(async ({ ctx, input }) => {
+        if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+        return generateFaqPairs(input.slug);
+      }),
+
+    // AI: Optimize content for AI answer engines (ChatGPT, Claude, Perplexity)
+    optimizeForAnswerEngines: protectedProcedure
+      .input(z.object({
+        topic: z.string().min(3),
+        currentContent: z.string().min(10),
+      }))
+      .mutation(async ({ ctx, input }) => {
+        if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+        return optimizeForAnswerEngines(input.topic, input.currentContent);
+      }),
+
+    // AI: Generate a full content brief for a target keyword
+    generateContentBrief: protectedProcedure
+      .input(z.object({
+        targetKeyword: z.string().min(3),
+      }))
+      .mutation(async ({ ctx, input }) => {
+        if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+        return generateContentBrief(input.targetKeyword);
+      }),
   }),
 
   reviews: router({

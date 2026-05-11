@@ -1,38 +1,37 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Clock, DollarSign, Phone, Mail, Shield, Home, Star } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
+import SchemaMarkup, { faqPageSchema, localBusinessSchema, breadcrumbSchema, personSchema } from "@/components/SchemaMarkup";
+
+const ESTATE_SALE_FAQS = [
+  { q: "What is your role in an estate sale?", a: "I am the buyer for the real property (the house) after the estate sale is complete. Estate sale companies handle the personal property inside; I handle the real estate. We work together, not in competition." },
+  { q: "How quickly can you close on the house?", a: "I can close in as little as 3 days or on whatever timeline works for the estate. I provide a written cash offer within 24 hours of reviewing the property." },
+  { q: "Are you a licensed real estate agent?", a: "Yes. I am a licensed California real estate agent (DRE #02219124). I am not a wholesaler. I purchase properties directly with my own capital." },
+  { q: "Do you pay referral fees?", a: "I am happy to discuss mutually beneficial referral arrangements. Contact me directly to discuss the details." },
+  { q: "What condition does the house need to be in?", a: "I buy homes as-is, in any condition. After the estate sale, the family does not need to clean out the house or make any repairs. I handle everything." },
+  { q: "What is your service area?", a: "I serve Fresno, Clovis, Visalia, Bakersfield, Tulare, Hanford, Madera, and surrounding Central Valley areas." },
+  { q: "Can you work with a property that has liens or back taxes?", a: "Yes. I purchase properties with liens, back taxes, or other encumbrances. I handle these issues as part of the purchase process." },
+  { q: "How do I refer a client to you?", a: "Simply call or text (559) 281-8016, or email connor@alderheritagehomes.com. A brief introduction with the property address is all I need to get started." },
+];
 
 export default function EstateSalePartnership() {
-  useEffect(() => {
-    document.title = "Estate Sale Companies | Cash Buyer Partnership | Alder Heritage Homes Fresno";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Estate sale companies in Fresno: partner with a licensed cash buyer for your clients who also need to sell the house. Connor Morris buys homes fast — proof of funds in 24 hours, close in 3 days.");
-
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Estate Sale Company Partnership Program",
-      "description": "Trusted cash buyer partnership for Fresno estate sale companies. Licensed CA real estate agent, proof of funds in 24 hours, closes in 3 days.",
-      "url": "https://www.alderheritagehomes.com/estate-sale-partnership",
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alderheritagehomes.com" },
-          { "@type": "ListItem", "position": 2, "name": "Estate Sale Partnership", "item": "https://www.alderheritagehomes.com/estate-sale-partnership" }
-        ]
-      }
-    };
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
 
   return (
     <div className="min-h-screen bg-white">
+      <PageMeta
+        title="Estate Sale Companies | Cash Buyer Partnership | Fresno"
+        description="Estate sale companies in Fresno: partner with a licensed cash buyer for clients who also need to sell the house. Proof of funds in 24 hours, close in 3 days. No wholesalers."
+        path="/estate-sale-partnership"
+      />
+      <SchemaMarkup schema={localBusinessSchema()} id="estate-sale-local-biz" />
+      <SchemaMarkup schema={faqPageSchema(ESTATE_SALE_FAQS)} id="estate-sale-faq" />
+      <SchemaMarkup schema={personSchema()} id="estate-sale-person" />
+      <SchemaMarkup schema={breadcrumbSchema([
+        { name: "Home", url: "https://www.alderheritagehomes.com" },
+        { name: "Estate Sale Partnership", url: "https://www.alderheritagehomes.com/estate-sale-partnership" },
+      ])} id="estate-sale-breadcrumb" />
       {/* Hero */}
       <section className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">

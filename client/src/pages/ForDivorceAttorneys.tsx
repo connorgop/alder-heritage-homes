@@ -1,38 +1,37 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Clock, DollarSign, Phone, Mail, Shield, Scale, Star } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
+import SchemaMarkup, { faqPageSchema, localBusinessSchema, breadcrumbSchema, personSchema } from "@/components/SchemaMarkup";
+
+const DIVORCE_FAQS = [
+  { q: "Can you work with both parties separately?", a: "Yes. I can communicate with each party separately, through their respective counsel, or jointly — whatever the situation requires. I remain neutral throughout." },
+  { q: "What if one party refuses to cooperate?", a: "If the court has ordered the sale, I can work with the appointed receiver or the cooperating party to move forward. I have experience navigating difficult situations." },
+  { q: "Will you reduce your offer at the last minute?", a: "Never. The price I offer is the price I pay. I do not use inspection contingencies or last-minute renegotiations. This protects the settlement agreement." },
+  { q: "What is your service area?", a: "I purchase homes throughout the Central Valley, including Fresno, Clovis, Visalia, Bakersfield, Tulare, Hanford, Madera, Kings County, and surrounding areas." },
+  { q: "Are you a licensed real estate agent?", a: "Yes. I am a licensed California real estate agent (DRE #02219124). I am not a wholesaler. I purchase properties directly with my own capital." },
+  { q: "Can you close on a court-ordered timeline?", a: "Yes. I can close in as little as 3 days or on whatever timeline the court or settlement agreement requires. I am experienced with court-ordered sales." },
+  { q: "Do you charge commissions or fees?", a: "No. There are zero commissions and zero fees charged to the seller. Both parties receive the full cash offer amount as agreed." },
+  { q: "What if the property needs repairs?", a: "I buy homes as-is, in any condition. No repair requests, no inspection contingencies. This eliminates a major source of conflict between divorcing parties." },
+];
 
 export default function ForDivorceAttorneys() {
-  useEffect(() => {
-    document.title = "For Divorce Attorneys | Fast Home Sale Referral Partner | Alder Heritage Homes";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Divorce attorneys in Fresno: refer clients who need to sell the marital home fast. Licensed cash buyer, proof of funds in 24 hours, close in 3 days. Neutral, professional, no drama.");
-
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "For Divorce Attorneys — Referral Partner Program",
-      "description": "Trusted cash buyer referral partner for Fresno divorce attorneys. Licensed CA real estate agent, neutral party, proof of funds in 24 hours, closes in 3 days.",
-      "url": "https://www.alderheritagehomes.com/for-divorce-attorneys",
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alderheritagehomes.com" },
-          { "@type": "ListItem", "position": 2, "name": "For Divorce Attorneys", "item": "https://www.alderheritagehomes.com/for-divorce-attorneys" }
-        ]
-      }
-    };
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-    return () => { document.head.removeChild(script); };
-  }, []);
 
   return (
     <div className="min-h-screen bg-white">
+      <PageMeta
+        title="For Divorce Attorneys | Fast Home Sale Referral Partner"
+        description="Divorce attorneys in Fresno: refer clients who need to sell the marital home fast. Licensed cash buyer, neutral party, proof of funds in 24 hours, close in 3 days."
+        path="/for-divorce-attorneys"
+      />
+      <SchemaMarkup schema={localBusinessSchema()} id="divorce-atty-local-biz" />
+      <SchemaMarkup schema={faqPageSchema(DIVORCE_FAQS)} id="divorce-atty-faq" />
+      <SchemaMarkup schema={personSchema()} id="divorce-atty-person" />
+      <SchemaMarkup schema={breadcrumbSchema([
+        { name: "Home", url: "https://www.alderheritagehomes.com" },
+        { name: "For Divorce Attorneys", url: "https://www.alderheritagehomes.com/for-divorce-attorneys" },
+      ])} id="divorce-atty-breadcrumb" />
       {/* Hero */}
       <section className="bg-gradient-to-r from-slate-800 to-slate-900 text-white py-16 px-4">
         <div className="max-w-4xl mx-auto">

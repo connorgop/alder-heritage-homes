@@ -94,9 +94,30 @@ export default function HowItWorks() {
     canonical: "/how-it-works",
   });
 
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Sell Your House for Cash in Fresno",
+    "description": "Sell your home to Alder Heritage Homes in 4 simple steps. No repairs, no commissions, no fees. Licensed CA Agent DRE #02219124.",
+    "totalTime": "P3D",
+    "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+    "supply": [
+      { "@type": "HowToSupply", "name": "Property address" },
+      { "@type": "HowToSupply", "name": "Contact information" },
+    ],
+    "step": steps.map((s, i) => ({
+      "@type": "HowToStep",
+      "position": i + 1,
+      "name": s.title,
+      "text": s.description,
+      "url": `https://www.alderheritagehomes.com/how-it-works#step-${i + 1}`,
+    })),
+  };
+
   return (
     <Layout>
       <SchemaMarkup schema={faqSchema(faqs)} id="faq-how-it-works" />
+      <SchemaMarkup schema={howToSchema} id="howto-sell-house" />
 
       {/* Hero */}
       <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>

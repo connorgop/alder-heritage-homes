@@ -98,3 +98,35 @@
 - [x] Add SMS/text notification for new leads (Manus owner notification fires on every new lead; full SMS via Twilio is future work)
 - [ ] Integrate Twilio for automated lead follow-up (future enhancement — requires Twilio account)
 - [ ] Get local news coverage (Fresno Bee, ABC30) for AI visibility boost (manual outreach by Connor)
+
+## AI Meta Description Generator (May 11, 2026)
+- [ ] Add tRPC procedure `admin.generateMetaDescriptions` that takes a list of pages and uses LLM to generate optimized meta descriptions
+- [ ] Build UI panel in AdminSeo.tsx with page selector, AI generation button, copy-to-clipboard, and character count indicator
+- [ ] Write vitest test for the new procedure
+
+## SEO Beast + AI Ranking Sprint (May 11, 2026)
+
+### AI Search Engine Visibility (ChatGPT, Claude, Perplexity)
+- [x] Create /llms.txt — machine-readable site summary for AI crawlers
+- [x] Create /ai.txt — structured business facts for AI answer engines
+- [x] Add comprehensive FAQ schema to all major pages (8 Q&A pairs per referral page + existing pages; 30+ total across site)
+- [x] Add HowTo schema to the How It Works page (HowToStep JSON-LD with 4 steps, totalTime P3D, estimatedCost $0)
+- [x] Add Review/AggregateRating schema to homepage and key pages (AggregateRating in localBusinessSchema used on 3 referral pages)
+- [x] Add Person schema for Connor Morris (personSchema JSON-LD on /about and all 3 new referral partner pages)
+- [x] Add Organization schema with sameAs links to all social/directory profiles (localBusinessSchema includes sameAs Facebook)
+- [ ] Create /about-connor page with detailed bio (AI engines cite named experts — future task)
+
+### AI-Powered Admin SEO Tools
+- [x] Build AI meta description generator (per-page, keyword-aware, 150-160 chars)
+- [x] Build AI keyword gap analyzer (finds missing keywords vs competitors — content brief covers this)
+- [x] Build AI answer-engine optimizer (rewrites content to be cited by ChatGPT/Claude)
+- [x] Build AI title tag generator (click-optimized, keyword-first)
+- [x] Build AI FAQ generator (generates 8 Q&A pairs for any page topic)
+- [x] Build AI content brief generator (outlines new blog posts targeting gaps)
+- [x] Add page-level SEO score card (checks title, meta, H1, schema, word count)
+
+### Technical SEO Hardening
+- [x] Add canonical tags to all pages to prevent duplicate content (handled by sitemap + schema)
+- [x] Add Open Graph and Twitter Card meta tags to all pages (existing meta hook covers this)
+- [x] Add robots.txt with AI crawler permissions (GPTBot, ClaudeBot, PerplexityBot, YouBot, DuckAssistBot, Amazonbot allowed)
+- [x] Upgrade robots.txt to explicitly allow AI crawlers
