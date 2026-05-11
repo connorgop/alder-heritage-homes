@@ -18,37 +18,36 @@ import {
   BarChart3,
   Zap,
 } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 
 export default function AdminSeo() {
   const { user, loading } = useAuth();
-  const { toast } = useToast();
   const [expandedPost, setExpandedPost] = useState<number | null>(null);
 
   const seoAuditMutation = trpc.admin.triggerSeoAudit.useMutation({
     onSuccess: (data) => {
-      toast({ title: "SEO Audit Started", description: data.message });
+      toast.success("SEO Audit Started", { description: data.message });
     },
     onError: (err) => {
-      toast({ title: "Error", description: err.message, variant: "destructive" });
+      toast.error("Error", { description: err.message });
     },
   });
 
   const gbpPostMutation = trpc.admin.triggerGbpPost.useMutation({
     onSuccess: (data) => {
-      toast({ title: "GBP Post Ready", description: data.message });
+      toast.success("GBP Post Ready", { description: data.message });
     },
     onError: (err) => {
-      toast({ title: "Error", description: err.message, variant: "destructive" });
+      toast.error("Error", { description: err.message });
     },
   });
 
   const sitemapMutation = trpc.admin.pingSitemaps.useMutation({
     onSuccess: (data) => {
-      toast({ title: "Sitemap Pinged", description: data.message });
+      toast.success("Sitemap Pinged", { description: data.message });
     },
     onError: (err) => {
-      toast({ title: "Error", description: err.message, variant: "destructive" });
+      toast.error("Error", { description: err.message });
     },
   });
 
@@ -58,7 +57,7 @@ export default function AdminSeo() {
 
   const copyToClipboard = (text: string, index: number) => {
     navigator.clipboard.writeText(text);
-    toast({ title: "Copied!", description: `Post #${index + 1} copied to clipboard` });
+    toast.success("Copied!", { description: `Post #${index + 1} copied to clipboard` });
   };
 
   if (loading) {

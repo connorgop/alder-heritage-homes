@@ -89,12 +89,12 @@
 
 ## Future Improvements (Optional)
 - [x] Submit sitemap to Google Search Console (done — 280 URLs submitted)
-- [ ] Post GBP updates 3x/week using the provided post templates
-- [ ] Get listed on BBB, Yelp, Nextdoor, Angi, Thumbtack
-- [ ] Reach out to 5 Fresno probate attorneys for referral partnerships
-- [ ] Reach out to estate sale companies for partnerships
-- [ ] Answer questions on Reddit r/RealEstate and r/personalfinance
-- [ ] Add more case studies as deals close
-- [ ] Add SMS/text notification for new leads
-- [ ] Integrate Twilio for automated lead follow-up
-- [ ] Get local news coverage (Fresno Bee, ABC30) for AI visibility boost
+- [x] Post GBP updates 3x/week using the provided post templates (automated Mon/Wed/Fri reminders deliver ready-to-post content via Manus notification; actual GBP posting is manual by Connor)
+- [ ] Get listed on BBB, Yelp, Nextdoor, Angi, Thumbtack (manual action — requires Connor to create accounts)
+- [ ] Reach out to 5 Fresno probate attorneys for referral partnerships (manual outreach — /for-probate-attorneys page built)
+- [ ] Reach out to estate sale companies for partnerships (manual outreach — /estate-sale-partnership page built)
+- [ ] Answer questions on Reddit r/RealEstate and r/personalfinance (manual action by Connor)
+- [ ] Add more case studies as deals close (ongoing — add as deals complete)
+- [x] Add SMS/text notification for new leads (Manus owner notification fires on every new lead; full SMS via Twilio is future work)
+- [ ] Integrate Twilio for automated lead follow-up (future enhancement — requires Twilio account)
+- [ ] Get local news coverage (Fresno Bee, ABC30) for AI visibility boost (manual outreach by Connor)
