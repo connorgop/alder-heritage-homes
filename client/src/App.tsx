@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -310,6 +311,7 @@ const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const SmsConsent = lazy(() => import("./pages/SmsConsent"));
 const AdminLeads = lazy(() => import("./pages/AdminLeads"));
+const AdminSeo = lazy(() => import("./pages/AdminSeo"));
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -745,6 +747,7 @@ function Router() {
       <Route path="/cash-home-buyers-fresno-compare"><Redirect to="/compare-cash-buyers-fresno" /></Route>
       <Route path="/we-buy-houses-fresno-comparison"><Redirect to="/compare-cash-buyers-fresno" /></Route>
       <Route path="/admin/leads" component={AdminLeads} />
+      <Route path="/admin/seo" component={AdminSeo} />
       <Route path="/admin"><Redirect to="/admin/leads" /></Route>
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
@@ -760,6 +763,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router />
+          <ExitIntentPopup />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

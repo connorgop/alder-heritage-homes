@@ -4,6 +4,7 @@ import { notifyOwner } from "./_core/notification";
 import { systemRouter } from "./_core/systemRouter";
 import { protectedProcedure, publicProcedure, router } from "./_core/trpc";
 import { getAllLeads, insertLead, updateLeadStatus, getGoogleReviews, getLastReviewSync, setLastReviewSync, seedGoogleReviews, upsertGoogleReviews } from "./db";
+import { runSeoAudit, scheduleGbpPost, pingSitemaps, GBP_POSTS } from "./cron";
 import { z } from "zod";
 
 // Seed data - 10 real reviews scraped from Google Maps
@@ -121,6 +122,36 @@ export const appRouter = router({
         await updateLeadStatus(input.id, input.status);
         return { success: true };
       }),
+  }),
+
+  admin: router({
+    // Admin-only: manually trigger SEO audit
+    triggerSeoAudit: protectedProcedure.mutation(async ({ ctx }) => {
+      if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+      // Run in background so we don't block the response
+      runSeoAudit().catch(console.error);
+      return { success: true, message: "SEO audit started — you'll receive a notification when complete" };
+    }),
+
+    // Admin-only: manually trigger GBP post reminder
+    triggerGbpPost: protectedProcedure.mutation(async ({ ctx }) => {
+      if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+      await scheduleGbpPost();
+      return { success: true, message: "GBP post content sent to your notifications" };
+    }),
+
+    // Admin-only: ping sitemaps to Google and Bing
+    pingSitemaps: protectedProcedure.mutation(async ({ ctx }) => {
+      if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+      await pingSitemaps();
+      return { success: true, message: "Sitemap pinged to Google and Bing" };
+    }),
+
+    // Admin-only: get GBP post library
+    getGbpPosts: protectedProcedure.query(async ({ ctx }) => {
+      if (ctx.user.role !== "admin") throw new Error("Unauthorized");
+      return { posts: GBP_POSTS, total: GBP_POSTS.length };
+    }),
   }),
 
   reviews: router({

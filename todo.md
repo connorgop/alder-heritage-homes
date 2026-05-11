@@ -67,9 +67,34 @@
 - [x] Test end-to-end review fetch and display (all 10 reviews showing in carousel)
 - [x] Add 'See all 32 reviews on Google' link to Google Maps
 
+## SEO Sprint (May 5, 2026)
+- [x] Update robots.txt with explicit AI crawler directives (GPTBot, PerplexityBot, ClaudeBot, anthropic-ai, OAI-SearchBot)
+- [x] Create llms.txt for LLM/AI model visibility
+- [x] Add 10 new slept-on keyword blog articles (short sale vs cash buyer, NOD guide, divorce attorney referral, estate sale, corporate relocation, medical debt, probate attorney referral, 2026 market update, Madera, Kings County)
+- [x] Update sitemap.xml to 280 URLs with all new blog posts
+- [x] Create comprehensive SEO strategy document with GBP posts, keyword research, customer persona, and off-page action plan
+- [x] All 7 tests passing
+
+## SEO Automation & Growth Sprint (May 10, 2026)
+- [x] Audit current indexing status in Google Search Console
+- [x] Research competitor rankings and identify page gaps
+- [ ] Create new high-value landing pages (seller situations, attorney referral, estate sale partnership)
+- [x] Build automated weekly SEO audit bot (checks rankings, competitor pages, broken links)
+- [x] Add SEO audit results to admin dashboard
+- [x] Build automated GBP post scheduler (posts 3x/week automatically)
+- [ ] Submit all new pages to Google Search Console for indexing
+- [x] Create comprehensive lead generation roadmap document
+- [x] Add lead magnet / exit-intent popup for lead capture
+- [ ] Add SMS/text opt-in for leads
+
 ## Future Improvements (Optional)
-- [ ] Add Google Search Console sitemap submission reminder
-- [ ] Set up weekly GBP post automation
+- [ ] Submit sitemap to Google Search Console
+- [ ] Post GBP updates 3x/week using the provided post templates
+- [ ] Get listed on BBB, Yelp, Nextdoor, Angi, Thumbtack
+- [ ] Reach out to 5 Fresno probate attorneys for referral partnerships
+- [ ] Reach out to estate sale companies for partnerships
+- [ ] Answer questions on Reddit r/RealEstate and r/personalfinance
 - [ ] Add more case studies as deals close
 - [ ] Add SMS/text notification for new leads
 - [ ] Integrate Twilio for automated lead follow-up
+- [ ] Get local news coverage (Fresno Bee, ABC30) for AI visibility boost
