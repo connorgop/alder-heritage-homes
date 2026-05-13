@@ -3,11 +3,7 @@ import PageMeta from "@/components/PageMeta";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, Phone, ArrowRight, Clock, CheckCircle2 } from "lucide-react";
 import { blogPosts, type BlogPostEntry } from "./Blog";
-import SchemaMarkup, { articleSchema } from "@/components/SchemaMarkup";
-
-const PHONE = "(559) 281-8016";
-const PHONE_HREF = "tel:5592818016";
-
+import SchemaMarkup, { articleSchema, faqPageSchema } from "@/components/SchemaMarkup";
 import articleChunk1 from "./BlogPostArticles1";
 import articleChunk2 from "./BlogPostArticles2";
 import articleChunk3 from "./BlogPostArticles3";
@@ -41,7 +37,71 @@ import { articleChunk30 } from "./BlogPostArticles30";
 import articleChunk32 from "./BlogPostArticles32";
 import { articleChunk33 } from "./BlogPostArticles33";
 import articleChunk34 from "./BlogPostArticles34";
+import articleChunk35 from "./BlogPostArticles35";
+import articleChunk36 from "./BlogPostArticles36";
 
+const PHONE = "(559) 281-8016";
+const PHONE_HREF = "tel:5592818016";
+
+// FAQ data for blog posts that have structured Q&A sections — used to inject FAQPage JSON-LD
+const blogFaqData: Record<string, { q: string; a: string }[]> = {
+  "how-to-sell-house-probate-california-2026": [
+    { q: "Can an executor sell a house without court approval in California?", a: "Yes. Under California's Independent Administration of Estates Act (IAEA), if the will grants full independent powers, the executor can sell property without court confirmation. This is the most common scenario for straightforward estates." },
+    { q: "How long does it take to sell a house in probate in California?", a: "With independent administration powers, a probate home sale can close in 30–60 days. If court confirmation is required, add 60–90 days for the hearing process. Total timeline is typically 4–12 months from death to close." },
+    { q: "Can you sell a probate house as-is in California?", a: "Yes. Cash buyers like Alder Heritage Homes purchase probate properties as-is, with no repairs, cleanout, or inspections required. This is often the fastest and simplest option for executors." },
+    { q: "What is the minimum price for a probate sale in California?", a: "For court-confirmation sales, the minimum acceptable offer is 90% of the court-appraised value. For independent administration sales, the executor has more flexibility to negotiate market value." },
+    { q: "Do heirs have to agree to sell a probate house?", a: "If the executor has independent administration powers, they can sell without unanimous heir consent. However, heirs must be notified and have a period to object. Disputes among heirs can require court intervention." },
+  ],
+  "what-happens-to-house-in-divorce-california": [
+    { q: "Is a house community property in a California divorce?", a: "Yes, if the house was purchased during the marriage with marital funds, it is community property and each spouse owns 50%. Separate property (owned before marriage or received as a gift/inheritance) is not divided." },
+    { q: "Can one spouse force the sale of a house in a California divorce?", a: "Yes. Either spouse can petition the court to order the sale of community property if the parties cannot agree. The court will typically order the sale and divide proceeds equally." },
+    { q: "How long does it take to sell a house in a divorce in California?", a: "A cash sale can close in 7–14 days once both spouses agree. A traditional listing takes 30–90 days. If court intervention is needed, add 3–6 months for the legal process." },
+    { q: "What happens to the mortgage in a divorce?", a: "Both spouses remain liable for the mortgage until the property is sold or refinanced. If one spouse keeps the house, they must refinance to remove the other spouse from the loan." },
+    { q: "Can we sell a house during a divorce before it is finalized?", a: "Yes. Selling the house before the divorce is finalized is often the cleanest solution — it removes the asset from the settlement and gives both parties cash to start fresh." },
+  ],
+  "how-to-avoid-foreclosure-fresno-5-options": [
+    { q: "How long does foreclosure take in California?", a: "California foreclosure typically takes 120–200 days from the first missed payment to the trustee's sale. A Notice of Default is filed after 90 days of missed payments, followed by a 21-day reinstatement period and a 3-month waiting period before the sale." },
+    { q: "Can I sell my house to avoid foreclosure in Fresno?", a: "Yes. Selling your house — either traditionally or to a cash buyer — before the trustee's sale stops the foreclosure process. A cash buyer can close in 7 days, which is often fast enough to prevent the sale." },
+    { q: "What is a loan modification and how does it help with foreclosure?", a: "A loan modification permanently changes your loan terms — reducing the interest rate, extending the term, or adding missed payments to the back of the loan. It requires lender approval and typically takes 30–90 days to process." },
+    { q: "What is a short sale and how does it affect my credit?", a: "A short sale is when you sell your home for less than the mortgage balance, with lender approval. It typically damages credit less than a foreclosure (100–150 points vs 200–300 points) and allows you to buy a home again sooner." },
+    { q: "What happens if I do nothing and let my house go to foreclosure?", a: "If you allow foreclosure, you lose the home, your credit score drops 200–300 points, and you may owe a deficiency judgment if the sale price doesn't cover the mortgage. You also lose any equity you had in the property." },
+  ],
+  "what-is-fair-cash-offer-house-fresno-2026": [
+    { q: "How do cash buyers calculate their offer?", a: "Cash buyers typically offer 70–85% of after-repair value (ARV) minus estimated repair costs. For example, a home worth $350,000 in perfect condition needing $30,000 in repairs might receive an offer of $215,000–$245,000." },
+    { q: "Is a cash offer always lower than a traditional sale?", a: "Cash offers are typically 10–20% below what you'd net from a traditional sale. However, when you subtract agent commissions (5–6%), closing costs (2–3%), repair costs, and carrying costs during a 60–90 day listing, the net difference is often much smaller." },
+    { q: "What is the 70% rule for cash buyers?", a: "The 70% rule is a real estate investor guideline: offer no more than 70% of ARV minus repair costs. Legitimate buyers like Alder Heritage Homes often offer above this — sometimes 80–85% — because we hold properties long-term rather than flipping." },
+    { q: "How do I know if a cash offer is fair?", a: "Request proof of funds, compare the offer to recent sales of similar homes in your neighborhood, and ask the buyer to show their ARV calculation. A legitimate buyer will be transparent about how they arrived at their number." },
+    { q: "Can I negotiate a cash offer?", a: "Yes. Cash offers are negotiable. If you receive a higher offer from another buyer, Alder Heritage Homes will match it. Always get multiple offers and compare the net proceeds, not just the headline price." },
+  ],
+  "selling-inherited-house-california-step-by-step": [
+    { q: "Do I have to pay capital gains tax on an inherited house in California?", a: "Usually not immediately. Inherited property receives a stepped-up basis to fair market value at the date of death. If you sell quickly at or near that value, capital gains tax is minimal or zero. Consult a tax advisor for your specific situation." },
+    { q: "Can I sell an inherited house before probate is complete?", a: "Generally no — you need legal authority (Letters Testamentary or Letters of Administration) before you can sell inherited property. However, if the property was held in a trust, you may be able to sell immediately as the successor trustee." },
+    { q: "What if there are multiple heirs who disagree about selling?", a: "If heirs cannot agree, any heir can petition the court for a partition action, which forces the sale of the property. This process takes 6–18 months and is expensive. Mediation is a faster, cheaper alternative." },
+    { q: "Do I need to pay off the mortgage before selling an inherited house?", a: "No. The mortgage is paid off at closing from the sale proceeds. You don't need to bring cash to the table — the title company handles the payoff as part of escrow." },
+    { q: "How long do I have to sell an inherited house in California?", a: "There's no legal deadline to sell, but there are practical reasons to act quickly: property taxes continue to accrue, maintenance costs add up, and vacant properties are at higher risk of vandalism and deterioration." },
+  ],
+  "truth-about-we-buy-houses-companies-fresno": [
+    { q: "Are 'We Buy Houses' companies legitimate?", a: "Some are, some aren't. Legitimate cash buyers are licensed real estate agents or investors with actual funds to purchase. Wholesalers pose as buyers but plan to assign your contract to a third party — they don't have the money to buy your home." },
+    { q: "How can I tell if a cash buyer is a wholesaler?", a: "Ask for proof of funds. If they can't provide a bank statement or proof of funds letter within 24 hours, they're likely a wholesaler. Also check if their contract says 'and/or assignee' — that's a red flag." },
+    { q: "What is a wholesale real estate deal?", a: "Wholesaling is when someone puts your home under contract at a low price, then sells (assigns) that contract to an investor for a fee. The wholesaler never actually buys your home — they make money from the spread between your price and what they sell the contract for." },
+    { q: "Is wholesaling real estate legal in California?", a: "It's a gray area. California requires a real estate license to earn compensation for real estate transactions. Unlicensed wholesalers may be violating California law. Always verify a buyer's DRE license number at dre.ca.gov." },
+    { q: "What should I look for in a legitimate cash home buyer?", a: "Look for: a California DRE license number (verifiable at dre.ca.gov), proof of funds within 24 hours, no 'and/or assignee' language in the contract, a track record of closed deals, and local reviews on Google." },
+  ],
+  "how-long-does-probate-take-fresno-county": [
+    { q: "How long does probate take in Fresno County, California?", a: "Simple probate cases in Fresno County typically take 9–18 months from filing to final distribution. Complex cases with disputes, creditor claims, or real property sales can take 2–3 years." },
+    { q: "What is the first step in the Fresno County probate process?", a: "The first step is filing a Petition for Probate at the Fresno County Superior Court (1130 O Street, Fresno, CA 93724). The court will set a hearing date, typically 6–8 weeks after filing." },
+    { q: "Can probate be avoided in California?", a: "Yes. Assets held in a living trust, accounts with beneficiary designations (POD/TOD), and jointly held property pass outside of probate. If the estate is under $184,500 (2024 threshold), a simplified affidavit procedure may apply." },
+    { q: "How much does probate cost in California?", a: "California probate fees are set by statute: 4% of the first $100,000, 3% of the next $100,000, 2% of the next $800,000, etc. For a $400,000 estate, statutory fees total approximately $14,000 for the attorney and $14,000 for the executor." },
+    { q: "Does selling the house speed up probate?", a: "Selling the house can simplify the estate by converting real property to cash, which is easier to distribute. However, the sale itself doesn't speed up the overall probate timeline — the court process runs on its own schedule." },
+  ],
+  "cash-offer-vs-listing-real-numbers-fresno-2026": [
+    { q: "How much do you lose selling a house with a real estate agent in Fresno?", a: "Typical costs: 5–6% agent commission ($17,500–$21,000 on a $350,000 home), 2–3% closing costs ($7,000–$10,500), and $5,000–$20,000 in repairs/staging. Total deductions: $29,500–$51,500 before you receive a check." },
+    { q: "Is a cash offer or listing better for a house that needs repairs?", a: "For homes needing $20,000+ in repairs, a cash offer is usually better. The repair costs, time delays, and risk of deals falling through (30% of financed deals fall through) often make the net proceeds from a cash sale competitive with a listing." },
+    { q: "How fast can a cash buyer close in Fresno?", a: "Alder Heritage Homes can close in as little as 3 days. The average is 7–14 days. Traditional listings in Fresno average 45–60 days from list to close." },
+    { q: "What is the average home sale price in Fresno in 2026?", a: "As of early 2026, the median home price in Fresno is approximately $320,000–$360,000, depending on neighborhood. The market has stabilized after the rate-driven slowdown of 2023–2024." },
+    { q: "Do cash buyers pay closing costs?", a: "Alder Heritage Homes pays all closing costs. You receive the full cash offer amount with no deductions for title fees, escrow fees, or transfer taxes. This is a significant advantage over traditional listings where sellers typically pay 2–3% in closing costs." },
+  ],
+};
 
 const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk1,
@@ -77,6 +137,8 @@ const articleContent: Record<string, React.ReactNode> = {
   ...articleChunk32,
     ...articleChunk33,
     ...articleChunk34,
+    ...articleChunk35,
+    ...articleChunk36,
 };
 
 export default function BlogPost() {
@@ -264,6 +326,13 @@ export default function BlogPost() {
         })}
         id={`article-${post.slug}`}
       />
+      {/* FAQPage schema for posts with structured Q&A — boosts AI and voice search visibility */}
+      {blogFaqData[post.slug] && (
+        <SchemaMarkup
+          schema={faqPageSchema(blogFaqData[post.slug])}
+          id={`faq-${post.slug}`}
+        />
+      )}
       {/* Hero */}
       <section className="relative py-20 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="absolute inset-0">

@@ -200,6 +200,258 @@ Thank you. Genuinely.
 Alder Heritage Homes
 ${PHONE}`,
   },
+  {
+    week: "Week 13",
+    category: "Probate / Attorney",
+    title: "Probate Attorneys: We're Your Trusted Buyer",
+    post: `⚖️ Attention Fresno probate attorneys:
+
+When your clients need to sell estate property quickly, we're the buyer you can trust to close.
+
+✅ Written cash offer within 24 hours of property review
+✅ Proof of funds provided immediately — no financing contingencies
+✅ We close on the estate's timeline, not ours
+✅ We work directly with your office and the title company
+✅ We purchase as-is — no repairs, no cleanout required
+✅ Licensed CA real estate agent (DRE #02219124)
+
+We've closed probate sales in Fresno County in as little as 7 days after Letters Testamentary were issued.
+
+If you have a client who needs to sell estate property, call Connor directly: ${PHONE}
+
+🌐 alderheritagehomes.com/for-probate-attorneys`,
+  },
+  {
+    week: "Week 14",
+    category: "Education",
+    title: "The Stepped-Up Basis: Tax Savings on Inherited Homes",
+    post: `💡 Did you inherit a home in Fresno? Here's a tax fact most people don't know:
+
+When you inherit a home, your cost basis is "stepped up" to the fair market value at the date of death — not what your parent paid for it in 1985.
+
+Example:
+• Parent bought home in 1985 for $80,000
+• Home is worth $380,000 when they pass
+• Your basis = $380,000
+• If you sell for $380,000 → ZERO capital gains tax
+
+This means selling quickly after inheriting often results in little or no tax owed.
+
+We can close in 7–21 days. Call us before you make any decisions: ${PHONE}
+
+🌐 alderheritagehomes.com/selling-inherited-house-california-step-by-step`,
+  },
+  {
+    week: "Week 15",
+    category: "Competitor Warning",
+    title: "How to Verify a Cash Buyer Is Legitimate",
+    post: `🔍 Before you sign anything with a "We Buy Houses" company in Fresno, do these 3 things:
+
+1️⃣ Ask for proof of funds — a bank statement dated within 30 days showing they have the cash. A real buyer provides this in 24 hours. A wholesaler can't.
+
+2️⃣ Check their DRE license at dre.ca.gov — licensed agents are accountable. Unlicensed operators are not.
+
+3️⃣ Read the contract — if it says "and/or assignee" after the buyer's name, they're a wholesaler who plans to sell your contract to someone else.
+
+Alder Heritage Homes:
+✅ Proof of funds: available in 24 hours
+✅ License: CA DRE #02219124 (verify at dre.ca.gov)
+✅ No "and/or assignee" language — ever
+
+📞 ${PHONE}`,
+  },
+  {
+    week: "Week 16",
+    category: "Foreclosure",
+    title: "Notice of Default: What to Do in the Next 30 Days",
+    post: `📬 If you received a Notice of Default in the mail, here's what you need to know:
+
+You have approximately 4–5 months before a foreclosure auction can occur in California. But the clock is ticking from the day the NOD was filed — not the day you received it.
+
+Your best options:
+
+🏠 If you have equity → Sell to a cash buyer. We close in 7–14 days, pay off your mortgage at closing, and you keep the remaining equity. No foreclosure on your record.
+
+💰 If you're underwater → We can still help. We'll evaluate whether a cash sale or short sale negotiation is faster for your situation.
+
+🚫 What NOT to do: Don't ignore it. Don't pay "foreclosure rescue" companies. Don't wait until the Notice of Trustee Sale.
+
+Call Connor today — free, confidential consultation: ${PHONE}
+
+🌐 alderheritagehomes.com/how-to-avoid-foreclosure-fresno-5-options`,
+  },
+  {
+    week: "Week 17",
+    category: "Local / Community",
+    title: "Central Valley Cities We Serve",
+    post: `📍 We buy homes throughout the Central Valley — not just Fresno.
+
+Cities we actively purchase in:
+
+🏘️ Fresno & Clovis
+🏘️ Visalia & Tulare
+🏘️ Bakersfield & Delano
+🏘️ Hanford & Lemoore (Kings County)
+🏘️ Madera & Chowchilla
+🏘️ Merced & Turlock
+🏘️ Stockton & Modesto
+
+If you're not sure if we serve your area — call us. If we can't buy it, we'll tell you honestly and point you to someone who can.
+
+Cash offers within 24 hours. Close in 3–21 days.
+
+📞 ${PHONE}
+🌐 alderheritagehomes.com`,
+  },
+  {
+    week: "Week 18",
+    category: "Testimonial / Social Proof",
+    title: "What Our Sellers Say",
+    post: `⭐⭐⭐⭐⭐ "Connor exceeded all of our expectations. From the initial consultation to the final result, everything was handled with professionalism and care."
+— Madison Jones, Fresno
+
+⭐⭐⭐⭐⭐ "Connor was awesome to work with and very detail oriented. He and his team were nothing but transparent throughout the process which made our transactions seamless."
+— MM A, Fresno
+
+⭐⭐⭐⭐⭐ "I can't recommend Alder Heritage Homes enough. Connor genuinely cares about working with his clients."
+— Anthony Georgouses, Fresno
+
+32 five-star reviews on Google. Licensed. Local. Real capital.
+
+📞 ${PHONE}
+🌐 alderheritagehomes.com`,
+  },
+  {
+    week: "Week 19",
+    category: "Education",
+    title: "Cash Offer vs. Listing: The Real Numbers",
+    post: `💰 Thinking about listing your Fresno home on the MLS instead of selling for cash? Here's what the math actually looks like:
+
+Typical Fresno home needing $40K in repairs:
+
+📋 List after renovation:
+• Net proceeds: ~$307,000
+• Timeline: 5–8 months
+• Risk: market fluctuations, buyer financing falls through
+
+📋 List as-is:
+• Net proceeds: ~$268,000
+• Timeline: 3–5 months
+• Risk: deals fall through frequently on as-is listings
+
+📋 Sell to Alder Heritage Homes:
+• Net proceeds: ~$295,000
+• Timeline: 3–21 days
+• Risk: essentially zero (no financing contingency)
+
+The cash offer is often MORE than an as-is MLS listing — with a fraction of the time and stress.
+
+Get your free offer: ${PHONE}
+🌐 alderheritagehomes.com/cash-offer-vs-listing-real-numbers-fresno-2026`,
+  },
+  {
+    week: "Week 20",
+    category: "Divorce",
+    title: "Selling a Home During Divorce in California",
+    post: `💔 Going through a divorce in Fresno and need to sell the house?
+
+Here's what most people don't know: California is a community property state. Both spouses own 50% of the equity regardless of whose name is on the deed.
+
+The fastest, cleanest way to resolve the marital home:
+
+✅ Sell to a cash buyer — closes in 7–21 days
+✅ No repairs needed — no arguments about who pays for what
+✅ No showings — no coordinating between two people who may not be speaking
+✅ Both parties receive their share at closing
+✅ Clean break — no ongoing financial entanglement
+
+We've worked with divorcing couples throughout Fresno County. We're neutral, professional, and we close on your timeline.
+
+📞 ${PHONE}
+🌐 alderheritagehomes.com/what-happens-to-house-in-divorce-california`,
+  },
+  {
+    week: "Week 21",
+    category: "Price Match",
+    title: "We'll Match Any Legitimate Offer",
+    post: `🤝 Got a cash offer from another buyer in Fresno? Send it to us.
+
+We'll either:
+✅ Match it — and close faster
+✅ Beat it — if we can justify the number
+✅ Tell you honestly when their offer is fair and you should take it
+
+This is our Price Match Guarantee. We don't win business by being the only offer you see. We win by being the most transparent, most reliable buyer in the Central Valley.
+
+We're a licensed California real estate agent (DRE #02219124). We buy with our own capital. We close in 3–21 days.
+
+Bring us your best offer. We'll respond within 24 hours.
+
+📞 ${PHONE}`,
+  },
+  {
+    week: "Week 22",
+    category: "Education",
+    title: "How Long Does Probate Take in Fresno County?",
+    post: `⏱️ If you're an executor or heir in Fresno County, here's the honest probate timeline:
+
+• File petition → First hearing: 6–8 weeks
+• Creditor notification period: 4 months (mandatory, can't be shortened)
+• Probate referee appraisal: 30–60 days
+• Property sale: 30–90 days (faster with cash buyer)
+• Final distribution: 2–4 months after sale
+
+📅 Total: 12–18 months for a typical estate
+
+The property sale is the one step you can control. A cash buyer closes in 7–21 days vs. 60–90 days for a traditional listing. That's 1–2 months shaved off the total timeline.
+
+We work with probate attorneys and executors throughout Fresno County. No pressure, no rush — we close on the estate's timeline.
+
+📞 ${PHONE}
+🌐 alderheritagehomes.com/how-long-does-probate-take-fresno-county`,
+  },
+  {
+    week: "Week 23",
+    category: "Estate Sale Partnership",
+    title: "Estate Sale Companies: Partner With Us",
+    post: `🏡 Attention Fresno estate sale companies:
+
+After the sale, what happens to the house?
+
+We're the natural next step. When your clients need to sell the property quickly after an estate sale — we're the buyer who:
+
+✅ Closes in 7–21 days
+✅ Purchases as-is (no cleanout required after the sale)
+✅ Provides proof of funds within 24 hours
+✅ Is licensed (CA DRE #02219124) and accountable
+✅ Has closed 700+ transactions in the Central Valley
+
+We pay referral fees to estate sale companies who connect us with motivated sellers. This is a win for your clients and a win for your business.
+
+Let's talk: ${PHONE}
+🌐 alderheritagehomes.com/estate-sale-partnership`,
+  },
+  {
+    week: "Week 24",
+    category: "Year-Round CTA",
+    title: "One Question That Could Save You Thousands",
+    post: `❓ Before you call any cash buyer in Fresno, ask them this one question:
+
+"Can you show me proof of funds within 24 hours?"
+
+A real buyer says yes and sends it.
+A wholesaler makes excuses.
+
+We've been answering yes to that question since day one.
+
+Connor Morris | Alder Heritage Homes
+📋 Licensed CA Real Estate Agent — DRE #02219124
+📞 ${PHONE}
+🌐 alderheritagehomes.com
+⭐ 5.0 rating · 32 Google reviews
+
+Real capital. Real offers. Real close.`,
+  },
 ];
 
 export default function GBPTemplates() {

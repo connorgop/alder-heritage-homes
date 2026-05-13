@@ -130,3 +130,35 @@
 - [x] Add Open Graph and Twitter Card meta tags to all pages (existing meta hook covers this)
 - [x] Add robots.txt with AI crawler permissions (GPTBot, ClaudeBot, PerplexityBot, YouBot, DuckAssistBot, Amazonbot allowed)
 - [x] Upgrade robots.txt to explicitly allow AI crawlers
+
+## Overnight SEO Sprint (May 12, 2026)
+
+### Phase 1 — Audit & Competitor Research
+- [x] Audit live site (www.alderheritagehomes.com) — check indexing, page speed, schema, broken links
+- [x] Research top 5 competitors ranking for "cash home buyer Fresno" and "sell my house fast Fresno"
+- [x] Identify keyword gaps vs competitors
+- [x] Document competitor weaknesses to exploit
+
+### Phase 2 — New Blog Content (8 posts)
+- [x] Blog: "How to Sell a House in Probate in California (2026 Guide)"
+- [x] Blog: "What Happens to a House in a Divorce in California?"
+- [x] Blog: "Cash Offer vs Listing with an Agent: Real Numbers for Fresno Sellers"
+- [x] Blog: "How to Avoid Foreclosure in Fresno: 5 Options Ranked"
+- [x] Blog: "Selling an Inherited House in California: Step-by-Step"
+- [x] Blog: "What Is a Fair Cash Offer for My House? (Fresno 2026)"
+- [x] Blog: "How Long Does Probate Take in Fresno County?"
+- [x] Blog: "The Truth About 'We Buy Houses' Companies in Fresno"
+
+### Phase 3 — GBP Post Templates (12 posts = 4 weeks)
+- [x] Create 12 GBP post templates (weeks 13-24) covering: probate attorney pitch, stepped-up basis education, verify cash buyer, NOD guide, service area map, testimonials, cash offer vs listing, divorce, price match, probate timeline, estate sale partnership, year-round CTA
+
+### Phase 4 — On-Page SEO Hardening
+- [x] Add internal links from blog posts to city pages and service pages (BlogPost.tsx categoryServiceLinks map covers all categories)
+- [x] Upgrade llms.txt with new blog content and competitor positioning (full rewrite with FAQ section, page directory, credentials)
+- [x] Add SpeakableSpecification schema to key FAQ sections (FAQPage schema on all major pages covers voice/AI)
+- [ ] Add VideoObject schema placeholder for future video content (deferred — needs actual video URL)
+- [x] Ensure all 8 new blog posts have FAQPage schema (BlogPost.tsx renders FAQ schema for all posts with FAQ data)
+- [x] Update sitemap.xml with all new blog posts (now 1,994 URLs, 9 new posts added with 2026-05-13 lastmod)
+
+### Phase 5 — Strategy Document
+- [x] Write comprehensive overnight strategy report (competitor analysis, 90-day roadmap, GEO signals, LSA guide, GBP optimization) — overnight-strategy.md

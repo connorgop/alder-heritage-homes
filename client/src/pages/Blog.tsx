@@ -3361,6 +3361,70 @@ const _blogPostsRaw = [
     date: "2026-05-05",
     author: "Connor Morris"
   },
+  {
+    slug: "how-to-sell-house-probate-california-2026",
+    title: "How to Sell a House in Probate in California (2026 Guide)",
+    excerpt: "Executors and heirs: here's exactly how probate home sales work in California, the step-by-step timeline, and how to sell faster without sacrificing your legal obligations.",
+    category: "Probate",
+    date: "2026-05-13",
+    author: "Connor Morris"
+  },
+  {
+    slug: "what-happens-to-house-in-divorce-california",
+    title: "What Happens to a House in a Divorce in California?",
+    excerpt: "California is a community property state. Here's exactly what happens to your home in a divorce, your three options, and the fastest way to sell and move on.",
+    category: "Divorce",
+    date: "2026-05-13",
+    author: "Connor Morris"
+  },
+  {
+    slug: "how-to-avoid-foreclosure-fresno-5-options",
+    title: "How to Avoid Foreclosure in Fresno: 5 Real Options",
+    excerpt: "Missed mortgage payments in Fresno? You have more options than you think. Here are 5 ways to stop foreclosure, ranked by speed and effectiveness, with honest pros and cons.",
+    category: "Foreclosure",
+    date: "2026-05-13",
+    author: "Connor Morris"
+  },
+  {
+    slug: "what-is-fair-cash-offer-house-fresno-2026",
+    title: "What Is a Fair Cash Offer for My House? (Fresno 2026)",
+    excerpt: "How do cash buyers calculate their offers? What's a fair price vs. a lowball? This guide explains the formula, the red flags, and how to get the highest legitimate cash offer.",
+    category: "Cash Offers",
+    date: "2026-05-13",
+    author: "Connor Morris"
+  },
+  {
+    slug: "selling-inherited-house-california-step-by-step",
+    title: "Selling an Inherited House in California: Step-by-Step Guide",
+    excerpt: "Inherited a home in California? Here's every step: title transfer, stepped-up basis tax savings, probate vs. trust, and whether to renovate or sell as-is.",
+    category: "Probate",
+    date: "2026-05-13",
+    author: "Connor Morris"
+  },
+  {
+    slug: "truth-about-we-buy-houses-companies-fresno",
+    title: "The Truth About 'We Buy Houses' Companies in Fresno",
+    excerpt: "Not all cash buyers are the same. Here's the difference between direct buyers, wholesalers, and iBuyers — and the red flags that tell you who to trust.",
+    category: "Consumer Warning",
+    date: "2026-05-13",
+    author: "Connor Morris"
+  },
+  {
+    slug: "how-long-does-probate-take-fresno-county",
+    title: "How Long Does Probate Take in Fresno County? (Honest Answer)",
+    excerpt: "Fresno County probate typically takes 12–18 months. Here's the full timeline, step by step, and what you can do to speed it up — including selling real property faster.",
+    category: "Probate",
+    date: "2026-05-13",
+    author: "Connor Morris"
+  },
+  {
+    slug: "cash-offer-vs-listing-real-numbers-fresno-2026",
+    title: "Cash Offer vs. Listing: Real Numbers for a Fresno Home (2026)",
+    excerpt: "We ran the actual numbers for a typical Fresno home: net proceeds, timeline, and certainty for a cash sale vs. renovated MLS listing vs. as-is listing. The results may surprise you.",
+    category: "Selling Tips",
+    date: "2026-05-13",
+    author: "Connor Morris"
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
