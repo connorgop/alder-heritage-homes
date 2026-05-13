@@ -114,7 +114,7 @@
 - [x] Add Review/AggregateRating schema to homepage and key pages (AggregateRating in localBusinessSchema used on 3 referral pages)
 - [x] Add Person schema for Connor Morris (personSchema JSON-LD on /about and all 3 new referral partner pages)
 - [x] Add Organization schema with sameAs links to all social/directory profiles (localBusinessSchema includes sameAs Facebook)
-- [ ] Create /about-connor page with detailed bio (AI engines cite named experts — future task)
+- [x] Create /about-connor page with detailed bio (AI engines cite named experts — full E-E-A-T page with Person schema, FAQPage schema, credentials, story, specializations, service area)
 
 ### AI-Powered Admin SEO Tools
 - [x] Build AI meta description generator (per-page, keyword-aware, 150-160 chars)

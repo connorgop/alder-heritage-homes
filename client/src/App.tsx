@@ -10,6 +10,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 // Pages
 import Home from "./pages/Home";
 const About = lazy(() => import("./pages/About"));
+const AboutConnor = lazy(() => import("./pages/AboutConnor"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
@@ -322,6 +323,7 @@ function Router() {
       <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/about-connor" component={AboutConnor} />
       <Route path="/why-i-left" component={WhyILeft} />
       <Route path="/competitor-warning" component={CompetitorWarning} />
       <Route path="/wholesaler-warning" component={CompetitorWarning} />
