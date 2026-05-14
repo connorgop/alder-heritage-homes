@@ -171,3 +171,10 @@
 - [x] Write review request email (post-close version, follow-up version, short text/SMS version) — alder-heritage-homes-review-emails.md
 - [x] Add /leave-a-review page to website with Google review link, instructions, and social proof (updated review link to DwOEpOT170I)
 - [x] Add review page to sitemap (already present with 2026-04-13 lastmod)
+
+## GBP Policy Violation Fix (May 14, 2026)
+- [ ] Research Google Business Profile content policy rules for real estate/cash buyer posts
+- [ ] Identify exactly what triggered the "as-is" post violation
+- [ ] Rewrite all 24 GBP post templates to be fully policy-compliant
+- [ ] Write appeal instructions for Connor to restore GBP posting
+- [ ] Update GBPTemplates.tsx with compliant post library

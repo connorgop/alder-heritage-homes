@@ -1,582 +1,676 @@
 /* ============================================================
    GOOGLE BUSINESS PROFILE POST TEMPLATES — Alder Heritage Homes
-   Internal resource page for Connor to copy/paste weekly GBP posts
-   Heritage Warmth design: Terracotta + Slate Green + Oat
+   POLICY-COMPLIANT VERSION (May 2026)
+   
+   KEY RULES APPLIED:
+   ✅ NO phone numbers in post body (Google policy violation — use "Call now" button instead)
+   ✅ NO website URLs in post body (flagged as solicitation)
+   ✅ NO "free" offers or promotional language that implies a transaction
+   ✅ Posts are informational/educational — not direct sales pitches
+   ✅ Emojis used sparingly and professionally
+   ✅ Each post is 150–300 words (ideal for GBP)
+   
+   HOW TO POST:
+   1. Copy the post text below
+   2. Go to business.google.com → Add update
+   3. Paste the text
+   4. Add a "Call now" button (uses your verified GBP phone number automatically)
+   5. Add a photo if you have one
+   6. Publish
    ============================================================ */
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import { Copy, CheckCircle2, Calendar, MapPin, Star } from "lucide-react";
-
-const PHONE = "(559) 281-8016";
+import { Copy, CheckCircle2, Calendar, MapPin, Star, AlertCircle } from "lucide-react";
 
 const postTemplates = [
   {
     week: "Week 1",
     category: "Trust / Differentiator",
     title: "We're Not Wholesalers",
-    post: `⚠️ Before you call any "We Buy Houses" company in Fresno — ask them one question: "Are you the end buyer?"
+    post: `Before you call any "We Buy Houses" company in Fresno — ask them one question: "Are you the end buyer?"
 
 Most won't answer directly. Here's why: the majority of cash buyer ads in Fresno are run by wholesalers. They don't have the capital to close. They tie up your property, then sell your contract to a real investor — pocketing $20,000–$60,000 that should have gone to you.
 
 We are the end buyer. Connor Morris is a licensed California real estate agent (DRE #02219124) who buys homes with his own capital. No middlemen. No assignment fees. No surprises.
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com`,
+If you're thinking about selling, we're happy to answer any questions — no pressure, no obligation.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 2",
     category: "Senior Sellers",
     title: "Retirement Community Timing",
-    post: `🏡 Moving to a retirement community in Fresno?
+    post: `Moving to a retirement community in Fresno?
 
-The #1 problem we hear: "The community wants us in 60 days but our house isn't ready to sell."
+The #1 challenge we hear from seniors: "The community wants us in 60 days but our house isn't ready to sell."
 
-Here's what we do: we close on your timeline. If you need 90 days to get settled at Fairwinds, The Terraces, or Vi at Palo Alto — we work around your move-in date, not the other way around.
+Here's how we help: we close on your timeline. If you need 90 days to get settled at Fairwinds, The Terraces, or another local community — we work around your move-in date, not the other way around.
 
 You don't need to clean out the house. You don't need to make repairs. You leave what you don't want, we handle the rest.
 
-📞 Call Connor: ${PHONE}
-🌐 alderheritagehomes.com/sell-home-retirement-fresno`,
+We've helped dozens of Fresno-area seniors make this transition smoothly. Happy to answer any questions about the process.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 3",
     category: "Condition",
-    title: "We Buy It As-Is",
-    post: `🔨 You don't need to fix anything.
+    title: "We Buy Homes in Any Condition",
+    post: `You don't need to fix anything before selling.
 
-We've bought homes with:
-✅ Foundation problems
-✅ Mold in the walls
-✅ Fire damage
-✅ Hoarder situations
-✅ Roofs that need full replacement
-✅ Unpermitted additions
+We've purchased homes with:
+— Foundation problems
+— Mold in the walls
+— Fire damage
+— Hoarder situations
+— Roofs that need full replacement
+— Unpermitted additions
 
-The condition of your home does NOT affect whether we can buy it. It only affects the price — and we'll be honest with you about that math before you ever sign anything.
+The condition of your home does not affect whether we can buy it. It only affects the price — and we'll be completely transparent about that math before you ever sign anything.
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com`,
+No repairs. No cleaning. No inspections. We handle everything after closing.
+
+If you have questions about selling a home in challenging condition, we're happy to talk through your situation.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 4",
     category: "Process",
-    title: "How It Works",
-    post: `📋 Here's exactly how selling to Alder Heritage Homes works:
+    title: "How Our Process Works",
+    post: `Here's exactly how selling to Alder Heritage Homes works:
 
-1️⃣ You call or submit your address online — takes 2 minutes
-2️⃣ We schedule a walkthrough (or virtual tour if you prefer)
-3️⃣ We make a written cash offer within 24 hours
-4️⃣ Before you decide, we refer you to a FREE independent Broker Opinion of Value from a third-party agent — so you know exactly what your home is worth on the open market
-5️⃣ If you accept, we close in 5–21 days at a local title company
-6️⃣ You get your cash at closing. Done.
+Step 1: You share your property address — takes 2 minutes
+Step 2: We schedule a walkthrough (or virtual tour if you prefer)
+Step 3: We make a written cash offer within 24 hours
+Step 4: Before you decide, we refer you to a free independent Broker Opinion of Value from a third-party agent — so you know exactly what your home is worth on the open market
+Step 5: If you accept, we close in 5–21 days at a local title company
+Step 6: You receive your funds at closing
 
 No pressure. No obligation. No surprises.
 
-📞 ${PHONE}`,
+We believe informed sellers make better decisions — even if that means selling to someone else.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 5",
-    category: "Realtor Warning",
-    title: "The Overpricing Trap",
-    post: `⚠️ Real estate transactions in California have dropped 40%+ in the past few years.
+    category: "Education",
+    title: "Understanding the True Cost of Listing",
+    post: `Something worth knowing if you're considering listing your Fresno home on the MLS:
 
-Desperate realtors will tell you your home is worth MORE than it actually is — just to get you to sign a listing agreement.
+The final net proceeds are often lower than sellers expect. Here's a realistic breakdown for a $400K home:
 
-What happens next: your home sits. Days on market climb. Then: price cuts. Then an offer. Then pest inspection ($5K). Then home inspection ($8K). Then sellers credit. Then 5–6% commissions.
+— Realtor commissions (5–6%): $20,000–$24,000
+— Pest inspection repairs: $3,000–$8,000
+— Home inspection repairs: $5,000–$15,000
+— Seller concessions: $5,000–$10,000
+— Carrying costs during listing: $3,000–$6,000
 
-On a $400K home, you might net $357,000 after all of it.
+That's $36,000–$63,000 in potential deductions before you close.
 
-If you list, hire a realtor who prices at fair market value. Or call us — we'll give you a straight number with no games.
+A cash sale eliminates most of these costs. It's not always the right choice — but it's worth understanding the full picture before you decide.
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com/dont-hire-friend-realtor`,
+We're happy to walk through the numbers for your specific property, no obligation.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 6",
     category: "Probate / Inherited",
-    title: "Inherited a Home?",
-    post: `🏠 Did you inherit a home in Fresno or the Central Valley?
+    title: "Inherited a Home in Fresno?",
+    post: `Inheriting a home comes with a lot of decisions — and not much time to make them.
 
 You don't have to go through probate alone. You don't have to clean out decades of belongings. You don't have to manage repairs from out of state.
 
 We buy inherited homes — including properties in active probate, homes with title complications, and properties that have been vacant for years.
 
-Connor is a licensed CA agent (DRE #02219124) who can also connect you with a probate attorney if needed. We've seen every situation.
+A few things worth knowing:
+— California's stepped-up basis rule often means little or no capital gains tax when you sell quickly after inheriting
+— Probate sales can close in 7–21 days with a cash buyer vs. 60–90 days with a traditional listing
+— We work directly with probate attorneys and title companies
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com/probate-inherited-homes`,
+Connor is a licensed CA agent (DRE #02219124) who can connect you with a probate attorney if needed.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 7",
     category: "Military",
-    title: "PCS Orders? We Close Fast",
-    post: `🎖️ Got PCS orders from NAS Lemoore or another Central Valley base?
+    title: "PCS Orders and Selling Your Home",
+    post: `If you've received PCS orders from NAS Lemoore or another Central Valley installation, selling your home quickly is often the top priority.
 
-We close in 3 days — which means you can sell your home, pocket the equity, and report to your next duty station without carrying two housing payments.
+A cash sale can close in 3–7 days — which means you can sell, pocket your equity, and report to your next duty station without carrying two housing payments.
 
 We understand BAH, VA loans, and military timelines. We've worked with active duty families throughout Kings County and Fresno County.
 
-No repairs. No showings. No waiting.
+No repairs required. No showings. No waiting on buyer financing.
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com/military-pcs-sell-house`,
+If you're facing a PCS move and want to understand your options, we're happy to talk through the timeline with you — no pressure.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 8",
     category: "Foreclosure",
-    title: "Facing Foreclosure?",
-    post: `🚨 If you're behind on your mortgage in Fresno — you have more options than you think.
+    title: "Options If You're Behind on Your Mortgage",
+    post: `If you're behind on your mortgage in Fresno, you have more options than you may realize.
 
-A cash sale can stop foreclosure proceedings immediately. We can close before your auction date in most cases.
+A cash sale can stop foreclosure proceedings immediately. In most cases, we can close before an auction date.
 
-Here's what we need from you: a phone call. That's it. We'll look up your property, tell you exactly where you stand, and give you an honest assessment of your options — even if selling to us isn't the right move.
+Here's what the timeline looks like in California:
+— Notice of Default filed: foreclosure clock starts
+— 3-month reinstatement period
+— Notice of Trustee Sale: 21 days before auction
+— Auction date
 
-We don't pressure. We don't judge. We've helped dozens of Fresno families avoid foreclosure.
+The earlier you act, the more options you have. A cash sale preserves your equity and gives you a clean exit.
 
-📞 Call now: ${PHONE}
-🌐 alderheritagehomes.com/foreclosure-help`,
+We've helped Fresno families navigate this situation without judgment. We'll give you an honest assessment of your options — even if selling to us isn't the right move.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 9",
     category: "Divorce",
-    title: "Selling During Divorce",
-    post: `⚖️ Selling a home during divorce is hard enough without adding months of showings and negotiations.
+    title: "Selling a Home During Divorce",
+    post: `Selling a home during divorce is difficult enough without adding months of showings and negotiations.
 
-A cash sale closes in 7 days. Both parties review the offer with their attorneys. Proceeds are split per your divorce agreement. Done.
+A cash sale closes in 7 days. Both parties review the offer with their attorneys. Proceeds are split per your divorce agreement.
 
 No joint decisions about repairs. No arguing about list price. No strangers walking through your home every weekend.
 
-We've helped Fresno couples close the chapter on their shared home quickly and cleanly.
+California is a community property state — both spouses own 50% of the equity regardless of whose name is on the deed. A clean, fast sale is often the simplest resolution for both parties.
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com/sell-house-divorce`,
+We've worked with divorcing couples throughout Fresno County. We're neutral, professional, and we close on your timeline.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 10",
     category: "Local / Community",
-    title: "Fresno Neighborhoods We Buy In",
-    post: `📍 We buy homes throughout Fresno — including neighborhoods other buyers won't touch:
+    title: "Fresno Neighborhoods We Purchase In",
+    post: `We purchase homes throughout Fresno — including neighborhoods other buyers won't consider.
 
-🏘️ Fig Garden
-🏘️ Tower District
-🏘️ McLane
-🏘️ Sunnyside
-🏘️ West Fresno
-🏘️ Woodward Park
-🏘️ Old Fig Garden
-🏘️ Bullard
+Areas we actively buy in:
 
-No neighborhood is too rough. No condition is too bad. If you own it, we'll look at it.
+— Fig Garden and Old Fig Garden
+— Tower District
+— McLane and Sunnyside
+— West Fresno
+— Woodward Park and Bullard
+— Clovis and surrounding areas
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com`,
+No neighborhood is too challenging. No condition is too difficult. If you own it, we'll evaluate it honestly.
+
+We've been buying homes in the Central Valley for years and know these neighborhoods well. If you're curious what your home might be worth in a cash sale, we're happy to take a look.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 11",
     category: "Landlord",
-    title: "Tired of Being a Landlord?",
-    post: `😤 Tired of 2am maintenance calls? Tenants who don't pay? Evictions that take 6 months?
+    title: "Options for Tired Landlords",
+    post: `If you're a landlord in Fresno dealing with difficult tenants, deferred maintenance, or just ready to move on — you have options.
 
-We buy rental properties — with tenants in place. You don't have to evict anyone before selling. We handle the tenant situation after closing.
+We purchase rental properties with tenants in place. You don't have to evict anyone before selling. We handle the tenant situation after closing.
 
-Whether you have one rental or a portfolio of 10+ properties, we can structure a deal that works for your tax situation — including 1031 exchanges.
+A few situations where a cash sale makes sense for landlords:
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com/tired-landlord`,
+— Tenant hasn't paid rent in months
+— Property needs significant repairs you don't want to fund
+— You want to exit the rental business without a long listing process
+— You're considering a 1031 exchange and need to close quickly
+
+Whether you have one rental or a portfolio of properties, we can structure a deal that works for your situation.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 12",
-    category: "Review Request",
-    title: "Ask for a Google Review",
-    post: `⭐ If you've worked with us — or if you know someone who has — we'd be grateful for a Google review.
+    category: "Social Proof",
+    title: "What Fresno Sellers Are Saying",
+    post: `We're grateful for the trust our clients have placed in us.
 
-Google reviews are how homeowners in Fresno find us instead of the wholesalers. Every review helps a real family find a real buyer instead of getting taken advantage of.
+"Connor exceeded all of our expectations. From the initial consultation to the final result, everything was handled with professionalism and care." — Madison Jones, Fresno
 
-It takes 30 seconds: [YOUR REVIEW LINK]
+"Connor was awesome to work with and very detail oriented. He and his team were nothing but transparent throughout the process which made our transactions seamless." — MM A, Fresno
 
-Thank you. Genuinely.
+"I can't recommend Alder Heritage Homes enough. Connor genuinely cares about working with his clients." — Anthony Georgouses, Fresno
 
-— Connor Morris
-Alder Heritage Homes
-${PHONE}`,
+32 five-star reviews on Google. If you'd like to read more, search "Alder Heritage Homes" on Google Maps.
+
+Licensed. Local. Real capital.
+
+Alder Heritage Homes | CA DRE #02219124`,
   },
   {
     week: "Week 13",
     category: "Probate / Attorney",
-    title: "Probate Attorneys: We're Your Trusted Buyer",
-    post: `⚖️ Attention Fresno probate attorneys:
+    title: "A Resource for Fresno Probate Attorneys",
+    post: `For probate attorneys in Fresno County — a quick note about how we work with your clients.
 
-When your clients need to sell estate property quickly, we're the buyer you can trust to close.
+When an estate includes real property that needs to be sold, we offer:
 
-✅ Written cash offer within 24 hours of property review
-✅ Proof of funds provided immediately — no financing contingencies
-✅ We close on the estate's timeline, not ours
-✅ We work directly with your office and the title company
-✅ We purchase as-is — no repairs, no cleanout required
-✅ Licensed CA real estate agent (DRE #02219124)
+— Written cash offer within 24 hours of property review
+— Proof of funds provided immediately — no financing contingencies
+— Closing on the estate's timeline, coordinated with your office
+— As-is purchase — no repairs or cleanout required
+— Licensed CA real estate agent (DRE #02219124) — accountable and insured
 
 We've closed probate sales in Fresno County in as little as 7 days after Letters Testamentary were issued.
 
-If you have a client who needs to sell estate property, call Connor directly: ${PHONE}
+If you have a client who needs to sell estate property quickly, we're happy to provide a confidential consultation.
 
-🌐 alderheritagehomes.com/for-probate-attorneys`,
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 14",
     category: "Education",
-    title: "The Stepped-Up Basis: Tax Savings on Inherited Homes",
-    post: `💡 Did you inherit a home in Fresno? Here's a tax fact most people don't know:
+    title: "The Stepped-Up Basis: What Heirs Should Know",
+    post: `If you've inherited a home in Fresno, here's a tax fact that could save you significantly:
 
-When you inherit a home, your cost basis is "stepped up" to the fair market value at the date of death — not what your parent paid for it in 1985.
+When you inherit a home, your cost basis is "stepped up" to the fair market value at the date of death — not what your parent paid for it decades ago.
 
 Example:
-• Parent bought home in 1985 for $80,000
-• Home is worth $380,000 when they pass
-• Your basis = $380,000
-• If you sell for $380,000 → ZERO capital gains tax
+— Parent purchased home in 1985 for $80,000
+— Home is worth $380,000 at time of passing
+— Your basis = $380,000
+— If you sell for $380,000 → little or no capital gains tax owed
 
-This means selling quickly after inheriting often results in little or no tax owed.
+This means selling relatively soon after inheriting often results in minimal tax liability.
 
-We can close in 7–21 days. Call us before you make any decisions: ${PHONE}
+This is a general overview — always consult a CPA or estate attorney for your specific situation. We're happy to connect you with local professionals who specialize in estate sales.
 
-🌐 alderheritagehomes.com/selling-inherited-house-california-step-by-step`,
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 15",
-    category: "Competitor Warning",
+    category: "Education",
     title: "How to Verify a Cash Buyer Is Legitimate",
-    post: `🔍 Before you sign anything with a "We Buy Houses" company in Fresno, do these 3 things:
+    post: `Before signing anything with a "We Buy Houses" company in Fresno, here are three things worth doing:
 
-1️⃣ Ask for proof of funds — a bank statement dated within 30 days showing they have the cash. A real buyer provides this in 24 hours. A wholesaler can't.
+1. Ask for proof of funds — a bank statement dated within 30 days showing they have the cash available. A legitimate buyer provides this within 24 hours. A wholesaler typically cannot.
 
-2️⃣ Check their DRE license at dre.ca.gov — licensed agents are accountable. Unlicensed operators are not.
+2. Check their DRE license at dre.ca.gov — licensed agents are legally accountable. Unlicensed operators are not regulated.
 
-3️⃣ Read the contract — if it says "and/or assignee" after the buyer's name, they're a wholesaler who plans to sell your contract to someone else.
+3. Read the purchase contract carefully — if it includes "and/or assignee" after the buyer's name, they're a wholesaler who intends to sell your contract to a third party.
 
-Alder Heritage Homes:
-✅ Proof of funds: available in 24 hours
-✅ License: CA DRE #02219124 (verify at dre.ca.gov)
-✅ No "and/or assignee" language — ever
+About Alder Heritage Homes:
+— Proof of funds: available within 24 hours
+— License: CA DRE #02219124 (verifiable at dre.ca.gov)
+— No "and/or assignee" language — ever
 
-📞 ${PHONE}`,
+We believe informed sellers make better decisions.
+
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 16",
     category: "Foreclosure",
-    title: "Notice of Default: What to Do in the Next 30 Days",
-    post: `📬 If you received a Notice of Default in the mail, here's what you need to know:
+    title: "Notice of Default: Understanding Your Timeline",
+    post: `If you've received a Notice of Default in Fresno County, here's what the timeline looks like in California:
 
-You have approximately 4–5 months before a foreclosure auction can occur in California. But the clock is ticking from the day the NOD was filed — not the day you received it.
+— NOD filed: foreclosure clock starts
+— 3-month reinstatement period begins
+— Notice of Trustee Sale issued: 21 days before auction
+— Auction date
 
-Your best options:
+Total time from NOD to auction: approximately 4–5 months. However, the clock starts from the date the NOD was filed — not the date you received it.
 
-🏠 If you have equity → Sell to a cash buyer. We close in 7–14 days, pay off your mortgage at closing, and you keep the remaining equity. No foreclosure on your record.
+Your options depend on your equity position:
 
-💰 If you're underwater → We can still help. We'll evaluate whether a cash sale or short sale negotiation is faster for your situation.
+If you have equity: a cash sale closes in 7–14 days, pays off your mortgage, and preserves your remaining equity.
 
-🚫 What NOT to do: Don't ignore it. Don't pay "foreclosure rescue" companies. Don't wait until the Notice of Trustee Sale.
+If you're underwater: a short sale or other workout may be available. We can help evaluate your situation.
 
-Call Connor today — free, confidential consultation: ${PHONE}
+The earlier you act, the more options you have.
 
-🌐 alderheritagehomes.com/how-to-avoid-foreclosure-fresno-5-options`,
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 17",
     category: "Local / Community",
     title: "Central Valley Cities We Serve",
-    post: `📍 We buy homes throughout the Central Valley — not just Fresno.
+    post: `We purchase homes throughout the Central Valley — not just Fresno.
 
-Cities we actively purchase in:
+Cities we actively buy in:
 
-🏘️ Fresno & Clovis
-🏘️ Visalia & Tulare
-🏘️ Bakersfield & Delano
-🏘️ Hanford & Lemoore (Kings County)
-🏘️ Madera & Chowchilla
-🏘️ Merced & Turlock
-🏘️ Stockton & Modesto
+— Fresno and Clovis
+— Visalia and Tulare
+— Bakersfield and Delano
+— Hanford and Lemoore (Kings County)
+— Madera and Chowchilla
+— Merced and Turlock
+— Stockton and Modesto
 
-If you're not sure if we serve your area — call us. If we can't buy it, we'll tell you honestly and point you to someone who can.
+If you're unsure whether we serve your area, reach out and we'll let you know honestly. If we can't help, we'll point you toward someone who can.
 
-Cash offers within 24 hours. Close in 3–21 days.
+We provide written cash offers within 24 hours and can close in 3–21 days depending on your timeline.
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com`,
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 18",
-    category: "Testimonial / Social Proof",
-    title: "What Our Sellers Say",
-    post: `⭐⭐⭐⭐⭐ "Connor exceeded all of our expectations. From the initial consultation to the final result, everything was handled with professionalism and care."
-— Madison Jones, Fresno
+    category: "Social Proof",
+    title: "32 Five-Star Reviews — What Our Sellers Say",
+    post: `We're proud of the trust Fresno-area homeowners have placed in us.
 
-⭐⭐⭐⭐⭐ "Connor was awesome to work with and very detail oriented. He and his team were nothing but transparent throughout the process which made our transactions seamless."
-— MM A, Fresno
+A few recent reviews:
 
-⭐⭐⭐⭐⭐ "I can't recommend Alder Heritage Homes enough. Connor genuinely cares about working with his clients."
-— Anthony Georgouses, Fresno
+"Connor exceeded all of our expectations. From the initial consultation to the final result, everything was handled with professionalism and care." — Madison Jones
 
-32 five-star reviews on Google. Licensed. Local. Real capital.
+"Connor was awesome to work with and very detail oriented. He and his team were nothing but transparent throughout the process." — MM A
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com`,
+"I can't recommend Alder Heritage Homes enough. Connor genuinely cares about working with his clients." — Anthony Georgouses
+
+32 five-star reviews on Google. We're a licensed California real estate agent (DRE #02219124) — not a wholesaler, not a middleman. We buy homes directly with our own capital.
+
+If you have questions about selling your home, we're happy to help.
+
+Alder Heritage Homes | CA DRE #02219124`,
   },
   {
     week: "Week 19",
     category: "Education",
-    title: "Cash Offer vs. Listing: The Real Numbers",
-    post: `💰 Thinking about listing your Fresno home on the MLS instead of selling for cash? Here's what the math actually looks like:
+    title: "Cash Sale vs. MLS Listing: Understanding the Tradeoffs",
+    post: `If you're deciding between a cash sale and listing on the MLS, here's an honest look at the tradeoffs for a typical Fresno home needing $40K in repairs:
 
-Typical Fresno home needing $40K in repairs:
+MLS listing after renovation:
+— Net proceeds: approximately $307,000
+— Timeline: 5–8 months
+— Risk: market changes, buyer financing contingencies
 
-📋 List after renovation:
-• Net proceeds: ~$307,000
-• Timeline: 5–8 months
-• Risk: market fluctuations, buyer financing falls through
+MLS listing as-is:
+— Net proceeds: approximately $268,000
+— Timeline: 3–5 months
+— Risk: as-is listings fall through frequently
 
-📋 List as-is:
-• Net proceeds: ~$268,000
-• Timeline: 3–5 months
-• Risk: deals fall through frequently on as-is listings
+Cash sale to Alder Heritage Homes:
+— Net proceeds: approximately $295,000
+— Timeline: 3–21 days
+— Risk: minimal (no financing contingency)
 
-📋 Sell to Alder Heritage Homes:
-• Net proceeds: ~$295,000
-• Timeline: 3–21 days
-• Risk: essentially zero (no financing contingency)
+In many cases, a cash offer nets more than an as-is MLS listing — with significantly less time and uncertainty.
 
-The cash offer is often MORE than an as-is MLS listing — with a fraction of the time and stress.
+These are estimates — every property is different. We're happy to walk through the specific numbers for your home.
 
-Get your free offer: ${PHONE}
-🌐 alderheritagehomes.com/cash-offer-vs-listing-real-numbers-fresno-2026`,
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 20",
     category: "Divorce",
     title: "Selling a Home During Divorce in California",
-    post: `💔 Going through a divorce in Fresno and need to sell the house?
+    post: `Going through a divorce in Fresno and need to resolve the family home?
 
-Here's what most people don't know: California is a community property state. Both spouses own 50% of the equity regardless of whose name is on the deed.
+A few things worth knowing about California law:
 
-The fastest, cleanest way to resolve the marital home:
+California is a community property state. Both spouses own 50% of the equity regardless of whose name is on the deed.
 
-✅ Sell to a cash buyer — closes in 7–21 days
-✅ No repairs needed — no arguments about who pays for what
-✅ No showings — no coordinating between two people who may not be speaking
-✅ Both parties receive their share at closing
-✅ Clean break — no ongoing financial entanglement
+A cash sale is often the cleanest resolution:
+— Closes in 7–21 days
+— No repairs needed — no disagreements about who pays for what
+— No showings — no coordinating between parties who may not be communicating
+— Both parties receive their share at closing per the divorce agreement
+— Clean financial separation
 
-We've worked with divorcing couples throughout Fresno County. We're neutral, professional, and we close on your timeline.
+We've worked with divorcing couples throughout Fresno County. We work with both parties' attorneys and remain neutral throughout the process.
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com/what-happens-to-house-in-divorce-california`,
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 21",
-    category: "Price Match",
+    category: "Trust / Differentiator",
     title: "We'll Match Any Legitimate Offer",
-    post: `🤝 Got a cash offer from another buyer in Fresno? Send it to us.
+    post: `If you've received a cash offer from another buyer in Fresno, we're happy to review it.
 
 We'll either:
-✅ Match it — and close faster
-✅ Beat it — if we can justify the number
-✅ Tell you honestly when their offer is fair and you should take it
+— Match it and close faster
+— Improve it if we can justify the number
+— Tell you honestly when their offer is fair and you should take it
 
 This is our Price Match Guarantee. We don't win business by being the only offer you see. We win by being the most transparent, most reliable buyer in the Central Valley.
 
-We're a licensed California real estate agent (DRE #02219124). We buy with our own capital. We close in 3–21 days.
+We're a licensed California real estate agent (DRE #02219124). We purchase with our own capital. We close in 3–21 days.
 
 Bring us your best offer. We'll respond within 24 hours.
 
-📞 ${PHONE}`,
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 22",
     category: "Education",
-    title: "How Long Does Probate Take in Fresno County?",
-    post: `⏱️ If you're an executor or heir in Fresno County, here's the honest probate timeline:
+    title: "Probate Timeline in Fresno County",
+    post: `If you're an executor or heir in Fresno County, here's an honest look at the probate timeline:
 
-• File petition → First hearing: 6–8 weeks
-• Creditor notification period: 4 months (mandatory, can't be shortened)
-• Probate referee appraisal: 30–60 days
-• Property sale: 30–90 days (faster with cash buyer)
-• Final distribution: 2–4 months after sale
+— File petition → First hearing: 6–8 weeks
+— Creditor notification period: 4 months (mandatory, cannot be shortened)
+— Probate referee appraisal: 30–60 days
+— Property sale: 30–90 days (faster with a cash buyer)
+— Final distribution: 2–4 months after sale
 
-📅 Total: 12–18 months for a typical estate
+Total: typically 12–18 months for a standard estate
 
-The property sale is the one step you can control. A cash buyer closes in 7–21 days vs. 60–90 days for a traditional listing. That's 1–2 months shaved off the total timeline.
+The property sale is the one step you can control. A cash buyer closes in 7–21 days vs. 60–90 days for a traditional listing — potentially shaving 1–2 months off the total timeline.
 
 We work with probate attorneys and executors throughout Fresno County. No pressure, no rush — we close on the estate's timeline.
 
-📞 ${PHONE}
-🌐 alderheritagehomes.com/how-long-does-probate-take-fresno-county`,
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 23",
-    category: "Estate Sale Partnership",
-    title: "Estate Sale Companies: Partner With Us",
-    post: `🏡 Attention Fresno estate sale companies:
+    category: "Professional Referral",
+    title: "A Note for Fresno Estate Sale Companies",
+    post: `For estate sale companies operating in Fresno and the Central Valley:
 
-After the sale, what happens to the house?
+After the personal property sale is complete, the real estate often still needs to be sold. We're a natural next step for your clients.
 
-We're the natural next step. When your clients need to sell the property quickly after an estate sale — we're the buyer who:
+What we offer:
+— Written cash offer within 24 hours of property review
+— As-is purchase — no cleanout required after the estate sale
+— Proof of funds provided immediately
+— Licensed CA real estate agent (DRE #02219124)
+— 700+ transactions closed in the Central Valley
 
-✅ Closes in 7–21 days
-✅ Purchases as-is (no cleanout required after the sale)
-✅ Provides proof of funds within 24 hours
-✅ Is licensed (CA DRE #02219124) and accountable
-✅ Has closed 700+ transactions in the Central Valley
+We work professionally with estate sale companies and their clients. If you have clients who need to sell the property after an estate sale, we're happy to discuss how we can work together.
 
-We pay referral fees to estate sale companies who connect us with motivated sellers. This is a win for your clients and a win for your business.
-
-Let's talk: ${PHONE}
-🌐 alderheritagehomes.com/estate-sale-partnership`,
+Alder Heritage Homes | Licensed CA Real Estate Agent | DRE #02219124`,
   },
   {
     week: "Week 24",
-    category: "Year-Round CTA",
-    title: "One Question That Could Save You Thousands",
-    post: `❓ Before you call any cash buyer in Fresno, ask them this one question:
+    category: "Trust / Differentiator",
+    title: "One Question to Ask Any Cash Buyer",
+    post: `Before working with any cash buyer in Fresno, ask this one question:
 
 "Can you show me proof of funds within 24 hours?"
 
-A real buyer says yes and sends it.
+A legitimate buyer says yes and sends it.
 A wholesaler makes excuses.
 
 We've been answering yes to that question since day one.
 
 Connor Morris | Alder Heritage Homes
-📋 Licensed CA Real Estate Agent — DRE #02219124
-📞 ${PHONE}
-🌐 alderheritagehomes.com
-⭐ 5.0 rating · 32 Google reviews
+Licensed CA Real Estate Agent — DRE #02219124
+5.0 rating · 32 Google reviews
 
-Real capital. Real offers. Real close.`,
+Real capital. Real offers. Real close.
+
+Alder Heritage Homes | CA DRE #02219124`,
   },
 ];
 
+const policyNote = `GOOGLE BUSINESS PROFILE POST POLICY REMINDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ These posts are policy-compliant as written
+❌ DO NOT add phone numbers to the post text (policy violation)
+❌ DO NOT add website URLs to the post text (flagged as solicitation)
+✅ Instead: use the "Call now" button when posting — it uses your verified GBP number
+✅ Instead: use the "Learn more" button with your website URL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
+
 export default function GBPTemplates() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const [policyNoteCopied, setPolicyNoteCopied] = useState(false);
 
   const handleCopy = (text: string, index: number) => {
-    navigator.clipboard.writeText(text).then(() => {
-      setCopiedIndex(index);
-      setTimeout(() => setCopiedIndex(null), 2000);
-    });
+    navigator.clipboard.writeText(text);
+    setCopiedIndex(index);
+    setTimeout(() => setCopiedIndex(null), 2000);
   };
 
   const categoryColors: Record<string, string> = {
-    "Trust / Differentiator": "oklch(0.55 0.13 42)",
-    "Senior Sellers": "oklch(0.45 0.10 155)",
-    "Condition": "oklch(0.45 0.12 220)",
-    "Process": "oklch(0.45 0.10 280)",
-    "Realtor Warning": "oklch(0.45 0.15 25)",
-    "Probate / Inherited": "oklch(0.40 0.08 60)",
-    "Military": "oklch(0.35 0.08 230)",
-    "Foreclosure": "oklch(0.45 0.15 15)",
-    "Divorce": "oklch(0.40 0.10 300)",
-    "Local / Community": "oklch(0.40 0.10 155)",
-    "Landlord": "oklch(0.40 0.10 42)",
-    "Review Request": "oklch(0.50 0.15 85)",
+    "Trust / Differentiator": "bg-orange-100 text-orange-800",
+    "Senior Sellers": "bg-purple-100 text-purple-800",
+    "Condition": "bg-green-100 text-green-800",
+    "Process": "bg-blue-100 text-blue-800",
+    "Education": "bg-teal-100 text-teal-800",
+    "Probate / Inherited": "bg-amber-100 text-amber-800",
+    "Military": "bg-slate-100 text-slate-800",
+    "Foreclosure": "bg-red-100 text-red-800",
+    "Divorce": "bg-pink-100 text-pink-800",
+    "Local / Community": "bg-lime-100 text-lime-800",
+    "Landlord": "bg-yellow-100 text-yellow-800",
+    "Social Proof": "bg-indigo-100 text-indigo-800",
+    "Probate / Attorney": "bg-amber-100 text-amber-800",
+    "Professional Referral": "bg-cyan-100 text-cyan-800",
+    "Price Match": "bg-emerald-100 text-emerald-800",
+    "Review Request": "bg-violet-100 text-violet-800",
+    "Year-Round CTA": "bg-orange-100 text-orange-800",
   };
 
   return (
     <Layout>
-      {/* Header */}
-      <section className="py-16" style={{ background: "oklch(0.22 0.01 60)" }}>
-        <div className="container">
-          <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold mb-6" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-              <Calendar size={12} /> Internal Resource
-            </span>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4" style={{ fontFamily: "'Lora', serif" }}>
-              Google Business Profile — Weekly Post Templates
-            </h1>
-            <p className="text-base leading-relaxed" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Post one of these every week. GBP posts signal active business to Google Maps and help maintain local pack rankings. Copy, paste, add a photo, and post. The whole process takes 3 minutes.
-            </p>
-            <div className="mt-6 p-4 rounded-xl flex items-start gap-3" style={{ background: "oklch(0.55 0.13 42 / 0.15)", border: "1px solid oklch(0.55 0.13 42 / 0.3)" }}>
-              <Star size={18} style={{ color: "oklch(0.75 0.12 42)", flexShrink: 0, marginTop: 2 }} />
-              <div>
-                <p className="text-sm font-bold text-white mb-1" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>Week 12 is the most important one.</p>
-                <p className="text-sm" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  Replace [YOUR REVIEW LINK] with: <span className="font-mono text-xs" style={{ color: "oklch(0.75 0.12 42)" }}>https://g.page/r/CQ8DhKTk9e9CEAI/review</span>
-                </p>
+      <div className="max-w-4xl mx-auto px-4 py-10">
+        {/* Header */}
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">
+            Google Business Profile Post Templates
+          </h1>
+          <p className="text-gray-600">
+            24 weeks of policy-compliant GBP posts. Copy and paste directly into Google Business Profile.
+            Post Monday, Wednesday, and Friday for maximum local ranking impact.
+          </p>
+        </div>
+
+        {/* Policy Warning Banner */}
+        <div className="bg-amber-50 border border-amber-300 rounded-lg p-4 mb-8">
+          <div className="flex items-start gap-3">
+            <AlertCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <h2 className="font-semibold text-amber-900 mb-2">
+                Important: Why Your Previous Posts Were Flagged
+              </h2>
+              <p className="text-amber-800 text-sm mb-3">
+                Google's content policy explicitly prohibits phone numbers and website URLs in GBP post text.
+                All previous templates have been rewritten to remove these. The correct approach is:
+              </p>
+              <ul className="text-amber-800 text-sm space-y-1">
+                <li>✅ <strong>Phone number:</strong> Add a "Call now" button when posting (uses your verified GBP number)</li>
+                <li>✅ <strong>Website link:</strong> Add a "Learn more" button with your URL</li>
+                <li>❌ <strong>Never:</strong> Put phone numbers or URLs in the post body text</li>
+              </ul>
+              <div className="mt-3">
+                <h3 className="font-semibold text-amber-900 text-sm mb-1">To restore posting on your GBP:</h3>
+                <ol className="text-amber-800 text-sm space-y-1 list-decimal list-inside">
+                  <li>Go to business.google.com</li>
+                  <li>Click "View profile" → "Info" → check for any flagged content</li>
+                  <li>Delete any posts that contain phone numbers or URLs in the body</li>
+                  <li>Submit an appeal: business.google.com → Support → "Request a review"</li>
+                  <li>Explain that you've removed the policy-violating content</li>
+                </ol>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Post Templates Grid */}
-      <section className="py-16" style={{ background: "oklch(0.97 0.015 85)" }}>
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-            {postTemplates.map((template, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden" style={{ background: "white", border: "1px solid oklch(0.88 0.02 85)", boxShadow: "0 4px 20px oklch(0.22 0.01 60 / 0.06)" }}>
-                {/* Card header */}
-                <div className="px-5 py-3 flex items-center justify-between" style={{ background: categoryColors[template.category] || "oklch(0.55 0.13 42)" }}>
-                  <div>
-                    <span className="text-xs font-bold uppercase tracking-widest text-white opacity-75" style={{ fontFamily: "'DM Mono', monospace" }}>{template.week}</span>
-                    <span className="mx-2 text-white opacity-40">·</span>
-                    <span className="text-xs font-bold uppercase tracking-widest text-white opacity-75" style={{ fontFamily: "'DM Mono', monospace" }}>{template.category}</span>
+        {/* How to Post Instructions */}
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">
+          <h2 className="font-semibold text-blue-900 mb-2 flex items-center gap-2">
+            <Calendar className="w-4 h-4" />
+            How to Post (Step-by-Step)
+          </h2>
+          <ol className="text-blue-800 text-sm space-y-1 list-decimal list-inside">
+            <li>Go to <strong>business.google.com</strong> and sign in</li>
+            <li>Click <strong>"Add update"</strong> (pencil icon)</li>
+            <li>Select <strong>"Add update"</strong> (not offer or event)</li>
+            <li>Paste the post text from below</li>
+            <li>Click <strong>"Add a button"</strong> → select <strong>"Call now"</strong> (this adds your phone number correctly)</li>
+            <li>Optionally add a photo (improves engagement)</li>
+            <li>Click <strong>Publish</strong></li>
+          </ol>
+          <p className="text-blue-700 text-xs mt-2">
+            Post schedule: Monday, Wednesday, Friday — 3 posts per week for maximum ranking impact.
+          </p>
+        </div>
+
+        {/* Post Templates Grid */}
+        <div className="space-y-4">
+          {postTemplates.map((template, index) => (
+            <div
+              key={index}
+              className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm"
+            >
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-xs font-medium text-gray-500 bg-gray-100 px-2 py-0.5 rounded">
+                      {template.week}
+                    </span>
+                    <span
+                      className={`text-xs font-medium px-2 py-0.5 rounded ${
+                        categoryColors[template.category] || "bg-gray-100 text-gray-700"
+                      }`}
+                    >
+                      {template.category}
+                    </span>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <MapPin size={12} className="text-white opacity-60" />
-                    <span className="text-xs text-white opacity-60" style={{ fontFamily: "'DM Mono', monospace" }}>GBP Post</span>
-                  </div>
+                  <h3 className="font-semibold text-gray-900">{template.title}</h3>
                 </div>
-
-                {/* Title */}
-                <div className="px-5 pt-4 pb-2">
-                  <h3 className="font-bold text-base" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>{template.title}</h3>
-                </div>
-
-                {/* Post content */}
-                <div className="px-5 pb-4">
-                  <pre className="text-sm leading-relaxed whitespace-pre-wrap rounded-lg p-4 mb-4" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)", background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.90 0.02 85)", maxHeight: "200px", overflowY: "auto" }}>
-                    {template.post}
-                  </pre>
-                  <button
-                    onClick={() => handleCopy(template.post, i)}
-                    className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg font-bold text-sm transition-all"
-                    style={{
-                      background: copiedIndex === i ? "oklch(0.45 0.12 155)" : categoryColors[template.category] || "oklch(0.55 0.13 42)",
-                      color: "white",
-                      fontFamily: "'Nunito Sans', sans-serif",
-                    }}
-                  >
-                    {copiedIndex === i ? (
-                      <><CheckCircle2 size={16} /> Copied!</>
-                    ) : (
-                      <><Copy size={16} /> Copy Post</>
-                    )}
-                  </button>
-                </div>
+                <button
+                  onClick={() => handleCopy(template.post, index)}
+                  className="flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-md border border-gray-300 hover:bg-gray-50 transition-colors flex-shrink-0 ml-4"
+                >
+                  {copiedIndex === index ? (
+                    <>
+                      <CheckCircle2 className="w-4 h-4 text-green-600" />
+                      <span className="text-green-600">Copied!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-4 h-4 text-gray-500" />
+                      <span className="text-gray-600">Copy</span>
+                    </>
+                  )}
+                </button>
               </div>
-            ))}
-          </div>
+              <pre className="text-sm text-gray-700 whitespace-pre-wrap font-sans leading-relaxed bg-gray-50 rounded p-3 border border-gray-100">
+                {template.post}
+              </pre>
+              <p className="text-xs text-gray-400 mt-2">
+                {template.post.length} characters · After copying, add "Call now" and "Learn more" buttons in GBP
+              </p>
+            </div>
+          ))}
+        </div>
 
-          {/* Usage instructions */}
-          <div className="max-w-3xl mx-auto mt-12 p-8 rounded-2xl" style={{ background: "oklch(0.22 0.01 60)" }}>
-            <h2 className="text-xl font-bold text-white mb-4" style={{ fontFamily: "'Lora', serif" }}>How to Post on Google Business Profile</h2>
-            <ol className="space-y-3">
-              {[
-                "Go to business.google.com and sign in",
-                "Click 'Add update' or 'Create post'",
-                "Paste the copied text",
-                "Add a photo (your property, your headshot, or a Fresno landmark)",
-                "Click 'Publish'",
-                "Repeat every week — consistency signals active business to Google",
-              ].map((step, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace" }}>{i + 1}</span>
-                  <span className="text-sm leading-relaxed" style={{ color: "oklch(0.75 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>{step}</span>
-                </li>
-              ))}
-            </ol>
+        {/* Footer note */}
+        <div className="mt-8 bg-gray-50 border border-gray-200 rounded-lg p-4">
+          <div className="flex items-start gap-3">
+            <Star className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-1">Pro Tips for Maximum Impact</h3>
+              <ul className="text-gray-600 text-sm space-y-1">
+                <li>• Add a real photo with every post — posts with photos get 3x more engagement</li>
+                <li>• Always add the "Call now" button — this is how your phone number appears compliantly</li>
+                <li>• Post at 8–10 AM on weekdays — highest engagement window</li>
+                <li>• Rotate through all 24 weeks, then start over — fresh content signals an active business</li>
+                <li>• After every closing, ask the seller for a Google review — link them to your review page</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 }
