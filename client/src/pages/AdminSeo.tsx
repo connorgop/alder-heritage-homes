@@ -191,6 +191,16 @@ export default function AdminSeo() {
                 Leads
               </Button>
             </Link>
+            <Link href="/gbp-post-templates">
+              <Button size="sm" variant="outline" className="text-xs border-gray-700 text-green-400 hover:bg-gray-800 border-green-800">
+                GBP Posts
+              </Button>
+            </Link>
+            <Link href="/leave-a-review">
+              <Button size="sm" variant="outline" className="text-xs border-gray-700 text-yellow-400 hover:bg-gray-800 border-yellow-800">
+                Reviews
+              </Button>
+            </Link>
             <Link href="/">
               <Button size="sm" variant="outline" className="text-xs border-gray-700 text-gray-300 hover:bg-gray-800">
                 <ExternalLink className="w-3.5 h-3.5 mr-1" /> View Site
