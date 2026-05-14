@@ -12,7 +12,7 @@ export default function LeaveAReview() {
     if (canonical) canonical.setAttribute("href", "https://www.alderheritagehomes.com/leave-a-review");
   }, []);
 
-  const GOOGLE_REVIEW_URL = "https://g.page/r/CbI_ZPpBXF6XEBM/review";
+  const GOOGLE_REVIEW_URL = "https://g.page/r/DwOEpOT170I/review";
 
   return (
     <div className="min-h-screen bg-[oklch(0.97_0.01_60)]">

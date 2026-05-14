@@ -162,3 +162,12 @@
 
 ### Phase 5 — Strategy Document
 - [x] Write comprehensive overnight strategy report (competitor analysis, 90-day roadmap, GEO signals, LSA guide, GBP optimization) — overnight-strategy.md
+
+## GBP Templates Access Fix (May 13, 2026)
+- [ ] Add direct link to /gbp-post-templates from Admin SEO GBP Posts tab
+- [ ] Add /gbp-post-templates to admin nav so Connor can find it easily
+
+## Google Review Campaign (May 13, 2026)
+- [ ] Write review request email (post-close version, follow-up version, short text/SMS version)
+- [ ] Add /leave-a-review page to website with Google review link, instructions, and social proof
+- [ ] Add review page to sitemap

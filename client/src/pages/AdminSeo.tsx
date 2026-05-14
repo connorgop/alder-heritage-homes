@@ -808,6 +808,19 @@ export default function AdminSeo() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
+                {/* Quick access to the full 24-week template library */}
+                <a
+                  href="/gbp-post-templates"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between bg-orange-600/10 border border-orange-600/30 hover:border-orange-500 rounded-lg px-3 py-2.5 transition-colors group"
+                >
+                  <div>
+                    <div className="text-xs font-semibold text-orange-400">📋 Full 24-Week GBP Post Library</div>
+                    <div className="text-[10px] text-gray-500 mt-0.5">Copy-paste ready posts for every week of the year — open in new tab</div>
+                  </div>
+                  <ExternalLink className="w-3.5 h-3.5 text-orange-500 group-hover:text-orange-300 flex-shrink-0" />
+                </a>
                 <Button
                   size="sm"
                   onClick={() => gbpPostMutation.mutate()}
