@@ -58,10 +58,25 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  // redirect:false is important — without it, Express would 301-redirect /foo to /foo/
+  // when /foo/index.html exists, which breaks the canonical URLs PageMeta sets.
+  app.use(express.static(distPath, { redirect: false, index: false }));
 
-  // fall through to index.html if the file doesn't exist
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  // Serve prerendered HTML when present at <path>/index.html, otherwise fall through
+  // to the SPA shell. Path "/" gets the prerendered homepage from index.html directly.
+  app.use("*", (req, res) => {
+    const urlPath = req.originalUrl.split("?")[0].split("#")[0];
+    // Exact homepage
+    if (urlPath === "/") {
+      return res.sendFile(path.resolve(distPath, "index.html"));
+    }
+    // Look for a prerendered <path>/index.html
+    const prerendered = path.resolve(distPath, urlPath.replace(/^\//, ""), "index.html");
+    if (prerendered.startsWith(distPath) && fs.existsSync(prerendered)) {
+      return res.sendFile(prerendered);
+    }
+    // SPA fallback: serve the shell so the client-side router takes over
+    const shell = path.resolve(distPath, "_spa-shell.html");
+    res.sendFile(fs.existsSync(shell) ? shell : path.resolve(distPath, "index.html"));
   });
 }

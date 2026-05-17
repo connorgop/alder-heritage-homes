@@ -141,11 +141,13 @@ export const appRouter = router({
       return { success: true, message: "GBP post content sent to your notifications" };
     }),
 
-    // Admin-only: ping sitemaps to Google and Bing
+    // Admin-only: check sitemap reachability + freshness
+    // (Google/Bing anonymous ping endpoints were retired in 2022-2023; this now
+    //  validates the sitemap is live and reports URL count + newest lastmod.)
     pingSitemaps: protectedProcedure.mutation(async ({ ctx }) => {
       if (ctx.user.role !== "admin") throw new Error("Unauthorized");
-      await pingSitemaps();
-      return { success: true, message: "Sitemap pinged to Google and Bing" };
+      const result = await pingSitemaps();
+      return { success: result.ok, message: result.message };
     }),
 
     // Admin-only: get GBP post library

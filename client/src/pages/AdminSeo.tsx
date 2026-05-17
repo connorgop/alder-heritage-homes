@@ -134,7 +134,7 @@ export default function AdminSeo() {
     onError: (e) => toast.error("Error", { description: e.message }),
   });
   const sitemapMutation = trpc.admin.pingSitemaps.useMutation({
-    onSuccess: (data) => toast.success("Sitemap Pinged", { description: data.message }),
+    onSuccess: (data) => toast.success("Sitemap Checked", { description: data.message }),
     onError: (e) => toast.error("Error", { description: e.message }),
   });
 
@@ -279,7 +279,7 @@ export default function AdminSeo() {
                 className="border-gray-700 text-gray-300 hover:bg-gray-800 gap-2"
               >
                 {sitemapMutation.isPending ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <BarChart3 className="w-3.5 h-3.5" />}
-                Ping Sitemaps
+                Check Sitemap
               </Button>
               <Button
                 size="sm"

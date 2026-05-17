@@ -142,7 +142,7 @@ export default function AdminLeads() {
           <p className="text-gray-600 mb-6">
             Please sign in with your admin account to view leads.
           </p>
-          <a href={getLoginUrl("/admin/leads")}>
+          <a href={getLoginUrl()}>
             <Button className="bg-orange-600 hover:bg-orange-700 text-white">
               Sign In
             </Button>

@@ -2,43 +2,28 @@ import Layout from "@/components/Layout";
 import PageMeta from "@/components/PageMeta";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, Phone, ArrowRight, Clock, CheckCircle2 } from "lucide-react";
+import { useEffect, useState, type ReactNode } from "react";
 import { blogPosts, type BlogPostEntry } from "./Blog";
 import SchemaMarkup, { articleSchema, faqPageSchema } from "@/components/SchemaMarkup";
-import articleChunk1 from "./BlogPostArticles1";
-import articleChunk2 from "./BlogPostArticles2";
-import articleChunk3 from "./BlogPostArticles3";
-import articleChunk4 from "./BlogPostArticles4";
-import articleChunk5 from "./BlogPostArticles5";
-import articleChunk6 from "./BlogPostArticles6";
-import articleChunk7 from "./BlogPostArticles7";
-import articleChunk8 from "./BlogPostArticles8";
-import articleChunk9 from "./BlogPostArticles9";
-import articleChunk10 from "./BlogPostArticles10";
-import articleChunk11 from "./BlogPostArticles11";
-import articleChunk12 from "./BlogPostArticles12";
-import articleChunk13 from "./BlogPostArticles13";
-import articleChunk14 from "./BlogPostArticles14";
-import articleChunk15 from "./BlogPostArticles15";
-import articleChunk16 from "./BlogPostArticles16";
-import articleChunk17 from "./BlogPostArticles17";
-import articleChunk18 from "./BlogPostArticles18";
-import articleChunk19 from "./BlogPostArticles19";
-import articleChunk20 from "./BlogPostArticles20";
-import articleChunk21 from "./BlogPostArticles21";
-import articleChunk22 from "./BlogPostArticles22";
-import articleChunk23 from "./BlogPostArticles23";
-import articleChunk24 from "./BlogPostArticles24";
-import articleChunk25 from "./BlogPostArticles25";
-import articleChunk26 from "./BlogPostArticles26";
-import articleChunk27 from "./BlogPostArticles27";
-import articleChunk28 from "./BlogPostArticles28";
-import articleChunk29 from "./BlogPostArticles29";
-import { articleChunk30 } from "./BlogPostArticles30";
-import articleChunk32 from "./BlogPostArticles32";
-import { articleChunk33 } from "./BlogPostArticles33";
-import articleChunk34 from "./BlogPostArticles34";
-import articleChunk35 from "./BlogPostArticles35";
-import articleChunk36 from "./BlogPostArticles36";
+import { SLUG_TO_CHUNK } from "./_blogChunkMap";
+
+// Module-level cache: once a chunk is fetched, navigating back to any post
+// in the same chunk is instant.
+const chunkCache = new Map<number, Record<string, ReactNode>>();
+
+async function loadArticle(slug: string): Promise<ReactNode | null> {
+  const chunkNum = SLUG_TO_CHUNK[slug];
+  if (chunkNum === undefined) return null;
+  let chunk = chunkCache.get(chunkNum);
+  if (!chunk) {
+    // Vite splits this dynamic import into one chunk per BlogPostArticles<N>.tsx
+    // because the path is a template literal with a single interpolation.
+    const mod = await import(`./BlogPostArticles${chunkNum}.tsx`);
+    chunk = (mod.default ?? mod[`articleChunk${chunkNum}`]) as Record<string, ReactNode>;
+    chunkCache.set(chunkNum, chunk);
+  }
+  return chunk[slug] ?? null;
+}
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -103,50 +88,42 @@ const blogFaqData: Record<string, { q: string; a: string }[]> = {
   ],
 };
 
-const articleContent: Record<string, React.ReactNode> = {
-  ...articleChunk1,
-  ...articleChunk2,
-  ...articleChunk3,
-  ...articleChunk4,
-  ...articleChunk5,
-  ...articleChunk6,
-  ...articleChunk7,
-  ...articleChunk8,
-  ...articleChunk9,
-  ...articleChunk10,
-  ...articleChunk11,
-  ...articleChunk12,
-  ...articleChunk13,
-  ...articleChunk14,
-  ...articleChunk15,
-  ...articleChunk16,
-  ...articleChunk17,
-  ...articleChunk18,
-  ...articleChunk19,
-  ...articleChunk20,
-  ...articleChunk21,
-  ...articleChunk22,
-  ...articleChunk23,
-  ...articleChunk24,
-  ...articleChunk25,
-  ...articleChunk26,
-  ...articleChunk27,
-  ...articleChunk28,
-  ...articleChunk29,
-  ...articleChunk30,
-  ...articleChunk32,
-    ...articleChunk33,
-    ...articleChunk34,
-    ...articleChunk35,
-    ...articleChunk36,
-};
-
 export default function BlogPost() {
   const params = useParams<{ slug: string }>();
-  const slug = params.slug;
+  const slug = params.slug ?? "";
   const post = blogPosts.find((p) => p!.slug === slug) as typeof blogPosts[0] | undefined;
-  const content = articleContent[slug || ""];
-  if (!post || !content) {
+
+  const [content, setContent] = useState<ReactNode | null>(() => {
+    // If the slug's chunk is already cached (back-navigation), render synchronously.
+    const chunkNum = SLUG_TO_CHUNK[slug];
+    if (chunkNum === undefined) return null;
+    return chunkCache.get(chunkNum)?.[slug] ?? null;
+  });
+  const [contentLoaded, setContentLoaded] = useState<boolean>(() => {
+    const chunkNum = SLUG_TO_CHUNK[slug];
+    return chunkNum !== undefined && chunkCache.has(chunkNum);
+  });
+
+  useEffect(() => {
+    if (contentLoaded && content !== null) return;
+    let cancelled = false;
+    setContentLoaded(false);
+    loadArticle(slug)
+      .then((c) => {
+        if (cancelled) return;
+        setContent(c);
+        setContentLoaded(true);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setContent(null);
+        setContentLoaded(true);
+      });
+    return () => { cancelled = true; };
+  }, [slug]);
+
+  // 404: slug isn't in blogPosts metadata, OR the chunk loaded but returned no content.
+  if (!post || (contentLoaded && !content)) {
     return (
       <Layout>
         <div className="container py-24 text-center">
@@ -383,7 +360,16 @@ export default function BlogPost() {
                   .prose-heritage strong { color: oklch(0.25 0.01 60); font-weight: 700; }
                   .prose-heritage a { color: oklch(0.55 0.13 42); text-decoration: underline; }
                 `}</style>
-                {content}
+                {content ?? (
+                  <div className="space-y-4 animate-pulse" aria-label="Loading article">
+                    <div className="h-4 rounded bg-stone-200" />
+                    <div className="h-4 rounded bg-stone-200 w-11/12" />
+                    <div className="h-4 rounded bg-stone-200 w-9/12" />
+                    <div className="h-4 rounded bg-stone-200" />
+                    <div className="h-4 rounded bg-stone-200 w-10/12" />
+                    <div className="h-4 rounded bg-stone-200 w-8/12" />
+                  </div>
+                )}
               </div>
 
               {/* CTA in article */}

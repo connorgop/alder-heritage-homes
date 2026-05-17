@@ -91,23 +91,12 @@ async function runSeoAudit() {
   const wins: string[] = [];
 
   try {
-    // 1. Check sitemap freshness — ping Google and Bing
-    const sitemapUrl = "https://www.alderheritagehomes.com/sitemap.xml";
-    const googlePingUrl = `https://www.google.com/ping?sitemap=${encodeURIComponent(sitemapUrl)}`;
-    const bingPingUrl = `https://www.bing.com/ping?sitemap=${encodeURIComponent(sitemapUrl)}`;
-
-    try {
-      const [googleRes, bingRes] = await Promise.all([
-        fetch(googlePingUrl, { signal: AbortSignal.timeout(10000) }),
-        fetch(bingPingUrl, { signal: AbortSignal.timeout(10000) }),
-      ]);
-      if (googleRes.ok) wins.push("✅ Sitemap pinged to Google successfully");
-      else issues.push(`⚠️ Google sitemap ping returned ${googleRes.status}`);
-      if (bingRes.ok) wins.push("✅ Sitemap pinged to Bing successfully");
-      else issues.push(`⚠️ Bing sitemap ping returned ${bingRes.status}`);
-    } catch (e) {
-      issues.push("⚠️ Sitemap ping failed (network error)");
-    }
+    // 1. Sitemap reachability + freshness check
+    // (Google's anonymous ping endpoint was removed in June 2023; Bing's in 2022.
+    //  Use GSC API or IndexNow for real crawler notifications.)
+    const sitemapCheck = await pingSitemaps();
+    if (sitemapCheck.ok) wins.push(`✅ ${sitemapCheck.message}`);
+    else issues.push(`🚨 ${sitemapCheck.message}`);
 
     // 2. Check homepage is accessible and loads fast
     try {
@@ -202,19 +191,43 @@ async function runSeoAudit() {
   }
 }
 
-// ─── Sitemap Ping Job ─────────────────────────────────────────────────────────
-async function pingSitemaps() {
-  console.log("[Sitemap Ping] Pinging Google and Bing...");
+// ─── Sitemap Health Check Job ─────────────────────────────────────────────────
+// NOTE: Google deprecated the anonymous /ping?sitemap= endpoint in June 2023, and
+// Bing removed theirs in 2022. The modern replacements are: GSC API (Google) and
+// IndexNow (Bing/Yandex/Seznam/Naver). Until those are wired in, this job at least
+// catches "sitemap is 404" / "sitemap is empty" / "sitemap is stale" — the failure
+// modes that matter most.
+async function pingSitemaps(): Promise<{ message: string; ok: boolean }> {
   const sitemapUrl = "https://www.alderheritagehomes.com/sitemap.xml";
+  console.log("[Sitemap Check] Fetching", sitemapUrl);
   try {
-    await Promise.all([
-      fetch(`https://www.google.com/ping?sitemap=${encodeURIComponent(sitemapUrl)}`, { signal: AbortSignal.timeout(10000) }),
-      fetch(`https://www.bing.com/ping?sitemap=${encodeURIComponent(sitemapUrl)}`, { signal: AbortSignal.timeout(10000) }),
-    ]);
-    await setSetting("last_sitemap_ping", new Date().toISOString());
-    console.log("[Sitemap Ping] Done");
+    const res = await fetch(sitemapUrl, { signal: AbortSignal.timeout(15000) });
+    if (!res.ok) {
+      const msg = `Sitemap unreachable — HTTP ${res.status}`;
+      console.error("[Sitemap Check]", msg);
+      await setSetting("last_sitemap_check", new Date().toISOString());
+      await setSetting("last_sitemap_status", `error: ${msg}`);
+      return { ok: false, message: msg };
+    }
+    const body = await res.text();
+    const urlCount = (body.match(/<loc>/g) ?? []).length;
+    const lastmods = Array.from(body.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)).map(m => m[1]);
+    const newestLastmod = lastmods.sort().reverse()[0] ?? "unknown";
+    const ageDays = newestLastmod !== "unknown"
+      ? Math.floor((Date.now() - new Date(newestLastmod).getTime()) / 86_400_000)
+      : -1;
+
+    const msg = `Sitemap OK — ${urlCount} URLs, newest lastmod ${newestLastmod} (${ageDays}d ago)`;
+    console.log("[Sitemap Check]", msg);
+    await setSetting("last_sitemap_check", new Date().toISOString());
+    await setSetting("last_sitemap_status", msg);
+    return { ok: true, message: msg };
   } catch (err) {
-    console.error("[Sitemap Ping] Failed:", err);
+    const msg = `Sitemap check failed: ${err instanceof Error ? err.message : String(err)}`;
+    console.error("[Sitemap Check]", msg);
+    await setSetting("last_sitemap_check", new Date().toISOString());
+    await setSetting("last_sitemap_status", `error: ${msg}`);
+    return { ok: false, message: msg };
   }
 }
 

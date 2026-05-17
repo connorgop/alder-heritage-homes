@@ -188,7 +188,7 @@ export default function ExitIntentPopup() {
                   placeholder="John Smith"
                   required
                   className="w-full rounded-lg px-3 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:ring-2"
-                  style={{ background: "oklch(0.22 0.01 60)", border: "1px solid oklch(0.35 0.01 60)", focusRingColor: "oklch(0.55 0.13 42)" }}
+                  style={{ background: "oklch(0.22 0.01 60)", border: "1px solid oklch(0.35 0.01 60)" }}
                 />
               </div>
               <div>
