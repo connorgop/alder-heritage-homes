@@ -10,6 +10,8 @@
     "prerender": "tsx scripts/prerender.ts",
     "audit-seo": "tsx scripts/seo-audit.ts",
     "ads-assets": "tsx scripts/generate-google-ads-assets.ts",
+    "growth-bot": "tsx scripts/growth-bot.ts",
+    "weekly-bots": "pnpm build && pnpm audit-seo && pnpm ads-assets && pnpm growth-bot",
     "prebuild": "tsx scripts/generate-blog-chunk-map.ts && tsx scripts/generate-sitemap.ts",
     "build": "vite build && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "postbuild": "tsx scripts/prerender.ts",

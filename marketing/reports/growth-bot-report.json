@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-05-18T22:49:13.985Z",
+  "sitemapUrlCount": 665,
+  "seoSummary": {
+    "auditedCount": 665,
+    "criticalCount": 0,
+    "warningCount": 961,
+    "infoCount": 665
+  },
+  "ads": {
+    "rows": 765,
+    "titleRows": 270,
+    "taxRows": 90,
+    "probateRows": 150,
+    "foreclosureRows": 30
+  },
+  "tasks": [
+    {
+      "owner": "Ads Bot",
+      "priority": "P1",
+      "task": "Launch title/deed, inherited, tax, and probate ad groups as separate campaigns or tight ad groups.",
+      "why": "Keyword export has 765 rows, including title/deed (270), tax/lien (90), probate/inherited (150), and foreclosure (30) intent mentions."
+    },
+    {
+      "owner": "Ads Bot",
+      "priority": "P1",
+      "task": "Review search terms twice per week and add negatives before increasing budget.",
+      "why": "Real estate terms attract job seekers, rentals, agents, classes, Zillow/Redfin searches, and low-intent research queries."
+    },
+    {
+      "owner": "CRO Bot",
+      "priority": "P1",
+      "task": "Add call tracking and form conversion tracking before scaling paid traffic.",
+      "why": "Without phone/form conversion data, Google Ads optimization will chase clicks instead of leads."
+    },
+    {
+      "owner": "GBP Bot",
+      "priority": "P1",
+      "task": "Publish 2-3 safe Google Business Profile posts from the GBP playbook this week.",
+      "why": "GBP posts should be educational/local and link to website pages. Hard-sell or distress-heavy posts are more likely to be rejected."
+    },
+    {
+      "owner": "SEO Bot",
+      "priority": "P1",
+      "task": "Shorten page titles on top city/service pages first.",
+      "why": "592 pages have long titles. Google may truncate them, lowering click-through rate."
+    },
+    {
+      "owner": "SEO Bot",
+      "priority": "P1",
+      "task": "Rewrite short meta descriptions on high-intent pages.",
+      "why": "175 pages have short descriptions. Better snippets can improve organic CTR."
+    },
+    {
+      "owner": "SEO Bot",
+      "priority": "P1",
+      "task": "Review duplicate-title warnings and redirect or rewrite pages that compete with each other.",
+      "why": "12 duplicate-title clusters remain. Some may be intentional, but large clusters create doorway-page risk."
+    },
+    {
+      "owner": "Content Bot",
+      "priority": "P2",
+      "task": "Create one new proof asset every week: case study, review story, proof-of-funds explainer, or title-problem FAQ.",
+      "why": "Authority compounds when Google sees real proof and sellers see credible examples."
+    }
+  ]
+}

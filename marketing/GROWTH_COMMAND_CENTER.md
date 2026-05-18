@@ -87,7 +87,12 @@ Friday:
    - Link to `/trust-center`, `/reviews`, and matching service pages.
    - Avoid repeated urgent/distress wording that can trigger GBP rejection.
 
-7. Create lead magnets:
+7. Run the growth bots:
+   - `pnpm weekly-bots`
+   - Open `marketing/reports/growth-bot-report.md`
+   - Fix P0 first, then P1
+
+8. Create lead magnets:
    - "5 Mistakes Fresno Homeowners Make When Selling for Cash"
    - "Probate Home Sale Checklist for Fresno County"
    - "Foreclosure Timeline in California"
