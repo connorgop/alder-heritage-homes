@@ -3425,6 +3425,46 @@ const _blogPostsRaw = [
     date: "2026-05-13",
     author: "Connor Morris"
   },
+  {
+    slug: "best-cash-home-buyers-fresno-2026-comparison",
+    title: "Best Cash Home Buyers in Fresno: How to Compare Your Options",
+    excerpt: "A practical comparison framework for Fresno homeowners: direct buyer vs. wholesaler vs. national brand vs. listing. Learn what proof to ask for before signing.",
+    category: "Consumer Warning",
+    date: "2026-05-17",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-my-house-cash-madera-ca-guide",
+    title: "Sell My House for Cash in Madera CA: 2026 Seller Guide",
+    excerpt: "Madera homeowners: compare your cash-sale options, local market timing, common repair issues, and how to avoid wholesaler assignment contracts.",
+    category: "Madera",
+    date: "2026-05-17",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-my-house-cash-hanford-ca-guide",
+    title: "Sell My House for Cash in Hanford CA: 2026 Seller Guide",
+    excerpt: "Hanford and Kings County sellers: what to know about cash buyers, NAS Lemoore timelines, inherited homes, as-is sales, and fast closings.",
+    category: "Kings County",
+    date: "2026-05-17",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-my-house-cash-visalia-ca-guide",
+    title: "Sell My House for Cash in Visalia CA: 2026 Seller Guide",
+    excerpt: "Visalia homeowners: understand your cash-offer options, Tulare County market factors, probate sales, repair-heavy homes, and how to compare offers.",
+    category: "Visalia",
+    date: "2026-05-17",
+    author: "Connor Morris"
+  },
+  {
+    slug: "fresno-cash-buyer-proof-of-funds-checklist",
+    title: "Cash Buyer Proof of Funds Checklist for Fresno Homeowners",
+    excerpt: "Before you sign with any Fresno cash buyer, ask for proof of funds. Here's what real proof looks like, what wholesalers avoid showing, and how to protect yourself.",
+    category: "Consumer Warning",
+    date: "2026-05-17",
+    author: "Connor Morris"
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 

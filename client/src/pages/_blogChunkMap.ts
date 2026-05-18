@@ -345,7 +345,12 @@ export const SLUG_TO_CHUNK: Record<string, number> = {
   "selling-inherited-house-california-step-by-step": 36,
   "truth-about-we-buy-houses-companies-fresno": 36,
   "how-long-does-probate-take-fresno-county": 36,
-  "cash-offer-vs-listing-real-numbers-fresno-2026": 36
+  "cash-offer-vs-listing-real-numbers-fresno-2026": 36,
+  "best-cash-home-buyers-fresno-2026-comparison": 37,
+  "sell-my-house-cash-madera-ca-guide": 37,
+  "sell-my-house-cash-hanford-ca-guide": 37,
+  "sell-my-house-cash-visalia-ca-guide": 37,
+  "fresno-cash-buyer-proof-of-funds-checklist": 37
 };
 
-export const CHUNK_NUMBERS: readonly number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,32,33,34,35,36] as const;
+export const CHUNK_NUMBERS: readonly number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,32,33,34,35,36,37] as const;
