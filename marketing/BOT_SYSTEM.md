@@ -117,9 +117,42 @@ Priority clusters:
 3. Situation intent:
    - Sell inherited house Fresno County
    - Sell house before foreclosure auction Fresno
+   - Sell house with title issues Fresno
+   - Sell house with deed problems Fresno
+   - Sell house with clouded title California
+   - Sell inherited house deed issue
+   - Sell house with liens Fresno
    - Sell house with tenants Central Valley
    - Sell house with code violations Fresno
    - Sell house during divorce California
+
+## Bot 5B — Deed / Title Problem Lead Bot
+
+Primary page:
+
+- `/sell-house-title-issues-fresno`
+
+Supporting blog:
+
+- `/blog/sell-house-title-deed-issues-fresno`
+
+Positioning:
+
+- Complicated title does not scare us.
+- Many liens can be paid from sale proceeds at closing.
+- We work with title companies, escrow, attorneys, heirs, lenders, and lienholders.
+- We cannot give legal advice or guarantee every title defect is fixable, but we can evaluate the property and help map the path to a clean closing.
+
+Referral partners:
+
+- Probate attorneys
+- Estate planning attorneys
+- Divorce attorneys
+- Bankruptcy attorneys
+- Title officers
+- Escrow officers
+- Private lenders
+- Code enforcement / lien resolution vendors
 
 ## Bot 6 — Lead Conversion Bot
 

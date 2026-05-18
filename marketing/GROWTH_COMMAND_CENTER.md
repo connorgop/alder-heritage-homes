@@ -74,10 +74,17 @@ Friday:
    - Cash buyer vs. Realtor in Fresno
    - Cash offer vs. listing after repairs
 
-5. Create lead magnets:
+5. Build deed/title issue authority:
+   - Primary page: `/sell-house-title-issues-fresno`
+   - Blog: `/blog/sell-house-title-deed-issues-fresno`
+   - Ads: title issues, deed problems, clouded title, old deed, missing heirs, unreleased mortgage, liens
+   - Referral push: probate attorneys, estate planning attorneys, divorce attorneys, bankruptcy attorneys, title officers, escrow officers
+
+6. Create lead magnets:
    - "5 Mistakes Fresno Homeowners Make When Selling for Cash"
    - "Probate Home Sale Checklist for Fresno County"
    - "Foreclosure Timeline in California"
+   - "Deed & Title Problem Checklist for Central Valley Homeowners"
 
 ## Google Ads Launch Plan
 

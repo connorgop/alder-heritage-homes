@@ -174,6 +174,46 @@ export const articleChunk37: Record<string, React.ReactNode> = {
       <p>If you already have an offer and want to know whether it is real, call (559) 281-8016. Connor can review the structure, explain red flags, and give you a competing cash offer if the property fits.</p>
     </div>
   ),
+
+  "sell-house-title-deed-issues-fresno": (
+    <div>
+      <p>Yes, you can often sell a house with deed or title issues in Fresno, but the issue has to be identified and resolved enough for the property to legally transfer. A normal buyer using a mortgage will usually walk away when title is messy. A direct cash buyer can start the process earlier, work with escrow and title, and wait for curative title work when the property is worth solving.</p>
+
+      <h2>What Counts as a Title or Deed Problem?</h2>
+      <p>A title issue is anything that creates doubt about who owns the property or what claims are attached to it. A deed issue is usually a recorded-document problem: the deed was not transferred correctly, a name is wrong, a deceased owner is still on title, or a prior deed created confusion.</p>
+      <ul>
+        <li>House still titled in a deceased parent's name</li>
+        <li>Missing heirs or family members who need to sign</li>
+        <li>Old mortgage or deed of trust never released</li>
+        <li>Judgment liens, tax liens, HOA liens, or mechanic's liens</li>
+        <li>Quitclaim deed mistakes</li>
+        <li>Divorce or co-owner disputes</li>
+        <li>Probate clouds or trust administration issues</li>
+        <li>Incorrect legal description or vesting</li>
+      </ul>
+
+      <h2>Why Traditional Buyers Struggle</h2>
+      <p>Most Fresno buyers need a mortgage. Their lender requires clear, insurable title before funding. If the title report shows a problem, the lender stops. That means the seller has to fix the issue before the buyer can close, and many buyers will not wait.</p>
+
+      <h2>How a Cash Buyer Can Help</h2>
+      <p>A cash buyer does not have a lender's underwriting timeline. That does not mean title can be ignored. It means the buyer can move faster, review the problem directly with a title company, and structure the offer around what needs to be solved. Some issues are paid off at closing. Some require missing signatures. Some require probate or attorney-prepared documents. A serious buyer will tell you the difference.</p>
+
+      <h2>Liens Can Often Be Paid at Closing</h2>
+      <p>Many sellers think they must pay liens before selling. Often, they do not. Valid liens can usually be paid from the sale proceeds through escrow. The title company orders payoff demands, pays the lienholders, records releases, and sends the seller whatever equity remains.</p>
+
+      <h2>Inherited Homes Are the Big One</h2>
+      <p>One of the most common Fresno title problems is an inherited house where the deed was never transferred. The family may believe they own it, but the county records still show a deceased parent, grandparent, aunt, or uncle. Depending on the facts, this may require probate, trust administration, or other legal paperwork before the house can sell.</p>
+
+      <h2>Be Careful With Anyone Who Says "No Problem" Too Fast</h2>
+      <p>No honest buyer can guarantee every title issue is easy. Fraud, active litigation, missing owners, unresolved estates, and disputed ownership may require court action. What matters is whether the buyer understands the process and is willing to work through it instead of disappearing when the title report comes back complicated.</p>
+
+      <h2>What Alder Heritage Homes Does</h2>
+      <p>Alder Heritage Homes is operated by Connor Morris, a licensed California real estate agent and direct buyer. Connor can review the property, make a written cash offer, provide proof of funds, and coordinate with title professionals, attorneys, heirs, and lienholders when a title problem needs to be cleared before closing.</p>
+
+      <h2>What to Do Next</h2>
+      <p>Gather whatever documents you have: deed, probate paperwork, trust documents, lien notices, tax bills, divorce judgment, mortgage statements, or letters from title. Then call (559) 281-8016. You do not need to know the answer before reaching out. The first step is figuring out what the title problem actually is.</p>
+    </div>
+  ),
 };
 
 export default articleChunk37;

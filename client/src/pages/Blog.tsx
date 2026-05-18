@@ -3465,6 +3465,14 @@ const _blogPostsRaw = [
     date: "2026-05-17",
     author: "Connor Morris"
   },
+  {
+    slug: "sell-house-title-deed-issues-fresno",
+    title: "Can You Sell a House With Deed or Title Issues in Fresno?",
+    excerpt: "Old deeds, missing heirs, liens, probate clouds, unreleased mortgages, and ownership disputes can stop normal buyers. Here's how a complicated title sale can still work.",
+    category: "Title Issues",
+    date: "2026-05-17",
+    author: "Connor Morris"
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
