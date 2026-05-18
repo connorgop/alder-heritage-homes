@@ -74,6 +74,9 @@ const FireDamage = lazy(() => import("./pages/services/FireDamage"));
 const CodeViolation = lazy(() => import("./pages/services/CodeViolation"));
 const TaxLiens = lazy(() => import("./pages/services/TaxLiens"));
 const TitleIssues = lazy(() => import("./pages/services/TitleIssues"));
+const InheritedDeedProblem = lazy(() => import("./pages/services/InheritedDeedProblem"));
+const MultipleHeirs = lazy(() => import("./pages/services/MultipleHeirs"));
+const UnpaidPropertyTaxes = lazy(() => import("./pages/services/UnpaidPropertyTaxes"));
 const TaxDelinquent = lazy(() => import("./pages/TaxDelinquent"));
 const FoundationProblems = lazy(() => import("./pages/services/FoundationProblems"));
 const MilitaryPCS = lazy(() => import("./pages/services/MilitaryPCS"));
@@ -407,6 +410,10 @@ function Router() {
       <Route path="/sell-house-deed-issues-fresno"><Redirect to="/sell-house-title-issues-fresno" /></Route>
       <Route path="/sell-house-clouded-title-fresno"><Redirect to="/sell-house-title-issues-fresno" /></Route>
       <Route path="/sell-house-with-title-problems"><Redirect to="/sell-house-title-issues-fresno" /></Route>
+      <Route path="/sell-inherited-house-deed-not-transferred" component={InheritedDeedProblem} />
+      <Route path="/sell-house-multiple-heirs-fresno" component={MultipleHeirs} />
+      <Route path="/sell-house-co-owner-dispute-fresno"><Redirect to="/sell-house-multiple-heirs-fresno" /></Route>
+      <Route path="/sell-house-unpaid-property-taxes-fresno" component={UnpaidPropertyTaxes} />
       <Route path="/tax-delinquent-property-fresno" component={TaxDelinquent} />
       <Route path="/sell-house-foundation-problems" component={FoundationProblems} />
       <Route path="/military-pcs-sell-house" component={MilitaryPCS} />

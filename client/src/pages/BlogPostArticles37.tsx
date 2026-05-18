@@ -214,6 +214,69 @@ export const articleChunk37: Record<string, React.ReactNode> = {
       <p>Gather whatever documents you have: deed, probate paperwork, trust documents, lien notices, tax bills, divorce judgment, mortgage statements, or letters from title. Then call (559) 281-8016. You do not need to know the answer before reaching out. The first step is figuring out what the title problem actually is.</p>
     </div>
   ),
+
+  "inherited-house-deed-never-transferred-california": (
+    <div>
+      <p>If you inherited a house but the deed was never transferred, you are not alone. Families often discover this only when they try to sell, refinance, or insure the property. The good news: the problem is often solvable. The practical reality: the home cannot close until the right person or estate has authority to transfer title.</p>
+
+      <h2>Why This Happens</h2>
+      <p>Real estate does not always move automatically after death. If the owner had a trust, joint tenancy, transfer-on-death deed, or other estate plan, the path may be simpler. If the property was only in the deceased owner's name, probate or another legal process may be required.</p>
+
+      <h2>What Title Looks For</h2>
+      <p>A title company wants to know who has authority to sign, whether there are unpaid liens or taxes, and whether every required heir, trustee, executor, or administrator is accounted for. A preliminary title report is usually the first useful document.</p>
+
+      <h2>Can You Get an Offer Before Probate Is Finished?</h2>
+      <p>Often, yes. A cash buyer can inspect the home, review the situation, and provide a written offer before the estate is ready to close. The contract can be structured around the legal authority needed to sell.</p>
+
+      <h2>What to Gather</h2>
+      <ul>
+        <li>The most recent deed you can find</li>
+        <li>Trust documents, if a trust exists</li>
+        <li>Probate case number or letters, if probate has started</li>
+        <li>Mortgage statements, tax bills, and lien notices</li>
+        <li>Contact information for heirs or authorized representatives</li>
+      </ul>
+
+      <h2>How Alder Helps</h2>
+      <p>Alder Heritage Homes can make a written cash offer, buy the home as-is, coordinate with title and escrow, and wait for probate, trust administration, or deed correction work when the property is a fit. We cannot give legal advice, but we can keep the property sale organized while your legal professionals handle authority.</p>
+    </div>
+  ),
+
+  "sell-house-multiple-heirs-disagree-fresno": (
+    <div>
+      <p>When multiple heirs inherit a Fresno house and disagree, the property can sit for months while taxes, utilities, insurance, repairs, and emotions build up. One person wants to sell. Another wants to keep it. Someone else may be living there. A written cash offer does not solve every family issue, but it gives everyone a real number and a clear option.</p>
+
+      <h2>Start With Authority</h2>
+      <p>The first question is not price. It is who has authority to sell. If the property is in probate, the executor or administrator may have authority depending on the court documents. If the property already transferred to several heirs, each owner may need to sign unless a court order says otherwise.</p>
+
+      <h2>Why a Cash Offer Helps</h2>
+      <p>A traditional listing requires repairs, cleanout, showings, negotiations, and months of cooperation. A cash offer is simpler: one price, as-is condition, no commissions, and a defined closing timeline once title is ready.</p>
+
+      <h2>When One Heir Blocks the Sale</h2>
+      <p>If an owner refuses to sign, you may need legal advice. Some families resolve the issue through negotiation. Others need probate court, mediation, a buyout, or a partition action. A written offer can help an attorney or family member show the financial reality of selling versus waiting.</p>
+
+      <h2>What Alder Does</h2>
+      <p>Connor Morris can inspect the property, explain repair and cleanout risk, provide proof of funds, and share the same offer details with authorized family members. The goal is to reduce confusion and give the family a practical path, not pressure anyone into signing.</p>
+    </div>
+  ),
+
+  "sell-house-unpaid-property-taxes-fresno": (
+    <div>
+      <p>Yes, you can often sell a Fresno house with unpaid property taxes. The taxes usually have to be paid at closing, but you may not need to pay them out of pocket before starting the sale. Escrow can often pay valid tax balances from the sale proceeds.</p>
+
+      <h2>How the Payoff Works</h2>
+      <p>After escrow opens, the title or escrow company confirms the unpaid tax amount, penalties, and any other recorded liens. At closing, those approved payoffs are deducted from the seller proceeds, the liens are cleared, and the buyer receives title.</p>
+
+      <h2>Why Timing Matters</h2>
+      <p>Back taxes get more expensive over time. If the county has sent notices or a tax-default warning, waiting can reduce your options. A cash buyer can move quickly, but title still needs enough time to confirm payoffs and closing requirements.</p>
+
+      <h2>Other Liens Often Show Up Too</h2>
+      <p>Unpaid taxes are sometimes paired with old mortgages, code enforcement liens, HOA balances, judgments, or probate title issues. A serious buyer reviews the full title report instead of looking at the tax bill alone.</p>
+
+      <h2>How to Know Your Net Proceeds</h2>
+      <p>The key number is not the gross offer. It is the estimated amount left after mortgage payoff, taxes, liens, closing costs, and any agreed deductions. Alder Heritage Homes explains that math before you sign so you understand what you are likely to receive.</p>
+    </div>
+  ),
 };
 
 export default articleChunk37;

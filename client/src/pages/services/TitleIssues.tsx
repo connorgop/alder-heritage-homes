@@ -80,11 +80,12 @@ export default function TitleIssues() {
       ctaTitle="Do Not Let a Deed Problem Stop You From Getting an Offer"
       ctaBody="Call (559) 281-8016 or send the property address. We will review the situation, explain what title issues usually need to be cleared, and give you a direct cash offer if the property is a fit."
       relatedLinks={[
+        { label: "Inherited Deed Was Never Transferred", href: "/sell-inherited-house-deed-not-transferred" },
+        { label: "Multiple Heirs or Co-Owner Dispute", href: "/sell-house-multiple-heirs-fresno" },
+        { label: "Unpaid Property Taxes", href: "/sell-house-unpaid-property-taxes-fresno" },
         { label: "Sell House With Tax Liens", href: "/sell-house-tax-liens-fresno" },
         { label: "Probate & Inherited Homes", href: "/probate-inherited-homes" },
         { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
-        { label: "Second Mortgage Help", href: "/second-mortgage-help" },
-        { label: "Foreclosure Help", href: "/foreclosure-help" },
       ]}
     />
   );

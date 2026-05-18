@@ -351,7 +351,10 @@ export const SLUG_TO_CHUNK: Record<string, number> = {
   "sell-my-house-cash-hanford-ca-guide": 37,
   "sell-my-house-cash-visalia-ca-guide": 37,
   "fresno-cash-buyer-proof-of-funds-checklist": 37,
-  "sell-house-title-deed-issues-fresno": 37
+  "sell-house-title-deed-issues-fresno": 37,
+  "inherited-house-deed-never-transferred-california": 37,
+  "sell-house-multiple-heirs-disagree-fresno": 37,
+  "sell-house-unpaid-property-taxes-fresno": 37
 };
 
 export const CHUNK_NUMBERS: readonly number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,32,33,34,35,36,37] as const;

@@ -121,6 +121,11 @@ Priority clusters:
    - Sell house with deed problems Fresno
    - Sell house with clouded title California
    - Sell inherited house deed issue
+   - Sell inherited house deed not transferred
+   - Sell house multiple heirs disagree
+   - Sell house co owner dispute
+   - Sell house unpaid property taxes
+   - Sell house back taxes Fresno
    - Sell house with liens Fresno
    - Sell house with tenants Central Valley
    - Sell house with code violations Fresno
@@ -131,15 +136,22 @@ Priority clusters:
 Primary page:
 
 - `/sell-house-title-issues-fresno`
+- `/sell-inherited-house-deed-not-transferred`
+- `/sell-house-multiple-heirs-fresno`
+- `/sell-house-unpaid-property-taxes-fresno`
 
 Supporting blog:
 
 - `/blog/sell-house-title-deed-issues-fresno`
+- `/blog/inherited-house-deed-never-transferred-california`
+- `/blog/sell-house-multiple-heirs-disagree-fresno`
+- `/blog/sell-house-unpaid-property-taxes-fresno`
 
 Positioning:
 
 - Complicated title does not scare us.
 - Many liens can be paid from sale proceeds at closing.
+- Inherited deed problems, multiple-heir disagreements, and unpaid tax balances are distinct lead paths with their own pages.
 - We work with title companies, escrow, attorneys, heirs, lenders, and lienholders.
 - We cannot give legal advice or guarantee every title defect is fixable, but we can evaluate the property and help map the path to a clean closing.
 

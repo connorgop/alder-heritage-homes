@@ -76,8 +76,9 @@ Friday:
 
 5. Build deed/title issue authority:
    - Primary page: `/sell-house-title-issues-fresno`
-   - Blog: `/blog/sell-house-title-deed-issues-fresno`
-   - Ads: title issues, deed problems, clouded title, old deed, missing heirs, unreleased mortgage, liens
+   - Support pages: `/sell-inherited-house-deed-not-transferred`, `/sell-house-multiple-heirs-fresno`, `/sell-house-unpaid-property-taxes-fresno`
+   - Blogs: `/blog/sell-house-title-deed-issues-fresno`, `/blog/inherited-house-deed-never-transferred-california`, `/blog/sell-house-multiple-heirs-disagree-fresno`, `/blog/sell-house-unpaid-property-taxes-fresno`
+   - Ads: title issues, deed problems, clouded title, old deed, missing heirs, unreleased mortgage, liens, co-owner dispute, unpaid property taxes
    - Referral push: probate attorneys, estate planning attorneys, divorce attorneys, bankruptcy attorneys, title officers, escrow officers
 
 6. Create lead magnets:

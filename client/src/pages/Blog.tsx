@@ -3473,6 +3473,30 @@ const _blogPostsRaw = [
     date: "2026-05-17",
     author: "Connor Morris"
   },
+  {
+    slug: "inherited-house-deed-never-transferred-california",
+    title: "Inherited a House But the Deed Was Never Transferred?",
+    excerpt: "If county records still show a deceased parent or relative on title, the house may still be sellable. Here is what usually has to happen before closing.",
+    category: "Title Issues",
+    date: "2026-05-17",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-multiple-heirs-disagree-fresno",
+    title: "How to Sell a Fresno House When Multiple Heirs Disagree",
+    excerpt: "Sibling disputes, out-of-state heirs, co-owners, and inherited homes can stall for months. A written cash offer can give the family a practical path forward.",
+    category: "Probate",
+    date: "2026-05-17",
+    author: "Connor Morris"
+  },
+  {
+    slug: "sell-house-unpaid-property-taxes-fresno",
+    title: "Can You Sell a House With Unpaid Property Taxes in Fresno?",
+    excerpt: "Back property taxes and county liens do not always have to be paid before you call a buyer. Escrow can often pay valid tax balances from sale proceeds.",
+    category: "Taxes",
+    date: "2026-05-17",
+    author: "Connor Morris"
+  },
 ].filter(Boolean);
 export const blogPosts: BlogPostEntry[] = _blogPostsRaw as BlogPostEntry[];
 
