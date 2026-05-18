@@ -10,6 +10,48 @@ import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import VacantPropertyBanner from "@/components/VacantPropertyBanner";
 import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
 import PageMeta from "@/components/PageMeta";
+import CitySections from "@/components/CitySections";
+import { findCityFactsInPath, getCityFacts } from "@/data/cities";
+
+/**
+ * Auto-detect a CityFacts slug from a page slug like "/sell-my-house-clovis-ca".
+ * Returns the matched city slug if found in client/src/data/cities.ts, else undefined.
+ *
+ * Strips known action prefixes ("sell-my-house-", "we-buy-houses-", etc.) and
+ * trailing "-ca", then looks the remainder up via getCityFacts. Returns undefined
+ * for non-city pages (foreclosure-help, sell-house-mold, etc.) — safe to call on
+ * any page; CitySections is only rendered when a real city is detected.
+ */
+function detectCitySlug(pageSlug?: string): string | undefined {
+  if (!pageSlug) return undefined;
+  const cleaned = pageSlug.replace(/^\//, "").replace(/-ca$/i, "").replace(/-cash-buyer-guide$/i, "");
+  const PREFIXES = [
+    "sell-my-house-fast-",
+    "sell-my-house-cash-",
+    "sell-my-house-",
+    "sell-house-fast-",
+    "sell-house-",
+    "we-buy-houses-in-",
+    "we-buy-houses-",
+    "we-buy-house-",
+    "cash-home-buyers-",
+    "cash-home-buyer-",
+    "buy-my-house-cash-",
+    "buy-my-house-",
+    "sell-your-home-",
+    "sell-home-",
+  ];
+  for (const p of PREFIXES) {
+    if (cleaned.startsWith(p)) {
+      const candidate = cleaned.slice(p.length);
+      const match = getCityFacts(candidate);
+      if (match) return match.slug;
+    }
+  }
+  // Last-ditch: match city names at the end of intent pages such as
+  // "/sell-house-code-violations-fresno" or "/sell-inherited-property-fresno".
+  return findCityFactsInPath(cleaned)?.slug;
+}
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -39,6 +81,10 @@ interface ServicePageProps {
     title: string;         // Descriptive title shown above the embed
     caption?: string;      // Optional short caption below the embed
   };
+  /** When set, renders city-specific market data, neighborhoods, FAQs, and
+   *  per-city LocalBusiness/Service/FAQPage JSON-LD between the main content
+   *  and the bottom CTA. Slug must match an entry in client/src/data/cities.ts. */
+  citySlug?: string;
 }
 
 export default function ServicePage({
@@ -59,6 +105,7 @@ export default function ServicePage({
   slug,
   metaDescription,
   videoEmbed,
+  citySlug,
 }: ServicePageProps) {
   const [showStickyBar, setShowStickyBar] = useState(false);
 
@@ -304,6 +351,14 @@ export default function ServicePage({
           </div>
         </div>
       </section>
+
+      {/* City-specific sections (market data, neighborhoods, city FAQ, schema, nearby cities).
+          citySlug prop wins when explicitly set; otherwise auto-detected from the page slug.
+          Non-city pages get nothing — detectCitySlug returns undefined and CitySections doesn't render. */}
+      {(() => {
+        const effectiveCitySlug = citySlug ?? detectCitySlug(slug);
+        return effectiveCitySlug ? <CitySections slug={effectiveCitySlug} /> : null;
+      })()}
 
       {/* Bottom CTA */}
       <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>

@@ -386,6 +386,66 @@ export function aggregateRatingSchema({
   };
 }
 
+/** Per-city LocalBusiness schema — drops on city-targeted pages so Google's local
+ *  pack treats each <city>-page as its own business location with the right
+ *  addressLocality and service area. Significantly improves "[service] in [city]"
+ *  query matching compared to a single global LocalBusiness on the homepage. */
+export function cityLocalBusinessSchema(facts: {
+  name: string;
+  slug: string;
+  county: string;
+  zips: string[];
+  medianPrice: number;
+}) {
+  const url = `https://www.alderheritagehomes.com/we-buy-houses-${facts.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": ["RealEstateAgent", "LocalBusiness"],
+    "@id": `${url}#business`,
+    name: `Alder Heritage Homes — Cash Home Buyer in ${facts.name}, CA`,
+    description: `Direct cash home buyer serving ${facts.name}, ${facts.county}, California. Licensed CA agent (DRE #02219124). Cash offer in 24 hours, close in 3 days. No fees, no wholesalers.`,
+    url,
+    telephone: "+15592818016",
+    email: "connor@alderheritagehomes.com",
+    parentOrganization: { "@id": "https://www.alderheritagehomes.com/#business" },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: facts.name,
+      addressRegion: "CA",
+      addressCountry: "US",
+    },
+    areaServed: [
+      { "@type": "City", name: facts.name },
+      { "@type": "AdministrativeArea", name: facts.county },
+      ...facts.zips.map(z => ({ "@type": "PostalCodeSpecification", postalCode: z, addressCountry: "US" })),
+    ],
+    priceRange: "Free consultation",
+    knowsAbout: [
+      "Cash home buying",
+      "Probate real estate",
+      "Foreclosure prevention",
+      `${facts.name} real estate market`,
+    ],
+  };
+}
+
+/** Service schema — declares we offer "Cash Home Buying" in a specific city.
+ *  Pairs with cityLocalBusinessSchema; together they give Google the strongest
+ *  possible signal that we serve <city> commercially. */
+export function cityServiceSchema(facts: { name: string; slug: string }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Cash Home Buying",
+    provider: { "@id": "https://www.alderheritagehomes.com/#business" },
+    areaServed: { "@type": "City", name: facts.name },
+    name: `Cash Home Buyer in ${facts.name}, CA`,
+    description: `Sell your house fast in ${facts.name} for cash. Licensed direct buyer, no wholesalers. Offer in 24 hours, close in 3 days.`,
+    url: `https://www.alderheritagehomes.com/we-buy-houses-${facts.slug}`,
+    audience: { "@type": "Audience", audienceType: "Homeowners" },
+  };
+}
+
 /** WebSite schema with SearchAction — enables Google Sitelinks Search Box */
 export function websiteSchema() {
   return {

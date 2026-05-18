@@ -29,8 +29,26 @@ const BASE_URL = "https://www.alderheritagehomes.com";
 
 const LIMIT = process.env.PRERENDER_LIMIT ? Number(process.env.PRERENDER_LIMIT) : Infinity;
 const CONCURRENCY = process.env.PRERENDER_CONCURRENCY ? Number(process.env.PRERENDER_CONCURRENCY) : 4;
-const TIMEOUT = process.env.PRERENDER_TIMEOUT ? Number(process.env.PRERENDER_TIMEOUT) : 25_000;
+const TIMEOUT = process.env.PRERENDER_TIMEOUT ? Number(process.env.PRERENDER_TIMEOUT) : 35_000;
 const PORT = 47_823;
+
+// Default <title> from client/index.html — if a non-homepage page still shows this
+// after rendering, the per-page PageMeta hasn't fired yet (typically because a
+// React.lazy chunk is still resolving). Wait until the title actually changes.
+const DEFAULT_TITLE = "Alder Heritage Homes | Cash Home Buyer in Fresno & Central Valley CA";
+const HOMEPAGE_RENDERED_TITLE = "Cash Home Buyer Fresno | Alder Heritage Homes | 24hr Offers";
+const DEFAULT_DESCRIPTION = "Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) who buys houses for cash in Fresno, Clovis, Visalia, Bakersfield & 30+ Central Valley cities. No wholesaling. Fair offers in 24 hours, close in 7 days. Call (559) 281-8016.";
+const HOMEPAGE_RENDERED_DESCRIPTION = "Licensed cash home buyer in Fresno, Clovis & Central Valley. Get a real cash offer in 24 hours. No fees, no wholesalers. Specializing in probate and inherited homes.";
+
+function titleFromPath(path: string): string {
+  return path
+    .replace(/^\//, "")
+    .replace(/^blog\//, "")
+    .split("-")
+    .filter(Boolean)
+    .map(word => word.length <= 3 && word !== "and" ? word.toUpperCase() : word[0]?.toUpperCase() + word.slice(1))
+    .join(" ");
+}
 
 interface SitemapEntry {
   path: string;
@@ -89,15 +107,80 @@ async function prerenderOne(browser: Browser, urlPath: string): Promise<{ ok: bo
     const url = `http://localhost:${PORT}${urlPath}`;
     await page.goto(url, { waitUntil: "networkidle2", timeout: TIMEOUT });
 
-    // Belt-and-suspenders: wait for React to actually mount something in #root.
-    // If #root is still empty after 3s, the page is broken — skip it.
+    // Wait until React has mounted real content AND the per-page <title> has been
+    // set by PageMeta. The title check is critical for lazy-loaded routes: without
+    // it, Puppeteer captures HTML while the Suspense fallback is still showing and
+    // the default index.html title leaks through to all 20+ lazy pages.
     await page.waitForFunction(
-      () => {
+      (defaultTitle: string, isHomepage: boolean) => {
         const root = document.getElementById("root");
-        return root && root.children.length > 0 && (root.textContent?.trim().length ?? 0) > 0;
+        if (!root || root.children.length === 0) return false;
+        if ((root.textContent?.trim().length ?? 0) < 100) return false;
+        // Homepage legitimately uses the default title — don't block on it.
+        if (isHomepage) return true;
+        // For everything else, the per-page PageMeta must have replaced the default.
+        return document.title !== defaultTitle && document.title.length > 0;
       },
-      { timeout: 3000 },
-    ).catch(() => { /* continue and capture whatever we got */ });
+      { timeout: 8000 },
+      DEFAULT_TITLE,
+      urlPath === "/",
+    ).catch(() => { /* timeout — capture whatever we got and let the audit flag it */ });
+
+    await page.evaluate(`
+      (() => {
+        const baseUrl = ${JSON.stringify(BASE_URL)};
+        const defaultTitle = ${JSON.stringify(DEFAULT_TITLE)};
+        const defaultDescription = ${JSON.stringify(DEFAULT_DESCRIPTION)};
+        const homepageRenderedTitle = ${JSON.stringify(HOMEPAGE_RENDERED_TITLE)};
+        const homepageRenderedDescription = ${JSON.stringify(HOMEPAGE_RENDERED_DESCRIPTION)};
+        const urlPath = ${JSON.stringify(urlPath)};
+        const derivedPathTitle = ${JSON.stringify(titleFromPath(urlPath))};
+        const pathTitle = urlPath === "/" ? "Cash Home Buyer Fresno" : derivedPathTitle;
+        const h1 = document.querySelector("h1")?.textContent?.trim();
+        const derivedTitle = h1 || pathTitle;
+        const canonicalUrl = baseUrl + (urlPath === "/" ? "" : urlPath);
+
+        const ensureMeta = (attr, key, content) => {
+          let el = document.querySelector('meta[' + attr + '="' + key + '"]');
+          if (!el) {
+            el = document.createElement("meta");
+            el.setAttribute(attr, key);
+            document.head.appendChild(el);
+          }
+          el.setAttribute("content", content);
+        };
+
+        let canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+          canonical = document.createElement("link");
+          canonical.setAttribute("rel", "canonical");
+          document.head.appendChild(canonical);
+        }
+        canonical.setAttribute("href", canonicalUrl);
+
+        if (urlPath !== "/" && (!document.title || document.title === defaultTitle || document.title === homepageRenderedTitle)) {
+          document.title = (derivedTitle || "Alder Heritage Homes") + " | Alder Heritage Homes";
+        }
+
+        const currentDescription = document.querySelector('meta[name="description"]')?.getAttribute("content")?.trim();
+        if (!currentDescription || currentDescription === defaultDescription || currentDescription === homepageRenderedDescription) {
+          const firstParagraph = Array.from(document.querySelectorAll("main p, section p, p"))
+            .map(p => p.textContent?.replace(/\\s+/g, " ").trim())
+            .find(text => text && text.length >= 80);
+          const fallback = derivedTitle
+            ? derivedTitle + ". Get a direct cash offer from Alder Heritage Homes, a licensed California real estate agent and direct buyer. No repairs, no commissions, no wholesalers."
+            : defaultDescription;
+          const description = (firstParagraph || fallback).slice(0, 178);
+          ensureMeta("name", "description", description);
+          ensureMeta("property", "og:description", description);
+          ensureMeta("name", "twitter:description", description);
+        }
+
+        ensureMeta("property", "og:url", canonicalUrl);
+        ensureMeta("property", "og:title", document.title);
+        ensureMeta("name", "twitter:title", document.title);
+      })();
+    `);
 
     const html = await page.content();
     const dest = urlPath === "/"

@@ -49,7 +49,10 @@ export default function PageMeta({
   noIndex = false,
 }: PageMetaProps) {
   useEffect(() => {
-    const fullTitle = `${title} | Alder Heritage Homes`;
+    // Don't double-append the brand if the page already includes it in its title prop.
+    const fullTitle = /alder heritage homes/i.test(title)
+      ? title
+      : `${title} | Alder Heritage Homes`;
     const canonicalUrl = `${BASE_URL}${path}`;
 
     // <title>
