@@ -435,6 +435,9 @@ export default function Home() {
                 {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
               </div>
               <span className="text-gray-400 text-sm">5.0 · Rated by Central Valley homeowners</span>
+              <Link href="/trust-center">
+                <span className="text-orange-300 text-sm font-bold hover:text-orange-200 transition-colors">Verify the buyer →</span>
+              </Link>
             </div>
           </div>
         </div>

@@ -53,7 +53,7 @@ export function localBusinessSchema() {
     email: "connor@alderheritagehomes.com",
     founder: {
       "@type": "Person",
-      name: "Connor Alder",
+      name: "Connor Morris",
       jobTitle: "Licensed California Real Estate Agent",
       hasCredential: {
         "@type": "EducationalOccupationalCredential",
@@ -169,7 +169,7 @@ export function articleSchema({
     author: {
       "@type": "Person",
       "@id": "https://www.alderheritagehomes.com/about#connor",
-      name: "Connor Alder",
+      name: "Connor Morris",
       jobTitle: "Licensed California Real Estate Agent",
       url: "https://www.alderheritagehomes.com/about",
     },
@@ -193,10 +193,10 @@ export function personSchema() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://www.alderheritagehomes.com/about#connor",
-    name: "Connor Alder",
+    name: "Connor Morris",
     jobTitle: "Licensed California Real Estate Agent",
     description:
-      "Connor Alder is a licensed California real estate agent (DRE #02219124) and founder of Alder Heritage Homes. He buys homes in Fresno and the Central Valley with his own capital — not a wholesaler.",
+      "Connor Morris is a licensed California real estate agent (DRE #02219124) and founder of Alder Heritage Homes. He buys homes in Fresno and the Central Valley with his own capital — not a wholesaler.",
     url: "https://www.alderheritagehomes.com/about",
     telephone: "+15592818016",
     worksFor: {

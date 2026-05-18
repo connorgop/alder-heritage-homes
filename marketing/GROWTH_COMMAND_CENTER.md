@@ -54,7 +54,7 @@ Thursday:
 - Internally link it to the right city page and service page.
 
 Friday:
-- Google Business Profile post.
+- Google Business Profile post from `marketing/GOOGLE_BUSINESS_PROFILE_MACHINE.md`.
 - Ask two past clients/partners for a Google review.
 - Add one local backlink target: probate attorney, estate sale company, title company, contractor, senior move manager.
 
@@ -81,7 +81,13 @@ Friday:
    - Ads: title issues, deed problems, clouded title, old deed, missing heirs, unreleased mortgage, liens, co-owner dispute, unpaid property taxes
    - Referral push: probate attorneys, estate planning attorneys, divorce attorneys, bankruptcy attorneys, title officers, escrow officers
 
-6. Create lead magnets:
+6. Run the Google Business Profile machine:
+   - Publish educational/local posts, not hard-sell posts.
+   - Rotate images and captions.
+   - Link to `/trust-center`, `/reviews`, and matching service pages.
+   - Avoid repeated urgent/distress wording that can trigger GBP rejection.
+
+7. Create lead magnets:
    - "5 Mistakes Fresno Homeowners Make When Selling for Cash"
    - "Probate Home Sale Checklist for Fresno County"
    - "Foreclosure Timeline in California"
