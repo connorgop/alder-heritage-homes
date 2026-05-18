@@ -70,7 +70,7 @@ const redFlags = [
 ];
 
 const alderDifference = [
-  "Connor Alder is the actual buyer — his name is on every contract",
+  "Connor Morris is the actual buyer — his name is on every contract",
   "No inspection period — we close on the agreed date",
   "No 'and/or Assignee' language — ever",
   "Licensed CA Real Estate Agent (DRE #02219124) with legal fiduciary duty",
@@ -137,7 +137,7 @@ export default function DontGetWholesaled() {
               "They will lie directly to your face and tell you they are the ones buying your home. They never are. I only know a small handful of real buyers in Fresno — and none of them are ranking on Google."
             </p>
             <p className="mt-4 text-sm font-bold uppercase tracking-widest" style={{ color: "oklch(0.90 0.05 42)", fontFamily: "'DM Mono', monospace" }}>
-              — Connor Alder, Licensed CA Agent DRE #02219124
+              — Connor Morris, Licensed CA Agent DRE #02219124
             </p>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function DontGetWholesaled() {
                   What a Real Buyer Looks Like
                 </h2>
                 <p className="text-base leading-relaxed mb-6" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                  I am the buyer. My name — Connor Alder — is on every contract. I have my own capital. I do not need an inspection period to find someone else to buy your home. I do not use "and/or Assignee" language. I do not have a coaching program or an Instagram page about real estate investing.
+                  I am the buyer. My name — Connor Morris — is on every contract. I have my own capital. I do not need an inspection period to find someone else to buy your home. I do not use "and/or Assignee" language. I do not have a coaching program or an Instagram page about real estate investing.
                 </p>
                 <p className="text-base leading-relaxed" style={{ color: "oklch(0.35 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                   And if we can't agree on a price — which happens — I will personally introduce you to the handful of real end buyers I know and trust in Fresno. Not a list. A personal introduction to people I have done business with and vouch for.

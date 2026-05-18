@@ -30,11 +30,11 @@ export default function SellFastAd() {
         { icon: <Award size={20} />, text: "Free independent Broker Opinion of Value with every offer" },
         { icon: <Clock size={20} />, text: "Close in 3 days or on your timeline" },
       ]}
-      urgency="Most 'we buy houses' companies in Fresno are wholesalers — they lock you into a contract and try to sell it to a real investor. Connor Alder is the actual buyer. His name is on the contract. He closes with his own capital."
+      urgency="Most 'we buy houses' companies in Fresno are wholesalers — they lock you into a contract and try to sell it to a real investor. Connor Morris is the actual buyer. His name is on the contract. He closes with his own capital."
       ctaLabel="Get My Cash Offer Today"
       faqs={[
         { q: "How do I know your offer is fair?", a: "Every offer comes with a free independent Broker Opinion of Value from a Fresno broker with 1,850+ closed transactions. You see exactly what your home is worth before you decide anything. No other cash buyer in the Central Valley offers this." },
-        { q: "How is this different from other 'we buy houses' companies?", a: "Most companies advertising 'we buy houses' in Fresno are wholesalers — they have no capital and plan to sell your contract to a real investor. Connor Alder is a licensed CA agent who buys with his own capital. His name is on the contract. No inspection period. No 'and/or Assignee' language." },
+        { q: "How is this different from other 'we buy houses' companies?", a: "Most companies advertising 'we buy houses' in Fresno are wholesalers — they have no capital and plan to sell your contract to a real investor. Connor Morris is a licensed CA agent who buys with his own capital. His name is on the contract. No inspection period. No 'and/or Assignee' language." },
         { q: "What if I need more time after closing?", a: "A rent-back arrangement lets you sell the home and continue living there as a tenant for a period after closing. This gives you the cash from the sale while you find your next home." },
       ]}
     />

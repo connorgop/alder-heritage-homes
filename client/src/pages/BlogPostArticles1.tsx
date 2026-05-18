@@ -396,7 +396,7 @@ const articleChunk1: Record<string, React.ReactNode> = {
   "dont-get-wholesaled-fresno-cash-buyer-warning": (
     <div className="prose-heritage">
       <p>If you've been searching for cash home buyers in Fresno, you've probably seen dozens of websites, bandit signs, and postcards all saying the same thing: "We Buy Houses Fast, Any Condition, Cash." Most of them are not buyers. They are wholesalers — and the difference matters enormously to you as a seller.</p>
-      <p>This article is written by Connor Alder, a licensed California real estate agent (DRE #02219124) who actually buys homes with his own capital. I know the Fresno market. I know the players. And I'm going to tell you exactly how to tell who is real and who isn't.</p>
+      <p>This article is written by Connor Morris, a licensed California real estate agent (DRE #02219124) who actually buys homes with his own capital. I know the Fresno market. I know the players. And I'm going to tell you exactly how to tell who is real and who isn't.</p>
       <h2>What Is a Wholesaler?</h2>
       <p>A real estate wholesaler is someone who gets a property under contract — meaning they sign a purchase agreement with you — and then sells that contract to a third-party investor for more money than they offered you. They never actually buy your home. They buy the <em>right</em> to buy your home, and then sell that right to someone else.</p>
       <p>The wholesaler's profit is the difference between what they offered you and what they sold the contract for. If they offered you $200,000 and sold the contract to a real investor for $220,000, they pocketed $20,000 without ever owning your home for a single day.</p>

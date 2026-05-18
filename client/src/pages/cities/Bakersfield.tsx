@@ -15,7 +15,7 @@ const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyN
 const faqs = [
   {
     q: "Do you actually buy homes in Bakersfield, or are you a wholesaler?",
-    a: "Connor Alder is the actual buyer — not a wholesaler, not a middleman. His name is on every contract. No inspection period. No 'and/or Assignee' language. He buys with his own capital and closes with a Bakersfield-area title company he works with regularly.",
+    a: "Connor Morris is the actual buyer — not a wholesaler, not a middleman. His name is on every contract. No inspection period. No 'and/or Assignee' language. He buys with his own capital and closes with a Bakersfield-area title company he works with regularly.",
   },
   {
     q: "Can you also help me list my Bakersfield home on the MLS?",
@@ -93,7 +93,7 @@ export default function Bakersfield() {
                 Bakersfield is one of California's most dynamic real estate markets — a city shaped by oil, agriculture, and a working-class backbone that doesn't have time for games. If you need to sell, you need someone who shows up, tells you the truth, and closes when they say they will.
               </p>
               <p className="leading-relaxed mb-6" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                Connor Alder is a licensed California real estate agent (DRE #02219124) who buys homes directly with his own capital throughout Fresno, the Central Valley, and now Kern County. He is not a wholesaler. He does not lock you into a contract and shop it to investors. His name is on every contract, and he closes.
+                Connor Morris is a licensed California real estate agent (DRE #02219124) who buys homes directly with his own capital throughout Fresno, the Central Valley, and now Kern County. He is not a wholesaler. He does not lock you into a contract and shop it to investors. His name is on every contract, and he closes.
               </p>
               <p className="leading-relaxed mb-8" style={{ color: "oklch(0.40 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 If a cash sale isn't the right fit for your situation, Connor can connect you with top-performing listing agents in the Bakersfield market from his professional network. His broker has completed over 1,850 transactions. You get a referral to someone with a real track record — not a part-timer who does real estate on the side.

@@ -59,7 +59,7 @@ export default function FreeOffer() {
             Get Your Free Cash Offer in 24 Hours — No Repairs, No Fees, No Pressure
           </h1>
           <p style={{ color: "oklch(0.75 0.01 60)", fontSize: "1.1rem", lineHeight: 1.6, marginBottom: "2rem" }}>
-            Connor Alder is a licensed California real estate agent (DRE #02219124) who actually buys homes with his own capital. Not a wholesaler. Not a middleman. The real buyer.
+            Connor Morris is a licensed California real estate agent (DRE #02219124) who actually buys homes with his own capital. Not a wholesaler. Not a middleman. The real buyer.
           </p>
 
           {/* Calculator Card */}
@@ -169,12 +169,12 @@ export default function FreeOffer() {
         <div style={{ maxWidth: 800, margin: "0 auto", display: "grid", gridTemplateColumns: "auto 1fr", gap: "2rem", alignItems: "center" }}>
           <img
             src={CONNOR_PHOTO}
-            alt="Connor Alder — Licensed CA Real Estate Agent"
+            alt="Connor Morris — Licensed CA Real Estate Agent"
             style={{ width: 120, height: 120, borderRadius: "50%", objectFit: "cover", border: "3px solid oklch(0.55 0.13 42)", flexShrink: 0 }}
           />
           <div>
             <h2 style={{ fontFamily: "'Lora', serif", fontWeight: 800, fontSize: "1.3rem", color: "oklch(0.22 0.01 60)", marginBottom: "0.5rem" }}>
-              Hi, I'm Connor Alder
+              Hi, I'm Connor Morris
             </h2>
             <p style={{ fontSize: "0.95rem", color: "oklch(0.40 0.01 60)", lineHeight: 1.7, marginBottom: "0.75rem" }}>
               I grew up in the Central Valley and I buy homes here with my own capital — not someone else's money, not a wholesaling operation. I'm a licensed California real estate agent (DRE #02219124), which means I have a legal obligation to treat you fairly. Every offer I make includes a free third-party broker opinion of value so you can verify my number is honest.
@@ -238,7 +238,7 @@ export default function FreeOffer() {
       {/* Footer — minimal */}
       <footer style={{ padding: "1.5rem", textAlign: "center", background: "oklch(0.18 0.01 60)" }}>
         <p style={{ color: "oklch(0.55 0.01 60)", fontSize: "0.8rem" }}>
-          © 2026 Alder Heritage Homes · Connor Alder, DRE #02219124 · Fresno, CA · (559) 281-8016
+          © 2026 Alder Heritage Homes · Connor Morris, DRE #02219124 · Fresno, CA · (559) 281-8016
         </p>
         <p style={{ color: "oklch(0.45 0.01 60)", fontSize: "0.75rem", marginTop: "0.25rem" }}>
           <a href="/privacy-policy" style={{ color: "inherit" }}>Privacy Policy</a> · <a href="/" style={{ color: "inherit" }}>Main Site</a>

@@ -83,6 +83,7 @@ const MilitaryPCS = lazy(() => import("./pages/services/MilitaryPCS"));
 const FreeOffer = lazy(() => import("./pages/FreeOffer"));
 const Reviews = lazy(() => import("./pages/Reviews"));
 const TrustCenter = lazy(() => import("./pages/TrustCenter"));
+const SellerProtectionChecklist = lazy(() => import("./pages/SellerProtectionChecklist"));
 const SeniorSeller = lazy(() => import("./pages/services/SeniorSeller"));
 const ParentsHouse = lazy(() => import("./pages/services/ParentsHouse"));
 const SellMyHouse = lazy(() => import("./pages/SellMyHouse"));
@@ -421,6 +422,7 @@ function Router() {
       <Route path="/free-offer" component={FreeOffer} />
       <Route path="/reviews" component={Reviews} />
       <Route path="/trust-center" component={TrustCenter} />
+      <Route path="/seller-protection-checklist" component={SellerProtectionChecklist} />
       <Route path="/sell-home-retirement-fresno" component={SeniorSeller} />
       <Route path="/sell-parents-house-fresno" component={ParentsHouse} />
       <Route path="/sell-my-house" component={SellMyHouse} />

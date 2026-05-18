@@ -70,7 +70,7 @@ const warningItems = [
 export default function VacantPropertyWarning() {
   useSEO({
     title: "Vacant Home Warning — Secure It Now or It Will Be Broken Into",
-    description: "Vacant homes in Fresno and the Central Valley get broken into fast. Connor Alder will help you secure the property or connect you with someone who can — same day. Call (559) 281-8016.",
+    description: "Vacant homes in Fresno and the Central Valley get broken into fast. Connor Morris will help you secure the property or connect you with someone who can — same day. Call (559) 281-8016.",
     canonical: "/vacant-property-warning",
     schema: faqSchema(faqs),
   });
@@ -120,7 +120,7 @@ export default function VacantPropertyWarning() {
                   <AlertTriangle size={20} style={{ color: "oklch(0.45 0.20 25)" }} />
                 </div>
                 <span className="font-bold text-sm" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.45 0.20 25)", textTransform: "uppercase", letterSpacing: "0.08em" }}>
-                  This Happened to Me — Connor Alder
+                  This Happened to Me — Connor Morris
                 </span>
               </div>
               <p className="text-lg leading-relaxed mb-4" style={{ color: "oklch(0.22 0.01 60)", fontFamily: "'Lora', serif", fontStyle: "italic" }}>

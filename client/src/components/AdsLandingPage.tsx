@@ -323,7 +323,7 @@ export default function AdsLandingPage({
             Ready to Talk to the Actual Buyer?
           </h2>
           <p className="text-base mb-8" style={{ color: "oklch(0.72 0.01 60)" }}>
-            Connor Alder — Licensed CA Agent, DRE #02219124. His name is on every contract. No inspection period. No LLC and/or Assignee. No middleman.
+            Connor Morris — Licensed CA Agent, DRE #02219124. His name is on every contract. No inspection period. No LLC and/or Assignee. No middleman.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={PHONE_HREF} className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)" }}>

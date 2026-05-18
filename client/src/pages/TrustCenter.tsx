@@ -50,6 +50,7 @@ const situations = [
   { label: "Probate or inherited house", href: "/probate-inherited-homes" },
   { label: "Foreclosure deadline", href: "/foreclosure-help" },
   { label: "Wholesaler second opinion", href: "/dont-get-wholesaled" },
+  { label: "Seller protection checklist", href: "/seller-protection-checklist" },
 ];
 
 const comparison = [

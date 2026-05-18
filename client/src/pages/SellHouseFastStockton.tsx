@@ -18,7 +18,7 @@ export default function SellHouseFastStockton() {
       heroImageAlt="Sell my house fast Stockton CA cash buyer"
       slug="/sell-house-fast-stockton-ca"
       metaDescription="Sell your house fast in Stockton CA for cash — no repairs, no commissions, close in 7 days. We buy houses throughout San Joaquin County. Licensed CA agent DRE #02219124. Call (559) 281-8016."
-      intro="Alder Heritage Homes is Stockton's honest cash home buyer. Connor Whittaker is a licensed California real estate agent (DRE #02219124) who purchases homes directly with his own capital throughout Stockton and San Joaquin County. He is not a wholesaler — he does not lock you into a contract and shop it to investors. His name is on every contract, and he closes."
+      intro="Alder Heritage Homes is Stockton's honest cash home buyer. Connor Morris is a licensed California real estate agent (DRE #02219124) who purchases homes directly with his own capital throughout Stockton and San Joaquin County. He is not a wholesaler — he does not lock you into a contract and shop it to investors. His name is on every contract, and he closes."
       sections={[
         {
           heading: "Why Stockton Homeowners Choose a Cash Sale",
@@ -86,7 +86,7 @@ export default function SellHouseFastStockton() {
         },
         {
           q: "Are you a wholesaler or a real cash buyer?",
-          a: "We are a direct cash buyer — we purchase homes with our own funds and close with our own title company. We are not a wholesaler who will assign your contract to an unknown third party. Connor Whittaker is a licensed California real estate agent (DRE #02219124) and you deal with him directly from offer to close.",
+          a: "We are a direct cash buyer — we purchase homes with our own funds and close with our own title company. We are not a wholesaler who will assign your contract to an unknown third party. Connor Morris is a licensed California real estate agent (DRE #02219124) and you deal with him directly from offer to close.",
         },
         {
           q: "How is selling to you different from listing with a Stockton realtor?",

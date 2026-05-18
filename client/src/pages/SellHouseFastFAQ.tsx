@@ -111,7 +111,7 @@ const faqs = [
     items: [
       {
         q: "Is Alder Heritage Homes a licensed real estate company?",
-        a: "Yes. Connor Whittaker, founder of Alder Heritage Homes, is a licensed California real estate agent (DRE #02219124). We operate transparently and in full compliance with California real estate law.",
+        a: "Yes. Connor Morris, founder of Alder Heritage Homes, is a licensed California real estate agent (DRE #02219124). We operate transparently and in full compliance with California real estate law.",
       },
       {
         q: "How many houses have you bought in Fresno and the Central Valley?",

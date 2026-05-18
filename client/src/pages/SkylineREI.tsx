@@ -133,7 +133,7 @@ export default function SkylineREI() {
           </h2>
           <div className="prose prose-lg max-w-none" style={{ color: "oklch(0.38 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
             <p className="text-lg leading-relaxed mb-5">
-              Skyline REI is the acquisition entity operated by Connor Alder, a licensed California real estate agent (DRE #02219124) based in Fresno. While Alder Heritage Homes is the public-facing brand, Skyline REI is the entity that holds, acquires, and in some cases renovates the properties we purchase.
+              Skyline REI is the acquisition entity operated by Connor Morris, a licensed California real estate agent (DRE #02219124) based in Fresno. While Alder Heritage Homes is the public-facing brand, Skyline REI is the entity that holds, acquires, and in some cases renovates the properties we purchase.
             </p>
             <p className="text-lg leading-relaxed mb-5">
               We are not a wholesaling operation. We do not lock up properties under contract and then try to sell those contracts to real investors. <strong>We are the real investors.</strong> When you see "Skyline REI" on a purchase agreement, that means we are the actual buyer — funded, committed, and ready to close.

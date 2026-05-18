@@ -298,9 +298,9 @@ export default function SanJoaquinCountyHub() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {[
-              { icon: DollarSign, title: "Direct Buyer — Not a Wholesaler", desc: "We purchase homes with our own capital. We don't lock you into a contract and shop it to investors. Connor Whittaker's name is on every contract, and he closes." },
+              { icon: DollarSign, title: "Direct Buyer — Not a Wholesaler", desc: "We purchase homes with our own capital. We don't lock you into a contract and shop it to investors. Connor Morris's name is on every contract, and he closes." },
               { icon: Clock, title: "Close in 7–14 Days", desc: "We can close in as little as 7 days once we have a signed purchase agreement. If you need more time, we close on your schedule." },
-              { icon: CheckCircle2, title: "Licensed CA Real Estate Agent", desc: "Connor Whittaker holds a California real estate license (DRE #02219124). You get full transparency, professional representation, and legal protection." },
+              { icon: CheckCircle2, title: "Licensed CA Real Estate Agent", desc: "Connor Morris holds a California real estate license (DRE #02219124). You get full transparency, professional representation, and legal protection." },
             ].map((item) => (
               <div key={item.title} className="text-center p-6 rounded-2xl" style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)" }}>
                 <item.icon size={28} className="mx-auto mb-4" style={{ color: "oklch(0.55 0.13 42)" }} />

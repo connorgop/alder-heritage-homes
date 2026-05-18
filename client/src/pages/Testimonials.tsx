@@ -221,7 +221,7 @@ export default function Testimonials() {
           <h2 className="text-3xl font-bold mb-10 text-center" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>Why Sellers Trust Alder Heritage Homes</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "Licensed Agent, Not a Wholesaler", desc: "Connor Alder is a licensed California real estate agent (DRE #02219124). He is the actual buyer — his name is on every contract. No middlemen, no assignment clauses, no surprises." },
+              { title: "Licensed Agent, Not a Wholesaler", desc: "Connor Morris is a licensed California real estate agent (DRE #02219124). He is the actual buyer — his name is on every contract. No middlemen, no assignment clauses, no surprises." },
               { title: "Transparent Process", desc: "We show you exactly how we calculated your offer — the ARV, repair costs, and our margin. You'll understand every number before you sign anything." },
               { title: "You Choose the Closing Date", desc: "Need to close in 5 days? Need 45 days to find your next home? We close on your timeline, not ours. Flexibility is part of the service." },
             ].map(item => (

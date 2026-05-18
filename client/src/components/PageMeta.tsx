@@ -9,6 +9,7 @@ import { useEffect } from "react";
 const BASE_URL = "https://www.alderheritagehomes.com";
 const DEFAULT_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp";
 const SITE_NAME = "Alder Heritage Homes";
+const DEFAULT_DESCRIPTION_SUFFIX = " Get a written cash offer from a licensed Fresno direct buyer. No repairs, commissions, or wholesaling.";
 
 interface PageMetaProps {
   title: string;           // Page-specific title (without site name suffix)
@@ -40,6 +41,21 @@ function setCanonical(url: string) {
   el.setAttribute("href", url);
 }
 
+function normalizeTitle(title: string): string {
+  if (/alder heritage homes/i.test(title)) return title;
+  if (title.length >= 52) return title;
+  return `${title} | ${SITE_NAME}`;
+}
+
+function normalizeDescription(description: string): string {
+  const clean = description.replace(/\s+/g, " ").trim();
+  if (clean.length < 80) return `${clean}${DEFAULT_DESCRIPTION_SUFFIX}`.slice(0, 180);
+  if (clean.length <= 180) return clean;
+  const clipped = clean.slice(0, 177);
+  const breakAt = Math.max(clipped.lastIndexOf("."), clipped.lastIndexOf(","), clipped.lastIndexOf(" "));
+  return `${clipped.slice(0, breakAt > 120 ? breakAt : 177)}...`;
+}
+
 export default function PageMeta({
   title,
   description,
@@ -49,17 +65,15 @@ export default function PageMeta({
   noIndex = false,
 }: PageMetaProps) {
   useEffect(() => {
-    // Don't double-append the brand if the page already includes it in its title prop.
-    const fullTitle = /alder heritage homes/i.test(title)
-      ? title
-      : `${title} | Alder Heritage Homes`;
+    const fullTitle = normalizeTitle(title);
+    const metaDescription = normalizeDescription(description);
     const canonicalUrl = `${BASE_URL}${path}`;
 
     // <title>
     document.title = fullTitle;
 
     // Basic meta
-    setMeta("description", description, true);
+    setMeta("description", metaDescription, true);
     setMeta("robots", noIndex ? "noindex, nofollow" : "index, follow", true);
 
     // Canonical
@@ -67,7 +81,7 @@ export default function PageMeta({
 
     // Open Graph
     setMeta("og:title", fullTitle);
-    setMeta("og:description", description);
+    setMeta("og:description", metaDescription);
     setMeta("og:url", canonicalUrl);
     setMeta("og:type", type);
     setMeta("og:site_name", SITE_NAME);
@@ -78,7 +92,7 @@ export default function PageMeta({
     // Twitter Card
     setMeta("twitter:card", "summary_large_image", true);
     setMeta("twitter:title", fullTitle, true);
-    setMeta("twitter:description", description, true);
+    setMeta("twitter:description", metaDescription, true);
     setMeta("twitter:image", image, true);
   }, [title, description, path, image, type, noIndex]);
 

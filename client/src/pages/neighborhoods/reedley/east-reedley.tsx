@@ -57,7 +57,7 @@ export default function EastReedley() {
         },
         {
           q: "Are you a wholesaler or a real buyer?",
-          a: "We are a real buyer with our own capital. Connor Alder at Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) who actually purchases your home. We do not assign your contract to a third party, we do not charge you any fees, and we do not disappear after making an offer. You deal with us from the first phone call through closing day. This is the key difference between us and the 'we buy houses' companies you see on signs at intersections.",
+          a: "We are a real buyer with our own capital. Connor Morris at Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) who actually purchases your home. We do not assign your contract to a third party, we do not charge you any fees, and we do not disappear after making an offer. You deal with us from the first phone call through closing day. This is the key difference between us and the 'we buy houses' companies you see on signs at intersections.",
         },
         {
           q: "I inherited a home in East Reedley — can you help with probate?",

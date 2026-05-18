@@ -15,6 +15,7 @@ interface SEOProps {
 const SITE_NAME = "Alder Heritage Homes";
 const BASE_URL = "https://www.alderheritagehomes.com";
 const DEFAULT_OG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/hero-home-nZTcWEfhePrYwEAzcFVusA.webp";
+const DEFAULT_DESCRIPTION_SUFFIX = " Get a written cash offer from a licensed Fresno direct buyer. No repairs, commissions, or wholesaling.";
 
 function setMeta(name: string, content: string, attr: "name" | "property" = "name") {
   let el = document.querySelector(`meta[${attr}="${name}"]`) as HTMLMetaElement | null;
@@ -36,12 +37,28 @@ function setLink(rel: string, href: string) {
   el.setAttribute("href", href);
 }
 
+function normalizeTitle(title: string): string {
+  if (/alder heritage homes/i.test(title)) return title;
+  if (title.length >= 52) return title;
+  return `${title} | ${SITE_NAME}`;
+}
+
+function normalizeDescription(description: string): string {
+  const clean = description.replace(/\s+/g, " ").trim();
+  if (clean.length < 80) return `${clean}${DEFAULT_DESCRIPTION_SUFFIX}`.slice(0, 180);
+  if (clean.length <= 180) return clean;
+  const clipped = clean.slice(0, 177);
+  const breakAt = Math.max(clipped.lastIndexOf("."), clipped.lastIndexOf(","), clipped.lastIndexOf(" "));
+  return `${clipped.slice(0, breakAt > 120 ? breakAt : 177)}...`;
+}
+
 export function useSEO({ title, description, canonical, ogImage, schema, noIndex }: SEOProps) {
   useEffect(() => {
-    const fullTitle = `${title} | ${SITE_NAME}`;
+    const fullTitle = normalizeTitle(title);
+    const metaDescription = normalizeDescription(description);
     document.title = fullTitle;
 
-    setMeta("description", description);
+    setMeta("description", metaDescription);
     if (noIndex) {
       setMeta("robots", "noindex, nofollow");
     } else {
@@ -50,7 +67,7 @@ export function useSEO({ title, description, canonical, ogImage, schema, noIndex
 
     // Open Graph
     setMeta("og:title", fullTitle, "property");
-    setMeta("og:description", description, "property");
+    setMeta("og:description", metaDescription, "property");
     setMeta("og:type", "website", "property");
     setMeta("og:site_name", SITE_NAME, "property");
     setMeta("og:image", ogImage || DEFAULT_OG, "property");
@@ -63,7 +80,7 @@ export function useSEO({ title, description, canonical, ogImage, schema, noIndex
     // Twitter Card
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", fullTitle);
-    setMeta("twitter:description", description);
+    setMeta("twitter:description", metaDescription);
     setMeta("twitter:image", ogImage || DEFAULT_OG);
 
     // JSON-LD Schema is handled by SchemaMarkup component in Layout and individual pages
@@ -155,7 +172,7 @@ export function articleSchema({
     "image": image || DEFAULT_OG,
     "author": {
       "@type": "Person",
-      "name": "Connor Alder",
+      "name": "Connor Morris",
       "jobTitle": "Licensed California Real Estate Agent",
       "identifier": "DRE #02219124"
     },

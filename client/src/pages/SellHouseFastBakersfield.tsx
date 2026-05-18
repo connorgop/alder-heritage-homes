@@ -78,7 +78,7 @@ export default function SellHouseFastBakersfield() {
         },
         {
           q: "Are you a wholesaler or a real cash buyer?",
-          a: "We are a direct cash buyer — we purchase homes with our own funds and close with our own title company. We are not a wholesaler who will assign your contract to an unknown third party. Connor Alder is a licensed California real estate agent (DRE #02219124) and you deal with him directly from offer to close.",
+          a: "We are a direct cash buyer — we purchase homes with our own funds and close with our own title company. We are not a wholesaler who will assign your contract to an unknown third party. Connor Morris is a licensed California real estate agent (DRE #02219124) and you deal with him directly from offer to close.",
         },
         {
           q: "What if I owe more on my Bakersfield home than it's worth?",

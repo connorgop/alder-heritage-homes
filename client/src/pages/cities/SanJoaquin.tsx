@@ -16,7 +16,7 @@ export default function SanJoaquin() {
         { label: "Offer Turnaround", value: "24 Hours" },
       ]}
       faqs={[
-        { q: "Do you buy houses throughout San Joaquin County?", a: "Yes. Connor Alder is a licensed California real estate agent (DRE #02219124) and direct cash buyer serving all of San Joaquin County — Stockton, Lodi, Tracy, Manteca, Lathrop, Ripon, Escalon, and surrounding communities. We are not a wholesaler." },
+        { q: "Do you buy houses throughout San Joaquin County?", a: "Yes. Connor Morris is a licensed California real estate agent (DRE #02219124) and direct cash buyer serving all of San Joaquin County — Stockton, Lodi, Tracy, Manteca, Lathrop, Ripon, Escalon, and surrounding communities. We are not a wholesaler." },
         { q: "How fast can you close on a San Joaquin County home?", a: "We typically close in 7–21 days. For homeowners facing foreclosure or with urgent timelines, we can often close in as few as 3 days once we have a signed contract and clear title." },
         { q: "Do you buy homes in Stockton neighborhoods with deferred maintenance?", a: "Yes. We buy homes in any condition throughout Stockton and San Joaquin County — foundation issues, roof problems, outdated systems, fire or water damage, hoarder homes. You don't need to make a single repair." },
         { q: "Can you help if I inherited a San Joaquin County home and live out of state?", a: "Absolutely. We handle the entire process remotely — we can do a virtual walkthrough, send documents electronically, and close through a title company without you needing to travel. We work with out-of-state heirs regularly." },

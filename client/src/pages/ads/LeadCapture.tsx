@@ -3,8 +3,10 @@ import { Card } from '@/components/ui/card';
 import { CheckCircle2, Clock, DollarSign, AlertCircle, Phone } from 'lucide-react';
 import { trpc } from '@/lib/trpc';
 import { toast } from 'sonner';
+import { useConversionTracking } from '@/hooks/useConversionTracking';
 
 export default function LeadCapture() {
+  const { trackFormSubmit, trackPhoneClick } = useConversionTracking();
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -19,6 +21,7 @@ export default function LeadCapture() {
 
   const submitLead = trpc.leads.submit.useMutation({
     onSuccess: () => {
+      trackFormSubmit();
       setSubmitted(true);
     },
     onError: (err) => {
@@ -90,7 +93,7 @@ export default function LeadCapture() {
             </ol>
           </Card>
           <p className="text-gray-600 mb-4">Can't wait? Call Connor directly:</p>
-          <a href="tel:+15592818016" className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors">
+          <a href="tel:+15592818016" onClick={trackPhoneClick} className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors">
             <Phone className="w-5 h-5" />
             (559) 281-8016
           </a>
@@ -350,7 +353,7 @@ export default function LeadCapture() {
           <p className="text-gray-600 mb-4">
             Can't wait? Call Connor directly:
           </p>
-          <a href="tel:+15592818016" className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors">
+          <a href="tel:+15592818016" onClick={trackPhoneClick} className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors">
             <Phone className="w-5 h-5" />
             Call (559) 281-8016
           </a>

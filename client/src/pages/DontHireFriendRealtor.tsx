@@ -145,7 +145,7 @@ export default function DontHireFriendRealtor() {
               "In Canada, you cannot do real estate part time. You cannot have another job or role elsewhere. The profession is taken that seriously. The US hasn't caught up — but your home deserves the same standard."
             </p>
             <p className="mt-4 text-sm font-bold uppercase tracking-widest" style={{ color: "oklch(0.95 0.05 85)", fontFamily: "'DM Mono', monospace" }}>
-              — Connor Alder, Licensed CA Agent DRE #02219124
+              — Connor Morris, Licensed CA Agent DRE #02219124
             </p>
           </div>
         </div>

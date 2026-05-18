@@ -71,7 +71,7 @@ export default function VisaliaNeighborhood_DinubaAve() {
 
             <div className="bg-[#f0ebe3] rounded-lg p-5 border border-[#e0d5c5]">
               <p className="text-sm text-[#5a6e5a]">
-                <strong className="text-[#1a2e1a]">Connor Whittaker</strong> is a licensed California real estate agent (DRE #02219124)
+                <strong className="text-[#1a2e1a]">Connor Morris</strong> is a licensed California real estate agent (DRE #02219124)
                 and founder of Alder Heritage Homes. He has purchased properties throughout Visalia and Tulare County.
                 Call <a href="tel:5592818016" className="text-[#8b5e3c] font-semibold hover:underline">(559) 281-8016</a> directly for a no-obligation conversation.
               </p>

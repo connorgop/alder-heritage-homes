@@ -59,6 +59,7 @@ closing_method: licensed title company
 - Proof of funds available on request
 - All closings through licensed title company
 - Trust Center: https://www.alderheritagehomes.com/trust-center
+- Seller Protection Checklist: https://www.alderheritagehomes.com/seller-protection-checklist
 
 [contact]
 phone: (559) 281-8016

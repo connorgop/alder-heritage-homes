@@ -86,7 +86,7 @@ export default function LpSeniorSeller() {
             Fairwinds, The Terraces, Oakmont — retirement communities give you a short window when your unit opens. A traditional listing takes 60–90 days. We close in 3 days, or on your timeline.
           </p>
           <p style={{ color: "oklch(0.65 0.01 60)", fontSize: "0.9rem", marginBottom: "2rem" }}>
-            Connor Alder · Licensed CA Real Estate Agent · DRE #02219124 · (559) 281-8016
+            Connor Morris · Licensed CA Real Estate Agent · DRE #02219124 · (559) 281-8016
           </p>
 
           {/* Form Card */}
@@ -240,12 +240,12 @@ export default function LpSeniorSeller() {
           <div style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: "2rem", alignItems: "center", marginBottom: "2.5rem" }}>
             <img
               src={CONNOR_PHOTO}
-              alt="Connor Alder — Licensed CA Real Estate Agent"
+              alt="Connor Morris — Licensed CA Real Estate Agent"
               style={{ width: 110, height: 110, borderRadius: "50%", objectFit: "cover", border: "3px solid oklch(0.55 0.13 42)", flexShrink: 0 }}
             />
             <div>
               <h2 style={{ fontFamily: "'Lora', serif", fontWeight: 800, fontSize: "1.2rem", color: "oklch(0.22 0.01 60)", marginBottom: "0.5rem" }}>
-                Hi, I'm Connor Alder
+                Hi, I'm Connor Morris
               </h2>
               <p style={{ fontSize: "0.9rem", color: "oklch(0.40 0.01 60)", lineHeight: 1.7, marginBottom: "0.5rem" }}>
                 I'm a licensed California real estate agent (DRE #02219124) and I buy homes in Fresno with my own capital. I grew up in the Central Valley and I understand the timing pressure seniors face when a retirement community unit opens up.
@@ -331,7 +331,7 @@ export default function LpSeniorSeller() {
       {/* Footer */}
       <footer style={{ background: "oklch(0.18 0.01 60)", padding: "1.5rem", textAlign: "center" }}>
         <p style={{ color: "oklch(0.55 0.01 60)", fontSize: "0.8rem", margin: 0 }}>
-          © 2026 Alder Heritage Homes · Connor Alder, DRE #02219124 · (559) 281-8016 · Fresno, CA
+          © 2026 Alder Heritage Homes · Connor Morris, DRE #02219124 · (559) 281-8016 · Fresno, CA
         </p>
         <p style={{ color: "oklch(0.45 0.01 60)", fontSize: "0.75rem", marginTop: "0.5rem" }}>
           <a href="/privacy" style={{ color: "oklch(0.50 0.01 60)", textDecoration: "none" }}>Privacy Policy</a>

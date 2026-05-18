@@ -59,7 +59,7 @@ export default function EastSelma() {
         },
         {
           q: "Are you a wholesaler or a real buyer?",
-          a: "We are a real buyer with our own capital. Connor Alder at Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) who actually purchases your home. We do not assign your contract to a third party, we do not charge you any fees, and we do not disappear after making an offer. You deal with us from the first phone call through closing day. This is the key difference between us and the 'we buy houses' signs you see on telephone poles throughout Selma.",
+          a: "We are a real buyer with our own capital. Connor Morris at Alder Heritage Homes is a licensed California real estate agent (DRE #02219124) who actually purchases your home. We do not assign your contract to a third party, we do not charge you any fees, and we do not disappear after making an offer. You deal with us from the first phone call through closing day. This is the key difference between us and the 'we buy houses' signs you see on telephone poles throughout Selma.",
         },
         {
           q: "I inherited a home in East Selma — how does the process work?",

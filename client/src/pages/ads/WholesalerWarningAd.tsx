@@ -9,7 +9,7 @@ export default function WholesalerWarningAd() {
     <AdsLandingPage
       badge="Real Buyer · Not a Wholesaler · Fresno, CA"
       headline="Most 'Cash Buyers' in Fresno Aren't Buying. Here's the Difference."
-      subheadline="Wholesalers lock you into a contract, then try to sell it to a real investor for more than they offered you. They will look you in the eye and tell you they are the buyer. They are not. Connor Alder is."
+      subheadline="Wholesalers lock you into a contract, then try to sell it to a real investor for more than they offered you. They will look you in the eye and tell you they are the buyer. They are not. Connor Morris is."
       heroImage={HERO}
       painPoints={[
         "Tired of 'cash buyers' who disappear during the inspection period",
@@ -17,7 +17,7 @@ export default function WholesalerWarningAd() {
         "You want to deal with the actual buyer, not a middleman",
       ]}
       benefits={[
-        "Connor Alder is the actual buyer — his name is on the contract",
+        "Connor Morris is the actual buyer — his name is on the contract",
         "No inspection period — real buyers don't need one",
         "No 'and/or Assignee' language — no contract flipping",
         "Free independent Broker Opinion of Value — know our offer is fair",

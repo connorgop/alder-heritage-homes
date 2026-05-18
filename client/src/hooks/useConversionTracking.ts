@@ -17,27 +17,35 @@
 declare global {
   interface Window {
     gtagConversion?: (label: string) => void;
+    gtag?: (...args: unknown[]) => void;
     dataLayer?: unknown[];
   }
 }
 
-// Conversion labels — replace these with your actual labels from Google Ads
-// Found in: Google Ads → Tools → Conversions → click your conversion → Tag setup
+// Conversion labels from Google Ads.
+// Found in: Google Ads -> Goals -> Conversions -> click conversion -> Tag setup.
 const CONVERSION_LABELS = {
   formSubmit: "do7rCPPsz5wcEMO7yaND",    // Contact Lead Form — AW-18059779523
-  phoneClick: "do7rCPPsz5wcEMO7yaND",    // Reuse same label for phone clicks (same campaign goal)
-  addressSubmit: "do7rCPPsz5wcEMO7yaND", // Reuse same label for address submissions
+  phoneClick: "do7rCPPsz5wcEMO7yaND",    // Replace with a dedicated call-click label when created
+  addressSubmit: "do7rCPPsz5wcEMO7yaND", // Replace with a dedicated address-start label when created
 };
 
-function fireConversion(label: string) {
+function fireConversion(label: string, eventName: string) {
   if (typeof window !== "undefined" && typeof window.gtagConversion === "function") {
     window.gtagConversion(label);
+  }
+  if (typeof window !== "undefined" && typeof window.gtag === "function") {
+    window.gtag("event", eventName, {
+      send_to: `AW-18059779523/${label}`,
+      value: 150,
+      currency: "USD",
+    });
   }
 }
 
 export function useConversionTracking() {
   const trackFormSubmit = () => {
-    fireConversion(CONVERSION_LABELS.formSubmit);
+    fireConversion(CONVERSION_LABELS.formSubmit, "generate_lead");
     // Also push to dataLayer for GTM if used later
     if (window.dataLayer) {
       window.dataLayer.push({ event: "form_submit", event_category: "Lead" });
@@ -45,14 +53,14 @@ export function useConversionTracking() {
   };
 
   const trackPhoneClick = () => {
-    fireConversion(CONVERSION_LABELS.phoneClick);
+    fireConversion(CONVERSION_LABELS.phoneClick, "phone_click");
     if (window.dataLayer) {
       window.dataLayer.push({ event: "phone_click", event_category: "Lead" });
     }
   };
 
   const trackAddressSubmit = () => {
-    fireConversion(CONVERSION_LABELS.addressSubmit);
+    fireConversion(CONVERSION_LABELS.addressSubmit, "address_submit");
     if (window.dataLayer) {
       window.dataLayer.push({ event: "address_submit", event_category: "Lead" });
     }

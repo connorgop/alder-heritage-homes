@@ -176,12 +176,12 @@ export default function LpDownsize() {
         <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gridTemplateColumns: "auto 1fr", gap: "2rem", alignItems: "center" }}>
           <img
             src={CONNOR_PHOTO}
-            alt="Connor Alder"
+            alt="Connor Morris"
             style={{ width: 100, height: 100, borderRadius: "50%", objectFit: "cover", border: "3px solid oklch(0.55 0.13 42)", flexShrink: 0 }}
           />
           <div>
             <h2 style={{ fontFamily: "'Lora', serif", fontWeight: 800, fontSize: "1.2rem", color: "oklch(0.22 0.01 60)", marginBottom: "0.5rem" }}>
-              Hi, I'm Connor Alder — Licensed CA Agent, DRE #02219124
+              Hi, I'm Connor Morris — Licensed CA Agent, DRE #02219124
             </h2>
             <p style={{ fontSize: "0.9rem", color: "oklch(0.40 0.01 60)", lineHeight: 1.7 }}>
               I buy homes in Fresno with my own capital. Every offer includes a free third-party Broker Opinion of Value from an independent Fresno broker — so you know my number is honest. If a cash sale isn't right for you, I'll tell you.
@@ -231,7 +231,7 @@ export default function LpDownsize() {
 
       <footer style={{ background: "oklch(0.18 0.01 60)", padding: "1.5rem", textAlign: "center" }}>
         <p style={{ color: "oklch(0.55 0.01 60)", fontSize: "0.8rem", margin: 0 }}>
-          © 2026 Alder Heritage Homes · Connor Alder, DRE #02219124 · (559) 281-8016 · Fresno, CA
+          © 2026 Alder Heritage Homes · Connor Morris, DRE #02219124 · (559) 281-8016 · Fresno, CA
         </p>
         <p style={{ color: "oklch(0.45 0.01 60)", fontSize: "0.75rem", marginTop: "0.5rem" }}>
           <a href="/privacy" style={{ color: "oklch(0.50 0.01 60)", textDecoration: "none" }}>Privacy Policy</a>

@@ -239,7 +239,7 @@ export default function HowItWorks() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: Shield, title: "Licensed CA Agent", desc: "Connor Alder, DRE #02219124. Not a wholesaler. His name is on every contract and he closes what he opens." },
+              { icon: Shield, title: "Licensed CA Agent", desc: "Connor Morris, DRE #02219124. Not a wholesaler. His name is on every contract and he closes what he opens." },
               { icon: Star, title: "Transparent Offers", desc: "Every offer includes our full calculation — ARV, repair costs, and margin. You'll understand every number before signing." },
               { icon: Clock, title: "Your Timeline", desc: "Close in 5 days or 60 days. We work around your schedule, your move-out date, and your next steps." },
             ].map(item => (

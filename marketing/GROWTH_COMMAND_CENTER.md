@@ -92,7 +92,12 @@ Friday:
    - Open `marketing/reports/growth-bot-report.md`
    - Fix P0 first, then P1
 
-8. Create lead magnets:
+8. Verify tracking before scaling paid traffic:
+   - Use `marketing/CALL_FORM_TRACKING_SETUP.md`
+   - Confirm form submits, phone clicks, and 60+ second calls are tracked
+   - Review search terms with `marketing/SEARCH_TERM_NEGATIVE_KEYWORD_PLAYBOOK.md`
+
+9. Create lead magnets:
    - "5 Mistakes Fresno Homeowners Make When Selling for Cash"
    - "Probate Home Sale Checklist for Fresno County"
    - "Foreclosure Timeline in California"

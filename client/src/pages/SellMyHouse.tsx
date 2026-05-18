@@ -147,7 +147,7 @@ const trustLinks = [
   { label: "Wholesaler vs. Real Cash Buyer", href: "/blog/wholesaler-vs-cash-buyer-california-difference" },
   { label: "Skyline REI — Our Buying Entity", href: "/skyline-rei" },
   { label: "Reviews from Fresno Sellers", href: "/reviews" },
-  { label: "About Connor Alder", href: "/about" },
+  { label: "About Connor Morris", href: "/about" },
 ];
 
 const schema = {
