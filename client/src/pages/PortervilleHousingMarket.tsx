@@ -69,7 +69,7 @@ export default function PortervilleHousingMarket() {
   }
 
   useSEO({
-    title: "Porterville Housing Market 2026 — Prices, Trends & Seller Guide",
+    title: "Porterville Housing Market 2026",
     description: "Porterville housing market data for 2026: median home prices by neighborhood, days on market, buyer vs. seller market analysis, and when a cash sale makes more sense than listing. Updated April 2026.",
     canonical: "/porterville-housing-market",
   });

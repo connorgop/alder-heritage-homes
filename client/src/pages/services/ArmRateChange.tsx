@@ -12,7 +12,7 @@ const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyN
 
 export default function ArmRateChange() {
   useSEO({
-    title: "My Interest Rate Is Changing — ARM Help for Fresno Homeowners",
+    title: "ARM Rate Change Help — Fresno",
     description: "Adjustable-rate mortgage resetting in Fresno or the Central Valley? You have options before the payment jumps. Sell for cash in 3 days or explore refinance and loan modification paths.",
     canonical: "/arm-rate-change-help",
     schema: faqSchema([

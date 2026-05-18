@@ -178,3 +178,10 @@
 - [ ] Rewrite all 24 GBP post templates to be fully policy-compliant
 - [ ] Write appeal instructions for Connor to restore GBP posting
 - [ ] Update GBPTemplates.tsx with compliant post library
+
+## Weekly Bot P1 Fixes (2026-05-18)
+- [ ] Fix noscript H1 in index.html → change to p/strong to eliminate multiple-H1 false positives
+- [ ] Shorten PageMeta titles on top 20 service/city pages to ≤60 chars
+- [ ] Fix duplicate-title pairs: add noindex to alias pages (/wholesaler-warning, /lead-magnet, /probate-inherited-homes, /privacy-policy, /terms-of-service, /sms-opt-in)
+- [ ] Bulk up 4 thin Visalia neighborhood pages (college-of-the-sequoias, dinuba-ave, goshen-ave, mineral-king) to 400+ words
+- [ ] Fix /what-is-my-home-worth doubled brand name in title

@@ -12,7 +12,7 @@ const faqs = [
 
 export default function EastBakersfieldPage() {
   useSEO({
-    title: "We Buy Houses East Bakersfield — Cash Offers in 24 Hours | Alder Heritage Homes",
+    title: "We Buy Houses East Bakersfield",
     description: "Sell your East Bakersfield home fast for cash. No repairs, no commissions, no closing costs. Cash offers in 24 hours, close in 7 days. Call (559) 281-8016.",
     canonical: "/bakersfield-neighborhoods/east-bakersfield",
   });

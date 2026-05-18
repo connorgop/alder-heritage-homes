@@ -18,7 +18,7 @@ const neighborhoods = [
 
 export default function SelmaNeighborhoods() {
   useSEO({
-    title: "Selma CA Neighborhoods — Sell My House Fast | Alder Heritage Homes",
+    title: "Selma Neighborhoods — Sell Fast",
     description: "We buy houses in all Selma neighborhoods — Downtown, East, West Selma, and Floral Avenue. Cash offers in 24 hours. Call (559) 281-8016.",
     canonical: "/selma-neighborhoods",
   });

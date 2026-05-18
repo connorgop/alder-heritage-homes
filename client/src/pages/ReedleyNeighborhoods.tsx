@@ -19,7 +19,7 @@ const neighborhoods = [
 
 export default function ReedleyNeighborhoods() {
   useSEO({
-    title: "Reedley CA Neighborhoods — Sell My House Fast | Alder Heritage Homes",
+    title: "Reedley Neighborhoods — Sell Fast",
     description: "We buy houses in all Reedley neighborhoods — Downtown, Kings River, East, West, and North Reedley. Cash offers in 24 hours. Call (559) 281-8016.",
     canonical: "/reedley-neighborhoods",
   });

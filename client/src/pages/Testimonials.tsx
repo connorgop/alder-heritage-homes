@@ -86,7 +86,7 @@ const trustStats = [
 
 export default function Testimonials() {
   useSEO({
-    title: "Seller Reviews & Testimonials — Alder Heritage Homes Fresno CA",
+    title: "Seller Reviews & Testimonials",
     description: "Real seller stories from Fresno, Visalia, Bakersfield, Stockton, and across the Central Valley. See how Alder Heritage Homes helped homeowners sell fast for cash — no repairs, no commissions, no pressure.",
     canonical: "/testimonials",
   });

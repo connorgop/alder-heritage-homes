@@ -89,7 +89,7 @@ const comparisons = [
 
 export default function HowItWorks() {
   useSEO({
-    title: "How It Works — Sell Your House for Cash in 4 Simple Steps",
+    title: "How It Works — Sell Your House for Cash",
     description: "Selling your home to Alder Heritage Homes takes 4 steps: call or submit your address, receive a cash offer in 24 hours, choose your closing date, and get paid. No repairs, no commissions, no fees. Licensed CA Agent DRE #02219124.",
     canonical: "/how-it-works",
   });

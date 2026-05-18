@@ -99,7 +99,7 @@ const whyUs = [
 
 export default function LandlordPortfolioSale() {
   useSEO({
-    title: "Sell Your Rental Portfolio for Cash — Fresno & Central Valley | Alder Heritage Homes",
+    title: "Sell Your Rental Portfolio for Cash",
     description: "Sell multiple single-family rentals in one transaction. Skyline REI has purchased 4-home and 8-home portfolios in Fresno with tenants in place, no inspections, quick close. 1031 exchange guidance available. Call (559) 281-8016.",
     canonical: "/sell-rental-portfolio",
     schema: faqSchema(faqs),

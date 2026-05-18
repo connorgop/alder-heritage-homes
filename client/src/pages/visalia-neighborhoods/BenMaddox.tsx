@@ -6,7 +6,7 @@ import CashOfferForm from "@/components/CashOfferForm";
 
 export default function VisaliaNeighborhood_BenMaddox() {
   useSEO({
-    title: "Sell My House in Ben Maddox Area, Visalia CA — Cash Buyers | Alder Heritage Homes",
+    title: "Sell My House in Ben Maddox, Visalia CA",
     description: "Alder Heritage Homes buys houses in Ben Maddox Area, Visalia CA. Get a cash offer in 24 hours — no repairs, no commissions, no hassle. Northeast Visalia's Move-Up Market.",
     canonical: "/visalia-neighborhoods/ben-maddox",
   });

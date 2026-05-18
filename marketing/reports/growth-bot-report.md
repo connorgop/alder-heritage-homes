@@ -1,16 +1,16 @@
 # Growth Bot Report
 
-Generated: 2026-05-18T23:35:12.218Z
+Generated: 2026-05-18T23:12:01.407Z
 
 ## Scoreboard
 
-- Indexed sitemap URLs: 666
-- SEO audited pages: 666
+- Indexed sitemap URLs: 665
+- SEO audited pages: 665
 - Critical SEO issues: 0
-- SEO warnings: 510
+- SEO warnings: 966
 - Google Ads keyword rows: 765
 - Responsive search ads: 15
-- Negative keywords: 900
+- Negative keywords: 315
 - GBP playbook present: yes
 
 ## Bot Tasks
@@ -24,7 +24,7 @@ Generated: 2026-05-18T23:35:12.218Z
 - **P1 GBP Bot:** Publish 2-3 safe Google Business Profile posts from the GBP playbook this week.
   Why: GBP posts should be educational/local and link to website pages. Hard-sell or distress-heavy posts are more likely to be rejected.
 - **P1 SEO Bot:** Shorten page titles on top city/service pages first.
-  Why: 296 pages have long titles. Google may truncate them, lowering click-through rate.
+  Why: 592 pages have long titles. Google may truncate them, lowering click-through rate.
 - **P1 SEO Bot:** Rewrite short meta descriptions on high-intent pages.
   Why: 175 pages have short descriptions. Better snippets can improve organic CTR.
 - **P1 SEO Bot:** Review duplicate-title warnings and redirect or rewrite pages that compete with each other.
@@ -34,24 +34,25 @@ Generated: 2026-05-18T23:35:12.218Z
 
 ## Top SEO Warning Rules
 
-- long-title: 296
+- long-title: 592
 - short-description: 175
+- long-description: 159
 - duplicate-description: 20
 - duplicate-title: 12
-- thin-content: 7
+- thin-content: 8
 
 ## Pages to Review First
 
 - /blog/cash-buyer-vs-listing (4 warnings)
 - /free-guide (4 warnings)
+- /probate-homes (4 warnings)
+- /blog/cash-home-buyers-madera-ca-guide (3 warnings)
+- /blog/chapter-7-bankruptcy-sell-house-california (3 warnings)
+- /blog/dinuba-housing-market-2026 (3 warnings)
 - /blog/dont-get-wholesaled-fresno-cash-buyer-warning (3 warnings)
+- /blog/downsize-sell-home-fast-fresno (3 warnings)
+- /blog/fresno-foreclosure-timeline-2026 (3 warnings)
 - /blog/fresno-foreclosure-timeline-stages (3 warnings)
-- /blog/how-to-spot-a-wholesaler (3 warnings)
-- /blog/inherited-rental-property-sell-california (3 warnings)
-- /blog/kingsburg-housing-market-2026 (3 warnings)
-- /blog/probate-home-sale-guide (3 warnings)
-- /blog/sell-house-divorce-california-fresno (3 warnings)
-- /blog/sell-house-fast-turlock-ca-2026 (3 warnings)
 
 ## Ads Coverage Snapshot
 

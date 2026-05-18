@@ -5,7 +5,7 @@ const IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyi
 
 export default function ForeclosureHelp() {
   useSEO({
-    title: "Stop Foreclosure in Fresno — Sell Your House for Cash Before the Auction",
+    title: "Stop Foreclosure in Fresno — Sell Fast",
     description: "Facing foreclosure in Fresno or the Central Valley? Sell your home for cash in 5–14 days and stop the process before it damages your credit. Licensed CA agent, real buyer, no wholesalers.",
     canonical: "/foreclosure-help",
     schema: faqSchema([

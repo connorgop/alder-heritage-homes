@@ -7,7 +7,7 @@ import ServicePage from "@/components/ServicePage";
 export default function SellHouseFastOrangeCove() {
   return (
     <ServicePage
-      title="Sell Your House Fast in Orange Cove, CA — Cash Offer in 24 Hours"
+      title="Cash Home Buyer in Orange Cove, CA — Sell Your House Fast"
       subtitle="We Buy Houses in Orange Cove & the Kings Canyon Corridor"
       badge="We Buy Houses in Orange Cove CA"
       intro="Alder Heritage Homes is Orange Cove's trusted cash home buyer. We purchase homes throughout Orange Cove, Reedley, Sanger, Squaw Valley, Dunlap, and all surrounding Fresno County foothill communities. Get a fair cash offer in 24 hours — no repairs, no commissions, close in 7–14 days."

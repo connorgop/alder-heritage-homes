@@ -10,6 +10,8 @@ export default function LeaveAReview() {
     }
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) canonical.setAttribute("href", "https://www.alderheritagehomes.com/leave-a-review");
+    const robots = document.querySelector('meta[name="robots"]');
+    if (robots) robots.setAttribute("content", "noindex, nofollow");
   }, []);
 
   const GOOGLE_REVIEW_URL = "https://g.page/r/DwOEpOT170I/review";

@@ -20,7 +20,7 @@ const neighborhoods = [
 
 export default function StocktonNeighborhoods() {
   useSEO({
-    title: "Stockton CA Neighborhoods — Sell My House Fast | Alder Heritage Homes",
+    title: "Stockton Neighborhoods — Sell Fast",
     description: "We buy houses in all Stockton neighborhoods — North Stockton, South Stockton, Lincoln Village, Weston Ranch, Brookside, and Downtown. Cash offers in 24 hours. Call (559) 281-8016.",
     canonical: "/stockton-neighborhoods",
   });

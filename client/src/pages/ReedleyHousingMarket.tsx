@@ -70,7 +70,7 @@ export default function ReedleyHousingMarket() {
   }
 
   useSEO({
-    title: "Reedley Housing Market 2026 — Prices, Trends & Seller Guide",
+    title: "Reedley Housing Market 2026",
     description: "Reedley housing market data for 2026: median home prices by neighborhood, days on market, buyer vs. seller market analysis, and when a cash sale makes more sense than listing. Updated April 2026.",
     canonical: "/reedley-housing-market",
   });

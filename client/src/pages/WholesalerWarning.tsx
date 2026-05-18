@@ -115,7 +115,7 @@ export default function WholesalerWarning() {
   return (
     <>
       <PageMeta
-        title="We Buy Houses Fresno — How to Spot a Wholesaler Scam | Alder Heritage Homes"
+noIndex={true}         title="We Buy Houses Fresno — How to Spot a Wholesaler Scam | Alder Heritage Homes"
         description="The large 'We Buy Houses' companies advertising on Fresno TV are not real cash buyers. A licensed Fresno agent and real cash buyer explains the wholesale assignment scam and how to protect yourself."
         path="/wholesaler-warning"
       />

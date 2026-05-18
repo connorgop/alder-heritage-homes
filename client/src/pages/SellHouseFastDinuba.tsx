@@ -7,7 +7,7 @@ import ServicePage from "@/components/ServicePage";
 export default function SellHouseFastDinuba() {
   return (
     <ServicePage
-      title="Sell Your House Fast in Dinuba, CA — Cash Offer in 24 Hours"
+      title="Cash Home Buyer in Dinuba, CA — Sell Your House Fast"
       subtitle="We Buy Houses in Dinuba & Surrounding Tulare County Communities"
       badge="We Buy Houses in Dinuba CA"
       intro="Alder Heritage Homes is Dinuba's trusted cash home buyer. We purchase homes throughout Dinuba, Reedley, Cutler, Orosi, Parlier, and all surrounding Tulare and Fresno County communities. Get a fair cash offer in 24 hours — no repairs, no commissions, close in 7–14 days."

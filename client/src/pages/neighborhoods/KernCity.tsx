@@ -12,7 +12,7 @@ const faqs = [
 
 export default function KernCityPage() {
   useSEO({
-    title: "We Buy Houses Kern City — Cash Offers in 24 Hours | Alder Heritage Homes",
+    title: "We Buy Houses in Kern City, Bakersfield",
     description: "Sell your Kern City home fast for cash. No repairs, no commissions, no closing costs. Cash offers in 24 hours, close in 7 days. Call (559) 281-8016.",
     canonical: "/bakersfield-neighborhoods/kern-city",
   });

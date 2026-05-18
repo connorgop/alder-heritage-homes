@@ -67,7 +67,7 @@ const faqSchema = {
 
 export default function BeforeAfter() {
   useSEO({
-    title: "Real Case Studies — Cash Home Sales in Fresno CA | Alder Heritage Homes",
+    title: "Cash Home Sale Case Studies — Fresno",
     description: "Real before and after case studies from Alder Heritage Homes. See actual purchase prices, timelines, and seller situations for cash home sales in Fresno and Clovis, CA. We buy properties nobody else will touch.",
     canonical: "/before-after",
   });

@@ -19,7 +19,7 @@ const faqs = [
 const neighborhoods = ["Brookside", "Lincoln Village", "Spanos Park", "Weston Ranch", "South Stockton", "North Stockton", "Waterfront District", "Morada", "Lodi", "Tracy", "Manteca", "Ripon"];
 export default function Stockton() {
   useSEO({
-    title: "We Buy Houses in Stockton CA — Cash Offers in 24 Hours",
+    title: "We Buy Houses in Stockton CA",
     description: "Alder Heritage Homes buys houses in Stockton and San Joaquin County for cash. Licensed CA Agent (DRE #02219124). No wholesaling. Free Broker Opinion of Value. Close in 5–14 days. No repairs, no commissions.",
     canonical: "/we-buy-houses-stockton",
   });

@@ -16,7 +16,7 @@ const neighborhoods = [
 
 export default function VisaliaNeighborhoods() {
   useSEO({
-    title: "Visalia Neighborhoods — We Buy Houses in Every Visalia Area | Alder Heritage Homes",
+    title: "Visalia Neighborhoods — We Buy Houses",
     description: "Alder Heritage Homes buys houses in every Visalia neighborhood — Mooney Blvd, COS area, Goshen Ave, Dinuba Ave, Ben Maddox, Downtown, and more. Get a cash offer in 24 hours.",
     canonical: "/visalia-neighborhoods",
   });

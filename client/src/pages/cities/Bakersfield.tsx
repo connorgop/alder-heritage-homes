@@ -44,7 +44,7 @@ const neighborhoods = [
 
 export default function Bakersfield() {
   useSEO({
-    title: "We Buy Houses in Bakersfield CA — Cash Offers, Fast Close",
+    title: "We Buy Houses in Bakersfield CA — Cash Offers",
     description: "Alder Heritage Homes buys houses in Bakersfield and Kern County for cash. Licensed CA Agent (DRE #02219124). No wholesaling. Free Broker Opinion of Value. Close in 3 days. Also connecting sellers with top listing agents.",
     canonical: "/we-buy-houses-bakersfield",
     schema: faqSchema(faqs),

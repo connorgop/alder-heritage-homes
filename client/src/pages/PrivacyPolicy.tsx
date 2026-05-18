@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
   return (
     <div style={{ background: "oklch(0.98 0.005 60)", minHeight: "100vh" }}>
       <PageMeta
-        title="Privacy Policy | Alder Heritage Homes"
+noIndex={true}         title="Privacy Policy | Alder Heritage Homes"
         description="Privacy Policy for Alder Heritage Homes — how we collect, use, and protect your personal information, including SMS opt-in data."
         path="/privacy-policy"
       />

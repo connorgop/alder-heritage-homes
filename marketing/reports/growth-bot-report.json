@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-18T23:35:12.216Z",
-  "sitemapUrlCount": 666,
+  "generatedAt": "2026-05-18T23:12:01.406Z",
+  "sitemapUrlCount": 665,
   "seoSummary": {
-    "auditedCount": 666,
+    "auditedCount": 665,
     "criticalCount": 0,
-    "warningCount": 510,
-    "infoCount": 666
+    "warningCount": 966,
+    "infoCount": 665
   },
   "ads": {
     "rows": 765,
@@ -43,7 +43,7 @@
       "owner": "SEO Bot",
       "priority": "P1",
       "task": "Shorten page titles on top city/service pages first.",
-      "why": "296 pages have long titles. Google may truncate them, lowering click-through rate."
+      "why": "592 pages have long titles. Google may truncate them, lowering click-through rate."
     },
     {
       "owner": "SEO Bot",

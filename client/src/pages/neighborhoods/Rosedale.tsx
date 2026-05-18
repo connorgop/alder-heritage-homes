@@ -12,7 +12,7 @@ const faqs = [
 
 export default function RosedalePage() {
   useSEO({
-    title: "We Buy Houses Rosedale — Cash Offers in 24 Hours | Alder Heritage Homes",
+    title: "We Buy Houses in Rosedale, Bakersfield",
     description: "Sell your Rosedale home fast for cash. No repairs, no commissions, no closing costs. Cash offers in 24 hours, close in 7 days. Call (559) 281-8016.",
     canonical: "/bakersfield-neighborhoods/rosedale",
   });

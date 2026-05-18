@@ -18,7 +18,7 @@ const neighborhoods = [
 
 export default function SangerNeighborhoods() {
   useSEO({
-    title: "Sanger CA Neighborhoods — Sell My House Fast | Alder Heritage Homes",
+    title: "Sanger Neighborhoods — Sell Fast",
     description: "We buy houses in all Sanger neighborhoods — Downtown, East, West Sanger, and Kings Canyon Corridor. Cash offers in 24 hours. Call (559) 281-8016.",
     canonical: "/sanger-neighborhoods",
   });

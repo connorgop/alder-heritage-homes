@@ -6,7 +6,7 @@ import CashOfferForm from "@/components/CashOfferForm";
 
 export default function VisaliaNeighborhood_DowntownVisalia() {
   useSEO({
-    title: "Sell My House in Downtown Visalia, Visalia CA — Cash Buyers | Alder Heritage Homes",
+    title: "Sell My House in Downtown Visalia CA",
     description: "Alder Heritage Homes buys houses in Downtown Visalia, Visalia CA. Get a cash offer in 24 hours — no repairs, no commissions, no hassle. Historic Homes in a Revitalized Urban Core.",
     canonical: "/visalia-neighborhoods/downtown-visalia",
   });

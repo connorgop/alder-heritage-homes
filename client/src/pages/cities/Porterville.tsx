@@ -19,7 +19,7 @@ const faqs = [
 const neighborhoods = ["Brookside", "Lincoln Village", "Spanos Park", "Weston Ranch", "South Porterville", "North Porterville", "Waterfront District", "Morada", "Lodi", "Tracy", "Manteca", "Ripon"];
 export default function Porterville() {
   useSEO({
-    title: "We Buy Houses in Porterville CA — Cash Offers in 24 Hours",
+    title: "We Buy Houses in Porterville CA — Cash Offers",
     description: "Alder Heritage Homes buys houses in Porterville and Tulare County for cash. Licensed CA Agent (DRE #02219124). No wholesaling. Free Broker Opinion of Value. Close in 5–14 days. No repairs, no commissions.",
     canonical: "/we-buy-houses-porterville",
   });

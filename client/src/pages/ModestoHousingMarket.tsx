@@ -36,7 +36,7 @@ const neighborhoods = [
 
 export default function ModestoHousingMarket() {
   useSEO({
-    title: "Modesto Housing Market 2026 — Prices, Trends & Seller Guide",
+    title: "Modesto Housing Market 2026",
     description: "Modesto housing market data for 2026: median home prices by neighborhood, days on market, buyer vs. seller market analysis, and when a cash sale makes more sense than listing. Updated April 2026.",
     canonical: "/modesto-housing-market",
   });

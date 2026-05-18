@@ -1152,7 +1152,7 @@ const _blogPostsRaw = [
   },
   {
     slug: "fresno-real-estate-market-2026-buyers-sellers",
-    title: "Fresno Real Estate Market 2026: What Sellers Need to Know Right Now",
+    title: "Fresno Real Estate Market 2026: Buyer & Seller Conditions Explained",
     excerpt: "The Fresno market has cooled from its 2022 peak but remains healthy. Here's a data-driven look at current conditions, which neighborhoods are holding value, and whether you should sell now or wait.",
     category: "Market & Timing",
     date: "April 4, 2026",

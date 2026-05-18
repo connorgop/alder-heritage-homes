@@ -332,16 +332,16 @@ function Router() {
       <Route path="/about-connor" component={AboutConnor} />
       <Route path="/why-i-left" component={WhyILeft} />
       <Route path="/competitor-warning" component={CompetitorWarning} />
-      <Route path="/wholesaler-warning" component={CompetitorWarning} />
+      <Route path="/wholesaler-warning"><Redirect to="/competitor-warning" /></Route>
       <Route path="/ads/competitor-warning" component={CompetitorWarningAd} />
-      <Route path="/lead-magnet" component={LeadMagnet} />
+      <Route path="/lead-magnet"><Redirect to="/free-guide" /></Route>
       <Route path="/free-guide" component={LeadMagnet} />
       <Route path="/blog/how-to-spot-a-wholesaler" component={HowToSpotWholesaler} />
-      <Route path="/how-to-spot-wholesaler" component={HowToSpotWholesaler} />
+      <Route path="/how-to-spot-wholesaler"><Redirect to="/blog/how-to-spot-a-wholesaler" /></Route>
       <Route path="/blog/cash-buyer-vs-listing" component={CashBuyerVsListing} />
-      <Route path="/cash-buyer-vs-traditional-listing" component={CashBuyerVsListing} />
+      <Route path="/cash-buyer-vs-traditional-listing"><Redirect to="/blog/cash-buyer-vs-listing" /></Route>
       <Route path="/blog/probate-home-sale-guide" component={ProbateHomeSaleGuide} />
-      <Route path="/probate-home-sale" component={ProbateHomeSaleGuide} />
+      <Route path="/probate-home-sale"><Redirect to="/blog/probate-home-sale-guide" /></Route>
       <Route path="/price-comparison-fresno" component={FresnoComparison} />
       <Route path="/price-comparison-clovis" component={ClovisComparison} />
       <Route path="/price-comparison-visalia" component={VisaliaComparison} />
@@ -377,7 +377,7 @@ function Router() {
       <Route path="/foreclosure-help" component={ForeclosureHelp} />
       <Route path="/second-mortgage-help" component={SecondMortgage} />
       <Route path="/sell-and-stay-rent-back" component={RentBack} />
-      <Route path="/probate-inherited-homes" component={ProbateHomes} />
+      <Route path="/probate-inherited-homes"><Redirect to="/probate-homes" /></Route>
       <Route path="/probate-homes" component={ProbateHomes} />
       <Route path="/probate-real-estate-fresno" component={ProbateRealEstate} />
       <Route path="/california-probate-home-sale" component={CaliforniaProbateHomeSale} />
@@ -726,12 +726,12 @@ function Router() {
       <Route path="/we-buy-houses-turlock-ca"><Redirect to="/sell-house-fast-turlock-ca" /></Route>
       <Route path="/how-much-do-cash-buyers-pay-for-houses" component={HowMuchCashBuyersPay} />
       <Route path="/leave-a-review" component={LeaveAReview} />
-      <Route path="/terms-of-service" component={TermsOfService} />
+      <Route path="/terms-of-service"><Redirect to="/terms" /></Route>
       <Route path="/terms" component={TermsOfService} />
-      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/privacy-policy"><Redirect to="/privacy" /></Route>
       <Route path="/privacy" component={PrivacyPolicy} />
       <Route path="/sms-consent" component={SmsConsent} />
-      <Route path="/sms-opt-in" component={SmsConsent} />
+      <Route path="/sms-opt-in"><Redirect to="/sms-consent" /></Route>
       <Route path="/lp" component={LandingPage} />
       <Route path="/get-cash-offer"><Redirect to="/lp" /></Route>
       <Route path="/sell-house-tax-liens-fresno-ca"><Redirect to="/sell-house-tax-liens-fresno" /></Route>

@@ -18,7 +18,7 @@ const faqs = [
 const neighborhoods = ["Downtown Manteca", "Woodward Park", "Del Webb", "Atherton", "Lathrop", "Ripon", "Escalon", "Stockton", "Tracy", "French Camp"];
 export default function Manteca() {
   useSEO({
-    title: "We Buy Houses in Manteca CA — Cash Offers in 24 Hours | Alder Heritage Homes",
+    title: "We Buy Houses in Manteca CA",
     description: "Alder Heritage Homes buys houses in Manteca and San Joaquin County for cash. Licensed CA Agent (DRE #02219124). No wholesaling. Free Broker Opinion of Value. Close in 7–14 days. No repairs, no commissions.",
     canonical: "/we-buy-houses-manteca",
   });

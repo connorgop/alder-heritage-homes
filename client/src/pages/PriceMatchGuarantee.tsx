@@ -13,7 +13,7 @@ const PHONE_HREF = "tel:5592818016";
 
 export default function PriceMatchGuarantee() {
   useSEO({
-    title: "Price Match Guarantee | Alder Heritage Homes",
+    title: "Price Match Guarantee",
     description: "We guarantee the highest cash offers in Fresno & Central Valley. Match or beat any competing offer. No last-minute price reductions. Ethical cash buyer.",
     canonical: "https://www.alderheritagehomes.com/price-match-guarantee",
   });

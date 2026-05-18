@@ -14,7 +14,7 @@ const PHONE_HREF = "tel:5592818016";
 
 export default function TulareStCaseStudy() {
   useSEO({
-    title: "How a Tulare Landlord Escaped a Wholesaler and Got $15K More | Alder Heritage Homes",
+    title: "Tulare Landlord Escaped a Wholesaler — $15K More",
     description: "A Tulare landlord inherited a property and nearly got wholesaled by a Southern California company offering $200K. Connor paid $215K — $15K more — as a direct local buyer. Read the full story.",
     canonical: "/case-studies/tulare-st-tulare-ca",
   });

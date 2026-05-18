@@ -118,7 +118,7 @@ const arvExample = {
 
 export default function HowMuchCashBuyersPay() {
   useSEO({
-    title: "How Much Do Cash Buyers Pay for Houses? (2026 Guide)",
+    title: "How Much Do Cash Buyers Pay? (2026 Guide)",
     description: "Cash buyers typically pay 70–85% of a home's after-repair value. Learn how offers are calculated, what's fair, and how to avoid wholesalers who pay far less.",
     canonical: "/how-much-do-cash-buyers-pay-for-houses",
   });

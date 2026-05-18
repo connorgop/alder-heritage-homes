@@ -18,7 +18,7 @@ const faqs = [
 const neighborhoods = ["Downtown Lodi", "Woodbridge", "Mokelumne", "Tokay Park", "Vinewood", "Harney Lane", "Lakewood", "Stockton", "Galt", "Elk Grove"];
 export default function Lodi() {
   useSEO({
-    title: "We Buy Houses in Lodi CA — Cash Offers in 24 Hours | Alder Heritage Homes",
+    title: "We Buy Houses in Lodi CA",
     description: "Alder Heritage Homes buys houses in Lodi and San Joaquin County for cash. Licensed CA Agent (DRE #02219124). No wholesaling. Free Broker Opinion of Value. Close in 7–14 days. No repairs, no commissions.",
     canonical: "/we-buy-houses-lodi",
   });

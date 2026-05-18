@@ -6,7 +6,7 @@ import CashOfferForm from "@/components/CashOfferForm";
 
 export default function VisaliaNeighborhood_MooneyBlvd() {
   useSEO({
-    title: "Sell My House in Mooney Blvd Corridor, Visalia CA — Cash Buyers | Alder Heritage Homes",
+    title: "Sell My House on Mooney Blvd, Visalia CA",
     description: "Alder Heritage Homes buys houses in Mooney Blvd Corridor, Visalia CA. Get a cash offer in 24 hours — no repairs, no commissions, no hassle. Visalia's Main Residential Spine.",
     canonical: "/visalia-neighborhoods/mooney-blvd",
   });

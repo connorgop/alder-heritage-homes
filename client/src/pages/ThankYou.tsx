@@ -17,7 +17,7 @@ const GOOGLE_REVIEW_URL = "https://search.google.com/local/writereview?placeid=C
 
 export default function ThankYou() {
   useSEO({
-    title: "Request Received — Connor Will Call You Soon | Alder Heritage Homes",
+    title: "Request Received — We'll Call You Soon",
     description: "Thank you for submitting your cash offer request. Connor Morris will call or text you within 24 hours with your offer.",
     noIndex: true, // Don't index thank-you pages
   });

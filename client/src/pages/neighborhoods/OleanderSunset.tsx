@@ -12,7 +12,7 @@ const faqs = [
 
 export default function OleanderSunsetPage() {
   useSEO({
-    title: "We Buy Houses Oleander / Sunset — Cash Offers in 24 Hours | Alder Heritage Homes",
+    title: "We Buy Houses Oleander / Sunset, Bakersfield",
     description: "Sell your Oleander / Sunset home fast for cash. No repairs, no commissions, no closing costs. Cash offers in 24 hours, close in 7 days. Call (559) 281-8016.",
     canonical: "/bakersfield-neighborhoods/oleander-sunset",
   });

@@ -133,7 +133,7 @@ export default function SellHouseFastFAQ() {
   };
 
   useSEO({
-    title: "Sell My House Fast FAQ — 20+ Common Questions Answered | Alder Heritage Homes",
+    title: "Sell My House Fast FAQ — 20+ Questions",
     description: "Get answers to the most common questions about selling your house fast in Fresno and the Central Valley. How fast can we close? Do you need repairs? What do we pay? All answered here.",
     canonical: "/sell-house-fast-faq",
     schema: faqSchema(faqs.flatMap((cat) => cat.items)),

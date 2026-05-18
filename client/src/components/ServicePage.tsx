@@ -85,6 +85,8 @@ interface ServicePageProps {
    *  per-city LocalBusiness/Service/FAQPage JSON-LD between the main content
    *  and the bottom CTA. Slug must match an entry in client/src/data/cities.ts. */
   citySlug?: string;
+  /** Set true for alias/duplicate pages to prevent indexing */
+  noIndex?: boolean;
 }
 
 export default function ServicePage({
@@ -106,6 +108,7 @@ export default function ServicePage({
   metaDescription,
   videoEmbed,
   citySlug,
+  noIndex,
 }: ServicePageProps) {
   const [showStickyBar, setShowStickyBar] = useState(false);
 
@@ -127,6 +130,7 @@ export default function ServicePage({
         title={title}
         description={metaDesc}
         path={canonicalPath}
+        noIndex={noIndex}
       />
       {/* FAQPage structured data — auto-generated from faq prop */}
       {faq && faq.length > 0 && (

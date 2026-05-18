@@ -36,7 +36,7 @@ export default function SmsConsent() {
   return (
     <div style={{ background: "oklch(0.98 0.005 60)", minHeight: "100vh" }}>
       <PageMeta
-        title="SMS Opt-In Consent | Alder Heritage Homes"
+noIndex={true}         title="SMS Opt-In Consent | Alder Heritage Homes"
         description="Opt in to receive SMS text messages from Alder Heritage Homes. Message and data rates may apply. Reply STOP to opt out at any time."
         path="/sms-consent"
       />

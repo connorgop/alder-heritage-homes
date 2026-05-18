@@ -18,7 +18,7 @@ const faqs = [
 const neighborhoods = ["Downtown Tracy", "Glenbriar", "Westside Tracy", "Cordes Ranch", "Ellis", "Sundance", "Valpico", "Mountain House", "Lathrop", "Manteca"];
 export default function Tracy() {
   useSEO({
-    title: "We Buy Houses in Tracy CA — Cash Offers in 24 Hours | Alder Heritage Homes",
+    title: "We Buy Houses in Tracy CA",
     description: "Alder Heritage Homes buys houses in Tracy and San Joaquin County for cash. Licensed CA Agent (DRE #02219124). No wholesaling. Free Broker Opinion of Value. Close in 7–14 days. No repairs, no commissions.",
     canonical: "/we-buy-houses-tracy",
   });

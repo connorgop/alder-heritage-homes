@@ -81,7 +81,7 @@ const neighborhoods = [
 
 export default function FresnoNeighborhoods() {
   useSEO({
-    title: "Sell My House in Fresno Neighborhoods | Cash Buyer — Alder Heritage Homes",
+    title: "Fresno Neighborhoods — Sell My House Fast",
     description:
       "We buy houses in every Fresno neighborhood — Fig Garden, Tower District, Woodward Park, Sunnyside, McLane, and more. Cash offer in 24 hours, close in 7–14 days.",
     canonical: "/fresno-neighborhoods",

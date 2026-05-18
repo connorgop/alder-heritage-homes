@@ -17,7 +17,7 @@ export default function TermsOfService() {
   return (
     <div style={{ background: "oklch(0.98 0.005 60)", minHeight: "100vh" }}>
       <PageMeta
-        title="Terms of Service | Alder Heritage Homes"
+noIndex={true}         title="Terms of Service | Alder Heritage Homes"
         description="Terms of Service for Alder Heritage Homes — including SMS messaging consent, TCPA compliance, and website use terms."
         path="/terms-of-service"
       />

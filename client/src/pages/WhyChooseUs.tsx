@@ -59,7 +59,7 @@ const comparisonData = [
 
 export default function WhyChooseUs() {
   useSEO({
-    title: "Why Choose Alder Heritage Homes Over Other Cash Buyers in Fresno",
+    title: "Why Choose Us Over Other Cash Buyers",
     description: "Alder Heritage Homes is a licensed CA real estate agent (DRE #02219124) who buys houses directly — not a wholesaler. See how we compare to other cash buyers in Fresno and the Central Valley.",
     canonical: "/why-choose-us",
   });

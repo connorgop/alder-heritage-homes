@@ -69,7 +69,7 @@ export default function VisaliaHousingMarket() {
   }
 
   useSEO({
-    title: "Visalia Housing Market 2026 — Prices, Trends & Seller Guide",
+    title: "Visalia Housing Market 2026",
     description: "Visalia housing market data for 2026: median home prices by neighborhood, days on market, buyer vs. seller market analysis, and when a cash sale makes more sense than listing. Updated April 2026.",
     canonical: "/visalia-housing-market",
   });

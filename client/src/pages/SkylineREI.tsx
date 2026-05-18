@@ -78,7 +78,7 @@ const capabilities = [
 
 export default function SkylineREI() {
   useSEO({
-    title: "Skyline REI — Real Estate Investor Fresno | Portfolio Buyer | Alder Heritage Homes",
+    title: "Skyline REI — Investor Fresno",
     description: "Skyline REI is the buying entity of Alder Heritage Homes. We purchase single homes, portfolios of 2–8+ properties, tenant-occupied rentals, and properties in any condition. Real capital. Real closings.",
     schema: {
       "@context": "https://schema.org",

@@ -6,7 +6,7 @@ import CashOfferForm from "@/components/CashOfferForm";
 
 export default function VisaliaNeighborhood_CaldwellAve() {
   useSEO({
-    title: "Sell My House in Caldwell Ave / North Visalia, Visalia CA — Cash Buyers | Alder Heritage Homes",
+    title: "Sell My House on Caldwell Ave, Visalia CA",
     description: "Alder Heritage Homes buys houses in Caldwell Ave / North Visalia, Visalia CA. Get a cash offer in 24 hours — no repairs, no commissions, no hassle. North Visalia's Established Residential Corridor.",
     canonical: "/visalia-neighborhoods/caldwell-ave",
   });
