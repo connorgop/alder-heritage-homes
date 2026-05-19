@@ -285,6 +285,7 @@ const SellHouseFastLindsay = lazy(() => import("./pages/SellHouseFastLindsay"));
 const SellHouseFastDelano = lazy(() => import("./pages/SellHouseFastDelano"));
 const SellHouseFastWasco = lazy(() => import("./pages/SellHouseFastWasco"));
 const SellHouseFastCorcoran = lazy(() => import("./pages/SellHouseFastCorcoran"));
+const SellHouseFastArmona = lazy(() => import("./pages/SellHouseFastArmona"));
 const SellHouseFastMcFarland = lazy(() => import("./pages/SellHouseFastMcFarland"));
 const SellHouseFastShafter = lazy(() => import("./pages/SellHouseFastShafter"));
 const SellerEducation = lazy(() => import("./pages/SellerEducation"));
@@ -747,6 +748,10 @@ function Router() {
       <Route path="/sell-house-fast-delano-ca" component={SellHouseFastDelano} />
       <Route path="/sell-house-fast-wasco-ca" component={SellHouseFastWasco} />
       <Route path="/sell-house-fast-corcoran-ca" component={SellHouseFastCorcoran} />
+      <Route path="/sell-house-fast-armona-ca" component={SellHouseFastArmona} />
+      <Route path="/sell-my-house-fast-armona-ca"><Redirect to="/sell-house-fast-armona-ca" /></Route>
+      <Route path="/cash-home-buyers-armona-ca"><Redirect to="/sell-house-fast-armona-ca" /></Route>
+      <Route path="/we-buy-houses-armona"><Redirect to="/sell-house-fast-armona-ca" /></Route>
       <Route path="/sell-house-fast-mcfarland-ca" component={SellHouseFastMcFarland} />
       <Route path="/sell-house-fast-shafter-ca" component={SellHouseFastShafter} />
       <Route path="/seller-education" component={SellerEducation} />

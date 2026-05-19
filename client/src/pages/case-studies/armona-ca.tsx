@@ -239,6 +239,9 @@ export default function ArmonaCA() {
                     Get a Real Cash Offer
                   </button>
                 </Link>
+                <Link href="/sell-house-fast-armona-ca" className="mt-3 flex items-center justify-center gap-2 text-sm font-bold text-white" style={{ fontFamily: "'DM Mono', monospace", opacity: 0.85 }}>
+                  Sell a house in Armona <ArrowRight size={14} />
+                </Link>
                 <a href={PHONE_HREF} className="mt-3 flex items-center justify-center gap-2 text-sm font-bold text-white" style={{ fontFamily: "'DM Mono', monospace", opacity: 0.85 }}>
                   <Phone size={14} /> {PHONE}
                 </a>

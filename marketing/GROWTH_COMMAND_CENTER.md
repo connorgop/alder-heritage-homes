@@ -60,6 +60,11 @@ Friday:
 
 ## Highest-Value SEO Backlog
 
+0. Execute the small-market takeover plan:
+   - Read `marketing/COMPETITOR_MARKET_TAKEOVER_REPORT.md`.
+   - Prioritize Armona, Selma, Reedley, Sanger, Hanford, Madera, Tulare, then Visalia.
+   - Build proof-heavy local pages and exact-match ad groups before trying to outspend Fresno competitors.
+
 1. Add real proof blocks to top city pages:
    Fresno, Clovis, Madera, Hanford, Visalia, Bakersfield.
 
