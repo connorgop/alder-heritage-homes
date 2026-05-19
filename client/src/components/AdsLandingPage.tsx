@@ -6,6 +6,7 @@
 import { useState, useRef } from "react";
 import { Phone, ArrowRight, CheckCircle2, Shield, Star, Clock, Play } from "lucide-react";
 import { Link } from "wouter";
+import { useConversionTracking } from "@/hooks/useConversionTracking";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -95,9 +96,11 @@ function MeetConnorClip() {
 function ContactForm({ ctaLabel }: { ctaLabel: string }) {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", address: "", situation: "" });
+  const { trackAddressSubmit } = useConversionTracking();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackAddressSubmit();
     // In production this would POST to a backend; for now redirect to contact page
     window.location.href = `/contact?name=${encodeURIComponent(form.name)}&phone=${encodeURIComponent(form.phone)}&address=${encodeURIComponent(form.address)}&situation=${encodeURIComponent(form.situation)}`;
   };
@@ -172,6 +175,8 @@ export default function AdsLandingPage({
   badge,
   urgency,
 }: AdsLandingPageProps) {
+  const { trackPhoneClick } = useConversionTracking();
+
   return (
     <div className="min-h-screen" style={{ background: "oklch(0.97 0.015 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
       {/* Minimal header — no nav, just logo + phone */}
@@ -186,7 +191,7 @@ export default function AdsLandingPage({
               </div>
             </div>
           </Link>
-          <a href={PHONE_HREF} className="flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)" }}>
+          <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)" }}>
             <Phone size={14} /> {PHONE}
           </a>
         </div>
@@ -218,7 +223,7 @@ export default function AdsLandingPage({
                 </li>
               ))}
             </ul>
-            <a href={PHONE_HREF} className="inline-flex items-center gap-2 text-base font-bold" style={{ color: "oklch(0.75 0.12 42)" }}>
+            <a href={PHONE_HREF} onClick={trackPhoneClick} className="inline-flex items-center gap-2 text-base font-bold" style={{ color: "oklch(0.75 0.12 42)" }}>
               <Phone size={16} /> Call Now: {PHONE}
             </a>
           </div>
@@ -288,7 +293,7 @@ export default function AdsLandingPage({
               <p className="text-sm leading-relaxed mb-4" style={{ color: "oklch(0.75 0.01 60)" }}>
                 Every offer comes with a free independent Broker Opinion of Value from a Fresno broker with 1,850+ closed transactions. You know our offer is fair before you decide anything. No other cash buyer in the Central Valley does this.
               </p>
-              <a href={PHONE_HREF} className="flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)" }}>
+              <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)" }}>
                 <Phone size={15} /> Call {PHONE}
               </a>
             </div>
@@ -326,7 +331,7 @@ export default function AdsLandingPage({
             Connor Morris — Licensed CA Agent, DRE #02219124. His name is on every contract. No inspection period. No LLC and/or Assignee. No middleman.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)" }}>
+            <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)" }}>
               <Phone size={18} /> Call {PHONE}
             </a>
             <Link href={CONTACT_HREF}>

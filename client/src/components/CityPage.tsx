@@ -4,6 +4,7 @@ import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
 import PageMeta from "@/components/PageMeta";
 import CashOfferForm from "@/components/CashOfferForm";
+import { useConversionTracking } from "@/hooks/useConversionTracking";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -125,6 +126,7 @@ function breadcrumbSchema(city: string, canonicalPath: string) {
 }
 
 export default function CityPage({ city, county, population, description, neighborhoods, neighborhoodLinks, faqs, stats, slug, videoEmbed, caseStudy, realDeals }: CityPageProps) {
+  const { trackPhoneClick } = useConversionTracking();
   const fastSaleHref = FAST_SALE_PAGES[city] ?? "/sell-house-fast";
   const services = [
     { label: "Foreclosure Help", href: "/foreclosure-help" },
@@ -175,7 +177,7 @@ export default function CityPage({ city, county, population, description, neighb
                   Get My Cash Offer <ArrowRight size={18} />
                 </button>
               </Link>
-              <a href={PHONE_HREF} className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.1)", border: "2px solid oklch(1 0 0 / 0.3)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
+              <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.1)", border: "2px solid oklch(1 0 0 / 0.3)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
                 <Phone size={18} /> {PHONE}
               </a>
             </div>
@@ -371,7 +373,7 @@ export default function CityPage({ city, county, population, description, neighb
                   <CashOfferForm city={city} variant="dark" />
                 </div>
                 <div className="px-5 pb-4">
-                  <a href={PHONE_HREF} className="flex items-center justify-center gap-2 text-sm font-bold" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'DM Mono', monospace" }}>
+                  <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 text-sm font-bold" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'DM Mono', monospace" }}>
                     <Phone size={14} /> Or call {PHONE}
                   </a>
                 </div>
@@ -470,7 +472,7 @@ export default function CityPage({ city, county, population, description, neighb
           </div>
           <CashOfferForm city={city} variant="dark" />
           <div className="mt-6 text-center">
-            <a href={PHONE_HREF} className="inline-flex items-center gap-2 font-bold" style={{ color: "oklch(0.75 0.10 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+            <a href={PHONE_HREF} onClick={trackPhoneClick} className="inline-flex items-center gap-2 font-bold" style={{ color: "oklch(0.75 0.10 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
               <Phone size={18} /> Prefer to call? {PHONE}
             </a>
           </div>

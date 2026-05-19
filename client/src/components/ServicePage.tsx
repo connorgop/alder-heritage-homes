@@ -12,6 +12,7 @@ import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
 import PageMeta from "@/components/PageMeta";
 import CitySections from "@/components/CitySections";
 import { findCityFactsInPath, getCityFacts } from "@/data/cities";
+import { useConversionTracking } from "@/hooks/useConversionTracking";
 
 /**
  * Auto-detect a CityFacts slug from a page slug like "/sell-my-house-clovis-ca".
@@ -111,6 +112,7 @@ export default function ServicePage({
   noIndex,
 }: ServicePageProps) {
   const [showStickyBar, setShowStickyBar] = useState(false);
+  const { trackPhoneClick } = useConversionTracking();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -157,6 +159,7 @@ export default function ServicePage({
           <div className="flex gap-2 flex-shrink-0">
             <a
               href={PHONE_HREF}
+              onClick={trackPhoneClick}
               className="flex items-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-white text-sm"
               style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}
             >
@@ -197,7 +200,7 @@ export default function ServicePage({
                   Get My Free Cash Offer <ArrowRight size={18} />
                 </button>
               </Link>
-              <a href={PHONE_HREF} className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.1)", border: "2px solid oklch(1 0 0 / 0.3)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
+              <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.1)", border: "2px solid oklch(1 0 0 / 0.3)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
                 <Phone size={18} /> {PHONE}
               </a>
             </div>
@@ -304,7 +307,7 @@ export default function ServicePage({
                     Get My Cash Offer
                   </button>
                 </Link>
-                <a href={PHONE_HREF} className="flex items-center justify-center gap-2 text-sm font-bold" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'DM Mono', monospace" }}>
+                <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 text-sm font-bold" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'DM Mono', monospace" }}>
                   <Phone size={14} /> {PHONE}
                 </a>
               </div>
@@ -379,7 +382,7 @@ export default function ServicePage({
                 Get My Free Cash Offer <ArrowRight size={20} />
               </button>
             </Link>
-            <a href={PHONE_HREF} className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
+            <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
               <Phone size={20} /> {PHONE}
             </a>
           </div>
