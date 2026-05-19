@@ -11,13 +11,15 @@ Fresno is crowded and expensive. Osborne Homes, Home Helpers Group, Home Assist 
 The best takeover targets are:
 
 1. Armona
-2. Reedley
-3. Selma
-4. Sanger
-5. Hanford
-6. Madera
-7. Tulare
-8. Visalia
+2. Friant
+3. Kerman
+4. Chowchilla
+5. Kingsburg
+6. Reedley
+7. Hanford
+8. Madera
+9. Visalia
+10. Clovis
 
 Armona is the cleanest immediate win because Alder already has a strong local case study, but did not have a dedicated "sell house fast Armona" or "we buy houses Armona" landing page before this sprint.
 
@@ -52,6 +54,10 @@ Scores are based on public SERP competition, Alder's current page coverage, and 
 | Market | Current Competition | Alder Current Strength | Takeover Difficulty | Recommendation |
 | --- | --- | --- | --- | --- |
 | Armona | Low | Strong case study, Kings County coverage | Easy | Build dedicated Armona pages and link them from Hanford, Lemoore, Kings County, and the Armona case study. |
+| Friant | Low | North Fresno/Clovis context, but no route before this sprint | Easy | Build a dedicated Friant page around Millerton Lake, North Fresno, Clovis, rural access, well/septic, estate, and privacy situations. |
+| Kerman | Low-medium | Existing sell-my-house route | Easy | Add a stronger fast-sale page or expand the current Kerman page with inherited, rural, tenant, and farm-adjacent seller situations. |
+| Chowchilla | Low-medium | Existing sell-my-house route | Easy | Add fast-sale and title/deed content; connect to Madera County and rural seller intent. |
+| Kingsburg | Low-medium | Existing sell-my-house, sell-fast, and city routes | Easy-medium | Push Swedish Village/local proof, inherited homes, rentals, and small-market buyer-pool content. |
 | Reedley | Medium-low | Strong existing pages, neighborhoods, housing market page | Easy-medium | Add more proof and title/deed/probate sections. Run exact-match ads. |
 | Selma | Medium-low | Strong existing pages, neighborhoods, housing market page | Easy-medium | Push local proof, tenant/inherited/deed issue content, and Spanish variants later. |
 | Sanger | Medium | Strong existing pages; Osborne has Sanger page | Medium | Need better proof, Kings Canyon corridor content, and comparison angles. |
@@ -59,6 +65,7 @@ Scores are based on public SERP competition, Alder's current page coverage, and 
 | Madera | Medium-high | Good page coverage | Medium | More competitor pressure. Add Madera proof/case study and neighborhood proof. |
 | Tulare | Medium | Good Tulare page/case study | Medium | Compete with Tulare/Kings County-specific pages and proof. |
 | Visalia | High | Good Visalia pages and case study | Harder | Bigger market. Win through situation pages, paid search, and proof assets. |
+| Clovis | High | Strong city, fast-sale, comparison, and case-study coverage | Harder | Compete with trust, higher-end property privacy, tenant-care stories, and licensed-agent positioning. |
 | Fresno | Very high | Strong site foundation | Hard | Long game: trust center, comparison pages, reviews, backlinks, Ads search-term cleanup. |
 
 ## Keyword Lanes to Attack
@@ -109,7 +116,7 @@ Competitor/comparison terms:
    - Hanford and Lemoore pages to Armona service page
 
 3. Add exact-match Ads ad groups:
-   - Armona, Selma, Sanger, Reedley, Hanford, Madera
+   - Armona, Friant, Kerman, Chowchilla, Kingsburg, Reedley, Hanford, Madera, Visalia, Clovis
    - Exact match only first
    - Landing pages mapped to matching city pages
 
@@ -121,6 +128,10 @@ Competitor/comparison terms:
 ### Phase 2: 30 Days
 
 1. Publish 12 city + situation pages:
+   - Sell house fast in Friant
+   - Sell inherited house in Kerman
+   - Sell house with title issues in Chowchilla
+   - Sell vacant house in Kingsburg
    - Sell inherited house in Selma
    - Sell house with title issues in Sanger
    - Sell probate house in Reedley
@@ -192,11 +203,13 @@ The fastest path is not trying to outspend Osborne in Fresno. It is to own the s
 Priority order:
 
 1. Armona
-2. Selma
-3. Reedley
-4. Sanger
-5. Hanford
-6. Madera
-7. Tulare
-8. Visalia
-9. Fresno
+2. Friant
+3. Kerman
+4. Chowchilla
+5. Kingsburg
+6. Reedley
+7. Hanford
+8. Madera
+9. Visalia
+10. Clovis
+11. Fresno

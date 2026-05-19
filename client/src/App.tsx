@@ -286,6 +286,7 @@ const SellHouseFastDelano = lazy(() => import("./pages/SellHouseFastDelano"));
 const SellHouseFastWasco = lazy(() => import("./pages/SellHouseFastWasco"));
 const SellHouseFastCorcoran = lazy(() => import("./pages/SellHouseFastCorcoran"));
 const SellHouseFastArmona = lazy(() => import("./pages/SellHouseFastArmona"));
+const SellHouseFastFriant = lazy(() => import("./pages/SellHouseFastFriant"));
 const SellHouseFastMcFarland = lazy(() => import("./pages/SellHouseFastMcFarland"));
 const SellHouseFastShafter = lazy(() => import("./pages/SellHouseFastShafter"));
 const SellerEducation = lazy(() => import("./pages/SellerEducation"));
@@ -456,9 +457,13 @@ function Router() {
       <Route path="/sell-my-house-kerman-ca" component={SellMyHouseKerman} />
       <Route path="/sell-my-house-kerman"><Redirect to="/sell-my-house-kerman-ca" /></Route>
       <Route path="/sell-my-home-kerman"><Redirect to="/sell-my-house-kerman-ca" /></Route>
+      <Route path="/sell-house-fast-kerman-ca"><Redirect to="/sell-my-house-kerman-ca" /></Route>
+      <Route path="/cash-home-buyers-kerman-ca"><Redirect to="/sell-my-house-kerman-ca" /></Route>
       <Route path="/sell-my-house-chowchilla-ca" component={SellMyHouseChowchilla} />
       <Route path="/sell-my-house-chowchilla"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
       <Route path="/sell-my-home-chowchilla"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
+      <Route path="/sell-house-fast-chowchilla-ca"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
+      <Route path="/cash-home-buyers-chowchilla-ca"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
       <Route path="/sell-my-house-stockton-ca" component={SellMyHouseStockton} />
       <Route path="/sell-my-house-stockton"><Redirect to="/sell-my-house-stockton-ca" /></Route>
       <Route path="/sell-my-home-stockton"><Redirect to="/sell-my-house-stockton-ca" /></Route>
@@ -752,6 +757,10 @@ function Router() {
       <Route path="/sell-my-house-fast-armona-ca"><Redirect to="/sell-house-fast-armona-ca" /></Route>
       <Route path="/cash-home-buyers-armona-ca"><Redirect to="/sell-house-fast-armona-ca" /></Route>
       <Route path="/we-buy-houses-armona"><Redirect to="/sell-house-fast-armona-ca" /></Route>
+      <Route path="/sell-house-fast-friant-ca" component={SellHouseFastFriant} />
+      <Route path="/sell-my-house-fast-friant-ca"><Redirect to="/sell-house-fast-friant-ca" /></Route>
+      <Route path="/cash-home-buyers-friant-ca"><Redirect to="/sell-house-fast-friant-ca" /></Route>
+      <Route path="/we-buy-houses-friant"><Redirect to="/sell-house-fast-friant-ca" /></Route>
       <Route path="/sell-house-fast-mcfarland-ca" component={SellHouseFastMcFarland} />
       <Route path="/sell-house-fast-shafter-ca" component={SellHouseFastShafter} />
       <Route path="/seller-education" component={SellerEducation} />
