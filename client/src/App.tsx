@@ -277,6 +277,8 @@ const CutlerOrosiPage = lazy(() => import("./pages/cities/CutlerOrosi"));
 const SellHouseFastOrangeCove = lazy(() => import("./pages/SellHouseFastOrangeCove"));
 const SellHouseFastDinuba = lazy(() => import("./pages/SellHouseFastDinuba"));
 const SellHouseFastKingsburg = lazy(() => import("./pages/SellHouseFastKingsburg"));
+const SellHouseFastKerman = lazy(() => import("./pages/SellHouseFastKerman"));
+const SellHouseFastChowchilla = lazy(() => import("./pages/SellHouseFastChowchilla"));
 const SellHouseFastFowler = lazy(() => import("./pages/SellHouseFastFowler"));
 const StanislausCountyHub = lazy(() => import("./pages/StanislausCountyHub"));
 const SellHouseFastPorterville = lazy(() => import("./pages/SellHouseFastPorterville"));
@@ -457,12 +459,12 @@ function Router() {
       <Route path="/sell-my-house-kerman-ca" component={SellMyHouseKerman} />
       <Route path="/sell-my-house-kerman"><Redirect to="/sell-my-house-kerman-ca" /></Route>
       <Route path="/sell-my-home-kerman"><Redirect to="/sell-my-house-kerman-ca" /></Route>
-      <Route path="/sell-house-fast-kerman-ca"><Redirect to="/sell-my-house-kerman-ca" /></Route>
+      <Route path="/sell-house-fast-kerman-ca" component={SellHouseFastKerman} />
       <Route path="/cash-home-buyers-kerman-ca"><Redirect to="/sell-my-house-kerman-ca" /></Route>
       <Route path="/sell-my-house-chowchilla-ca" component={SellMyHouseChowchilla} />
       <Route path="/sell-my-house-chowchilla"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
       <Route path="/sell-my-home-chowchilla"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
-      <Route path="/sell-house-fast-chowchilla-ca"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
+      <Route path="/sell-house-fast-chowchilla-ca" component={SellHouseFastChowchilla} />
       <Route path="/cash-home-buyers-chowchilla-ca"><Redirect to="/sell-my-house-chowchilla-ca" /></Route>
       <Route path="/sell-my-house-stockton-ca" component={SellMyHouseStockton} />
       <Route path="/sell-my-house-stockton"><Redirect to="/sell-my-house-stockton-ca" /></Route>

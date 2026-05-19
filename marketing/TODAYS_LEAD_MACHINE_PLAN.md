@@ -101,8 +101,8 @@ Best next proof assets:
 
 ## This Week's Code Priorities
 
-1. Dedicated Kerman fast-sale page.
-2. Dedicated Chowchilla fast-sale page.
+1. Dedicated Kerman fast-sale page. Completed in the next sprint.
+2. Dedicated Chowchilla fast-sale page. Completed in the next sprint.
 3. Title/deed issue variants for Kerman, Chowchilla, Hanford, Madera, Reedley.
 4. Comparison pages:
    - Alder vs Osborne Homes
