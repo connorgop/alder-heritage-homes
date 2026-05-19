@@ -180,8 +180,8 @@
 - [ ] Update GBPTemplates.tsx with compliant post library
 
 ## Weekly Bot P1 Fixes (2026-05-18)
-- [ ] Fix noscript H1 in index.html → change to p/strong to eliminate multiple-H1 false positives
-- [ ] Shorten PageMeta titles on top 20 service/city pages to ≤60 chars
-- [ ] Fix duplicate-title pairs: add noindex to alias pages (/wholesaler-warning, /lead-magnet, /probate-inherited-homes, /privacy-policy, /terms-of-service, /sms-opt-in)
-- [ ] Bulk up 4 thin Visalia neighborhood pages (college-of-the-sequoias, dinuba-ave, goshen-ave, mineral-king) to 400+ words
-- [ ] Fix /what-is-my-home-worth doubled brand name in title
+- [x] Fix noscript H1 in index.html → change to p/strong to eliminate multiple-H1 false positives
+- [x] Shorten PageMeta titles on top 20 service/city pages to ≤60 chars (batch-fixed 575+ pages; long-title count: 592→267)
+- [x] Fix duplicate-title pairs: replaced alias routes with Redirects to canonical URLs; duplicate-title count: 12→1
+- [x] Bulk up 4 thin Visalia neighborhood pages (college-of-the-sequoias, dinuba-ave, goshen-ave, mineral-king) to 400+ words — expanded with FAQ + neighborhood context sections
+- [x] Fix /what-is-my-home-worth doubled brand name in title — removed brand suffix from title prop; useSEO.normalizeTitle handles appending
