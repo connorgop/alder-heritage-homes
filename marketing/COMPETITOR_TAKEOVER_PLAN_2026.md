@@ -150,9 +150,9 @@ Every lead should get:
    - Landlord: "Is the tenant current, behind, or is the property vacant?"
 5. Add to 14-day follow-up sequence.
 
-## Next SEO Build Queue
+## Executed Next SEO Batch
 
-Highest ROI next pages:
+Small-market situation pages:
 
 1. `/probate-home-buyer-kerman`
 2. `/probate-home-buyer-chowchilla`
@@ -160,10 +160,27 @@ Highest ROI next pages:
 4. `/stop-foreclosure-chowchilla`
 5. `/sell-rental-property-kerman`
 6. `/sell-rental-property-chowchilla`
-7. `Alder vs Osborne Homes`
-8. `Alder vs Home Helpers Group`
-9. `Alder vs Pinnacle Home Buyers`
-10. `Alder vs GREimagined`
+
+Competitor comparison pages:
+
+1. `/alder-vs-osborne-homes`
+2. `/alder-vs-home-helpers-group`
+3. `/alder-vs-pinnacle-home-buyers`
+
+## Next SEO Build Queue
+
+Highest ROI next pages:
+
+1. `Alder vs GREimagined`
+2. `Alder vs Skyline REI / relationship clarification`
+3. `/probate-home-buyer-selma`
+4. `/stop-foreclosure-selma`
+5. `/sell-rental-property-selma`
+6. `/probate-home-buyer-sanger`
+7. `/stop-foreclosure-sanger`
+8. `/sell-rental-property-sanger`
+9. `/probate-home-buyer-clovis`
+10. `/sell-rental-property-clovis`
 
 ## Proof Assets Needed
 

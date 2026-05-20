@@ -46,6 +46,8 @@ const ForeclosureMadera = lazy(() => import("./pages/ForeclosureMadera"));
 const ForeclosureHanford = lazy(() => import("./pages/ForeclosureHanford"));
 const ForeclosureVisalia = lazy(() => import("./pages/ForeclosureVisalia"));
 const ForeclosureReedley = lazy(() => import("./pages/ForeclosureReedley"));
+const ForeclosureKerman = lazy(() => import("./pages/ForeclosureKerman"));
+const ForeclosureChowchilla = lazy(() => import("./pages/ForeclosureChowchilla"));
 const SecondMortgage = lazy(() => import("./pages/services/SecondMortgage"));
 const RentBack = lazy(() => import("./pages/services/RentBack"));
 const ProbateHomes = lazy(() => import("./pages/services/ProbateHomes"));
@@ -55,6 +57,8 @@ const ProbateMadera = lazy(() => import("./pages/ProbateMadera"));
 const ProbateHanford = lazy(() => import("./pages/ProbateHanford"));
 const ProbateVisalia = lazy(() => import("./pages/ProbateVisalia"));
 const ProbateReedley = lazy(() => import("./pages/ProbateReedley"));
+const ProbateKerman = lazy(() => import("./pages/ProbateKerman"));
+const ProbateChowchilla = lazy(() => import("./pages/ProbateChowchilla"));
 const FastSale = lazy(() => import("./pages/services/FastSale"));
 const BehindOnMortgage = lazy(() => import("./pages/services/BehindOnMortgage"));
 const RoofDamage = lazy(() => import("./pages/services/RoofDamage"));
@@ -65,6 +69,8 @@ const LandlordMadera = lazy(() => import("./pages/LandlordMadera"));
 const LandlordHanford = lazy(() => import("./pages/LandlordHanford"));
 const LandlordVisalia = lazy(() => import("./pages/LandlordVisalia"));
 const LandlordReedley = lazy(() => import("./pages/LandlordReedley"));
+const LandlordKerman = lazy(() => import("./pages/LandlordKerman"));
+const LandlordChowchilla = lazy(() => import("./pages/LandlordChowchilla"));
 const JunkRemoval = lazy(() => import("./pages/services/JunkRemoval"));
 const WhyChooseUs = lazy(() => import("./pages/WhyChooseUs"));
 const WhyILeft = lazy(() => import("./pages/WhyILeft"));
@@ -333,6 +339,9 @@ const SiteArchitecture = lazy(() => import("./pages/SiteArchitecture"));
 const CompramosCasasFresno = lazy(() => import("./pages/CompramosCasasFresno"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 const CompetitorComparison = lazy(() => import("./pages/CompetitorComparison"));
+const AlderVsOsborne = lazy(() => import("./pages/AlderVsOsborne"));
+const AlderVsHomeHelpers = lazy(() => import("./pages/AlderVsHomeHelpers"));
+const AlderVsPinnacle = lazy(() => import("./pages/AlderVsPinnacle"));
 const CompareOptions = lazy(() => import("./pages/CompareOptions"));
 const PriceMatchGuarantee = lazy(() => import("./pages/PriceMatchGuarantee"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
@@ -400,6 +409,8 @@ function Router() {
       <Route path="/stop-foreclosure-hanford" component={ForeclosureHanford} />
       <Route path="/stop-foreclosure-visalia" component={ForeclosureVisalia} />
       <Route path="/stop-foreclosure-reedley" component={ForeclosureReedley} />
+      <Route path="/stop-foreclosure-kerman" component={ForeclosureKerman} />
+      <Route path="/stop-foreclosure-chowchilla" component={ForeclosureChowchilla} />
       <Route path="/second-mortgage-help" component={SecondMortgage} />
       <Route path="/sell-and-stay-rent-back" component={RentBack} />
       <Route path="/probate-inherited-homes"><Redirect to="/probate-homes" /></Route>
@@ -410,6 +421,8 @@ function Router() {
       <Route path="/probate-home-buyer-hanford" component={ProbateHanford} />
       <Route path="/probate-home-buyer-visalia" component={ProbateVisalia} />
       <Route path="/probate-home-buyer-reedley" component={ProbateReedley} />
+      <Route path="/probate-home-buyer-kerman" component={ProbateKerman} />
+      <Route path="/probate-home-buyer-chowchilla" component={ProbateChowchilla} />
       <Route path="/sell-house-probate-california"><Redirect to="/california-probate-home-sale" /></Route>
       <Route path="/how-to-sell-probate-house-california"><Redirect to="/california-probate-home-sale" /></Route>
       <Route path="/sell-house-fast" component={FastSale} />
@@ -422,6 +435,8 @@ function Router() {
       <Route path="/sell-rental-property-hanford" component={LandlordHanford} />
       <Route path="/sell-rental-property-visalia" component={LandlordVisalia} />
       <Route path="/sell-rental-property-reedley" component={LandlordReedley} />
+      <Route path="/sell-rental-property-kerman" component={LandlordKerman} />
+      <Route path="/sell-rental-property-chowchilla" component={LandlordChowchilla} />
       <Route path="/junk-removal-before-selling" component={JunkRemoval} />
       <Route path="/why-choose-us" component={WhyChooseUs} />
       <Route path="/dont-get-wholesaled" component={DontGetWholesaled} />
@@ -815,6 +830,9 @@ function Router() {
       <Route path="/compare-options" component={CompareOptions} />
       <Route path="/price-match-guarantee" component={PriceMatchGuarantee} />
       <Route path="/compare-cash-buyers-fresno" component={CompetitorComparison} />
+      <Route path="/alder-vs-osborne-homes" component={AlderVsOsborne} />
+      <Route path="/alder-vs-home-helpers-group" component={AlderVsHomeHelpers} />
+      <Route path="/alder-vs-pinnacle-home-buyers" component={AlderVsPinnacle} />
       <Route path="/cash-home-buyers-fresno-compare"><Redirect to="/compare-cash-buyers-fresno" /></Route>
       <Route path="/we-buy-houses-fresno-comparison"><Redirect to="/compare-cash-buyers-fresno" /></Route>
       <Route path="/admin/leads" component={AdminLeads} />
