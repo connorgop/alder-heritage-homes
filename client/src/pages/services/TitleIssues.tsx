@@ -80,6 +80,11 @@ export default function TitleIssues() {
       ctaTitle="Do Not Let a Deed Problem Stop You From Getting an Offer"
       ctaBody="Call (559) 281-8016 or send the property address. We will review the situation, explain what title issues usually need to be cleared, and give you a direct cash offer if the property is a fit."
       relatedLinks={[
+        { label: "Title Issues in Kerman", href: "/sell-house-title-issues-kerman" },
+        { label: "Title Issues in Chowchilla", href: "/sell-house-title-issues-chowchilla" },
+        { label: "Title Issues in Hanford", href: "/sell-house-title-issues-hanford" },
+        { label: "Title Issues in Madera", href: "/sell-house-title-issues-madera" },
+        { label: "Title Issues in Reedley", href: "/sell-house-title-issues-reedley" },
         { label: "Inherited Deed Was Never Transferred", href: "/sell-inherited-house-deed-not-transferred" },
         { label: "Multiple Heirs or Co-Owner Dispute", href: "/sell-house-multiple-heirs-fresno" },
         { label: "Unpaid Property Taxes", href: "/sell-house-unpaid-property-taxes-fresno" },

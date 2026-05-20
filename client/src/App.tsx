@@ -74,6 +74,11 @@ const FireDamage = lazy(() => import("./pages/services/FireDamage"));
 const CodeViolation = lazy(() => import("./pages/services/CodeViolation"));
 const TaxLiens = lazy(() => import("./pages/services/TaxLiens"));
 const TitleIssues = lazy(() => import("./pages/services/TitleIssues"));
+const TitleIssuesKerman = lazy(() => import("./pages/TitleIssuesKerman"));
+const TitleIssuesChowchilla = lazy(() => import("./pages/TitleIssuesChowchilla"));
+const TitleIssuesHanford = lazy(() => import("./pages/TitleIssuesHanford"));
+const TitleIssuesMadera = lazy(() => import("./pages/TitleIssuesMadera"));
+const TitleIssuesReedley = lazy(() => import("./pages/TitleIssuesReedley"));
 const InheritedDeedProblem = lazy(() => import("./pages/services/InheritedDeedProblem"));
 const MultipleHeirs = lazy(() => import("./pages/services/MultipleHeirs"));
 const UnpaidPropertyTaxes = lazy(() => import("./pages/services/UnpaidPropertyTaxes"));
@@ -413,6 +418,11 @@ function Router() {
       <Route path="/sell-house-code-violations-fresno" component={CodeViolation} />
       <Route path="/sell-house-tax-liens-fresno" component={TaxLiens} />
       <Route path="/sell-house-title-issues-fresno" component={TitleIssues} />
+      <Route path="/sell-house-title-issues-kerman" component={TitleIssuesKerman} />
+      <Route path="/sell-house-title-issues-chowchilla" component={TitleIssuesChowchilla} />
+      <Route path="/sell-house-title-issues-hanford" component={TitleIssuesHanford} />
+      <Route path="/sell-house-title-issues-madera" component={TitleIssuesMadera} />
+      <Route path="/sell-house-title-issues-reedley" component={TitleIssuesReedley} />
       <Route path="/sell-house-deed-issues-fresno"><Redirect to="/sell-house-title-issues-fresno" /></Route>
       <Route path="/sell-house-clouded-title-fresno"><Redirect to="/sell-house-title-issues-fresno" /></Route>
       <Route path="/sell-house-with-title-problems"><Redirect to="/sell-house-title-issues-fresno" /></Route>
