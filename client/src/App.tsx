@@ -42,17 +42,29 @@ const VacantPropertyWarning = lazy(() => import("./pages/VacantPropertyWarning")
 
 // Service pages
 const ForeclosureHelp = lazy(() => import("./pages/services/ForeclosureHelp"));
+const ForeclosureMadera = lazy(() => import("./pages/ForeclosureMadera"));
+const ForeclosureHanford = lazy(() => import("./pages/ForeclosureHanford"));
+const ForeclosureVisalia = lazy(() => import("./pages/ForeclosureVisalia"));
+const ForeclosureReedley = lazy(() => import("./pages/ForeclosureReedley"));
 const SecondMortgage = lazy(() => import("./pages/services/SecondMortgage"));
 const RentBack = lazy(() => import("./pages/services/RentBack"));
 const ProbateHomes = lazy(() => import("./pages/services/ProbateHomes"));
 const ProbateRealEstate = lazy(() => import("./pages/services/ProbateRealEstate"));
 const CaliforniaProbateHomeSale = lazy(() => import("./pages/CaliforniaProbateHomeSale"));
+const ProbateMadera = lazy(() => import("./pages/ProbateMadera"));
+const ProbateHanford = lazy(() => import("./pages/ProbateHanford"));
+const ProbateVisalia = lazy(() => import("./pages/ProbateVisalia"));
+const ProbateReedley = lazy(() => import("./pages/ProbateReedley"));
 const FastSale = lazy(() => import("./pages/services/FastSale"));
 const BehindOnMortgage = lazy(() => import("./pages/services/BehindOnMortgage"));
 const RoofDamage = lazy(() => import("./pages/services/RoofDamage"));
 const HoarderHouse = lazy(() => import("./pages/services/HoarderHouse"));
 const DivorceHome = lazy(() => import("./pages/services/Divorce"));
 const TiredLandlord = lazy(() => import("./pages/services/TiredLandlord"));
+const LandlordMadera = lazy(() => import("./pages/LandlordMadera"));
+const LandlordHanford = lazy(() => import("./pages/LandlordHanford"));
+const LandlordVisalia = lazy(() => import("./pages/LandlordVisalia"));
+const LandlordReedley = lazy(() => import("./pages/LandlordReedley"));
 const JunkRemoval = lazy(() => import("./pages/services/JunkRemoval"));
 const WhyChooseUs = lazy(() => import("./pages/WhyChooseUs"));
 const WhyILeft = lazy(() => import("./pages/WhyILeft"));
@@ -384,12 +396,20 @@ function Router() {
 
       {/* Service pages */}
       <Route path="/foreclosure-help" component={ForeclosureHelp} />
+      <Route path="/stop-foreclosure-madera" component={ForeclosureMadera} />
+      <Route path="/stop-foreclosure-hanford" component={ForeclosureHanford} />
+      <Route path="/stop-foreclosure-visalia" component={ForeclosureVisalia} />
+      <Route path="/stop-foreclosure-reedley" component={ForeclosureReedley} />
       <Route path="/second-mortgage-help" component={SecondMortgage} />
       <Route path="/sell-and-stay-rent-back" component={RentBack} />
       <Route path="/probate-inherited-homes"><Redirect to="/probate-homes" /></Route>
       <Route path="/probate-homes" component={ProbateHomes} />
       <Route path="/probate-real-estate-fresno" component={ProbateRealEstate} />
       <Route path="/california-probate-home-sale" component={CaliforniaProbateHomeSale} />
+      <Route path="/probate-home-buyer-madera" component={ProbateMadera} />
+      <Route path="/probate-home-buyer-hanford" component={ProbateHanford} />
+      <Route path="/probate-home-buyer-visalia" component={ProbateVisalia} />
+      <Route path="/probate-home-buyer-reedley" component={ProbateReedley} />
       <Route path="/sell-house-probate-california"><Redirect to="/california-probate-home-sale" /></Route>
       <Route path="/how-to-sell-probate-house-california"><Redirect to="/california-probate-home-sale" /></Route>
       <Route path="/sell-house-fast" component={FastSale} />
@@ -398,6 +418,10 @@ function Router() {
       <Route path="/sell-hoarder-house" component={HoarderHouse} />
       <Route path="/sell-house-divorce" component={DivorceHome} />
       <Route path="/tired-landlord" component={TiredLandlord} />
+      <Route path="/sell-rental-property-madera" component={LandlordMadera} />
+      <Route path="/sell-rental-property-hanford" component={LandlordHanford} />
+      <Route path="/sell-rental-property-visalia" component={LandlordVisalia} />
+      <Route path="/sell-rental-property-reedley" component={LandlordReedley} />
       <Route path="/junk-removal-before-selling" component={JunkRemoval} />
       <Route path="/why-choose-us" component={WhyChooseUs} />
       <Route path="/dont-get-wholesaled" component={DontGetWholesaled} />
