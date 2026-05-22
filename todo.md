@@ -185,3 +185,10 @@
 - [x] Fix duplicate-title pairs: replaced alias routes with Redirects to canonical URLs; duplicate-title count: 12→1
 - [x] Bulk up 4 thin Visalia neighborhood pages (college-of-the-sequoias, dinuba-ave, goshen-ave, mineral-king) to 400+ words — expanded with FAQ + neighborhood context sections
 - [x] Fix /what-is-my-home-worth doubled brand name in title — removed brand suffix from title prop; useSEO.normalizeTitle handles appending
+
+## GBP Policy Violation Fix (May 22, 2026)
+- [x] Research Google Business Profile content policy rules for real estate/cash buyer posts
+- [x] Identify exactly what triggered the "as-is" post violation (phone stuffing + as-is language + competitor attacks)
+- [x] Rewrite all 24 GBP post templates to be fully policy-compliant
+- [x] Write appeal instructions for Connor to restore GBP posting (built into GBPTemplates.tsx Appeal tab)
+- [x] Update GBPTemplates.tsx with compliant post library (tabbed UI: Templates + Appeal Instructions)
