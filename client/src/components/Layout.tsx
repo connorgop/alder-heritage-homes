@@ -29,8 +29,12 @@ const topSituations = [
 /* ── Footer: curated links only — all other pages still exist for SEO ── */
 const footerSituations = [
   { label: "Foreclosure Help", href: "/foreclosure-help" },
+  { label: "Foreclosure Cash Buyer", href: "/lp/foreclosure-cash-buyer-fresno" },
   { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
   { label: "Inherited / Probate", href: "/probate-inherited-homes" },
+  { label: "Probate Cash Buyer", href: "/lp/probate-home-buyer-fresno" },
+  { label: "Title / Deed Issues", href: "/lp/title-deed-issues" },
+  { label: "Inherited Title Problems", href: "/lp/inherited-house-title-problems" },
   { label: "Probate Sales", href: "/probate-homes" },
   { label: "Divorce Home Sale", href: "/sell-house-divorce" },
   { label: "Sell House Fast", href: "/sell-house-fast" },
@@ -39,6 +43,7 @@ const footerSituations = [
   { label: "Fire Damage", href: "/sell-house-fire-damage" },
   { label: "Code Violations", href: "/sell-house-code-violations-fresno" },
   { label: "Tired Landlord", href: "/tired-landlord" },
+  { label: "Tired Landlord Cash Buyer", href: "/lp/tired-landlord-fresno" },
   { label: "Sell Vacant House", href: "/sell-vacant-house-fresno" },
   { label: "Second Opinion on Offer", href: "/second-opinion" },
   { label: "See All Situations →", href: "/sell-my-house" },
@@ -79,6 +84,7 @@ const footerCompany = [
   { label: "Compare Your Options", href: "/compare-options" },
   { label: "Price Match Guarantee", href: "/price-match-guarantee" },
   { label: "Compare Cash Buyers", href: "/compare-cash-buyers-fresno" },
+  { label: "Cash Buyer Offer Check", href: "/lp/compare-cash-buyers-fresno" },
   { label: "Second Opinion on Offer", href: "/second-opinion" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Seller Education", href: "/seller-education" },

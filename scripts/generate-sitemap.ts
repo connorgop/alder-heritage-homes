@@ -13,7 +13,8 @@
  * Excluded from the sitemap:
  *   - /admin/* (private)
  *   - /404, /:.* dynamic catch-alls
- *   - /lp/*, /ads/* (paid landing pages — these should be noindex)
+ *   - most /lp/* and /ads/* paid landing pages, except selected high-intent
+ *     pages that are written as indexable organic + paid entry points.
  *   - Component files whose page sets noIndex={true}
  *
  * Run via the `prebuild` npm script. Output: client/public/sitemap.xml
@@ -32,6 +33,14 @@ const BASE_URL = "https://www.alderheritagehomes.com";
 
 const EXCLUDE_PREFIXES = ["/admin", "/lp/", "/ads/"];
 const EXCLUDE_EXACT = new Set(["/404"]);
+const INDEXABLE_LP_PATHS = new Set([
+  "/lp/title-deed-issues",
+  "/lp/probate-home-buyer-fresno",
+  "/lp/foreclosure-cash-buyer-fresno",
+  "/lp/tired-landlord-fresno",
+  "/lp/inherited-house-title-problems",
+  "/lp/compare-cash-buyers-fresno",
+]);
 
 interface RouteEntry {
   path: string;
@@ -122,6 +131,7 @@ function pageHasNoIndex(sourceFile: string | null): boolean {
 
 function isExcluded(path: string): boolean {
   if (EXCLUDE_EXACT.has(path)) return true;
+  if (INDEXABLE_LP_PATHS.has(path)) return false;
   if (path.includes(":")) return true; // dynamic params
   for (const p of EXCLUDE_PREFIXES) {
     if (path === p.replace(/\/$/, "") || path.startsWith(p)) return true;
@@ -132,6 +142,7 @@ function isExcluded(path: string): boolean {
 function priorityFor(path: string): string {
   if (path === "/") return "1.0";
   // High-intent commercial pages
+  if (INDEXABLE_LP_PATHS.has(path)) return "0.9";
   if (/^\/(we-buy-houses|sell-my-house|sell-house-fast|cash-home-buyer)/.test(path)) return "0.9";
   if (path === "/contact" || path === "/about") return "0.8";
   if (path.startsWith("/blog/")) return "0.7";

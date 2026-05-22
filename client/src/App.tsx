@@ -167,6 +167,12 @@ const WholesalerWarningAd = lazy(() => import("./pages/ads/WholesalerWarningAd")
 const CompramosCasasAd = lazy(() => import("./pages/ads/CompramosCasasAd"));
 const LpSeniorSeller = lazy(() => import("./pages/lp/SeniorSeller"));
 const LpDownsize = lazy(() => import("./pages/lp/Downsize"));
+const LpTitleDeedIssues = lazy(() => import("./pages/lp/TitleDeedIssues"));
+const LpProbateSeller = lazy(() => import("./pages/lp/ProbateSeller"));
+const LpForeclosureSeller = lazy(() => import("./pages/lp/ForeclosureSeller"));
+const LpTiredLandlordSeller = lazy(() => import("./pages/lp/TiredLandlordSeller"));
+const LpInheritedTitleSeller = lazy(() => import("./pages/lp/InheritedTitleSeller"));
+const LpCompareCashBuyers = lazy(() => import("./pages/lp/CompareCashBuyers"));
 
 // Fresno neighborhood pages
 const FigGarden = lazy(() => import("./pages/neighborhoods/FigGarden"));
@@ -671,6 +677,12 @@ function Router() {
       <Route path="/lp/compramos-casas" component={CompramosCasasAd} />
       <Route path="/lp/senior-seller" component={LpSeniorSeller} />
       <Route path="/lp/downsize" component={LpDownsize} />
+      <Route path="/lp/title-deed-issues" component={LpTitleDeedIssues} />
+      <Route path="/lp/probate-home-buyer-fresno" component={LpProbateSeller} />
+      <Route path="/lp/foreclosure-cash-buyer-fresno" component={LpForeclosureSeller} />
+      <Route path="/lp/tired-landlord-fresno" component={LpTiredLandlordSeller} />
+      <Route path="/lp/inherited-house-title-problems" component={LpInheritedTitleSeller} />
+      <Route path="/lp/compare-cash-buyers-fresno" component={LpCompareCashBuyers} />
 
       {/* Fresno neighborhood pages */}
       <Route path="/fresno-neighborhoods" component={FresnoNeighborhoods} />
