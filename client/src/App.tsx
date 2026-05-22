@@ -343,6 +343,9 @@ const CompetitorComparison = lazy(() => import("./pages/CompetitorComparison"));
 const AlderVsOsborne = lazy(() => import("./pages/AlderVsOsborne"));
 const AlderVsHomeHelpers = lazy(() => import("./pages/AlderVsHomeHelpers"));
 const AlderVsPinnacle = lazy(() => import("./pages/AlderVsPinnacle"));
+const AlderVsFairTrade = lazy(() => import("./pages/AlderVsFairTrade"));
+const AlderVsEvergreenCapital = lazy(() => import("./pages/AlderVsEvergreenCapital"));
+const BewareOfWholesalers = lazy(() => import("./pages/BewareOfWholesalers"));
 const CompareOptions = lazy(() => import("./pages/CompareOptions"));
 const PriceMatchGuarantee = lazy(() => import("./pages/PriceMatchGuarantee"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
@@ -834,6 +837,12 @@ function Router() {
       <Route path="/alder-vs-osborne-homes" component={AlderVsOsborne} />
       <Route path="/alder-vs-home-helpers-group" component={AlderVsHomeHelpers} />
       <Route path="/alder-vs-pinnacle-home-buyers" component={AlderVsPinnacle} />
+      <Route path="/alder-vs-fair-trade-real-estate" component={AlderVsFairTrade} />
+      <Route path="/alder-vs-evergreen-capital" component={AlderVsEvergreenCapital} />
+      <Route path="/fair-trade-real-estate-alternative"><Redirect to="/alder-vs-fair-trade-real-estate" /></Route>
+      <Route path="/evergreen-capital-alternative"><Redirect to="/alder-vs-evergreen-capital" /></Route>
+      <Route path="/beware-of-wholesalers-fresno" component={BewareOfWholesalers} />
+      <Route path="/assignment-contract-cash-buyer-fresno"><Redirect to="/beware-of-wholesalers-fresno" /></Route>
       <Route path="/cash-home-buyers-fresno-compare"><Redirect to="/compare-cash-buyers-fresno" /></Route>
       <Route path="/we-buy-houses-fresno-comparison"><Redirect to="/compare-cash-buyers-fresno" /></Route>
       <Route path="/admin/leads" component={AdminLeads} />

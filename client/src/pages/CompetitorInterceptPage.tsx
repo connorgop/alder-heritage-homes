@@ -11,6 +11,8 @@ type CompetitorInterceptPageProps = {
   bestFor: string[];
   compareNotes: string[];
   localAngle: string;
+  publicSignals?: string[];
+  sourceNote?: string;
 };
 
 const PHONE = "(559) 281-8016";
@@ -23,6 +25,8 @@ export default function CompetitorInterceptPage({
   bestFor,
   compareNotes,
   localAngle,
+  publicSignals,
+  sourceNote,
 }: CompetitorInterceptPageProps) {
   const { trackPhoneClick } = useConversionTracking();
 
@@ -100,6 +104,25 @@ export default function CompetitorInterceptPage({
               ))}
             </div>
           </div>
+
+          {publicSignals && publicSignals.length > 0 && (
+            <div className="mt-10 rounded-lg border bg-white p-6" style={{ borderColor: "oklch(0.88 0.02 70)" }}>
+              <h2 className="mb-5 text-2xl font-bold" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>Public Signals To Verify</h2>
+              <div className="grid gap-4 md:grid-cols-2">
+                {publicSignals.map((signal) => (
+                  <div key={signal} className="flex gap-3">
+                    <ShieldCheck className="mt-0.5 h-5 w-5 flex-shrink-0" style={{ color: "oklch(0.55 0.13 42)" }} />
+                    <p className="text-sm leading-relaxed" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.34 0.01 60)" }}>{signal}</p>
+                  </div>
+                ))}
+              </div>
+              {sourceNote && (
+                <p className="mt-5 text-xs leading-relaxed" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.48 0.01 60)" }}>
+                  {sourceNote}
+                </p>
+              )}
+            </div>
+          )}
 
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             <div>
