@@ -8,6 +8,7 @@
 import { useState } from "react";
 import { Phone, ArrowRight, Loader2, CheckCircle2, MapPin } from "lucide-react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
+import { useConversionTracking } from "@/hooks/useConversionTracking";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -35,6 +36,7 @@ const inputLight: React.CSSProperties = {
 
 export default function CashOfferForm({ city, variant = "dark" }: CashOfferFormProps) {
   const { state: formState, errorMessage, submit, reset } = useFormSubmit();
+  const { trackAddressSubmit, trackPhoneClick } = useConversionTracking();
   const [step, setStep] = useState<1 | 2>(1);
   const [address, setAddress] = useState("");
   const [name, setName] = useState("");
@@ -50,7 +52,10 @@ export default function CashOfferForm({ city, variant = "dark" }: CashOfferFormP
 
   function handleStep1(e: React.FormEvent) {
     e.preventDefault();
-    if (address.trim().length > 3) setStep(2);
+    if (address.trim().length > 3) {
+      trackAddressSubmit();
+      setStep(2);
+    }
   }
 
   async function handleStep2(e: React.FormEvent) {
@@ -80,6 +85,7 @@ export default function CashOfferForm({ city, variant = "dark" }: CashOfferFormP
         </p>
         <a
           href={PHONE_HREF}
+          onClick={trackPhoneClick}
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm"
           style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}
         >

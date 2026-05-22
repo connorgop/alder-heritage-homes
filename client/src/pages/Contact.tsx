@@ -2,6 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Phone, Mail, MapPin, Clock, CheckCircle2, ArrowRight, Loader2 } from "lucide-react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
+import { useConversionTracking } from "@/hooks/useConversionTracking";
 import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
@@ -15,6 +16,7 @@ export default function Contact() {
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const { state, errorMessage, submit } = useFormSubmit();
+  const { trackAddressSubmit, trackPhoneClick } = useConversionTracking();
 
   const inputStyle = {
     border: "1px solid oklch(0.88 0.02 85)",
@@ -31,7 +33,10 @@ export default function Contact() {
 
   const handleStep1 = (e: React.FormEvent) => {
     e.preventDefault();
-    if (address.trim().length > 3) setStep(2);
+    if (address.trim().length > 3) {
+      trackAddressSubmit();
+      setStep(2);
+    }
   };
 
   const handleStep2 = async (e: React.FormEvent) => {
@@ -82,7 +87,7 @@ export default function Contact() {
                     Thank you, {name || "there"}. We'll review your property information and reach out within 24 hours with your cash offer.
                   </p>
                   <p className="font-bold" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.28 0.05 155)" }}>
-                    Need to talk now? Call us: <a href={PHONE_HREF} style={{ color: "oklch(0.55 0.13 42)" }}>{PHONE}</a>
+                    Need to talk now? Call us: <a href={PHONE_HREF} onClick={trackPhoneClick} style={{ color: "oklch(0.55 0.13 42)" }}>{PHONE}</a>
                   </p>
                 </div>
               ) : (
@@ -204,7 +209,7 @@ export default function Contact() {
               <div className="p-6 rounded-2xl" style={{ background: "oklch(0.28 0.05 155)", color: "white" }}>
                 <h3 className="font-bold text-lg mb-5" style={{ fontFamily: "'Lora', serif" }}>Contact Us Directly</h3>
                 <div className="space-y-4">
-                  <a href={PHONE_HREF} className="flex items-center gap-3 group">
+                  <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center gap-3 group">
                     <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: "oklch(0.55 0.13 42)" }}>
                       <Phone size={18} className="text-white" />
                     </div>

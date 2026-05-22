@@ -4,9 +4,10 @@ import { CheckCircle2, Clock, DollarSign, AlertCircle, Phone } from 'lucide-reac
 import { trpc } from '@/lib/trpc';
 import { toast } from 'sonner';
 import { useConversionTracking } from '@/hooks/useConversionTracking';
+import { formatLeadAttribution } from '@/lib/attribution';
 
 export default function LeadCapture() {
-  const { trackFormSubmit, trackPhoneClick } = useConversionTracking();
+  const { trackFormSubmit, trackPhoneClick, trackAddressSubmit } = useConversionTracking();
   const [step, setStep] = useState(1);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -50,6 +51,7 @@ export default function LeadCapture() {
       toast.error('Please fill in all required fields.');
       return;
     }
+    trackAddressSubmit();
     submitLead.mutate({
       firstName: formData.firstName,
       lastName: formData.lastName,
@@ -57,7 +59,7 @@ export default function LeadCapture() {
       email: formData.email,
       address: formData.address,
       city: formData.city,
-      situation: formData.situation,
+      situation: `${formData.situation}\n\nAttribution: ${formatLeadAttribution()}`,
       source: 'lead-capture',
     });
   };

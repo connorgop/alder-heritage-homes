@@ -14,6 +14,8 @@
    Go to: Tools → Conversions → + New Conversion → Website
    ============================================================ */
 
+import { getAnalyticsAttributionParams } from "@/lib/attribution";
+
 declare global {
   interface Window {
     gtagConversion?: (label: string) => void;
@@ -31,14 +33,18 @@ const CONVERSION_LABELS = {
 };
 
 function fireConversion(label: string, eventName: string) {
-  if (typeof window !== "undefined" && typeof window.gtagConversion === "function") {
-    window.gtagConversion(label);
-  }
   if (typeof window !== "undefined" && typeof window.gtag === "function") {
-    window.gtag("event", eventName, {
+    const attribution = getAnalyticsAttributionParams();
+
+    window.gtag("event", "conversion", {
       send_to: `AW-18059779523/${label}`,
       value: 150,
       currency: "USD",
+    });
+    window.gtag("event", eventName, {
+      value: 150,
+      currency: "USD",
+      ...attribution,
     });
   }
 }
@@ -48,21 +54,33 @@ export function useConversionTracking() {
     fireConversion(CONVERSION_LABELS.formSubmit, "generate_lead");
     // Also push to dataLayer for GTM if used later
     if (window.dataLayer) {
-      window.dataLayer.push({ event: "form_submit", event_category: "Lead" });
+      window.dataLayer.push({
+        event: "form_submit",
+        event_category: "Lead",
+        ...getAnalyticsAttributionParams(),
+      });
     }
   };
 
   const trackPhoneClick = () => {
     fireConversion(CONVERSION_LABELS.phoneClick, "phone_click");
     if (window.dataLayer) {
-      window.dataLayer.push({ event: "phone_click", event_category: "Lead" });
+      window.dataLayer.push({
+        event: "phone_click",
+        event_category: "Lead",
+        ...getAnalyticsAttributionParams(),
+      });
     }
   };
 
   const trackAddressSubmit = () => {
     fireConversion(CONVERSION_LABELS.addressSubmit, "address_submit");
     if (window.dataLayer) {
-      window.dataLayer.push({ event: "address_submit", event_category: "Lead" });
+      window.dataLayer.push({
+        event: "address_submit",
+        event_category: "Lead",
+        ...getAnalyticsAttributionParams(),
+      });
     }
   };
 

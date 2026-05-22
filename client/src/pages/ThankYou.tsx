@@ -10,6 +10,7 @@ import { Link } from "wouter";
 import { Phone, CheckCircle, Clock, Star, ArrowRight, ExternalLink, Heart, Users } from "lucide-react";
 import Layout from "@/components/Layout";
 import { useSEO } from "@/hooks/useSEO";
+import { getAnalyticsAttributionParams, getLeadConversionId } from "@/lib/attribution";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -25,18 +26,27 @@ export default function ThankYou() {
   // Fire Google Ads conversion event when this page loads
   useEffect(() => {
     if (typeof window !== "undefined" && (window as any).gtag) {
+      const attribution = getAnalyticsAttributionParams();
+      const transactionId = getLeadConversionId();
       // Google Ads conversion tracking — fires when user lands on /thank-you after form submission
       // Account: AW-18059779523 | Conversion label: do7rCPPsz5wcEMO7yaND (Contact Lead Form)
       (window as any).gtag("event", "conversion", {
         send_to: "AW-18059779523/do7rCPPsz5wcEMO7yaND",
         value: 150.0,
         currency: "USD",
-        transaction_id: Date.now().toString(),
+        transaction_id: transactionId,
       });
       // Also fire a standard GA4 lead event for analytics
       (window as any).gtag("event", "generate_lead", {
         currency: "USD",
         value: 150.0,
+        transaction_id: transactionId,
+        ...attribution,
+      });
+      (window as any).dataLayer?.push({
+        event: "thank_you_lead",
+        transaction_id: transactionId,
+        ...attribution,
       });
     }
   }, []);

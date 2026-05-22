@@ -11,6 +11,11 @@
    ============================================================ */
 
 import { useState } from "react";
+import {
+  createLeadConversionId,
+  formatLeadAttribution,
+  getLeadAttribution,
+} from "@/lib/attribution";
 
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xdaplywz";
 const NTFY_TOPIC = "alder-heritage-leads-cv2026";
@@ -31,7 +36,10 @@ export function useFormSubmit() {
     const source = data._source || "Website";
     const situation = data.situation ? ` | ${data.situation}` : "";
     const timeline = data.timeline ? ` | Timeline: ${data.timeline}` : "";
-    const notifBody = `📍 ${address}\n📞 ${phone}${situation}${timeline}\n📌 Source: ${source}`;
+    const attribution = getLeadAttribution();
+    const attributionSummary = formatLeadAttribution(attribution);
+    const conversionId = createLeadConversionId();
+    const notifBody = `📍 ${address}\n📞 ${phone}${situation}${timeline}\n📌 Source: ${source}\n🎯 ${attributionSummary}`;
 
     // Fire Formspree (email) and ntfy.sh (push) in parallel
     const [formResult] = await Promise.allSettled([
@@ -40,6 +48,9 @@ export function useFormSubmit() {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           ...data,
+          ...attribution,
+          attribution: attributionSummary,
+          conversionId,
           _subject: `🏠 New Lead — ${name} | ${address}`,
           _replyto: data.email || "",
         }),

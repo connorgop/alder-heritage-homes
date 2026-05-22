@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,6 +6,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch, Redirect } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { captureAttribution } from "@/lib/attribution";
 
 // Pages
 import Home from "./pages/Home";
@@ -849,6 +850,10 @@ function Router() {
 }
 
 function App() {
+  useEffect(() => {
+    captureAttribution();
+  }, []);
+
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
