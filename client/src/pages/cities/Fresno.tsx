@@ -46,7 +46,7 @@ const situations = [
   { icon: Clock, label: "Facing Foreclosure", href: "/foreclosure-help", desc: "We can close before the auction date and protect your credit." },
   { icon: Home, label: "Inherited a Home", href: "/probate-inherited-homes", desc: "Probate, trust, or direct inheritance — we handle the complexity." },
   { icon: DollarSign, label: "Behind on Mortgage", href: "/behind-on-mortgage", desc: "Stop the calls and letters. We pay off your balance at closing." },
-  { icon: Shield, label: "Tired Landlord", href: "/tired-landlord", desc: "Sell your rental with tenants in place. No evictions required." },
+  { icon: Shield, label: "Tired Landlord", href: "/sell-house-with-tenants-fresno", desc: "Sell your rental with tenants in place. No evictions required." },
   { icon: MapPin, label: "Relocating Fast", href: "/sell-house-fast", desc: "Job transfer, military PCS, or life change — we close on your schedule." },
   { icon: Star, label: "Divorce", href: "/sell-house-divorce", desc: "We work with both parties to close quickly and split proceeds cleanly." },
 ];

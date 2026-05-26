@@ -3,7 +3,7 @@ import HighIntentLandingPage from "@/components/HighIntentLandingPage";
 export default function TiredLandlordSeller() {
   return (
     <HighIntentLandingPage
-      path="/lp/tired-landlord-fresno"
+      path="/lp/sell-house-with-tenants-fresno"
       source="lp-tired-landlord-fresno"
       eyebrow="Rental property exit"
       metaTitle="Tired Landlord Fresno Cash Buyer"
@@ -37,7 +37,7 @@ export default function TiredLandlordSeller() {
         { q: "Can you buy several rentals at once?", a: "Yes. Send the addresses and basic rent/condition notes." },
       ]}
       relatedLinks={[
-        { label: "Tired landlord guide", href: "/tired-landlord" },
+        { label: "Tired landlord guide", href: "/sell-house-with-tenants-fresno" },
         { label: "Sell rental portfolio", href: "/sell-rental-portfolio" },
         { label: "Sell rental in Madera", href: "/sell-rental-property-madera" },
         { label: "Sell rental in Hanford", href: "/sell-rental-property-hanford" },

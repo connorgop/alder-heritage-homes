@@ -225,7 +225,7 @@ export default function CentralValleyHub() {
               { label: "Fire or Flood Damage", href: "/sell-house-fire-damage-fresno" },
               { label: "Code Violations", href: "/sell-house-code-violations-fresno" },
               { label: "Hoarder / As-Is Condition", href: "/hoarder-house" },
-              { label: "Tired Landlords", href: "/tired-landlord" },
+              { label: "Tired Landlords", href: "/sell-house-with-tenants-fresno" },
               { label: "Squatters or Problem Tenants", href: "/tenant-issues" },
               { label: "Tax Liens or HOA Liens", href: "/sell-house-with-lien-california" },
               { label: "Bankruptcy", href: "/cant-afford-home" },

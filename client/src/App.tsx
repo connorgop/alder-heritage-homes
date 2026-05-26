@@ -19,6 +19,7 @@ const DontGetWholesaled = lazy(() => import("./pages/DontGetWholesaled"));
 const SecondOpinion = lazy(() => import("./pages/SecondOpinion"));
 const SellIn57Days = lazy(() => import("./pages/SellIn57Days"));
 const SellVacantHouse = lazy(() => import("./pages/SellVacantHouse"));
+const SquatterOccupiedHouse = lazy(() => import("./pages/SquatterOccupiedHouse"));
 // Case Studies
 const CaseStudyIowaAve = lazy(() => import("./pages/case-studies/4444-iowa-ave-fresno"));
 const CaseStudyDovewood = lazy(() => import("./pages/case-studies/3346-dovewood-lane-fresno"));
@@ -472,7 +473,11 @@ function Router() {
       <Route path="/sell-house-roof-damage" component={RoofDamage} />
       <Route path="/sell-hoarder-house" component={HoarderHouse} />
       <Route path="/sell-house-divorce" component={DivorceHome} />
-      <Route path="/tired-landlord" component={TiredLandlord} />
+      <Route path="/sell-house-with-tenants-fresno" component={TiredLandlord} />
+      <Route path="/tired-landlord"><Redirect to="/sell-house-with-tenants-fresno" /></Route>
+      <Route path="/tired-landlord-fresno"><Redirect to="/sell-house-with-tenants-fresno" /></Route>
+      <Route path="/tired-landlord-sell-rental"><Redirect to="/sell-house-with-tenants-fresno" /></Route>
+      <Route path="/sell-house-with-problem-tenants-fresno"><Redirect to="/sell-house-with-tenants-fresno" /></Route>
       <Route path="/sell-rental-property-madera" component={LandlordMadera} />
       <Route path="/sell-rental-property-hanford" component={LandlordHanford} />
       <Route path="/sell-rental-property-visalia" component={LandlordVisalia} />
@@ -485,6 +490,10 @@ function Router() {
       <Route path="/second-opinion" component={SecondOpinion} />
       <Route path="/sell-your-house-in-5-7-days-no-repairs-no-commissions-no-stress" component={SellIn57Days} />
       <Route path="/sell-vacant-house-fresno" component={SellVacantHouse} />
+      <Route path="/sell-house-with-squatters-fresno" component={SquatterOccupiedHouse} />
+      <Route path="/sell-squatter-occupied-house-fresno"><Redirect to="/sell-house-with-squatters-fresno" /></Route>
+      <Route path="/sell-house-with-unauthorized-occupants-fresno"><Redirect to="/sell-house-with-squatters-fresno" /></Route>
+      <Route path="/cash-buyer-squatter-house-fresno"><Redirect to="/sell-house-with-squatters-fresno" /></Route>
       <Route path="/dont-get-lowballed" component={DontGetLowballed} />
       <Route path="/lowball-cash-offer-fresno"><Redirect to="/dont-get-lowballed" /></Route>
       <Route path="/fair-cash-offer-home"><Redirect to="/dont-get-lowballed" /></Route>

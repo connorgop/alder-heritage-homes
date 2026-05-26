@@ -80,7 +80,7 @@ const situations = [
     title: "Landlord & Rental Property",
     description: "Tired of tenants, repairs, and property management headaches? We buy rental properties with tenants in place.",
     links: [
-      { label: "Tired Landlord — Sell Your Rental", href: "/tired-landlord" },
+      { label: "Tired Landlord — Sell Your Rental", href: "/sell-house-with-tenants-fresno" },
       { label: "Portfolio Sale & 1031 Exchange", href: "/sell-rental-portfolio" },
       { label: "Are You Ready to Be a Landlord? (Reality Check)", href: "/blog/are-you-ready-to-be-a-landlord-fresno-reality-check" },
       { label: "How to Evict a Tenant in California 2026", href: "/blog/how-to-evict-tenant-california-2026-guide" },

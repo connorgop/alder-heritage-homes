@@ -95,7 +95,7 @@ export default function Modesto() {
               <div className="p-6 rounded-2xl" style={{ background: "oklch(0.97 0.015 85)", border: "1px solid oklch(0.88 0.02 85)" }}>
                 <h3 className="font-bold mb-4" style={{ fontFamily: "'Lora', serif", color: "oklch(0.22 0.01 60)" }}>Situations We Help With</h3>
                 <ul className="space-y-2">
-                  {[{ label: "Foreclosure Help", href: "/foreclosure-help" },{ label: "Behind on Mortgage", href: "/behind-on-mortgage" },{ label: "Probate / Inherited", href: "/probate-inherited-homes" },{ label: "Divorce Home Sale", href: "/sell-house-divorce" },{ label: "Tired Landlord", href: "/tired-landlord" },{ label: "Sell House Fast", href: "/sell-house-fast" }].map((s) => (
+                  {[{ label: "Foreclosure Help", href: "/foreclosure-help" },{ label: "Behind on Mortgage", href: "/behind-on-mortgage" },{ label: "Probate / Inherited", href: "/probate-inherited-homes" },{ label: "Divorce Home Sale", href: "/sell-house-divorce" },{ label: "Tired Landlord", href: "/sell-house-with-tenants-fresno" },{ label: "Sell House Fast", href: "/sell-house-fast" }].map((s) => (
                     <li key={s.href}><Link href={s.href} className="flex items-center gap-2 text-sm font-medium" style={{ color: "oklch(0.45 0.12 42)", fontFamily: "'Nunito Sans', sans-serif" }}><ArrowRight size={13} /> {s.label}</Link></li>
                   ))}
                 </ul>

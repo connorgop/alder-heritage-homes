@@ -123,7 +123,7 @@ const silos: { id: string; label: string; color: string; bg: string; description
       { url: "/sell-house-as-is-fresno", title: "Sell House As-Is Fresno", status: "live", keyword: "sell house as is Fresno CA" },
       { url: "/fire-damaged-house-buyer-fresno", title: "Fire Damaged House Buyer Fresno", status: "live", keyword: "sell fire damaged house Fresno" },
       { url: "/hoarder-home-buyer-fresno", title: "Hoarder Home Buyer Fresno", status: "live", keyword: "sell hoarder house Fresno CA" },
-      { url: "/tired-landlord-fresno", title: "Tired Landlord — Sell Rental Property Fresno", status: "live", keyword: "tired landlord sell rental property Fresno" },
+      { url: "/sell-house-with-tenants-fresno", title: "Tired Landlord — Sell Rental Property Fresno", status: "live", keyword: "tired landlord sell rental property Fresno" },
       { url: "/vacant-property-warning", title: "Vacant Property Risks & Solutions", status: "live", keyword: "sell vacant house Fresno CA" },
       { url: "/sell-house-code-violations-fresno", title: "Sell House With Code Violations Fresno", status: "needed", keyword: "sell house with code violations Fresno", note: "Build this week — zero competition" },
       { url: "/sell-house-tax-liens-fresno", title: "Sell House With Tax Liens Fresno", status: "needed", keyword: "sell house with tax liens Fresno", note: "Build this week — zero competition" },

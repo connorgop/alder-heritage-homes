@@ -102,7 +102,7 @@ export default function SellHouseFastBakersfield() {
         { label: "We Buy Houses Bakersfield", href: "/we-buy-houses-bakersfield" },
         { label: "Sell House Fast Fresno CA", href: "/sell-house-fast-fresno-ca" },
         { label: "Sell House Fast Visalia CA", href: "/sell-house-fast-visalia-ca" },
-        { label: "Tired Landlord — Sell Your Rental", href: "/tired-landlord" },
+        { label: "Tired Landlord — Sell Your Rental", href: "/sell-house-with-tenants-fresno" },
         { label: "Sell My House — All Options", href: "/sell-my-house" },
       ]}
       slug="/sell-house-fast-bakersfield-ca"

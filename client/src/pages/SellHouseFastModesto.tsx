@@ -100,7 +100,7 @@ export default function SellHouseFastModesto() {
         { label: "Modesto Housing Market 2026", href: "/modesto-housing-market" },
         { label: "Sell House Fast Stockton CA", href: "/sell-house-fast-stockton-ca" },
         { label: "San Joaquin County Resource Hub", href: "/san-joaquin-county" },
-        { label: "Tired Landlord — Sell Your Rental", href: "/tired-landlord" },
+        { label: "Tired Landlord — Sell Your Rental", href: "/sell-house-with-tenants-fresno" },
       ]}
     />
   );

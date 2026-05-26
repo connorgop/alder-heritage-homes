@@ -266,7 +266,7 @@ export default function SellHouseFastHub() {
               { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
               { label: "Code Violations", href: "/sell-house-code-violations-fresno" },
               { label: "Fire Damage", href: "/sell-house-fire-damage" },
-              { label: "Tired Landlord", href: "/tired-landlord-sell-rental" },
+              { label: "Tired Landlord", href: "/sell-house-with-tenants-fresno" },
               { label: "Hoarder / Cluttered", href: "/sell-hoarder-house" },
               { label: "Mold / Water Damage", href: "/sell-house-mold" },
               { label: "Foundation Issues", href: "/sell-house-foundation-problems" },

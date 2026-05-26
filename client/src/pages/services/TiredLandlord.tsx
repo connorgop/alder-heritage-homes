@@ -1,7 +1,7 @@
 /* ============================================================
    TIRED LANDLORD LANDING PAGE — Alder Heritage Homes
-   Target keywords: "sell rental property Fresno", "tired landlord sell house",
-   "sell house with tenants Fresno", "sell investment property fast Fresno"
+   Target keywords: "sell house with tenants Fresno", "sell rental property Fresno",
+   "problem tenants Fresno", "tired landlord sell house"
    Heritage Warmth design: Terracotta + Slate Green + Oat
    ============================================================ */
 import ServicePage from "@/components/ServicePage";
@@ -12,19 +12,25 @@ export default function TiredLandlord() {
   return (
     <ServicePage
       badge="Tired Landlord"
-      title="Done Being a Landlord? Sell Your Fresno Rental Property Fast"
-      subtitle="Difficult tenants, deferred maintenance, late rent, and endless repairs — we buy rental properties as-is, with tenants in place, and close on your timeline."
+      title="Sell a House With Tenants in Fresno CA"
+      subtitle="No eviction required before you call. We buy Fresno rental properties with tenants in place, late rent, lease complications, deferred maintenance, and problem situations."
       heroImage={HERO_IMG}
       heroImageAlt="Rental property for sale in Fresno California"
-      intro="Being a landlord in Fresno has gotten harder. Tenant protections have expanded, maintenance costs have risen, and the stress of managing problem tenants, late payments, and constant repairs wears people down. If you're ready to exit your rental property — whether it's one house or several — we can make the process simple, fast, and private. We buy rental properties as-is, with tenants in place, and we handle all the complexity so you don't have to."
+      slug="/sell-house-with-tenants-fresno"
+      metaDescription="Sell a Fresno house with tenants, late rent, lease issues, or problem occupants. No eviction required before calling. Cash offer from a licensed CA buyer."
+      intro="If you need to sell a Fresno rental property but the house is occupied, the tenant is behind, the lease is complicated, or the property needs work, a normal retail sale can get messy fast. Most financed buyers want vacancy and easy showings. We buy rental properties as-is, with tenants in place, and we handle the post-closing complexity so you can exit without months of repairs, showings, or eviction stress."
       sections={[
         {
-          heading: "We Buy Rentals With Tenants In Place",
-          body: "One of the biggest obstacles to selling a rental property is the tenants. Traditional buyers want vacant possession, which means you have to navigate California's tenant protection laws, serve proper notice, potentially go through eviction proceedings, and wait months before you can even list. We buy properties with tenants in place — occupied or not. We take on the tenant relationship after closing, and you walk away clean.",
+          heading: "We Buy Fresno Houses With Tenants In Place",
+          body: "One of the biggest obstacles to selling a rental property is occupancy. Traditional buyers often want vacant possession, lender-friendly access, clean inspections, and predictable move-in timing. We buy properties with tenants in place, including month-to-month occupants, fixed leases, inherited rentals, non-paying tenants, and difficult access situations. You do not need to make the home vacant before starting the conversation.",
         },
         {
-          heading: "Problem Tenants, Deferred Maintenance, Late Rent — We've Seen It All",
-          body: "We regularly buy rental properties in Fresno that have non-paying tenants, significant deferred maintenance, code violations, and years of accumulated wear. You don't need to fix anything, evict anyone, or bring the property up to code before selling to us. We price the property based on its current condition and handle everything ourselves after closing.",
+          heading: "Problem Tenants, Deferred Maintenance, Late Rent",
+          body: "We regularly review Fresno rental properties with non-paying tenants, denied access, damaged interiors, hoarding, code issues, unpaid utilities, inherited occupants, and years of deferred maintenance. You do not need to fix anything, evict anyone, or bring the property up to retail condition before selling to us. We price the property based on its current condition and current occupancy.",
+        },
+        {
+          heading: "No Eviction Required Before You Call",
+          body: "This is not legal advice, and landlord-tenant rules should be reviewed with an attorney when needed. From a sale standpoint, though, you can call before starting an eviction, before negotiating cash-for-keys, and before spending months trying to deliver the home vacant. We can look at the address, review the lease or tenant status you already know, and explain whether a direct cash purchase makes sense.",
         },
         {
           heading: "You Get an Independent Broker Opinion — Not Just Our Word",
@@ -64,19 +70,20 @@ export default function TiredLandlord() {
         },
       ]}
       benefits={[
-        "Buy with tenants in place",
+        "Buy Fresno houses with tenants in place",
         "No evictions required before selling",
+        "Review late rent, lease, and access issues",
         "No repairs or code compliance required",
         "Third-party broker opinion included",
         "Cash offer within 48 hours",
-        "close in as few as 3 days",
+        "Close in as few as 3 days when title is ready",
         "Portfolio purchases available",
         "Licensed agent — not a wholesaler",
       ]}
       faq={[
         {
-          q: "Do I have to evict my tenants before selling?",
-          a: "No. We buy properties with tenants in place — month-to-month, lease, or even non-paying. We take on the tenant relationship after closing.",
+          q: "Can I sell my Fresno house with tenants still living there?",
+          a: "Often, yes. We buy tenant-occupied rental properties and can evaluate the home before it is vacant. The lease, access, condition, and title situation all matter, but you do not need to evict before calling.",
         },
         {
           q: "My rental has significant deferred maintenance. Will you still buy it?",
@@ -85,6 +92,10 @@ export default function TiredLandlord() {
         {
           q: "What if my tenant is behind on rent?",
           a: "That's a common situation we encounter. We buy the property as-is, including the current tenant situation, and handle any collections or eviction proceedings ourselves after closing.",
+        },
+        {
+          q: "Can you buy if the tenant will not allow showings?",
+          a: "Sometimes. We still need enough information to price the property responsibly, but a direct buyer can often work with limited access better than a financed retail buyer who needs inspections, appraisal access, and a clean showing process.",
         },
         {
           q: "Can I sell multiple rental properties to you at once?",
@@ -100,11 +111,16 @@ export default function TiredLandlord() {
         title: "How to Sell a Rental Property With Tenants",
         caption: "A practical guide for landlords who want to sell their rental property without going through the eviction process first."
       }}
-      ctaTitle="Ready to Stop Being a Landlord? Let's Talk."
-      ctaBody="Get a cash offer and an independent broker opinion on your Fresno rental property. No repairs, no evictions, no hassle."
+      ctaTitle="Need to Sell a Fresno House With Tenants?"
+      ctaBody="Send the property address or call Connor directly. We will review the tenant situation, condition, title, and timeline, then give you a direct cash offer if the property is a fit."
       relatedLinks={[
         { label: "Portfolio Sales & 1031 Exchange", href: "/sell-rental-portfolio" },
+        { label: "Sell Rental Property Madera", href: "/sell-rental-property-madera" },
+        { label: "Sell Rental Property Hanford", href: "/sell-rental-property-hanford" },
+        { label: "Sell Rental Property Visalia", href: "/sell-rental-property-visalia" },
         { label: "Sell Your House Fast in Fresno", href: "/sell-house-fast" },
+        { label: "Sell a House With Squatters", href: "/sell-house-with-squatters-fresno" },
+        { label: "Sell a House With Title Issues", href: "/sell-house-title-issues-fresno" },
         { label: "Probate & Inherited Homes", href: "/probate-inherited-homes" },
         { label: "Why We're Different", href: "/why-choose-us" },
         { label: "Contact Connor Directly", href: "/contact" },

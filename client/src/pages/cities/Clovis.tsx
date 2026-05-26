@@ -42,7 +42,7 @@ const situations = [
   { icon: Clock, label: "Facing Foreclosure", href: "/foreclosure-help", desc: "We close before the auction date and protect your credit." },
   { icon: Home, label: "Inherited a Home", href: "/probate-inherited-homes", desc: "Probate, trust, or direct inheritance — we handle the complexity." },
   { icon: DollarSign, label: "Behind on Mortgage", href: "/behind-on-mortgage", desc: "Stop the calls and letters. We pay off your balance at closing." },
-  { icon: Shield, label: "Tired Landlord", href: "/tired-landlord", desc: "Sell your rental with tenants in place. No evictions required." },
+  { icon: Shield, label: "Tired Landlord", href: "/sell-house-with-tenants-fresno", desc: "Sell your rental with tenants in place. No evictions required." },
   { icon: MapPin, label: "Relocating Fast", href: "/sell-house-fast", desc: "Job transfer, military PCS, or life change — we close on your schedule." },
   { icon: Star, label: "Divorce", href: "/sell-house-divorce", desc: "We work with both parties to close quickly and split proceeds cleanly." },
 ];
@@ -356,7 +356,7 @@ export default function ClovisPage() {
                 { label: "Stop Foreclosure in California", href: "/foreclosure-help" },
                 { label: "Sell an Inherited Home in Fresno", href: "/probate-inherited-homes" },
                 { label: "Sell a House in Divorce", href: "/sell-house-divorce" },
-                { label: "Sell a House With Tenants", href: "/tired-landlord" },
+                { label: "Sell a House With Tenants", href: "/sell-house-with-tenants-fresno" },
                 { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
                 { label: "Clovis North Neighborhood Guide", href: "/clovis-north" },
                 { label: "All Seller Resources", href: "/resources" },

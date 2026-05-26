@@ -483,7 +483,7 @@ const articleChunk4: Record<string, React.ReactNode> = {
         <p>We buy in all Ceres zip codes (95307, 95351) and throughout Stanislaus County.</p>
         <h2>What We Pay for Ceres Homes</h2>
         <p>Our offers are based on a free Broker Opinion of Value using recent comparable sales in your specific Ceres neighborhood. For a Ceres home worth $370,000 in move-in condition that needs $30,000 in work, our offer would typically be in the $295,000–$320,000 range. We are fully transparent about our math and guarantee to match or beat any competing cash offer. Call (559) 281-8016 for a free, no-obligation offer within 24 hours.</p>
-        <p>See also: <a href="/we-buy-houses-modesto">We Buy Houses Modesto</a> · <a href="/sell-house-fast-modesto-ca">Sell House Fast Modesto CA</a> · <a href="/modesto-housing-market">Modesto Housing Market 2026</a> · <a href="/tired-landlord">Tired Landlord Guide</a></p>
+        <p>See also: <a href="/we-buy-houses-modesto">We Buy Houses Modesto</a> · <a href="/sell-house-fast-modesto-ca">Sell House Fast Modesto CA</a> · <a href="/modesto-housing-market">Modesto Housing Market 2026</a> · <a href="/sell-house-with-tenants-fresno">Tired Landlord Guide</a></p>
       </div>
   ),
 
@@ -665,7 +665,7 @@ const articleChunk4: Record<string, React.ReactNode> = {
       <p>Squatters — people who have moved into a vacant property without permission — are treated differently from tenants under California law. You cannot simply remove them without going through the eviction process. However, if the squatter has been there fewer than 30 days, you may be able to work with law enforcement to have them removed as trespassers. We purchase properties with squatters in place throughout California.</p>
       <h2>The Bottom Line for California Landlords</h2>
       <p>If you have problem tenants and want to sell, a cash sale to a buyer who will handle the tenant situation is almost always the fastest and most cost-effective path. Call (559) 281-8016 for a free consultation. We purchase tenant-occupied properties in any condition throughout the Central Valley.</p>
-      <p>See also: <a href="/tired-landlord">Tired Landlord Guide</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-county">Fresno County Hub</a></p>
+      <p>See also: <a href="/sell-house-with-tenants-fresno">Tired Landlord Guide</a> · <a href="/we-buy-houses-fresno">We Buy Houses Fresno</a> · <a href="/fresno-county">Fresno County Hub</a></p>
     </div>
   ),
   "cash-offer-vs-listing-central-valley": (

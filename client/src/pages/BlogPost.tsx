@@ -151,9 +151,9 @@ export default function BlogPost() {
       { label: "Sell House Fast", href: "/sell-house-fast" },
     ],
     "Landlord & Rental": [
-      { label: "Tired Landlord", href: "/tired-landlord" },
-      { label: "Tenant Issues", href: "/lp/tired-landlord-fresno" },
-      { label: "Eviction Help", href: "/tired-landlord" },
+      { label: "Tired Landlord", href: "/sell-house-with-tenants-fresno" },
+      { label: "Tenant Issues", href: "/lp/sell-house-with-tenants-fresno" },
+      { label: "Eviction Help", href: "/sell-house-with-tenants-fresno" },
     ],
     "Property Condition": [
       { label: "Sell As-Is", href: "/sell-house-as-is-fresno" },
@@ -193,9 +193,9 @@ export default function BlogPost() {
       { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
     ],
     "Landlord": [
-      { label: "Tired Landlord", href: "/tired-landlord" },
+      { label: "Tired Landlord", href: "/sell-house-with-tenants-fresno" },
       { label: "Sell Rental Portfolio", href: "/sell-rental-portfolio" },
-      { label: "Tenant Issues", href: "/lp/tired-landlord-fresno" },
+      { label: "Tenant Issues", href: "/lp/sell-house-with-tenants-fresno" },
     ],
     "Bakersfield": [
       { label: "Sell My House Bakersfield", href: "/sell-my-house-bakersfield-ca" },

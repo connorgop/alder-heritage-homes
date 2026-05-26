@@ -213,6 +213,11 @@ export default function SellVacantHouse() {
               <a href={PHONE_HREF} className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white text-lg hover:opacity-90 transition-opacity" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 <Phone size={20} /> Call Connor: {PHONE}
               </a>
+              <div className="mt-4">
+                <Link href="/sell-house-with-squatters-fresno" className="inline-flex items-center gap-2 text-sm font-bold" style={{ color: "oklch(0.75 0.12 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
+                  Need to sell with squatters still there? Read the Fresno squatter sale guide <ArrowRight size={16} />
+                </Link>
+              </div>
             </div>
             {/* Right: Form */}
             <div className="rounded-2xl p-8" style={{ background: "oklch(0.24 0.01 60)", border: "1px solid oklch(0.32 0.01 60)" }}>

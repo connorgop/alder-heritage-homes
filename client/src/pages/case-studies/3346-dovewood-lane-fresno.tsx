@@ -201,7 +201,7 @@ export default function DovewoodCaseStudy() {
               <a href={PHONE_HREF} className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.22 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                 <Phone size={18} /> {PHONE}
               </a>
-              <Link href="/tired-landlord">
+              <Link href="/sell-house-with-tenants-fresno">
                 <button className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.15)", border: "2px solid white", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
                   Landlord Selling Guide <ArrowRight size={18} />
                 </button>

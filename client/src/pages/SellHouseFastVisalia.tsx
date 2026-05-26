@@ -141,7 +141,7 @@ export default function SellHouseFastVisalia() {
         { label: "Sell House Fast Clovis CA", href: "/sell-house-fast-clovis-ca" },
         { label: "Stop Foreclosure in California", href: "/foreclosure-help" },
         { label: "Sell Inherited Home — Probate", href: "/probate-inherited-homes" },
-        { label: "Tired Landlord — Sell With Tenants", href: "/tired-landlord" },
+        { label: "Tired Landlord — Sell With Tenants", href: "/sell-house-with-tenants-fresno" },
       ]}
     />
   );

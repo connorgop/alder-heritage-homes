@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { CheckCircle2, Clock, DollarSign, AlertCircle, Award, Phone, Shield, ArrowRight, Star, ChevronDown, ChevronUp, X, Check, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import { CheckCircle2, Clock, DollarSign, AlertCircle, Award, Phone, Shield, ArrowRight, Star, ChevronDown, ChevronUp, X, Check, Quote, ChevronLeft, ChevronRight, Home as HomeIcon, KeyRound, FileWarning, Gavel } from 'lucide-react';
 import { Link } from 'wouter';
 import { trpc } from '@/lib/trpc';
+import CashOfferForm from '@/components/CashOfferForm';
 
 const CONNOR_HUG_URL = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-hug-seller_2e91e0b5.webp';
 const YARD_SIGN_URL = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/alder-yard-sign_ffeaeadb.webp';
@@ -32,6 +33,39 @@ const faqs = [
   {
     q: 'What types of situations do you specialize in?',
     a: 'We specialize in probate and inherited homes, foreclosure, divorce, properties needing repairs, landlords tired of tenants, and anyone who needs to sell quickly without hassle.',
+  },
+];
+
+const sellerSituations = [
+  {
+    title: 'Title or deed problem',
+    body: 'Old deed, missing heir, lien, unpaid taxes, or probate cloud.',
+    href: '/sell-house-title-issues-fresno',
+    icon: FileWarning,
+  },
+  {
+    title: 'Tenants or rental headache',
+    body: 'Sell tenant-occupied rentals without evicting first.',
+    href: '/sell-house-with-tenants-fresno',
+    icon: KeyRound,
+  },
+  {
+    title: 'Squatter-occupied house',
+    body: 'Unauthorized occupants, vandalism, or no safe access.',
+    href: '/sell-house-with-squatters-fresno',
+    icon: AlertCircle,
+  },
+  {
+    title: 'Probate or inherited home',
+    body: 'Coordinate family, escrow, and timeline without repairs.',
+    href: '/probate-homes',
+    icon: HomeIcon,
+  },
+  {
+    title: 'Foreclosure or late payments',
+    body: 'Move quickly when timing matters and a normal sale is too slow.',
+    href: '/foreclosure-help',
+    icon: Gavel,
   },
 ];
 
@@ -380,6 +414,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-4 pt-28 pb-24 w-full">
+          <div className="grid lg:grid-cols-[minmax(0,1fr)_380px] gap-10 items-center">
           <div className="max-w-2xl">
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/40 text-orange-300 px-4 py-2 rounded-full text-sm font-semibold mb-6 backdrop-blur-sm">
@@ -440,6 +475,18 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          <div className="hidden lg:block">
+            <div className="rounded-2xl border border-white/15 bg-slate-950/70 p-5 shadow-2xl shadow-slate-950/40 backdrop-blur-md">
+              <div className="mb-4">
+                <p className="text-orange-300 text-xs font-black uppercase tracking-widest mb-2">Start Here</p>
+                <h2 className="text-2xl font-black text-white leading-tight">Get a Fresno cash offer today.</h2>
+                <p className="text-sm text-gray-300 mt-2">Send the address. Connor reviews it directly and follows up with a real number.</p>
+              </div>
+              <CashOfferForm city="Fresno" variant="dark" />
+              <p className="text-xs text-gray-400 mt-4 text-center">Works for probate, title issues, tenant-occupied rentals, and damaged homes.</p>
+            </div>
+          </div>
+          </div>
         </div>
 
         {/* Bottom wave */}
@@ -465,6 +512,45 @@ export default function Home() {
               <div className="text-xs text-gray-500 mt-1">{stat.sub}</div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── HIGH-INTENT SELLER PATHS ── */}
+      <section className="bg-white px-4 pb-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="rounded-3xl border border-gray-100 bg-gray-50 p-5 sm:p-7">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+              <div>
+                <p className="text-orange-600 font-bold text-sm uppercase tracking-widest mb-2">What is going on with the property?</p>
+                <h2 className="text-3xl sm:text-4xl font-black text-gray-900">Fast paths for complicated sales</h2>
+              </div>
+              <Link href="/contact">
+                <Button className="bg-slate-900 hover:bg-slate-800 text-white font-bold rounded-xl">
+                  Talk to Connor
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+              {sellerSituations.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <Link key={item.href} href={item.href}>
+                    <div className="h-full rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-orange-200 hover:shadow-lg">
+                      <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-orange-100 text-orange-700">
+                        <Icon className="h-5 w-5" />
+                      </div>
+                      <h3 className="text-lg font-black text-gray-900 mb-2">{item.title}</h3>
+                      <p className="text-sm leading-relaxed text-gray-600">{item.body}</p>
+                      <div className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-orange-600">
+                        See options <ArrowRight className="h-4 w-4" />
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </section>
 

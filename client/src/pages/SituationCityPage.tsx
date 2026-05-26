@@ -211,7 +211,7 @@ export default function SituationCityPage({
         { label: `Sell My House ${city}`, href: sellMyHouseHref },
         { label: "Probate Homes", href: "/probate-homes" },
         { label: "Foreclosure Help", href: "/foreclosure-help" },
-        { label: "Tired Landlord", href: "/tired-landlord" },
+        { label: "Tired Landlord", href: "/sell-house-with-tenants-fresno" },
         { label: "Title Issues", href: "/sell-house-title-issues-fresno" },
       ]}
     />

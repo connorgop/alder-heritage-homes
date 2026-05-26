@@ -152,7 +152,7 @@ export default function SellMyHouseVisalia() {
                 { label: "Military PCS relocation", href: "/military-pcs-sell-house" },
                 { label: "Job relocation — sell fast", href: "/sell-house-fast" },
                 { label: "Downsizing or retirement", href: "/sell-home-retirement-fresno" },
-                { label: "Rental with problem tenants", href: "/tired-landlord" },
+                { label: "Rental with problem tenants", href: "/sell-house-with-tenants-fresno" },
               ].map(({ label, href }) => (
                 <a key={href} href={href} className="flex items-center gap-2 p-3 rounded-lg text-sm font-medium transition-colors hover:bg-orange-50" style={{ color: "oklch(0.35 0.08 42)", border: "1px solid oklch(0.90 0.02 60)" }}>
                   <span style={{ color: "oklch(0.55 0.13 42)" }}>→</span>
