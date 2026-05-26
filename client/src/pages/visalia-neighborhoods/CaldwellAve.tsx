@@ -54,7 +54,25 @@ export default function VisaliaNeighborhood_CaldwellAve() {
                 <li key="1" className="flex gap-2 items-start"><span className="text-[#c8a96e] mt-1">✓</span><span className="text-[#5a6e5a] text-sm">Landlords with long-term tenants</span></li>
                 <li key="2" className="flex gap-2 items-start"><span className="text-[#c8a96e] mt-1">✓</span><span className="text-[#5a6e5a] text-sm">Deferred maintenance on 1970s–1980s homes</span></li>
                 <li key="3" className="flex gap-2 items-start"><span className="text-[#c8a96e] mt-1">✓</span><span className="text-[#5a6e5a] text-sm">Seniors relocating to assisted living</span></li>
+                <li key="4" className="flex gap-2 items-start"><span className="text-[#c8a96e] mt-1">✓</span><span className="text-[#5a6e5a] text-sm">Vacant homes, code issues, and squatter risk after a property sits empty</span></li>
+                <li key="5" className="flex gap-2 items-start"><span className="text-[#c8a96e] mt-1">✓</span><span className="text-[#5a6e5a] text-sm">Title, deed, or family-ownership issues that slow down a normal listing</span></li>
               </ul>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-[#1a2e1a] mb-3">Why a Cash Sale Can Make Sense Here</h2>
+              <p className="text-[#5a6e5a] leading-relaxed">
+                Many Caldwell Ave and North Visalia sellers are not dealing with a perfect, freshly updated house.
+                Older roofs, original HVAC systems, dated interiors, old flooring, and years of tenant wear can make
+                a traditional listing slower and more expensive than expected. A retail buyer may ask for repairs,
+                credits, inspections, pest work, lender-required fixes, or a price reduction after escrow opens.
+              </p>
+              <p className="text-[#5a6e5a] leading-relaxed mt-3">
+                Alder Heritage Homes gives sellers a simpler option: a direct as-is cash offer with no open houses,
+                no repair list, no commissions, and no requirement to clean out the property before closing. This is
+                especially useful for inherited homes, rentals with occupants, properties where family members live
+                out of town, or homes that need enough work that a normal buyer's loan may become difficult.
+              </p>
             </div>
 
             <div>

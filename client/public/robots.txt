@@ -1,6 +1,6 @@
 # robots.txt — Alder Heritage Homes
 # https://www.alderheritagehomes.com
-# Last updated: 2026-05-11
+# Last updated: 2026-05-25
 
 # All standard crawlers
 User-agent: *

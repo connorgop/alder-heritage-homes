@@ -108,6 +108,10 @@ export function localBusinessSchema() {
       "Senior seller real estate",
       "Military PCS home sales",
       "Inherited property sales",
+      "Tenant-occupied rental property sales",
+      "Squatter-occupied house purchases",
+      "Title and deed issue home sales",
+      "Vacant and vandalized property sales",
     ],
     sameAs: [
       "https://www.facebook.com/alderheritagehomes",
@@ -115,7 +119,7 @@ export function localBusinessSchema() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5.0",
-      reviewCount: "13",
+      reviewCount: "32",
       bestRating: "5",
       worstRating: "1",
     },
@@ -284,6 +288,8 @@ function slugToLabel(slug: string): string {
     "sell-house-foundation-problems": "Sell House With Foundation Problems",
     "sell-house-divorce": "Sell House During Divorce",
     "tired-landlord": "Tired Landlord",
+    "sell-house-with-tenants-fresno": "Sell House With Tenants in Fresno",
+    "sell-house-with-squatters-fresno": "Sell House With Squatters in Fresno",
     "sell-rental-portfolio": "Portfolio Sale & 1031 Exchange",
     "military-pcs-sell-house": "Military PCS Home Sale",
     "sell-home-retirement-fresno": "Senior / Retirement Seller",
