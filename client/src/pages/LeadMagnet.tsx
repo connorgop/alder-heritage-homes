@@ -165,6 +165,16 @@ export default function LeadMagnet() {
             </p>
           </div>
 
+          <div className="mb-8 rounded-lg bg-white p-5 border border-gray-200 shadow-sm">
+            <h3 className="mb-3 font-bold text-gray-900">Who This Guide Is For</h3>
+            <p className="mb-3 text-sm leading-relaxed text-gray-700">
+              This is for homeowners who are not just casually curious. It is for sellers dealing with a real deadline or a property that may not fit a clean retail listing: probate, multiple heirs, deed issues, title problems, unpaid taxes, tenants, deferred repairs, hoarder conditions, vacancy, relocation, divorce, or foreclosure pressure.
+            </p>
+            <p className="text-sm leading-relaxed text-gray-700">
+              The goal is simple: know what questions to ask before signing. A serious buyer should explain proof of funds, assignment language, escrow, title, closing costs, repair credits, and your real net proceeds. If those answers are unclear, pause before you sign.
+            </p>
+          </div>
+
           <div className="flex items-center gap-2 text-gray-600">
             <Download className="h-5 w-5" />
             <span className="text-sm">PDF Guide • 8 Pages • Free Download</span>

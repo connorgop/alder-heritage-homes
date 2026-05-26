@@ -171,7 +171,7 @@ export default function CompetitorComparison() {
           <ul className="space-y-3 text-green-900">
             <li className="flex gap-3">
               <span className="text-xl">✓</span>
-              <span><strong>We have the cash:</strong> We buy your home ourselves. No wholesaling. No assignment contracts.</span>
+              <span><strong>We discuss proof of funds:</strong> We buy directly and can explain funding, escrow, assignment language, and closing terms before you rely on the offer.</span>
             </li>
             <li className="flex gap-3">
               <span className="text-xl">✓</span>
@@ -191,9 +191,17 @@ export default function CompetitorComparison() {
             </li>
             <li className="flex gap-3">
               <span className="text-xl">✓</span>
-              <span><strong>Largest independent buyer in the valley:</strong> We've bought 700+ homes. We have the capital and experience.</span>
+              <span><strong>Second-opinion process:</strong> If you already have an offer, we can help you compare net proceeds, closing certainty, inspection terms, and proof of funds.</span>
             </li>
           </ul>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link href="/cash-buyer-proof-of-funds-fresno" className="rounded-lg bg-green-700 px-5 py-3 font-bold text-white hover:bg-green-800 transition-colors">
+              Verify Proof of Funds
+            </Link>
+            <Link href="/second-opinion" className="rounded-lg border-2 border-green-700 px-5 py-3 font-bold text-green-800 hover:bg-green-100 transition-colors">
+              Get a Second Opinion
+            </Link>
+          </div>
         </div>
 
         {/* CTA */}

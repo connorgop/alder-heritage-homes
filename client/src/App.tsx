@@ -98,6 +98,12 @@ const TitleIssuesChowchilla = lazy(() => import("./pages/TitleIssuesChowchilla")
 const TitleIssuesHanford = lazy(() => import("./pages/TitleIssuesHanford"));
 const TitleIssuesMadera = lazy(() => import("./pages/TitleIssuesMadera"));
 const TitleIssuesReedley = lazy(() => import("./pages/TitleIssuesReedley"));
+const TitleIssuesClovis = lazy(() => import("./pages/TitleIssuesClovis"));
+const TitleIssuesVisalia = lazy(() => import("./pages/TitleIssuesVisalia"));
+const TitleIssuesSelma = lazy(() => import("./pages/TitleIssuesSelma"));
+const TitleIssuesSanger = lazy(() => import("./pages/TitleIssuesSanger"));
+const TitleIssuesKingsburg = lazy(() => import("./pages/TitleIssuesKingsburg"));
+const ProofOfFundsFresno = lazy(() => import("./pages/ProofOfFundsFresno"));
 const InheritedDeedProblem = lazy(() => import("./pages/services/InheritedDeedProblem"));
 const MultipleHeirs = lazy(() => import("./pages/services/MultipleHeirs"));
 const UnpaidPropertyTaxes = lazy(() => import("./pages/services/UnpaidPropertyTaxes"));
@@ -470,6 +476,12 @@ function Router() {
       <Route path="/sell-house-title-issues-hanford" component={TitleIssuesHanford} />
       <Route path="/sell-house-title-issues-madera" component={TitleIssuesMadera} />
       <Route path="/sell-house-title-issues-reedley" component={TitleIssuesReedley} />
+      <Route path="/sell-house-title-issues-clovis" component={TitleIssuesClovis} />
+      <Route path="/sell-house-title-issues-visalia" component={TitleIssuesVisalia} />
+      <Route path="/sell-house-title-issues-selma" component={TitleIssuesSelma} />
+      <Route path="/sell-house-title-issues-sanger" component={TitleIssuesSanger} />
+      <Route path="/sell-house-title-issues-kingsburg" component={TitleIssuesKingsburg} />
+      <Route path="/cash-buyer-proof-of-funds-fresno" component={ProofOfFundsFresno} />
       <Route path="/sell-house-deed-issues-fresno"><Redirect to="/sell-house-title-issues-fresno" /></Route>
       <Route path="/sell-house-clouded-title-fresno"><Redirect to="/sell-house-title-issues-fresno" /></Route>
       <Route path="/sell-house-with-title-problems"><Redirect to="/sell-house-title-issues-fresno" /></Route>
