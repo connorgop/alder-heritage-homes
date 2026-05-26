@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown, AlertTriangle, CheckCircle2, XCircle } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 export default function CompetitorWarning() {
   const [expandedCompany, setExpandedCompany] = useState<string | null>(null);
@@ -107,6 +108,11 @@ export default function CompetitorWarning() {
 
   return (
     <div className="min-h-screen bg-background">
+      <PageMeta
+        title="Cash Buyer Red Flags in Fresno"
+        description="Before signing with a Fresno cash buyer, learn the red flags to check: assignment clauses, proof of funds, closing certainty, and last-minute price cuts."
+        path="/competitor-warning"
+      />
       {/* HERO */}
       <div className="bg-gradient-to-r from-red-600 to-red-700 px-4 py-16 text-white">
         <div className="mx-auto max-w-4xl">

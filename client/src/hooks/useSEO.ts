@@ -38,9 +38,18 @@ function setLink(rel: string, href: string) {
 }
 
 function normalizeTitle(title: string): string {
-  if (/alder heritage homes/i.test(title)) return title;
-  if (title.length >= 52) return title;
-  return `${title} | ${SITE_NAME}`;
+  const unbranded = title.replace(/\s[|—]\s*Alder Heritage Homes.*$/i, "").trim();
+  if (unbranded.length >= 30 && unbranded.length <= 65) return unbranded;
+  if (/alder heritage homes/i.test(title) && title.length <= 70) return title;
+  if (title.length > 70) {
+    const beforeSeparator = title.split(/\s[—|]\s/)[0]?.trim();
+    if (beforeSeparator && beforeSeparator.length >= 30 && beforeSeparator.length <= 65) return beforeSeparator;
+    const clipped = title.slice(0, 67);
+    const breakAt = clipped.lastIndexOf(" ");
+    return `${clipped.slice(0, breakAt > 45 ? breakAt : 67)}...`;
+  }
+  const branded = `${title} | ${SITE_NAME}`;
+  return branded.length <= 70 ? branded : title;
 }
 
 function normalizeDescription(description: string): string {

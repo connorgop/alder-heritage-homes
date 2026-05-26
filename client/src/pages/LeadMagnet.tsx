@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Download, CheckCircle2, AlertTriangle, ArrowRight, Mail } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 export default function LeadMagnet() {
   const [formStep, setFormStep] = useState(1);
@@ -35,6 +36,12 @@ export default function LeadMagnet() {
   if (submitted) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 px-4 py-12">
+        <PageMeta
+          title="Cash Sale Guide Download"
+          description="Download the Fresno cash home sale guide and learn the mistakes sellers should avoid before signing with any cash buyer."
+          path="/free-guide"
+          noIndex
+        />
         <div className="mx-auto max-w-2xl text-center">
           <div className="mb-6 flex justify-center">
             <div className="rounded-full bg-green-100 p-4">
@@ -103,6 +110,11 @@ export default function LeadMagnet() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 px-4 py-12">
+      <PageMeta
+        title="Free Cash Home Sale Guide Fresno"
+        description="Download the Fresno cash home sale guide. Learn how to compare buyers, verify proof of funds, avoid lowball offers, and protect your net proceeds."
+        path="/free-guide"
+      />
       <div className="grid gap-8 mx-auto max-w-5xl md:grid-cols-2">
         {/* LEFT SIDE - CONTENT */}
         <div className="flex flex-col justify-center">
@@ -121,6 +133,12 @@ export default function LeadMagnet() {
 
           <p className="mb-8 text-gray-700">
             This guide reveals the 5 critical mistakes that allow wholesalers to trap sellers—and how to protect yourself.
+          </p>
+          <p className="mb-6 text-gray-700">
+            It is written for Fresno and Central Valley homeowners who need a clean decision before they sign: inherited houses, tired rentals, foreclosure timelines, deed problems, title issues, and homes that need repairs before a normal buyer will qualify.
+          </p>
+          <p className="mb-8 text-gray-700">
+            Use it to compare a cash offer against a traditional listing, ask better questions, and understand what should be handled through escrow before closing.
           </p>
 
           <div className="mb-8 space-y-3">

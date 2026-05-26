@@ -1,9 +1,15 @@
 import React from "react";
 import { Link } from "wouter";
+import PageMeta from "@/components/PageMeta";
 
 export default function CompetitorComparison() {
   return (
     <div className="min-h-screen bg-background">
+      <PageMeta
+        title="Compare Cash Buyers in Fresno"
+        description="Compare Fresno cash home buyers before signing. Learn how proof of funds, assignment clauses, closing timelines, fees, and repair credits affect your net."
+        path="/compare-cash-buyers-fresno"
+      />
       {/* HERO */}
       <div className="bg-gradient-to-r from-amber-600 to-amber-700 px-4 py-16 text-white">
         <div className="mx-auto max-w-4xl">

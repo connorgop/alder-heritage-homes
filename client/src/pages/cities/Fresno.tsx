@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2, MapPin, Shield, Clock, DollarSign, Home, Star } from "lucide-react";
 import CashOfferForm from "@/components/CashOfferForm";
+import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:+15592818016";
@@ -77,6 +78,11 @@ export default function FresnoPage() {
 
   return (
     <Layout>
+      <PageMeta
+        title="We Buy Houses Fresno CA"
+        description="Sell your Fresno house for cash to a licensed local direct buyer. We buy as-is, handle deed and title issues, pay closing costs, and close fast."
+        path="/we-buy-houses-fresno"
+      />
       {/* Hero */}
       <section className="relative py-20 md:py-28 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1400&auto=format&fit=crop')", backgroundSize: "cover", backgroundPosition: "center" }} />

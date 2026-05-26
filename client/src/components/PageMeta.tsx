@@ -42,7 +42,9 @@ function setCanonical(url: string) {
 }
 
 function normalizeTitle(title: string): string {
-  if (/alder heritage homes/i.test(title)) return title;
+  const unbranded = title.replace(/\s[|—]\s*Alder Heritage Homes.*$/i, "").trim();
+  if (unbranded.length >= 30 && unbranded.length <= 65) return unbranded;
+  if (/alder heritage homes/i.test(title) && title.length <= 70) return title;
   if (title.length > 70) {
     const beforeSeparator = title.split(/\s[—|]\s/)[0]?.trim();
     if (beforeSeparator && beforeSeparator.length >= 30 && beforeSeparator.length <= 65) {

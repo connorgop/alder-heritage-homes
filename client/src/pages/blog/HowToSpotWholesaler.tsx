@@ -1,9 +1,16 @@
 import React from "react";
 import { AlertTriangle, CheckCircle2, XCircle, Phone, ArrowRight } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 export default function HowToSpotWholesaler() {
   return (
     <article className="min-h-screen bg-white">
+      <PageMeta
+        title="How to Spot a Real Estate Wholesaler"
+        description="Learn the contract red flags Fresno home sellers should check before signing with a cash buyer, including proof of funds, assignments, and price cuts."
+        path="/blog/how-to-spot-a-wholesaler"
+        type="article"
+      />
       {/* Header */}
       <div className="bg-gradient-to-r from-red-600 to-red-700 px-4 py-12 text-white">
         <div className="mx-auto max-w-3xl">

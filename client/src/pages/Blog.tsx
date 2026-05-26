@@ -654,7 +654,7 @@ const _blogPostsRaw = [
   },
   {
     slug: "retirement-homes-fresno-central-valley-guide",
-    title: "Retirement Homes in Fresno & the Central Valley: Pricing, Reviews & What to Expect",
+    title: "Retirement Homes in Fresno and the Central Valley",
     excerpt: "A detailed guide to every major retirement community in Fresno, Clovis, Visalia, and Madera — with real pricing, honest pros and cons, and how to sell your home to fund the move.",
     category: "Senior Living",
     date: "April 3, 2026",
@@ -1152,7 +1152,7 @@ const _blogPostsRaw = [
   },
   {
     slug: "fresno-real-estate-market-2026-buyers-sellers",
-    title: "Fresno Real Estate Market 2026: Buyer & Seller Conditions Explained",
+    title: "Fresno Real Estate Market 2026: Buyer and Seller Guide",
     excerpt: "The Fresno market has cooled from its 2022 peak but remains healthy. Here's a data-driven look at current conditions, which neighborhoods are holding value, and whether you should sell now or wait.",
     category: "Market & Timing",
     date: "April 4, 2026",
@@ -1883,7 +1883,7 @@ const _blogPostsRaw = [
   },
   {
     slug: "fowler-housing-market-2026",
-    title: "Fowler CA Housing Market 2026 — Prices, Trends & What Sellers Need to Know",
+    title: "Fowler CA Housing Market 2026: Prices and Trends",
     excerpt: "Fowler's housing market is one of the most overlooked in Fresno County. With a very small buyer pool and older housing stock, sellers need to understand the market before listing. Here's what the data shows for 2026.",
     category: "Market Reports",
     date: "2026-04-06",
@@ -2018,7 +2018,7 @@ const _blogPostsRaw = [
   },
   {
     slug: "sell-house-fast-kings-county-ca",
-    title: "Sell Your House Fast in Kings County CA — Hanford, Lemoore & Beyond",
+    title: "Sell Your House Fast in Kings County CA",
     excerpt: "Kings County has one of California's highest cash buyer shares. This guide explains why, covers every city in the county, and shows you how to close in 3 days.",
     category: "Fast Sale",
     date: "2026-04-06",
@@ -2027,7 +2027,7 @@ const _blogPostsRaw = [
   },
   {
     slug: "sell-inherited-house-fresno-ca",
-    title: "Sell an Inherited House in Fresno CA — Probate, Taxes & Your Options",
+    title: "Sell an Inherited House in Fresno CA",
     excerpt: "Inherited a home in Fresno or the Central Valley? This complete guide covers the California probate process, stepped-up basis tax benefits, and how to sell quickly without repairs or agent fees.",
     category: "Probate & Inherited",
     date: "2026-04-09",

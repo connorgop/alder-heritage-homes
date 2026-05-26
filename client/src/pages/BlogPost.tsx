@@ -144,26 +144,26 @@ export default function BlogPost() {
     "Probate & Inherited": [
       { label: "Probate Real Estate Fresno", href: "/probate-real-estate-fresno" },
       { label: "Probate Homes", href: "/probate-homes" },
-      { label: "Inherited Property", href: "/inherited-property" },
+      { label: "Inherited Property", href: "/sell-inherited-property-fresno" },
     ],
     "Divorce & Life Changes": [
-      { label: "Divorce Home Sale", href: "/divorce-home" },
+      { label: "Divorce Home Sale", href: "/sell-house-divorce" },
       { label: "Sell House Fast", href: "/sell-house-fast" },
     ],
     "Landlord & Rental": [
       { label: "Tired Landlord", href: "/tired-landlord" },
-      { label: "Tenant Issues", href: "/tenant-issues" },
-      { label: "Eviction Help", href: "/eviction-help" },
+      { label: "Tenant Issues", href: "/lp/tired-landlord-fresno" },
+      { label: "Eviction Help", href: "/tired-landlord" },
     ],
     "Property Condition": [
-      { label: "Sell As-Is", href: "/sell-as-is" },
-      { label: "Hoarder House", href: "/hoarder-house" },
-      { label: "Fire Damage", href: "/sell-house-fire-damage-fresno" },
+      { label: "Sell As-Is", href: "/sell-house-as-is-fresno" },
+      { label: "Hoarder House", href: "/hoarder-home-buyer-fresno" },
+      { label: "Fire Damage", href: "/sell-house-fire-damage" },
       { label: "Code Violations", href: "/sell-house-code-violations-fresno" },
     ],
     "Market & Timing": [
       { label: "Sell House Fast Fresno", href: "/sell-house-fast-fresno-ca" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
     ],
     "Relocation": [
       { label: "Sell My House", href: "/sell-my-house" },
@@ -179,7 +179,7 @@ export default function BlogPost() {
     ],
     "Seller Guides": [
       { label: "Sell My House Fresno", href: "/sell-my-house-fresno-ca" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
       { label: "Why Choose Us", href: "/why-choose-us" },
     ],
     "Consumer Warning": [
@@ -190,32 +190,32 @@ export default function BlogPost() {
     "Fast Sale": [
       { label: "Sell House Fast Fresno", href: "/sell-house-fast-fresno-ca" },
       { label: "We Buy Houses Fresno", href: "/we-buy-houses-fresno" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
     ],
     "Landlord": [
       { label: "Tired Landlord", href: "/tired-landlord" },
       { label: "Sell Rental Portfolio", href: "/sell-rental-portfolio" },
-      { label: "Tenant Issues", href: "/tenant-issues" },
+      { label: "Tenant Issues", href: "/lp/tired-landlord-fresno" },
     ],
     "Bakersfield": [
       { label: "Sell My House Bakersfield", href: "/sell-my-house-bakersfield-ca" },
       { label: "We Buy Houses Bakersfield", href: "/we-buy-houses-bakersfield" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
     ],
     "Stockton": [
       { label: "Sell My House Stockton", href: "/sell-my-house-stockton-ca" },
       { label: "We Buy Houses Stockton", href: "/we-buy-houses-stockton" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
     ],
     "Modesto": [
       { label: "Sell My House Modesto", href: "/sell-my-house-modesto-ca" },
       { label: "We Buy Houses Modesto", href: "/we-buy-houses-modesto" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
     ],
     "Northern Valley": [
       { label: "Sell My House Stockton", href: "/sell-my-house-stockton-ca" },
       { label: "Sell My House Modesto", href: "/sell-my-house-modesto-ca" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
     ],
     "Foreclosure": [
       { label: "Foreclosure Help", href: "/foreclosure-help" },
@@ -228,7 +228,7 @@ export default function BlogPost() {
       { label: "Can't Afford Home", href: "/cant-afford-home" },
     ],
     "Competitor Comparison": [
-      { label: "Compare Cash Buyers", href: "/compare-cash-buyers" },
+      { label: "Compare Cash Buyers", href: "/compare-cash-buyers-fresno" },
       { label: "Don't Get Wholesaled", href: "/dont-get-wholesaled" },
       { label: "Get My Cash Offer", href: "/contact" },
     ],
@@ -240,7 +240,7 @@ export default function BlogPost() {
     "Merced": [
       { label: "Sell House Fast Merced", href: "/sell-house-fast-merced-ca" },
       { label: "Sell My House Merced", href: "/sell-my-house-merced-ca" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
     ],
     "Kings County": [
       { label: "Sell House Fast Hanford", href: "/sell-house-fast-hanford-ca" },
@@ -250,7 +250,7 @@ export default function BlogPost() {
     "Turlock": [
       { label: "Sell House Fast Turlock", href: "/sell-house-fast-turlock-ca" },
       { label: "Sell My House Modesto", href: "/sell-my-house-modesto-ca" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
     ],
     "Seller Education": [
       { label: "How Much Cash Buyers Pay", href: "/how-much-do-cash-buyers-pay-for-houses" },
@@ -259,17 +259,17 @@ export default function BlogPost() {
     ],
     "Market Updates": [
       { label: "Sell My House Fresno", href: "/sell-my-house-fresno-ca" },
-      { label: "Cash Offer Calculator", href: "/calculator" },
-      { label: "Compare Cash Buyers", href: "/compare-cash-buyers" },
+      { label: "Cash Offer Calculator", href: "/cash-offer-calculator" },
+      { label: "Compare Cash Buyers", href: "/compare-cash-buyers-fresno" },
     ],
     "Code Violations": [
       { label: "Sell House Code Violations", href: "/sell-house-code-violations-fresno" },
-      { label: "Sell As-Is", href: "/sell-as-is" },
+      { label: "Sell As-Is", href: "/sell-house-as-is-fresno" },
       { label: "Get My Cash Offer", href: "/contact" },
     ],
     "Problem Properties": [
-      { label: "Hoarder House", href: "/hoarder-house" },
-      { label: "Sell As-Is", href: "/sell-as-is" },
+      { label: "Hoarder House", href: "/hoarder-home-buyer-fresno" },
+      { label: "Sell As-Is", href: "/sell-house-as-is-fresno" },
       { label: "Get My Cash Offer", href: "/contact" },
     ],
     "Difficult Situations": [

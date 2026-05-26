@@ -1,9 +1,16 @@
 import React from "react";
 import { CheckCircle2, AlertTriangle, Clock, DollarSign, FileText, Phone, ArrowRight } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 export default function ProbateHomeSaleGuide() {
   return (
     <article className="min-h-screen bg-white">
+      <PageMeta
+        title="Probate Home Sale Guide"
+        description="A Fresno probate home sale guide for heirs and executors: timelines, court steps, repairs, title issues, cash sale options, and closing choices."
+        path="/blog/probate-home-sale-guide"
+        type="article"
+      />
       {/* Header */}
       <div className="bg-gradient-to-r from-purple-600 to-purple-700 px-4 py-12 text-white">
         <div className="mx-auto max-w-3xl">

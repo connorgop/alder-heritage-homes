@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TrendingUp, Home, DollarSign, MapPin, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 export default function ClovisComparison() {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState("old-town");
@@ -86,6 +87,11 @@ export default function ClovisComparison() {
 
   return (
     <article className="min-h-screen bg-white">
+      <PageMeta
+        title="Clovis Cash Offer vs Listing Calculator"
+        description="Compare a Clovis cash home offer against listing with an agent, including repairs, commission, holding time, closing costs, and estimated net proceeds."
+        path="/price-comparison-clovis"
+      />
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-12 text-white">
         <div className="mx-auto max-w-4xl">

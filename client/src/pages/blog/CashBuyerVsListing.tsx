@@ -1,9 +1,16 @@
 import React from "react";
 import { CheckCircle2, Clock, DollarSign, Home, TrendingUp, AlertCircle } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 export default function CashBuyerVsListing() {
   return (
     <article className="min-h-screen bg-white">
+      <PageMeta
+        title="Cash Buyer vs Traditional Listing"
+        description="Compare a Fresno cash home sale against listing with an agent: timeline, repairs, fees, certainty, net proceeds, and when each option makes sense."
+        path="/blog/cash-buyer-vs-listing"
+        type="article"
+      />
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-12 text-white">
         <div className="mx-auto max-w-3xl">

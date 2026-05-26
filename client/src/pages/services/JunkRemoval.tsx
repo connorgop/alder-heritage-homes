@@ -8,6 +8,7 @@
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2, Lightbulb, DollarSign } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 const PHONE = "(559) 281-8016";
 const PHONE_HREF = "tel:5592818016";
@@ -15,6 +16,11 @@ const PHONE_HREF = "tel:5592818016";
 export default function JunkRemoval() {
   return (
     <Layout>
+      <PageMeta
+        title="Junk Removal Before Selling a House"
+        description="Before paying for junk removal or an estate cleanout in Fresno, see when selling as-is with everything left behind may save time and money."
+        path="/junk-removal-before-selling"
+      />
       {/* Hero */}
       <section className="relative py-24 overflow-hidden" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="container relative z-10">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TrendingUp, Home, DollarSign, MapPin, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 export default function FresnoComparison() {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState("tower-district");
@@ -86,6 +87,11 @@ export default function FresnoComparison() {
 
   return (
     <article className="min-h-screen bg-white">
+      <PageMeta
+        title="Fresno Cash Offer vs Listing Calculator"
+        description="Compare a Fresno cash home offer against a traditional listing, including repairs, commission, days on market, closing costs, and estimated net proceeds."
+        path="/price-comparison-fresno"
+      />
       {/* Header */}
       <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 px-4 py-12 text-white">
         <div className="mx-auto max-w-4xl">

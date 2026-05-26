@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TrendingUp, Home, DollarSign, MapPin, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 export default function VisaliaComparison() {
   const [selectedNeighborhood, setSelectedNeighborhood] = useState("downtown");
@@ -86,6 +87,11 @@ export default function VisaliaComparison() {
 
   return (
     <article className="min-h-screen bg-white">
+      <PageMeta
+        title="Visalia Cash Offer vs Listing Calculator"
+        description="Compare a Visalia cash home offer against a traditional sale, including repair costs, agent commission, days on market, and expected net proceeds."
+        path="/price-comparison-visalia"
+      />
       {/* Header */}
       <div className="bg-gradient-to-r from-amber-600 to-amber-700 px-4 py-12 text-white">
         <div className="mx-auto max-w-4xl">

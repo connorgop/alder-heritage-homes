@@ -23,6 +23,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Copy, CheckCircle2, Calendar, Star, AlertCircle, ShieldCheck, ExternalLink } from "lucide-react";
+import PageMeta from "@/components/PageMeta";
 
 const postTemplates = [
   {
@@ -580,6 +581,12 @@ export default function GBPTemplates() {
 
   return (
     <Layout>
+      <PageMeta
+        title="Google Business Post Templates"
+        description="Internal Google Business Profile post templates for Alder Heritage Homes, written to avoid risky claims and keep local seller education policy-safe."
+        path="/gbp-post-templates"
+        noIndex
+      />
       <div className="max-w-4xl mx-auto px-4 py-10">
         {/* Header */}
         <div className="mb-6">

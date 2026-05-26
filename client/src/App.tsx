@@ -372,7 +372,6 @@ function Router() {
       <Route path="/about-connor" component={AboutConnor} />
       <Route path="/why-i-left" component={WhyILeft} />
       <Route path="/competitor-warning" component={CompetitorWarning} />
-      <Route path="/wholesaler-warning"><Redirect to="/competitor-warning" /></Route>
       <Route path="/ads/competitor-warning" component={CompetitorWarningAd} />
       <Route path="/lead-magnet"><Redirect to="/free-guide" /></Route>
       <Route path="/free-guide" component={LeadMagnet} />
@@ -386,7 +385,6 @@ function Router() {
       <Route path="/price-comparison-clovis" component={ClovisComparison} />
       <Route path="/price-comparison-visalia" component={VisaliaComparison} />
       <Route path="/ads/lead-capture" component={LeadCapture} />
-      <Route path="/lead-capture" component={LeadCapture} />
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />

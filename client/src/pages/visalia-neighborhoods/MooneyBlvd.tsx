@@ -45,6 +45,15 @@ export default function VisaliaNeighborhood_MooneyBlvd() {
                 Alder Heritage Homes purchases properties throughout this area as-is — no repairs, no cleaning, no staging required.
                 Our cash offers are based on current comparable sales and delivered within 24 hours.
               </p>
+              <p className="text-[#5a6e5a] leading-relaxed mt-3">
+                Because Mooney Boulevard connects many of Visalia's retail, medical, and rental corridors, buyers care heavily about access, parking,
+                roof condition, HVAC age, and whether the home will need updates before it can qualify for traditional financing. A cash sale can remove
+                those repair negotiations when the house has older systems, tenant wear, inherited belongings, or years of deferred maintenance.
+              </p>
+              <p className="text-[#5a6e5a] leading-relaxed mt-3">
+                We can also help when the sale is tied to probate, multiple heirs, a deed correction, back taxes, or a landlord exit. The offer is handled
+                through escrow, and we coordinate with title so payoff demands, liens, signatures, and closing instructions are addressed before closing.
+              </p>
             </div>
 
             <div>

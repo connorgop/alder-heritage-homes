@@ -1,8 +1,14 @@
 import React from "react";
+import PageMeta from "@/components/PageMeta";
 
 export default function WhyILeft() {
   return (
     <div className="min-h-screen bg-background">
+      <PageMeta
+        title="Why I Left GREimagined"
+        description="Connor Morris explains why he left GREimagined and built Alder Heritage Homes around direct cash purchases, proof of funds, and no assignment contracts."
+        path="/why-i-left"
+      />
       {/* HERO */}
       <div className="bg-gradient-to-r from-amber-600 to-amber-700 px-4 py-16 text-white">
         <div className="mx-auto max-w-4xl">

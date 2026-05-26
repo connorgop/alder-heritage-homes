@@ -64,12 +64,18 @@ function* walkHtmlFiles(dir: string, prefix = ""): Generator<{ path: string; abs
 }
 
 function extractMeta(html: string) {
+  const attr = (tagPattern: RegExp, name: string) => {
+    const tag = html.match(tagPattern)?.[0];
+    if (!tag) return undefined;
+    return tag.match(new RegExp(`${name}=(["'])(.*?)\\1`, "i"))?.[2];
+  };
+
   const title = html.match(/<title[^>]*>([^<]+)<\/title>/i)?.[1]?.trim();
-  const description = html.match(/<meta\s+name=["']description["']\s+content=["']([^"']+)["']/i)?.[1];
-  const canonical = html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']/i)?.[1];
-  const ogTitle = html.match(/<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i)?.[1];
-  const ogDescription = html.match(/<meta\s+property=["']og:description["']\s+content=["']([^"']+)["']/i)?.[1];
-  const ogImage = html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i)?.[1];
+  const description = attr(/<meta\b(?=[^>]*\bname=["']description["'])[^>]*>/i, "content");
+  const canonical = attr(/<link\b(?=[^>]*\brel=["']canonical["'])[^>]*>/i, "href");
+  const ogTitle = attr(/<meta\b(?=[^>]*\bproperty=["']og:title["'])[^>]*>/i, "content");
+  const ogDescription = attr(/<meta\b(?=[^>]*\bproperty=["']og:description["'])[^>]*>/i, "content");
+  const ogImage = attr(/<meta\b(?=[^>]*\bproperty=["']og:image["'])[^>]*>/i, "content");
   const h1Count = (html.match(/<h1\b/gi) ?? []).length;
   const jsonLdCount = (html.match(/<script[^>]*type=["']application\/ld\+json["']/gi) ?? []).length;
 

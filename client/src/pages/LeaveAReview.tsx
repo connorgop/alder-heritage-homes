@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
+import PageMeta from "@/components/PageMeta";
 
 export default function LeaveAReview() {
   useEffect(() => {
@@ -18,6 +19,12 @@ export default function LeaveAReview() {
 
   return (
     <div className="min-h-screen bg-[oklch(0.97_0.01_60)]">
+      <PageMeta
+        title="Leave a Review"
+        description="Leave an honest Google review for Alder Heritage Homes and help Central Valley homeowners find a local cash buyer they can trust."
+        path="/leave-a-review"
+        noIndex
+      />
       {/* Hero */}
       <section className="bg-[oklch(0.22_0.04_45)] text-white py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
@@ -111,6 +118,9 @@ export default function LeaveAReview() {
           </h2>
           <p className="text-center text-[oklch(0.40_0.03_45)] mb-8">
             Just be honest about your experience. Here are a few prompts to get you started:
+          </p>
+          <p className="text-center text-[oklch(0.40_0.03_45)] mb-8">
+            Useful reviews are specific. Mention the city, the property situation, how quickly we responded, whether the offer process felt clear, and whether escrow closed on the timeline you expected. Those details help the next homeowner decide who to call.
           </p>
           <div className="space-y-4">
             {[

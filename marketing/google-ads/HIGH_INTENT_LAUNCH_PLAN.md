@@ -33,7 +33,8 @@ Use these only after conversion tracking is confirmed. Start small, use exact an
 
 ## Negative Keywords to Add Immediately
 
-Add these at the account or campaign level:
+Add these at the account or campaign level. Also import
+`high-intent-negative-keywords.csv` into the new high-intent campaigns.
 
 - rent
 - rentals
@@ -55,3 +56,11 @@ Add these at the account or campaign level:
 ## Lead Quality Rule
 
 A good lead is an owner or decision-maker who may sell a Central Valley property. Everything else is noise, even if Google calls it a conversion.
+
+## Expansion Rule
+
+Do not launch every city at once. Start with Fresno, Clovis, Madera, Hanford,
+Visalia, Reedley, Kerman, Chowchilla, and Selma exact/phrase groups. After a
+city gets 20 clicks, keep it only if the search terms show owner intent:
+probate, inherited, title issue, foreclosure, deed, liens, tired landlord,
+sell rental, tenants, cash buyer, or compare buyer.

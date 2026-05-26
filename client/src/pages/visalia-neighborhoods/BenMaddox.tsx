@@ -45,6 +45,17 @@ export default function VisaliaNeighborhood_BenMaddox() {
                 Alder Heritage Homes purchases properties throughout this area as-is — no repairs, no cleaning, no staging required.
                 Our cash offers are based on current comparable sales and delivered within 24 hours.
               </p>
+              <p className="text-[#5a6e5a] leading-relaxed mt-3">
+                Ben Maddox sellers often have more equity than sellers in older Visalia neighborhoods, which makes offer clarity especially important.
+                We compare the cash offer against a realistic retail sale, including likely repairs, cleanout, seller credits, commission, holding costs,
+                and the risk of a buyer asking for concessions after inspections. If listing would likely put more money in your pocket and your timeline
+                allows it, we will say that directly.
+              </p>
+              <p className="text-[#5a6e5a] leading-relaxed mt-3">
+                The cash route is usually strongest when the property has deferred maintenance, an inherited ownership situation, tenant issues,
+                a fast relocation deadline, or title work that needs coordination before closing. We work through escrow and title, so liens,
+                payoff requests, deed questions, and inherited-property signatures can be handled before money changes hands.
+              </p>
             </div>
 
             <div>
