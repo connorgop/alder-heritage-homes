@@ -4212,4 +4212,33 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <!-- Probate city pages - new cities (May 2026) -->
+  <url><loc>https://www.alderheritagehomes.com/probate-home-buyer-fresno-ca</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/probate-home-buyer-clovis</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/probate-home-buyer-sanger</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/probate-home-buyer-selma</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/probate-home-buyer-kingsburg</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/probate-home-buyer-porterville</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/probate-home-buyer-tulare</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/probate-home-buyer-bakersfield</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Foreclosure city pages - new cities (May 2026) -->
+  <url><loc>https://www.alderheritagehomes.com/stop-foreclosure-fresno</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/stop-foreclosure-clovis</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/stop-foreclosure-sanger</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/stop-foreclosure-selma</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/stop-foreclosure-kingsburg</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/stop-foreclosure-porterville</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/stop-foreclosure-tulare</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/stop-foreclosure-bakersfield</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Landlord/rental city pages - new cities (May 2026) -->
+  <url><loc>https://www.alderheritagehomes.com/sell-rental-property-fresno</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/sell-rental-property-clovis</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/sell-rental-property-sanger</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/sell-rental-property-selma</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/sell-rental-property-kingsburg</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/sell-rental-property-porterville</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/sell-rental-property-tulare</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.alderheritagehomes.com/sell-rental-property-bakersfield</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Attorney referral pages (May 2026) -->
+  <url><loc>https://www.alderheritagehomes.com/for-estate-planning-attorneys</loc><lastmod>2026-05-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

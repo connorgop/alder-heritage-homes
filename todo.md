@@ -192,3 +192,22 @@
 - [x] Rewrite all 24 GBP post templates to be fully policy-compliant
 - [x] Write appeal instructions for Connor to restore GBP posting (built into GBPTemplates.tsx Appeal tab)
 - [x] Update GBPTemplates.tsx with compliant post library (tabbed UI: Templates + Appeal Instructions)
+
+## SEO Expansion Sprint (May 25-26, 2026)
+
+### Search Console Audit Findings
+- [x] Sitemap resubmitted — was at 559 discovered URLs, now 727 URLs submitted
+- [x] Identified 54 "Crawled - currently not indexed" pages (thin content issue)
+- [x] Identified 137 new pages not yet crawled (added since May 8 sitemap read)
+
+### New City-Specific Landing Pages (25 pages)
+- [x] Probate: Fresno, Clovis, Sanger, Selma, Kingsburg, Porterville, Tulare, Bakersfield
+- [x] Foreclosure: Fresno, Clovis, Sanger, Selma, Kingsburg, Porterville, Tulare, Bakersfield
+- [x] Landlord/Rental: Fresno, Clovis, Sanger, Selma, Kingsburg, Porterville, Tulare, Bakersfield
+- [x] Estate Planning Attorney referral page (/for-estate-planning-attorneys)
+- [x] All 25 pages registered in App.tsx router
+- [x] All 25 URLs added to sitemap.xml (now 727 total URLs)
+
+### Microsoft Clarity Tracking
+- [x] Added Clarity tracking script (project ID: wwzrnpr852) to client/index.html
+- [x] Confirmed live on www.alderheritagehomes.com via curl verification

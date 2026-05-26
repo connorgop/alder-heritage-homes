@@ -368,6 +368,34 @@ const AdminSeo = lazy(() => import("./pages/AdminSeo"));
 const ForProbateAttorneys = lazy(() => import("./pages/ForProbateAttorneys"));
 const ForDivorceAttorneys = lazy(() => import("./pages/ForDivorceAttorneys"));
 const EstateSalePartnership = lazy(() => import("./pages/EstateSalePartnership"));
+const ForEstatePlanningAttorneys = lazy(() => import("./pages/ForEstatePlanningAttorneys"));
+// New probate city pages
+const ProbateClovis = lazy(() => import("./pages/ProbateClovis"));
+const ProbateSanger = lazy(() => import("./pages/ProbateSanger"));
+const ProbateSelma = lazy(() => import("./pages/ProbateSelma"));
+const ProbateKingsburg = lazy(() => import("./pages/ProbateKingsburg"));
+const ProbatePorterville = lazy(() => import("./pages/ProbatePorterville"));
+const ProbateTulare = lazy(() => import("./pages/ProbateTulare"));
+const ProbateBakersfield = lazy(() => import("./pages/ProbateBakersfield"));
+const ProbateFresno = lazy(() => import("./pages/ProbateFresno"));
+// New foreclosure city pages
+const ForeclosureClovis = lazy(() => import("./pages/ForeclosureClovis"));
+const ForeclosureSanger = lazy(() => import("./pages/ForeclosureSanger"));
+const ForeclosureSelma = lazy(() => import("./pages/ForeclosureSelma"));
+const ForeclosureKingsburg = lazy(() => import("./pages/ForeclosureKingsburg"));
+const ForeclosurePorterville = lazy(() => import("./pages/ForeclosurePorterville"));
+const ForeclosureTulare = lazy(() => import("./pages/ForeclosureTulare"));
+const ForeclosureBakersfield = lazy(() => import("./pages/ForeclosureBakersfield"));
+const ForeclosureFresno = lazy(() => import("./pages/ForeclosureFresno"));
+// New landlord city pages
+const LandlordClovis = lazy(() => import("./pages/LandlordClovis"));
+const LandlordSanger = lazy(() => import("./pages/LandlordSanger"));
+const LandlordSelma = lazy(() => import("./pages/LandlordSelma"));
+const LandlordKingsburg = lazy(() => import("./pages/LandlordKingsburg"));
+const LandlordPorterville = lazy(() => import("./pages/LandlordPorterville"));
+const LandlordTulare = lazy(() => import("./pages/LandlordTulare"));
+const LandlordBakersfield = lazy(() => import("./pages/LandlordBakersfield"));
+const LandlordFresno = lazy(() => import("./pages/LandlordFresno"));
 function Router() {
   // make sure to consider if you need authentication for certain routes
   return (
@@ -872,6 +900,34 @@ function Router() {
       <Route path="/for-probate-attorneys" component={ForProbateAttorneys} />
       <Route path="/for-divorce-attorneys" component={ForDivorceAttorneys} />
       <Route path="/estate-sale-partnership" component={EstateSalePartnership} />
+      <Route path="/for-estate-planning-attorneys" component={ForEstatePlanningAttorneys} />
+      {/* New probate city pages */}
+      <Route path="/probate-home-buyer-clovis" component={ProbateClovis} />
+      <Route path="/probate-home-buyer-sanger" component={ProbateSanger} />
+      <Route path="/probate-home-buyer-selma" component={ProbateSelma} />
+      <Route path="/probate-home-buyer-kingsburg" component={ProbateKingsburg} />
+      <Route path="/probate-home-buyer-porterville" component={ProbatePorterville} />
+      <Route path="/probate-home-buyer-tulare" component={ProbateTulare} />
+      <Route path="/probate-home-buyer-bakersfield" component={ProbateBakersfield} />
+      <Route path="/probate-home-buyer-fresno-ca" component={ProbateFresno} />
+      {/* New foreclosure city pages */}
+      <Route path="/stop-foreclosure-clovis" component={ForeclosureClovis} />
+      <Route path="/stop-foreclosure-sanger" component={ForeclosureSanger} />
+      <Route path="/stop-foreclosure-selma" component={ForeclosureSelma} />
+      <Route path="/stop-foreclosure-kingsburg" component={ForeclosureKingsburg} />
+      <Route path="/stop-foreclosure-porterville" component={ForeclosurePorterville} />
+      <Route path="/stop-foreclosure-tulare" component={ForeclosureTulare} />
+      <Route path="/stop-foreclosure-bakersfield" component={ForeclosureBakersfield} />
+      <Route path="/stop-foreclosure-fresno" component={ForeclosureFresno} />
+      {/* New landlord city pages */}
+      <Route path="/sell-rental-property-clovis" component={LandlordClovis} />
+      <Route path="/sell-rental-property-sanger" component={LandlordSanger} />
+      <Route path="/sell-rental-property-selma" component={LandlordSelma} />
+      <Route path="/sell-rental-property-kingsburg" component={LandlordKingsburg} />
+      <Route path="/sell-rental-property-porterville" component={LandlordPorterville} />
+      <Route path="/sell-rental-property-tulare" component={LandlordTulare} />
+      <Route path="/sell-rental-property-bakersfield" component={LandlordBakersfield} />
+      <Route path="/sell-rental-property-fresno" component={LandlordFresno} />
       <Route path="/admin"><Redirect to="/admin/leads" /></Route>
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
