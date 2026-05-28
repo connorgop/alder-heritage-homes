@@ -335,25 +335,10 @@ export default function Home() {
       license: 'California DRE #02219124',
     };
 
-    const faqSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: faqs.map(f => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a },
-      })),
-    };
-
     const s1 = document.createElement('script');
     s1.type = 'application/ld+json';
     s1.textContent = JSON.stringify(schema);
     document.head.appendChild(s1);
-
-    const s2 = document.createElement('script');
-    s2.type = 'application/ld+json';
-    s2.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(s2);
 
     document.title = 'Cash Home Buyer Fresno | Alder Heritage Homes | 24hr Offers';
     const metaDesc = document.querySelector('meta[name="description"]');
