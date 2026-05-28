@@ -395,7 +395,7 @@ export default function ServicePage({
           Non-city pages get nothing — detectCitySlug returns undefined and CitySections doesn't render. */}
       {(() => {
         const effectiveCitySlug = citySlug ?? detectCitySlug(slug);
-        return effectiveCitySlug ? <CitySections slug={effectiveCitySlug} /> : null;
+        return effectiveCitySlug ? <CitySections slug={effectiveCitySlug} includeFaqSchema={!faq?.length} /> : null;
       })()}
 
       {showProofAssets && <ProofAssets assets={proofAssets} />}

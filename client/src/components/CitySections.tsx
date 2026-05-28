@@ -23,6 +23,8 @@ import SchemaMarkup, { cityLocalBusinessSchema, cityServiceSchema, faqPageSchema
 interface Props {
   /** City slug, must match a CityFacts.slug or alias in client/src/data/cities.ts */
   slug: string;
+  /** Disable when the host page already emits FAQPage JSON-LD. Visible city FAQs still render. */
+  includeFaqSchema?: boolean;
   /** Optional className for the outer wrapper */
   className?: string;
 }
@@ -31,7 +33,7 @@ function formatPrice(n: number): string {
   return `$${n.toLocaleString("en-US")}`;
 }
 
-export default function CitySections({ slug, className }: Props) {
+export default function CitySections({ slug, includeFaqSchema = true, className }: Props) {
   const facts = getCityFacts(slug);
   if (!facts) return null;
   const nearby = getNearbyCities(slug, 5);
@@ -41,7 +43,7 @@ export default function CitySections({ slug, className }: Props) {
       {/* ── JSON-LD: per-city LocalBusiness + Service + FAQ ────────────────── */}
       <SchemaMarkup schema={cityLocalBusinessSchema(facts)} id={`city-business-${facts.slug}`} />
       <SchemaMarkup schema={cityServiceSchema(facts)} id={`city-service-${facts.slug}`} />
-      <SchemaMarkup schema={faqPageSchema(facts.localFaq)} id={`city-faq-${facts.slug}`} />
+      {includeFaqSchema && <SchemaMarkup schema={faqPageSchema(facts.localFaq)} id={`city-faq-${facts.slug}`} />}
 
       <section className={`py-16 ${className ?? ""}`} style={{ background: "oklch(0.97 0.015 85)" }}>
         <div className="container max-w-5xl mx-auto px-4">
