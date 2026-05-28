@@ -7,9 +7,8 @@ import { useState, useRef } from "react";
 import { Phone, ArrowRight, CheckCircle2, Shield, Star, Clock, Play } from "lucide-react";
 import { Link } from "wouter";
 import { useConversionTracking } from "@/hooks/useConversionTracking";
+import { useTrackingPhone } from "@/hooks/useTrackingPhone";
 
-const PHONE = "(559) 281-8016";
-const PHONE_HREF = "tel:5592818016";
 const CONTACT_HREF = "/contact";
 const VIDEO_15S = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-15s_eeb37000.mp4";
 const VIDEO_15S_THUMB = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-video-15s-thumb_42de7c44.jpg";
@@ -176,6 +175,7 @@ export default function AdsLandingPage({
   urgency,
 }: AdsLandingPageProps) {
   const { trackPhoneClick } = useConversionTracking();
+  const trackingPhone = useTrackingPhone();
 
   return (
     <div className="min-h-screen" style={{ background: "oklch(0.97 0.015 85)", fontFamily: "'Nunito Sans', sans-serif" }}>
@@ -191,8 +191,8 @@ export default function AdsLandingPage({
               </div>
             </div>
           </Link>
-          <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)" }}>
-            <Phone size={14} /> {PHONE}
+          <a href={trackingPhone.href} onClick={trackPhoneClick} className="flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)" }}>
+            <Phone size={14} /> {trackingPhone.label}
           </a>
         </div>
       </header>
@@ -223,8 +223,8 @@ export default function AdsLandingPage({
                 </li>
               ))}
             </ul>
-            <a href={PHONE_HREF} onClick={trackPhoneClick} className="inline-flex items-center gap-2 text-base font-bold" style={{ color: "oklch(0.75 0.12 42)" }}>
-              <Phone size={16} /> Call Now: {PHONE}
+            <a href={trackingPhone.href} onClick={trackPhoneClick} className="inline-flex items-center gap-2 text-base font-bold" style={{ color: "oklch(0.75 0.12 42)" }}>
+              <Phone size={16} /> Call Now: {trackingPhone.label}
             </a>
           </div>
 
@@ -293,8 +293,8 @@ export default function AdsLandingPage({
               <p className="text-sm leading-relaxed mb-4" style={{ color: "oklch(0.75 0.01 60)" }}>
                 Every offer comes with a free independent Broker Opinion of Value from a Fresno broker with 1,850+ closed transactions. You know our offer is fair before you decide anything. No other cash buyer in the Central Valley does this.
               </p>
-              <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)" }}>
-                <Phone size={15} /> Call {PHONE}
+              <a href={trackingPhone.href} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 py-3 rounded-lg font-bold text-white text-sm" style={{ background: "oklch(0.55 0.13 42)" }}>
+                <Phone size={15} /> Call {trackingPhone.label}
               </a>
             </div>
           </div>
@@ -331,8 +331,8 @@ export default function AdsLandingPage({
             Connor Morris — Licensed CA Agent, DRE #02219124. His name is on every contract. No inspection period. No LLC and/or Assignee. No middleman.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)" }}>
-              <Phone size={18} /> Call {PHONE}
+            <a href={trackingPhone.href} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold text-white" style={{ background: "oklch(0.55 0.13 42)" }}>
+              <Phone size={18} /> Call {trackingPhone.label}
             </a>
             <Link href={CONTACT_HREF}>
               <button className="flex items-center justify-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white" }}>

@@ -75,6 +75,13 @@ export default function ForeclosureHelp() {
       }}
       ctaTitle="Don't Wait — Every Day Counts"
       ctaBody="The foreclosure clock is ticking. Contact us today for a free, confidential conversation about your options. There's no obligation and no pressure."
+      showHeroProofVideo={true}
+      showProofAssets={true}
+      relatedCaseStudies={[
+        { label: "Clovis foreclosure + hoarder home", href: "/case-studies/1648-purvis-ave-clovis", summary: "Closed before the bank could act and helped the seller move." },
+        { label: "Hanford seller burned by wholesalers", href: "/case-studies/1944-idlewood-circle-hanford", summary: "Real buyer closed in 4 days after two wholesalers failed." },
+        { label: "Fresno high-risk property", href: "/case-studies/811-n-roosevelt-fresno", summary: "Seller transferred the risk before squatters broke in post-close." },
+      ]}
       relatedLinks={[
         { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
         { label: "Second Mortgage Help", href: "/second-mortgage-help" },

@@ -79,6 +79,13 @@ export default function TitleIssues() {
       ]}
       ctaTitle="Do Not Let a Deed Problem Stop You From Getting an Offer"
       ctaBody="Call (559) 281-8016 or send the property address. We will review the situation, explain what title issues usually need to be cleared, and give you a direct cash offer if the property is a fit."
+      showHeroProofVideo={true}
+      showProofAssets={true}
+      relatedCaseStudies={[
+        { label: "Inherited Tulare property", href: "/case-studies/tulare-st-tulare-ca", summary: "A direct buyer paid $15K more and helped the seller avoid a wholesaler." },
+        { label: "Visalia probate with squatters", href: "/case-studies/hurley-property-visalia", summary: "Probate, no normal comps, occupants, and family logistics handled in one plan." },
+        { label: "Armona wholesaler exposed", href: "/case-studies/armona-ca", summary: "Seller got more money and free post-close time from a real buyer." },
+      ]}
       relatedLinks={[
         { label: "Title Issues in Clovis", href: "/sell-house-title-issues-clovis" },
         { label: "Title Issues in Kerman", href: "/sell-house-title-issues-kerman" },

@@ -10,9 +10,7 @@ import { Link } from "wouter";
 import { Phone, X, ArrowRight, ChevronUp, Loader2 } from "lucide-react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { useConversionTracking } from "@/hooks/useConversionTracking";
-
-const PHONE = "(559) 281-8016";
-const PHONE_HREF = "tel:5592818016";
+import { useTrackingPhone } from "@/hooks/useTrackingPhone";
 
 const inputStyle = {
   background: "oklch(0.97 0.015 85)",
@@ -26,6 +24,7 @@ export default function FloatingCTA() {
   const [form, setForm] = useState({ name: "", phone: "", address: "", situation: "" });
   const { state, errorMessage, submit, reset } = useFormSubmit();
   const { trackPhoneClick } = useConversionTracking();
+  const phone = useTrackingPhone();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -92,8 +91,8 @@ export default function FloatingCTA() {
                 <p className="text-sm" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
                   Expect a call or text within a few hours. Or call us now:
                 </p>
-                <a href={PHONE_HREF} onClick={trackPhoneClick} className="inline-flex items-center gap-2 mt-3 font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
-                  <Phone size={14} /> {PHONE}
+                <a href={phone.href} onClick={trackPhoneClick} className="inline-flex items-center gap-2 mt-3 font-bold" style={{ color: "oklch(0.55 0.13 42)", fontFamily: "'DM Mono', monospace" }}>
+                  <Phone size={14} /> {phone.label}
                 </a>
               </div>
             ) : (
@@ -199,7 +198,8 @@ export default function FloatingCTA() {
       >
         {/* Call button */}
         <a
-          href={PHONE_HREF}
+          href={phone.href}
+          onClick={trackPhoneClick}
           className="flex-1 flex items-center justify-center gap-2 py-4 font-bold text-sm"
           style={{
             background: "oklch(0.28 0.05 155)",
@@ -211,7 +211,7 @@ export default function FloatingCTA() {
           <Phone size={18} />
           <div className="text-left">
             <div style={{ fontSize: "0.65rem", opacity: 0.75, fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em", textTransform: "uppercase" }}>Call Now</div>
-            <div style={{ fontSize: "0.9rem" }}>{PHONE}</div>
+            <div style={{ fontSize: "0.9rem" }}>{phone.label}</div>
           </div>
         </a>
 

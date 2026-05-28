@@ -11,8 +11,10 @@ import VacantPropertyBanner from "@/components/VacantPropertyBanner";
 import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
 import PageMeta from "@/components/PageMeta";
 import CitySections from "@/components/CitySections";
+import ProofAssets, { type ProofAsset } from "@/components/ProofAssets";
 import { findCityFactsInPath, getCityFacts } from "@/data/cities";
 import { useConversionTracking } from "@/hooks/useConversionTracking";
+import { useTrackingPhone } from "@/hooks/useTrackingPhone";
 
 /**
  * Auto-detect a CityFacts slug from a page slug like "/sell-my-house-clovis-ca".
@@ -54,8 +56,8 @@ function detectCitySlug(pageSlug?: string): string | undefined {
   return findCityFactsInPath(cleaned)?.slug;
 }
 
-const PHONE = "(559) 281-8016";
-const PHONE_HREF = "tel:5592818016";
+const PROOF_VIDEO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-ad-video_ba6eba0e.mp4";
+const PROOF_VIDEO_POSTER = "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/alder-yard-sign_ffeaeadb.webp";
 
 interface ServicePageProps {
   badge: string;
@@ -74,6 +76,9 @@ interface ServicePageProps {
   ctaBody: string;
   relatedLinks?: { label: string; href: string }[];
   relatedCaseStudies?: { label: string; href: string; summary: string }[];
+  proofAssets?: ProofAsset[];
+  showProofAssets?: boolean;
+  showHeroProofVideo?: boolean;
   showVacantWarning?: boolean;
   slug?: string;           // canonical path, e.g. "/sell-house-mold"
   metaDescription?: string; // custom 150-char meta description
@@ -104,6 +109,9 @@ export default function ServicePage({
   ctaBody,
   relatedLinks,
   relatedCaseStudies,
+  proofAssets,
+  showProofAssets,
+  showHeroProofVideo,
   showVacantWarning,
   slug,
   metaDescription,
@@ -113,6 +121,7 @@ export default function ServicePage({
 }: ServicePageProps) {
   const [showStickyBar, setShowStickyBar] = useState(false);
   const { trackPhoneClick } = useConversionTracking();
+  const phone = useTrackingPhone();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -158,7 +167,7 @@ export default function ServicePage({
           </div>
           <div className="flex gap-2 flex-shrink-0">
             <a
-              href={PHONE_HREF}
+              href={phone.href}
               onClick={trackPhoneClick}
               className="flex items-center gap-1.5 px-4 py-2.5 rounded-lg font-bold text-white text-sm"
               style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}
@@ -184,6 +193,7 @@ export default function ServicePage({
           <div className="absolute inset-0" style={{ background: "linear-gradient(to right, oklch(0.22 0.01 60 / 0.95) 40%, oklch(0.22 0.01 60 / 0.6) 100%)" }} />
         </div>
         <div className="container relative z-10">
+          <div className={showHeroProofVideo ? "grid gap-10 lg:grid-cols-[minmax(0,1fr)_390px] lg:items-center" : "max-w-2xl"}>
           <div className="max-w-2xl">
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4" style={{ background: "oklch(0.55 0.13 42)", color: "white", fontFamily: "'DM Mono', monospace", letterSpacing: "0.08em", textTransform: "uppercase" }}>
               {badge}
@@ -200,10 +210,31 @@ export default function ServicePage({
                   Get My Free Cash Offer <ArrowRight size={18} />
                 </button>
               </Link>
-              <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.1)", border: "2px solid oklch(1 0 0 / 0.3)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
-                <Phone size={18} /> {PHONE}
+              <a href={phone.href} onClick={trackPhoneClick} className="flex items-center gap-2 px-8 py-4 rounded-lg font-bold" style={{ background: "oklch(1 0 0 / 0.1)", border: "2px solid oklch(1 0 0 / 0.3)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
+                <Phone size={18} /> {phone.label}
               </a>
             </div>
+          </div>
+          {showHeroProofVideo && (
+            <div className="rounded-2xl border border-white/15 bg-white/10 p-3 shadow-2xl backdrop-blur-sm">
+              <div className="overflow-hidden rounded-xl bg-black">
+                <video
+                  src={PROOF_VIDEO_URL}
+                  poster={PROOF_VIDEO_POSTER}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="aspect-video w-full object-cover"
+                />
+              </div>
+              <div className="px-2 pb-1 pt-3">
+                <p className="text-sm font-black text-white">Proof of funds. Direct buyer. No assignment contract.</p>
+                <p className="mt-1 text-xs leading-relaxed" style={{ color: "oklch(0.82 0.01 60)" }}>
+                  Watch Connor explain why sellers should verify the buyer before signing.
+                </p>
+              </div>
+            </div>
+          )}
           </div>
         </div>
       </section>
@@ -307,8 +338,8 @@ export default function ServicePage({
                     Get My Cash Offer
                   </button>
                 </Link>
-                <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 text-sm font-bold" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'DM Mono', monospace" }}>
-                  <Phone size={14} /> {PHONE}
+                <a href={phone.href} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 text-sm font-bold" style={{ color: "oklch(0.80 0.02 155)", fontFamily: "'DM Mono', monospace" }}>
+                  <Phone size={14} /> {phone.label}
                 </a>
               </div>
 
@@ -367,6 +398,8 @@ export default function ServicePage({
         return effectiveCitySlug ? <CitySections slug={effectiveCitySlug} /> : null;
       })()}
 
+      {showProofAssets && <ProofAssets assets={proofAssets} />}
+
       {/* Bottom CTA */}
       <section className="py-20" style={{ background: "oklch(0.22 0.01 60)" }}>
         <div className="container text-center">
@@ -382,8 +415,8 @@ export default function ServicePage({
                 Get My Free Cash Offer <ArrowRight size={20} />
               </button>
             </Link>
-            <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
-              <Phone size={20} /> {PHONE}
+            <a href={phone.href} onClick={trackPhoneClick} className="flex items-center gap-2 px-10 py-4 rounded-lg font-bold text-lg" style={{ background: "oklch(1 0 0 / 0.08)", border: "2px solid oklch(1 0 0 / 0.25)", color: "white", fontFamily: "'Nunito Sans', sans-serif" }}>
+              <Phone size={20} /> {phone.label}
             </a>
           </div>
         </div>

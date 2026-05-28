@@ -72,6 +72,13 @@ export default function ProbateHomes() {
       ctaTitle="We Handle the Complexity So You Don't Have To"
       ctaBody="100+ probate sales. Compassionate, experienced, licensed. Call us for a free consultation — no pressure, no obligation, just honest guidance."
       showVacantWarning={true}
+      showHeroProofVideo={true}
+      showProofAssets={true}
+      relatedCaseStudies={[
+        { label: "Visalia probate with squatters", href: "/case-studies/hurley-property-visalia", summary: "$225K cash purchase with no normal comparable sales and a family needing time after closing." },
+        { label: "Inherited Tulare rental", href: "/case-studies/tulare-st-tulare-ca", summary: "Seller avoided a wholesaler and received $15K more from a direct buyer." },
+        { label: "Coarsegold vacant family home", href: "/case-studies/coarsegold-ca-vacant-home", summary: "Vacant inherited-style rural property where traditional buyers passed." },
+      ]}
       relatedLinks={[
         { label: "CA Probate Home Sale — Complete Guide", href: "/california-probate-home-sale" },
         { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },

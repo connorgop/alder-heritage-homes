@@ -8,12 +8,14 @@
 import { useState, useEffect, useCallback } from "react";
 import { trpc } from "@/lib/trpc";
 import { X, Phone, AlertTriangle, ShieldCheck, ArrowRight, Loader2 } from "lucide-react";
+import { useConversionTracking } from "@/hooks/useConversionTracking";
+import { useTrackingPhone } from "@/hooks/useTrackingPhone";
 
-const PHONE = "(559) 281-8016";
-const PHONE_HREF = "tel:5592818016";
 const SESSION_KEY = "ahh_exit_shown";
 
 export default function ExitIntentPopup() {
+  const { trackPhoneClick } = useConversionTracking();
+  const trackingPhone = useTrackingPhone();
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
   const [step, setStep] = useState<"warning" | "form" | "success">("warning");
@@ -151,12 +153,15 @@ export default function ExitIntentPopup() {
                 Get My Honest Offer <ArrowRight size={16} />
               </button>
               <a
-                href={PHONE_HREF}
-                onClick={close}
+                href={trackingPhone.href}
+                onClick={() => {
+                  trackPhoneClick();
+                  close();
+                }}
                 className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl font-bold border-2 transition-all hover:opacity-90"
                 style={{ color: "white", borderColor: "oklch(1 0 0 / 0.25)", fontFamily: "'Nunito Sans', sans-serif" }}
               >
-                <Phone size={16} /> {PHONE}
+                <Phone size={16} /> {trackingPhone.label}
               </a>
             </div>
 
@@ -243,11 +248,12 @@ export default function ExitIntentPopup() {
               Connor will call you within a few hours with your cash offer. Check your phone!
             </p>
             <a
-              href={PHONE_HREF}
+              href={trackingPhone.href}
+              onClick={trackPhoneClick}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white transition-all hover:opacity-90"
               style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}
             >
-              <Phone size={16} /> Call Now: {PHONE}
+              <Phone size={16} /> Call Now: {trackingPhone.label}
             </a>
             <p className="text-center text-xs mt-4" style={{ color: "oklch(0.45 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
               — Connor Morris, Alder Heritage Homes · CA DRE #02219124

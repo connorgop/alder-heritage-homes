@@ -11,9 +11,7 @@ import TawkChat from "./TawkChat";
 import ExitIntentPopup from "./ExitIntentPopup";
 import SchemaMarkup, { localBusinessSchema, websiteSchema, breadcrumbSchema, buildBreadcrumbs } from "./SchemaMarkup";
 import { useConversionTracking } from "@/hooks/useConversionTracking";
-
-const PHONE = "(559) 281-8016";
-const PHONE_HREF = "tel:5592818016";
+import { useTrackingPhone } from "@/hooks/useTrackingPhone";
 
 /* ── Only the 6 highest-converting situations in the dropdown ── */
 const topSituations = [
@@ -104,6 +102,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [situationsOpen, setSituationsOpen] = useState(false);
   const [location] = useLocation();
   const { trackPhoneClick } = useConversionTracking();
+  const phone = useTrackingPhone();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -132,8 +131,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <span className="sm:hidden" style={{ fontFamily: "'Nunito Sans', sans-serif", fontSize: "0.8rem", fontWeight: 700 }}>
             We Beat Any Cash Offer — Guaranteed
           </span>
-          <a href={PHONE_HREF} onClick={trackPhoneClick} style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", textDecoration: "underline", color: "white", opacity: 0.9 }}>
-            Call: {PHONE}
+          <a href={phone.href} onClick={trackPhoneClick} style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.75rem", fontWeight: 700, letterSpacing: "0.05em", textDecoration: "underline", color: "white", opacity: 0.9 }}>
+            Call: {phone.label}
           </a>
         </div>
       </div>
@@ -248,13 +247,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {/* Phone + Primary CTA */}
             <div className="hidden lg:flex items-center gap-3">
               <a
-                href={PHONE_HREF}
+                href={phone.href}
                 onClick={trackPhoneClick}
                 className="flex items-center gap-2 font-bold"
                 style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.95rem", color: "oklch(0.28 0.05 155)" }}
               >
                 <Phone size={16} />
-                {PHONE}
+                {phone.label}
               </a>
               <Link href="/contact">
                 <button
@@ -272,7 +271,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
             {/* Mobile: phone + hamburger */}
             <div className="flex lg:hidden items-center gap-3">
-              <a href={PHONE_HREF} onClick={trackPhoneClick} aria-label="Call Alder Heritage Homes at (559) 281-8016" style={{ color: "oklch(0.28 0.05 155)" }}>
+              <a href={phone.href} onClick={trackPhoneClick} aria-label="Call Alder Heritage Homes at (559) 281-8016" style={{ color: "oklch(0.28 0.05 155)" }}>
                 <Phone size={20} />
               </a>
               <button onClick={() => setMobileOpen(!mobileOpen)} aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={mobileOpen} style={{ color: "oklch(0.22 0.01 60)" }}>
@@ -324,8 +323,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     Get My Free Cash Offer
                   </button>
                 </Link>
-                <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 py-3 rounded-xl font-bold border-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.28 0.05 155)", borderColor: "oklch(0.28 0.05 155)" }}>
-                  <Phone size={16} /> {PHONE}
+                <a href={phone.href} onClick={trackPhoneClick} className="flex items-center justify-center gap-2 py-3 rounded-xl font-bold border-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.28 0.05 155)", borderColor: "oklch(0.28 0.05 155)" }}>
+                  <Phone size={16} /> {phone.label}
                 </a>
               </div>
             </div>
@@ -356,8 +355,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <p className="text-sm leading-relaxed mb-4" style={{ color: "oklch(0.65 0.01 60)" }}>
                 We buy houses for cash across Fresno and the Central Valley. Fair offers, fast closings, no repairs needed.
               </p>
-              <a href={PHONE_HREF} onClick={trackPhoneClick} className="flex items-center gap-2 font-bold mb-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)", fontSize: "0.95rem" }}>
-                <Phone size={15} /> {PHONE}
+              <a href={phone.href} onClick={trackPhoneClick} className="flex items-center gap-2 font-bold mb-2" style={{ fontFamily: "'DM Mono', monospace", color: "oklch(0.55 0.13 42)", fontSize: "0.95rem" }}>
+                <Phone size={15} /> {phone.label}
               </a>
               <p className="text-xs" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'DM Mono', monospace" }}>
                 CA DRE License #02219124
@@ -442,7 +441,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
         <div className="flex">
           <a
-            href={PHONE_HREF}
+            href={phone.href}
             onClick={trackPhoneClick}
             className="flex-1 flex items-center justify-center gap-2 py-4 font-bold text-white transition-all active:scale-95"
             style={{ background: "oklch(0.28 0.05 155)", fontFamily: "'Nunito Sans', sans-serif", fontSize: "1rem" }}

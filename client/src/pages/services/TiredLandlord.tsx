@@ -113,6 +113,13 @@ export default function TiredLandlord() {
       }}
       ctaTitle="Need to Sell a Fresno House With Tenants?"
       ctaBody="Send the property address or call Connor directly. We will review the tenant situation, condition, title, and timeline, then give you a direct cash offer if the property is a fit."
+      showHeroProofVideo={true}
+      showProofAssets={true}
+      relatedCaseStudies={[
+        { label: "4 Fresno rentals in one close", href: "/case-studies/4-property-landlord-portfolio-fresno", summary: "Non-paying tenants, damaged interiors, no inspections, and two failed buyers before us." },
+        { label: "Elderly tenants handled carefully", href: "/case-studies/5561-indianapolis-ave-clovis", summary: "Tenant care came first. Closed only when everyone was ready." },
+        { label: "Dovewood landlord relationship", href: "/case-studies/3346-dovewood-lane-fresno", summary: "Out-of-area landlord sold multiple Fresno properties with follow-through." },
+      ]}
       relatedLinks={[
         { label: "Portfolio Sales & 1031 Exchange", href: "/sell-rental-portfolio" },
         { label: "Sell Rental Property Madera", href: "/sell-rental-property-madera" },

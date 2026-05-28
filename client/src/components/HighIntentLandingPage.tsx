@@ -5,11 +5,9 @@ import { toast } from "sonner";
 import PageMeta from "@/components/PageMeta";
 import SchemaMarkup, { faqPageSchema, localBusinessSchema } from "@/components/SchemaMarkup";
 import { useConversionTracking } from "@/hooks/useConversionTracking";
+import { useTrackingPhone } from "@/hooks/useTrackingPhone";
 import { formatLeadAttribution } from "@/lib/attribution";
 import { trpc } from "@/lib/trpc";
-
-const PHONE = "(559) 281-8016";
-const PHONE_HREF = "tel:+15592818016";
 
 export interface HighIntentLandingPageProps {
   path: string;
@@ -59,6 +57,7 @@ export default function HighIntentLandingPage({
   situationDefault,
 }: HighIntentLandingPageProps) {
   const { trackFormSubmit, trackPhoneClick, trackAddressSubmit } = useConversionTracking();
+  const trackingPhone = useTrackingPhone();
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -118,8 +117,8 @@ export default function HighIntentLandingPage({
               <div className="text-xs" style={{ color: "oklch(0.76 0.02 85)", fontFamily: "'DM Mono', monospace" }}>Licensed CA Agent - DRE #02219124</div>
             </div>
           </Link>
-          <a href={PHONE_HREF} onClick={trackPhoneClick} className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-bold text-white" style={{ background: "oklch(0.55 0.13 42)" }}>
-            <Phone size={16} /> {PHONE}
+          <a href={trackingPhone.href} onClick={trackPhoneClick} className="inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-bold text-white" style={{ background: "oklch(0.55 0.13 42)" }}>
+            <Phone size={16} /> {trackingPhone.label}
           </a>
         </div>
       </header>
@@ -160,7 +159,7 @@ export default function HighIntentLandingPage({
                   <CheckCircle2 size={54} className="mx-auto mb-4" style={{ color: "oklch(0.48 0.12 155)" }} />
                   <h2 className="mb-2 text-2xl font-bold" style={{ color: "oklch(0.22 0.01 60)", fontFamily: "'Lora', serif" }}>Request received</h2>
                   <p className="mb-5 text-sm" style={{ color: "oklch(0.42 0.01 60)" }}>Connor will review the property and call you as soon as possible.</p>
-                  <a href={PHONE_HREF} onClick={trackPhoneClick} className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-bold text-white" style={{ background: "oklch(0.55 0.13 42)" }}>
+                  <a href={trackingPhone.href} onClick={trackPhoneClick} className="inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-bold text-white" style={{ background: "oklch(0.55 0.13 42)" }}>
                     <Phone size={16} /> Call now instead
                   </a>
                 </div>

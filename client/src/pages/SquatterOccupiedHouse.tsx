@@ -70,6 +70,13 @@ export default function SquatterOccupiedHouse() {
       ]}
       ctaTitle="Need to Sell a Fresno House With Squatters?"
       ctaBody="Call Connor at (559) 281-8016 or send the property address. We will review the situation confidentially and give you a direct cash offer if the property is a fit."
+      showHeroProofVideo={true}
+      showProofAssets={true}
+      relatedCaseStudies={[
+        { label: "Fresno squatter risk after closing", href: "/case-studies/811-n-roosevelt-fresno", summary: "Seller walked away clean; we took on the break-in and flood risk." },
+        { label: "Visalia probate with squatters", href: "/case-studies/hurley-property-visalia", summary: "Probate estate with occupants and no normal comparable sales." },
+        { label: "Clovis homicide/squatter case", href: "/blog/clovis-homicide-squatter-house-case-study", summary: "Unauthorized occupant, no utilities, and a property traditional buyers would not touch." },
+      ]}
       relatedLinks={[
         { label: "Sell Vacant House Fresno", href: "/sell-vacant-house-fresno" },
         { label: "Sell House With Tenants Fresno", href: "/sell-house-with-tenants-fresno" },
