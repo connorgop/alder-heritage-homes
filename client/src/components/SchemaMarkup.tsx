@@ -142,6 +142,97 @@ export function faqPageSchema(faqs: { q: string; a: string }[]) {
   };
 }
 
+/** ServicePage schema — declares the specific cash-buying service on a situation page. */
+export function cashBuyerServiceSchema({
+  name,
+  description,
+  path,
+  image,
+  serviceType,
+}: {
+  name: string;
+  description: string;
+  path: string;
+  image?: string;
+  serviceType?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `https://www.alderheritagehomes.com${path}#service`,
+    name,
+    serviceType: serviceType || "Cash Home Buying",
+    description,
+    url: `https://www.alderheritagehomes.com${path}`,
+    image,
+    provider: { "@id": "https://www.alderheritagehomes.com/#business" },
+    audience: { "@type": "Audience", audienceType: "Homeowners" },
+    areaServed: [
+      { "@type": "City", name: "Fresno" },
+      { "@type": "City", name: "Clovis" },
+      { "@type": "City", name: "Madera" },
+      { "@type": "City", name: "Hanford" },
+      { "@type": "City", name: "Visalia" },
+      { "@type": "City", name: "Sanger" },
+      { "@type": "City", name: "Selma" },
+      { "@type": "City", name: "Reedley" },
+      { "@type": "AdministrativeArea", name: "Central Valley, California" },
+    ],
+    offers: {
+      "@type": "Offer",
+      name: "No-obligation cash offer",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      eligibleRegion: { "@type": "AdministrativeArea", name: "Central Valley, California" },
+    },
+  };
+}
+
+/** HowTo schema for the standard Alder cash-offer process shown on service pages. */
+export function cashOfferHowToSchema(path: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "@id": `https://www.alderheritagehomes.com${path}#cash-offer-process`,
+    name: "How to Sell Your House to Alder Heritage Homes for Cash",
+    description:
+      "The standard Alder Heritage Homes cash offer process: send the property address, receive a written offer, choose your closing timeline, and close through escrow.",
+    totalTime: "P7D",
+    supply: [
+      { "@type": "HowToSupply", name: "Property address" },
+      { "@type": "HowToSupply", name: "Seller contact information" },
+    ],
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Send the property address",
+        text: "Call, text, or submit the property address so Connor can review the home, situation, and local comparable sales.",
+        url: `https://www.alderheritagehomes.com${path}#offer-form`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Review the cash offer",
+        text: "Alder Heritage Homes prepares a written cash offer and explains the valuation, repair assumptions, and timeline.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Choose your closing date",
+        text: "If the offer works, escrow is opened and the seller chooses a fast closing or a later date that fits their move.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Close through escrow",
+        text: "The transaction closes through escrow, approved liens or payoffs are handled, and the seller receives funds.",
+      },
+    ],
+  };
+}
+
 /** Article schema for blog posts */
 export function articleSchema({
   headline,

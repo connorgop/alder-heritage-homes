@@ -8,7 +8,7 @@ import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import VacantPropertyBanner from "@/components/VacantPropertyBanner";
-import SchemaMarkup, { faqPageSchema } from "@/components/SchemaMarkup";
+import SchemaMarkup, { cashBuyerServiceSchema, cashOfferHowToSchema, faqPageSchema } from "@/components/SchemaMarkup";
 import PageMeta from "@/components/PageMeta";
 import CitySections from "@/components/CitySections";
 import ProofAssets, { type ProofAsset } from "@/components/ProofAssets";
@@ -134,6 +134,7 @@ export default function ServicePage({
   const faqId = title.toLowerCase().replace(/[^a-z0-9]/g, "-").slice(0, 40);
   const canonicalPath = slug || `/${title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
   const metaDesc = metaDescription || `${subtitle} Get a fair cash offer in 24 hours. No repairs, no commissions. Licensed CA buyer DRE #02219124.`;
+  const schemaId = canonicalPath.replace(/[^a-z0-9]/gi, "-").replace(/^-|-$/g, "").slice(0, 64) || "service-page";
 
   return (
     <Layout>
@@ -143,6 +144,21 @@ export default function ServicePage({
         path={canonicalPath}
         noIndex={noIndex}
       />
+      {!noIndex && (
+        <>
+          <SchemaMarkup
+            schema={cashBuyerServiceSchema({
+              name: title,
+              description: metaDesc,
+              path: canonicalPath,
+              image: heroImage,
+              serviceType: badge,
+            })}
+            id={`service-${schemaId}`}
+          />
+          <SchemaMarkup schema={cashOfferHowToSchema(canonicalPath)} id={`howto-${schemaId}`} />
+        </>
+      )}
       {/* FAQPage structured data — auto-generated from faq prop */}
       {faq && faq.length > 0 && (
         <SchemaMarkup schema={faqPageSchema(faq)} id={`faq-${faqId}`} />
