@@ -59,3 +59,4 @@ Sitemap: https://www.alderheritagehomes.com/video-sitemap.xml
 # AI-readable content files
 # LLM summary: https://www.alderheritagehomes.com/llms.txt
 # AI facts: https://www.alderheritagehomes.com/ai.txt
+# Human-readable site ownership: https://www.alderheritagehomes.com/humans.txt
