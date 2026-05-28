@@ -109,6 +109,11 @@ temp/
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
 
+# Local marketing video exports for Google Business Profile / ad uploads
+marketing/gbp-videos/*.mp4
+marketing/gbp-videos/*.m4v
+marketing/gbp-videos/*.mov
+
 # Manus version file (auto-generated, not part of source)
 client/public/__manus__/version.json
 .project-config.json
