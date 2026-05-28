@@ -422,7 +422,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               © {new Date().getFullYear()} Alder Heritage Homes. All rights reserved. CA DRE #02219124. ·{" "}
               <a href="/terms-of-service" style={{ color: "oklch(0.55 0.01 60)", textDecoration: "underline" }}>Terms</a>{" · "}
               <a href="/privacy-policy" style={{ color: "oklch(0.55 0.01 60)", textDecoration: "underline" }}>Privacy</a>{" · "}
-              <a href="/sms-consent" style={{ color: "oklch(0.55 0.01 60)", textDecoration: "underline" }}>SMS Opt-In</a>
+              <a href="/sms-consent" style={{ color: "oklch(0.55 0.01 60)", textDecoration: "underline" }}>SMS Opt-In</a>{" · "}
+              <a href="/cash-home-buyer-site-map" style={{ color: "oklch(0.55 0.01 60)", textDecoration: "underline" }}>Site Map</a>
             </p>
             <p className="text-xs" style={{ color: "oklch(0.40 0.01 60)" }}>
               Fresno, CA · Serving the Entire Central Valley — Fresno, Bakersfield, Visalia, Stockton, Modesto & Beyond

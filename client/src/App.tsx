@@ -310,6 +310,7 @@ const SkylineREI = lazy(() => import("./pages/SkylineREI"));
 const FAQPage = lazy(() => import("./pages/FAQ"));
 const GBPTemplates = lazy(() => import("./pages/GBPTemplates"));
 const Resources = lazy(() => import("./pages/Resources"));
+const CashHomeBuyerSiteMap = lazy(() => import("./pages/CashHomeBuyerSiteMap"));
 const OrangeCovePage = lazy(() => import("./pages/cities/OrangeCove"));
 const CutlerOrosiPage = lazy(() => import("./pages/cities/CutlerOrosi"));
 const SellHouseFastOrangeCove = lazy(() => import("./pages/SellHouseFastOrangeCove"));
@@ -425,6 +426,7 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/faq" component={FAQPage} />
+      <Route path="/cash-home-buyer-site-map" component={CashHomeBuyerSiteMap} />
 
       {/* Case Studies */}
       <Route path="/case-studies" component={CaseStudiesIndex} />
