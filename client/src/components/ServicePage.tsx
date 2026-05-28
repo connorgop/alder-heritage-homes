@@ -232,6 +232,9 @@ export default function ServicePage({
                 <p className="mt-1 text-xs leading-relaxed" style={{ color: "oklch(0.82 0.01 60)" }}>
                   Watch Connor explain why sellers should verify the buyer before signing.
                 </p>
+                <Link href="/watch/proof-of-funds-fresno" className="mt-2 inline-flex text-xs font-bold underline" style={{ color: "oklch(0.80 0.12 42)" }}>
+                  Open video page
+                </Link>
               </div>
             </div>
           )}

@@ -105,6 +105,7 @@ const TitleIssuesSelma = lazy(() => import("./pages/TitleIssuesSelma"));
 const TitleIssuesSanger = lazy(() => import("./pages/TitleIssuesSanger"));
 const TitleIssuesKingsburg = lazy(() => import("./pages/TitleIssuesKingsburg"));
 const ProofOfFundsFresno = lazy(() => import("./pages/ProofOfFundsFresno"));
+const ProofOfFundsVideo = lazy(() => import("./pages/ProofOfFundsVideo"));
 const InheritedDeedProblem = lazy(() => import("./pages/services/InheritedDeedProblem"));
 const MultipleHeirs = lazy(() => import("./pages/services/MultipleHeirs"));
 const UnpaidPropertyTaxes = lazy(() => import("./pages/services/UnpaidPropertyTaxes"));
@@ -519,6 +520,7 @@ function Router() {
       <Route path="/sell-house-title-issues-sanger" component={TitleIssuesSanger} />
       <Route path="/sell-house-title-issues-kingsburg" component={TitleIssuesKingsburg} />
       <Route path="/cash-buyer-proof-of-funds-fresno" component={ProofOfFundsFresno} />
+      <Route path="/watch/proof-of-funds-fresno" component={ProofOfFundsVideo} />
       <Route path="/sell-house-deed-issues-fresno"><Redirect to="/sell-house-title-issues-fresno" /></Route>
       <Route path="/sell-house-clouded-title-fresno"><Redirect to="/sell-house-title-issues-fresno" /></Route>
       <Route path="/sell-house-with-title-problems"><Redirect to="/sell-house-title-issues-fresno" /></Route>

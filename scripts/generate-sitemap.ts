@@ -29,6 +29,7 @@ const ROOT = resolve(__dirname, "..");
 const APP_TSX = join(ROOT, "client", "src", "App.tsx");
 const BLOG_TSX = join(ROOT, "client", "src", "pages", "Blog.tsx");
 const OUTPUT = join(ROOT, "client", "public", "sitemap.xml");
+const VIDEO_OUTPUT = join(ROOT, "client", "public", "video-sitemap.xml");
 const BASE_URL = "https://www.alderheritagehomes.com";
 
 const EXCLUDE_PREFIXES = ["/admin", "/lp/", "/ads/"];
@@ -47,6 +48,21 @@ interface RouteEntry {
   component: string;
   sourceFile: string | null;
 }
+
+const VIDEO_ENTRIES = [
+  {
+    pagePath: "/watch/proof-of-funds-fresno",
+    title: "Proof of Funds: How to Verify a Real Fresno Cash Home Buyer",
+    description:
+      "Connor Morris explains how Fresno homeowners can verify proof of funds, avoid wholesalers, and confirm they are working with a direct cash buyer.",
+    thumbnail:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/alder-yard-sign_ffeaeadb.webp",
+    content:
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663504571089/XpRyNnoAyiTowvWnQARBrm/connor-ad-video_ba6eba0e.mp4",
+    publicationDate: "2026-05-28",
+    durationSeconds: 62,
+  },
+];
 
 function parseImports(appSource: string): Map<string, string> {
   // Match: import Foo from "./pages/Foo";  (also handles named-import variants)
@@ -189,6 +205,10 @@ function escapeXml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
+function cdata(s: string): string {
+  return `<![CDATA[${s.replace(/\]\]>/g, "]]]]><![CDATA[>")}]]>`;
+}
+
 function buildSitemap(urls: { loc: string; lastmod: string; changefreq: string; priority: string }[]): string {
   const body = urls
     .sort((a, b) => a.loc.localeCompare(b.loc))
@@ -198,6 +218,15 @@ function buildSitemap(urls: { loc: string; lastmod: string; changefreq: string; 
     )
     .join("\n");
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
+}
+
+function buildVideoSitemap(): string {
+  const body = VIDEO_ENTRIES.map(
+    video =>
+      `  <url>\n    <loc>${escapeXml(BASE_URL + video.pagePath)}</loc>\n    <video:video>\n      <video:thumbnail_loc>${escapeXml(video.thumbnail)}</video:thumbnail_loc>\n      <video:title>${cdata(video.title)}</video:title>\n      <video:description>${cdata(video.description)}</video:description>\n      <video:content_loc>${escapeXml(video.content)}</video:content_loc>\n      <video:publication_date>${video.publicationDate}</video:publication_date>\n      <video:duration>${video.durationSeconds}</video:duration>\n      <video:family_friendly>yes</video:family_friendly>\n      <video:live>no</video:live>\n    </video:video>\n  </url>`,
+  ).join("\n");
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">\n${body}\n</urlset>\n`;
 }
 
 function main() {
@@ -251,8 +280,10 @@ function main() {
 
   const xml = buildSitemap(urls);
   writeFileSync(OUTPUT, xml, "utf-8");
+  writeFileSync(VIDEO_OUTPUT, buildVideoSitemap(), "utf-8");
 
   console.log(`[sitemap] ${urls.length} URLs written to ${OUTPUT}`);
+  console.log(`[sitemap] ${VIDEO_ENTRIES.length} video URLs written to ${VIDEO_OUTPUT}`);
   console.log(`[sitemap]   static routes: ${staticCount}`);
   console.log(`[sitemap]   blog posts:    ${blogPosts.length}`);
   console.log(`[sitemap]   skipped (path excluded): ${excludedPath}`);

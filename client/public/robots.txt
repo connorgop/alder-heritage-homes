@@ -54,6 +54,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://www.alderheritagehomes.com/sitemap.xml
+Sitemap: https://www.alderheritagehomes.com/video-sitemap.xml
 
 # AI-readable content files
 # LLM summary: https://www.alderheritagehomes.com/llms.txt
