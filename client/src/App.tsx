@@ -20,6 +20,7 @@ const SecondOpinion = lazy(() => import("./pages/SecondOpinion"));
 const SellIn57Days = lazy(() => import("./pages/SellIn57Days"));
 const SellVacantHouse = lazy(() => import("./pages/SellVacantHouse"));
 const SquatterOccupiedHouse = lazy(() => import("./pages/SquatterOccupiedHouse"));
+const ProblemPropertyBuyerFresno = lazy(() => import("./pages/ProblemPropertyBuyerFresno"));
 // Case Studies
 const CaseStudyIowaAve = lazy(() => import("./pages/case-studies/4444-iowa-ave-fresno"));
 const CaseStudyDovewood = lazy(() => import("./pages/case-studies/3346-dovewood-lane-fresno"));
@@ -494,6 +495,14 @@ function Router() {
       <Route path="/sell-your-house-in-5-7-days-no-repairs-no-commissions-no-stress" component={SellIn57Days} />
       <Route path="/sell-vacant-house-fresno" component={SellVacantHouse} />
       <Route path="/sell-house-with-squatters-fresno" component={SquatterOccupiedHouse} />
+      <Route path="/we-buy-problem-houses-fresno" component={ProblemPropertyBuyerFresno} />
+      <Route path="/sell-problem-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
+      <Route path="/sell-boarded-up-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
+      <Route path="/sell-flood-damaged-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
+      <Route path="/sell-water-damaged-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
+      <Route path="/bad-credit-own-home-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
+      <Route path="/sell-vandalized-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
+      <Route path="/sell-condemned-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
       <Route path="/sell-squatter-occupied-house-fresno"><Redirect to="/sell-house-with-squatters-fresno" /></Route>
       <Route path="/sell-house-with-unauthorized-occupants-fresno"><Redirect to="/sell-house-with-squatters-fresno" /></Route>
       <Route path="/cash-buyer-squatter-house-fresno"><Redirect to="/sell-house-with-squatters-fresno" /></Route>

@@ -41,6 +41,7 @@ const footerSituations = [
   { label: "Hoarder / Cluttered Home", href: "/sell-hoarder-house" },
   { label: "Fire Damage", href: "/sell-house-fire-damage" },
   { label: "Code Violations", href: "/sell-house-code-violations-fresno" },
+  { label: "Problem House Buyer", href: "/we-buy-problem-houses-fresno" },
   { label: "Tired Landlord / Tenants", href: "/sell-house-with-tenants-fresno" },
   { label: "Tired Landlord Cash Buyer", href: "/lp/tired-landlord-fresno" },
   { label: "Squatter-Occupied House", href: "/sell-house-with-squatters-fresno" },
