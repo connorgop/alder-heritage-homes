@@ -340,9 +340,9 @@ export default function Home() {
     s1.textContent = JSON.stringify(schema);
     document.head.appendChild(s1);
 
-    document.title = 'Cash Home Buyer Fresno | Alder Heritage Homes | 24hr Offers';
+    document.title = 'Fresno Cash Home Buyer & Real Estate Agent | Alder Heritage Homes';
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Licensed cash home buyer in Fresno, Clovis & Central Valley. Get a real cash offer in 24 hours. No fees, no wholesalers. Specializing in probate and inherited homes.');
+    if (metaDesc) metaDesc.setAttribute('content', 'Connor Morris is a licensed Fresno real estate agent and local investor. Compare a cash offer, listing option, or as-is sale. No wholesalers. DRE #02219124.');
 
     return () => {
       document.querySelectorAll('script[type="application/ld+json"]').forEach(s => s.remove());
@@ -409,13 +409,13 @@ export default function Home() {
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
               Sell Your Home<br />
-              <span className="text-orange-500">For Cash.</span><br />
-              <span className="text-3xl sm:text-4xl font-bold text-gray-300">Close in As Little As 3 Days.</span>
+              <span className="text-orange-500">With Options.</span><br />
+              <span className="text-3xl sm:text-4xl font-bold text-gray-300">Cash offer, listing advice, or both.</span>
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
-              I'm Connor — a <strong className="text-white">licensed buyer with real capital</strong>. No wholesalers. No middlemen.
-              No last-second price cuts. Just a fair cash offer and a fast, honest close.
+              I'm Connor — a <strong className="text-white">licensed real estate agent and local investor with real capital</strong>.
+              I can buy the house myself, help you compare a traditional listing, or tell you when another route is better.
             </p>
 
             {/* Trust pills */}
@@ -447,6 +447,21 @@ export default function Home() {
                   Call Connor Now
                 </Button>
               </a>
+            </div>
+
+            <div className="mt-5 grid gap-2 text-sm text-gray-200 sm:grid-cols-3">
+              <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-sm">
+                <strong className="block text-white">Cash offer</strong>
+                Close fast, as-is, no commissions.
+              </div>
+              <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-sm">
+                <strong className="block text-white">Agent opinion</strong>
+                Know what listing could net you.
+              </div>
+              <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-sm">
+                <strong className="block text-white">Problem solving</strong>
+                Title, tenants, squatters, probate.
+              </div>
             </div>
 
             {/* Social proof micro-line */}

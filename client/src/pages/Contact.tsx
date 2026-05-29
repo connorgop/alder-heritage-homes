@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 import { Phone, Mail, MapPin, Clock, CheckCircle2, ArrowRight, Loader2 } from "lucide-react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
@@ -15,8 +15,26 @@ export default function Contact() {
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
+  const [situation, setSituation] = useState("");
+  const [timeline, setTimeline] = useState("");
   const { state, errorMessage, submit } = useFormSubmit();
   const { trackAddressSubmit, trackPhoneClick } = useConversionTracking();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const incomingAddress = params.get("address") || "";
+    const incomingPhone = params.get("phone") || "";
+    const incomingName = params.get("name") || "";
+    const incomingSituation = params.get("situation") || "";
+
+    if (incomingAddress) {
+      setAddress(incomingAddress);
+      setStep(2);
+    }
+    if (incomingPhone) setPhone(incomingPhone);
+    if (incomingName) setName(incomingName);
+    if (incomingSituation) setSituation(incomingSituation);
+  }, []);
 
   const inputStyle = {
     border: "1px solid oklch(0.88 0.02 85)",
@@ -45,6 +63,8 @@ export default function Contact() {
       address,
       phone,
       name: name || "Not provided",
+      situation: situation || "Not provided",
+      timeline: timeline || "Not provided",
       _source: "Contact Page Form",
     });
   };
@@ -52,8 +72,8 @@ export default function Contact() {
   return (
     <Layout>
       <PageMeta
-        title="Get My Free Cash Offer — Sell Your Fresno Home Fast"
-        description="Get a no-obligation cash offer for your Fresno home within 24 hours. Licensed CA Agent DRE #02219124. No repairs, no commissions, close in 3 days. Call (559) 281-8016."
+        title="Get a Cash Offer or Listing Opinion — Fresno Agent & Investor"
+        description="Compare your options with Connor Morris: cash offer, listing opinion, as-is sale, probate/title help, tenant or squatter-occupied sale. Licensed CA Agent DRE #02219124."
         path="/contact"
       />
       {/* Hero */}
@@ -96,7 +116,7 @@ export default function Contact() {
                     Get Your Cash Offer
                   </h2>
                   <p className="text-sm mb-6" style={{ color: "oklch(0.50 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-                    Two quick steps — address first, then where to send your offer.
+                    Two quick steps — address first, then where to send your offer. Connor can also tell you whether a cash sale, listing, or another option makes the most sense.
                   </p>
 
                   {/* Step indicator */}
@@ -178,6 +198,49 @@ export default function Contact() {
                           onFocus={(e) => e.target.style.borderColor = "oklch(0.55 0.13 42)"}
                           onBlur={(e) => e.target.style.borderColor = "oklch(0.88 0.02 85)"}
                         />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold mb-1.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}>
+                          What is going on with the property?
+                        </label>
+                        <select
+                          value={situation}
+                          onChange={(e) => setSituation(e.target.value)}
+                          className="w-full rounded-lg border text-sm outline-none transition-colors"
+                          style={{ ...inputStyle, color: situation ? "oklch(0.22 0.01 60)" : "oklch(0.55 0.01 60)" }}
+                          onFocus={(e) => e.target.style.borderColor = "oklch(0.55 0.13 42)"}
+                          onBlur={(e) => e.target.style.borderColor = "oklch(0.88 0.02 85)"}
+                        >
+                          <option value="">Choose one if it fits</option>
+                          <option value="title-deed-issue">Title, deed, lien, or tax issue</option>
+                          <option value="squatters">Squatter or unauthorized occupant</option>
+                          <option value="tenant-occupied">Tenant-occupied rental / tired landlord</option>
+                          <option value="probate-inherited">Probate or inherited home</option>
+                          <option value="foreclosure">Foreclosure or behind on payments</option>
+                          <option value="repairs">Needs repairs / as-is sale</option>
+                          <option value="compare-options">I want to compare cash offer vs listing</option>
+                          <option value="other">Other situation</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold mb-1.5" style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.30 0.01 60)" }}>
+                          Ideal timeline
+                        </label>
+                        <select
+                          value={timeline}
+                          onChange={(e) => setTimeline(e.target.value)}
+                          className="w-full rounded-lg border text-sm outline-none transition-colors"
+                          style={{ ...inputStyle, color: timeline ? "oklch(0.22 0.01 60)" : "oklch(0.55 0.01 60)" }}
+                          onFocus={(e) => e.target.style.borderColor = "oklch(0.55 0.13 42)"}
+                          onBlur={(e) => e.target.style.borderColor = "oklch(0.88 0.02 85)"}
+                        >
+                          <option value="">Choose one if you know</option>
+                          <option value="asap">As soon as possible</option>
+                          <option value="7-14-days">7-14 days</option>
+                          <option value="30-days">Within 30 days</option>
+                          <option value="60-plus-days">60+ days / exploring options</option>
+                          <option value="not-sure">Not sure yet</option>
+                        </select>
                       </div>
                       {state === "error" && (
                         <p className="text-sm text-red-600 text-center py-2">{errorMessage}</p>

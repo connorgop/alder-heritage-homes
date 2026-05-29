@@ -3,7 +3,7 @@ import ExitIntentPopup from "@/components/ExitIntentPopup";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch, Redirect } from "wouter";
+import { Route, Switch, Redirect, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { captureAttribution } from "@/lib/attribution";
@@ -950,6 +950,8 @@ function Router() {
 }
 
 function App() {
+  const [location] = useLocation();
+
   useEffect(() => {
     captureAttribution();
   }, []);
@@ -960,7 +962,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <Router />
-          <ExitIntentPopup />
+          {location === "/" && <ExitIntentPopup />}
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

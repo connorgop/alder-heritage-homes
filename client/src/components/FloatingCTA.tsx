@@ -6,7 +6,6 @@
    Forms submit to Formspree → connor@primeinvestpartners.com
    ============================================================ */
 import { useState } from "react";
-import { Link } from "wouter";
 import { Phone, X, ArrowRight, ChevronUp, Loader2 } from "lucide-react";
 import { useFormSubmit } from "@/hooks/useFormSubmit";
 import { useConversionTracking } from "@/hooks/useConversionTracking";
@@ -187,48 +186,7 @@ export default function FloatingCTA() {
         </button>
       </div>
 
-      {/* ── MOBILE: Sticky bottom bar ── */}
-      <div
-        className="lg:hidden fixed bottom-0 left-0 right-0 z-50 flex items-stretch"
-        style={{
-          background: "oklch(0.22 0.01 60)",
-          borderTop: "2px solid oklch(0.55 0.13 42)",
-          boxShadow: "0 -4px 24px oklch(0.22 0.01 60 / 0.35)",
-        }}
-      >
-        {/* Call button */}
-        <a
-          href={phone.href}
-          onClick={trackPhoneClick}
-          className="flex-1 flex items-center justify-center gap-2 py-4 font-bold text-sm"
-          style={{
-            background: "oklch(0.28 0.05 155)",
-            color: "white",
-            fontFamily: "'Nunito Sans', sans-serif",
-            borderRight: "1px solid oklch(1 0 0 / 0.1)",
-          }}
-        >
-          <Phone size={18} />
-          <div className="text-left">
-            <div style={{ fontSize: "0.65rem", opacity: 0.75, fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em", textTransform: "uppercase" }}>Call Now</div>
-            <div style={{ fontSize: "0.9rem" }}>{phone.label}</div>
-          </div>
-        </a>
-
-        {/* Get offer button */}
-        <Link href="/contact" className="flex-1 flex items-center justify-center gap-2 py-4 font-bold text-sm text-white"
-          style={{
-            background: "oklch(0.55 0.13 42)",
-            fontFamily: "'Nunito Sans', sans-serif",
-          }}
-        >
-          <ArrowRight size={18} />
-          <div className="text-left">
-            <div style={{ fontSize: "0.65rem", opacity: 0.75, fontFamily: "'DM Mono', monospace", letterSpacing: "0.05em", textTransform: "uppercase" }}>Free Offer</div>
-            <div style={{ fontSize: "0.9rem" }}>Get My Cash Offer</div>
-          </div>
-        </Link>
-      </div>
+      {/* Mobile sticky CTA lives in Layout so it renders once sitewide. */}
     </>
   );
 }
