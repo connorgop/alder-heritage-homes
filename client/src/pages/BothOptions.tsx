@@ -3,8 +3,8 @@
    Primary: "sell home fresno" "sell my home fresno" "sell my property fresno"
    Secondary: "realtor and cash buyer fresno" "sell house options fresno"
               "cash offer or list fresno" "sell home fresno ca"
-   Differentiator: Only company in Fresno that is BOTH a licensed agent
-                   AND a direct cash buyer — seller gets both options in one call
+   Differentiator: Connor is both a licensed agent and direct cash buyer,
+                   so sellers can compare both options in one call.
    ============================================================ */
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
@@ -19,8 +19,8 @@ export default function BothOptions() {
   return (
     <Layout>
       <PageMeta
-        title="Sell My Home in Fresno CA — Cash Offer or List With an Agent | Alder Heritage Homes"
-        description="The only Fresno company that is both a licensed real estate agent AND a direct cash buyer. Get both options in one call — no pressure, no obligation. DRE #02219124. Call (559) 281-8016."
+        title="Sell My Home in Fresno CA — Cash Offer or List With an Agent"
+        description="Connor Morris is both a licensed Fresno real estate agent and direct cash buyer. Compare a cash offer, listing option, or as-is sale in one call. DRE #02219124."
         path="/sell-home-fresno-options"
       />
       <SchemaMarkup
@@ -29,7 +29,7 @@ export default function BothOptions() {
           "@context": "https://schema.org",
           "@type": "RealEstateAgent",
           name: "Alder Heritage Homes",
-          description: "Licensed CA real estate agent and direct cash buyer serving Fresno and the Central Valley. The only company in Fresno offering both a cash offer and a traditional listing in one conversation.",
+          description: "Licensed CA real estate agent and direct cash buyer serving Fresno and the Central Valley. Sellers can compare a cash offer and a traditional listing in one conversation.",
           telephone: "+15592818016",
           url: "https://www.alderheritagehomes.com/sell-home-fresno-options",
           areaServed: "Fresno, CA",
@@ -41,21 +41,21 @@ export default function BothOptions() {
         <div className="absolute inset-0 opacity-20" style={{ background: "radial-gradient(ellipse at 70% 50%, oklch(0.55 0.13 42) 0%, transparent 70%)" }} />
         <div className="container relative z-10 max-w-5xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6" style={{ background: "oklch(0.55 0.13 42 / 0.15)", color: "oklch(0.78 0.10 42)", border: "1px solid oklch(0.55 0.13 42 / 0.3)", fontFamily: "'DM Mono', monospace" }}>
-            Fresno's Only Dual Agent + Cash Buyer
+            Licensed Agent + Direct Cash Buyer
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight" style={{ color: "white", fontFamily: "'Lora', serif" }}>
             Sell Your Fresno Home —<br />
             <span style={{ color: "oklch(0.78 0.10 42)" }}>You Choose the Path.</span>
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl" style={{ color: "oklch(0.80 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-            Alder Heritage Homes is the <strong style={{ color: "white" }}>only company in Fresno</strong> that is both a licensed real estate agent <em>and</em> a direct cash buyer. One call. Both options. You decide what's best for your situation — with no pressure and no obligation.
+            Connor Morris is both a licensed real estate agent <em>and</em> a direct cash buyer. One call. Both options. You decide what's best for your situation — with no pressure and no obligation.
           </p>
           <div className="flex flex-wrap gap-4">
             <a href={PHONE_HREF} className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold text-white transition-all hover:scale-105" style={{ background: "oklch(0.55 0.13 42)", fontFamily: "'Nunito Sans', sans-serif" }}>
               <Phone size={18} /> {PHONE}
             </a>
-            <Link href="/cash-offer-calculator" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all hover:scale-105" style={{ background: "white", color: "oklch(0.25 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Get My Cash Offer <ArrowRight size={18} />
+            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all hover:scale-105" style={{ background: "white", color: "oklch(0.25 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
+              Compare My Options <ArrowRight size={18} />
             </Link>
           </div>
         </div>
@@ -69,7 +69,7 @@ export default function BothOptions() {
               Why This Matters for Fresno Home Sellers
             </h2>
             <p className="text-lg max-w-2xl mx-auto" style={{ color: "oklch(0.45 0.02 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Every other "cash buyer" in Fresno can only buy your home. Every realtor can only list it. Connor Morris does both — which means you get an honest comparison, not a sales pitch.
+              Many cash buyers can only buy your home. Many realtors can only list it. Connor Morris does both — which means you get an honest comparison, not a one-option sales pitch.
             </p>
           </div>
 

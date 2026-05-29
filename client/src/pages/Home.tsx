@@ -450,18 +450,18 @@ export default function Home() {
             </div>
 
             <div className="mt-5 grid gap-2 text-sm text-gray-200 sm:grid-cols-3">
-              <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-sm">
+              <Link href="/ads/lead-capture" className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-sm transition-colors hover:bg-white/15">
                 <strong className="block text-white">Cash offer</strong>
                 Close fast, as-is, no commissions.
-              </div>
-              <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-sm">
+              </Link>
+              <Link href="/sell-home-fresno-options" className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-sm transition-colors hover:bg-white/15">
                 <strong className="block text-white">Agent opinion</strong>
                 Know what listing could net you.
-              </div>
-              <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-sm">
+              </Link>
+              <Link href="/sell-house-title-issues-fresno" className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 backdrop-blur-sm transition-colors hover:bg-white/15">
                 <strong className="block text-white">Problem solving</strong>
                 Title, tenants, squatters, probate.
-              </div>
+              </Link>
             </div>
 
             {/* Social proof micro-line */}
