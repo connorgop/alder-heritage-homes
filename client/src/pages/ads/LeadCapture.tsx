@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useLocation } from 'wouter';
 import { Card } from '@/components/ui/card';
 import { CheckCircle2, Clock, DollarSign, AlertCircle, Phone } from 'lucide-react';
 import { trpc } from '@/lib/trpc';
@@ -8,8 +9,8 @@ import { formatLeadAttribution } from '@/lib/attribution';
 
 export default function LeadCapture() {
   const { trackFormSubmit, trackPhoneClick, trackAddressSubmit } = useConversionTracking();
+  const [, setLocation] = useLocation();
   const [step, setStep] = useState(1);
-  const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -22,8 +23,11 @@ export default function LeadCapture() {
 
   const submitLead = trpc.leads.submit.useMutation({
     onSuccess: () => {
+      // Fire conversion tracking first, then redirect to /thank-you
+      // The ThankYou page fires the Google Ads conversion tag (AW-18059779523/do7rCPPsz5wcEMO7yaND)
+      // Redirecting to /thank-you is required for Google Ads URL-based conversion recording
       trackFormSubmit();
-      setSubmitted(true);
+      setTimeout(() => setLocation('/thank-you'), 150);
     },
     onError: (err) => {
       toast.error('Something went wrong. Please try again or call us directly.');
@@ -63,46 +67,6 @@ export default function LeadCapture() {
       source: 'lead-capture',
     });
   };
-
-  if (submitted) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 flex items-center justify-center py-8 px-4">
-        <div className="max-w-lg mx-auto text-center">
-          <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle2 className="w-12 h-12 text-green-600" />
-          </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            We Got Your Request!
-          </h1>
-          <p className="text-xl text-gray-600 mb-6">
-            Connor will call you within <strong>24 hours</strong> with a real cash offer.
-          </p>
-          <Card className="p-6 mb-6 text-left">
-            <h3 className="font-bold text-gray-900 mb-3">What happens next:</h3>
-            <ol className="space-y-3 text-gray-700">
-              <li className="flex gap-3">
-                <span className="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
-                <span>Connor reviews your property details (today)</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
-                <span>You receive a written cash offer within 24 hours</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="w-6 h-6 bg-orange-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</span>
-                <span>Close in as little as 3 days — on your timeline</span>
-              </li>
-            </ol>
-          </Card>
-          <p className="text-gray-600 mb-4">Can't wait? Call Connor directly:</p>
-          <a href="tel:+15592818016" onClick={trackPhoneClick} className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white text-lg font-semibold px-8 py-4 rounded-lg transition-colors">
-            <Phone className="w-5 h-5" />
-            (559) 281-8016
-          </a>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-50 py-8 px-4">

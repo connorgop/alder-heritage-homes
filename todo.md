@@ -211,3 +211,12 @@
 ### Microsoft Clarity Tracking
 - [x] Added Clarity tracking script (project ID: wwzrnpr852) to client/index.html
 - [x] Confirmed live on www.alderheritagehomes.com via curl verification
+
+## Google Ads Conversion Fix (May 29, 2026)
+- [x] Fix LeadCapture form to redirect to /thank-you page after submission (Google Ads conversion tracking requires dedicated page URL)
+- [x] Ensure ThankYou page fires gtag conversion event on load (not just on form submit)
+- [ ] Add Spanish language negative targeting to both campaigns
+- [ ] Add more negative keywords (buy, purchase, rent, etc.)
+- [ ] Fix ad spacing violation on Competitor Targeting second ad
+- [ ] Switch Campaign #1 bid strategy from Maximize Conversions to Maximize Clicks
+- [ ] Add call extension to both campaigns with (559) 281-8016
