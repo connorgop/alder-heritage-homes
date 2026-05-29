@@ -35,30 +35,30 @@ export default function LeadCapture() {
     },
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleNextStep = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.firstName || !formData.lastName || !formData.phone) {
-      toast.error('Please fill in all required fields.');
-      return;
-    }
-    setStep(2);
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
     if (!formData.address || !formData.city || !formData.situation) {
       toast.error('Please fill in all required fields.');
       return;
     }
     trackAddressSubmit();
+    setStep(2);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formData.firstName || !formData.phone) {
+      toast.error('Please fill in all required fields.');
+      return;
+    }
     submitLead.mutate({
       firstName: formData.firstName,
-      lastName: formData.lastName,
+      lastName: formData.lastName || 'Not provided',
       phone: formData.phone,
       email: formData.email,
       address: formData.address,
@@ -106,101 +106,25 @@ export default function LeadCapture() {
             <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${step === 1 ? 'bg-orange-600 text-white' : step > 1 ? 'bg-green-500 text-white' : 'bg-gray-200 text-gray-500'}`}>
               {step > 1 ? '✓' : '1'}
             </div>
-            <span className="hidden sm:inline">Your Info</span>
+            <span className="hidden sm:inline">Your Home</span>
           </div>
           <div className="h-px w-12 bg-gray-300" />
           <div className={`flex items-center gap-2 ${step === 2 ? 'text-orange-600 font-bold' : 'text-gray-400'}`}>
             <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${step === 2 ? 'bg-orange-600 text-white' : 'bg-gray-200 text-gray-500'}`}>
               2
             </div>
-            <span className="hidden sm:inline">Your Home</span>
+            <span className="hidden sm:inline">Contact</span>
           </div>
         </div>
 
         {/* Main Form Card */}
         <Card className="shadow-xl mb-8">
           <div className="p-8">
-            {/* Step 1: Basic Info */}
+            {/* Step 1: Property Info */}
             {step === 1 && (
               <form onSubmit={handleNextStep} className="space-y-6">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Tell Us About Yourself
-                </h2>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      First Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      placeholder="John"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">
-                      Last Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      placeholder="Smith"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Phone Number *
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    placeholder="(559) 123-4567"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder="john@example.com"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-orange-600 hover:bg-orange-700 text-white text-lg py-4 font-semibold rounded-lg transition-colors"
-                >
-                  Next: Tell Us About Your Home →
-                </button>
-              </form>
-            )}
-
-            {/* Step 2: Property Info */}
-            {step === 2 && (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                  Tell Us About Your Home
+                  Tell Us About the Property
                 </h2>
 
                 <div>
@@ -235,16 +159,108 @@ export default function LeadCapture() {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    What's Your Situation? *
+                    What's your situation? *
                   </label>
-                  <textarea
+                  <select
                     name="situation"
                     value={formData.situation}
                     onChange={handleInputChange}
-                    placeholder="Tell us why you're selling (e.g., foreclosure, probate, inherited home, need to sell fast, etc.)"
                     required
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white"
+                  >
+                    <option value="">Choose the closest option</option>
+                    <option value="Need to sell fast">Need to sell fast</option>
+                    <option value="Title, deed, lien, or tax issue">Title, deed, lien, or tax issue</option>
+                    <option value="Squatter or unauthorized occupant">Squatter or unauthorized occupant</option>
+                    <option value="Tenant-occupied rental / tired landlord">Tenant-occupied rental / tired landlord</option>
+                    <option value="Probate or inherited home">Probate or inherited home</option>
+                    <option value="Foreclosure or behind on payments">Foreclosure or behind on payments</option>
+                    <option value="Needs repairs / as-is sale">Needs repairs / as-is sale</option>
+                    <option value="Compare cash offer vs listing">Compare cash offer vs listing</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-orange-600 hover:bg-orange-700 text-white text-lg py-4 font-semibold rounded-lg transition-colors"
+                >
+                  Next: Where Should Connor Send the Offer?
+                </button>
+                <p className="text-xs text-center text-gray-500">
+                  Address first. No pressure, no spam, no obligation.
+                </p>
+              </form>
+            )}
+
+            {/* Step 2: Contact Info */}
+            {step === 2 && (
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                  Where Should Connor Send the Offer?
+                </h2>
+
+                <div className="rounded-lg border border-orange-200 bg-orange-50 p-4 text-sm text-orange-950">
+                  <div className="font-bold">{formData.address}, {formData.city}</div>
+                  <div className="mt-1 text-orange-800">{formData.situation}</div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      First Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="firstName"
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      placeholder="John"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                      Last Name <span className="font-normal text-gray-400">(optional)</span>
+                    </label>
+                    <input
+                      type="text"
+                      name="lastName"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      placeholder="Smith"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Phone Number *
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    placeholder="(559) 123-4567"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Email Address <span className="font-normal text-gray-400">(optional)</span>
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="john@example.com"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                   />
                 </div>
 
