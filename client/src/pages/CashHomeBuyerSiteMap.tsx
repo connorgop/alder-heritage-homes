@@ -22,6 +22,7 @@ const sections = [
       { label: "Sell a House With Multiple Heirs", href: "/sell-house-multiple-heirs-fresno" },
       { label: "Inherited Deed Was Never Transferred", href: "/sell-inherited-house-deed-not-transferred" },
       { label: "Sell a Vacant House in Fresno", href: "/sell-vacant-house-fresno" },
+      { label: "Sell a Problem House in Fresno", href: "/we-buy-problem-houses-fresno" },
     ],
   },
   {
@@ -35,6 +36,7 @@ const sections = [
       { label: "Sell a House With Foundation Problems", href: "/sell-house-foundation-problems" },
       { label: "Sell a House With Roof Damage", href: "/sell-house-roof-damage" },
       { label: "Sell a House With Code Violations", href: "/sell-house-code-violations-fresno" },
+      { label: "Boarded-Up, Flooded, or Vandalized House", href: "/we-buy-problem-houses-fresno" },
       { label: "Junk Removal Before Selling", href: "/junk-removal-before-selling" },
       { label: "Vacant Property Warning", href: "/vacant-property-warning" },
     ],

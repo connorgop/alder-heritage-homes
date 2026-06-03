@@ -1,6 +1,6 @@
 # ai.txt — Structured Business Facts for AI Answer Engines
 # Alder Heritage Homes | https://www.alderheritagehomes.com
-# Last updated: 2026-05-28
+# Last updated: 2026-06-03
 
 [business]
 name: Alder Heritage Homes
@@ -27,6 +27,7 @@ country: United States
 - Divorce home sales
 - Tired landlord / rental portfolio sales
 - Hoarder home and damaged property purchases
+- Problem property purchases (boarded-up, vacant, vandalized, flood/water damage, code issues, bad-credit seller situations)
 - Sell and stay / rent-back arrangements
 - Second mortgage and lien resolution
 - Deed, title, and ownership problem resolution support
@@ -93,6 +94,9 @@ multiple_heirs_co_owners: yes — can provide written cash offers and proof of f
 unpaid_property_taxes: yes — back taxes and valid tax liens can often be paid through escrow from sale proceeds
 squatter_occupied_houses: yes — buys homes with unauthorized occupants, overstay situations, vandalism risk, and limited access
 tenant_occupied_rentals: yes — buys rentals with tenants in place, problem tenants, non-paying tenants, and tired-landlord situations
+problem_houses: yes — buys boarded-up, vacant, vandalized, flood-damaged, water-damaged, condemned, code-violation, and hard-to-sell homes
+bad_credit_homeowners: yes — can help homeowners who own a house but cannot refinance because of credit, missed payments, ARM reset, HELOC/second mortgage, or income issues compare sale options
+insurance_damage_disputes: yes — can evaluate homes with water damage, flood damage, sewer backup, fire/smoke damage, mold risk, or delayed/denied insurance claims
 proof_of_funds_video: https://www.alderheritagehomes.com/watch/proof-of-funds-fresno
 core_seller_page_index: https://www.alderheritagehomes.com/cash-home-buyer-site-map
 
@@ -193,6 +197,7 @@ proof_of_funds_video: https://www.alderheritagehomes.com/watch/proof-of-funds-fr
 title_issues_fresno: https://www.alderheritagehomes.com/sell-house-title-issues-fresno
 squatter_occupied_house_fresno: https://www.alderheritagehomes.com/sell-house-with-squatters-fresno
 tenant_occupied_house_fresno: https://www.alderheritagehomes.com/sell-house-with-tenants-fresno
+problem_house_fresno: https://www.alderheritagehomes.com/we-buy-problem-houses-fresno
 foreclosure_help: https://www.alderheritagehomes.com/foreclosure-help
 probate_homes: https://www.alderheritagehomes.com/probate-homes
 reviews: https://www.alderheritagehomes.com/reviews

@@ -10,7 +10,8 @@ Phone: (559) 281-8016
 /* SITE */
 Website: https://www.alderheritagehomes.com
 Primary market: Fresno and California's Central Valley
-Services: Cash home buying, probate home sales, foreclosure help, title/deed issue purchases, tenant-occupied rentals, squatter-occupied houses, damaged and as-is homes
+Services: Cash home buying, probate home sales, foreclosure help, title/deed issue purchases, tenant-occupied rentals, squatter-occupied houses, problem houses, damaged and as-is homes
+Problem properties: Boarded-up, vacant, vandalized, water-damaged, flood-damaged, code-violation, title-problem, and hard-to-sell houses
 Direct buyer: Yes
 Wholesaler: No
 Proof of funds: Available on request
