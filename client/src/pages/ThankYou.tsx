@@ -81,13 +81,13 @@ export default function ThankYou() {
             className="text-3xl font-bold mb-3"
             style={{ fontFamily: "'Lora', serif", color: "oklch(0.93 0.04 80)" }}
           >
-            Request Received!
+            You're In — Offer Coming!
           </h1>
           <p
             className="text-base mb-8 leading-relaxed"
             style={{ fontFamily: "'Nunito Sans', sans-serif", color: "oklch(0.72 0.04 80)" }}
           >
-            Connor Morris will personally call or text you within <strong style={{ color: "oklch(0.85 0.08 80)" }}>24 hours</strong> with your cash offer. No obligation. No pressure.
+            Connor personally reviews every request. Expect a <strong style={{ color: "oklch(0.85 0.08 80)" }}>call or text within 1 hour</strong> during business hours. No obligation. No pressure.
           </p>
 
           {/* What happens next */}
@@ -102,9 +102,9 @@ export default function ThankYou() {
               What Happens Next
             </p>
             {[
-              { icon: <Phone size={16} />, text: "Connor calls or texts you within 24 hours" },
-              { icon: <Clock size={16} />, text: "He'll ask a few quick questions about the property" },
-              { icon: <Star size={16} />, text: "You get a fair, no-obligation cash offer" },
+              { icon: <Phone size={16} />, text: "Connor calls or texts you — usually within 1 hour" },
+              { icon: <Clock size={16} />, text: "Quick 5-minute call to confirm a few property details" },
+              { icon: <Star size={16} />, text: "Written cash offer delivered — no obligation, no pressure" },
             ].map((step, i) => (
               <div key={i} className="flex items-start gap-3">
                 <div
@@ -126,7 +126,7 @@ export default function ThankYou() {
           {/* CTA — call now */}
           <a
             href={PHONE_HREF}
-            className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold text-base mb-4 transition-all hover:opacity-90"
+            className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold text-base mb-3 transition-all hover:opacity-90"
             style={{
               background: "oklch(0.55 0.13 42)",
               color: "white",
@@ -134,8 +134,11 @@ export default function ThankYou() {
             }}
           >
             <Phone size={18} />
-            Call Connor Now — {PHONE}
+            Don't Want to Wait? Call Now — {PHONE}
           </a>
+          <p className="text-xs mb-4" style={{ color: "oklch(0.50 0.03 60)", fontFamily: "'DM Mono', monospace" }}>
+            By submitting, you consent to receive calls &amp; texts from Connor Morris / Alder Heritage Homes.
+          </p>
 
           {/* Back to home */}
           <Link
@@ -240,7 +243,7 @@ export default function ThankYou() {
           <span>·</span>
           <span>Not a Wholesaler</span>
           <span>·</span>
-          <span>5.0 ★ · 13 Google Reviews</span>
+          <span>5.0 ★ · 32 Google Reviews</span>
         </div>
       </div>
     </Layout>

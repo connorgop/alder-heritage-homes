@@ -220,3 +220,12 @@
 - [ ] Fix ad spacing violation on Competitor Targeting second ad
 - [ ] Switch Campaign #1 bid strategy from Maximize Conversions to Maximize Clicks
 - [ ] Add call extension to both campaigns with (559) 281-8016
+
+## Lead Generation Sprint (Jun 3, 2026)
+- [x] Sharpen homepage hero headline: "Sell Your Home For Cash. Offer in 24 hrs. Close in 3 days."
+- [x] Add review count to homepage hero social proof line (32 Google Reviews)
+- [x] Tune exit-intent popup timer from 45s → 25s for higher capture rate
+- [x] Improve exit-intent form step headline and urgency copy ("usually within 1 hour")
+- [x] Add SEO title + meta description + canonical tag to LeadCapture page for Google Ads Quality Score
+- [x] Add "We Buy Problem Properties" section to homepage (12 property types with emoji cards)
+- [x] Update thank-you page with clearer "what happens next" and "within 1 hour" urgency

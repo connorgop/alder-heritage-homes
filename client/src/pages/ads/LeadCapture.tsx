@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { Card } from '@/components/ui/card';
 import { CheckCircle2, Clock, DollarSign, AlertCircle, Phone } from 'lucide-react';
@@ -10,6 +10,16 @@ import { formatLeadAttribution } from '@/lib/attribution';
 export default function LeadCapture() {
   const { trackFormSubmit, trackPhoneClick, trackAddressSubmit } = useConversionTracking();
   const [, setLocation] = useLocation();
+
+  useEffect(() => {
+    document.title = 'Get a Cash Offer in 24 Hours | Fresno Cash Home Buyer | Alder Heritage Homes';
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute('content', 'Licensed Fresno cash home buyer. Get a written cash offer within 24 hours. Close in 3 days. Zero fees, zero commissions. Not a wholesaler. CA DRE #02219124.');
+    const canonical = document.querySelector('link[rel="canonical"]') || document.createElement('link');
+    (canonical as HTMLLinkElement).rel = 'canonical';
+    (canonical as HTMLLinkElement).href = 'https://www.alderheritagehomes.com/ads/lead-capture';
+    if (!document.querySelector('link[rel="canonical"]')) document.head.appendChild(canonical);
+  }, []);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     firstName: '',
@@ -18,7 +28,7 @@ export default function LeadCapture() {
     email: '',
     address: '',
     city: '',
-    situation: '',
+    situation: 'Need to sell fast',
   });
 
   const submitLead = trpc.leads.submit.useMutation({
@@ -42,8 +52,8 @@ export default function LeadCapture() {
 
   const handleNextStep = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.address || !formData.city || !formData.situation) {
-      toast.error('Please fill in all required fields.');
+    if (!formData.address || !formData.city) {
+      toast.error('Please enter your property address and city.');
       return;
     }
     trackAddressSubmit();
@@ -77,10 +87,10 @@ export default function LeadCapture() {
             ⚠ WARNING: 99% of Cash Buyers Are Wholesalers
           </div>
           <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            Get a Real Cash Offer
+            Get a Real Cash Offer in 24 Hours
           </h1>
           <p className="text-xl text-gray-600 mb-6">
-            From a licensed buyer who actually has the money
+            Connor Morris · Licensed CA Agent · DRE #02219124 · Not a Wholesaler
           </p>
 
           {/* Trust Badges */}
@@ -159,13 +169,12 @@ export default function LeadCapture() {
 
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    What's your situation? *
+                    What's your situation? <span className="font-normal text-gray-400">(optional)</span>
                   </label>
                   <select
                     name="situation"
                     value={formData.situation}
                     onChange={handleInputChange}
-                    required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white"
                   >
                     <option value="">Choose the closest option</option>
@@ -181,14 +190,14 @@ export default function LeadCapture() {
                   </select>
                 </div>
 
-                <button
+                  <button
                   type="submit"
                   className="w-full bg-orange-600 hover:bg-orange-700 text-white text-lg py-4 font-semibold rounded-lg transition-colors"
                 >
-                  Next: Where Should Connor Send the Offer?
+                  Get My Cash Offer →
                 </button>
                 <p className="text-xs text-center text-gray-500">
-                  Address first. No pressure, no spam, no obligation.
+                  🔒 Address only. No pressure, no spam, no obligation. Connor calls you — you don't call us.
                 </p>
               </form>
             )}
@@ -277,7 +286,7 @@ export default function LeadCapture() {
                     disabled={submitLead.isPending}
                     className="flex-1 bg-green-600 hover:bg-green-700 disabled:bg-green-400 text-white text-lg py-4 font-semibold rounded-lg transition-colors"
                   >
-                    {submitLead.isPending ? 'Sending...' : 'Get My Cash Offer'}
+                    {submitLead.isPending ? 'Sending your request...' : '✓ Send My Address — Get the Offer'}
                   </button>
                 </div>
               </form>

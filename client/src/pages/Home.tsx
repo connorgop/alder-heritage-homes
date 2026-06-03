@@ -409,8 +409,8 @@ export default function Home() {
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6 tracking-tight">
               Sell Your Home<br />
-              <span className="text-orange-500">With Options.</span><br />
-              <span className="text-3xl sm:text-4xl font-bold text-gray-300">Cash offer, listing advice, or both.</span>
+              <span className="text-orange-500">For Cash.</span><br />
+              <span className="text-3xl sm:text-4xl font-bold text-gray-300">Offer in 24 hrs. Close in 3 days.</span>
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
@@ -436,9 +436,8 @@ export default function Home() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/ads/lead-capture">
-                <Button size="lg" className="bg-orange-600 hover:bg-orange-500 text-white text-lg font-black px-10 py-7 shadow-2xl shadow-orange-900/50 rounded-xl w-full sm:w-auto transition-all hover:scale-105">
-                  Get My Free Cash Offer
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <Button size="lg" className="bg-orange-600 hover:bg-orange-500 text-white text-lg font-black px-10 py-7 shadow-2xl shadow-orange-900/50 rounded-xl w-full sm:w-auto transition-all hover:scale-105">
+                  Get My Free Cash Offer →
                 </Button>
               </Link>
               <a href="tel:+15592818016">
@@ -469,7 +468,7 @@ export default function Home() {
               <div className="flex">
                 {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
               </div>
-              <span className="text-gray-400 text-sm">5.0 · Rated by Central Valley homeowners</span>
+              <span className="text-gray-400 text-sm">5.0 · 32 Google Reviews from Central Valley homeowners</span>
               <Link href="/trust-center">
                 <span className="text-orange-300 text-sm font-bold hover:text-orange-200 transition-colors">Verify the buyer →</span>
               </Link>
@@ -504,7 +503,7 @@ export default function Home() {
             { value: '24hr', label: 'Cash Offer', sub: 'Written & guaranteed', color: 'text-orange-600', bg: 'bg-orange-50 border-orange-100' },
             { value: '3 days', label: 'Fast Close', sub: 'Funds always ready', color: 'text-blue-600', bg: 'bg-blue-50 border-blue-100' },
             { value: '$0', label: 'Fees', sub: 'Zero commissions ever', color: 'text-green-600', bg: 'bg-green-50 border-green-100' },
-            { value: '700+', label: 'Homes Bought', sub: 'Real results, real people', color: 'text-purple-600', bg: 'bg-purple-50 border-purple-100' },
+              { value: '700+', label: 'Homes Bought', sub: 'Real results, real people', color: 'text-purple-600', bg: 'bg-purple-50 border-purple-100' },
           ].map((stat, i) => (
             <div key={i} className={`text-center p-6 rounded-2xl border ${stat.bg} hover:shadow-md transition-shadow`}>
               <div className={`text-4xl font-black ${stat.color} mb-1`}>{stat.value}</div>
@@ -512,6 +511,7 @@ export default function Home() {
               <div className="text-xs text-gray-500 mt-1">{stat.sub}</div>
             </div>
           ))}
+
         </div>
       </section>
 
@@ -549,6 +549,55 @@ export default function Home() {
                   </Link>
                 );
               })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── PROBLEM PROPERTIES ── */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-red-600 font-bold text-sm uppercase tracking-widest mb-3">No Problem Too Big</p>
+            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">We Buy Problem Properties</h2>
+            <p className="text-xl text-gray-500 max-w-2xl mx-auto">Other buyers walk away. We specialize in the hard ones — and we pay more because we have the capital and expertise to close them.</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10">
+            {[
+              { label: 'Fire Damage', href: '/sell-house-fire-damage', emoji: '🔥' },
+              { label: 'Hoarder Home', href: '/sell-hoarder-house', emoji: '📦' },
+              { label: 'Code Violations', href: '/sell-house-code-violations-fresno', emoji: '🚫' },
+              { label: 'Flood / Water Damage', href: '/we-buy-problem-houses-fresno', emoji: '💧' },
+              { label: 'Boarded-Up House', href: '/we-buy-problem-houses-fresno', emoji: '🪟' },
+              { label: 'Vacant / Abandoned', href: '/sell-vacant-house-fresno', emoji: '🏚' },
+              { label: 'Bad Tenants', href: '/sell-house-with-tenants-fresno', emoji: '🔑' },
+              { label: 'Squatters Inside', href: '/sell-house-with-squatters-fresno', emoji: '⚠️' },
+              { label: 'Probate / Estate', href: '/probate-homes', emoji: '📋' },
+              { label: 'Title / Deed Issues', href: '/sell-house-title-issues-fresno', emoji: '📄' },
+              { label: 'Behind on Taxes', href: '/we-buy-problem-houses-fresno', emoji: '💸' },
+              { label: 'Divorce Sale', href: '/sell-house-divorce', emoji: '⚖️' },
+            ].map((item) => (
+              <Link key={item.href + item.label} href={item.href}>
+                <div className="flex items-center gap-3 p-4 rounded-xl border border-gray-200 bg-gray-50 hover:border-orange-300 hover:bg-orange-50 hover:shadow-md transition-all group">
+                  <span className="text-2xl flex-shrink-0">{item.emoji}</span>
+                  <span className="font-bold text-gray-900 text-sm group-hover:text-orange-700 transition-colors">{item.label}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center">
+            <p className="text-gray-500 mb-5 text-lg">Don't see your situation? We've probably handled it. Just ask.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/ads/lead-capture">
+                <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white font-black px-10 py-6 rounded-xl shadow-lg hover:scale-105 transition-all">
+                  Get a Cash Offer <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+              <a href="tel:+15592818016">
+                <Button size="lg" variant="outline" className="border-2 border-gray-300 text-gray-700 font-bold px-10 py-6 rounded-xl hover:border-orange-400 hover:text-orange-700 bg-transparent">
+                  <Phone className="w-5 h-5 mr-2" /> Call (559) 281-8016
+                </Button>
+              </a>
             </div>
           </div>
         </div>

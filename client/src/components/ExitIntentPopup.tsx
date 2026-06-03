@@ -46,10 +46,10 @@ export default function ExitIntentPopup() {
       if (document.visibilityState === "hidden") show();
     };
 
-    // Timer trigger: show after 45 seconds on the page
+    // Timer trigger: show after 25 seconds on the page (reduced from 45s for higher capture rate)
     const timerRef = setTimeout(() => {
       show();
-    }, 45000);
+    }, 25000);
 
     document.addEventListener("mouseleave", handleMouseLeave);
     document.addEventListener("visibilitychange", handleVisibility);
@@ -175,10 +175,10 @@ export default function ExitIntentPopup() {
         {step === "form" && (
           <div className="px-6 py-6">
             <h2 className="text-xl font-bold text-white mb-2" style={{ fontFamily: "'Lora', serif" }}>
-              Get Your Free Cash Offer
+              Get Your Free Cash Offer — Takes 30 Seconds
             </h2>
             <p className="text-sm mb-5" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Takes 60 seconds. No obligation. Connor will call you within a few hours.
+              No obligation. Connor personally calls you — usually within 1 hour during business hours.
             </p>
             <form onSubmit={handleSubmit} className="space-y-3">
               <div>
@@ -245,7 +245,7 @@ export default function ExitIntentPopup() {
               You're All Set!
             </h3>
             <p className="text-sm mb-6" style={{ color: "oklch(0.70 0.01 60)", fontFamily: "'Nunito Sans', sans-serif" }}>
-              Connor will call you within a few hours with your cash offer. Check your phone!
+              Connor will call or text you — usually within 1 hour. Check your phone!
             </p>
             <a
               href={trackingPhone.href}
