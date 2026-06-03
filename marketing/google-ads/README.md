@@ -7,6 +7,8 @@ Files:
 - `keywords.csv` — exact + phrase match high-intent keywords per city.
 - `responsive-search-ads.csv` — RSA copy mapped to each city landing page.
 - `negative-keywords.csv` — starter negative list to block research/job/rental traffic.
+- `problem-property-keywords.csv` — direct import for the live `Problem Property Sellers` campaign.
+- `problem-property-negative-keywords.csv` — direct negative keyword import for the live `Problem Property Sellers` campaign.
 
 Recommended launch order:
 1. Start with Fresno, Clovis, Madera, Hanford, Visalia, Bakersfield.
@@ -14,6 +16,10 @@ Recommended launch order:
 3. Set calls + lead submits as primary conversions.
 4. Use landing pages from the Final URL column. These pages now prerender and include city-specific schema/content.
 5. Review search terms daily for the first 10 days and add negatives aggressively.
+
+Current-account shortcut:
+- If you are only editing the existing `Problem Property Sellers` campaign, start with `problem-property-keywords.csv` and `problem-property-negative-keywords.csv`.
+- Keep this campaign on exact/phrase match until conversion tracking is proven.
 
 Compliance note:
 - Do not claim a guaranteed sale price.

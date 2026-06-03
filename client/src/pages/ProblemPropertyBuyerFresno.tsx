@@ -28,6 +28,7 @@ export default function ProblemPropertyBuyerFresno() {
                 <li>How to sell a vacant house that was vandalized</li>
                 <li>Sell house with stolen copper</li>
                 <li>Insurance denied my water damage claim</li>
+                <li>Sell house after insurance claim dispute</li>
                 <li>Sell flood-damaged house as-is</li>
                 <li>Sell house after sewer backup</li>
                 <li>House has code violations Fresno</li>
@@ -44,7 +45,7 @@ export default function ProblemPropertyBuyerFresno() {
         },
         {
           heading: "Physical Problems: Boarded Up, Flooded, Vandalized, or Unsafe",
-          body: "Normal buyers and lenders often avoid properties with water damage, flood damage, mold, fire damage, stolen copper, broken windows, missing HVAC, vandalism, unsafe stairs, roof leaks, foundation cracks, or active code violations. We buy those properties as-is and handle repairs after closing.",
+          body: "Normal buyers and lenders often avoid properties with water damage, flood damage, insurance claim disputes, mold, fire damage, stolen copper, broken windows, missing HVAC, vandalism, unsafe stairs, roof leaks, foundation cracks, or active code violations. We buy those properties as-is and handle repairs after closing.",
         },
         {
           heading: "Occupancy Problems: Tenants, Squatters, or Someone Who Will Not Leave",
@@ -99,6 +100,7 @@ export default function ProblemPropertyBuyerFresno() {
         { label: "Sell With Title or Deed Issues", href: "/sell-house-title-issues-fresno" },
         { label: "Sell With Code Violations", href: "/sell-house-code-violations-fresno" },
         { label: "Sell a Fire-Damaged House", href: "/sell-house-fire-damage" },
+        { label: "Sell With Insurance Claim Problems", href: "/sell-house-insurance-claim-problems-fresno" },
         { label: "Sell a Mold or Water-Damaged House", href: "/sell-house-mold" },
         { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
         { label: "Compare Cash Offer or Listing", href: "/sell-home-fresno-options" },

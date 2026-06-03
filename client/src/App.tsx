@@ -92,6 +92,7 @@ const CantAffordHome = lazy(() => import("./pages/services/CantAffordHome"));
 const LandlordPortfolioSale = lazy(() => import("./pages/services/LandlordPortfolioSale"));
 const MoldHouse = lazy(() => import("./pages/services/MoldHouse"));
 const FireDamage = lazy(() => import("./pages/services/FireDamage"));
+const InsuranceClaimProblem = lazy(() => import("./pages/services/InsuranceClaimProblem"));
 const CodeViolation = lazy(() => import("./pages/services/CodeViolation"));
 const TaxLiens = lazy(() => import("./pages/services/TaxLiens"));
 const TitleIssues = lazy(() => import("./pages/services/TitleIssues"));
@@ -517,6 +518,12 @@ function Router() {
       <Route path="/skyline-rei" component={SkylineREI} />
       <Route path="/sell-house-mold" component={MoldHouse} />
       <Route path="/sell-house-fire-damage" component={FireDamage} />
+      <Route path="/sell-house-insurance-claim-problems-fresno" component={InsuranceClaimProblem} />
+      <Route path="/sell-house-insurance-denied-fresno"><Redirect to="/sell-house-insurance-claim-problems-fresno" /></Route>
+      <Route path="/insurance-denied-water-damage-house-fresno"><Redirect to="/sell-house-insurance-claim-problems-fresno" /></Route>
+      <Route path="/sell-house-after-flood-claim-fresno"><Redirect to="/sell-house-insurance-claim-problems-fresno" /></Route>
+      <Route path="/sell-house-after-water-damage-claim-fresno"><Redirect to="/sell-house-insurance-claim-problems-fresno" /></Route>
+      <Route path="/sell-house-sewer-backup-fresno"><Redirect to="/sell-house-insurance-claim-problems-fresno" /></Route>
       <Route path="/sell-house-code-violations-fresno" component={CodeViolation} />
       <Route path="/sell-house-tax-liens-fresno" component={TaxLiens} />
       <Route path="/sell-house-title-issues-fresno" component={TitleIssues} />
