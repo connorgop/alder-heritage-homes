@@ -93,6 +93,7 @@ const LandlordPortfolioSale = lazy(() => import("./pages/services/LandlordPortfo
 const MoldHouse = lazy(() => import("./pages/services/MoldHouse"));
 const FireDamage = lazy(() => import("./pages/services/FireDamage"));
 const InsuranceClaimProblem = lazy(() => import("./pages/services/InsuranceClaimProblem"));
+const MedicalDebtHomeSale = lazy(() => import("./pages/services/MedicalDebtHomeSale"));
 const CodeViolation = lazy(() => import("./pages/services/CodeViolation"));
 const TaxLiens = lazy(() => import("./pages/services/TaxLiens"));
 const TitleIssues = lazy(() => import("./pages/services/TitleIssues"));
@@ -517,6 +518,11 @@ function Router() {
       <Route path="/dont-hire-friend-realtor" component={DontHireFriendRealtor} />
       <Route path="/arm-rate-change-help" component={ArmRateChange} />
       <Route path="/cant-afford-my-home" component={CantAffordHome} />
+      <Route path="/sell-house-to-pay-medical-debt-fresno" component={MedicalDebtHomeSale} />
+      <Route path="/sell-house-medical-bills-fresno"><Redirect to="/sell-house-to-pay-medical-debt-fresno" /></Route>
+      <Route path="/sell-house-to-avoid-bankruptcy-fresno"><Redirect to="/sell-house-to-pay-medical-debt-fresno" /></Route>
+      <Route path="/sell-house-with-judgment-lien-fresno"><Redirect to="/sell-house-to-pay-medical-debt-fresno" /></Route>
+      <Route path="/sell-house-to-pay-credit-card-debt-fresno"><Redirect to="/sell-house-to-pay-medical-debt-fresno" /></Route>
       <Route path="/vacant-property-warning" component={VacantPropertyWarning} />
       <Route path="/sell-rental-portfolio" component={LandlordPortfolioSale} />
       <Route path="/skyline-rei" component={SkylineREI} />

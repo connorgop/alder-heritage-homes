@@ -101,6 +101,7 @@ export default function TitleIssues() {
         { label: "Multiple Heirs or Co-Owner Dispute", href: "/sell-house-multiple-heirs-fresno" },
         { label: "Unpaid Property Taxes", href: "/sell-house-unpaid-property-taxes-fresno" },
         { label: "Sell House With Tax Liens", href: "/sell-house-tax-liens-fresno" },
+        { label: "Medical Debt or Judgment Lien", href: "/sell-house-to-pay-medical-debt-fresno" },
         { label: "Probate & Inherited Homes", href: "/probate-inherited-homes" },
         { label: "Sell Inherited Property Fresno", href: "/sell-inherited-property-fresno" },
       ]}

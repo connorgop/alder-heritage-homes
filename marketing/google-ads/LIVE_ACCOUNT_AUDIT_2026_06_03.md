@@ -60,6 +60,7 @@ The Search campaign is structurally better because it uses exact/phrase keywords
 - Problem property searches: `/we-buy-problem-houses-fresno`
 - Insurance/water/flood/fire claim searches: `/sell-house-insurance-claim-problems-fresno`
 - Financial pressure, bad credit, cannot refinance, payment too high: `/cant-afford-my-home`
+- Medical debt, judgment liens, bankruptcy pressure, credit card debt: `/sell-house-to-pay-medical-debt-fresno`
 - Squatters: `/sell-house-with-squatters-fresno`
 - Tenants/tired landlord: `/sell-house-with-tenants-fresno`
 - Title/deed/liens: `/sell-house-title-issues-fresno`
@@ -97,6 +98,11 @@ The Ads asset generator now includes additional distressed-seller intent:
 - house payment too high
 - cant afford my home
 - need to sell house bad credit
+- sell house to pay medical debt
+- sell house medical bills
+- sell house to avoid bankruptcy
+- sell house with judgment lien
+- sell house to pay credit card debt
 
 ## Negative Keywords Added
 

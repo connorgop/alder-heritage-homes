@@ -58,6 +58,10 @@ export default function CantAffordHome() {
           body: "A refinance can be a good option when your income, credit, debt-to-income ratio, and equity all line up. But many homeowners are blocked by late payments, high rates, a changed job situation, a second mortgage, a HELOC, medical debt, or an ARM payment shock. If the refinance door is closed, you still may be able to sell before missed payments, fees, and foreclosure costs eat into your equity.",
         },
         {
+          heading: "Medical Debt, Judgment Liens, and Collection Pressure",
+          body: "Sometimes the pressure is not only the mortgage. Medical bills, collections, judgment liens, credit card lawsuits, wage garnishment, or bankruptcy pressure can make the home feel like the only asset left. If that is your situation, compare a cash sale, listing, debt settlement timeline, and professional legal or credit advice before deciding.",
+        },
+        {
           heading: "The Sooner You Act, the More You Keep",
           body: "Every missed mortgage payment damages your credit and reduces your negotiating position. Every month you wait in a home you can't afford is a month of equity erosion, stress, and narrowing options. The homeowners who come to us earliest — before they've missed a payment, or after just one or two — almost always walk away with more money and more options than those who wait until foreclosure is imminent. We are not here to pressure you. We are here to give you an honest picture of what's available, right now.",
         },
@@ -110,6 +114,7 @@ export default function CantAffordHome() {
         { label: "ARM / Rate Adjustment Help", href: "/arm-rate-change-help" },
         { label: "Foreclosure Help", href: "/foreclosure-help" },
         { label: "Second Mortgage Help", href: "/second-mortgage-help" },
+        { label: "Medical Debt or Judgment Lien", href: "/sell-house-to-pay-medical-debt-fresno" },
         { label: "Problem Property Buyer", href: "/we-buy-problem-houses-fresno" },
         { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back" },
       ]}
