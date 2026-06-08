@@ -59,6 +59,7 @@ The Search campaign is structurally better because it uses exact/phrase keywords
 
 - Problem property searches: `/we-buy-problem-houses-fresno`
 - Insurance/water/flood/fire claim searches: `/sell-house-insurance-claim-problems-fresno`
+- Financial pressure, bad credit, cannot refinance, payment too high: `/cant-afford-my-home`
 - Squatters: `/sell-house-with-squatters-fresno`
 - Tenants/tired landlord: `/sell-house-with-tenants-fresno`
 - Title/deed/liens: `/sell-house-title-issues-fresno`
@@ -92,6 +93,10 @@ The Ads asset generator now includes additional distressed-seller intent:
 - sell house after water damage claim
 - bad credit own a home
 - cannot refinance my house
+- cant refinance my house
+- house payment too high
+- cant afford my home
+- need to sell house bad credit
 
 ## Negative Keywords Added
 

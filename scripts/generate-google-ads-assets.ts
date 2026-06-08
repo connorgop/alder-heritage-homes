@@ -230,10 +230,14 @@ const PROBLEM_PROPERTY_KEYWORDS = [
   },
   {
     adGroup: "Financial Pressure",
-    finalUrl: `${BASE_URL}/we-buy-problem-houses-fresno`,
+    finalUrl: `${BASE_URL}/cant-afford-my-home`,
     keywords: [
       "bad credit own a home fresno",
       "cannot refinance my house fresno",
+      "cant refinance my house fresno",
+      "house payment too high fresno",
+      "cant afford my home fresno",
+      "need to sell house bad credit fresno",
       "sell house before foreclosure fresno",
       "stop foreclosure fresno",
       "sell house unpaid property taxes fresno",

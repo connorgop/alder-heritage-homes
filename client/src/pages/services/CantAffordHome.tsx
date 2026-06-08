@@ -17,6 +17,8 @@ export default function CantAffordHome() {
       subtitle="Whether it's a lost job, a medical bill, a rate adjustment, bad credit, or just a payment that's grown beyond your means — there is a path forward. You don't have to lose everything to get out."
       heroImage={HERO_IMG}
       heroImageAlt="Homeowner facing financial difficulty"
+      slug="/cant-afford-my-home"
+      metaDescription="Can't afford your Fresno home, have bad credit, or cannot refinance? Compare cash sale, listing, loan modification, short sale, rent-back, and foreclosure options."
       intro="If you're at the point where your mortgage payment feels impossible — or is already impossible — you are not alone, and you are not out of options. The worst thing you can do is nothing. Every week you wait, the options narrow and the damage to your credit and equity grows. This page is an honest guide to what's actually available to you right now."
       sections={[
         {
@@ -50,6 +52,10 @@ export default function CantAffordHome() {
         {
           heading: "Bad Credit Is Not a Dealbreaker for Selling",
           body: "Many homeowners in financial distress assume their credit situation prevents them from selling. It doesn't. When you sell your home, the mortgage is paid off at closing from the sale proceeds — your credit score doesn't affect whether the transaction can happen. What matters is your equity position: is the home worth more than you owe? If yes, you can sell. If no, a short sale may still be possible. Call us and we'll tell you exactly where you stand.",
+        },
+        {
+          heading: "If You Cannot Refinance, Selling May Preserve More Equity",
+          body: "A refinance can be a good option when your income, credit, debt-to-income ratio, and equity all line up. But many homeowners are blocked by late payments, high rates, a changed job situation, a second mortgage, a HELOC, medical debt, or an ARM payment shock. If the refinance door is closed, you still may be able to sell before missed payments, fees, and foreclosure costs eat into your equity.",
         },
         {
           heading: "The Sooner You Act, the More You Keep",
@@ -87,6 +93,10 @@ export default function CantAffordHome() {
           q: "What if I want to keep my home?",
           a: "Then we'll help you figure out how. Connor's first priority is always an honest conversation about all your options. If a loan modification, refinance, or forbearance is the right path, he'll tell you that and connect you with the right people. He only buys homes when it's genuinely the best option for the seller.",
         },
+        {
+          q: "Can I sell if I cannot refinance?",
+          a: "Yes. Not qualifying for a refinance does not stop you from selling. If there is enough equity to pay off the mortgage and liens at closing, a sale can still close through escrow. If the payoff is higher than the value, a short sale may be an option.",
+        },
       ]}
       videoEmbed={{
         youtubeId: "k4SN8hHSfA0",
@@ -100,6 +110,7 @@ export default function CantAffordHome() {
         { label: "ARM / Rate Adjustment Help", href: "/arm-rate-change-help" },
         { label: "Foreclosure Help", href: "/foreclosure-help" },
         { label: "Second Mortgage Help", href: "/second-mortgage-help" },
+        { label: "Problem Property Buyer", href: "/we-buy-problem-houses-fresno" },
         { label: "Sell & Stay (Rent-Back)", href: "/sell-and-stay-rent-back" },
       ]}
     />

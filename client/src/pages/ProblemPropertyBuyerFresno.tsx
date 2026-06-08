@@ -103,6 +103,7 @@ export default function ProblemPropertyBuyerFresno() {
         { label: "Sell With Insurance Claim Problems", href: "/sell-house-insurance-claim-problems-fresno" },
         { label: "Sell a Mold or Water-Damaged House", href: "/sell-house-mold" },
         { label: "Behind on Mortgage", href: "/behind-on-mortgage" },
+        { label: "Can't Afford My Home", href: "/cant-afford-my-home" },
         { label: "Compare Cash Offer or Listing", href: "/sell-home-fresno-options" },
       ]}
     />

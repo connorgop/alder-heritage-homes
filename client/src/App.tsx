@@ -501,7 +501,11 @@ function Router() {
       <Route path="/sell-boarded-up-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
       <Route path="/sell-flood-damaged-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
       <Route path="/sell-water-damaged-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
-      <Route path="/bad-credit-own-home-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
+      <Route path="/bad-credit-own-home-fresno"><Redirect to="/cant-afford-my-home" /></Route>
+      <Route path="/cannot-refinance-my-house-fresno"><Redirect to="/cant-afford-my-home" /></Route>
+      <Route path="/cant-refinance-my-house-fresno"><Redirect to="/cant-afford-my-home" /></Route>
+      <Route path="/homeowner-bad-credit-need-to-sell-fresno"><Redirect to="/cant-afford-my-home" /></Route>
+      <Route path="/house-payment-too-high-fresno"><Redirect to="/cant-afford-my-home" /></Route>
       <Route path="/sell-vandalized-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
       <Route path="/sell-condemned-house-fresno"><Redirect to="/we-buy-problem-houses-fresno" /></Route>
       <Route path="/sell-squatter-occupied-house-fresno"><Redirect to="/sell-house-with-squatters-fresno" /></Route>
