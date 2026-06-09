@@ -9,6 +9,7 @@ Files:
 - `negative-keywords.csv` — starter negative list to block research/job/rental traffic.
 - `problem-property-keywords.csv` — direct import for the live `Problem Property Sellers` campaign.
 - `problem-property-negative-keywords.csv` — direct negative keyword import for the live `Problem Property Sellers` campaign.
+- `small-city-takeover-keywords.csv` — exact + phrase terms for Sanger, Selma, Reedley, Hanford, Madera, Kingsburg, and Kerman.
 
 Recommended launch order:
 1. Start with Fresno, Clovis, Madera, Hanford, Visalia, Bakersfield.
@@ -20,6 +21,7 @@ Recommended launch order:
 Current-account shortcut:
 - If you are only editing the existing `Problem Property Sellers` campaign, start with `problem-property-keywords.csv` and `problem-property-negative-keywords.csv`.
 - Keep this campaign on exact/phrase match until conversion tracking is proven.
+- For smaller-market expansion, import `small-city-takeover-keywords.csv` into a separate low-budget search campaign so Sanger/Selma/Reedley/Kingsburg/Kerman search terms do not get buried by Fresno traffic.
 
 Compliance note:
 - Do not claim a guaranteed sale price.
